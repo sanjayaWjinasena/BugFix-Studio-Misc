@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- BugFix-Studio-Misc backlog: 22 record rules --><odoo>
+
+  <record id="rule_246_own_attendees" model="ir.rule">
+    <field name="name">Own attendees</field>
+    <field name="model_id" ref="appointment.model_calendar_attendee"/>
+    <field name="domain_force">[(1, '=', 1)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('base.group_portal')])]"/>
+  </record>
+
+  <record id="rule_244_own_events" model="ir.rule">
+    <field name="name">Own events</field>
+    <field name="model_id" ref="appointment.model_calendar_event"/>
+    <field name="domain_force">[('partner_ids', 'in', user.partner_id.id)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('base.group_portal')])]"/>
+  </record>
+
+  <record id="rule_245_all_calendar_event_for_employees" model="ir.rule">
+    <field name="name">All Calendar Event for employees</field>
+    <field name="model_id" ref="appointment.model_calendar_event"/>
+    <field name="domain_force">[(1, '=', 1)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('base.group_user')])]"/>
+  </record>
+
+  <record id="rule_247_private_events" model="ir.rule">
+    <field name="name">Private events</field>
+    <field name="model_id" ref="appointment.model_calendar_event"/>
+    <field name="domain_force">['|', ('privacy', '!=', 'private'), '&amp;', ('privacy', '=', 'private'), ('partner_ids', 'in', user.partner_id.id)]</field>
+    <field name="perm_read" eval="False"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_314_all_activities" model="ir.rule">
+    <field name="name">All Activities</field>
+    <field name="model_id" ref="crm.model_crm_activity_report"/>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('sales_team.group_sale_salesman_all_leads')])]"/>
+  </record>
+
+  <record id="rule_315_personal_activities" model="ir.rule">
+    <field name="name">Personal Activities</field>
+    <field name="model_id" ref="crm.model_crm_activity_report"/>
+    <field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('sales_team.group_sale_salesman')])]"/>
+  </record>
+
+  <record id="rule_316_crm_lead_multi_company" model="ir.rule">
+    <field name="name">CRM Lead Multi-Company</field>
+    <field name="model_id" ref="crm.model_crm_activity_report"/>
+    <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_311_personal_leads" model="ir.rule">
+    <field name="name">Personal Leads</field>
+    <field name="model_id" ref="crm.model_crm_lead"/>
+    <field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('sales_team.group_sale_salesman')])]"/>
+  </record>
+
+  <record id="rule_312_crm_lead_multi_company" model="ir.rule">
+    <field name="name">CRM Lead Multi-Company</field>
+    <field name="model_id" ref="crm.model_crm_lead"/>
+    <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_313_all_leads" model="ir.rule">
+    <field name="name">All Leads</field>
+    <field name="model_id" ref="crm.model_crm_lead"/>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('sales_team.group_sale_salesman_all_leads')])]"/>
+  </record>
+
+  <record id="rule_116_all_salesteam" model="ir.rule">
+    <field name="name">All Salesteam</field>
+    <field name="model_id" ref="crm.model_crm_team"/>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('sales_team.group_sale_salesman_all_leads')])]"/>
+  </record>
+
+  <record id="rule_117_sales_team_multi_company" model="ir.rule">
+    <field name="name">Sales Team multi-company</field>
+    <field name="model_id" ref="crm.model_crm_team"/>
+    <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_189_pos_sales_team" model="ir.rule">
+    <field name="name">POS Sales Team</field>
+    <field name="model_id" ref="crm.model_crm_team"/>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+    <field name="groups" eval="[(6, 0, [ref('point_of_sale.group_pos_manager')])]"/>
+  </record>
+
+  <record id="rule_654_loyalty_card_multi_company_rule" model="ir.rule">
+    <field name="name">Loyalty card multi company rule</field>
+    <field name="model_id" ref="loyalty.model_loyalty_card"/>
+    <field name="domain_force">['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_428_generate_sales_coupon_rule" model="ir.rule">
+    <field name="name">Generate Sales Coupon Rule</field>
+    <field name="model_id" ref="loyalty.model_loyalty_generate_wizard"/>
+    <field name="domain_force">[('create_uid', '=', user.id)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_628_jin_multi_company_coupon_program" model="ir.rule">
+    <field name="name">JIN - Multi-Company - Coupon Program</field>
+    <field name="model_id" ref="loyalty.model_loyalty_program"/>
+    <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_653_loyalty_program_multi_company_rule" model="ir.rule">
+    <field name="name">Loyalty program multi company rule</field>
+    <field name="model_id" ref="loyalty.model_loyalty_program"/>
+    <field name="domain_force">['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_656_loyalty_reward_multi_company_rule" model="ir.rule">
+    <field name="name">Loyalty reward multi company rule</field>
+    <field name="model_id" ref="loyalty.model_loyalty_reward"/>
+    <field name="domain_force">['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_655_loyalty_rule_multi_company_rule" model="ir.rule">
+    <field name="name">Loyalty rule multi company rule</field>
+    <field name="model_id" ref="loyalty.model_loyalty_rule"/>
+    <field name="domain_force">['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_153_point_of_sale_config" model="ir.rule">
+    <field name="name">Point Of Sale Config</field>
+    <field name="model_id" ref="point_of_sale.model_pos_config"/>
+    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_151_point_of_sale_order" model="ir.rule">
+    <field name="name">Point Of Sale Order</field>
+    <field name="model_id" ref="point_of_sale.model_pos_order"/>
+    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+  <record id="rule_156_pos_payment" model="ir.rule">
+    <field name="name">PoS Payment</field>
+    <field name="model_id" ref="point_of_sale.model_pos_payment"/>
+    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="active" eval="True"/>
+  </record>
+
+</odoo>

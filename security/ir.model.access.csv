@@ -1,0 +1,65 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_6524_barcode_nomenclature_stock_user,barcode.nomenclature.stock.user,barcodes.model_barcode_nomenclature,,1,0,0,0
+access_6410_barcode_nomenclature_stock_user,barcode.nomenclature.stock.user,barcodes.model_barcode_nomenclature,,1,0,0,0
+access_5675_barcode_nomenclature_stock_user,barcode.nomenclature.stock.user,barcodes.model_barcode_nomenclature,,1,0,0,0
+access_6525_barcode_rule_stock_user,barcode.rule.stock.user,barcodes.model_barcode_rule,,1,0,0,0
+access_6411_barcode_rule_stock_user,barcode.rule.stock.user,barcodes.model_barcode_rule,,1,0,0,0
+access_5676_barcode_rule_stock_user,barcode.rule.stock.user,barcodes.model_barcode_rule,,1,0,0,0
+access_6768_calendar_event,calendar.event,appointment.model_calendar_event,,1,0,0,0
+access_8624_access_calendar_event_rohana_read,access_calendar_event_rohana_read,appointment.model_calendar_event,,1,0,0,0
+access_6797_calendar_event_type_salesman,calendar.event.type.salesman,calendar.model_calendar_event_type,,1,0,0,0
+access_8625_access_calendar_event_type_rohana_read,access_calendar_event_type_rohana_read,calendar.model_calendar_event_type,,1,0,0,0
+access_6569_access_choose_delivery_carrier,access.choose.delivery.carrier,delivery.model_choose_delivery_carrier,,1,0,0,0
+access_6455_access_choose_delivery_carrier,access.choose.delivery.carrier,delivery.model_choose_delivery_carrier,,1,0,0,0
+access_5720_access_choose_delivery_carrier,access.choose.delivery.carrier,delivery.model_choose_delivery_carrier,,1,0,0,0
+access_8626_access_choose_delivery_carrier_rohana_read,access_choose_delivery_carrier_rohana_read,delivery.model_choose_delivery_carrier,,1,0,0,0
+access_8630_access_crm_activity_report_rohana_read,access_crm_activity_report_rohana_read,crm.model_crm_activity_report,,1,0,0,0
+access_6773_crm_lead,crm.lead,crm.model_crm_lead,,1,0,0,0
+access_8631_access_crm_lead_rohana_read,access_crm_lead_rohana_read,crm.model_crm_lead,,1,0,0,0
+access_6801_access_crm_lead_lost,access.crm.lead.lost,crm.model_crm_lead_lost,,1,0,0,0
+access_8632_access_crm_lead_lost_rohana_read,access_crm_lead_lost_rohana_read,crm.model_crm_lead_lost,,1,0,0,0
+access_6804_access_crm_lead_scoring_frequency,access_crm_lead_scoring_frequency,crm.model_crm_lead_scoring_frequency,,1,0,0,0
+access_8633_access_crm_lead_scoring_frequency_rohana_read,access_crm_lead_scoring_frequency_rohana_read,crm.model_crm_lead_scoring_frequency,,1,0,0,0
+access_6798_access_crm_lead_scoring_frequency_field,access_crm_lead_scoring_frequency_field,crm.model_crm_lead_scoring_frequency_field,,1,0,0,0
+access_8634_access_crm_lead_scoring_frequency_field_rohana_read,access_crm_lead_scoring_frequency_field_rohana_read,crm.model_crm_lead_scoring_frequency_field,,1,0,0,0
+access_6788_access_crm_lead2opportunity_partner,access.crm.lead2opportunity.partner,crm.model_crm_lead2opportunity_partner,,1,0,0,0
+access_8635_access_crm_lead2opportunity_partner_rohana_read,access_crm_lead2opportunity_partner_rohana_read,crm.model_crm_lead2opportunity_partner,,1,0,0,0
+access_6787_access_crm_lead2opportunity_partner_mass,access.crm.lead2opportunity.partner.mass,crm.model_crm_lead2opportunity_partner_mass,,1,0,0,0
+access_8636_access_crm_lead2opportunity_partner_mass_rohana_read,access_crm_lead2opportunity_partner_mass_rohana_read,crm.model_crm_lead2opportunity_partner_mass,,1,0,0,0
+access_6807_crm_lost_reason_salesman,crm.lost.reason.salesman,crm.model_crm_lost_reason,,1,0,0,0
+access_8637_access_crm_lost_reason_rohana_read,access_crm_lost_reason_rohana_read,crm.model_crm_lost_reason,,1,0,0,0
+access_6805_access_crm_merge_opportunity,access.crm.merge.opportunity,crm.model_crm_merge_opportunity,,1,0,0,0
+access_8638_access_crm_merge_opportunity_rohana_read,access_crm_merge_opportunity_rohana_read,crm.model_crm_merge_opportunity,,1,0,0,0
+access_6795_access_crm_quotation_partner,access.crm.quotation.partner,sale_crm.model_crm_quotation_partner,,1,0,0,0
+access_8675_access_crm_quotation_partner_rohana_read,access_crm_quotation_partner_rohana_read,sale_crm.model_crm_quotation_partner,,1,0,0,0
+access_6785_crm_recurring_plan_access_salesman,crm.recurring.plan.access.salesman,crm.model_crm_recurring_plan,,1,0,0,0
+access_8639_access_crm_recurring_plan_rohana_read,access_crm_recurring_plan_rohana_read,crm.model_crm_recurring_plan,,1,0,0,0
+access_6786_crm_tag_salesman,crm_tag salesman,sales_team.model_crm_tag,,1,0,0,0
+access_8640_access_crm_tag_rohana_read,access_crm_tag_rohana_read,sales_team.model_crm_tag,,1,0,0,0
+access_6778_crm_team_user,crm.team.user,crm.model_crm_team,,1,0,0,0
+access_8641_access_crm_team_rohana_read,access_crm_team_rohana_read,crm.model_crm_team,,1,0,0,0
+access_8629_access_delivery_zip_prefix_rohana_read,access_delivery_zip_prefix_rohana_read,delivery.model_delivery_zip_prefix,,1,0,0,0
+access_6857_coupon_coupon,coupon.coupon,loyalty.model_loyalty_card,BugFix-Approvals.group_132_jin_sales_pos_users,1,0,0,0
+access_6789_coupon__salesperson,Coupon (Salesperson),loyalty.model_loyalty_card,,1,0,0,0
+access_8644_access_loyalty_card_rohana_read,access_loyalty_card_rohana_read,loyalty.model_loyalty_card,,1,0,0,0
+access_6799_coupon_generation,Coupon Generation,loyalty.model_loyalty_generate_wizard,,1,0,0,0
+access_8645_access_loyalty_generate_wizard_rohana_read,access_loyalty_generate_wizard_rohana_read,loyalty.model_loyalty_generate_wizard,,1,0,0,0
+access_8646_access_loyalty_mail_rohana_read,access_loyalty_mail_rohana_read,loyalty.model_loyalty_mail,,1,0,0,0
+access_6790_coupon_program__salesperson,Coupon Program (Salesperson),loyalty.model_loyalty_program,,1,0,0,0
+access_8647_access_loyalty_program_rohana_read,access_loyalty_program_rohana_read,loyalty.model_loyalty_program,,1,0,0,0
+access_7322_coupon_reward,Coupon Reward,loyalty.model_loyalty_reward,,1,1,1,1
+access_6791_coupon_reward__salesperson,Coupon Reward (Salesperson),loyalty.model_loyalty_reward,,1,0,0,0
+access_8648_access_loyalty_reward_rohana_read,access_loyalty_reward_rohana_read,loyalty.model_loyalty_reward,,1,0,0,0
+access_7321_coupon_rules,Coupon Rules,loyalty.model_loyalty_rule,,1,1,1,1
+access_6792_coupon_rule__salesperson,Coupon Rule (Salesperson),loyalty.model_loyalty_rule,,1,0,0,0
+access_8649_access_loyalty_rule_rohana_read,access_loyalty_rule_rohana_read,loyalty.model_loyalty_rule,,1,0,0,0
+access_6546_pos_order_stock_worker,pos.order stock_worker,point_of_sale.model_pos_order,,1,0,0,0
+access_6432_pos_order_stock_worker,pos.order stock_worker,point_of_sale.model_pos_order,,1,0,0,0
+access_5697_pos_order_stock_worker,pos.order stock_worker,point_of_sale.model_pos_order,,1,0,0,0
+access_8702_access_uom_category_rohana_read,access_uom_category_rohana_read,point_of_sale.model_uom_category,,1,0,0,0
+access_6814_uom_uom_user,uom.uom.user,account.model_uom_uom,,1,0,0,0
+access_8703_access_uom_uom_rohana_read,access_uom_uom_rohana_read,account.model_uom_uom,,1,0,0,0
+access_6939_access_validate_account_move,access.validate.account.move,account.model_validate_account_move,,1,1,1,0
+access_7034_access_validate_account_move,access.validate.account.move,account.model_validate_account_move,,1,1,1,0
+access_6835_access_website_track_salesman,access_website_track_salesman,website.model_website_track,,1,0,0,0
+access_8704_access_website_track_rohana_read,access_website_track_rohana_read,website.model_website_track,,1,0,0,0

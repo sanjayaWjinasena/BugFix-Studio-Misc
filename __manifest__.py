@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.3',
+    'version': '17.0.0.0.4',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -66,9 +66,12 @@ etc.).
         'account',
     ],
     'data': [
+        # Security first so record rules can ref groups declared upstream.
+        'security/ir.model.access.csv',
         # Data files land here as ports are shipped (Phase 3.12).
         'data/server_actions_backlog.xml',
         'data/window_actions_backlog.xml',
+        'data/record_rules.xml',
         'data/menus_website_faq.xml',
     ],
     'installable': True,
