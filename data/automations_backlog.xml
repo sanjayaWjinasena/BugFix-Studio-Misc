@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- BugFix-Studio-Misc backlog: 1 base.automations --><odoo>
+
+  <!-- DROPPED base_automation_332_chk_sample_automated_action: model x_test02 missing on target --></odoo>

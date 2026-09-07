@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- BugFix-Studio-Misc backlog: 41 window actions --><odoo>
+
+  <record id="act_window_2829_calendar_attendee_information_calendar_attendee" model="ir.actions.act_window">
+    <field name="name">Calendar Attendee Information - (calendar.attendee)</field>
+    <field name="res_model">calendar.attendee</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2833_calendar_attendee" model="ir.actions.act_window">
+    <field name="name">calendar.attendee</field>
+    <field name="res_model">calendar.attendee</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2830_calendar_filters" model="ir.actions.act_window">
+    <field name="name">Calendar.filters</field>
+    <field name="res_model">calendar.filters</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2832_calendar_filters" model="ir.actions.act_window">
+    <field name="name">calendar.filters</field>
+    <field name="res_model">calendar.filters</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_1232_my_activities" model="ir.actions.act_window">
+    <field name="name">My Activities</field>
+    <field name="res_model">crm.lead</field>
+    <field name="view_mode">tree,kanban,graph,pivot,calendar,form,activity</field>
+    <field name="domain">[("activity_ids.active", "in", [True, False])]</field>
+    <field name="context">{'default_type': 'opportunity',
+                    'search_default_assigned_to_me': 1}
+            </field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    Looks like nothing is planned.
+                </p><p>
+                    Schedule activities to keep track of everything you have to do.
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_396_sales_teams" model="ir.actions.act_window">
+    <field name="name">Sales Teams</field>
+    <field name="res_model">crm.team</field>
+    <field name="view_mode">tree,kanban,form</field>
+    <field name="context">{'in_sales_app': True}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                Define a new sales team
+            </p><p>
+                Use Sales Teams to organize your sales departments.
+                Each team will work with a separate pipeline.
+            </p>
+        </field>
+  </record>
+
+  <record id="act_window_2882_sales_team_member" model="ir.actions.act_window">
+    <field name="name">Sales Team Member</field>
+    <field name="res_model">crm.team.member</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2842_coupon_reward" model="ir.actions.act_window">
+    <field name="name">coupon.reward</field>
+    <field name="res_model">loyalty.reward</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2841_coupon_rule" model="ir.actions.act_window">
+    <field name="name">coupon.rule</field>
+    <field name="res_model">loyalty.rule</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2818_pos_config" model="ir.actions.act_window">
+    <field name="name">pos.config</field>
+    <field name="res_model">pos.config</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2821_pos_config" model="ir.actions.act_window">
+    <field name="name">pos.config</field>
+    <field name="res_model">pos.config</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2819_pos_order" model="ir.actions.act_window">
+    <field name="name">pos.order</field>
+    <field name="res_model">pos.order</field>
+    <field name="view_mode">kanban,tree,form,pivot</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2820_pos_payment" model="ir.actions.act_window">
+    <field name="name">pos.payment</field>
+    <field name="res_model">pos.payment</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2822_pos_session" model="ir.actions.act_window">
+    <field name="name">pos.session</field>
+    <field name="res_model">pos.session</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <record id="act_window_2472_uom_categories" model="ir.actions.act_window">
+    <field name="name">UoM Categories</field>
+    <field name="res_model">uom.category</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+
+  <!-- DROPPED act_window_2532_access_management: model access.management missing on target --><!-- DROPPED act_window_3283_loan_requests: model employee.loan.details missing on target --><!-- DROPPED act_window_3284_loan_requests_to_approve: model employee.loan.details missing on target --><!-- DROPPED act_window_3285_loan_requests_to_disburse: model employee.loan.details missing on target --><!-- DROPPED act_window_2824_signature_request_item_sign_request_item: model sign.request.item pins {'sign', 'sign_itsme'} not in deps --><!-- DROPPED act_window_2825_studio_approval_entry_studio_approval_entry: model studio.approval.entry pins {'web_studio'} not in deps --><!-- DROPPED act_window_1139_product_test: model x_product_test missing on target --><!-- DROPPED act_window_1161_tarrif_rates: model x_tarrif_rates missing on target --><!-- DROPPED act_window_848_test02: model x_test02 missing on target --><!-- DROPPED act_window_846_test02: model x_test02 missing on target --><!-- DROPPED act_window_3279_test02: model x_test02 missing on target --><!-- DROPPED act_window_845_test_01: model x_test_1 missing on target --><!-- DROPPED act_window_843_test_app: model x_test_1 missing on target --><!-- DROPPED act_window_842_test_1: model x_test_1 missing on target --><!-- DROPPED act_window_847_test01: model x_test_1 missing on target --><!-- DROPPED act_window_849_test01: model x_test_1 missing on target --><!-- DROPPED act_window_1666_test_form: model x_test_form missing on target --><!-- DROPPED act_window_2109_test_layout: model x_test_layout missing on target --><!-- DROPPED act_window_1686_test_model_link: model x_test_model_link missing on target --><!-- DROPPED act_window_1687_test_model_link_2: model x_test_model_link_2 missing on target --><!-- DROPPED act_window_1685_test_model_primary: model x_test_model_primary missing on target --><!-- DROPPED act_window_844_test_app_02: model x_testapp missing on target --><!-- DROPPED act_window_809_testapp: model x_testapp missing on target --><!-- DROPPED act_window_812_testdepartment: model x_testdepartment missing on target --><!-- DROPPED act_window_3205_website_faq: model x_website_faq missing on target --><!-- DROPPED act_window_3206_website_faqs: model x_website_faqs missing on target --></odoo>

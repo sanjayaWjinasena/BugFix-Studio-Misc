@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.2',
+    'version': '17.0.0.0.3',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -35,20 +35,40 @@ etc.).
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Extra Tools',
     'license': 'LGPL-3',
-    # Depends kept minimal so this module can absorb x_* models
-    # regardless of which domain they touch. Additional module deps
-    # will be added when specific ports need them.
+    # v17.0.0.0.3: widen depends to unblock Studio backlog port.
+    # Progress audit confirmed all 20 blocking addons are already
+    # installed on target — no risk of pulling in unwanted modules.
+    # Enables porting artefacts on crm.lead / calendar.event /
+    # loyalty.* / pos.* / website.* / stock.* / sale.* / account.*.
     'depends': [
         'base_setup',
         'base_automation',   # for usage='base_automation' selection value
         'mail',              # for _inherit=['mail.thread','mail.activity.mixin']
+        'crm',
+        'sale_crm',
+        'sales_team',
+        'calendar',
+        'loyalty',
+        'point_of_sale',
+        'pos_sale',
+        'pos_loyalty',
+        'pos_mercury',
+        'pos_restaurant',
+        'pos_restaurant_appointment',
+        'pos_online_payment',
+        'website',
+        'website_sale',
+        'website_sale_loyalty',
+        'delivery',
+        'stock',
+        'sale',
+        'purchase',
+        'account',
     ],
     'data': [
-        # 'security/ir.model.access.csv',
         # Data files land here as ports are shipped (Phase 3.12).
-        # 'data/server_actions.xml',
-        # 'data/base_automations.xml',
-        # 'data/window_actions.xml',
+        'data/server_actions_backlog.xml',
+        'data/window_actions_backlog.xml',
         'data/menus_website_faq.xml',
     ],
     'installable': True,

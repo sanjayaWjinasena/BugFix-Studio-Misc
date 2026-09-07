@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- BugFix-Studio-Misc backlog: 16 server actions (1 skipped) --><odoo>
+
+  <record id="server_action_1230_mark_as_lost" model="ir.actions.server">
+    <field name="name">Mark as lost</field>
+    <field name="model_id" search="[('model', '=', 'crm.lead')]"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code">
+if not 'opportunity' in records.mapped('type'):
+    records.action_set_lost()
+elif records:
+    action_values = env.ref('crm.crm_lead_lost_action').sudo().read()[0]
+    action_values.update({'context': env.context})
+    action = action_values
+        </field>
+  </record>
+
+  <!-- DROPPED server_action_1140_test_test_test: model x_product_test missing on target --><!-- DROPPED server_action_2798_chk_sample_automated_action: model x_test02 missing on target --><!-- DROPPED server_action_2797_chk_sample_server_action: model x_test02 missing on target --><!-- DROPPED server_action_2799_mst_odoo_data_clean_up: model x_test02 missing on target --><!-- DROPPED server_action_2831_mst_odoo_data_clean_up_001: model x_test02 missing on target --><!-- DROPPED server_action_2836_mst_odoo_data_clean_up_002: model x_test02 missing on target --><!-- DROPPED server_action_2883_mst_odoo_data_clean_up_004: model x_test02 missing on target --><!-- DROPPED server_action_1630_test_server_action: model x_test02 missing on target --><!-- DROPPED server_action_2108_test_layout_changes: model x_test02 missing on target --><!-- DROPPED server_action_1743_sample_server_action: model x_test02 missing on target --><!-- DROPPED server_action_2223_sample_server_action_1: model x_test02 missing on target --><!-- DROPPED server_action_2578_sample_server_action_multi_company: model x_test02 missing on target --><!-- DROPPED server_action_2586_sample_server_action_to_get_company_id: model x_test02 missing on target --><!-- DROPPED server_action_2599_sample_server_action_update_stock_quant: model x_test02 missing on target --><!-- DROPPED server_action_2268_sample_server_action_2: model x_test02 missing on target --></odoo>
