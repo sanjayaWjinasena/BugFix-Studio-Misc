@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc: 21 Studio-created named-code sequences (post routing audit) -->
+<!-- Auto-gen warehouse/check/SECUR sequences NOT ported: target Odoo regenerates them -->
+<odoo>
+  <data noupdate="1">
+
+    <record id="seq_233_con_consolidated_seq" model="ir.sequence">
+      <field name="name">Con. Consolidated Sequence No</field>
+      <field name="code">con.consolidated.seq</field>
+      <field name="prefix">CON/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_887_con_consolidated_seq" model="ir.sequence">
+      <field name="name">Con. Consolidated Sequence No</field>
+      <field name="code">con.consolidated.seq</field>
+      <field name="prefix">CON/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_228_consignment_det_seq" model="ir.sequence">
+      <field name="name">Consignment Sequence No</field>
+      <field name="code">consignment.det.seq</field>
+      <field name="prefix">CON/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_888_consignment_det_seq" model="ir.sequence">
+      <field name="name">Consignment Sequence No</field>
+      <field name="code">consignment.det.seq</field>
+      <field name="prefix">CON/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_230_custom_clearance_seq" model="ir.sequence">
+      <field name="name">CC Sequence No</field>
+      <field name="code">custom.clearance.seq</field>
+      <field name="prefix">CC/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_889_custom_clearance_seq" model="ir.sequence">
+      <field name="name">CC Sequence No</field>
+      <field name="code">custom.clearance.seq</field>
+      <field name="prefix">CC/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_232_lc_registration_seq" model="ir.sequence">
+      <field name="name">LC Sequence No</field>
+      <field name="code">lc.registration.seq</field>
+      <field name="prefix">LC/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_890_lc_registration_seq" model="ir.sequence">
+      <field name="name">LC Sequence No</field>
+      <field name="code">lc.registration.seq</field>
+      <field name="prefix">LC/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_1342_material_request_sequence" model="ir.sequence">
+      <field name="name">MR Sequence</field>
+      <field name="code">material.request.sequence</field>
+      <field name="prefix">MR/%(year)s</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_248_mnt_req_seq" model="ir.sequence">
+      <field name="name">MNT code gen</field>
+      <field name="code">mnt.req.seq</field>
+      <field name="prefix">MNT/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_891_mnt_req_seq" model="ir.sequence">
+      <field name="name">MNT code gen</field>
+      <field name="code">mnt.req.seq</field>
+      <field name="prefix">MNT/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_247_mtrl_req_seq" model="ir.sequence">
+      <field name="name">MR code gen</field>
+      <field name="code">mtrl.req.seq</field>
+      <field name="prefix">MR/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_892_mtrl_req_seq" model="ir.sequence">
+      <field name="name">MR code gen</field>
+      <field name="code">mtrl.req.seq</field>
+      <field name="prefix">MR/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_557_ot_update_seq" model="ir.sequence">
+      <field name="name">OT Sequence No</field>
+      <field name="code">ot.update.seq</field>
+      <field name="prefix">OT/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_893_ot_update_seq" model="ir.sequence">
+      <field name="name">OT Sequence No</field>
+      <field name="code">ot.update.seq</field>
+      <field name="prefix">OT/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_558_project_sale_order_seq" model="ir.sequence">
+      <field name="name">PSO Sequence No</field>
+      <field name="code">project.sale.order.seq</field>
+      <field name="prefix">PSO</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_896_project_sale_order_seq" model="ir.sequence">
+      <field name="name">PSO Sequence No</field>
+      <field name="code">project.sale.order.seq</field>
+      <field name="prefix">PSO</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_271_report_model_seq" model="ir.sequence">
+      <field name="name">RM Sequence No</field>
+      <field name="code">report.model.seq</field>
+      <field name="prefix">RM/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_900_report_model_seq" model="ir.sequence">
+      <field name="name">RM Sequence No</field>
+      <field name="code">report.model.seq</field>
+      <field name="prefix">RM/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+    <record id="seq_231_tp_invoice_seq" model="ir.sequence">
+      <field name="name">TP Invoice No</field>
+      <field name="code">tp.invoice.seq</field>
+      <field name="prefix">TP/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+
+    <record id="seq_899_tp_invoice_seq" model="ir.sequence">
+      <field name="name">TP Invoice No</field>
+      <field name="code">tp.invoice.seq</field>
+      <field name="prefix">TP/%(year)s/</field>
+      <field name="padding">5</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="implementation">standard</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+
+  </data>
+</odoo>

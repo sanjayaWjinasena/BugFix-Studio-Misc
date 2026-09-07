@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.4',
+    'version': '17.0.0.0.5',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -45,6 +45,7 @@ etc.).
         'base_automation',   # for usage='base_automation' selection value
         'mail',              # for _inherit=['mail.thread','mail.activity.mixin']
         'crm',
+        'seed_master_data_and_settings',  # for company_id refs
         'sale_crm',
         'sales_team',
         'calendar',
@@ -72,6 +73,7 @@ etc.).
         'data/server_actions_backlog.xml',
         'data/window_actions_backlog.xml',
         'data/record_rules.xml',
+        'data/sequences.xml',
         'data/menus_website_faq.xml',
     ],
     'installable': True,
