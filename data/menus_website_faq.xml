@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: 'Website FAQ' menu tree (2 nodes) -->
+<odoo>
+
+  <menuitem id="menu_1644_website_faq" name="Website FAQ" sequence="10"/>
+  <menuitem id="menu_1645_website_faqs" name="website FAQs" parent="menu_1644_website_faq" sequence="10"/>
+
+</odoo>
