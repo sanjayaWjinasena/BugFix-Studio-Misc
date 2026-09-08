@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: 1 gap automations -->
+<odoo>
+
+
+  <record id="base_automation_183_test_layout_changes" model="base.automation">
+    <field name="name">Test - Layout Changes</field>
+    <field name="active" eval="False"/>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="trigger">on_create_or_write</field>
+    <field name="action_server_ids" eval="[(6, 0, [ref('BugFix-Studio-Misc.server_action_2108_test_layout_changes')])]"/>
+  </record>
+
+</odoo>

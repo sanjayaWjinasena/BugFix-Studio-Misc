@@ -91,3 +91,54 @@ access_x_project_task_worksheet_template_1_admin,x_project_task_worksheet_templa
 access_x_res_config_settings_admin,x_res_config_settings admin,BugFix-Studio-Misc.model_x_res_config_settings,base.group_system,1,1,1,1
 access_x_sales_model_debug_admin,x_sales_model_debug admin,BugFix-Studio-Misc.model_x_sales_model_debug,base.group_system,1,1,1,1
 access_x_work_center_costing_admin,x_work_center_costing admin,BugFix-Studio-Misc.model_x_work_center_costing,base.group_system,1,1,1,1
+access_1116_customer_groups_group_user,Customer Groups group_user,BugFix-Studio-Misc.model_x_customer_groups,base.group_user,1,0,0,0
+access_1115_customer_groups_group_system,Customer Groups group_system,BugFix-Studio-Misc.model_x_customer_groups,base.group_system,1,1,1,1
+access_1875_sales_model_debug_group_user,Sales Model Debug group_user,BugFix-Studio-Misc.model_x_sales_model_debug,base.group_user,1,0,0,0
+access_6851_x_sales_model_debug,x_sales_model_debug,BugFix-Studio-Misc.model_x_sales_model_debug,BugFix-Approvals.group_132_jin_sales_pos_users,1,0,1,0
+access_6843_x_sales_model_debug,x_sales_model_debug,BugFix-Studio-Misc.model_x_sales_model_debug,,1,0,1,0
+access_1874_sales_model_debug_group_system,Sales Model Debug group_system,BugFix-Studio-Misc.model_x_sales_model_debug,base.group_system,1,1,1,1
+access_1497_test_form_group_user,TEST FORM group_user,BugFix-Studio-Misc.model_x_test_form,base.group_user,1,0,0,0
+access_1496_test_form_group_system,TEST FORM group_system,BugFix-Studio-Misc.model_x_test_form,base.group_system,1,1,1,1
+access_1517_test_model_link_group_user,TEST MODEL LINK group_user,BugFix-Studio-Misc.model_x_test_model_link,base.group_user,1,0,0,0
+access_1516_test_model_link_group_system,TEST MODEL LINK group_system,BugFix-Studio-Misc.model_x_test_model_link,base.group_system,1,1,1,1
+access_1515_test_model_primary_group_user,TEST MODEL PRIMARY group_user,BugFix-Studio-Misc.model_x_test_model_primary,base.group_user,1,0,0,0
+access_1514_test_model_primary_group_system,TEST MODEL PRIMARY group_system,BugFix-Studio-Misc.model_x_test_model_primary,base.group_system,1,1,1,1
+access_1150_test_1_group_user,TEST-1 group_user,BugFix-Studio-Misc.model_x_test_1,base.group_user,1,0,0,0
+access_1153_test_1_group,TEST-1 GROUP,BugFix-Studio-Misc.model_x_test_1,BugFix-Approvals.group_107_pr_approval,0,0,0,0
+access_1149_test_1_group_system,TEST-1 group_system,BugFix-Studio-Misc.model_x_test_1,base.group_system,1,1,1,1
+access_1152_test02_group_user,TEST02 group_user,BugFix-Studio-Misc.model_x_test02,base.group_user,1,0,0,0
+access_1154_test02_group,TEST02 GROUP,BugFix-Studio-Misc.model_x_test02,BugFix-Approvals.group_107_pr_approval,0,0,0,0
+access_1151_test02_group_system,TEST02 group_system,BugFix-Studio-Misc.model_x_test02,base.group_system,1,1,1,1
+access_1738_test_layout_group_user,Test Layout group_user,BugFix-Studio-Misc.model_x_test_layout,base.group_user,0,0,0,0
+access_1737_test_layout_group_system,Test Layout group_system,BugFix-Studio-Misc.model_x_test_layout,base.group_system,1,1,1,1
+access_1519_test_model_link_2_group_user,Test Model Link 2 group_user,BugFix-Studio-Misc.model_x_test_model_link_2,base.group_user,0,0,0,0
+access_1518_test_model_link_2_group_system,Test Model Link 2 group_system,BugFix-Studio-Misc.model_x_test_model_link_2,base.group_system,1,1,1,1
+access_1142_testapp_group_user,TestApp group_user,BugFix-Studio-Misc.model_x_testapp,base.group_user,0,0,0,0
+access_1141_testapp_group_system,TestApp group_system,BugFix-Studio-Misc.model_x_testapp,base.group_system,1,1,1,1
+access_1144_testdepartment_group_user,TestDepartment group_user,BugFix-Studio-Misc.model_x_testdepartment,base.group_user,0,0,0,0
+access_1143_testdepartment_group_system,TestDepartment group_system,BugFix-Studio-Misc.model_x_testdepartment,base.group_system,1,1,1,1
+access_1211_work_center_costing_group_user,Work Center Costing group_user,BugFix-Studio-Misc.model_x_work_center_costing,base.group_user,1,0,0,0
+access_1210_work_center_costing_group_system,Work Center Costing group_system,BugFix-Studio-Misc.model_x_work_center_costing,base.group_system,1,1,1,1
+access_1213_product_test_group_user,product.test group_user,BugFix-Studio-Misc.model_x_product_test,base.group_user,1,1,0,0
+access_1212_product_test_group_system,product.test group_system,BugFix-Studio-Misc.model_x_product_test,base.group_system,1,1,1,1
+access_7832_website_faqs_group_user,website FAQs group_user,BugFix-Studio-Misc.model_x_website_faqs,base.group_user,1,1,1,0
+access_7883_website_integration_public_model_access,Website integration: public model access,BugFix-Studio-Misc.model_x_website_faqs,website.website_page_controller_expose,1,0,0,0
+access_7831_website_faqs_group_system,website FAQs group_system,BugFix-Studio-Misc.model_x_website_faqs,base.group_system,1,1,1,1
+access_7830_website_faq_group_user,website.faq group_user,BugFix-Studio-Misc.model_x_website_faq,base.group_user,1,1,1,0
+access_7829_website_faq_group_system,website.faq group_system,BugFix-Studio-Misc.model_x_website_faq,base.group_system,1,1,1,1
+access_7063_access_account_winbooks_import_wizard,access.account.winbooks.import.wizard,BugFix-Studio-Misc.model_x_account_winbooks_import_wizard,account.group_account_manager,0,0,0,0
+access_8266_custom_reports_tags_group_user,Custom Reports Tags group_user,BugFix-Studio-Misc.model_x_custom_reports_tag,base.group_user,1,1,1,0
+access_8265_custom_reports_tags_group_system,Custom Reports Tags group_system,BugFix-Studio-Misc.model_x_custom_reports_tag,base.group_system,1,1,1,1
+access_1680_x_project_task_worksheet_template_1_access,x_project_task_worksheet_template_1_access,BugFix-Studio-Misc.model_x_project_task_worksheet_template_1,hr_contract.group_hr_contract_manager,1,1,1,1
+access_1681_x_project_task_worksheet_template_1_access,x_project_task_worksheet_template_1_access,BugFix-Studio-Misc.model_x_project_task_worksheet_template_1,survey.group_survey_user,1,1,1,1
+access_8538_read_access_to_x_bve_salesreport,read access to x_bve.salesreport,BugFix-Studio-Misc.model_x_bve_salesreport,,1,0,0,0
+access_8575_read_access_to_x_bve_samplebalancemovementreport,read access to x_bve.samplebalancemovementreport,BugFix-Studio-Misc.model_x_bve_samplebalancemovementreport,,1,0,0,0
+access_8519_read_access_to_x_bve_test1,read access to x_bve.test1,BugFix-Studio-Misc.model_x_bve_test1,,1,0,0,0
+access_8262_custom_reports_line_group_user,custom_reports_line group_user,BugFix-Studio-Misc.model_x_custom_reports_line_c55e7,base.group_user,1,1,1,0
+access_8261_custom_reports_line_group_system,custom_reports_line group_system,BugFix-Studio-Misc.model_x_custom_reports_line_c55e7,base.group_system,1,1,1,1
+access_8294_material_request_mt_line_group_user,material_request_mt_line group_user,BugFix-Studio-Misc.model_x_material_request_mt_line_9a011,base.group_user,1,1,1,0
+access_8293_material_request_mt_line_group_system,material_request_mt_line group_system,BugFix-Studio-Misc.model_x_material_request_mt_line_9a011,base.group_system,1,1,1,1
+access_8270_material_request_tes_line_group_user,material_request_tes_line group_user,BugFix-Studio-Misc.model_x_material_request_tes_line_3301b,base.group_user,1,1,1,0
+access_8269_material_request_tes_line_group_system,material_request_tes_line group_system,BugFix-Studio-Misc.model_x_material_request_tes_line_3301b,base.group_system,1,1,1,1
+access_6032_jin_maintenance_maintenance_users,Jin - Maintenance + Maintenance users,BugFix-Studio-Misc.model_x_x_studio_request_line,,1,1,1,0
+access_6107_jin_maintenance_maintenance_users,Jin - Maintenance + Maintenance users,BugFix-Studio-Misc.model_x_x_studio_request_line,,1,0,0,0

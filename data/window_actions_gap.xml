@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: 28 gap window actions -->
+<odoo>
+
+
+  <record id="act_window_3349_jinasena_custom_reports_tags" model="ir.actions.act_window">
+    <field name="name">Jinasena Custom Reports Tags</field>
+    <field name="res_model">x_custom_reports_tag</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_2380_sales_model_debug" model="ir.actions.act_window">
+    <field name="name">Sales Model Debug</field>
+    <field name="res_model">x_sales_model_debug</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_3592_sales_report" model="ir.actions.act_window">
+    <field name="name">Sales Report</field>
+    <field name="res_model">x_bve.salesreport</field>
+    <field name="view_mode">tree,graph,pivot</field>
+    <field name="context">{'service_name': 'Sales Report'}</field>
+  </record>
+
+  <record id="act_window_3622_sample_balance_movement_report" model="ir.actions.act_window">
+    <field name="name">Sample Balance Movement Report</field>
+    <field name="res_model">x_bve.samplebalancemovementreport</field>
+    <field name="view_mode">tree,graph,pivot</field>
+    <field name="context">{'service_name': 'Sample Balance Movement Report'}</field>
+  </record>
+
+  <record id="act_window_845_test_01" model="ir.actions.act_window">
+    <field name="name">TEST 01</field>
+    <field name="res_model">x_test_1</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_843_test_app" model="ir.actions.act_window">
+    <field name="name">TEST APP</field>
+    <field name="res_model">x_test_1</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_1666_test_form" model="ir.actions.act_window">
+    <field name="name">TEST FORM</field>
+    <field name="res_model">x_test_form</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_1686_test_model_link" model="ir.actions.act_window">
+    <field name="name">TEST MODEL LINK</field>
+    <field name="res_model">x_test_model_link</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_1685_test_model_primary" model="ir.actions.act_window">
+    <field name="name">TEST MODEL PRIMARY</field>
+    <field name="res_model">x_test_model_primary</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_842_test_1" model="ir.actions.act_window">
+    <field name="name">TEST-1</field>
+    <field name="res_model">x_test_1</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_849_test01" model="ir.actions.act_window">
+    <field name="name">TEST01</field>
+    <field name="res_model">x_test_1</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_847_test01" model="ir.actions.act_window">
+    <field name="name">TEST01</field>
+    <field name="res_model">x_test_1</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_848_test02" model="ir.actions.act_window">
+    <field name="name">TEST02</field>
+    <field name="res_model">x_test02</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_3279_test02" model="ir.actions.act_window">
+    <field name="name">TEST02</field>
+    <field name="res_model">x_test02</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+
+  <record id="act_window_846_test02" model="ir.actions.act_window">
+    <field name="name">TEST02</field>
+    <field name="res_model">x_test02</field>
+    <field name="view_mode">tree,form,kanban</field>
+  </record>
+
+  <record id="act_window_3573_test_1" model="ir.actions.act_window">
+    <field name="name">Test 1</field>
+    <field name="res_model">x_bve.test1</field>
+    <field name="view_mode">tree,graph,pivot</field>
+    <field name="context">{'service_name': 'Test 1'}</field>
+  </record>
+
+  <record id="act_window_844_test_app_02" model="ir.actions.act_window">
+    <field name="name">Test App 02</field>
+    <field name="res_model">x_testapp</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_2109_test_layout" model="ir.actions.act_window">
+    <field name="name">Test Layout</field>
+    <field name="res_model">x_test_layout</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_1687_test_model_link_2" model="ir.actions.act_window">
+    <field name="name">Test Model Link 2</field>
+    <field name="res_model">x_test_model_link_2</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_809_testapp" model="ir.actions.act_window">
+    <field name="name">TestApp</field>
+    <field name="res_model">x_testapp</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_812_testdepartment" model="ir.actions.act_window">
+    <field name="name">TestDepartment</field>
+    <field name="res_model">x_testdepartment</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_1134_work_center_costing" model="ir.actions.act_window">
+    <field name="name">Work Center Costing</field>
+    <field name="res_model">x_work_center_costing</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_2014_worksheets" model="ir.actions.act_window">
+    <field name="name">Worksheets</field>
+    <field name="res_model">x_project_task_worksheet_template_1</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{'edit': False, 'create': False, 'delete': False, 'duplicate': False}</field>
+  </record>
+
+  <record id="act_window_1749_config_settings" model="ir.actions.act_window">
+    <field name="name">config.settings</field>
+    <field name="res_model">x_res_config_settings</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_1139_product_test" model="ir.actions.act_window">
+    <field name="name">product.test</field>
+    <field name="res_model">x_product_test</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_3206_website_faqs" model="ir.actions.act_window">
+    <field name="name">website FAQs</field>
+    <field name="res_model">x_website_faqs</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_3205_website_faq" model="ir.actions.act_window">
+    <field name="name">website.faq</field>
+    <field name="res_model">x_website_faq</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="act_window_2677_x_customer_groups" model="ir.actions.act_window">
+    <field name="name">x_customer_groups</field>
+    <field name="res_model">x_customer_groups</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+</odoo>

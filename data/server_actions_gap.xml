@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: 16 gap server actions -->
+<odoo>
+
+
+  <record id="server_action_1140_test_test_test" model="ir.actions.server">
+    <field name="name">TEST-TEST-TEST</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_product_test"/>
+    <field name="state">code</field>
+    <field name="usage">base_automation</field>
+    <field name="code"><![CDATA[
+#record['x_name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
+
+if record.x_name:
+ seq = env['ir.sequence'].next_by_code('purchase.request.seq')
+ record.write({'x_name': seq})
+
+
+
+
+    ]]></field>
+  </record>
+
+  <record id="server_action_1575_update_status" model="ir.actions.server">
+    <field name="name">Update Status</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">object_write</field>
+    <field name="usage">ir_actions_server</field>
+  </record>
+
+  <record id="server_action_1630_test_server_action" model="ir.actions.server">
+    <field name="name">TEST SERVER ACTION</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+raise UserError('Error 123')
+
+
+
+
+    ]]></field>
+  </record>
+
+  <record id="server_action_1743_sample_server_action" model="ir.actions.server">
+    <field name="name">sample server action</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+c = 0
+line_ids = []
+
+target_date = datetime.date.today()
+target_date = target_date.strftime('%Y-%m-%d')
+date_start = f'{target_date} 00:00:00'
+date_end = f'{target_date} 23:59:59'
+raise UserError(date_end)
+  
+#stock.quant
+#currentdate = datetime.datetime.today()
+#currentdate = record.x_studio_date.date()
+"""currentdate = datetime.date.today()
+raise UserError(currentdate)
+
+
+custom_currency = env['sale.order'].search([('name', '=', 'S00706')],limit=1)
+if custom_currency:
+  custom_currency.write({'x_studio_quotation_type':'Repair','x_studio_order_payment_method':custom_currency.partner_id.x_studio_payment_method})
+"""
+"""currentdate = datetime.datetime.today()
+    
+firstdayOfmonth = datetime.date(currentdate.year, currentdate.month, 1)
+next_month = currentdate.replace(day=28) + datetime.timedelta(days=4)
+lastdayOfmonth = next_month - datetime.timedelta(days=next_month.day)
+    
+if firstdayOfmonth.month != 1:
+  firstdayOfmonth2 = datetime.date(firstdayOfmonth.year, firstdayOfmonth.month-1, 1)
+else:
+  firstdayOfmonth2 = datetime.date(firstdayOfmonth.year-1, 12, 1)
+  
+next_month2 = firstdayOfmonth2.replace(day=28) + datetime.timedelta(days=4)
+lastdayOfmonth2 = next_month2 - datetime.timedelta(days=next_month2.day)
+
+if firstdayOfmonth.month > 2:
+  firstdayOfmonth3 = datetime.date(firstdayOfmonth.year, firstdayOfmonth.month-2, 1)
+else:
+  if firstdayOfmonth.month == 2:
+    firstdayOfmonth3 = datetime.date(firstdayOfmonth.year-1, 12, 1)
+  else:
+    firstdayOfmonth3 = datetime.date(firstdayOfmonth.year-1, 11, 1)
+        
+next_month3 = firstdayOfmonth3.replace(day=28) + datetime.timedelta(days=4)
+lastdayOfmonth3 = next_month3 - datetime.timedelta(days=next_month3.day)
+  
+raise UserError(str(firstdayOfmonth3) + "   " + str(lastdayOfmonth3))"""
+
+"""custom_currency = env['res.currency'].search([('id', '=', 2),('active', '=', True)],limit=1)
+if custom_currency:
+  custom_currency_rate = env['res.currency.rate'].search([('currency_id', '=', custom_currency.id),('name', '<=', datetime.datetime.today())],order='name desc',limit=1)
+  if custom_currency_rate.inverse_company_rate != 0:
+    raise UserError(str(custom_currency_rate.inverse_company_rate))"""
+
+
+
+"""product = env['product.template'].search([('default_code', '=', '02BB 023')], limit=1)
+if product:
+  whs = ''
+  for routes in product.route_ids:
+    if routes.supplier_wh_id:
+      whs += str(routes.supplier_wh_id.lot_stock_id.display_name) + '\n'
+       
+  raise UserError(whs)"""
+  
+  
+#charge_lines = env['x_trf_charges'].search([]) 
+#if charge_lines:
+#  for loop_lines in charge_lines:
+    #line_ids = [(6, 0, [loop_lines.id])]
+    #line_ids.append([0,0,loop_lines.id])
+    #line_ids.append((0, 0, loop_lines.id))
+    #line_ids.append(loop_lines.id)
+    #record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
+    #record.write({'x_studio_many2many_field_c0IAp':[(6, 0, [loop_lines.id])]})
+    #record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
+    #record.write({'x_studio_many2many_field_c0IAp':[(4, 0, [loop_lines.id])]})
+    #record.write({'x_studio_many2many_field_c0IAp':[(4, [loop_lines.id])]})
+
+  #line_ids = [19,20,21]
+  #record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)],'x_studio_charges_1':[(6, 0, line_ids)]})
+  #template.write({'attachment_ids':[(6, 0, [attachment.id])]})
+  #record.write({'x_studio_many2many_field_c0IAp':line_ids})
+  
+  #raise UserError(line_ids)
+    ]]></field>
+  </record>
+
+  <record id="server_action_2108_test_layout_changes" model="ir.actions.server">
+    <field name="name">Test - Layout Changes</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">base_automation</field>
+    <field name="code"><![CDATA[
+if record.id:
+  if record.x_studio_status_1 == 'Status 02':
+    #record.blocked  = False
+    #record.readonly  = True 
+    raise UserError("Found2")
+  else:
+    #record.blocked  = True
+    raise UserError("Found1")
+    
+
+
+
+
+
+    ]]></field>
+  </record>
+
+  <record id="server_action_2223_sample_server_action_1" model="ir.actions.server">
+    <field name="name">sample server action - 1</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+if record.id:
+  raise UserError(str(record.x_studio_date - datetime.datetime.now()))
+    ]]></field>
+  </record>
+
+  <record id="server_action_2268_sample_server_action_2" model="ir.actions.server">
+    <field name="name">sample server action-2</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+c = 0
+line_ids = []
+line_ids1 = []
+line_ids2 = []
+
+#line_ids = record.x_studio_many2many_field_c0IAp
+#line_ids1 = record.x_studio_charges_1
+#line_ids2 = line_ids + line_ids1
+#line_ids2 = "TEST-1"
+#line_ids2.append("TEST-1")
+#new_val = "TEST-1"
+#line_ids2.append([0,0,new_val])
+
+#record.write({'x_studio_charges_2':[(6, 0, record.x_studio_many2many_field_c0IAp.id)]})
+#record.write({'x_studio_charges_2':record.x_studio_many2many_field_c0IAp})
+#record.write({'x_studio_charges_2':line_ids + line_ids1})
+#record.write({'x_studio_charges_2':[(4, line_ids2, 0)]})
+  
+  
+
+#charge_lines = env['x_trf_charges'].search([]) 
+#if charge_lines:
+#  for loop_lines in charge_lines:
+    #line_ids = [(6, 0, [loop_lines.id])]
+    #line_ids.append([0,0,loop_lines.id])
+    #line_ids.append((0, 0, loop_lines.id))
+    #line_ids.append(loop_lines.id)
+    #record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
+    #record.write({'x_studio_many2many_field_c0IAp':[(6, 0, [loop_lines.id])]})
+    #record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
+    #record.write({'x_studio_many2many_field_c0IAp':[(4, 0, [loop_lines.id])]})
+    #record.write({'x_studio_many2many_field_c0IAp':[(4, [loop_lines.id])]})
+    #[(4, new_value_id, 0)]
+
+#line_ids = [19,20,21]
+#line_ids = [19]
+#record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)]})
+  #template.write({'attachment_ids':[(6, 0, [attachment.id])]})
+  #record.write({'x_studio_many2many_field_c0IAp':line_ids})
+  
+  #raise UserError(line_ids)
+
+#trf = env['x_trf_charges'].create({'x_name':"Test-1", 'x_studio_description':"Test-1"})
+#line_ids.append(trf.id)
+#record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)]})
+
+#for lins in record.x_studio_charges_1:
+ #line_ids.append(lins.id)
+ 
+#record.write({'x_studio_charges_2':[(6, 0, line_ids)]})
+
+#free_items = env['sale.order.line'].search([('order_id', '=', 1395)])
+#if free_items:
+    #raise UserError(str(free_items.product_id.display_name))
+  #for del_items in free_items:
+    #del_items.unlink()
+    #raise UserError(str(del_items.id))
+    #line_ids.append(del_items.product_uom_qty)
+  #record.write({'x_studio_test_char':line_ids})
+expired_so = env['sale.order'].search([('id', '=', 1404)])
+if expired_so:
+  serial_nos = env['stock.picking'].search([('sale_id', '=', expired_so.id)])
+  if serial_nos:
+    for nos in serial_nos:
+      for nos_lines in nos.move_line_ids_without_package:
+        if nos_lines.lot_id.id != False:
+          nos_lines.write({'lot_id':False, 'qty_done':1})
+  
+    ]]></field>
+  </record>
+
+  <record id="server_action_2578_sample_server_action_multi_company" model="ir.actions.server">
+    <field name="name">sample server action - multi company</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+partner = env['res.partner'].search([]) 
+if partner:
+  for partners in partner:
+    partners.write({'company_id':1})
+    ]]></field>
+  </record>
+
+  <record id="server_action_2586_sample_server_action_to_get_company_id" model="ir.actions.server">
+    <field name="name">sample server action - to get company id</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+#raise UserError(user.company_id.name)
+
+company_id = env.context.get('allowed_company_ids', [env.user.company_id.id])[0]
+company = env['res.company'].browse(company_id)
+
+raise UserError(company.name)
+
+product = env['product.template'].search([('default_code', '=ilike', record.default_code),('company_id', '=', company.id)], limit=1)
+if product:
+  for p in product:
+   if p.id != record.id:
+      raise UserError("Duplicate Found Try Another Code!")
+
+
+    ]]></field>
+  </record>
+
+  <record id="server_action_2599_sample_server_action_update_stock_quant" model="ir.actions.server">
+    <field name="name">sample server action - update stock.quant</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+stock = env['stock.quant'].search([('company_id', '=', False)]) 
+c= 0
+for stocks in stock:
+  stocks.write({'company_id':1}) 
+    ]]></field>
+  </record>
+
+  <record id="server_action_2797_chk_sample_server_action" model="ir.actions.server">
+    <field name="name">CHK - Sample Server Action</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+record.write({'x_studio_chk_server_action': record.x_studio_test_value + record.x_studio_testing_02})
+
+
+  
+    ]]></field>
+  </record>
+
+  <record id="server_action_2798_chk_sample_automated_action" model="ir.actions.server">
+    <field name="name">CHK - Sample Automated Action</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">base_automation</field>
+    <field name="code"><![CDATA[
+
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+#record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
+#record['x_start_time'] = datetime.datetime.now()
+
+
+#start_time = datetime.datetime.now()
+record.write({'x_studio_chk_atomated_action': record.x_studio_test_value + record.x_studio_testing_02 + 100})
+#end_time = datetime.datetime.now()
+
+
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+#record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
+#record['x_endt_time'] = datetime.datetime.now()
+#raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))
+    ]]></field>
+  </record>
+
+  <record id="server_action_2799_mst_odoo_data_clean_up" model="ir.actions.server">
+    <field name="name">MST - ODOO Data Clean-up</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+#charge_lines = env['pos.config'].search([])
+#charge_lines = env['pos.order'].search([])
+#charge_lines = env['pos.payment'].search([])
+#charge_lines = env['pos.session'].search([])
+#charge_lines = env['account.move.line'].search([])
+#charge_lines = env['account.move'].search([])
+#charge_lines = env['mrp.production'].search([])
+
+#charge_lines_1 = env['x_purchase_request'].search([])
+#for loop_lines in charge_lines_1:
+#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.unlink()
+  
+#charge_lines_2 = env['x_purchase_request_lin'].search([])
+#for loop_lines in charge_lines_2:
+#  loop_lines.write({'x_studio_status_1':'Draft'})
+#  loop_lines.unlink()
+  
+#charge_lines_3 = env['x_pr_non_inventory'].search([])  
+#for loop_lines in charge_lines_3:
+#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.unlink()
+  
+#charge_lines_4 = env['x_purchase_request_cas'].search([])
+#for loop_lines in charge_lines_4:
+#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.unlink()
+  
+#charge_lines_5 = env['x_pr_line_cash'].search([])
+#for loop_lines in charge_lines_5:
+#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.unlink()
+
+#charge_lines_6 = env['x_consignment_line'].search([])
+#for loop_lines in charge_lines_6:
+#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.unlink()
+  
+#charge_lines_7 = env['x_consignment_header'].search([])
+#for loop_lines in charge_lines_7:
+#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.unlink()
+  
+#charge_lines_8 = env['x_consignment_charge_l'].search([])
+#for loop_lines in charge_lines_8:
+#  loop_lines.unlink()
+  
+#charge_lines_9 = env['x_consignment_charge_h'].search([])
+#for loop_lines in charge_lines_9:
+#  loop_lines.unlink()
+
+#charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+#for loop_lines in charge_lines_10:
+#  loop_lines.unlink()
+  
+#charge_lines_11 = env['x_import_rfq_charge_he'].search([])
+#for loop_lines in charge_lines_11:
+#  loop_lines.unlink()
+  
+#charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+#for loop_lines in charge_lines_10:
+#  loop_lines.unlink()
+  
+#charge_lines_11 = env['x_import_rfq_charge_he'].search([])
+#for loop_lines in charge_lines_11:
+#  loop_lines.unlink()
+
+charge_lines_12 = env['x_mrp_bom_overhead_cos'].search([])
+for loop_lines in charge_lines_12:
+  loop_lines.unlink()
+  
+charge_lines_13 = env['x_mrp_bom_general_cost'].search([])
+for loop_lines in charge_lines_13:
+  loop_lines.unlink()
+  
+charge_lines_13 = env['x_mrp_bom_material_cos'].search([])
+for loop_lines in charge_lines_13:
+  loop_lines.unlink()
+  
+charge_lines_14 = env['x_mrp_bom_labour_cost'].search([])
+for loop_lines in charge_lines_14:
+  loop_lines.unlink()
+  
+charge_lines_15 = env['x_mass_produce_serial'].search([])
+for loop_lines in charge_lines_15:
+  loop_lines.unlink()
+  
+charge_lines_16 = env['x_mass_produce_serial_'].search([])
+for loop_lines in charge_lines_16:
+  loop_lines.unlink()
+  
+charge_lines_17 = env['x_temp_tp_invoice_line'].search([])
+for loop_lines in charge_lines_17:
+  loop_lines.unlink()
+  
+charge_lines_18 = env['x_temp_tp_invoice_head'].search([])
+for loop_lines in charge_lines_18:
+  loop_lines.unlink()
+  
+charge_lines_19 = env['x_tp_invoice_line'].search([])
+for loop_lines in charge_lines_19:
+  loop_lines.unlink()
+  
+charge_lines_20 = env['x_tp_invoice_header'].search([])
+for loop_lines in charge_lines_20:
+  loop_lines.unlink()
+  
+charge_lines_21 = env['x_lc_header'].search([])
+for loop_lines in charge_lines_21:
+  loop_lines.unlink()
+  
+charge_lines_22 = env['x_rm_daily_s1'].search([])
+for loop_lines in charge_lines_22:
+  loop_lines.unlink()
+
+charge_lines_23 = env['x_rm_daily_s2'].search([])
+for loop_lines in charge_lines_23:
+  loop_lines.unlink()
+  
+charge_lines_24 = env['x_rm_daily_s3'].search([])
+for loop_lines in charge_lines_24:
+  loop_lines.unlink()
+  
+charge_lines_25 = env['x_sales_report_model'].search([])
+for loop_lines in charge_lines_25:
+  loop_lines.write({'x_studio_selection_field_Fbw0x':'Draft'})
+  loop_lines.unlink()
+  
+charge_lines_26 = env['x_rm_customer_wise_inv'].search([])
+for loop_lines in charge_lines_26:
+  loop_lines.unlink()
+  
+charge_lines_27 = env['x_rm_cust_invoice_s1'].search([])
+for loop_lines in charge_lines_27:
+  loop_lines.unlink()
+  
+charge_lines_28 = env['x_test_model_primary'].search([])
+for loop_lines in charge_lines_28:
+  loop_lines.unlink()
+  
+charge_lines_29 = env['x_test_model_link'].search([])
+for loop_lines in charge_lines_29:
+  loop_lines.unlink()
+  
+charge_lines_30 = env['x_test_model_link_2'].search([])
+for loop_lines in charge_lines_30:
+  loop_lines.unlink()
+  
+charge_lines_31 = env['x_rm_sales_order_line'].search([])
+for loop_lines in charge_lines_31:
+  loop_lines.unlink()
+
+charge_lines_33 = env['x_rm_sales_prod_purch'].search([])
+for loop_lines in charge_lines_33:
+  loop_lines.unlink()
+  
+charge_lines_34 = env['x_rm_prod_summary_spli'].search([])
+for loop_lines in charge_lines_34:
+  loop_lines.unlink()
+  
+charge_lines_35 = env['x_rm_production_varian'].search([])
+for loop_lines in charge_lines_35:
+  loop_lines.unlink()
+  
+charge_lines_36 = env['x_rm_gross_margin_esti'].search([])
+for loop_lines in charge_lines_36:
+  loop_lines.unlink()
+  
+charge_lines_37 = env['x_rm_gross_margin_actu'].search([])
+for loop_lines in charge_lines_37:
+  loop_lines.unlink()
+  
+charge_lines_38 = env['x_rm_gross_margin_invo'].search([])
+for loop_lines in charge_lines_38:
+  loop_lines.unlink()
+  
+charge_lines_39 = env['x_rm_daily_sales_repor'].search([])
+for loop_lines in charge_lines_39:
+  loop_lines.unlink()
+  
+charge_lines_40 = env['x_rm_gross_margin_comp'].search([])
+for loop_lines in charge_lines_40:
+  loop_lines.unlink()
+  
+charge_lines_41 = env['x_rm_none_moving'].search([])
+for loop_lines in charge_lines_41:
+  loop_lines.unlink()
+  
+charge_lines_42 = env['x_rm_production_orders'].search([])
+for loop_lines in charge_lines_42:
+  loop_lines.unlink()
+  
+charge_lines_43 = env['x_rm_gross_margin_esti_line_7e86d'].search([])
+for loop_lines in charge_lines_43:
+  loop_lines.unlink()
+  
+charge_lines_44 = env['x_test_layout'].search([])
+for loop_lines in charge_lines_44:
+  loop_lines.unlink()
+  
+charge_lines_45 = env['x_temp_estimated'].search([])
+for loop_lines in charge_lines_45:
+  loop_lines.unlink()
+  
+charge_lines_46 = env['x_task_diagnosis'].search([])
+for loop_lines in charge_lines_46:
+  loop_lines.unlink()
+  
+charge_lines_47 = env['x_sales_model_debug'].search([])
+for loop_lines in charge_lines_47:
+  loop_lines.unlink()
+  
+charge_lines_48 = env['x_po_line_non_inventor'].search([])
+for loop_lines in charge_lines_48:
+  loop_lines.write({'x_studio_status':'Draft'})
+  loop_lines.unlink()
+  
+charge_lines_49 = env['x_po_non_inventory'].search([])
+for loop_lines in charge_lines_49:
+  loop_lines.write({'x_studio_status':'Draft'})
+  loop_lines.unlink()
+  
+charge_lines_50 = env['x_pump_price_costing'].search([])
+for loop_lines in charge_lines_50:
+  loop_lines.unlink()
+  
+charge_lines_51 = env['hr.attendance.overtime'].search([])
+for loop_lines in charge_lines_51:
+  loop_lines.unlink()
+  
+charge_lines_52 = env['x_con_consolidated_lin'].search([])
+for loop_lines in charge_lines_52:
+  loop_lines.write({'x_studio_status':'Draft'})
+  loop_lines.unlink()
+
+charge_lines_53 = env['x_con_consolidated_hea'].search([])
+for loop_lines in charge_lines_53:
+  loop_lines.write({'x_studio_status':'Draft'})
+  loop_lines.unlink()
+  
+charge_lines_54 = env['project.update'].search([])
+for loop_lines in charge_lines_54:
+  loop_lines.unlink()
+  
+charge_lines_55 = env['project.task'].search([])
+for loop_lines in charge_lines_55:
+  loop_lines.unlink()
+  
+charge_lines_56 = env['helpdesk.ticket'].search([])
+for loop_lines in charge_lines_56:
+  #loop_lines.write({'stage_id':1})
+  loop_lines.write({'stage_id':20})
+  loop_lines.unlink()
+  
+charge_lines_57 = env['account.analytic.distribution'].search([])
+for loop_lines in charge_lines_57:
+  loop_lines.unlink()
+  
+charge_lines_58 = env['project.milestone'].search([])
+for loop_lines in charge_lines_58:
+  loop_lines.unlink()
+  
+charge_lines_59 = env['planning.slot'].search([])
+for loop_lines in charge_lines_59:
+  loop_lines.unlink()
+  
+charge_lines_60 = env['project.sale.line.employee.map'].search([])
+for loop_lines in charge_lines_60:
+  loop_lines.unlink()
+
+#charge_lines_61 = env['project.project'].search([])
+#for loop_lines in charge_lines_61:
+#  loop_lines.unlink()
+
+charge_lines_62 = env['repair.order'].search([])
+for loop_lines in charge_lines_62:
+  loop_lines.write({'state':'draft'})
+  loop_lines.unlink()
+  
+charge_lines_63 = env['x_mr_config'].search([])
+for loop_lines in charge_lines_63:
+  loop_lines.write({'x_studio_status':'Draft'})
+  loop_lines.unlink()
+
+charge_lines_64 = env['x_material_request'].search([])
+for loop_lines in charge_lines_64:
+  loop_lines.write({'x_studio_selection_field_BupKG':'Draft'})
+  loop_lines.unlink()
+  
+charge_lines_65 = env['stock.landed.cost'].search([])
+for loop_lines in charge_lines_65:
+  loop_lines.write({'state':'draft'})
+  loop_lines.unlink()
+  
+charge_lines_66 = env['account.bank.statement'].search([])
+for loop_lines in charge_lines_66:
+  loop_lines.write({'state':'open'})
+  loop_lines.unlink()
+  
+#journals_to_delete = env['account.move'].search([('state', 'in', ['draft', 'posted'])])
+#for journal in journals_to_delete:
+#    journal_line_ids = journal.line_ids
+
+#    journal_line_ids.unlink()
+#    journal.unlink()
+#    journal.line_ids.with_context(force_delete=True).unlink()
+#    journal.with_context(force_delete=True).unlink()
+    
+journals_to_delete = env['account.move'].search([('state', 'in', ['draft', 'posted'])])
+for journal in journals_to_delete:
+  for line in journal.line_ids:
+    if line.reconciled:
+      line.remove_move_reconcile()
+
+  #journal.line_ids.unlink()
+  #journal.unlink()
+  
+  journal.line_ids.with_context(force_delete=True).unlink()
+  journal.with_context(force_delete=True).unlink()
+
+ 
+
+    ]]></field>
+  </record>
+
+  <record id="server_action_2831_mst_odoo_data_clean_up_001" model="ir.actions.server">
+    <field name="name">MST - ODOO Data Clean-up - 001</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+c = 0
+#raise UserError('done')
+#journals_to_delete = env['account.move'].search([('state', 'in', ['draft', 'posted'])])
+#for journal in journals_to_delete:
+#    journal_line_ids = journal.line_ids
+
+#    journal_line_ids.unlink()
+#    journal.unlink()
+#    journal.line_ids.with_context(force_delete=True).unlink()
+#    journal.with_context(force_delete=True).unlink()
+    
+
+# Get the user record
+#user = env['res.users'].search([('id', '=', 33)])  # Replace user_id with the actual user's ID
+
+# Set the related partner field to False (unlink it)
+#user.write({'partner_id': False})
+
+
+#item = env['product.template'].search([('company_id', '=', 2)])
+#for items in item:
+#  items.write({'categ_id': 1})
+  #items.write({'company_id': 3})
+
+#charge_lines_100 = env['mrp.eco.bom.change'].search([])
+#for loop_lines in charge_lines_100:
+#  #loop_lines.write({'state':'open'})
+#  loop_lines.unlink()
+ 
+
+#charge_lines_101 = env['stock.rule'].search(['warehouse_id', '=', 41])
+#for loop_lines in charge_lines_101:
+#  c += 1
+#  #loop_lines.write({'state':'open'})
+#  #loop_lines.unlink()
+#raise UserError(str(c))
+
+#workcentre = env['mrp.workcenter'].search([('company_id', '=', 3)])
+#for lines in workcentre:
+#  lines.write({'company_id': 1})
+
+#sturcture = env['x_structure_master'].search([])
+#for lines in sturcture:
+#  lines.write({'x_studio_status': 'Draft', 'x_studio_selection_field_ba7aA': 'Draft'})
+
+charge_lines_6 = env['mail.activity'].search([])
+for loop_lines in charge_lines_6:
+  loop_lines.unlink()
+
+    ]]></field>
+  </record>
+
+  <record id="server_action_2836_mst_odoo_data_clean_up_002" model="ir.actions.server">
+    <field name="name">MST - ODOO Data Clean-up - 002</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+c=0
+
+charge_lines_102 = env['mrp.bom'].search([('product_tmpl_id', '=', 334394)])
+for loop_lines in charge_lines_102:
+  c += 1
+  #loop_lines.write({'state':'open'})
+  loop_lines.unlink()
+  #loop_lines.with_context(force_delete=True).unlink()
+raise UserError(str(c))
+    ]]></field>
+  </record>
+
+  <record id="server_action_2883_mst_odoo_data_clean_up_004" model="ir.actions.server">
+    <field name="name">MST - ODOO Data Clean-up - 004</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_x_test02"/>
+    <field name="state">code</field>
+    <field name="usage">ir_actions_server</field>
+    <field name="code"><![CDATA[
+#charge_lines = env['pos.config'].search([])
+#charge_lines = env['pos.order'].search([])
+#charge_lines = env['pos.payment'].search([])
+#charge_lines = env['pos.session'].search([])
+#charge_lines = env['account.move.line'].search([])
+#charge_lines = env['account.move'].search([])
+#charge_lines = env['mrp.production'].search([])
+
+charge_lines_1 = env['x_purchase_request'].search([])
+for loop_lines in charge_lines_1:
+  loop_lines.write({'x_studio_status':'Draft'})
+  loop_lines.unlink()
+  
+charge_lines_2 = env['x_purchase_request_lin'].search([])
+for loop_lines in charge_lines_2:
+  loop_lines.write({'x_studio_status_1':'Draft'})
+  loop_lines.unlink()
+  
+
+    ]]></field>
+  </record>
+
+</odoo>
