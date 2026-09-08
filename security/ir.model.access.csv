@@ -79,3 +79,15 @@ access_x_testdepartment_admin,x_testdepartment admin,BugFix-Studio-Misc.model_x_
 access_x_website_faq_admin,x_website_faq admin,BugFix-Studio-Misc.model_x_website_faq,base.group_system,1,1,1,1
 access_x_website_faqs_admin,x_website_faqs admin,BugFix-Studio-Misc.model_x_website_faqs,base.group_system,1,1,1,1
 access_x_x_studio_request_line_admin,x_x_studio_request_line admin,BugFix-Studio-Misc.model_x_x_studio_request_line,base.group_system,1,1,1,1
+access_x_bve_salesreport_admin,x_bve.salesreport admin,BugFix-Studio-Misc.model_x_bve_salesreport,base.group_system,1,1,1,1
+access_x_bve_samplebalancemovementreport_admin,x_bve.samplebalancemovementreport admin,BugFix-Studio-Misc.model_x_bve_samplebalancemovementreport,base.group_system,1,1,1,1
+access_x_bve_test1_admin,x_bve.test1 admin,BugFix-Studio-Misc.model_x_bve_test1,base.group_system,1,1,1,1
+access_x_custom_reports_line_c55e7_admin,x_custom_reports_line_c55e7 admin,BugFix-Studio-Misc.model_x_custom_reports_line_c55e7,base.group_system,1,1,1,1
+access_x_custom_reports_tag_admin,x_custom_reports_tag admin,BugFix-Studio-Misc.model_x_custom_reports_tag,base.group_system,1,1,1,1
+access_x_customer_groups_admin,x_customer_groups admin,BugFix-Studio-Misc.model_x_customer_groups,base.group_system,1,1,1,1
+access_x_material_request_mt_line_9a011_admin,x_material_request_mt_line_9a011 admin,BugFix-Studio-Misc.model_x_material_request_mt_line_9a011,base.group_system,1,1,1,1
+access_x_material_request_tes_line_3301b_admin,x_material_request_tes_line_3301b admin,BugFix-Studio-Misc.model_x_material_request_tes_line_3301b,base.group_system,1,1,1,1
+access_x_project_task_worksheet_template_1_admin,x_project_task_worksheet_template_1 admin,BugFix-Studio-Misc.model_x_project_task_worksheet_template_1,base.group_system,1,1,1,1
+access_x_res_config_settings_admin,x_res_config_settings admin,BugFix-Studio-Misc.model_x_res_config_settings,base.group_system,1,1,1,1
+access_x_sales_model_debug_admin,x_sales_model_debug admin,BugFix-Studio-Misc.model_x_sales_model_debug,base.group_system,1,1,1,1
+access_x_work_center_costing_admin,x_work_center_costing admin,BugFix-Studio-Misc.model_x_work_center_costing,base.group_system,1,1,1,1
