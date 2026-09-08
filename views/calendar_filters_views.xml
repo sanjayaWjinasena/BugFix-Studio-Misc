@@ -7,7 +7,7 @@
       <field name="model">calendar.filters</field>
       <field name="type">tree</field>
       <field name="arch" type="xml">
-        <tree string="Calendar Filters"><field name="id" modifiers="{&quot;readonly&quot;: true}"/></tree>
+        <tree string="Calendar Filters"><field name="id" readonly="1"/></tree>
       </field>
     </record>
 

@@ -39,7 +39,7 @@
       <field name="model">x_test02</field>
       <field name="type">kanban</field>
       <field name="arch" type="xml">
-        <kanban string="TEST02"><templates><t t-name="kanban-box"><div t-attf-class="oe_kanban_card oe_kanban_global_click"><div class="o_kanban_card_content"><field name="x_name" modifiers="{}"/></div></div></t></templates></kanban>
+        <kanban string="TEST02"><templates><t t-name="kanban-box"><div t-attf-class="oe_kanban_card oe_kanban_global_click"><div class="o_kanban_card_content"><field name="x_name"/></div></div></t></templates></kanban>
       </field>
     </record>
 
