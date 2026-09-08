@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc primary views for calendar.filters (1 views) -->
+<odoo>
+  <data>
+    <record id="view_6070_default_tree_view_for_ir_model_747" model="ir.ui.view">
+      <field name="name">Default tree view for ir.model(747,)</field>
+      <field name="model">calendar.filters</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="Calendar Filters"><field name="id" modifiers="{&quot;readonly&quot;: true}"/></tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>

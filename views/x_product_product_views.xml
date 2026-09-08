@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc primary views for x_product_product (3 views) -->
+<odoo>
+  <data>
+    <record id="view_2608_default_form_view_for_x_product_product" model="ir.ui.view">
+      <field name="name">Default form view for x_product_product</field>
+      <field name="model">x_product_product</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+  <header/>
+  <sheet string="product.product">
+    <div class="oe_title">
+                <h1>
+                    <field name="x_name" required="1" placeholder="Name..."/>
+                </h1>
+            </div>
+    <group name="studio_group_e18956">
+      <group name="studio_group_e18956_left"/>
+      <group name="studio_group_e18956_right"/>
+    </group>
+  </sheet>
+</form>
+      </field>
+    </record>
+
+    <record id="view_2607_default_list_view_for_x_product_product" model="ir.ui.view">
+      <field name="name">Default list view for x_product_product</field>
+      <field name="model">x_product_product</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree>
+  <field name="x_name"/>
+</tree>
+      </field>
+    </record>
+
+    <record id="view_2609_default_search_view_for_x_product_product" model="ir.ui.view">
+      <field name="name">Default search view for x_product_product</field>
+      <field name="model">x_product_product</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search>
+  <field name="x_name"/>
+</search>
+      </field>
+    </record>
+
+  </data>
+</odoo>

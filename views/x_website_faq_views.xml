@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc primary views for x_website_faq (4 views) -->
+<odoo>
+  <data>
+    <record id="view_8027_default_form_view_for_x_website_faq" model="ir.ui.view">
+      <field name="name">Default form view for x_website_faq</field>
+      <field name="model">x_website_faq</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+  <header/>
+  <sheet string="website.faq">
+    <widget name="web_ribbon" text="Archived" bg_color="text-bg-danger" invisible="x_active"/>
+    <field name="x_active" invisible="1"/>
+    <div class="oe_title">
+                <h1>
+                    <field name="x_name" required="1" placeholder="Name..."/>
+                </h1>
+            </div>
+    <group name="studio_group_50153f">
+      <group name="studio_group_50153f_left"/>
+      <group name="studio_group_50153f_right"/>
+    </group>
+  </sheet>
+  <div class="oe_chatter" name="oe_chatter">
+    <field name="message_follower_ids"/>
+    <field name="message_ids"/>
+    <field name="activity_ids"/>
+  </div>
+</form>
+      </field>
+    </record>
+
+    <record id="view_8026_default_list_view_for_x_website_faq" model="ir.ui.view">
+      <field name="name">Default list view for x_website_faq</field>
+      <field name="model">x_website_faq</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree>
+  <field name="x_studio_sequence" widget="handle"/>
+  <field name="x_name"/>
+</tree>
+      </field>
+    </record>
+
+    <record id="view_8028_default_search_view_for_x_website_faq" model="ir.ui.view">
+      <field name="name">Default search view for x_website_faq</field>
+      <field name="model">x_website_faq</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search>
+  <field name="x_name"/>
+  <separator/>
+  <filter string="Archived" name="archived_x_website_faq" domain="[['x_active', '=', False]]"/>
+  <separator/>
+</search>
+      </field>
+    </record>
+
+    <record id="view_8245_website_published" model="ir.ui.view">
+      <field name="name">website.published</field>
+      <field name="model">x_website_faq</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="FAQ">
+    <sheet>
+        <group>
+            <field name="x_studio_question"/>
+            <field name="x_studio_answer"/>
+        </group>
+    </sheet>
+</form>
+      </field>
+    </record>
+
+  </data>
+</odoo>
