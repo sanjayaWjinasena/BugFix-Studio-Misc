@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- BugFix-Studio-Misc: menu sweep from routing audit (16 candidates) --><!-- Uses <menuitem> shortcut with dev-verified parent + action refs --><odoo>
+
+  <menuitem id="menu_1233_update_ot" name="Update OT" parent="hr_attendance.menu_hr_attendance_root" sequence="100"/>
+  <menuitem id="menu_633_work_center_costing" name="Work Center Costing" parent="mrp.menu_mrp_configuration" sequence="3"/>
+  <menuitem id="menu_1087_repair_job_details" name="Repair Job Details" parent="helpdesk.helpdesk_ticket_report_menu_main" sequence="3"/>
+  <menuitem id="menu_1860_paymaster_config" name="Paymaster Config" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_configuration" action="bank-data.action_paymaster_config" sequence="50"/>
+
+<!-- DROPPED menu_1644_website_faq: already pinned in dev --><!-- DROPPED menu_1645_website_faqs: already pinned in dev --><!-- DROPPED menu_1640_divisional_p_l: action account_asset.action_account_report_assets is a misresolution --><!-- DROPPED menu_1681_all_models: cdb_id 1681 already pinned as studio_usermodel_migration.menu_1681_all_models --><!-- DROPPED menu_1728_jinasena_reports: cdb_id 1728 already pinned as BugFix-Custom-Reports.menu_1728_jinasena_reports --><!-- DROPPED menu_1682_user_group_access_rights: cdb_id 1682 already pinned as studio_usermodel_migration.menu_1682_user_group_access_rights --><!-- DROPPED menu_1730_configuration: cdb_id 1730 already pinned as BugFix-Custom-Reports.menu_1730_configuration --><!-- DROPPED menu_1732_jinasena_custom_reports_tags: cdb_id 1732 already pinned as BugFix-Custom-Reports.menu_1732_jinasena_custom_reports_tags --></odoo>
