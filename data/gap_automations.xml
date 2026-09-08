@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: gap automations from audit gap-analysis -->
+<odoo>
+  <data noupdate="0">
+
+    <record id="server_action_2598_restrict_attachment_delete_for_approved_expenses" model="ir.actions.server">
+      <field name="name">Restrict Attachment Delete for Approved Expenses</field>
+      <field name="model_id" search="[('model', '=', 'ir.attachment')]"/>
+      <field name="state">code</field>
+      <field name="usage">base_automation</field>
+      <field name="code"><![CDATA[
+attach = env['ir.attachment'].search([('id', '=', record.id)])
+if attach:
+  for attachment in attach:
+    if attachment.res_model == 'hr.expense' and attachment.res_id:
+      expense = env['hr.expense'].browse(attachment.res_id)
+      if expense.sheet_id.state not in ['draft', 'submit']:
+        raise UserError("You cannot delete attachments from approved expenses.")
+
+
+
+
+      ]]></field>
+    </record>
+
+    <record id="base_automation_274_restrict_attachment_delete_for_approved_expenses" model="base.automation">
+      <field name="name">Restrict Attachment Delete for Approved Expenses</field>
+      <field name="active" eval="True"/>
+      <field name="model_id" search="[('model', '=', 'ir.attachment')]"/>
+      <field name="trigger">on_unlink</field>
+      <field name="action_server_ids" eval="[(6, 0, [ref('BugFix-Studio-Misc.server_action_2598_restrict_attachment_delete_for_approved_expenses')])]"/>
+    </record>
+
+    <record id="server_action_2798_chk_sample_automated_action" model="ir.actions.server">
+      <field name="name">CHK - Sample Automated Action</field>
+      <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+      <field name="state">code</field>
+      <field name="usage">base_automation</field>
+      <field name="code"><![CDATA[
+
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+#record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
+#record['x_start_time'] = datetime.datetime.now()
+
+
+#start_time = datetime.datetime.now()
+record.write({'x_studio_chk_atomated_action': record.x_studio_test_value + record.x_studio_testing_02 + 100})
+#end_time = datetime.datetime.now()
+
+
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+#record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
+#record['x_endt_time'] = datetime.datetime.now()
+#raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))
+      ]]></field>
+    </record>
+
+    <record id="base_automation_332_chk_sample_automated_action" model="base.automation">
+      <field name="name">CHK - Sample Automated Action</field>
+      <field name="active" eval="True"/>
+      <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+      <field name="trigger">on_create_or_write</field>
+      <field name="action_server_ids" eval="[(6, 0, [ref('BugFix-Studio-Misc.server_action_2798_chk_sample_automated_action')])]"/>
+    </record>
+
+  </data>
+</odoo>
