@@ -24,7 +24,7 @@
           <tree editable="bottom">
             <field name="x_studio_sequence" widget="handle"/>
             <field name="x_name"/>
-            <!-- STRIPPED field x_studio_many2one_field_sctrD not on model x_test_model_primary -->
+            <field name="x_studio_many2one_field_sctrD"/>
             <field name="id"/>
           </tree>
         </field>
