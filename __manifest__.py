@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.9',
+    'version': '17.0.0.0.10',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -90,6 +90,21 @@ etc.).
         'views/x_testdepartment_views.xml',
         'views/x_website_faq_views.xml',
         'views/x_website_faqs_views.xml',
+        'views/base_automation_ext_views.xml',
+        'views/crm_team_ext_views.xml',
+        'views/crm_team_member_ext_views.xml',
+        'views/res_currency_ext_views.xml',
+        'views/x_product_test_ext_views.xml',
+        'views/x_test02_ext_views.xml',
+        'views/x_test_1_ext_views.xml',
+        'views/x_test_form_ext_views.xml',
+        'views/x_test_layout_ext_views.xml',
+        'views/x_test_model_link_2_ext_views.xml',
+        'views/x_test_model_link_ext_views.xml',
+        'views/x_test_model_primary_ext_views.xml',
+        'views/x_testdepartment_ext_views.xml',
+        'views/x_website_faq_ext_views.xml',
+        'views/x_website_faqs_ext_views.xml',
     ],
     'installable': True,
     'auto_install': False,

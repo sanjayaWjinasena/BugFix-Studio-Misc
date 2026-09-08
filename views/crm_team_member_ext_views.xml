@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for crm.team.member (1 views) -->
+<odoo>
+  <data>
+    <record id="view_6118_odoo_studio_crm_team_member_view_tree_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: crm.team.member.view.tree customization</field>
+      <field name="model">crm.team.member</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="crm.crm_team_member_view_tree"/>
+      <field name="mode">extension</field>
+      <field name="priority">320</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='lead_month_count']" position="after">
+    <field name="company_id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

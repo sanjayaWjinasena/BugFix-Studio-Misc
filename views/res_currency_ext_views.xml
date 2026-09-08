@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for res.currency (1 views) -->
+<odoo>
+  <data>
+    <record id="view_4901_odoo_studio_res_currency_tree_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: res.currency.tree customization</field>
+      <field name="model">res.currency</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="base.view_currency_tree"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='active']" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

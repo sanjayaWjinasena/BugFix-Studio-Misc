@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for crm.team (2 views) -->
+<odoo>
+  <data>
+    <record id="view_6053_odoo_studio_crm_team_form_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: crm.team.form customization</field>
+      <field name="model">crm.team</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="sale.crm_team_salesteams_view_form"/>
+      <field name="mode">extension</field>
+      <field name="priority">120</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='members_users']/field[@name='member_ids']/kanban[1]" position="after">
+    <tree string="Users" decoration-info="state == 'new'">
+      <field name="name"/>
+      <!-- STRIPPED field login not on model crm.team -->
+      <!-- STRIPPED field lang not on model crm.team -->
+      <!-- STRIPPED field login_date not on model crm.team -->
+      <!-- STRIPPED field state not on model crm.team -->
+      <field name="company_id" groups="base.group_multi_company"/>
+      <field name="active"/>
+      <field name="create_uid" optional="show"/>
+      <field name="create_date" optional="show"/>
+      <field name="id" optional="show"/>
+    </tree>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_6079_odoo_studio_crm_team_tree_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: crm.team.tree customization</field>
+      <field name="model">crm.team</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="sales_team.crm_team_view_tree"/>
+      <field name="mode">extension</field>
+      <field name="priority">160</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='company_id']" position="after">
+    <field name="create_uid" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

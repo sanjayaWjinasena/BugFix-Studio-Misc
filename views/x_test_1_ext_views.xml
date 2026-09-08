@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_test_1 (1 views) -->
+<odoo>
+  <data>
+    <record id="view_3269_odoo_studio_default_list_view_for_x_test_1_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_test_1 customization</field>
+      <field name="model">x_test_1</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2410_default_list_view_for_x_test_1"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field name="x_studio_value" string="Value" required="1"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_website_faq (2 views) -->
+<odoo>
+  <data>
+    <record id="view_8029_odoo_studio_default_form_view_for_x_website_faq_customizatio_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_website_faq customization</field>
+      <field name="model">x_website_faq</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_8027_default_form_view_for_x_website_faq"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="replace"/>
+  <xpath expr="//field[@name='x_active']" position="attributes">
+    <attribute name="invisible">True</attribute>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_50153f_left']" position="inside">
+    <field name="x_studio_char_field_c3_1ipgu110c"/>
+    <field name="x_studio_question"/>
+    <field name="x_studio_answer"/>
+    <field name="x_studio_published_on_the_website"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_8031_odoo_studio_default_list_view_for_x_website_faq_customizatio_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_website_faq customization</field>
+      <field name="model">x_website_faq</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_8026_default_list_view_for_x_website_faq"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field name="x_studio_question" optional="show"/>
+    <field name="x_studio_answer" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

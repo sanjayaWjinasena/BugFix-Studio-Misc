@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_test_layout (1 views) -->
+<odoo>
+  <data>
+    <record id="view_4886_odoo_studio_default_list_view_for_x_test_layout_customizatio_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_test_layout customization</field>
+      <field name="model">x_test_layout</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_4882_default_list_view_for_x_test_layout"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]" position="attributes">
+    <attribute name="editable">bottom</attribute>
+  </xpath>
+  <xpath expr="//field[@name='x_studio_sequence']" position="after">
+    <field optional="show" name="x_studio_line_ids" string="Line Ids" column_invisible="1"/>
+  </xpath>
+  <xpath expr="//field[@name='x_name']" position="attributes">
+    <attribute name="column_invisible">1</attribute></xpath>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field optional="show" name="x_studio_product_id" string="Product Id"/>
+    <field optional="show" name="x_studio_quantity" string="Quantity"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

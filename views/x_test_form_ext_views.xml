@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_test_form (1 views) -->
+<odoo>
+  <data>
+    <record id="view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_test_form customization</field>
+      <field name="model">x_test_form</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_7e1a9f_left']" position="inside">
+    <field name="x_studio_char_field_3aVUG"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

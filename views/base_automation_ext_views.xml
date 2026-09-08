@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for base.automation (1 views) -->
+<odoo>
+  <data>
+    <record id="view_4868_odoo_studio_base_automation_tree_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: base.automation.tree customization</field>
+      <field name="model">base.automation</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="base_automation.view_base_automation_tree"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='model_id']" position="after">
+    <!-- STRIPPED field x_studio_status not on model base.automation -->
+    <!-- STRIPPED field x_studio_comments not on model base.automation -->
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

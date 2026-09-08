@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_test_model_primary (2 views) -->
+<odoo>
+  <data>
+    <record id="view_3830_odoo_studio_default_form_view_for_x_test_model_primary_custo_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_test_model_primary customization</field>
+      <field name="model">x_test_model_primary</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3828_default_form_view_for_x_test_model_primary"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_ac96f2_left']" position="inside">
+    <field name="x_studio_date_1" string="Date"/>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_ac96f2_right']" position="inside">
+    <field name="id"/>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_ac96f2']" position="after">
+    <notebook name="studio_notebook_3d4DV">
+      <page string="Link Model" name="studio_page_3d4DV">
+        <field name="x_studio_one2many_field_5VwpV" string="Line IDs">
+          <tree editable="bottom">
+            <field name="x_studio_sequence" widget="handle"/>
+            <field name="x_name"/>
+            <!-- STRIPPED field x_studio_many2one_field_sctrD not on model x_test_model_primary -->
+            <field name="id"/>
+          </tree>
+        </field>
+      </page>
+      <page string="Link Model 2" name="studio_page_CwfhF">
+      </page>
+    </notebook>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_3831_odoo_studio_default_list_view_for_x_test_model_primary_custo_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_test_model_primary customization</field>
+      <field name="model">x_test_model_primary</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3827_default_list_view_for_x_test_model_primary"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

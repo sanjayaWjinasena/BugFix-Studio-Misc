@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_testdepartment (2 views) -->
+<odoo>
+  <data>
+    <record id="view_2396_odoo_studio_default_form_view_for_x_testdepartment_customiza_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_testdepartment customization</field>
+      <field name="model">x_testdepartment</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2394_default_form_view_for_x_testdepartment"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_5691c0_left']" position="inside">
+    <field name="x_studio_code" string="Code"/>
+    <field name="x_studio_description" string="Description"/>
+    <field name="x_Description2" string="Description 2"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/group[1]/group[1]/field[1]" position="before">
+    <field widget="signature" name="x_studio_sig"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/group[1]/group[1]/field[1]" position="attributes">
+    <attribute name="string">Sig</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/group[1]/group[1]/field[1]" position="attributes">
+    <attribute name="required">1</attribute></xpath>
+  <xpath expr="/form[1]/sheet[1]/group[1]/group[1]/field[1]" position="replace"/>
+</data>
+      </field>
+    </record>
+
+    <record id="view_2397_test_departmet_desc_3_ext" model="ir.ui.view">
+      <field name="name">test_departmet_desc_3</field>
+      <field name="model">x_testdepartment</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2394_default_form_view_for_x_testdepartment"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_5691c0_left']" position="inside">
+    <field name="x_Description3" string="Description 3"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>

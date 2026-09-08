@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc EXTENSION views for x_test_model_link_2 (1 views) -->
+<odoo>
+  <data>
+    <record id="view_3842_odoo_studio_default_form_view_for_x_test_model_link_2_custom_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_test_model_link_2 customization</field>
+      <field name="model">x_test_model_link_2</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3840_default_form_view_for_x_test_model_link_2"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_861128_left']" position="inside">
+    <field name="x_studio_many2many_field_2PxmY" widget="many2many_tags"/>
+    <field name="x_studio_test_model_primary_2" string="TEST MODEL PRIMARY 2"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+  </data>
+</odoo>
