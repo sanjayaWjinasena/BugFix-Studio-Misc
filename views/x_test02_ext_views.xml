@@ -65,10 +65,10 @@
     <field name="x_studio_test_number_1" string="Test Number" invisible="1"/>
   </xpath>
   <xpath expr="//group[@name='studio_group_a1036a_right']" position="inside">
-    <field name="x_studio_types" string="Types"/>
-    <field name="x_studio_many2many_field_c0IAp" widget="many2many_tags" required="1"/>
-    <field name="x_studio_charges_1" string="Charges-1" widget="many2many_tags"/>
-    <field name="x_studio_charges_2" widget="many2many_tags" string="Charges-2"/>
+    <!-- STRIPPED field x_studio_types not on target -->
+    <!-- STRIPPED field x_studio_many2many_field_c0IAp not on target -->
+    <!-- STRIPPED field x_studio_charges_1 not on target -->
+    <!-- STRIPPED field x_studio_charges_2 not on target -->
     <field name="x_studio_test_char" string="Test Char"/>
     <field name="x_studio_test_value" string="Test Value"/>
     <field name="x_studio_testing" string="Testing"/>
