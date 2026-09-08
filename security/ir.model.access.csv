@@ -63,3 +63,19 @@ access_6939_access_validate_account_move,access.validate.account.move,account.mo
 access_7034_access_validate_account_move,access.validate.account.move,account.model_validate_account_move,,1,1,1,0
 access_6835_access_website_track_salesman,access_website_track_salesman,website.model_website_track,,1,0,0,0
 access_8704_access_website_track_rohana_read,access_website_track_rohana_read,website.model_website_track,,1,0,0,0
+access_x_account_winbooks_import_wizard_admin,x_account_winbooks_import_wizard admin,BugFix-Studio-Misc.model_x_account_winbooks_import_wizard,base.group_system,1,1,1,1
+access_x_product_product_admin,x_product_product admin,BugFix-Studio-Misc.model_x_product_product,base.group_system,1,1,1,1
+access_x_product_test_admin,x_product_test admin,BugFix-Studio-Misc.model_x_product_test,base.group_system,1,1,1,1
+access_x_studio_check_out_auto_admin,x_studio_check_out_auto admin,BugFix-Studio-Misc.model_x_studio_check_out_auto,base.group_system,1,1,1,1
+access_x_test02_admin,x_test02 admin,BugFix-Studio-Misc.model_x_test02,base.group_system,1,1,1,1
+access_x_test_1_admin,x_test_1 admin,BugFix-Studio-Misc.model_x_test_1,base.group_system,1,1,1,1
+access_x_test_form_admin,x_test_form admin,BugFix-Studio-Misc.model_x_test_form,base.group_system,1,1,1,1
+access_x_test_layout_admin,x_test_layout admin,BugFix-Studio-Misc.model_x_test_layout,base.group_system,1,1,1,1
+access_x_test_model_link_admin,x_test_model_link admin,BugFix-Studio-Misc.model_x_test_model_link,base.group_system,1,1,1,1
+access_x_test_model_link_2_admin,x_test_model_link_2 admin,BugFix-Studio-Misc.model_x_test_model_link_2,base.group_system,1,1,1,1
+access_x_test_model_primary_admin,x_test_model_primary admin,BugFix-Studio-Misc.model_x_test_model_primary,base.group_system,1,1,1,1
+access_x_testapp_admin,x_testapp admin,BugFix-Studio-Misc.model_x_testapp,base.group_system,1,1,1,1
+access_x_testdepartment_admin,x_testdepartment admin,BugFix-Studio-Misc.model_x_testdepartment,base.group_system,1,1,1,1
+access_x_website_faq_admin,x_website_faq admin,BugFix-Studio-Misc.model_x_website_faq,base.group_system,1,1,1,1
+access_x_website_faqs_admin,x_website_faqs admin,BugFix-Studio-Misc.model_x_website_faqs,base.group_system,1,1,1,1
+access_x_x_studio_request_line_admin,x_x_studio_request_line admin,BugFix-Studio-Misc.model_x_x_studio_request_line,base.group_system,1,1,1,1
