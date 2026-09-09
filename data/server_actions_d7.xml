@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc: Phase D7 SAs on standard-Odoo outlier models -->
-<odoo>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Studio-Misc: Phase D7 SAs on standard-Odoo outlier models --><odoo>
 
 
   <record id="server_action_2577_exp_validate_negative_quantities_d7" model="ir.actions.server">
@@ -8,11 +7,11 @@
     <field name="model_id" ref="hr_expense.model_hr_expense"/>
     <field name="state">code</field>
     <field name="usage">base_automation</field>
-    <field name="code"><![CDATA[if record.quantity < 0:
+    <field name="code">if record.quantity &lt; 0:
   raise UserError("Invalid quantity")
 
 
-]]></field>
+</field>
   </record>
 
   <record id="server_action_2827_jin_company_id_in_payment_terms_d7" model="ir.actions.server">
@@ -20,32 +19,10 @@
     <field name="model_id" ref="account.model_account_payment_term"/>
     <field name="state">code</field>
     <field name="usage">base_automation</field>
-    <field name="code"><![CDATA[company_id = env.context.get('allowed_company_ids', [env.user.company_id.id])[0]
+    <field name="code">company_id = env.context.get('allowed_company_ids', [env.user.company_id.id])[0]
 company = env['res.company'].browse(company_id)
 
-record['company_id'] = company.id]]></field>
+record['company_id'] = company.id</field>
   </record>
 
-  <record id="server_action_2465_user_group_change_notify_d7" model="ir.actions.server">
-    <field name="name">User Group Change - Notify</field>
-    <field name="model_id" ref="base.model_res_groups"/>
-    <field name="state">mail_post</field>
-    <field name="usage">base_automation</field>
-    <field name="code"><![CDATA[# Available variables:
-#  - env: Odoo Environment on which the action is triggered
-#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
-#  - record: record on which the action is triggered; may be void
-#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
-#  - time, datetime, dateutil, timezone: useful Python libraries
-#  - float_compare: Odoo function to compare floats based on specific precisions
-#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
-#  - UserError: Warning Exception to use with raise
-#  - Command: x2Many commands namespace
-# To return an action, assign: action = {...}
-
-
-
-]]></field>
-  </record>
-
-</odoo>
+  <!-- DROPPED server_action_2465_user_group_change_notify_d7: state=mail_post on non-mail.thread model res.groups --></odoo>
