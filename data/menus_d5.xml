@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc: Phase D5 combined - all 30 unique menus across cascade passes -->
+<!-- Studio-Misc: Phase D5 merged - 36 unique menus -->
 <odoo>
 
   <menuitem id="menu_346_units_of_measure_d5" name="Units of Measure" parent="sale.prod_config_main" action="uom.product_uom_form_action" sequence="0"/>
@@ -32,5 +32,11 @@
   <menuitem id="menu_1020_misc_charge_codes_d5" name="Misc. Charge Codes" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Accounting.action_1172_misc_charge_codes" sequence="6"/>
   <menuitem id="menu_1015_tariff_d5" name="Tariff" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="base.action_open_website" sequence="7"/>
   <menuitem id="menu_1024_charges_d5" name="Charges" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="base.action_open_website" sequence="8"/>
+  <menuitem id="menu_1016_tariff_master_d5" name="Tariff Master" parent="BugFix-Studio-Misc.menu_1015_tariff_d5" action="BugFix-Stock.act_window_2041_tariff_master" sequence="0"/>
+  <menuitem id="menu_1025_charges_d5" name="Charges" parent="BugFix-Studio-Misc.menu_1024_charges_d5" action="BugFix-Purchase.action_1164_charges" sequence="0"/>
+  <menuitem id="menu_1017_tariff_periods_d5" name="Tariff Periods" parent="BugFix-Studio-Misc.menu_1015_tariff_d5" action="BugFix-Purchase.act_window_1688_tariff_periods" sequence="1"/>
+  <menuitem id="menu_1026_duties_d5" name="Duties" parent="BugFix-Studio-Misc.menu_1024_charges_d5" action="BugFix-Purchase.action_1165_duties" sequence="1"/>
+  <menuitem id="menu_1018_tariff_rates_d5" name="Tariff Rates" parent="BugFix-Studio-Misc.menu_1015_tariff_d5" action="BugFix-Purchase.act_window_1162_tariff_rates" sequence="2"/>
+  <menuitem id="menu_1027_taxes_d5" name="Taxes" parent="BugFix-Studio-Misc.menu_1024_charges_d5" action="BugFix-Purchase.action_1166_taxes" sequence="2"/>
 
 </odoo>
