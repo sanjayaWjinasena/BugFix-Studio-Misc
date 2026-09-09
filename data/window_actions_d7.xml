@@ -1,15 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc: Phase D7 WAs on outlier models -->
-<odoo>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Studio-Misc: Phase D7 WAs on outlier models --><odoo>
 
 
-  <record id="act_window_2816_hr_expense_d7" model="ir.actions.act_window">
-    <field name="name">hr.expense</field>
-    <field name="res_model">hr.expense</field>
-    <field name="view_mode">kanban,tree,form,pivot,graph,activity</field>
-  </record>
-
-  <record id="act_window_2815_account_bank_statement_d7" model="ir.actions.act_window">
+  <!-- DROPPED act_window_2816_hr_expense_d7: model hr.expense not in Studio-Misc deps closure --><record id="act_window_2815_account_bank_statement_d7" model="ir.actions.act_window">
     <field name="name">account.bank.statement</field>
     <field name="res_model">account.bank.statement</field>
     <field name="view_mode">tree,form,pivot,graph</field>
@@ -57,33 +50,7 @@
     <field name="view_mode">tree,form</field>
   </record>
 
-  <record id="act_window_2239_customer_letter_report_d7" model="ir.actions.act_window">
-    <field name="name">Customer Letter Report</field>
-    <field name="res_model">helpdesk.team</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2306_ecos_d7" model="ir.actions.act_window">
-    <field name="name">ECOs</field>
-    <field name="res_model">mrp.eco.bom.change</field>
-    <field name="view_mode">tree,form</field>
-    <field name="domain">[('eco_id', '=', active_id)]</field>
-    <field name="context">{'search_default_eco_id': active_id,'default_eco_id': active_id}</field>
-  </record>
-
-  <record id="act_window_2876_helpdesk_team_helpdesk_team_d7" model="ir.actions.act_window">
-    <field name="name">Helpdesk Team (helpdesk.team)</field>
-    <field name="res_model">helpdesk.team</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2557_hr_attendance_overtime_d7" model="ir.actions.act_window">
-    <field name="name">hr.attendance.overtime</field>
-    <field name="res_model">hr.attendance.overtime</field>
-    <field name="view_mode">tree</field>
-  </record>
-
-  <record id="act_window_2494_inventory_routes_d7" model="ir.actions.act_window">
+  <!-- DROPPED act_window_2239_customer_letter_report_d7: model helpdesk.team not in Studio-Misc deps closure --><!-- DROPPED act_window_2306_ecos_d7: model mrp.eco.bom.change not in Studio-Misc deps closure --><!-- DROPPED act_window_2876_helpdesk_team_helpdesk_team_d7: model helpdesk.team not in Studio-Misc deps closure --><!-- DROPPED act_window_2557_hr_attendance_overtime_d7: model hr.attendance.overtime not in Studio-Misc deps closure --><record id="act_window_2494_inventory_routes_d7" model="ir.actions.act_window">
     <field name="name">Inventory routes</field>
     <field name="res_model">stock.route</field>
     <field name="view_mode">tree,form</field>
@@ -95,13 +62,7 @@
     <field name="view_mode">kanban,tree,form,pivot</field>
   </record>
 
-  <record id="act_window_2834_mrp_eco_bom_change_d7" model="ir.actions.act_window">
-    <field name="name">mrp.eco.bom.change</field>
-    <field name="res_model">mrp.eco.bom.change</field>
-    <field name="view_mode">form</field>
-  </record>
-
-  <record id="act_window_2821_pos_config_d7" model="ir.actions.act_window">
+  <!-- DROPPED act_window_2834_mrp_eco_bom_change_d7: model mrp.eco.bom.change not in Studio-Misc deps closure --><record id="act_window_2821_pos_config_d7" model="ir.actions.act_window">
     <field name="name">pos.config</field>
     <field name="res_model">pos.config</field>
     <field name="view_mode">kanban,tree,form</field>
@@ -131,13 +92,7 @@
     <field name="view_mode">kanban,tree,form</field>
   </record>
 
-  <record id="act_window_777_pr_type_d7" model="ir.actions.act_window">
-    <field name="name">PR Type</field>
-    <field name="res_model">purchase.requisition.type</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2471_product_categories_d7" model="ir.actions.act_window">
+  <!-- DROPPED act_window_777_pr_type_d7: model purchase.requisition.type not in Studio-Misc deps closure --><record id="act_window_2471_product_categories_d7" model="ir.actions.act_window">
     <field name="name">Product Categories</field>
     <field name="res_model">product.category</field>
     <field name="view_mode">tree,form</field>
@@ -155,87 +110,13 @@
     <field name="view_mode">kanban,tree,form</field>
   </record>
 
-  <record id="act_window_2805_project_milestone_d7" model="ir.actions.act_window">
-    <field name="name">project.milestone</field>
-    <field name="res_model">project.milestone</field>
-    <field name="view_mode">tree,form</field>
-  </record>
-
-  <record id="act_window_2806_project_sale_line_employee_map_d7" model="ir.actions.act_window">
-    <field name="name">project.sale.line.employee.map</field>
-    <field name="res_model">project.sale.line.employee.map</field>
-    <field name="view_mode">tree,form</field>
-  </record>
-
-  <record id="act_window_2878_project_stage_project_project_stage_d7" model="ir.actions.act_window">
-    <field name="name">Project Stage (project.project.stage)</field>
-    <field name="res_model">project.project.stage</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2875_purchase_agreement_types_purchase_requisition_type_d7" model="ir.actions.act_window">
-    <field name="name">Purchase Agreement Types (purchase.requisition.type)</field>
-    <field name="res_model">purchase.requisition.type</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_1696_purchase_agreements_d7" model="ir.actions.act_window">
-    <field name="name">Purchase Agreements</field>
-    <field name="res_model">purchase.requisition</field>
-    <field name="view_mode">tree,form</field>
-    <field name="domain">[('vendor_id', '=', active_id)]</field>
-    <field name="context">{'search_default_vendor_id': active_id,'default_vendor_id': active_id}</field>
-  </record>
-
-  <record id="act_window_776_purchase_requisition_d7" model="ir.actions.act_window">
-    <field name="name">Purchase Requisition</field>
-    <field name="res_model">purchase.requisition</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2811_purchase_requisition_line_d7" model="ir.actions.act_window">
-    <field name="name">purchase.requisition.line</field>
-    <field name="res_model">purchase.requisition.line</field>
-    <field name="view_mode">tree,form</field>
-  </record>
-
-  <record id="act_window_2874_purchase_agreement_type_purchase_requisition_type_d7" model="ir.actions.act_window">
-    <field name="name">Purchase Agreement Type (purchase.requisition.type)</field>
-    <field name="res_model">purchase.requisition.type</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2812_purchase_requisition_d7" model="ir.actions.act_window">
-    <field name="name">purchase.requisition</field>
-    <field name="res_model">purchase.requisition</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_1570_sales_invoice_lines_d7" model="ir.actions.act_window">
-    <field name="name">Sales invoice lines</field>
-    <field name="res_model">account.edi.document</field>
-    <field name="view_mode">tree</field>
-  </record>
-
-  <record id="act_window_2882_sales_team_member_d7" model="ir.actions.act_window">
+  <!-- DROPPED act_window_2805_project_milestone_d7: model project.milestone not in Studio-Misc deps closure --><!-- DROPPED act_window_2806_project_sale_line_employee_map_d7: model project.sale.line.employee.map not in Studio-Misc deps closure --><!-- DROPPED act_window_2878_project_stage_project_project_stage_d7: model project.project.stage not in Studio-Misc deps closure --><!-- DROPPED act_window_2875_purchase_agreement_types_purchase_requisition_type_d7: model purchase.requisition.type not in Studio-Misc deps closure --><!-- DROPPED act_window_1696_purchase_agreements_d7: model purchase.requisition not in Studio-Misc deps closure --><!-- DROPPED act_window_776_purchase_requisition_d7: model purchase.requisition not in Studio-Misc deps closure --><!-- DROPPED act_window_2811_purchase_requisition_line_d7: model purchase.requisition.line not in Studio-Misc deps closure --><!-- DROPPED act_window_2874_purchase_agreement_type_purchase_requisition_type_d7: model purchase.requisition.type not in Studio-Misc deps closure --><!-- DROPPED act_window_2812_purchase_requisition_d7: model purchase.requisition not in Studio-Misc deps closure --><!-- DROPPED act_window_1570_sales_invoice_lines_d7: model account.edi.document not in Studio-Misc deps closure --><record id="act_window_2882_sales_team_member_d7" model="ir.actions.act_window">
     <field name="name">Sales Team Member</field>
     <field name="res_model">crm.team.member</field>
     <field name="view_mode">kanban,tree,form</field>
   </record>
 
-  <record id="act_window_2813_stock_landed_cos_d7" model="ir.actions.act_window">
-    <field name="name">stock.landed.cos</field>
-    <field name="res_model">stock.landed.cost</field>
-    <field name="view_mode">kanban,tree,form</field>
-  </record>
-
-  <record id="act_window_2814_stock_landed_cost_line_d7" model="ir.actions.act_window">
-    <field name="name">stock.landed.cost.line</field>
-    <field name="res_model">stock.landed.cost.lines</field>
-    <field name="view_mode">tree,form</field>
-  </record>
-
-  <record id="act_window_2095_stock_location_route_d7" model="ir.actions.act_window">
+  <!-- DROPPED act_window_2813_stock_landed_cos_d7: model stock.landed.cost not in Studio-Misc deps closure --><!-- DROPPED act_window_2814_stock_landed_cost_line_d7: model stock.landed.cost.lines not in Studio-Misc deps closure --><record id="act_window_2095_stock_location_route_d7" model="ir.actions.act_window">
     <field name="name">stock.location.route</field>
     <field name="res_model">stock.route</field>
     <field name="view_mode">tree,form</field>

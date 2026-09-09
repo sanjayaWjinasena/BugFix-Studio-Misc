@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc: Phase D7 automations on outlier models -->
-<odoo>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Studio-Misc: Phase D7 automations on outlier models --><odoo>
 
 
   <record id="base_automation_208_janitha_ranasinghe_d7" model="base.automation">
@@ -24,11 +23,4 @@
     <field name="trigger">on_write</field>
   </record>
 
-  <record id="base_automation_261_exp_validate_negative_quantities_d7" model="base.automation">
-    <field name="name">EXP - Validate Negative Quantities</field>
-    <field name="active" eval="False"/>
-    <field name="model_id" ref="hr_expense.model_hr_expense"/>
-    <field name="trigger">on_create_or_write</field>
-  </record>
-
-</odoo>
+  <!-- DROPPED base_automation_261_exp_validate_negative_quantities_d7: model hr.expense not in Studio-Misc deps closure --></odoo>

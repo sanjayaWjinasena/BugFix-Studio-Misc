@@ -2,19 +2,7 @@
 <!-- Studio-Misc: Phase D7 SAs on standard-Odoo outlier models --><odoo>
 
 
-  <record id="server_action_2577_exp_validate_negative_quantities_d7" model="ir.actions.server">
-    <field name="name">EXP - Validate Negative Quantities</field>
-    <field name="model_id" ref="hr_expense.model_hr_expense"/>
-    <field name="state">code</field>
-    <field name="usage">base_automation</field>
-    <field name="code">if record.quantity &lt; 0:
-  raise UserError("Invalid quantity")
-
-
-</field>
-  </record>
-
-  <record id="server_action_2827_jin_company_id_in_payment_terms_d7" model="ir.actions.server">
+  <!-- DROPPED server_action_2577_exp_validate_negative_quantities_d7: model hr.expense not in Studio-Misc deps closure --><record id="server_action_2827_jin_company_id_in_payment_terms_d7" model="ir.actions.server">
     <field name="name">JIN - Company Id in Payment Terms</field>
     <field name="model_id" ref="account.model_account_payment_term"/>
     <field name="state">code</field>
