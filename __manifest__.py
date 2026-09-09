@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.23',
+    'version': '17.0.0.0.24',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -43,7 +43,19 @@ etc.).
     'depends': [
         'base_setup',
         'base_automation',   # for usage='base_automation' selection value
-        'mail',              # for _inherit=['mail.thread','mail.activity.mixin']
+        'mail',              # for _inherit=['mail.thread','mail.activity.mixin'
+        'hr_expense',
+        'documents_hr_expense',
+        'helpdesk',
+        'purchase_requisition',
+        'mrp_plm',
+        'mrp_landed_costs',
+        'stock_landed_costs',
+        'account_edi',
+        'industry_fsm_sale',
+        'hr_attendance',
+        'project',
+    ]
         'crm',
         'seed_master_data_and_settings',  # for company_id refs
         'sale_crm',
