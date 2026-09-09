@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Studio-Misc: Phase D3 ir.actions.report records -->
+<odoo>
+  <data>
+
+    <record id="action_report_2792_budget_report" model="ir.actions.report">
+      <field name="name">Budget Report</field>
+      <field name="model">crossovered.budget</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0</field>
+    </record>
+
+    <record id="action_report_3486_c01_sales_quotation" model="ir.actions.report">
+      <field name="name">C01 Sales Quotation</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3485_c02_sales_order_confirmation" model="ir.actions.report">
+      <field name="name">C02 Sales Order Confirmation</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3484_c03_customer_payment_receipt" model="ir.actions.report">
+      <field name="name">C03 Customer Payment Receipt</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3483_c04_sales_order_delivery_order_packing_slip" model="ir.actions.report">
+      <field name="name">C04 Sales Order - Delivery Order (Packing Slip)</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1</field>
+    </record>
+
+    <record id="action_report_3482_c05_proforma_invoice" model="ir.actions.report">
+      <field name="name">C05 Proforma Invoice</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2</field>
+    </record>
+
+    <record id="action_report_3476_c06_1_sales_invoice_non_vat_product_sale" model="ir.actions.report">
+      <field name="name">C06.1 Sales Invoice - Non VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1</field>
+    </record>
+
+    <record id="action_report_3562_c06_2_sales_invoice_non_vat_spares_sale" model="ir.actions.report">
+      <field name="name">C06.2 Sales Invoice - Non VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_3</field>
+    </record>
+
+    <record id="action_report_3563_c06_3_sales_invoice_vat_product_sale" model="ir.actions.report">
+      <field name="name">C06.3 Sales Invoice - VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_4</field>
+    </record>
+
+    <record id="action_report_3564_c06_4_sales_invoice_vat_spares_sale" model="ir.actions.report">
+      <field name="name">C06.4 Sales Invoice - VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_5</field>
+    </record>
+
+    <record id="action_report_3565_c06_5_sales_invoice_svat_product_sale" model="ir.actions.report">
+      <field name="name">C06.5 Sales Invoice - SVAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_6</field>
+    </record>
+
+    <record id="action_report_3566_c06_6_sales_invoice_svat_spares_sale" model="ir.actions.report">
+      <field name="name">C06.6 Sales Invoice - SVAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_7</field>
+    </record>
+
+    <record id="action_report_3438_c07_request_for_quotation" model="ir.actions.report">
+      <field name="name">C07 Request for Quotation</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">purchase.report_purchasequotation_copy_4</field>
+    </record>
+
+    <record id="action_report_3437_c08_purchase_order" model="ir.actions.report">
+      <field name="name">C08 Purchase Order </field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">purchase.report_purchasequotation_copy_3</field>
+      <field name="attachment_use" eval="True"/>
+      <field name="attachment">'C8 Purchase Order '</field>
+    </record>
+
+    <record id="action_report_3492_c09_repair_receipt" model="ir.actions.report">
+      <field name="name">C09 Repair Receipt</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2</field>
+    </record>
+
+    <record id="action_report_3494_c10_repair_estimate" model="ir.actions.report">
+      <field name="name">C10 Repair Estimate</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_1</field>
+    </record>
+
+    <record id="action_report_3495_c11_repair_quotation" model="ir.actions.report">
+      <field name="name">C11 Repair Quotation</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_2</field>
+    </record>
+
+    <record id="action_report_3496_c12_repair_invoice" model="ir.actions.report">
+      <field name="name">C12 Repair Invoice</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_3</field>
+    </record>
+
+    <record id="action_report_3516_c13_repair_aod" model="ir.actions.report">
+      <field name="name">C13 Repair AOD</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_10</field>
+    </record>
+
+    <record id="action_report_3515_c14_ready_for_collection_letter" model="ir.actions.report">
+      <field name="name">C14 Ready for collection letter</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_9</field>
+    </record>
+
+    <record id="action_report_3514_c15_final_notice" model="ir.actions.report">
+      <field name="name">C15 Final notice</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_8</field>
+    </record>
+
+    <record id="action_report_3513_c16_final_notice_estimated" model="ir.actions.report">
+      <field name="name">C16 Final notice - Estimated</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_7</field>
+    </record>
+
+    <record id="action_report_3512_c17_final_notice_scrappage" model="ir.actions.report">
+      <field name="name">C17 Final notice - Scrappage</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_6</field>
+    </record>
+
+    <record id="action_report_3511_c18_final_notice_estimated_scrappage" model="ir.actions.report">
+      <field name="name">C18 Final notice - Estimated Scrappage</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_5</field>
+    </record>
+
+    <record id="action_report_3510_c19_reminder_repair_reminding_letter" model="ir.actions.report">
+      <field name="name">C19 Reminder (Repair reminding letter)</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_4</field>
+    </record>
+
+    <record id="action_report_3368_custom_reports_report" model="ir.actions.report">
+      <field name="name">Custom Reports Report</field>
+      <field name="model">x_custom_reports</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_bd0f3923-a7f4-4086-bb6a-899bb01fd315</field>
+    </record>
+
+    <record id="action_report_3435_custom_reports_report" model="ir.actions.report">
+      <field name="name">Custom Reports Report</field>
+      <field name="model">x_custom_reports</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_96136e4a-ca46-4d87-890d-01114a610c91</field>
+    </record>
+
+    <record id="action_report_3436_custom_reports_report" model="ir.actions.report">
+      <field name="name">Custom Reports Report</field>
+      <field name="model">x_custom_reports</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_5beecb7c-3184-45c9-b2ed-2b6f709186da</field>
+    </record>
+
+    <record id="action_report_1684_customer_invoice_details" model="ir.actions.report">
+      <field name="name">Customer Invoice Details</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888</field>
+    </record>
+
+    <record id="action_report_2237_customer_letter" model="ir.actions.report">
+      <field name="name">Customer Letter</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_1</field>
+    </record>
+
+    <record id="action_report_1674_daily_sales_report" model="ir.actions.report">
+      <field name="name">Daily Sales Report</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8</field>
+    </record>
+
+    <record id="action_report_1728_daily_sales_report" model="ir.actions.report">
+      <field name="name">Daily Sales Report </field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_copy_1</field>
+    </record>
+
+    <record id="action_report_3491_helpdesk_team_report" model="ir.actions.report">
+      <field name="name">Helpdesk Team Report</field>
+      <field name="model">helpdesk.team</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_50c3b9df-c892-4cb5-97d5-e049b72e9f8b</field>
+    </record>
+
+    <record id="action_report_2420_helpdesk_ticket_report" model="ir.actions.report">
+      <field name="name">Helpdesk Ticket Report</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_78e655c4-b305-48ac-95e4-92166e28f8f8</field>
+    </record>
+
+    <record id="action_report_1631_import_rfq_charge_header_report" model="ir.actions.report">
+      <field name="name">Import RFQ Charge Header Report</field>
+      <field name="model">x_import_rfq_charge_he</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4</field>
+    </record>
+
+    <record id="action_report_2232_import_rfq_charge_line_report" model="ir.actions.report">
+      <field name="name">Import RFQ Charge Line Report</field>
+      <field name="model">x_import_rfq_charge_li</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3</field>
+    </record>
+
+    <record id="action_report_1635_indent_cost_estimation" model="ir.actions.report">
+      <field name="name">Indent Cost Estimation</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_2_copy_2_copy_1</field>
+    </record>
+
+    <record id="action_report_1634_indent_cost_estimation_working_backup" model="ir.actions.report">
+      <field name="name">Indent Cost Estimation - Working - Backup</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_2_copy_2</field>
+    </record>
+
+    <record id="action_report_3449_jinasena_quotation" model="ir.actions.report">
+      <field name="name">Jinasena Quotation</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d</field>
+    </record>
+
+    <record id="action_report_3445_jinasena_quotation_1" model="ir.actions.report">
+      <field name="name">Jinasena Quotation 1</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f</field>
+    </record>
+
+    <record id="action_report_3450_jinasena_sales_order" model="ir.actions.report">
+      <field name="name">Jinasena Sales Order</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_copy_1</field>
+    </record>
+
+    <record id="action_report_1739_production_order_wip" model="ir.actions.report">
+      <field name="name">Production Order - WIP</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_2111_project_gross_margin" model="ir.actions.report">
+      <field name="name">Project Gross Margin</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54</field>
+    </record>
+
+    <record id="action_report_2230_purchase_order_non_inventory_report" model="ir.actions.report">
+      <field name="name">Purchase Order (Non-Inventory) Report</field>
+      <field name="model">x_po_non_inventory</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01</field>
+    </record>
+
+    <record id="action_report_2233_purchase_order_non_inventory_report" model="ir.actions.report">
+      <field name="name">Purchase Order (Non-Inventory) Report</field>
+      <field name="model">x_po_non_inventory</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a</field>
+    </record>
+
+    <record id="action_report_1622_purchase_order_lines" model="ir.actions.report">
+      <field name="name">Purchase Order Lines</field>
+      <field name="model">purchase.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4_copy_1</field>
+    </record>
+
+    <record id="action_report_1619_purchase_order_lines_backup" model="ir.actions.report">
+      <field name="name">Purchase Order Lines - Backup</field>
+      <field name="model">purchase.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4</field>
+    </record>
+
+    <record id="action_report_1621_purchase_order_lines_new" model="ir.actions.report">
+      <field name="name">Purchase Order Lines - New</field>
+      <field name="model">purchase.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4</field>
+    </record>
+
+    <record id="action_report_1597_purchase_order_list" model="ir.actions.report">
+      <field name="name">Purchase Order List</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5</field>
+    </record>
+
+    <record id="action_report_1523_purchase_report_report" model="ir.actions.report">
+      <field name="name">Purchase Report Report</field>
+      <field name="model">purchase.report</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_e6601e89-775c-4221-ae07-7bdeb3b6ea53</field>
+    </record>
+
+    <record id="action_report_1524_purchase_request_report_12345" model="ir.actions.report">
+      <field name="name">Purchase Request Report - 12345</field>
+      <field name="model">x_purchase_request</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_8e5bb340-e4f9-4a67-a37a-aaca87caebcc</field>
+    </record>
+
+    <record id="action_report_2240_repair_final_notice" model="ir.actions.report">
+      <field name="name">Repair Final Notice</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_2241_repair_final_notice_scrappage" model="ir.actions.report">
+      <field name="name">Repair Final Notice - Scrappage</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_2094_repair_receipt" model="ir.actions.report">
+      <field name="name">Repair Receipt</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb</field>
+    </record>
+
+    <record id="action_report_2093_repair_status" model="ir.actions.report">
+      <field name="name">Repair Status</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_4ba14515-b356-4e1d-8b52-1811bba71761</field>
+    </record>
+
+    <record id="action_report_3490_resolutions_report" model="ir.actions.report">
+      <field name="name">Resolutions Report</field>
+      <field name="model">x_resolutions</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_e996c666-0ac8-4b32-a472-c92b4d11fdc1</field>
+    </record>
+
+    <record id="action_report_1736_sales_details_for_incentive_calculation" model="ir.actions.report">
+      <field name="name">Sales Details for Incentive Calculation </field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_1596_sales_order_lines" model="ir.actions.report">
+      <field name="name">Sales Order Lines</field>
+      <field name="model">sale.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d</field>
+    </record>
+
+    <record id="action_report_3446_sales_order_report" model="ir.actions.report">
+      <field name="name">Sales Order Report</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d</field>
+    </record>
+
+    <record id="action_report_1713_sales_report_model_report" model="ir.actions.report">
+      <field name="name">Sales Report Model Report</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d</field>
+    </record>
+
+    <record id="action_report_3567_template_c06_1_sales_invoice_non_vat_product_sale" model="ir.actions.report">
+      <field name="name">Template C06.1 Sales Invoice - Non VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_8</field>
+    </record>
+
+    <record id="action_report_3477_template_c06_2_sales_invoice_non_vat_spares_sale" model="ir.actions.report">
+      <field name="name">Template C06.2 Sales Invoice - Non VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3478_template_c06_3_sales_invoice_vat_product_sale" model="ir.actions.report">
+      <field name="name">Template C06.3 Sales Invoice - VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3479_template_c06_4_sales_invoice_vat_spares_sale" model="ir.actions.report">
+      <field name="name">Template C06.4 Sales Invoice - VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3480_template_c06_5_sales_invoice_svat_product_sale" model="ir.actions.report">
+      <field name="name">Template C06.5 Sales Invoice - SVAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3481_template_c06_6_sales_invoice_svat_spares_sale" model="ir.actions.report">
+      <field name="name">Template C06.6 Sales Invoice - SVAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+
+    <record id="action_report_3447_template_c09_repair_receipt" model="ir.actions.report">
+      <field name="name">Template C09 Repair Receipt</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_1</field>
+    </record>
+
+    <record id="action_report_3448_template_c10_repair_estimate" model="ir.actions.report">
+      <field name="name">Template C10 Repair Estimate</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_2</field>
+    </record>
+
+    <record id="action_report_3451_template_c11_repair_quotation" model="ir.actions.report">
+      <field name="name">Template C11 Repair Quotation</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_3</field>
+    </record>
+
+    <record id="action_report_3452_template_c12_repair_invoice" model="ir.actions.report">
+      <field name="name">Template C12 Repair Invoice</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_4</field>
+    </record>
+
+    <record id="action_report_3453_template_c13_repair_aod" model="ir.actions.report">
+      <field name="name">Template C13 Repair AOD</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_5</field>
+    </record>
+
+    <record id="action_report_3457_template_c14_ready_for_collection_letter" model="ir.actions.report">
+      <field name="name">Template C14 Ready for collection letter</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_6</field>
+    </record>
+
+    <record id="action_report_3458_template_c15_final_notice" model="ir.actions.report">
+      <field name="name">Template C15 Final notice</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7</field>
+    </record>
+
+    <record id="action_report_3463_template_c16_final_notice_estimated" model="ir.actions.report">
+      <field name="name">Template C16 Final notice - Estimated</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_1</field>
+    </record>
+
+    <record id="action_report_3464_template_c17_final_notice_scrappage" model="ir.actions.report">
+      <field name="name">Template C17 Final notice - Scrappage</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_2</field>
+    </record>
+
+    <record id="action_report_3465_template_c18_final_notice_estimated_scrappage" model="ir.actions.report">
+      <field name="name">Template C18 Final notice - Estimated Scrappage</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_3</field>
+    </record>
+
+    <record id="action_report_3466_template_c19_reminder_repair_reminding_letter" model="ir.actions.report">
+      <field name="name">Template C19 Reminder (Repair reminding letter)</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_4</field>
+    </record>
+
+    <record id="action_report_1440_test_report_kapila" model="ir.actions.report">
+      <field name="name">Test report - Kapila</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3</field>
+    </record>
+
+  </data>
+</odoo>
