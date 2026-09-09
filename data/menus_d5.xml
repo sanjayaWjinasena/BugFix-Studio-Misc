@@ -2,18 +2,22 @@
 <!-- Studio-Misc: Phase D5 - remaining shippable menus -->
 <odoo>
 
-  <menuitem id="menu_1014_structures_d5" name="Structures" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Purchase.action_2056_structures" sequence="0"/>
-  <menuitem id="menu_1470_purchase_invoices_d5" name="Purchase Invoices" parent="BugFix-Studio-Misc.menu_1467_imports_d5" action="BugFix-Stock.action_2052_purchase_invoices" sequence="0"/>
-  <menuitem id="menu_1023_payment_methods_d5" name="Payment Methods" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Purchase.action_1388_payment_methods" sequence="1"/>
-  <menuitem id="menu_1469_purchase_invoice_lines_d5" name="Purchase Invoice Lines" parent="BugFix-Studio-Misc.menu_1467_imports_d5" action="BugFix-Stock.action_1662_purchase_invoice_lines" sequence="1"/>
-  <menuitem id="menu_1019_delivery_terms_d5" name="Delivery Terms" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Purchase.action_1205_delivery_terms" sequence="2"/>
-  <menuitem id="menu_1471_consolidated_consignments_d5" name="Consolidated Consignments" parent="BugFix-Studio-Misc.menu_1467_imports_d5" action="BugFix-Stock.action_2054_consolidated_consignments" sequence="2"/>
-  <menuitem id="menu_1576_all_tasks_d5" name="All Tasks" parent="BugFix-Studio-Misc.menu_142_my_tasks_d5" action="industry_fsm.project_task_action_all_fsm" sequence="2"/>
-  <menuitem id="menu_1022_custom_currency_rates_d5" name="Custom Currency Rates" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Accounting.action_2063_custom_currency_rates" sequence="3"/>
-  <menuitem id="menu_1472_letter_of_credit_d5" name="Letter of Credit" parent="BugFix-Studio-Misc.menu_1467_imports_d5" action="BugFix-Accounting.action_2071_letter_of_credit" sequence="3"/>
-  <menuitem id="menu_1013_import_charges_d5" name="Import Charges" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Purchase.action_1167_import_charges" sequence="5"/>
-  <menuitem id="menu_1020_misc_charge_codes_d5" name="Misc. Charge Codes" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="BugFix-Accounting.action_1172_misc_charge_codes" sequence="6"/>
-  <menuitem id="menu_1015_tariff_d5" name="Tariff" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="base.action_open_website" sequence="7"/>
-  <menuitem id="menu_1024_charges_d5" name="Charges" parent="BugFix-Studio-Misc.menu_1012_imports_configurations_d5" action="base.action_open_website" sequence="8"/>
+  <menuitem id="menu_346_units_of_measure_d5" name="Units of Measure" parent="sale.prod_config_main" action="uom.product_uom_form_action" sequence="0"/>
+  <menuitem id="menu_347_units_of_measure_categories_d5" name="Units of Measure Categories" parent="sale.prod_config_main" action="uom.product_uom_categ_form_action" sequence="1"/>
+  <menuitem id="menu_349_sales_orders_d5" name="Sales Orders" parent="sale.sale_order_menu" action="BugFix-Sales.act_window_2571_sales_orders" sequence="1"/>
+  <menuitem id="menu_618_timesheets_and_planning_analysis_d5" name="Timesheets and Planning Analysis" parent="project.menu_project_report" action="project_timesheet_forecast.project_timesheet_forecast_report_action" sequence="1"/>
+  <menuitem id="menu_1467_imports_d5" name="Imports" parent="purchase.menu_purchase_root" action="base.action_open_website" sequence="1"/>
+  <menuitem id="menu_142_my_tasks_d5" name="My Tasks" parent="project.menu_main_pm" action="industry_fsm.project_task_action_fsm" sequence="2"/>
+  <menuitem id="menu_1151_product_categories_d5" name="Product Categories" parent="BugFix-Stock.menu_1148_inventory_setup" action="BugFix-Studio-Misc.act_window_2471_product_categories_d7" sequence="2"/>
+  <menuitem id="menu_913_stages_d5" name="Stages" parent="helpdesk.helpdesk_menu_config" action="helpdesk.helpdesk_stage_action" sequence="3"/>
+  <menuitem id="menu_1152_uom_categories_d5" name="UoM Categories" parent="BugFix-Stock.menu_1148_inventory_setup" action="BugFix-Studio-Misc.act_window_2472_uom_categories" sequence="3"/>
+  <menuitem id="menu_222_online_synchronization_d5" name="Online Synchronization" parent="account.account_banks_menu" action="account_online_synchronization.action_account_online_link_form" sequence="4"/>
+  <menuitem id="menu_540_purchase_agreements_d5" name="Purchase Agreements" parent="purchase.menu_procurement_management" action="purchase_requisition.action_purchase_requisition" sequence="5"/>
+  <menuitem id="menu_942_tax_groups_d5" name="Tax Groups" parent="account.account_account_menu" action="BugFix-Accounting.action_1891_tax_groups" sequence="5"/>
+  <menuitem id="menu_1012_imports_configurations_d5" name="Imports Configurations" parent="purchase.menu_purchase_config" action="base.action_open_website" sequence="5"/>
+  <menuitem id="menu_256_account_tags_d5" name="Account Tags" parent="account.account_account_menu" action="account_accountant.account_tag_action" sequence="7"/>
+  <menuitem id="menu_257_account_groups_d5" name="Account Groups" parent="account.account_account_menu" action="account_accountant.action_account_group_tree" sequence="8"/>
+  <menuitem id="menu_1640_divisional_p_l_d5" name="Divisional P&amp;L" parent="account.menu_finance_reports" action="account_asset.action_account_report_assets" sequence="10"/>
+  <menuitem id="menu_1608_preparation_printers_d5" name="Preparation Printers" parent="point_of_sale.menu_point_of_sale" action="point_of_sale.action_pos_printer_form" sequence="99"/>
 
 </odoo>
