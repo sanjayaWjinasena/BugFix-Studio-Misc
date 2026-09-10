@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- BugFix-Studio-Misc: Phase F6 round 2 - TEST APP 05 tree (174 menus) -->
+<!-- BugFix-Studio-Misc: F6 round 2 - TEST APP 05 tree (all menus) -->
 <odoo>
   <menuitem id="menu_f6r2_test_app_05" name="TEST APP 05" sequence="0"/>
   <menuitem id="menu_f6r2_test_app_05_temp123" name="TEMP123" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1657_temp123" sequence="5"/>
@@ -38,7 +38,6 @@
   <menuitem id="menu_f6r2_test_app_05_rm_sales_prod_purch" name="RM Sales Prod. Purch." parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_1753_rm_sales_prod_purch" sequence="38"/>
   <menuitem id="menu_f6r2_test_app_05_rm_prod_summary_split" name="RM Prod. Summary Split" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_1754_rm_prod_summary_split" sequence="39"/>
   <menuitem id="menu_f6r2_test_app_05_rm_production_variance" name="RM Production Variance" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_1756_rm_production_variance" sequence="40"/>
-  <menuitem id="menu_f6r2_test_app_05_stock_move_1" name="Stock.Move" parent="menu_f6r2_test_app_05" action="BugFix-Stock.act_window_1757_stock_move" sequence="41"/>
   <menuitem id="menu_f6r2_test_app_05_stock_picking" name="stock.picking" parent="menu_f6r2_test_app_05" action="BugFix-Stock.aw_f4_stock_picking_stock_picking" sequence="42"/>
   <menuitem id="menu_f6r2_test_app_05_stock_location_route" name="stock.location.route" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2095_stock_location_route_d7" sequence="43"/>
   <menuitem id="menu_f6r2_test_app_05_rm_gross_margin_estimated" name="RM Gross Margin - Estimated" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2099_rm_gross_margin_estimated" sequence="44"/>
@@ -62,26 +61,20 @@
   <menuitem id="menu_f6r2_test_app_05_ss" name="SS" parent="menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2439_ss" sequence="65"/>
   <menuitem id="menu_f6r2_test_app_05_pump_price_costing" name="Pump Price Costing" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2491_pump_price_costing" sequence="68"/>
   <menuitem id="menu_f6r2_test_app_05_inventory_routes" name="Inventory routes" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2494_inventory_routes_d7" sequence="69"/>
-  <menuitem id="menu_f6r2_test_app_05_stock_picking_1" name="stock.picking" parent="menu_f6r2_test_app_05" action="BugFix-Stock.aw_f4_stock_picking_stock_picking" sequence="71"/>
   <menuitem id="menu_f6r2_test_app_05_mrp_workcenter_productivity" name="	mrp.workcenter.productivity" parent="menu_f6r2_test_app_05" action="BugFix-MRP.act_window_2555_mrp_workcenter_productivity" sequence="72"/>
   <menuitem id="menu_f6r2_test_app_05_hr_attendance_overtime" name="hr.attendance.overtime" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2557_hr_attendance_overtime_d7" sequence="73"/>
   <menuitem id="menu_f6r2_test_app_05_hr_expense_sheet" name="hr.expense.sheet" parent="menu_f6r2_test_app_05" action="BugFix-HR.act_window_2596_hr_expense_sheet" sequence="74"/>
-  <menuitem id="menu_f6r2_test_app_05_product_product_1" name="product.product" parent="menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2881_product_product" sequence="75"/>
   <menuitem id="menu_f6r2_test_app_05_x_purchase_request_lin" name="x_purchase_request_lin" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2590_x_purchase_request_lin" sequence="76"/>
   <menuitem id="menu_f6r2_test_app_05_x_purchase_request_cas" name="x_purchase_request_cas" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2592_x_purchase_request_cas" sequence="77"/>
   <menuitem id="menu_f6r2_test_app_05_x_pr_line_cash" name="x_pr_line_cash" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2594_x_pr_line_cash" sequence="78"/>
-  <menuitem id="menu_f6r2_test_app_05_hr_expense_sheet_1" name="hr.expense.sheet" parent="menu_f6r2_test_app_05" action="BugFix-HR.act_window_2596_hr_expense_sheet" sequence="79"/>
-  <menuitem id="menu_f6r2_test_app_05_x_po_non_inventory_1" name="x_po_non_inventory" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2602_x_po_non_inventory" sequence="80"/>
   <menuitem id="menu_f6r2_test_app_05_x_po_line_non_inventor" name="x_po_line_non_inventor" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2603_x_po_line_non_inventor" sequence="81"/>
   <menuitem id="menu_f6r2_test_app_05_x_con_consolidated_lin" name="x_con_consolidated_lin" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_2610_x_con_consolidated_lin" sequence="82"/>
-  <menuitem id="menu_f6r2_test_app_05_product_template_1" name="product.template" parent="menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2622_product_template" sequence="83"/>
   <menuitem id="menu_f6r2_test_app_05_account_move" name="account.move" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.act_window_2628_account_move" sequence="84"/>
   <menuitem id="menu_f6r2_test_app_05_x_configuration" name="x_configuration" parent="menu_f6r2_test_app_05" action="BugFix-Custom-Reports.act_window_2657_x_configuration" sequence="85"/>
   <menuitem id="menu_f6r2_test_app_05_x_customer_groups" name="x_customer_groups" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2677_x_customer_groups" sequence="86"/>
   <menuitem id="menu_f6r2_test_app_05_x_customer_posting_pro" name="x_customer_posting_pro" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2678_x_customer_posting_pro" sequence="87"/>
   <menuitem id="menu_f6r2_test_app_05_account_payment_method_line" name="	account.payment.method.line" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.act_window_2741_account_payment_method_line" sequence="88"/>
   <menuitem id="menu_f6r2_test_app_05_account_analytic_line" name="account.analytic.line" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.aw_f4_account_analytic_line_account_analytic_line" sequence="89"/>
-  <menuitem id="menu_f6r2_test_app_05_stock_picking_type_1" name="stock.picking.type" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_2784_stock_picking_type" sequence="91"/>
   <menuitem id="menu_f6r2_test_app_05_repair_order" name="repair.order" parent="menu_f6r2_test_app_05" action="Fix-repair.act_window_2807_repair_order" sequence="94"/>
   <menuitem id="menu_f6r2_test_app_05_stock_valuation_layer" name="stock.valuation.layer" parent="menu_f6r2_test_app_05" action="BugFix-Stock.act_window_2809_stock_valuation_layer" sequence="96"/>
   <menuitem id="menu_f6r2_test_app_05_x_material_request" name="x_material_request" parent="menu_f6r2_test_app_05" action="BugFix-Stock.act_window_2810_x_material_request" sequence="97"/>
@@ -91,42 +84,34 @@
   <menuitem id="menu_f6r2_test_app_05_stock_landed_cost_line" name="stock.landed.cost.line" parent="menu_f6r2_test_app_05" action="BugFix-Stock.act_window_2814_stock_landed_cost_line" sequence="101"/>
   <menuitem id="menu_f6r2_test_app_05_account_bank_statement" name="account.bank.statement" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2815_account_bank_statement" sequence="102"/>
   <menuitem id="menu_f6r2_test_app_05_hr_expense" name="hr.expense" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2816_hr_expense_d7" sequence="103"/>
-  <menuitem id="menu_f6r2_test_app_05_hr_expense_sheet_2" name="hr.expense.sheet" parent="menu_f6r2_test_app_05" action="BugFix-HR.act_window_2596_hr_expense_sheet" sequence="104"/>
   <menuitem id="menu_f6r2_test_app_05_pos_config" name="pos.config" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2818_pos_config" sequence="105"/>
   <menuitem id="menu_f6r2_test_app_05_pos_order" name="pos.order" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2819_pos_order" sequence="106"/>
   <menuitem id="menu_f6r2_test_app_05_pos_payment" name="pos.payment" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2820_pos_payment_d7" sequence="107"/>
-  <menuitem id="menu_f6r2_test_app_05_pos_config_1" name="pos.config" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2818_pos_config" sequence="108"/>
   <menuitem id="menu_f6r2_test_app_05_pos_session" name="pos.session" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2822_pos_session_d7" sequence="109"/>
   <menuitem id="menu_f6r2_test_app_05_calendar_attendee_information_calendar_attendee" name="Calendar Attendee Information - (calendar.attendee)" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2829_calendar_attendee_information_calendar_attendee" sequence="112"/>
   <menuitem id="menu_f6r2_test_app_05_calendar_filters" name="Calendar.filters" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2830_calendar_filters" sequence="113"/>
-  <menuitem id="menu_f6r2_test_app_05_calendar_filters_1" name="calendar.filters" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2832_calendar_filters" sequence="114"/>
   <menuitem id="menu_f6r2_test_app_05_calendar_attendee" name="calendar.attendee" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2833_calendar_attendee_d7" sequence="115"/>
   <menuitem id="menu_f6r2_test_app_05_mrp_eco_bom_change" name="mrp.eco.bom.change" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2834_mrp_eco_bom_change_d7" sequence="116"/>
   <menuitem id="menu_f6r2_test_app_05_stock_rule" name="stock.rule" parent="menu_f6r2_test_app_05" action="BugFix-Stock.act_window_2835_stock_rule" sequence="117"/>
-  <menuitem id="menu_f6r2_test_app_05_stock_picking_type_2" name="stock.picking.type" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_2784_stock_picking_type" sequence="118"/>
   <menuitem id="menu_f6r2_test_app_05_mrp_bom" name="mrp.bom" parent="menu_f6r2_test_app_05" action="BugFix-MRP.action_2838_mrp_bom" sequence="119"/>
   <menuitem id="menu_f6r2_test_app_05_companies_res_company" name="Companies (res.company)" parent="menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2840_companies_res_company" sequence="121"/>
   <menuitem id="menu_f6r2_test_app_05_coupon_rule" name="coupon.rule" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2841_coupon_rule" sequence="122"/>
   <menuitem id="menu_f6r2_test_app_05_coupon_reward" name="coupon.reward" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2842_coupon_reward" sequence="123"/>
   <menuitem id="menu_f6r2_test_app_05_purchase_agreement_types_purchase_requisition_ty" name="Purchase Agreement Types (purchase.requisition.type)" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2875_purchase_agreement_types_purchase_requisition_type_d7" sequence="125"/>
   <menuitem id="menu_f6r2_test_app_05_project_category_x_project_category" name="Project Category (x_project_category)" parent="menu_f6r2_test_app_05" action="BugFix-Project.action_2879_project_category_x_project_category" sequence="126"/>
-  <menuitem id="menu_f6r2_test_app_05_product_product_2" name="product.product" parent="menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2881_product_product" sequence="128"/>
   <menuitem id="menu_f6r2_test_app_05_journal" name="Journal" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_3275_journal" sequence="129"/>
   <menuitem id="menu_f6r2_test_app_05_account_analytic_account" name="account.analytic.account" parent="menu_f6r2_test_app_05" action="BugFix-Analytics.act_window_3276_account_analytic_account" sequence="130"/>
   <menuitem id="menu_f6r2_test_app_05_account_analytic_plan" name=" account.analytic.plan" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_3277_account_analytic_plan" sequence="131"/>
   <menuitem id="menu_f6r2_test_app_05_test02" name="TEST02" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_848_test02" sequence="132"/>
   <menuitem id="menu_f6r2_test_app_05_test_rm_gross_margin_actuals" name="Test - RM Gross Margin - Actuals" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_3623_test_rm_gross_margin_actuals" sequence="133"/>
-  <menuitem id="menu_f6r2_test_app_05_1" name="" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1261_temp_consignment_header" sequence="23"/>
   <menuitem id="menu_f6r2_test_app_05_costing_worksheet" name="Costing Worksheet" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2529_costing_worksheet" sequence="89"/>
-  <menuitem id="menu_f6r2_test_app_05_imports_2" name="Imports" parent="menu_f6r2_test_app_05" sequence="1"/>
+  <menuitem id="menu_f6r2_test_app_05_imports" name="Imports" parent="menu_f6r2_test_app_05" sequence="1"/>
+  <menuitem id="menu_f6r2_test_app_05_projects" name="Projects" parent="menu_f6r2_test_app_05" sequence="2"/>
   <menuitem id="menu_f6r2_test_app_05_purchase_agreement_type_purchase_requisition_typ" name="Purchase Agreement Type (purchase.requisition.type)" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2874_purchase_agreement_type_purchase_requisition_type" sequence="129"/>
-  <menuitem id="menu_f6r2_test_app_05_stock_picking_2" name="stock.picking" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_1977_stock_picking_d7" sequence="57"/>
+  <menuitem id="menu_f6r2_test_app_05_sales" name="Sales" parent="menu_f6r2_test_app_05" sequence="3"/>
   <menuitem id="menu_f6r2_test_app_05_structure_master_x_structure_master" name="Structure Master (x_structure_master)" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2843_structure_master_x_structure_master" sequence="137"/>
   <menuitem id="menu_f6r2_test_app_05_temp_consignment_line" name="Temp Consignment Line" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1262_temp_consignment_line" sequence="24"/>
   <menuitem id="menu_f6r2_test_app_05_temp_consignment_header" name="temp Consignment Header" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1295_temp_consignment_header" sequence="23"/>
-  <menuitem id="menu_f6r2_test_app_05_temp_consignment_line_1" name="Temp Consignment Line" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1262_temp_consignment_line" sequence="24"/>
-  <menuitem id="menu_f6r2_test_app_05_temp_consignment_header_1" name="Temp Consignment Header" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1261_temp_consignment_header" sequence="23"/>
-  <menuitem id="menu_f6r2_test_app_05_temp_consignment_header_2" name="Temp Consignment Header" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_1261_temp_consignment_header" sequence="23"/>
   <menuitem id="menu_f6r2_test_app_05_x_structure_master" name="x_structure_master" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2869_x_structure_master" sequence="127"/>
   <menuitem id="menu_f6r2_test_app_05_projects_projects_project_project" name="Projects (project.project)" parent="menu_f6r2_test_app_05_projects" action="BugFix-Project.act_window_2877_projects_project_project" sequence="0"/>
   <menuitem id="menu_f6r2_test_app_05_sales_sales_team_member" name="Sales Team Member" parent="menu_f6r2_test_app_05_sales" action="BugFix-Studio-Misc.act_window_2882_sales_team_member_d7" sequence="0"/>
@@ -149,6 +134,8 @@
   <menuitem id="menu_f6r2_test_app_05_imports_tp_invoice_line" name="TP Invoice Line" parent="menu_f6r2_test_app_05_imports" action="BugFix-Accounting.action_1380_tp_invoice_line" sequence="11"/>
   <menuitem id="menu_f6r2_test_app_05_imports_purchase_agreement_types_purchase_requis" name="Purchase Agreement Types (purchase.requisition.type)" parent="menu_f6r2_test_app_05_imports" action="BugFix-Purchase.action_2873_purchase_agreement_types_purchase_requisition_type" sequence="13"/>
   <menuitem id="menu_f6r2_test_app_05_projects_project_project" name="project.project" parent="menu_f6r2_test_app_05_projects" action="BugFix-Project.aw_f4_project_project_project_project" sequence="0"/>
+  <menuitem id="menu_f6r2_test_app_05_imports_structures" name="Structures" parent="menu_f6r2_test_app_05_imports" sequence="0"/>
+  <menuitem id="menu_f6r2_test_app_05_imports_tariff" name="Tariff" parent="menu_f6r2_test_app_05_imports" sequence="12"/>
   <menuitem id="menu_f6r2_test_app_05_imports_structures_structure_master_x_structure_" name="Structure Master (x_structure_master)" parent="menu_f6r2_test_app_05_imports_structures" action="BugFix-Purchase.action_2843_structure_master_x_structure_master" sequence="0"/>
   <menuitem id="menu_f6r2_test_app_05_imports_tariff_tariff_master" name="Tariff Master" parent="menu_f6r2_test_app_05_imports_tariff" action="BugFix-Stock.act_window_2041_tariff_master" sequence="0"/>
   <menuitem id="menu_f6r2_test_app_05_imports_tariff_tariff_dates" name="Tariff Dates" parent="menu_f6r2_test_app_05_imports_tariff" action="BugFix-Purchase.act_window_2070_tariff_dates" sequence="1"/>
