@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: F6 round 3 - remaining 114 menus -->
+<odoo>
+  <menuitem id="menu_f6r3_all_models" name="All Models"/>
+  <menuitem id="menu_f6r3_jinasena_reports" name="Jinasena Reports"/>
+  <menuitem id="menu_f6r3_faqs" name="FAQs"/>
+  <menuitem id="menu_f6r3_" name="" action="BugFix-Purchase.action_1194_structure_details" sequence="11"/>
+  <menuitem id="menu_f6r3_inventory_warehouse" name="Inventory/wAREHOUSE"/>
+  <menuitem id="menu_f6r3_posting_profiles" name="Posting Profiles"/>
+  <menuitem id="menu_f6r3_tariff" name="Tariff" sequence="0"/>
+  <menuitem id="menu_f6r3_website_faq" name="Website FAQ"/>
+  <menuitem id="menu_f6r3_website_faq_website_faqs" name="website FAQs" parent="menu_f6r3_website_faq" action="BugFix-Studio-Misc.act_window_3206_website_faqs"/>
+  <menuitem id="menu_f6r3_jinasena_reports_jinasena_custom_reports" name="Jinasena Custom Reports" parent="menu_f6r3_jinasena_reports" action="BugFix-Custom-Reports.act_window_3347_jinasena_custom_reports"/>
+  <menuitem id="menu_f6r3_jinasena_reports_configuration" name="Configuration" parent="menu_f6r3_jinasena_reports" sequence="100"/>
+  <menuitem id="menu_f6r3_employees_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" sequence="101"/>
+  <menuitem id="menu_f6r3_faqs_website_faq" name="website.faq" parent="menu_f6r3_faqs" action="BugFix-Studio-Misc.act_window_3205_website_faq"/>
+  <menuitem id="menu_f6r3_posting_profiles_customer_posting_profile" name="Customer Posting Profile" parent="menu_f6r3_posting_profiles" action="BugFix-Accounting.action_779_customer_posting_profile"/>
+  <menuitem id="menu_f6r3_purchase" name="" parent="purchase.menu_purchase_root" action="BugFix-Purchase.action_2493_purchase_request_cash" sequence="9"/>
+  <menuitem id="menu_f6r3_purchase_cash_purchase" name="Cash purchase" parent="purchase.menu_purchase_root" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_imports" name="Imports" parent="purchase.menu_purchase_root" sequence="1"/>
+  <menuitem id="menu_f6r3_tariff_tariff_master" name="Tariff Master" parent="menu_f6r3_tariff" action="BugFix-Stock.act_window_2069_tariff_master" sequence="0"/>
+  <menuitem id="menu_f6r3_tariff_tariff_periods_x_tariff_date" name="Tariff Periods (x_tariff_date)" parent="menu_f6r3_tariff" action="BugFix-Purchase.act_window_2068_tariff_periods_x_tariff_date" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_purchase_invoices" name="Purchase Invoices" parent="BugFix-Stock.menu_f6_imports_01" action="BugFix-Stock.action_1256_purchase_invoice_header" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_imports_purchase_invoices" name="Purchase Invoices" parent="menu_f6r3_purchase_imports" action="BugFix-Stock.action_2052_purchase_invoices" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_cash_purchase_cash_purchase" name="Cash Purchase" parent="menu_f6r3_purchase_cash_purchase" action="BugFix-Purchase.action_2076_cash_purchase" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_purchase_invoice_lines" name="Purchase Invoice Lines" parent="BugFix-Stock.menu_f6_imports_01" action="BugFix-Stock.action_1663_purchase_invoice_line" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_imports_purchase_invoice_lines" name="Purchase Invoice Lines" parent="menu_f6r3_purchase_imports" action="BugFix-Stock.action_2886_purchase_invoice_lines" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_cash_purchase_cash_purchase_lines" name="Cash Purchase Lines" parent="menu_f6r3_purchase_cash_purchase" action="BugFix-Purchase.action_2084_cash_purchase_lines" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_consolidated_consignments" name="Consolidated Consignments" parent="BugFix-Stock.menu_f6_imports_01" action="BugFix-Stock.action_1410_con_consolidated_header" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_imports_consolidated_consignments" name="Consolidated Consignments" parent="menu_f6r3_purchase_imports" action="BugFix-Stock.action_2054_consolidated_consignments" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_imports_letter_of_credit" name="Letter of Credit" parent="menu_f6r3_purchase_imports" action="BugFix-Accounting.action_2071_letter_of_credit" sequence="3"/>
+  <menuitem id="menu_f6r3_jinasena_reports_configuration_jinasena_custom_reports_stage" name="Jinasena Custom Reports Stages" parent="menu_f6r3_jinasena_reports_configuration" action="BugFix-Custom-Reports.act_window_3348_jinasena_custom_reports_stages"/>
+  <menuitem id="menu_f6r3_jinasena_reports_configuration_jinasena_custom_reports_tags" name="Jinasena Custom Reports Tags" parent="menu_f6r3_jinasena_reports_configuration" action="BugFix-Studio-Misc.act_window_3349_jinasena_custom_reports_tags"/>
+  <menuitem id="menu_f6r3_payroll_configuration_custom_configuration" name="Custom Configuration" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_configuration" sequence="3"/>
+  <menuitem id="menu_f6r3_project_reporting_project_budgeted_cash_flow" name="Project Budgeted Cash Flow" parent="project.menu_project_report" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_con_consolidated_line" name="Con. Consolidated Line" parent="BugFix-Stock.menu_f6_imports_01" action="BugFix-Stock.action_1411_con_consolidated_line" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations" name="Imports Configurations" parent="purchase.menu_purchase_config" sequence="5"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration" name="Imports Configuration" parent="BugFix-Stock.menu_f6_imports_01" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_requisition_mgmt_purchase_order_non_inventory_purch" name="Purchase Order" parent="BugFix-Purchase.menu_f6_purchase_order_non_inventory" action="BugFix-Purchase.action_961_po_non_inventory" sequence="11"/>
+  <menuitem id="menu_f6r3_purchase_requisition_mgmt_cash_purchases_cash_purchase" name="Cash Purchase" parent="BugFix-Purchase.menu_f6_cash_purchases" action="BugFix-Purchase.action_2076_cash_purchase" sequence="11"/>
+  <menuitem id="menu_f6r3_purchase_requisition_mgmt_cash_purchases_cash_purchase_line" name="Cash Purchase Line" parent="BugFix-Purchase.menu_f6_cash_purchases" action="BugFix-Purchase.action_883_cash_purchase_lines" sequence="12"/>
+  <menuitem id="menu_f6r3_sales_configuration_sales_configurations" name="Sales Configurations" parent="sale.menu_sale_config" action="BugFix-Sales.act_window_1750_sales_configurations" sequence="5"/>
+  <menuitem id="menu_f6r3_sales_reporting_project_budgeted_cash_flow" name="Project Budgeted Cash Flow" parent="sale.menu_sale_report" sequence="4"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_import_charges" name="Import Charges" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Purchase.action_2055_import_charges" sequence="0"/>
+  <menuitem id="menu_f6r3_payroll_configuration_custom_configuration_paye_tax" name="Paye Tax" parent="menu_f6r3_payroll_configuration_custom_configuration" action="BugFix-HR.act_window_1559_paye_tax" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_structures" name="Structures" parent="menu_f6r3_purchase_configuration_imports_configurations" action="BugFix-Purchase.action_2056_structures" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_structures" name="Structures" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Purchase.action_1176_structure_master" sequence="1"/>
+  <menuitem id="menu_f6r3_payroll_configuration_custom_configuration_paye_tax_tags" name="Paye Tax Tags" parent="menu_f6r3_payroll_configuration_custom_configuration" action="BugFix-HR.act_window_1560_paye_tax_tags" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_payment_method" name="Payment Methods" parent="menu_f6r3_purchase_configuration_imports_configurations" action="BugFix-Purchase.action_1388_payment_methods" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_delivery_terms" name="Delivery Terms" parent="menu_f6r3_purchase_configuration_imports_configurations" action="BugFix-Sales.act_window_2060_delivery_terms" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_delivery_terms" name="Delivery Terms" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Sales.act_window_2060_delivery_terms" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_custom_currenc" name="Custom Currency Rates" parent="menu_f6r3_purchase_configuration_imports_configurations" action="BugFix-Accounting.action_2063_custom_currency_rates" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_misc_charge_codes" name="Misc. Charge Codes" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Accounting.action_2061_misc_charge_codes" sequence="5"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_import_charges" name="Import Charges" parent="menu_f6r3_purchase_configuration_imports_configurations" action="BugFix-Purchase.action_2055_import_charges" sequence="5"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_imports_ledger_set" name="Imports Ledger Setup" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Purchase.action_2062_imports_ledger_setup" sequence="6"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_misc_charge_co" name="Misc. Charge Codes" parent="menu_f6r3_purchase_configuration_imports_configurations" action="BugFix-Accounting.action_2061_misc_charge_codes" sequence="6"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_custom_currency_ra" name="Custom Currency Rates" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Accounting.action_1308_custom_currency" sequence="7"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_payment_methods" name="Payment Methods" parent="menu_f6r3_purchase_imports_01_imports_configuration" action="BugFix-Purchase.action_1388_payment_methods" sequence="8"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_custom_currency_rate" name="Custom Currency Rate" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Accounting.action_1309_custom_currency_rate" sequence="8"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_custom_currency_rates" name="Custom Currency Rates" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Accounting.action_1308_custom_currency" sequence="7"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_delivery_terms" name="Delivery Terms" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Sales.act_window_2060_delivery_terms" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_delivery_term_charges" name="Delivery Term Charges" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Purchase.action_1206_delivery_term_charges" sequence="4"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_import_charges" name="Import Charges" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Purchase.action_2055_import_charges" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_imports_ledger_setup" name="Imports Ledger Setup" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Purchase.action_2062_imports_ledger_setup" sequence="6"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_charges" name="Charges" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Purchase.action_1164_charges" sequence="4"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_misc_charges" name="Misc. Charges" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Accounting.action_2061_misc_charge_codes" sequence="5"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_structures" name="Structures" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Purchase.action_1176_structure_master" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_tariffs" name="Tariffs" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Stock.act_window_1159_tariffmaster" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_temp_structure_details_2" name="Temp Structure Details 2" parent="BugFix-Stock.menu_f6_setups" sequence="7"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_ttt_structure_master" name="ttt structure master" parent="BugFix-Stock.menu_f6_setups" action="BugFix-Stock.act_window_1203_ttt_structure_master" sequence="5"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_charges" name="Charges" parent="menu_f6r3_purchase_configuration_imports_configurations" sequence="8"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_tariff" name="Tariff" parent="menu_f6r3_purchase_imports_01_imports_configuration" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_charges" name="Charges" parent="menu_f6r3_purchase_imports_01_imports_configuration" sequence="4"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_tariff" name="Tariff" parent="menu_f6r3_purchase_configuration_imports_configurations" sequence="7"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_charges_charges" name="Charges" parent="menu_f6r3_purchase_imports_01_imports_configuration_charges" action="BugFix-Purchase.action_1164_charges" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_tariff_tariff_mast" name="Tariff Master" parent="menu_f6r3_purchase_imports_01_imports_configuration_tariff" action="BugFix-Stock.act_window_2069_tariff_master" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_tariff_tariff_" name="Tariff Master" parent="menu_f6r3_purchase_configuration_imports_configurations_tariff" action="BugFix-Stock.act_window_2069_tariff_master" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_charges_charge" name="Charges" parent="menu_f6r3_purchase_configuration_imports_configurations_charges" action="BugFix-Purchase.action_1164_charges" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_charges_duties" name="Duties" parent="menu_f6r3_purchase_imports_01_imports_configuration_charges" action="BugFix-Purchase.action_1165_duties" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_tariff_tariff_peri" name="Tariff Periods" parent="menu_f6r3_purchase_imports_01_imports_configuration_tariff" action="BugFix-Purchase.act_window_2039_tariff_periods" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_charges_duties" name="Duties" parent="menu_f6r3_purchase_configuration_imports_configurations_charges" action="BugFix-Purchase.action_1165_duties" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_charges_taxes" name="Taxes" parent="menu_f6r3_purchase_imports_01_imports_configuration_charges" action="BugFix-Purchase.action_2067_taxes" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_imports_01_imports_configuration_tariff_tariff_rate" name="Tariff Rates" parent="menu_f6r3_purchase_imports_01_imports_configuration_tariff" action="BugFix-Purchase.act_window_1162_tariff_rates" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_configuration_imports_configurations_charges_taxes" name="Taxes" parent="menu_f6r3_purchase_configuration_imports_configurations_charges" action="BugFix-Purchase.action_2067_taxes" sequence="2"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_misc_charges_misc_charge_codes" name="Misc Charge Codes" parent="menu_f6r3_purchase_configuration_setups_misc_charges" action="BugFix-Accounting.action_2061_misc_charge_codes" sequence="3"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_charges_charges" name="Charges" parent="menu_f6r3_purchase_configuration_setups_charges" action="BugFix-Purchase.action_1164_charges" sequence="0"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_charges_duties" name="Duties" parent="menu_f6r3_purchase_configuration_setups_charges" action="BugFix-Purchase.action_1165_duties" sequence="1"/>
+  <menuitem id="menu_f6r3_purchase_configuration_setups_charges_taxes" name="Taxes" parent="menu_f6r3_purchase_configuration_setups_charges" action="BugFix-Purchase.action_2067_taxes" sequence="2"/>
+</odoo>
