@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Phase E - 4 views for x_bve.samplebalancemovementreport -->
+<odoo>
+  <data>
+    <record id="view_9486_graph_analysis_e" model="ir.ui.view">
+      <field name="name">Graph Analysis</field>
+      <field name="model">x_bve.samplebalancemovementreport</field>
+      <field name="type">graph</field>
+      <field name="arch" type="xml">
+        <graph string="Graph Analysis" type="bar" stacked="True">
+                        <field name="x_bve_t1_account_id" type="row"/><field name="x_bve_t1_date" type="row"/><field name="x_bve_t1_debit" type="measure"/><field name="x_bve_t1_credit" type="measure"/><field name="x_bve_t1_balance" type="measure"/>
+                       </graph>
+      </field>
+    </record>
+
+    <record id="view_9485_pivot_analysis_e" model="ir.ui.view">
+      <field name="name">Pivot Analysis</field>
+      <field name="model">x_bve.samplebalancemovementreport</field>
+      <field name="type">pivot</field>
+      <field name="arch" type="xml">
+        <pivot string="Pivot Analysis">
+                       <field name="x_bve_t1_account_id" type="row"/><field name="x_bve_t1_date" type="row"/><field name="x_bve_t1_debit" type="measure"/><field name="x_bve_t1_credit" type="measure"/><field name="x_bve_t1_balance" type="measure"/>
+                       </pivot>
+      </field>
+    </record>
+
+    <record id="view_9487_search_bi_view_e" model="ir.ui.view">
+      <field name="name">Search BI View</field>
+      <field name="model">x_bve.samplebalancemovementreport</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search>
+                       <field name="x_bve_t1_account_id" type="row"/><field name="x_bve_t1_date" type="row"/><field name="x_bve_t1_debit" type="measure"/><field name="x_bve_t1_credit" type="measure"/><field name="x_bve_t1_balance" type="measure"/>
+                       </search>
+      </field>
+    </record>
+
+    <record id="view_9488_tree_analysis_e" model="ir.ui.view">
+      <field name="name">Tree Analysis</field>
+      <field name="model">x_bve.samplebalancemovementreport</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree create="false">
+                       <field name="x_bve_t1_account_id" sum="Account"/><field name="x_bve_t1_date" sum="Date"/><field name="x_bve_t1_debit" sum="Debit"/><field name="x_bve_t1_credit" sum="Credit"/><field name="x_bve_t1_balance" sum="Balance"/><field name="x_bve_t1_company_id" sum="Company"/>
+                       </tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>

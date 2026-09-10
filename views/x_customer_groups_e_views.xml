@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Phase E - 1 views for x_customer_groups -->
+<odoo>
+  <data>
+    <record id="view_5682_default_tree_view_for_ir_model_759_e" model="ir.ui.view">
+      <field name="name">Default tree view for ir.model(759,)</field>
+      <field name="model">x_customer_groups</field>
+      <field name="type">tree</field>
+      <field name="active" eval="False"/>
+      <field name="arch" type="xml">
+        <tree string="Customer Groups"><field name="x_name"/></tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>

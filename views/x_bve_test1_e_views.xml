@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Phase E - 4 views for x_bve.test1 -->
+<odoo>
+  <data>
+    <record id="view_9312_graph_analysis_e" model="ir.ui.view">
+      <field name="name">Graph Analysis</field>
+      <field name="model">x_bve.test1</field>
+      <field name="type">graph</field>
+      <field name="arch" type="xml">
+        <graph string="Graph Analysis" type="bar" stacked="True">
+                        
+                       </graph>
+      </field>
+    </record>
+
+    <record id="view_9311_pivot_analysis_e" model="ir.ui.view">
+      <field name="name">Pivot Analysis</field>
+      <field name="model">x_bve.test1</field>
+      <field name="type">pivot</field>
+      <field name="arch" type="xml">
+        <pivot string="Pivot Analysis">
+                       
+                       </pivot>
+      </field>
+    </record>
+
+    <record id="view_9313_search_bi_view_e" model="ir.ui.view">
+      <field name="name">Search BI View</field>
+      <field name="model">x_bve.test1</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search>
+                       
+                       </search>
+      </field>
+    </record>
+
+    <record id="view_9314_tree_analysis_e" model="ir.ui.view">
+      <field name="name">Tree Analysis</field>
+      <field name="model">x_bve.test1</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree create="false">
+                       <field name="x_bve_t1_code_prefix_end" sum="Code Prefix End"/><field name="x_bve_t1_name" sum="Name"/>
+                       </tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>
