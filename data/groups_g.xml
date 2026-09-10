@@ -7,7 +7,7 @@
   </record>
   <record id="group_g_purchase_jin_procurement_view_only" model="res.groups">
     <field name="name">Jin - Procurement - View Only</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_sales_jin_sales_add_edit_del_ca_customers" model="res.groups">
     <field name="name">Jin - Sales - Add/Edit/Del Ca Customers</field>
@@ -26,11 +26,11 @@
   </record>
   <record id="group_g_purchase_jin_procurement_end_user_imports" model="res.groups">
     <field name="name">Jin - Procurement - End User - Imports</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_helpdesk_jin_repair_full_rights" model="res.groups">
     <field name="name">Jin - Repair - Full Rights</field>
-    <field name="category_id" ref="helpdesk.module_category_helpdesk"/>
+    <field name="category_id" ref="base.module_category_services_helpdesk"/>
   </record>
   <record id="group_g_accounting_jin_projectinvoice" model="res.groups">
     <field name="name">Jin - ProjectInvoice</field>
@@ -56,27 +56,27 @@
   </record>
   <record id="group_g_helpdesk_jin_repair_minimum_rights" model="res.groups">
     <field name="name">Jin - Repair - Minimum Rights</field>
-    <field name="category_id" ref="helpdesk.module_category_helpdesk"/>
+    <field name="category_id" ref="base.module_category_services_helpdesk"/>
   </record>
   <record id="group_g_purchase_jin_inv_pr_approvers" model="res.groups">
     <field name="name">Jin - Inv PR Approvers</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_non_inv_pr_creators" model="res.groups">
     <field name="name">Jin - Non-Inv PR Creators</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_pr_administrator" model="res.groups">
     <field name="name">Jin - PR Administrator</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_po_invoicing_payment_non_inventory_credit" model="res.groups">
     <field name="name">Jin - PO Invoicing &amp; Payment - Non-Inventory Credit</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_po_approvers_po_amount_500_000" model="res.groups">
     <field name="name">Jin - PO Approvers: PO Amount &lt;= 500,000</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_sales_jin_sales_sales_margin_approvers" model="res.groups">
     <field name="name">Jin - Sales - Sales Margin Approvers</field>
@@ -84,11 +84,11 @@
   </record>
   <record id="group_g_purchase_jin_po_approvers_po_amount_500_000_1" model="res.groups">
     <field name="name">Jin - PO Approvers: PO Amount &gt; 500,000</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_create_ni_invoice_journal_for_ni_ca_po" model="res.groups">
     <field name="name">Jin - Create NI Invoice Journal for NI Ca PO</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_misc_pr_approval" model="res.groups">
     <field name="name">PR Approval</field>
@@ -102,11 +102,11 @@
   </record>
   <record id="group_g_purchase_jin_non_inv_pr_approvers" model="res.groups">
     <field name="name">Jin - Non-Inv PR Approvers</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_po_invoicing_payment_non_inventory_credit_copy" model="res.groups">
     <field name="name">Jin - PO Invoicing &amp; Payment - Non-Inventory Credit (copy)</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_manufacturing_jin_manufacturing_mo_operator" model="res.groups">
     <field name="name">Jin - Manufacturing - MO Operator</field>
@@ -114,7 +114,7 @@
   </record>
   <record id="group_g_helpdesk_jin_repair_ticket_creater" model="res.groups">
     <field name="name">Jin - Repair - Ticket Creater</field>
-    <field name="category_id" ref="helpdesk.module_category_helpdesk"/>
+    <field name="category_id" ref="base.module_category_services_helpdesk"/>
   </record>
   <record id="group_g_sales_jin_sales_bank_guarantee_approvers" model="res.groups">
     <field name="name">Jin - Sales - Bank Guarantee Approvers</field>
@@ -129,11 +129,11 @@
   </record>
   <record id="group_g_purchase_jin_pr_view_only" model="res.groups">
     <field name="name">Jin - PR View Only</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_inv_pr_creators" model="res.groups">
     <field name="name">Jin - Inv PR Creators</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_sales_jin_sales_pos_users" model="res.groups">
     <field name="name">Jin - Sales - POS Users</field>
@@ -160,7 +160,7 @@
   </record>
   <record id="group_g_purchase_jin_procurement_end_user_local" model="res.groups">
     <field name="name">Jin - Procurement - End User - Local</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
     <field name="comment">Testing the PO Approval Button:
 ==========================
 tab.Menus:
@@ -192,11 +192,11 @@ They have to be removed after testing.   - Already removed.
   </record>
   <record id="group_g_purchase_jin_po_goods_receivers" model="res.groups">
     <field name="name">Jin - PO Goods Receivers</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_purchase_jin_po_invoicing_payment_imports" model="res.groups">
     <field name="name">Jin - PO Invoicing &amp; Payment - Imports</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
   </record>
   <record id="group_g_sales_jin_sales_credit_note_approvers" model="res.groups">
     <field name="name">Jin - Sales - Credit Note Approvers</field>
@@ -212,7 +212,7 @@ They have to be removed after testing.   - Already removed.
   </record>
   <record id="group_g_purchase_jin_po_invoicing_payment_inventory_credit" model="res.groups">
     <field name="name"># Jin - PO Invoicing &amp; Payment - Inventory Credit</field>
-    <field name="category_id" ref="base.module_category_operations_purchase"/>
+    <field name="category_id" ref="base.module_category_inventory_purchase"/>
     <field name="comment">Original Name: Jin - PO Invoicing &amp; Payment - Inventory Credit</field>
   </record>
 </odoo>
