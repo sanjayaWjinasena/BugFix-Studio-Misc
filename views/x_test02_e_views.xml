@@ -10,19 +10,19 @@
       <field name="mode">extension</field>
       <field name="arch" type="xml">
         <data>
-  <xpath expr="//header/button[@name='1575']" position="before">
+  <xpath expr="//header/button[@name='1575']<!-- WARNING: xpath refs unresolvable action -->" position="before">
     <!-- STRIPPED action button aid=1743 unresolvable -->
   </xpath>
   
-  <xpath expr="//header/button[@name='1743']" position="after">
+  <xpath expr="//header/button[@name='1743']<!-- WARNING: xpath refs unresolvable action -->" position="after">
     <!-- STRIPPED action button aid=2268 unresolvable -->
   </xpath>
   
-  <xpath expr="//header/button[@name='2268']" position="after">
+  <xpath expr="//header/button[@name='2268']<!-- WARNING: xpath refs unresolvable action -->" position="after">
     <!-- STRIPPED action button aid=2797 unresolvable -->
   </xpath>
   
-  <xpath expr="//header/button[@name='1575']" position="attributes">
+  <xpath expr="//header/button[@name='1575']<!-- WARNING: xpath refs unresolvable action -->" position="attributes">
     <attribute name="invisible">(x_studio_status == 'S2') or (x_studio_status2 == 'S6')</attribute></xpath>
   
 </data>
@@ -48,13 +48,13 @@
       </page>
     </notebook>
   </xpath>
-  <xpath expr="//button[@name='1743']" position="attributes">
+  <xpath expr="//button[@name='1743']<!-- WARNING: xpath refs unresolvable action -->" position="attributes">
     <attribute name="studio_approval">True</attribute>
   </xpath>
-  <xpath expr="//button[@name='2268']" position="attributes">
+  <xpath expr="//button[@name='2268']<!-- WARNING: xpath refs unresolvable action -->" position="attributes">
     <attribute name="studio_approval">True</attribute>
   </xpath>
-  <xpath expr="//button[@name='1575']" position="after">
+  <xpath expr="//button[@name='1575']<!-- WARNING: xpath refs unresolvable action -->" position="after">
     <field widget="statusbar" options="{}" name="x_studio_pipeline_status_bar" string="Pipeline status bar" force_save="True"/>
   </xpath>
   <xpath expr="//group[@name='studio_group_a1036a_left']" position="inside">
