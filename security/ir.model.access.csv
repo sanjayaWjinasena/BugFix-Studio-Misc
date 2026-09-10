@@ -142,3 +142,9 @@ access_8270_material_request_tes_line_group_user,material_request_tes_line group
 access_8269_material_request_tes_line_group_system,material_request_tes_line group_system,BugFix-Studio-Misc.model_x_material_request_tes_line_3301b,base.group_system,1,1,1,1
 access_6032_jin_maintenance_maintenance_users,Jin - Maintenance + Maintenance users,BugFix-Studio-Misc.model_x_x_studio_request_line,,1,1,1,0
 access_6107_jin_maintenance_maintenance_users,Jin - Maintenance + Maintenance users,BugFix-Studio-Misc.model_x_x_studio_request_line,,1,0,0,0
+access_f3_test_1_group,TEST-1 GROUP,model_x_test_1,BugFix-Approvals.group_107_pr_approval,0,0,0,0
+access_f3_test02_group,TEST02 GROUP,model_x_test02,BugFix-Approvals.group_107_pr_approval,0,0,0,0
+access_f3_x_project_task_worksheet_template_1_access,x_project_task_worksheet_template_1_access,model_x_project_task_worksheet_template_1,project.group_project_manager,1,1,1,1
+access_f3_x_project_task_worksheet_template_1_access,x_project_task_worksheet_template_1_access,model_x_project_task_worksheet_template_1,project.group_project_user,1,1,1,1
+access_f3_product_product_group_user,product.product group_user,model_x_product_product,base.group_user,1,0,0,0
+access_f3_res_config_settings_group_user,res.config.settings group_user,model_x_res_config_settings,base.group_user,1,1,1,0
