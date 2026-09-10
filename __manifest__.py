@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.40',
+    'version': '17.0.0.0.41',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -78,6 +78,7 @@ etc.).
         'account',
     ],
     'data': [
+        'data/menus_f6.xml',
         'data/server_actions_f5.xml',
         # Security first so record rules can ref groups declared upstream.
         'security/ir.model.access.csv',
