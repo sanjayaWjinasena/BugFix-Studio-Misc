@@ -11,15 +11,15 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//header/button[@name='1575']" position="before">
-    <button type="action" name="1743" string="Update Records" class="btn-primary"/>
+    <!-- STRIPPED action button aid=1743 unresolvable -->
   </xpath>
   
   <xpath expr="//header/button[@name='1743']" position="after">
-    <button type="action" name="2268" string="Update Records - 2" class="btn-primary"/>
+    <!-- STRIPPED action button aid=2268 unresolvable -->
   </xpath>
   
   <xpath expr="//header/button[@name='2268']" position="after">
-    <button type="action" name="2797" string="Update Records - CHK" class="btn-primary"/>
+    <!-- STRIPPED action button aid=2797 unresolvable -->
   </xpath>
   
   <xpath expr="//header/button[@name='1575']" position="attributes">
