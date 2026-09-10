@@ -10,20 +10,13 @@
       <field name="mode">extension</field>
       <field name="arch" type="xml">
         <data>
-  <xpath expr="//header/button[@name='1575']<!-- WARNING: xpath refs unresolvable action -->" position="before">
-    <!-- STRIPPED action button aid=1743 unresolvable -->
-  </xpath>
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
   
-  <xpath expr="//header/button[@name='1743']<!-- WARNING: xpath refs unresolvable action -->" position="after">
-    <!-- STRIPPED action button aid=2268 unresolvable -->
-  </xpath>
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
   
-  <xpath expr="//header/button[@name='2268']<!-- WARNING: xpath refs unresolvable action -->" position="after">
-    <!-- STRIPPED action button aid=2797 unresolvable -->
-  </xpath>
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
   
-  <xpath expr="//header/button[@name='1575']<!-- WARNING: xpath refs unresolvable action -->" position="attributes">
-    <attribute name="invisible">(x_studio_status == 'S2') or (x_studio_status2 == 'S6')</attribute></xpath>
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
   
 </data>
       </field>
@@ -48,15 +41,9 @@
       </page>
     </notebook>
   </xpath>
-  <xpath expr="//button[@name='1743']<!-- WARNING: xpath refs unresolvable action -->" position="attributes">
-    <attribute name="studio_approval">True</attribute>
-  </xpath>
-  <xpath expr="//button[@name='2268']<!-- WARNING: xpath refs unresolvable action -->" position="attributes">
-    <attribute name="studio_approval">True</attribute>
-  </xpath>
-  <xpath expr="//button[@name='1575']<!-- WARNING: xpath refs unresolvable action -->" position="after">
-    <field widget="statusbar" options="{}" name="x_studio_pipeline_status_bar" string="Pipeline status bar" force_save="True"/>
-  </xpath>
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
+  <!-- STRIPPED xpath: numeric button ref unresolvable -->
   <xpath expr="//group[@name='studio_group_a1036a_left']" position="inside">
     <field name="x_studio_status_1" string="Status"/>
     <field name="x_studio_status" string="Status" invisible="1"/>
