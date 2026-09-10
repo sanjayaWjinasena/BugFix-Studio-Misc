@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Phase F5 - 2 server actions -->
+<odoo>
+  <record id="sa_f5_x_test02_chk_sample_automated_action" model="ir.actions.server">
+    <field name="name">CHK - Sample Automated Action</field>
+    <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+    <field name="state">code</field>
+    <field name="code"><![CDATA[
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+#record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
+#record['x_start_time'] = datetime.datetime.now()
+
+
+#start_time = datetime.datetime.now()
+record.write({'x_studio_chk_atomated_action': record.x_studio_test_value + record.x_studio_testing_02 + 100})
+#end_time = datetime.datetime.now()
+
+
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+#record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
+#record['x_endt_time'] = datetime.datetime.now()
+#raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))]]></field>
+    <field name="usage">base_automation</field>
+    <field name="binding_view_types">list,form</field>
+  </record>
+  <record id="sa_f5_x_test02_test_layout_changes" model="ir.actions.server">
+    <field name="name">Test - Layout Changes</field>
+    <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+    <field name="state">code</field>
+    <field name="code"><![CDATA[if record.id:
+  if record.x_studio_status_1 == 'Status 02':
+    #record.blocked  = False
+    #record.readonly  = True 
+    raise UserError("Found2")
+  else:
+    #record.blocked  = True
+    raise UserError("Found1")
+    
+
+
+
+
+]]></field>
+    <field name="usage">base_automation</field>
+    <field name="binding_view_types">list,form</field>
+  </record>
+</odoo>
