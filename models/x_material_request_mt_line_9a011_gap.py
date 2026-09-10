@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+from odoo import models, fields
+
+class XMaterialRequestMtLine9a011Gap(models.Model):
+    _inherit = 'x_material_request_mt_line_9a011'
+
+    x_material_request_mt_id = fields.Many2one(comodel_name='x_material_request_mt', string='X Material Request Mt')
+    x_name = fields.Char(string='Description', required=True)
