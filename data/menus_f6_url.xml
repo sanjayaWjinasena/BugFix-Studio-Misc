@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: F6 extra - 20 URL-action menus -->
+<odoo>
+  <menuitem id="menu_f6url_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" action="base.action_open_website" sequence="101"/>
+  <menuitem id="menu_f6url_repair_diagnosis" name="Repair Diagnosis" parent="helpdesk.menu_helpdesk_root" action="base.action_open_website" sequence="101"/>
+  <menuitem id="menu_f6url_consignment" name="Consignment" action="base.action_open_website" sequence="4"/>
+  <menuitem id="menu_f6url_test_menu" name="Test Menu" parent="stock.stock_picking_type_menu" action="base.action_open_website" sequence="101"/>
+  <menuitem id="menu_f6url_cash_purchase" name="Cash purchase" parent="purchase.menu_purchase_root" action="base.action_open_website" sequence="1"/>
+  <menuitem id="menu_f6url_charges" name="Charges" parent="BugFix-Studio-Misc.menu_f6r3_purchase_configuration_imports_configurations" action="base.action_open_website" sequence="8"/>
+  <menuitem id="menu_f6url_imports" name="Imports" parent="purchase.menu_purchase_root" action="base.action_open_website" sequence="1"/>
+  <menuitem id="menu_f6url_imports_configurations" name="Imports Configurations" parent="purchase.menu_purchase_config" action="base.action_open_website" sequence="5"/>
+  <menuitem id="menu_f6url_tariff" name="Tariff" parent="BugFix-Studio-Misc.menu_f6r3_purchase_imports_01_imports_configuration" action="base.action_open_website" sequence="2"/>
+  <menuitem id="menu_f6url_tariff_1" name="Tariff" parent="BugFix-Studio-Misc.menu_f6r3_purchase_configuration_imports_configurations" action="base.action_open_website" sequence="7"/>
+  <menuitem id="menu_f6url_my_menu_01" name="My Menu 01" action="base.action_open_website" sequence="1"/>
+  <menuitem id="menu_f6url_imp_temp" name="Imp Temp" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="base.action_open_website" sequence="2"/>
+  <menuitem id="menu_f6url_imports_1" name="Imports" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="base.action_open_website"/>
+  <menuitem id="menu_f6url_imports_temp" name="Imports temp" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05_imports" action="base.action_open_website" sequence="12"/>
+  <menuitem id="menu_f6url_projects" name="Projects" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="base.action_open_website" sequence="2"/>
+  <menuitem id="menu_f6url_sales" name="Sales" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="base.action_open_website" sequence="3"/>
+  <menuitem id="menu_f6url_structures" name="Structures" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05_imports" action="base.action_open_website"/>
+  <menuitem id="menu_f6url_tariff_02" name="Tariff 02" action="base.action_open_website" sequence="1"/>
+  <menuitem id="menu_f6url_tariff_2" name="Tariff" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05_imports" action="base.action_open_website" sequence="12"/>
+  <menuitem id="menu_f6url_tariff_3" name="Tariff" action="base.action_open_website"/>
+</odoo>
