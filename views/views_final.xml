@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Views final - 6 remaining views -->
+<odoo>
+  <data>
+    <record id="view_final_hr_expense_hr_expense_extract_view_form_studio_cus" model="ir.ui.view">
+      <field name="name">hr.expense.extract.view.form_studio_cus</field>
+      <field name="model">hr.expense</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="hr_expense_extract.hr_expense_extract_view_form"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+    </data>
+      </field>
+    </record>
+
+    <record id="view_final_x_res_config_settings_odoo_studio_default_form_view_for_x_res_config_settings_c" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_res_config_settings customization</field>
+      <field name="model">x_res_config_settings</field>
+      <field name="type">form</field>
+      <field name="priority">99</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3924_default_form_view_for_x_res_config_settings_e"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_8804bd_left']" position="inside">
+    <field name="x_studio_minimum_sales_margin_" string="Minimum Sales Margin %"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_final_x_work_center_costing_odoo_studio_default_form_view_for_x_work_center_costing_c" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_work_center_costing customization</field>
+      <field name="model">x_work_center_costing</field>
+      <field name="type">form</field>
+      <field name="priority">99</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2581_default_form_view_for_x_work_center_costing_e"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_f7d0e8_left']" position="replace"/>
+  <xpath expr="//form[1]" position="attributes">
+    <attribute name="create">false</attribute>
+    <attribute name="delete">false</attribute>
+  </xpath>
+  <xpath expr="//field[@name='x_name']" position="attributes">
+    <attribute name="force_save">True</attribute>
+    <attribute name="readonly">1</attribute></xpath>
+  <xpath expr="//group[@name='studio_group_f7d0e8_right']" position="attributes">
+    <attribute name="string">Labour Cost Details</attribute>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_f7d0e8_right']" position="inside">
+    <field name="x_studio_labour_cost_debit_account" string="Labour Cost Debit Account"/>
+    <field name="x_studio_labour_cost_credit_account" string="Labour Cost Credit Account"/>
+    <field name="x_studio_labour_ot_cost_debit_account" string="Labour OT Cost Debit Account"/>
+    <field name="x_studio_labour_ot_cost_credit_account" string="Labour OT Cost Credit Account"/>
+    <!--field name="x_studio_labour_analytic_tag" string="Labour Analytic Tag"/-->
+  </xpath>
+  <xpath expr="//group[@name='studio_group_f7d0e8']" position="after">
+    <group name="studio_group_dyinJ">
+      <group name="studio_group_dyinJ_left" string="Overhead Cost Details">
+        <field name="x_studio_overhead_cost_debit_account" string="Overhead Cost Debit Account"/>
+        <field name="x_studio_overhead_cost_credit_account"/>
+        <!--field name="x_studio_overhead_analytic_tag" string="Overhead Analytic Tag"/-->
+      </group>
+      <group name="studio_group_dyinJ_right" string="General Cost Details">
+        <field name="x_studio_general_cost_debit_account" string="General Cost Debit Account"/>
+        <field name="x_studio_general_cost_credit_account" string="General Cost Credit Account"/>
+        <!--field name="x_studio_general_analytic_tag" string="General Analytic Tag"/-->
+      </group>
+    </group>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_sales_model_debug customization</field>
+      <field name="model">x_sales_model_debug</field>
+      <field name="type">tree</field>
+      <field name="priority">99</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]" position="attributes">
+    <attribute name="editable">bottom</attribute>
+  </xpath>
+  <xpath expr="//field[@name='x_name']" position="attributes">
+    <attribute name="string">Method Name</attribute>
+  </xpath>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field optional="show" name="x_studio_start_time" string="Start Time"/>
+    <field optional="show" name="x_studio_end_time" string="End Time"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_final_x_work_center_costing_odoo_studio_default_list_view_for_x_work_center_costing_c" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_work_center_costing customization</field>
+      <field name="model">x_work_center_costing</field>
+      <field name="type">tree</field>
+      <field name="priority">99</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2580_default_list_view_for_x_work_center_costing_e"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]" position="attributes">
+    <attribute name="create">false</attribute>
+    <attribute name="delete">false</attribute>
+  </xpath>
+  <xpath expr="//field[@name='x_studio_sequence']" position="attributes">
+    <attribute name="column_invisible">1</attribute></xpath>
+</data>
+      </field>
+    </record>
+
+    <record id="view_final_hr_expense_sheet_odoo_studio_hr_expense_sheet_form_customization" model="ir.ui.view">
+      <field name="name">Odoo Studio: hr.expense.sheet.form customization</field>
+      <field name="model">hr.expense.sheet</field>
+      <field name="type">form</field>
+      <field name="priority">160</field>
+      <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]/h1[1]/field[@name='name']" position="attributes">
+    <attribute name="readonly">(not is_editable) or (state != 'draft')</attribute></xpath>
+  <xpath expr="//field[@name='accounting_date']" position="attributes">
+    <attribute name="invisible">(state not in ['approve', 'post', 'done']) or (state not in ['approve', 'post', 'done'])</attribute><attribute name="readonly">(not is_editable) or (state != 'draft')</attribute></xpath>
+  <xpath expr="//field[@name='date']" position="attributes">
+    <attribute name="readonly">(parent.state != 'draft') or (state not in ['draft', 'reported', 'approved', 'refused'])</attribute></xpath>
+  <xpath expr="//field[@name='product_id']" position="attributes">
+    <attribute name="readonly">(parent.state != 'draft') or (state not in ['draft', 'reported', 'approved', 'refused'])</attribute></xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='expenses']/field[@name='expense_line_ids']/tree[1]/field[@name='name']" position="attributes">
+    <attribute name="readonly">(parent.state != 'draft') or (state not in ['draft', 'reported', 'approved', 'refused'])</attribute></xpath>
+  <xpath expr="//field[@name='sale_order_id']" position="attributes">
+    <attribute name="invisible">(not can_be_reinvoiced) or (can_be_reinvoiced == False)</attribute><attribute name="readonly">(state in ['done', 'refused']) or ((parent.state != 'draft') or (state in ['done', 'refused']))</attribute></xpath>
+  <xpath expr="//field[@name='tax_ids']" position="attributes">
+    <attribute name="readonly">True</attribute></xpath>
+  </data>
+      </field>
+    </record>
+
+  </data>
+</odoo>
