@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: F5 extra - 1 ir.attachment SA -->
+<odoo>
+  <record id="sa_f5_ir_attachment_restrict_attachment_delete_for_approved_expenses" model="ir.actions.server">
+    <field name="name">Restrict Attachment Delete for Approved Expenses</field>
+    <field name="model_id" search="[('model', '=', 'ir.attachment')]"/>
+    <field name="state">code</field>
+    <field name="code"><![CDATA[attach = env['ir.attachment'].search([('id', '=', record.id)])
+if attach:
+  for attachment in attach:
+    if attachment.res_model == 'hr.expense' and attachment.res_id:
+      expense = env['hr.expense'].browse(attachment.res_id)
+      if expense.sheet_id.state not in ['draft', 'submit']:
+        raise UserError("You cannot delete attachments from approved expenses.")
+
+
+
+]]></field>
+    <field name="usage">base_automation</field>
+    <field name="binding_view_types">list,form</field>
+  </record>
+</odoo>
