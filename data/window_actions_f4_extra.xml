@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: F4 extra - 12 act_windows -->
+<odoo>
+  <record id="aw_f4x_ir_module_category_application_1" model="ir.actions.act_window">
+    <field name="name">Application-1</field>
+    <field name="res_model">ir.module.category</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_property_company_property" model="ir.actions.act_window">
+    <field name="name">Company Property</field>
+    <field name="res_model">ir.property</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_ir_model" model="ir.actions.act_window">
+    <field name="name">ir.model</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_ir_model_access" model="ir.actions.act_window">
+    <field name="name">ir.model.access</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_module_category_ir_module_category" model="ir.actions.act_window">
+    <field name="name">ir.module.category</field>
+    <field name="res_model">ir.module.category</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_module_category_ir_module_cateory" model="ir.actions.act_window">
+    <field name="name">ir.module.cateory</field>
+    <field name="res_model">ir.module.category</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_sequence_ir_sequence" model="ir.actions.act_window">
+    <field name="name">ir.sequence</field>
+    <field name="res_model">ir.sequence</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_mail_activity_mail_activity" model="ir.actions.act_window">
+    <field name="name">mail.activity</field>
+    <field name="res_model">mail.activity</field>
+    <field name="view_mode">tree,form,calendar</field>
+  </record>
+  <record id="aw_f4x_sign_request_item_signature_request_item_sign_request_item" model="ir.actions.act_window">
+    <field name="name">Signature Request Item (sign.request.item)</field>
+    <field name="res_model">sign.request.item</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_studio_approval_entry_studio_approval_entry_studio_approval_entry" model="ir.actions.act_window">
+    <field name="name">Studio Approval Entry - (studio.approval.entry)</field>
+    <field name="res_model">studio.approval.entry</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_user_group_access_rights" model="ir.actions.act_window">
+    <field name="name">User Group Access Rights</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_user_group_access_rights_1" model="ir.actions.act_window">
+    <field name="name">User Group - Access Rights</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>
