@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: F6 final -->
+<odoo>
+  <menuitem id="menu_f6f_tariff_periods" name="Tariff Periods" parent="BugFix-Studio-Misc.menu_f6url_tariff_1" action="BugFix-Purchase.act_window_2042_tariff_periods" sequence="1"/>
+  <menuitem id="menu_f6f_tariff_rates" name="Tariff Rates" parent="BugFix-Studio-Misc.menu_f6url_tariff_1" action="BugFix-Purchase.act_window_2047_tariff_rates" sequence="2"/>
+  <menuitem id="menu_f6f_stock_move" name="Stock.Move" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Stock.action_1757_stock_move" sequence="41"/>
+  <menuitem id="menu_f6f_ir_module_category" name="ir.module.category" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_module_category_ir_module_category" sequence="60"/>
+  <menuitem id="menu_f6f_user_group_access_rights" name="User Group Access Rights" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_model_access_user_group_access_rights" sequence="61"/>
+  <menuitem id="menu_f6f_ir_module_cateory" name="ir.module.cateory" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_module_category_ir_module_cateory" sequence="64"/>
+  <menuitem id="menu_f6f_ir_model" name="ir.model" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_model_access_ir_model" sequence="66"/>
+  <menuitem id="menu_f6f_ir_model_access" name="ir.model.access" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_model_access_ir_model_access" sequence="67"/>
+  <menuitem id="menu_f6f_product_product" name="product.product" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2588_product_product" sequence="128"/>
+  <menuitem id="menu_f6f_product_template" name="product.template" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Accounting.aw_f4_product_template_product_template_1" sequence="83"/>
+  <menuitem id="menu_f6f_ir_sequence" name="ir.sequence" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_sequence_ir_sequence" sequence="90"/>
+  <menuitem id="menu_f6f_signature_request_item_sign_request_item" name="Signature Request Item (sign.request.item)" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_sign_request_item_signature_request_item_sign_request_item" sequence="110"/>
+  <menuitem id="menu_f6f_studio_approval_entry_studio_approval_entry" name="Studio Approval Entry - (studio.approval.entry)" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_studio_approval_entry_studio_approval_entry_studio_approval_entry" sequence="111"/>
+  <menuitem id="menu_f6f_calendar_filters" name="calendar.filters" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2832_calendar_filters_d7" sequence="114"/>
+  <menuitem id="menu_f6f_mail_activity" name="mail.activity" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_mail_activity_mail_activity" sequence="124"/>
+  <menuitem id="menu_f6f_company_property" name="Company Property" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_property_company_property" sequence="127"/>
+  <menuitem id="menu_f6f_purchase_order_line" name="Purchase Order Line" parent="BugFix-Purchase.menu_f6_purchase_order_non_inventory" action="BugFix-Purchase.action_962_po_line_non_inventory" sequence="12"/>
+  <menuitem id="menu_f6f_application_1" name="Application-1" parent="base.menu_administration" action="BugFix-Studio-Misc.aw_f4x_ir_module_category_application_1" sequence="111"/>
+  <menuitem id="menu_f6f_temp_consignment_header" name="Temp Consignment Header" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Stock.action_1259_temp_consignment_header" sequence="23"/>
+</odoo>
