@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: F5 mail_post workaround SA -->
+<odoo>
+  <record id="sa_f5_res_groups_user_group_change_notify" model="ir.actions.server">
+    <field name="name">User Group Change - Notify</field>
+    <field name="model_id" search="[('model', '=', 'res.groups')]"/>
+    <field name="state">code</field>
+    <field name="code"><![CDATA[# Workaround: original mail_post SA can't run on res.groups (no mail.thread).
+# Manual mail.mail create + send.
+env['mail.mail'].sudo().create({
+    'subject': 'Access Rights have Changed',
+    'body_html': '<p>Access Rights have Changed.....</p>',
+    'email_to': 'rohana.b@jinasena.com.lk',
+    'auto_delete': True,
+}).send()]]></field>
+    <field name="usage">base_automation</field>
+  </record>
+</odoo>
