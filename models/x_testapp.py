@@ -3,6 +3,7 @@ from odoo import models, fields
 
 class X_testapp(models.Model):
     _name = 'x_testapp'
+    _inherit = ['mail.activity.mixin']
     _description = 'TestApp'
 
     x_active = fields.Boolean(string='Active')

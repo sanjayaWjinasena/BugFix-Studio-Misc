@@ -3,6 +3,7 @@ from odoo import models, fields
 
 class X_test_layout(models.Model):
     _name = 'x_test_layout'
+    _inherit = ['mail.activity.mixin']
     _description = 'Test Layout'
 
     x_active = fields.Boolean(string='Active')

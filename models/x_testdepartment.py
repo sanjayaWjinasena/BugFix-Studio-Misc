@@ -3,6 +3,7 @@ from odoo import models, fields
 
 class X_testdepartment(models.Model):
     _name = 'x_testdepartment'
+    _inherit = ['mail.activity.mixin']
     _description = 'TestDepartment'
 
     x_Description2 = fields.Char(string='Description 2')
