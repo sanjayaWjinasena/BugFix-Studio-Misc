@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Defaults final - 1 defaults -->
+<odoo noupdate="1">
+  <record id="default_final_purchase_requisition_stock_field_purchase_requisition_wareho_2" model="ir.default">
+    <field name="field_id" ref="purchase_requisition_stock.field_purchase_requisition__warehouse_id"/>
+    <field name="json_value">2</field>
+  </record>
+</odoo>
