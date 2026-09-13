@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Approval Rules - 3 -->
+<odoo noupdate="1">
+  <record id="ar_final_test02_sample_server_action_user_types_internal_user_44" model="studio.approval.rule">
+    <field name="name">TEST02/sample server action (User types / Internal User) (44)</field>
+    <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+    <field name="action_id" ref="BugFix-Studio-Misc.server_action_1743_sample_server_action"/>
+    <field name="group_id" ref="base.group_user"/>
+  </record>
+  <record id="ar_final_test02_sample_server_action_technical_a_warning_can_be_set_o" model="studio.approval.rule">
+    <field name="name">TEST02/sample server action (Technical / A warning can be set on a partner (Stock)) (45)</field>
+    <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+    <field name="action_id" ref="BugFix-Studio-Misc.server_action_1743_sample_server_action"/>
+    <field name="group_id" ref="stock.group_warning_stock"/>
+  </record>
+  <record id="ar_final_test02_sample_server_action_2_sales_test_sales_2_76" model="studio.approval.rule">
+    <field name="name">TEST02/sample server action-2 (sales / TEST - SALES - 2) (76)</field>
+    <field name="model_id" search="[('model', '=', 'x_test02')]"/>
+    <field name="action_id" ref="BugFix-Studio-Misc.server_action_2268_sample_server_action_2"/>
+    <field name="group_id" ref="BugFix-Approvals.group_204_test_sales_2"/>
+    <field name="exclusive_user" eval="True"/>
+  </record>
+</odoo>
