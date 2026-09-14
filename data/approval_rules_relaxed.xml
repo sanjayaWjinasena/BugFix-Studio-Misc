@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: Approval Rules relaxed - 1 -->
+<odoo noupdate="1">
+  <record id="ar_relaxed_purchase_requisition_request_for_quotation_user_types_intern" model="studio.approval.rule">
+    <field name="name">Purchase Requisition/Request for Quotation (User types / Internal User) (77)</field>
+    <field name="model_id" search="[('model', '=', 'purchase.requisition')]"/>
+    <field name="action_id" ref="purchase_requisition.action_purchase_requisition_to_so"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="exclusive_user" eval="True"/>
+  </record>
+</odoo>
