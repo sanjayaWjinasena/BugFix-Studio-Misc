@@ -2,24 +2,6 @@
 <!-- BugFix-Studio-Misc: 4 real Studio views (non-qweb gap closeout) -->
 <odoo>
   <data>
-    <record id="view_bom_material_cost_dashboard" model="ir.ui.view">
-      <field name="name">Default dashboard view for ir.model(825,)</field>
-      <field name="model">x_mrp_bom_material_cos</field>
-      <field name="type">dashboard</field>
-      <field name="arch" type="xml">
-        <dashboard><view type="graph"/><view type="pivot"/></dashboard>
-      </field>
-    </record>
-
-    <record id="view_consignment_header_dashboard" model="ir.ui.view">
-      <field name="name">Default dashboard view for ir.model(905,)</field>
-      <field name="model">x_consignment_header</field>
-      <field name="type">dashboard</field>
-      <field name="arch" type="xml">
-        <dashboard><view type="graph"/></dashboard>
-      </field>
-    </record>
-
     <record id="view_x_customer_group_form_studio_ext" model="ir.ui.view">
       <field name="name">Odoo Studio: Default form view for x_customer_group customization</field>
       <field name="model">x_customer_group</field>
