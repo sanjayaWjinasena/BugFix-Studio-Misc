@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: 7 orphan Studio menu containers (Menus gap closeout) -->
+<odoo>
+  <data>
+    <record id="menu_studio_profit_loss_rohana" model="ir.ui.menu">
+      <field name="name">Profit and Loss (Rohana)</field>
+      <field name="sequence">10</field>
+    </record>
+    <record id="menu_studio_divisional_pl" model="ir.ui.menu">
+      <field name="name">Divisional P&amp;L</field>
+      <field name="sequence">10</field>
+    </record>
+    <record id="menu_studio_bulk_inputs_manager" model="ir.ui.menu">
+      <field name="name">Bulk Inputs Manager</field>
+      <field name="sequence">10</field>
+    </record>
+    <record id="menu_studio_import_bulk_inputs_hr" model="ir.ui.menu">
+      <field name="name">Import Bulk Inputs</field>
+      <field name="sequence">10</field>
+    </record>
+    <record id="menu_studio_import_bulk_inputs_ot" model="ir.ui.menu">
+      <field name="name">Import Bulk Inputs</field>
+      <field name="sequence">10</field>
+    </record>
+    <record id="menu_studio_manufacturing_reports" model="ir.ui.menu">
+      <field name="name">Reports</field>
+      <field name="sequence">10</field>
+    </record>
+    <record id="menu_studio_test_app_05_access_management" model="ir.ui.menu">
+      <field name="name">Access Management</field>
+      <field name="sequence">70</field>
+    </record>
+  </data>
+</odoo>
