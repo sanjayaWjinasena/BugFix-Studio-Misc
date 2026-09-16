@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Deactivate misplaced root menus. CDB is Known Good; -->
+<!-- these were either duplicates of nested menus or Studio scratch never on CDB. -->
+<odoo>
+  <data>
+    <!-- TEST APP (Studio scratch — not on CDB) -->
+    <record id="menu_f6_test_app" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Test App 02 (Studio scratch — not on CDB) -->
+    <record id="menu_f6_test_app_02" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Tariff (duplicate root) -->
+    <record id="menu_f6r3_tariff" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- FAQs (Studio scratch — not on CDB) -->
+    <record id="menu_f6r3_faqs" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Posting Profiles (Studio scratch — not on CDB) -->
+    <record id="menu_f6r3_posting_profiles" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Structure Details (Studio scratch — not on CDB) -->
+    <record id="menu_f6r3_" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- My Menu 01 (Studio scratch — not on CDB) -->
+    <record id="menu_f6url_my_menu_01" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Tariff 02 (Studio scratch — not on CDB) -->
+    <record id="menu_f6url_tariff_02" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Consignment (Studio scratch — not on CDB) -->
+    <record id="menu_f6url_consignment" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <!-- Tariff (duplicate root) -->
+    <record id="menu_f6url_tariff_3" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+  </data>
+</odoo>
