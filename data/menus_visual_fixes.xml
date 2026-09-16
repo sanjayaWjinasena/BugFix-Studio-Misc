@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Visual-Migration_fixes: Sales-app extras created by BugFix-Studio-Misc
+     that don't exist on CDB. Deactivate to match CDB launcher. -->
+<odoo>
+  <data>
+    <!-- 'Sales/Reporting/Sales invoice lines' (lowercase) — duplicate of
+         BugFix-Accounting's 'Sales Invoice lines'. Neither is on CDB;
+         both deactivated by their owning module's visual-fixes file. -->
+    <record id="menu_f6_sales_invoice_lines" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+  </data>
+</odoo>
