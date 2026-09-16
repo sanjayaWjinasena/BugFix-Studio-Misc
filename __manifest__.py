@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.78',
+    'version': '17.0.0.0.79',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -78,6 +78,9 @@ etc.).
         'account',
         'studio_usermodel_migration',
         'BugFix-Project',    # ACL rows use x_departments, x_project_category etc.
+                'BugFix-Accounting',  # ACL rows use account.move, x_studio_* fields
+        'BugFix-Stock',  # ACL rows use stock.picking, x_material_request_* models
+        'BugFix-MRP',  # ACL rows use mrp.production, x_mrp_* models
         'BugFix-Sales',      # declares res.partner.x_studio_payment_method + other Sales x_ fields
         'BugFix-Purchase',   # declares x_payment_methods + purchase-side x_ fields
     ],
