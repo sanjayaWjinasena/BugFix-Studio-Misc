@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Records moved from other companion modules to break install-time
+     dep cycles. This module installs AFTER the source module, so refs
+     resolve. See commit history for original locations. -->
+<odoo>
+  <data>
+  <record id="ar_broader_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">
+    <field name="name">Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - Non-Inv PR Approvers) (97)</field>
+    <field name="model_id" search="[('model', '=', 'x_pr_non_inventory')]"/>
+    <field name="action_id" ref="BugFix-Purchase.server_action_954_approve_pr_non_inventory"/>
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_purchase_jin_non_inv_pr_approvers"/>
+    <field name="domain">[]</field>
+  </record>
+<record id="ar_final_purchase_request_confirm_pr_purchase_pr_approval_9" model="studio.approval.rule">
+    <field name="name">Purchase Request/Confirm PR (Purchase / PR Approval) (9)</field>
+    <field name="model_id" search="[('model', '=', 'x_purchase_request')]"/>
+    <field name="action_id" ref="BugFix-Purchase.server_action_818_confirm_pr"/>
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_misc_pr_approval"/>
+  </record>
+  <record id="ar_final_purchase_request_done_pr_copy_pr_to_rfq_purchase_pr_approval" model="studio.approval.rule">
+    <field name="name">Purchase Request/Done PR + Copy PR to RFQ (Purchase / PR Approval) (10)</field>
+    <field name="model_id" search="[('model', '=', 'x_purchase_request')]"/>
+    <field name="action_id" ref="BugFix-Purchase.server_action_831_done_pr_copy_pr_to_rfq"/>
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_misc_pr_approval"/>
+  </record>
+  </data>
+</odoo>

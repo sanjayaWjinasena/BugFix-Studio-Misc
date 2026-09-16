@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- BugFix-Studio-Misc: F6 round 3 - remaining 114 menus -->
 <odoo>
   <menuitem id="menu_f6r3_all_models" name="All Models"/>
@@ -10,7 +10,6 @@
   <menuitem id="menu_f6r3_tariff" name="Tariff" sequence="0"/>
   <menuitem id="menu_f6r3_website_faq" name="Website FAQ"/>
   <menuitem id="menu_f6r3_website_faq_website_faqs" name="website FAQs" parent="menu_f6r3_website_faq" action="BugFix-Studio-Misc.act_window_3206_website_faqs"/>
-  <menuitem id="menu_f6r3_jinasena_reports_jinasena_custom_reports" name="Jinasena Custom Reports" parent="menu_f6r3_jinasena_reports" action="BugFix-Custom-Reports.act_window_3347_jinasena_custom_reports"/>
   <menuitem id="menu_f6r3_jinasena_reports_configuration" name="Configuration" parent="menu_f6r3_jinasena_reports" sequence="100"/>
   <menuitem id="menu_f6r3_employees_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" sequence="101"/>
   <menuitem id="menu_f6r3_faqs_website_faq" name="website.faq" parent="menu_f6r3_faqs" action="BugFix-Studio-Misc.act_window_3205_website_faq"/>
@@ -29,7 +28,6 @@
   <menuitem id="menu_f6r3_purchase_imports_01_consolidated_consignments" name="Consolidated Consignments" parent="BugFix-Stock.menu_f6_imports_01" action="BugFix-Stock.action_1410_con_consolidated_header" sequence="2"/>
   <menuitem id="menu_f6r3_purchase_imports_consolidated_consignments" name="Consolidated Consignments" parent="menu_f6r3_purchase_imports" action="BugFix-Stock.action_2054_consolidated_consignments" sequence="2"/>
   <menuitem id="menu_f6r3_purchase_imports_letter_of_credit" name="Letter of Credit" parent="menu_f6r3_purchase_imports" action="BugFix-Accounting.action_2071_letter_of_credit" sequence="3"/>
-  <menuitem id="menu_f6r3_jinasena_reports_configuration_jinasena_custom_reports_stage" name="Jinasena Custom Reports Stages" parent="menu_f6r3_jinasena_reports_configuration" action="BugFix-Custom-Reports.act_window_3348_jinasena_custom_reports_stages"/>
   <menuitem id="menu_f6r3_jinasena_reports_configuration_jinasena_custom_reports_tags" name="Jinasena Custom Reports Tags" parent="menu_f6r3_jinasena_reports_configuration" action="BugFix-Studio-Misc.act_window_3349_jinasena_custom_reports_tags"/>
   <menuitem id="menu_f6r3_payroll_configuration_custom_configuration" name="Custom Configuration" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_configuration" sequence="3"/>
   <menuitem id="menu_f6r3_project_reporting_project_budgeted_cash_flow" name="Project Budgeted Cash Flow" parent="project.menu_project_report" sequence="3"/>

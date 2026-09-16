@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- BugFix-Studio-Misc: F6 round 2 - TEST APP 05 tree (all menus) -->
 <odoo>
   <menuitem id="menu_f6r2_test_app_05" name="TEST APP 05" sequence="0"/>
@@ -61,7 +61,7 @@
   <menuitem id="menu_f6r2_test_app_05_ss" name="SS" parent="menu_f6r2_test_app_05" action="BugFix-Sales.act_window_2439_ss" sequence="65"/>
   <menuitem id="menu_f6r2_test_app_05_pump_price_costing" name="Pump Price Costing" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2491_pump_price_costing" sequence="68"/>
   <menuitem id="menu_f6r2_test_app_05_inventory_routes" name="Inventory routes" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2494_inventory_routes_d7" sequence="69"/>
-  <menuitem id="menu_f6r2_test_app_05_mrp_workcenter_productivity" name="	mrp.workcenter.productivity" parent="menu_f6r2_test_app_05" action="BugFix-MRP.act_window_2555_mrp_workcenter_productivity" sequence="72"/>
+  <menuitem id="menu_f6r2_test_app_05_mrp_workcenter_productivity" name=" mrp.workcenter.productivity" parent="menu_f6r2_test_app_05" action="BugFix-MRP.act_window_2555_mrp_workcenter_productivity" sequence="72"/>
   <menuitem id="menu_f6r2_test_app_05_hr_attendance_overtime" name="hr.attendance.overtime" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2557_hr_attendance_overtime_d7" sequence="73"/>
   <menuitem id="menu_f6r2_test_app_05_hr_expense_sheet" name="hr.expense.sheet" parent="menu_f6r2_test_app_05" action="BugFix-HR.act_window_2596_hr_expense_sheet" sequence="74"/>
   <menuitem id="menu_f6r2_test_app_05_x_purchase_request_lin" name="x_purchase_request_lin" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2590_x_purchase_request_lin" sequence="76"/>
@@ -70,10 +70,9 @@
   <menuitem id="menu_f6r2_test_app_05_x_po_line_non_inventor" name="x_po_line_non_inventor" parent="menu_f6r2_test_app_05" action="BugFix-Purchase.action_2603_x_po_line_non_inventor" sequence="81"/>
   <menuitem id="menu_f6r2_test_app_05_x_con_consolidated_lin" name="x_con_consolidated_lin" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_2610_x_con_consolidated_lin" sequence="82"/>
   <menuitem id="menu_f6r2_test_app_05_account_move" name="account.move" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.act_window_2628_account_move" sequence="84"/>
-  <menuitem id="menu_f6r2_test_app_05_x_configuration" name="x_configuration" parent="menu_f6r2_test_app_05" action="BugFix-Custom-Reports.act_window_2657_x_configuration" sequence="85"/>
   <menuitem id="menu_f6r2_test_app_05_x_customer_groups" name="x_customer_groups" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.act_window_2677_x_customer_groups" sequence="86"/>
   <menuitem id="menu_f6r2_test_app_05_x_customer_posting_pro" name="x_customer_posting_pro" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_2678_x_customer_posting_pro" sequence="87"/>
-  <menuitem id="menu_f6r2_test_app_05_account_payment_method_line" name="	account.payment.method.line" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.act_window_2741_account_payment_method_line" sequence="88"/>
+  <menuitem id="menu_f6r2_test_app_05_account_payment_method_line" name=" account.payment.method.line" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.act_window_2741_account_payment_method_line" sequence="88"/>
   <menuitem id="menu_f6r2_test_app_05_account_analytic_line" name="account.analytic.line" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.aw_f4_account_analytic_line_account_analytic_line" sequence="89"/>
   <menuitem id="menu_f6r2_test_app_05_repair_order" name="repair.order" parent="menu_f6r2_test_app_05" action="Fix-repair.act_window_2807_repair_order" sequence="94"/>
   <menuitem id="menu_f6r2_test_app_05_stock_valuation_layer" name="stock.valuation.layer" parent="menu_f6r2_test_app_05" action="BugFix-Stock.act_window_2809_stock_valuation_layer" sequence="96"/>
