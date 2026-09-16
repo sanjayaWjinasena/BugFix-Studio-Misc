@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.76',
+    'version': '17.0.0.0.77',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -76,7 +76,9 @@ etc.).
         'sale',
         'purchase',
         'account',
-            'studio_usermodel_migration',
+        'studio_usermodel_migration',
+        'BugFix-Sales',      # declares res.partner.x_studio_payment_method + other Sales x_ fields
+        'BugFix-Purchase',   # declares x_payment_methods + purchase-side x_ fields
     ],
     'data': [
         'views/views_qweb_validated.xml',
