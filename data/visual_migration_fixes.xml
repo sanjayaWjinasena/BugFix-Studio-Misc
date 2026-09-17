@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="BugFix-Purchase.rule_448_import_purchase_requests_write" model="ir.rule">
+            <field name="groups" eval="[(6, 0, [ref('BugFix-Studio-Misc.group_g_purchase_jin_procurement_end_user_imports')])]"/>
+        </record>
+        <record id="BugFix-Purchase.rule_449_local_purchase_requests_write" model="ir.rule">
+            <field name="groups" eval="[(6, 0, [ref('BugFix-Studio-Misc.group_g_purchase_jin_procurement_end_user_local')])]"/>
+        </record>
+
+        <delete id="BugFix-Purchase.rule_f7_x_purchase_request_jin_multi_company_purchase_request" model="ir.rule"/>
+    </data>
+</odoo>

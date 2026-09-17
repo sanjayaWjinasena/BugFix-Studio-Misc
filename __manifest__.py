@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.97',
+    'version': '17.0.0.0.98',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -172,6 +172,7 @@ etc.).
         'data/qweb_studio_customizations.xml',
         'data/qweb_studio_customizations_std.xml',
         'data/defaults_and_rules_ported.xml',
+        'data/visual_migration_fixes.xml',
     ],
     'post_init_hook': 'post_init_hook',
     'installable': True,
