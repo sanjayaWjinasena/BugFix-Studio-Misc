@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Housed here (not in BugFix-Purchase) because these rules reference
+  the Studio approver groups defined in Studio-Misc, and BugFix-Purchase
+  does not (and cannot) depend on Studio-Misc.
+
+  Correspond to CDB rules 448 and 449 — write access to Purchase
+  Requisitions by request type, granted to type-specific approver groups.
+  If the rules were global (empty groups) they would combine with AND on
+  every user, producing an impossible domain (type='Import' AND
+  type='Local'), blocking all writes.
+-->
+<odoo>
+    <data noupdate="0">
+        <record id="rule_448_import_purchase_requests_write" model="ir.rule">
+            <field name="name">Import Purchase Requests - Write</field>
+            <field name="model_id" ref="BugFix-Purchase.model_x_purchase_request"/>
+            <field name="domain_force">[('x_studio_type', '=' , 'Import')]</field>
+            <field name="groups" eval="[(6, 0, [ref('BugFix-Studio-Misc.group_g_purchase_jin_procurement_end_user_imports')])]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="rule_449_local_purchase_requests_write" model="ir.rule">
+            <field name="name">Local Purchase Requests - Write</field>
+            <field name="model_id" ref="BugFix-Purchase.model_x_purchase_request"/>
+            <field name="domain_force">[('x_studio_type' , '=' , 'Local')]</field>
+            <field name="groups" eval="[(6, 0, [ref('BugFix-Studio-Misc.group_g_purchase_jin_procurement_end_user_local')])]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>
