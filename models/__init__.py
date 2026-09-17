@@ -57,6 +57,3 @@ from . import x_website_faq_gap
 from . import x_website_faqs_gap
 from . import x_work_center_costing_gap
 from . import x_x_studio_request_line_gap
-from . import base_automation_ext
-from . import ir_rule_ext
-from . import ir_model_access_ext
