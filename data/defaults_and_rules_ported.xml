@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
-  <data noupdate="1">
+  <data>
     <record id="default_x_misc_charge_codes_x_active_109" model="ir.default">
       <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_active')]"/>
       <field name="json_value">true</field>
