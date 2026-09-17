@@ -167,7 +167,7 @@
   <xpath expr="/t[1]/t[1]/div[1]/div[4]/div[1]" position="replace"/>
 </data>
       </field>
-    </record>
+    <field name="active" eval="False"/></record>
 
     <record id="view_qweb_odoo_studio_report_invoice_document_customization_2" model="ir.ui.view">
       <field name="name">Odoo Studio: report_invoice_document customization-2</field>
@@ -308,7 +308,7 @@
   <xpath expr="/t[1]/t[1]/div[1]/div[3]/div[1]" position="replace"/>
 </data>
       </field>
-    </record>
+    <field name="active" eval="False"/></record>
 
     <record id="view_qweb_odoo_studio_report_saleorder_document_customization" model="ir.ui.view">
       <field name="name">Odoo Studio: report_saleorder_document customization</field>
@@ -451,7 +451,7 @@
   <xpath expr="/t[1]/t[1]/div[1]/div[3]/div[1]" position="replace"/>
 </data>
       </field>
-    </record>
+    <field name="active" eval="False"/></record>
 
     <record id="view_qweb_odoo_studio_studio_customization_studio_report_docume_d573c5" model="ir.ui.view">
       <field name="name">Odoo Studio: studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0 customization</field>
@@ -514,7 +514,7 @@
   <xpath expr="/t[1]/t[1]/div[1]/h2[2]/span[1]" position="replace"/>
 </data>
       </field>
-    </record>
+    <field name="active" eval="False"/></record>
 
     <record id="view_qweb_odoo_studio_report_purchasequotation_document_customization" model="ir.ui.view">
       <field name="active" eval="True"/><field name="name">Odoo Studio: report_purchasequotation_document customization</field>
