@@ -5,14 +5,6 @@
       <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_active')]"/>
       <field name="json_value">true</field>
     </record>
-    <record id="default_x_misc_charge_codes_x_studio_credit_acc_type_276" model="ir.default">
-      <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_studio_credit_acc_type')]"/>
-      <field name="json_value">"G/L Account"</field>
-    </record>
-    <record id="default_x_misc_charge_codes_x_studio_debit_acc_type_275" model="ir.default">
-      <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_studio_debit_acc_type')]"/>
-      <field name="json_value">"Item"</field>
-    </record>
     <record id="default_x_misc_charge_codes_x_studio_sequence_110" model="ir.default">
       <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_studio_sequence')]"/>
       <field name="json_value">10</field>
