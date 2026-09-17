@@ -370,29 +370,5 @@
 </data>
       </field>
     </record>
-    <record id="view_std_res_groups_4947" model="ir.ui.view">
-      <field name="name">Default tree view for ir.model(89,)</field>
-      <field name="model">res.groups</field>
-      <field name="type">tree</field>
-      <field name="mode">primary</field>
-      <field name="priority" eval="16"/>
-      <field name="arch" type="xml">
-        <tree string="Access Groups">
-          <field name="full_name" modifiers="{&quot;readonly&quot;: true}"/>
-        </tree>
-      </field>
-    </record>
-    <record id="view_std_project_sale_line_employee_map_6068" model="ir.ui.view">
-      <field name="name">Default tree view for ir.model(646,)</field>
-      <field name="model">project.sale.line.employee.map</field>
-      <field name="type">tree</field>
-      <field name="mode">primary</field>
-      <field name="priority" eval="16"/>
-      <field name="arch" type="xml">
-        <tree string="Project Sales line, employee mapping">
-          <field name="id" modifiers="{&quot;readonly&quot;: true}"/>
-        </tree>
-      </field>
-    </record>
-  </data>
+    </data>
 </odoo>
