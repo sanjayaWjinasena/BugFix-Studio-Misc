@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- Studio-Misc: 4 qweb views for x_website_faqs (website frontend) -->
 <!-- One duplicate key auto-suffixed with cdb_id for uniqueness -->
 <odoo>
   <data>
 
     <record id="view_8241_qweb_faq" model="ir.ui.view">
-      <field name="name">faq</field>
+      <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq-1</field>
       <field name="model">x_website_faqs</field>
       <field name="type">qweb</field>
@@ -42,7 +42,7 @@
     </record>
 
     <record id="view_8246_qweb_faq" model="ir.ui.view">
-      <field name="name">faq</field>
+      <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq</field>
       <field name="model">x_website_faqs</field>
       <field name="type">qweb</field>
@@ -95,7 +95,7 @@
     </record>
 
     <record id="view_8247_qweb_faq" model="ir.ui.view">
-      <field name="name">faq</field>
+      <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq-2</field>
       <field name="model">x_website_faqs</field>
       <field name="type">qweb</field>
@@ -153,7 +153,7 @@
     </record>
 
     <record id="view_8248_qweb_faq" model="ir.ui.view">
-      <field name="name">faq</field>
+      <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq-2-8248</field>
       <field name="model">x_website_faqs</field>
       <field name="type">qweb</field>

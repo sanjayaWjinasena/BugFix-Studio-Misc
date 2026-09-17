@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
   <data>
     <record id="view_std_ir_actions_server_2382" model="ir.ui.view">
@@ -26,8 +26,6 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='model_id']" position="after">
-    <field name="x_studio_status" optional="hide"/>
-    <field name="x_studio_comments" optional="hide"/>
     <field name="id" optional="show"/>
   </xpath>
 </data>
@@ -149,8 +147,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='fields']/field[@name='field_id']/tree[1]/field[@name='ttype']" position="after">
-    <field name="relation"/>
-  </xpath>
+    </xpath>
 </data>
       </field>
     </record>
@@ -179,11 +176,9 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//tree[1]/field[@name='name']" position="before">
-    <field optional="show" name="x_studio_user_name" string="User Name" column_invisible="1"/>
-  </xpath>
+    </xpath>
   <xpath expr="//tree[1]/field[@name='name']" position="after">
-    <field optional="show" name="x_studio_number_of_users" string="Users" widget="many2many_tags"/>
-  </xpath>
+    </xpath>
 </data>
       </field>
     </record>
@@ -212,8 +207,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='perm_create']" position="after">
-    <field name="x_studio_description"/>
-  </xpath>
+    </xpath>
 </data>
       </field>
     </record>
@@ -227,8 +221,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='domain_force']" position="after">
-    <field optional="show" name="x_studio_description" string="Description"/>
-  </xpath>
+    </xpath>
 </data>
       </field>
     </record>
@@ -251,9 +244,6 @@
     <form>
       <sheet string="Sequence Date Range" name="studio_sheet_919f69">
         <group col="4" name="studio_group_2ebefe">
-          <field name="date_from"/>
-          <field name="date_to"/>
-          <field name="sequence_id"/>
           <field name="number_next"/>
           <field name="number_next_actual"/>
           <separator/>
@@ -328,8 +318,6 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='display_name']" position="after">
-    <field name="x_studio_company_id" optional="show"/>
-    <field optional="show" name="x_studio_description" string="Description"/>
     <field name="id" optional="show"/>
   </xpath>
 </data>
@@ -363,12 +351,6 @@
   <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='users']/field[@name='users']" position="inside">
     <tree string="Users" decoration-info="state == 'new'">
       <field name="name"/>
-      <field name="login"/>
-      <field name="lang"/>
-      <field name="login_date"/>
-      <field name="state" column_invisible="1"/>
-      <field name="company_id" groups="base.group_multi_company"/>
-      <field name="active"/>
       <field name="create_uid" optional="show"/>
       <field name="create_date" optional="show"/>
     </tree>
@@ -386,12 +368,6 @@
             <field name="users" context="{'search_default_no_share':1}">
               <tree string="Users" decoration-info="state == 'new'">
                 <field name="name"/>
-                <field name="login"/>
-                <field name="lang"/>
-                <field name="login_date"/>
-                <field name="state" column_invisible="1"/>
-                <field name="company_id" groups="base.group_multi_company"/>
-                <field name="active"/>
                 <field name="create_uid" optional="show"/>
                 <field name="create_date" optional="show"/>
               </tree>
@@ -419,26 +395,14 @@
             <field name="model_access">
               <tree string="Access Rights" editable="top">
                 <field name="name"/>
-                <field name="model_id"/>
-                <field name="perm_read"/>
-                <field name="perm_write"/>
-                <field name="perm_create"/>
-                <field name="perm_unlink"/>
-              </tree>
+                </tree>
             </field>
           </page>
           <page string="Record Rules" name="record_rules">
             <field name="rule_groups">
               <tree string="Record Rules" editable="top">
                 <field name="name"/>
-                <field name="model_id"/>
-                <field name="domain_force"/>
-                <field name="x_studio_description" optional="show"/>
-                <field name="perm_read"/>
-                <field name="perm_write"/>
-                <field name="perm_create"/>
-                <field name="perm_unlink"/>
-              </tree>
+                </tree>
             </field>
           </page>
           <page string="Notes" name="notes">
@@ -456,8 +420,7 @@
     </tree>
   </xpath>
   <xpath expr="//field[@name='domain_force']" position="after">
-    <field name="x_studio_description" optional="show"/>
-  </xpath>
+    </xpath>
   <xpath expr="//field[@name='implied_ids']/form//field[@name='implied_ids']" position="inside">
     <form string="Groups">
       <sheet>
@@ -471,12 +434,6 @@
             <field name="users" context="{'search_default_no_share':1}">
               <tree string="Users" decoration-info="state == 'new'">
                 <field name="name"/>
-                <field name="login"/>
-                <field name="lang"/>
-                <field name="login_date"/>
-                <field name="state" column_invisible="1"/>
-                <field name="company_id" groups="base.group_multi_company"/>
-                <field name="active"/>
                 <field name="create_uid" optional="show"/>
                 <field name="create_date" optional="show"/>
               </tree>
@@ -497,12 +454,6 @@
                       <field name="users" context="{'search_default_no_share':1}">
                         <tree string="Users" decoration-info="state == 'new'">
                           <field name="name"/>
-                          <field name="login"/>
-                          <field name="lang"/>
-                          <field name="login_date"/>
-                          <field name="state" column_invisible="1"/>
-                          <field name="company_id" groups="base.group_multi_company"/>
-                          <field name="active"/>
                           <field name="create_uid" optional="show"/>
                           <field name="create_date" optional="show"/>
                         </tree>
@@ -530,27 +481,14 @@
                       <field name="model_access">
                         <tree string="Access Rights" editable="top">
                           <field name="name"/>
-                          <field name="model_id"/>
-                          <field name="perm_read"/>
-                          <field name="perm_write"/>
-                          <field name="perm_create"/>
-                          <field name="perm_unlink"/>
-                        </tree>
+                          </tree>
                       </field>
                     </page>
                     <page string="Record Rules" name="record_rules">
                       <field name="rule_groups">
                         <tree string="Record Rules" editable="top">
                           <field name="name"/>
-                          <field name="model_id"/>
-                          <field name="domain_force"/>
-                          <field name="x_studio_description" optional="show"/>
-                          <field name="x_studio_description" optional="show"/>
-                          <field name="perm_read"/>
-                          <field name="perm_write"/>
-                          <field name="perm_create"/>
-                          <field name="perm_unlink"/>
-                        </tree>
+                          </tree>
                       </field>
                     </page>
                     <page string="Notes" name="notes">
@@ -578,25 +516,14 @@
             <field name="model_access">
               <tree string="Access Rights" editable="top">
                 <field name="name"/>
-                <field name="model_id"/>
-                <field name="perm_read"/>
-                <field name="perm_write"/>
-                <field name="perm_create"/>
-                <field name="perm_unlink"/>
-              </tree>
+                </tree>
             </field>
           </page>
           <page string="Record Rules" name="record_rules">
             <field name="rule_groups">
               <tree string="Record Rules" editable="top">
                 <field name="name"/>
-                <field name="model_id"/>
-                <field name="domain_force"/>
-                <field name="perm_read"/>
-                <field name="perm_write"/>
-                <field name="perm_create"/>
-                <field name="perm_unlink"/>
-              </tree>
+                </tree>
             </field>
           </page>
           <page string="Notes" name="notes">
@@ -614,16 +541,9 @@
                     </div>
                     <group col="4">
                         <field name="name"/>
-                        <field name="model_id"/>
-                        <field name="group_id"/>
-                        <field name="active" widget="boolean_toggle"/>
-                    </group>
+                        </group>
                     <group string="Access" col="4">
-                        <field name="perm_read"/>
-                        <field name="perm_write"/>
-                        <field name="perm_create"/>
-                        <field name="perm_unlink"/>
-                    </group>
+                        </group>
                    </sheet> 
                 </form>
     <form string="Access Rights">
@@ -633,16 +553,9 @@
                     </div>
         <group col="4">
           <field name="name"/>
-          <field name="model_id"/>
-          <field name="group_id"/>
-          <field name="active" widget="boolean_toggle"/>
-        </group>
+          </group>
         <group string="Access" col="4">
-          <field name="perm_read"/>
-          <field name="perm_write"/>
-          <field name="perm_create"/>
-          <field name="perm_unlink"/>
-        </group>
+          </group>
       </sheet>
     </form>
     <form string="Access Rights">
@@ -652,16 +565,9 @@
                     </div>
         <group col="4">
           <field name="name"/>
-          <field name="model_id"/>
-          <field name="group_id"/>
-          <field name="active" widget="boolean_toggle"/>
-        </group>
+          </group>
         <group string="Access" col="4">
-          <field name="perm_read"/>
-          <field name="perm_write"/>
-          <field name="perm_create"/>
-          <field name="perm_unlink"/>
-        </group>
+          </group>
       </sheet>
     </form>
     <form string="Access Rights">
@@ -671,16 +577,9 @@
                     </div>
         <group col="4">
           <field name="name"/>
-          <field name="model_id"/>
-          <field name="group_id"/>
-          <field name="active" widget="boolean_toggle"/>
-        </group>
+          </group>
         <group string="Access" col="4">
-          <field name="perm_read"/>
-          <field name="perm_write"/>
-          <field name="perm_create"/>
-          <field name="perm_unlink"/>
-        </group>
+          </group>
       </sheet>
     </form>
   </xpath>
@@ -691,31 +590,22 @@
         <div class="alert alert-info text-center mb-3" role="alert" invisible="id &gt; 0">
                             You are inviting a new user.
                         </div>
-        <field name="avatar_128" invisible="1"/>
-        <field name="image_1920" widget="image" class="oe_avatar" options="{&quot;zoom&quot;: true, &quot;preview_image&quot;: &quot;avatar_128&quot;}"/>
         <div class="oe_title">
           <label for="name"/>
           <h1>
             <field name="name" placeholder="e.g. John Doe" required="1"/>
           </h1>
-          <field name="email" invisible="1"/>
           <label for="login" string="Email Address"/>
           <h2>
-            <field name="login" placeholder="e.g. email@yourcompany.com"/>
-          </h2>
+            </h2>
           <label for="company_id" groups="base.group_multi_company"/>
-          <field name="company_id" context="{'user_preference': 0}" groups="base.group_multi_company"/>
-        </div>
+          </div>
         <group name="phone_numbers">
           <label for="groups_id" string="Access Rights" groups="base.group_no_one" invisible="id &gt; 0"/>
-          <div groups="base.group_no_one" invisible="id &gt; 0"><field name="groups_id" readonly="1" widget="many2many_tags" options="{'color_field': 'color'}" style="display: inline;"/> You will be able to define additional access rights by editing the newly created user under the Settings / Users menu.
-                            </div>
-          <field name="phone" widget="phone" options="{'enable_sms': false}"/>
-          <field name="mobile" widget="phone" options="{'enable_sms': false}"/>
-        </group>
+          <div groups="base.group_no_one" invisible="id &gt; 0"/>
+          </group>
         <group name="Warehouses">
-          <field name="property_warehouse_id" groups="stock.group_stock_multi_warehouses"/>
-        </group>
+          </group>
       </sheet>
     </form>
   </xpath>
@@ -747,11 +637,9 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='parent_id']" position="before">
-    <field name="x_studio_description"/>
-  </xpath>
+    </xpath>
   <xpath expr="//field[@name='removal_strategy_id']" position="after">
-    <field name="x_studio_company_id" string="Company"/>
-  </xpath>
+    </xpath>
 </data>
       </field>
     </record>

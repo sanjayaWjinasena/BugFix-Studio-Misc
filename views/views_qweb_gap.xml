@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- BugFix-Studio-Misc: 317 qweb Studio report-template overrides -->
 <odoo>
   <data>
@@ -517,7 +517,7 @@
     </record>
 
     <record id="view_qweb_odoo_studio_report_purchasequotation_document_customization" model="ir.ui.view">
-      <field name="name">Odoo Studio: report_purchasequotation_document customization</field>
+      <field name="active" eval="True"/><field name="name">Odoo Studio: report_purchasequotation_document customization</field>
       <field name="type">qweb</field>
       <field name="key">gen_key.f62573</field>
       <field name="priority">160</field>
@@ -535,7 +535,7 @@
     </record>
 
     <record id="view_qweb_document_tax_totals_copy_1" model="ir.ui.view">
-      <field name="name">document_tax_totals copy(1)</field>
+      <field name="active" eval="True"/><field name="name">document_tax_totals copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">account.document_tax_totals_copy_1</field>
       <field name="arch" type="xml">
@@ -572,7 +572,7 @@
     </record>
 
     <record id="view_qweb_report_purchasequotation_document_copy_4" model="ir.ui.view">
-      <field name="name">report_purchasequotation_document copy(4)</field>
+      <field name="active" eval="True"/><field name="name">report_purchasequotation_document copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">purchase.report_purchasequotation_document_copy_4</field>
       <field name="arch" type="xml">
@@ -652,7 +652,7 @@
     </record>
 
     <record id="view_qweb_report_purchasequotation_copy_2" model="ir.ui.view">
-      <field name="name">report_purchasequotation copy(2)</field>
+      <field name="active" eval="True"/><field name="name">report_purchasequotation copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">purchase.report_purchasequotation_copy_2</field>
       <field name="arch" type="xml">
@@ -667,7 +667,7 @@
     </record>
 
     <record id="view_qweb_report_purchasequotation_document_copy_3" model="ir.ui.view">
-      <field name="name">report_purchasequotation_document copy(3)</field>
+      <field name="active" eval="True"/><field name="name">report_purchasequotation_document copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">purchase.report_purchasequotation_document_copy_3</field>
       <field name="arch" type="xml">
@@ -888,7 +888,7 @@
     </record>
 
     <record id="view_qweb_report_purchasequotation_copy_1" model="ir.ui.view">
-      <field name="name">report_purchasequotation copy(1)</field>
+      <field name="active" eval="True"/><field name="name">report_purchasequotation copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">purchase.report_purchasequotation_copy_1</field>
       <field name="arch" type="xml">
@@ -903,7 +903,7 @@
     </record>
 
     <record id="view_qweb_report_purchasequotation_document_copy_2" model="ir.ui.view">
-      <field name="name">report_purchasequotation_document copy(2)</field>
+      <field name="active" eval="True"/><field name="name">report_purchasequotation_document copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">purchase.report_purchasequotation_document_copy_2</field>
       <field name="arch" type="xml">
@@ -983,7 +983,7 @@
     </record>
 
     <record id="view_qweb_report_purchasequotation_document_copy_1" model="ir.ui.view">
-      <field name="name">report_purchasequotation_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">report_purchasequotation_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">purchase.report_purchasequotation_document_copy_1</field>
       <field name="arch" type="xml">
@@ -1146,7 +1146,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder2_copy_11" model="ir.ui.view">
-      <field name="name">report_repairorder2 copy(11)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder2 copy(11)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder2_copy_11</field>
       <field name="arch" type="xml">
@@ -1161,7 +1161,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder2_copy_8" model="ir.ui.view">
-      <field name="name">report_repairorder2 copy(8)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder2 copy(8)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder2_copy_8</field>
       <field name="arch" type="xml">
@@ -1176,7 +1176,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder2_copy_10" model="ir.ui.view">
-      <field name="name">report_repairorder2 copy(10)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder2 copy(10)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder2_copy_10</field>
       <field name="arch" type="xml">
@@ -1191,7 +1191,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder2_copy_9" model="ir.ui.view">
-      <field name="name">report_repairorder2 copy(9)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder2 copy(9)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder2_copy_9</field>
       <field name="arch" type="xml">
@@ -1206,7 +1206,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_5" model="ir.ui.view">
-      <field name="name">report_repairorder copy(5)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(5)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_5</field>
       <field name="arch" type="xml">
@@ -1284,7 +1284,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_11" model="ir.ui.view">
-      <field name="name">report_repairorder copy(11)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(11)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_11</field>
       <field name="arch" type="xml">
@@ -1362,7 +1362,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_1" model="ir.ui.view">
-      <field name="name">report_repairorder copy(1)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_1</field>
       <field name="arch" type="xml">
@@ -1440,7 +1440,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_10" model="ir.ui.view">
-      <field name="name">report_repairorder copy(10)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(10)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_10</field>
       <field name="arch" type="xml">
@@ -1518,7 +1518,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_8" model="ir.ui.view">
-      <field name="name">report_repairorder copy(8)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(8)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_8</field>
       <field name="arch" type="xml">
@@ -1596,7 +1596,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_4" model="ir.ui.view">
-      <field name="name">report_repairorder copy(4)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_4</field>
       <field name="arch" type="xml">
@@ -1674,7 +1674,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_6" model="ir.ui.view">
-      <field name="name">report_repairorder copy(6)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(6)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_6</field>
       <field name="arch" type="xml">
@@ -1744,7 +1744,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_7" model="ir.ui.view">
-      <field name="name">report_repairorder copy(7)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(7)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_7</field>
       <field name="arch" type="xml">
@@ -1813,7 +1813,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_3" model="ir.ui.view">
-      <field name="name">report_repairorder copy(3)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_3</field>
       <field name="arch" type="xml">
@@ -1891,7 +1891,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_7_copy_1" model="ir.ui.view">
-      <field name="name">report_repairorder copy(7) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(7) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_7_copy_1</field>
       <field name="arch" type="xml">
@@ -1953,7 +1953,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_7_copy_2" model="ir.ui.view">
-      <field name="name">report_repairorder copy(7) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(7) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_7_copy_2</field>
       <field name="arch" type="xml">
@@ -2014,7 +2014,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_7_copy_4" model="ir.ui.view">
-      <field name="name">report_repairorder copy(7) copy(4)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(7) copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_7_copy_4</field>
       <field name="arch" type="xml">
@@ -2080,7 +2080,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_7_copy_3" model="ir.ui.view">
-      <field name="name">report_repairorder copy(7) copy(3)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(7) copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_7_copy_3</field>
       <field name="arch" type="xml">
@@ -2142,7 +2142,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_9" model="ir.ui.view">
-      <field name="name">report_repairorder copy(9)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(9)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_9</field>
       <field name="arch" type="xml">
@@ -2220,7 +2220,7 @@
     </record>
 
     <record id="view_qweb_report_repairorder_copy_2" model="ir.ui.view">
-      <field name="name">report_repairorder copy(2)</field>
+      <field name="active" eval="True"/><field name="name">report_repairorder copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">repair.report_repairorder_copy_2</field>
       <field name="arch" type="xml">
@@ -2298,7 +2298,7 @@
     </record>
 
     <record id="view_qweb_report_saleorder_copy_2" model="ir.ui.view">
-      <field name="name">report_saleorder copy(2)</field>
+      <field name="active" eval="True"/><field name="name">report_saleorder copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">sale.report_saleorder_copy_2</field>
       <field name="arch" type="xml">
@@ -2313,7 +2313,7 @@
     </record>
 
     <record id="view_qweb_report_saleorder_copy_1" model="ir.ui.view">
-      <field name="name">report_saleorder copy(1)</field>
+      <field name="active" eval="True"/><field name="name">report_saleorder copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">sale.report_saleorder_copy_1</field>
       <field name="arch" type="xml">
@@ -2328,7 +2328,7 @@
     </record>
 
     <record id="view_qweb_report_saleorder_copy_3" model="ir.ui.view">
-      <field name="name">report_saleorder copy(3)</field>
+      <field name="active" eval="True"/><field name="name">report_saleorder copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">sale.report_saleorder_copy_3</field>
       <field name="arch" type="xml">
@@ -2343,7 +2343,7 @@
     </record>
 
     <record id="view_qweb_report_saleorder_document_copy_3" model="ir.ui.view">
-      <field name="name">report_saleorder_document copy(3)</field>
+      <field name="active" eval="True"/><field name="name">report_saleorder_document copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">sale.report_saleorder_document_copy_3</field>
       <field name="arch" type="xml">
@@ -2621,7 +2621,7 @@
     </record>
 
     <record id="view_qweb_report_saleorder_document_copy_2" model="ir.ui.view">
-      <field name="name">report_saleorder_document copy(2)</field>
+      <field name="active" eval="True"/><field name="name">report_saleorder_document copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">sale.report_saleorder_document_copy_2</field>
       <field name="arch" type="xml">
@@ -2934,7 +2934,7 @@
     </record>
 
     <record id="view_qweb_report_saleorder_document_copy_1" model="ir.ui.view">
-      <field name="name">report_saleorder_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">report_saleorder_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">sale.report_saleorder_document_copy_1</field>
       <field name="arch" type="xml">
@@ -3181,7 +3181,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(9)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(9)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_9</field>
       <field name="arch" type="xml">
@@ -3245,7 +3245,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_1_copy_2</field>
       <field name="arch" type="xml">
@@ -3427,7 +3427,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552 copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552 copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_3</field>
       <field name="arch" type="xml">
@@ -3442,7 +3442,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(4)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_4</field>
       <field name="arch" type="xml">
@@ -3625,7 +3625,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(5)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(5)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_5</field>
       <field name="arch" type="xml">
@@ -3808,7 +3808,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(4)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_4</field>
       <field name="arch" type="xml">
@@ -3874,7 +3874,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -4052,7 +4052,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_document_copy_1</field>
       <field name="arch" type="xml">
@@ -4095,7 +4095,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_document_copy_1</field>
       <field name="arch" type="xml">
@@ -4108,7 +4108,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -4400,7 +4400,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(8)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(8)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_8</field>
       <field name="arch" type="xml">
@@ -4583,7 +4583,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552 copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552 copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_2</field>
       <field name="arch" type="xml">
@@ -4598,7 +4598,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_2</field>
       <field name="arch" type="xml">
@@ -4794,7 +4794,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_3</field>
       <field name="arch" type="xml">
@@ -4939,7 +4939,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1</field>
       <field name="arch" type="xml">
@@ -5122,7 +5122,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -5304,7 +5304,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2</field>
       <field name="arch" type="xml">
@@ -5498,7 +5498,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2</field>
       <field name="arch" type="xml">
@@ -5541,7 +5541,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383 copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383 copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_copy_1</field>
       <field name="arch" type="xml">
@@ -5556,7 +5556,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802 copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802 copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_copy_1</field>
       <field name="arch" type="xml">
@@ -5571,7 +5571,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -5826,7 +5826,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_3</field>
       <field name="arch" type="xml">
@@ -5872,7 +5872,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -6054,7 +6054,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_8" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(6)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(6)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_6</field>
       <field name="arch" type="xml">
@@ -6237,7 +6237,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_3</field>
       <field name="arch" type="xml">
@@ -6252,7 +6252,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(4)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_4</field>
       <field name="arch" type="xml">
@@ -6367,7 +6367,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_10" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -6549,7 +6549,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_11" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -6564,7 +6564,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(10)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(10)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_10</field>
       <field name="arch" type="xml">
@@ -6689,7 +6689,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_12" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -6871,7 +6871,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_1</field>
       <field name="arch" type="xml">
@@ -6994,7 +6994,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_13" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -7007,7 +7007,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_1</field>
       <field name="arch" type="xml">
@@ -7022,7 +7022,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(8)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(8)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_8</field>
       <field name="arch" type="xml">
@@ -7087,7 +7087,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_3</field>
       <field name="arch" type="xml">
@@ -7102,7 +7102,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(6)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(6)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_6</field>
       <field name="arch" type="xml">
@@ -7162,7 +7162,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_14" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_2</field>
       <field name="arch" type="xml">
@@ -7177,7 +7177,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_15" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1) copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1) copy(1) copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -7359,7 +7359,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_16" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -7514,7 +7514,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_17" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1</field>
       <field name="arch" type="xml">
@@ -7527,7 +7527,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_18" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -7700,7 +7700,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(2) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(2) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_2_copy_1</field>
       <field name="arch" type="xml">
@@ -7715,7 +7715,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552 copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552 copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_1</field>
       <field name="arch" type="xml">
@@ -7730,7 +7730,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_19" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1</field>
       <field name="arch" type="xml">
@@ -7745,7 +7745,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_20" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -7927,7 +7927,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_8" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_1</field>
       <field name="arch" type="xml">
@@ -8055,7 +8055,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(7)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(7)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_7</field>
       <field name="arch" type="xml">
@@ -8114,7 +8114,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_21" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(4)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4</field>
       <field name="arch" type="xml">
@@ -8129,7 +8129,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_22" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1</field>
       <field name="arch" type="xml">
@@ -8311,7 +8311,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_10" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_3</field>
       <field name="arch" type="xml">
@@ -8572,7 +8572,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_11" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_3</field>
       <field name="arch" type="xml">
@@ -8587,7 +8587,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_23" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_3</field>
       <field name="arch" type="xml">
@@ -8600,7 +8600,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31 copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_2</field>
       <field name="arch" type="xml">
@@ -8615,7 +8615,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_2</field>
       <field name="arch" type="xml">
@@ -8730,7 +8730,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2_copy_2</field>
       <field name="arch" type="xml">
@@ -8773,7 +8773,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_12" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(5)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2) copy(5)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2_copy_5</field>
       <field name="arch" type="xml">
@@ -8830,7 +8830,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_13" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1</field>
       <field name="arch" type="xml">
@@ -9125,7 +9125,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_14" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1_copy_1</field>
       <field name="arch" type="xml">
@@ -9405,7 +9405,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_24" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4</field>
       <field name="arch" type="xml">
@@ -9418,7 +9418,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_25" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_2</field>
       <field name="arch" type="xml">
@@ -9431,7 +9431,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_26" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(4) copy(1) copy(1) copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d copy(1) copy(4) copy(1) copy(1) copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_2</field>
       <field name="arch" type="xml">
@@ -9446,7 +9446,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2eed4aa6_549b_46a1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_document_copy_1</field>
       <field name="arch" type="xml">
@@ -9605,7 +9605,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2_copy_1</field>
       <field name="arch" type="xml">
@@ -9649,7 +9649,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(4) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(4) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_4_copy_1</field>
       <field name="arch" type="xml">
@@ -9767,7 +9767,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_3</field>
       <field name="arch" type="xml">
@@ -9882,7 +9882,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1</field>
       <field name="arch" type="xml">
@@ -10006,7 +10006,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_8" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(2) copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(2) copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2_copy_2_copy_1</field>
       <field name="arch" type="xml">
@@ -10049,7 +10049,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(1)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_1</field>
       <field name="arch" type="xml">
@@ -10070,7 +10070,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_15" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2</field>
       <field name="arch" type="xml">
@@ -10159,7 +10159,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_27" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(3)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(3)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_3</field>
       <field name="arch" type="xml">
@@ -10342,7 +10342,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_28" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(7)</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(7)</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_7</field>
       <field name="arch" type="xml">
@@ -10525,7 +10525,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_16b39d57_fc89_4495" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_16b39d57-fc89-4495-9376-4b6cc443b8f0</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_16b39d57-fc89-4495-9376-4b6cc443b8f0</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_16b39d57-fc89-4495-9376-4b6cc443b8f0</field>
       <field name="arch" type="xml">
@@ -10540,7 +10540,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c6838480_51c3_4695" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3</field>
       <field name="arch" type="xml">
@@ -10556,7 +10556,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_05008680_4a72_4fc7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff</field>
       <field name="arch" type="xml">
@@ -10572,7 +10572,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_39af7eba_e661_4a41" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8</field>
       <field name="arch" type="xml">
@@ -10588,7 +10588,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f865ee07_5757_4db7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f865ee07-5757-4db7-9af6-8b6a307241e4</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f865ee07-5757-4db7-9af6-8b6a307241e4</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f865ee07-5757-4db7-9af6-8b6a307241e4</field>
       <field name="arch" type="xml">
@@ -10604,7 +10604,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_42c807e1_c6af_42c6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_42c807e1-c6af-42c6-a5d7-2bd73600988d</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_42c807e1-c6af-42c6-a5d7-2bd73600988d</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_42c807e1-c6af-42c6-a5d7-2bd73600988d</field>
       <field name="arch" type="xml">
@@ -10619,7 +10619,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_5bbc45eb_3fc4_45c3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b</field>
       <field name="arch" type="xml">
@@ -10636,7 +10636,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_b0cc4641_17fe_4787" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_b0cc4641-17fe-4787-9113-3469754efb02</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_b0cc4641-17fe-4787-9113-3469754efb02</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_b0cc4641-17fe-4787-9113-3469754efb02</field>
       <field name="arch" type="xml">
@@ -10651,7 +10651,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2ca36fe5_f729_4e78" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2ca36fe5-f729-4e78-8750-bcc89bc436d5</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2ca36fe5-f729-4e78-8750-bcc89bc436d5</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2ca36fe5-f729-4e78-8750-bcc89bc436d5</field>
       <field name="arch" type="xml">
@@ -10666,7 +10666,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f65e00b0_a1eb_4dc8" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f65e00b0-a1eb-4dc8-be6b-246e5514146b</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f65e00b0-a1eb-4dc8-be6b-246e5514146b</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f65e00b0-a1eb-4dc8-be6b-246e5514146b</field>
       <field name="arch" type="xml">
@@ -10682,7 +10682,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_90fbe3de_374e_45ef" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f</field>
       <field name="arch" type="xml">
@@ -10698,7 +10698,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ae400924_613e_49e9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ae400924-613e-49e9-aa88-745e33ce9c48</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ae400924-613e-49e9-aa88-745e33ce9c48</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ae400924-613e-49e9-aa88-745e33ce9c48</field>
       <field name="arch" type="xml">
@@ -10714,7 +10714,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_9b09ab9d_d084_4b15" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_9b09ab9d-d084-4b15-a08e-921b8501f976</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_9b09ab9d-d084-4b15-a08e-921b8501f976</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_9b09ab9d-d084-4b15-a08e-921b8501f976</field>
       <field name="arch" type="xml">
@@ -10729,7 +10729,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383</field>
       <field name="arch" type="xml">
@@ -10744,7 +10744,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_648d8300_c9d4_47cf" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_648d8300-c9d4-47cf-a453-5875d321930f</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_648d8300-c9d4-47cf-a453-5875d321930f</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_648d8300-c9d4-47cf-a453-5875d321930f</field>
       <field name="arch" type="xml">
@@ -10759,7 +10759,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ed99f184_744e_48de" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ed99f184-744e-48de-8322-5ec18a0634af</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ed99f184-744e-48de-8322-5ec18a0634af</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ed99f184-744e-48de-8322-5ec18a0634af</field>
       <field name="arch" type="xml">
@@ -10775,7 +10775,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_cdd1aa9a_19c7_4db6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303</field>
       <field name="arch" type="xml">
@@ -10791,7 +10791,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2dbc48cc_8374_4344" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b</field>
       <field name="arch" type="xml">
@@ -10807,7 +10807,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_5d598073_6b78_41c5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_5d598073-6b78-41c5-9f7e-436b2dcdb5d6</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_5d598073-6b78-41c5-9f7e-436b2dcdb5d6</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_5d598073-6b78-41c5-9f7e-436b2dcdb5d6</field>
       <field name="arch" type="xml">
@@ -10823,7 +10823,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_42161fef_4356_4034" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_42161fef-4356-4034-8d01-05f7aa0b2103</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_42161fef-4356-4034-8d01-05f7aa0b2103</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_42161fef-4356-4034-8d01-05f7aa0b2103</field>
       <field name="arch" type="xml">
@@ -10838,7 +10838,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_b00e12f5_d579_4de3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_b00e12f5-d579-4de3-b18b-c1aa681ba384</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_b00e12f5-d579-4de3-b18b-c1aa681ba384</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_b00e12f5-d579-4de3-b18b-c1aa681ba384</field>
       <field name="arch" type="xml">
@@ -10853,7 +10853,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_66f3d18c_016c_424e" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_66f3d18c-016c-424e-8062-0867a4f89689</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_66f3d18c-016c-424e-8062-0867a4f89689</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_66f3d18c-016c-424e-8062-0867a4f89689</field>
       <field name="arch" type="xml">
@@ -10868,7 +10868,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c10929ff_9e4d_4dfc" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c10929ff-9e4d-4dfc-b92c-2270c737ff72</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c10929ff-9e4d-4dfc-b92c-2270c737ff72</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c10929ff-9e4d-4dfc-b92c-2270c737ff72</field>
       <field name="arch" type="xml">
@@ -10884,7 +10884,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8730847d_290b_4196" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73</field>
       <field name="arch" type="xml">
@@ -10900,7 +10900,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_599c1af7_146b_44f2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_599c1af7-146b-44f2-adea-85c3d21058aa</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_599c1af7-146b-44f2-adea-85c3d21058aa</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_599c1af7-146b-44f2-adea-85c3d21058aa</field>
       <field name="arch" type="xml">
@@ -10916,7 +10916,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1e8a3306_4e92_495b" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1e8a3306-4e92-495b-8a91-4500d25b9d84</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1e8a3306-4e92-495b-8a91-4500d25b9d84</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1e8a3306-4e92-495b-8a91-4500d25b9d84</field>
       <field name="arch" type="xml">
@@ -10931,7 +10931,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1f67a143_7e16_46dc" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1f67a143-7e16-46dc-b40f-124d08b273a9</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1f67a143-7e16-46dc-b40f-124d08b273a9</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1f67a143-7e16-46dc-b40f-124d08b273a9</field>
       <field name="arch" type="xml">
@@ -10946,7 +10946,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1793edd0_e445_4f56" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1793edd0-e445-4f56-b379-a606cc6d4b30</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1793edd0-e445-4f56-b379-a606cc6d4b30</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1793edd0-e445-4f56-b379-a606cc6d4b30</field>
       <field name="arch" type="xml">
@@ -10961,7 +10961,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1ca14cc9_3f76_4518" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce</field>
       <field name="arch" type="xml">
@@ -10977,7 +10977,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_4271f2c9_24c7_4c75" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d</field>
       <field name="arch" type="xml">
@@ -10993,7 +10993,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_7f2cd4cb_39ee_4afa" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619</field>
       <field name="arch" type="xml">
@@ -11009,7 +11009,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1e3ae6de_34bc_47b4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1e3ae6de-34bc-47b4-9a66-98921759e346</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1e3ae6de-34bc-47b4-9a66-98921759e346</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1e3ae6de-34bc-47b4-9a66-98921759e346</field>
       <field name="arch" type="xml">
@@ -11025,7 +11025,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_10" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31</field>
       <field name="arch" type="xml">
@@ -11041,7 +11041,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18_2" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802</field>
       <field name="arch" type="xml">
@@ -11056,7 +11056,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_7d191b57_7743_4c00" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_7d191b57-7743-4c00-a3f5-e588ed834f9e</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_7d191b57-7743-4c00-a3f5-e588ed834f9e</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_7d191b57-7743-4c00-a3f5-e588ed834f9e</field>
       <field name="arch" type="xml">
@@ -11071,7 +11071,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_e0221f08_22e8_499c" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_e0221f08-22e8-499c-b4d8-aa7a69096dc9</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_e0221f08-22e8-499c-b4d8-aa7a69096dc9</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_e0221f08-22e8-499c-b4d8-aa7a69096dc9</field>
       <field name="arch" type="xml">
@@ -11087,7 +11087,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ff3abb7a_b545_42bf" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ff3abb7a-b545-42bf-bc98-d5312049bfd4</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ff3abb7a-b545-42bf-bc98-d5312049bfd4</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ff3abb7a-b545-42bf-bc98-d5312049bfd4</field>
       <field name="arch" type="xml">
@@ -11102,7 +11102,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ae8c07cd_bfdc_44bd" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ae8c07cd-bfdc-44bd-bac8-55e32df187c2</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ae8c07cd-bfdc-44bd-bac8-55e32df187c2</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ae8c07cd-bfdc-44bd-bac8-55e32df187c2</field>
       <field name="arch" type="xml">
@@ -11117,7 +11117,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_dcb81ec9_d265_44f7" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_dcb81ec9-d265-44f7-96c9-29d8101e38c0</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_dcb81ec9-d265-44f7-96c9-29d8101e38c0</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_dcb81ec9-d265-44f7-96c9-29d8101e38c0</field>
       <field name="arch" type="xml">
@@ -11132,7 +11132,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_45c43da2_023d_4ca9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_45c43da2-023d-4ca9-ac2c-a2d48e31e8bc</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_45c43da2-023d-4ca9-ac2c-a2d48e31e8bc</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_45c43da2-023d-4ca9-ac2c-a2d48e31e8bc</field>
       <field name="arch" type="xml">
@@ -11147,7 +11147,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_b589ee56_493a_4d58" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_b589ee56-493a-4d58-b45a-fa099d95dbf9</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_b589ee56-493a-4d58-b45a-fa099d95dbf9</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_b589ee56-493a-4d58-b45a-fa099d95dbf9</field>
       <field name="arch" type="xml">
@@ -11163,7 +11163,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1cf74e61_31b6_45b4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1cf74e61-31b6-45b4-99c1-692feaceaac0</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1cf74e61-31b6-45b4-99c1-692feaceaac0</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1cf74e61-31b6-45b4-99c1-692feaceaac0</field>
       <field name="arch" type="xml">
@@ -11179,7 +11179,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8f032a01_f27a_4dc4" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8f032a01-f27a-4dc4-aeed-141989c9ca9b</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8f032a01-f27a-4dc4-aeed-141989c9ca9b</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8f032a01-f27a-4dc4-aeed-141989c9ca9b</field>
       <field name="arch" type="xml">
@@ -11194,7 +11194,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f42597b2_77c1_4142" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb</field>
       <field name="arch" type="xml">
@@ -11210,7 +11210,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_8" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552</field>
       <field name="arch" type="xml">
@@ -11226,7 +11226,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_7e600042_d9b3_43a6" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb</field>
       <field name="arch" type="xml">
@@ -11242,7 +11242,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_380ab12f_645f_4686" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_380ab12f-645f-4686-b80b-28ac698e840c</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_380ab12f-645f-4686-b80b-28ac698e840c</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_380ab12f-645f-4686-b80b-28ac698e840c</field>
       <field name="arch" type="xml">
@@ -11258,7 +11258,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_33324e75_c153_4215" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_33324e75-c153-4215-a12f-111c967fa10a</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_33324e75-c153-4215-a12f-111c967fa10a</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_33324e75-c153-4215-a12f-111c967fa10a</field>
       <field name="arch" type="xml">
@@ -11274,7 +11274,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f6ae6474_631e_4a8a" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f6ae6474-631e-4a8a-a139-c3b015e2e80d</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f6ae6474-631e-4a8a-a139-c3b015e2e80d</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f6ae6474-631e-4a8a-a139-c3b015e2e80d</field>
       <field name="arch" type="xml">
@@ -11289,7 +11289,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2bf89ea3_bcea_48f3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2bf89ea3-bcea-48f3-a307-2e06f35414be</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2bf89ea3-bcea-48f3-a307-2e06f35414be</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2bf89ea3-bcea-48f3-a307-2e06f35414be</field>
       <field name="arch" type="xml">
@@ -11305,7 +11305,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_67942c03_d21d_483b" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_67942c03-d21d-483b-b660-f5b891360a14</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_67942c03-d21d-483b-b660-f5b891360a14</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_67942c03-d21d-483b-b660-f5b891360a14</field>
       <field name="arch" type="xml">
@@ -11320,7 +11320,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ef77bdb2_9ac7_4021" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ef77bdb2-9ac7-4021-b3df-50f85b984a85</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ef77bdb2-9ac7-4021-b3df-50f85b984a85</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ef77bdb2-9ac7-4021-b3df-50f85b984a85</field>
       <field name="arch" type="xml">
@@ -11335,7 +11335,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2201dd3d_bdcc_4e2b" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2201dd3d-bdcc-4e2b-ae6d-4f515a355487</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2201dd3d-bdcc-4e2b-ae6d-4f515a355487</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2201dd3d-bdcc-4e2b-ae6d-4f515a355487</field>
       <field name="arch" type="xml">
@@ -11351,7 +11351,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_a69780d2_1641_40be" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271</field>
       <field name="arch" type="xml">
@@ -11367,7 +11367,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_4efc8736_12b5_44fc" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf</field>
       <field name="arch" type="xml">
@@ -11382,7 +11382,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_bbe16ed6_f933_48cc" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7</field>
       <field name="arch" type="xml">
@@ -11398,7 +11398,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_01559fbb_91f5_4c8c" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3_document</field>
       <field name="arch" type="xml">
@@ -11412,7 +11412,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_05008680_4a72_4fc7_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff_document</field>
       <field name="arch" type="xml">
@@ -11426,7 +11426,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_0582785a_b7ef_48d1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888_document</field>
       <field name="arch" type="xml">
@@ -11440,7 +11440,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_16b39d57_fc89_4495_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_16b39d57-fc89-4495-9376-4b6cc443b8f0_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_16b39d57-fc89-4495-9376-4b6cc443b8f0_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_16b39d57-fc89-4495-9376-4b6cc443b8f0_document</field>
       <field name="arch" type="xml">
@@ -11453,7 +11453,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1793edd0_e445_4f56_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1793edd0-e445-4f56-b379-a606cc6d4b30_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1793edd0-e445-4f56-b379-a606cc6d4b30_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1793edd0-e445-4f56-b379-a606cc6d4b30_document</field>
       <field name="arch" type="xml">
@@ -11466,7 +11466,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1aa2ef46_1ca1_4d9a" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d_document</field>
       <field name="arch" type="xml">
@@ -11478,7 +11478,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document</field>
       <field name="arch" type="xml">
@@ -11492,7 +11492,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1ca14cc9_3f76_4518_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce_document</field>
       <field name="arch" type="xml">
@@ -11506,7 +11506,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1cf74e61_31b6_45b4_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1cf74e61-31b6-45b4-99c1-692feaceaac0_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1cf74e61-31b6-45b4-99c1-692feaceaac0_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1cf74e61-31b6-45b4-99c1-692feaceaac0_document</field>
       <field name="arch" type="xml">
@@ -11517,7 +11517,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1e3ae6de_34bc_47b4_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1e3ae6de-34bc-47b4-9a66-98921759e346_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1e3ae6de-34bc-47b4-9a66-98921759e346_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1e3ae6de-34bc-47b4-9a66-98921759e346_document</field>
       <field name="arch" type="xml">
@@ -11531,7 +11531,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1e8a3306_4e92_495b_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1e8a3306-4e92-495b-8a91-4500d25b9d84_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1e8a3306-4e92-495b-8a91-4500d25b9d84_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1e8a3306-4e92-495b-8a91-4500d25b9d84_document</field>
       <field name="arch" type="xml">
@@ -11553,7 +11553,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_1f67a143_7e16_46dc_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_1f67a143-7e16-46dc-b40f-124d08b273a9_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_1f67a143-7e16-46dc-b40f-124d08b273a9_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_1f67a143-7e16-46dc-b40f-124d08b273a9_document</field>
       <field name="arch" type="xml">
@@ -11566,7 +11566,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2201dd3d_bdcc_4e2b_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2201dd3d-bdcc-4e2b-ae6d-4f515a355487_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2201dd3d-bdcc-4e2b-ae6d-4f515a355487_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2201dd3d-bdcc-4e2b-ae6d-4f515a355487_document</field>
       <field name="arch" type="xml">
@@ -11580,7 +11580,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2be3d602_6356_4576" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d_document</field>
       <field name="arch" type="xml">
@@ -11594,7 +11594,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2bf89ea3_bcea_48f3_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2bf89ea3-bcea-48f3-a307-2e06f35414be_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2bf89ea3-bcea-48f3-a307-2e06f35414be_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2bf89ea3-bcea-48f3-a307-2e06f35414be_document</field>
       <field name="arch" type="xml">
@@ -11608,7 +11608,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2ca36fe5_f729_4e78_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2ca36fe5-f729-4e78-8750-bcc89bc436d5_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2ca36fe5-f729-4e78-8750-bcc89bc436d5_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2ca36fe5-f729-4e78-8750-bcc89bc436d5_document</field>
       <field name="arch" type="xml">
@@ -11727,7 +11727,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2dbc48cc_8374_4344_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b_document</field>
       <field name="arch" type="xml">
@@ -11741,7 +11741,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_2eed4aa6_549b_46a1_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_document</field>
       <field name="arch" type="xml">
@@ -11892,7 +11892,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_33324e75_c153_4215_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_33324e75-c153-4215-a12f-111c967fa10a_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_33324e75-c153-4215-a12f-111c967fa10a_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_33324e75-c153-4215-a12f-111c967fa10a_document</field>
       <field name="arch" type="xml">
@@ -11903,7 +11903,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_37ad8061_c594_4b2f" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5_document</field>
       <field name="arch" type="xml">
@@ -11917,7 +11917,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_37e05fae-856e-4e18-9878-42eb76265802_document</field>
       <field name="arch" type="xml">
@@ -11960,7 +11960,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_380ab12f_645f_4686_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_380ab12f-645f-4686-b80b-28ac698e840c_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_380ab12f-645f-4686-b80b-28ac698e840c_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_380ab12f-645f-4686-b80b-28ac698e840c_document</field>
       <field name="arch" type="xml">
@@ -11971,7 +11971,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_39af7eba_e661_4a41_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8_document</field>
       <field name="arch" type="xml">
@@ -11985,7 +11985,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_42161fef_4356_4034_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_42161fef-4356-4034-8d01-05f7aa0b2103_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_42161fef-4356-4034-8d01-05f7aa0b2103_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_42161fef-4356-4034-8d01-05f7aa0b2103_document</field>
       <field name="arch" type="xml">
@@ -11998,7 +11998,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_4271f2c9_24c7_4c75_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d_document</field>
       <field name="arch" type="xml">
@@ -12012,7 +12012,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_42c807e1_c6af_42c6_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_42c807e1-c6af-42c6-a5d7-2bd73600988d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_42c807e1-c6af-42c6-a5d7-2bd73600988d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_42c807e1-c6af-42c6-a5d7-2bd73600988d_document</field>
       <field name="arch" type="xml">
@@ -12025,7 +12025,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_45c43da2_023d_4ca9_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_45c43da2-023d-4ca9-ac2c-a2d48e31e8bc_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_45c43da2-023d-4ca9-ac2c-a2d48e31e8bc_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_45c43da2-023d-4ca9-ac2c-a2d48e31e8bc_document</field>
       <field name="arch" type="xml">
@@ -12169,7 +12169,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_4efc8736_12b5_44fc_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf_document</field>
       <field name="arch" type="xml">
@@ -12182,7 +12182,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_50c3b9df_c892_4cb5" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_50c3b9df-c892-4cb5-97d5-e049b72e9f8b_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_50c3b9df-c892-4cb5-97d5-e049b72e9f8b_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_50c3b9df-c892-4cb5-97d5-e049b72e9f8b_document</field>
       <field name="arch" type="xml">
@@ -12195,7 +12195,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_51c9e0e4_8f52_4b48" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a_document</field>
       <field name="arch" type="xml">
@@ -12209,7 +12209,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_599c1af7_146b_44f2_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_599c1af7-146b-44f2-adea-85c3d21058aa_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_599c1af7-146b-44f2-adea-85c3d21058aa_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_599c1af7-146b-44f2-adea-85c3d21058aa_document</field>
       <field name="arch" type="xml">
@@ -12223,7 +12223,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_5bbc45eb_3fc4_45c3_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b_document</field>
       <field name="arch" type="xml">
@@ -12235,7 +12235,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_5beecb7c_3184_45c9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_5beecb7c-3184-45c9-b2ed-2b6f709186da_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_5beecb7c-3184-45c9-b2ed-2b6f709186da_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_5beecb7c-3184-45c9-b2ed-2b6f709186da_document</field>
       <field name="arch" type="xml">
@@ -12248,7 +12248,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_5d598073_6b78_41c5_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_5d598073-6b78-41c5-9f7e-436b2dcdb5d6_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_5d598073-6b78-41c5-9f7e-436b2dcdb5d6_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_5d598073-6b78-41c5-9f7e-436b2dcdb5d6_document</field>
       <field name="arch" type="xml">
@@ -12262,7 +12262,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_648d8300_c9d4_47cf_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_648d8300-c9d4-47cf-a453-5875d321930f_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_648d8300-c9d4-47cf-a453-5875d321930f_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_648d8300-c9d4-47cf-a453-5875d321930f_document</field>
       <field name="arch" type="xml">
@@ -12275,7 +12275,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_66f3d18c_016c_424e_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_66f3d18c-016c-424e-8062-0867a4f89689_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_66f3d18c-016c-424e-8062-0867a4f89689_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_66f3d18c-016c-424e-8062-0867a4f89689_document</field>
       <field name="arch" type="xml">
@@ -12288,7 +12288,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_67942c03_d21d_483b_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_67942c03-d21d-483b-b660-f5b891360a14_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_67942c03-d21d-483b-b660-f5b891360a14_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_67942c03-d21d-483b-b660-f5b891360a14_document</field>
       <field name="arch" type="xml">
@@ -12301,7 +12301,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_7d191b57_7743_4c00_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_7d191b57-7743-4c00-a3f5-e588ed834f9e_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_7d191b57-7743-4c00-a3f5-e588ed834f9e_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_7d191b57-7743-4c00-a3f5-e588ed834f9e_document</field>
       <field name="arch" type="xml">
@@ -12314,7 +12314,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_7e600042_d9b3_43a6_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb_document</field>
       <field name="arch" type="xml">
@@ -12328,7 +12328,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_7f2cd4cb_39ee_4afa_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619_document</field>
       <field name="arch" type="xml">
@@ -12342,7 +12342,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8730847d_290b_4196_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73_document</field>
       <field name="arch" type="xml">
@@ -12356,7 +12356,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_889bd190_016a_4aa3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3_document</field>
       <field name="arch" type="xml">
@@ -12370,7 +12370,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_9" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document</field>
       <field name="arch" type="xml">
@@ -12384,7 +12384,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8e5bb340_e4f9_4a67" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8e5bb340-e4f9-4a67-a37a-aaca87caebcc_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8e5bb340-e4f9-4a67-a37a-aaca87caebcc_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8e5bb340-e4f9-4a67-a37a-aaca87caebcc_document</field>
       <field name="arch" type="xml">
@@ -12398,7 +12398,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_8f032a01_f27a_4dc4_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_8f032a01-f27a-4dc4-aeed-141989c9ca9b_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_8f032a01-f27a-4dc4-aeed-141989c9ca9b_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_8f032a01-f27a-4dc4-aeed-141989c9ca9b_document</field>
       <field name="arch" type="xml">
@@ -12411,7 +12411,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_90fbe3de_374e_45ef_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f_document</field>
       <field name="arch" type="xml">
@@ -12425,7 +12425,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_96136e4a_ca46_4d87" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_96136e4a-ca46-4d87-890d-01114a610c91_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_96136e4a-ca46-4d87-890d-01114a610c91_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_96136e4a-ca46-4d87-890d-01114a610c91_document</field>
       <field name="arch" type="xml">
@@ -12436,7 +12436,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_9b09ab9d_d084_4b15_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_9b09ab9d-d084-4b15-a08e-921b8501f976_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_9b09ab9d-d084-4b15-a08e-921b8501f976_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_9b09ab9d-d084-4b15-a08e-921b8501f976_document</field>
       <field name="arch" type="xml">
@@ -12636,7 +12636,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_a2ae4430_adbe_4daa" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01_document</field>
       <field name="arch" type="xml">
@@ -12650,7 +12650,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_a69780d2_1641_40be_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271_document</field>
       <field name="arch" type="xml">
@@ -12664,7 +12664,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ae400924_613e_49e9_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ae400924-613e-49e9-aa88-745e33ce9c48_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ae400924-613e-49e9-aa88-745e33ce9c48_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ae400924-613e-49e9-aa88-745e33ce9c48_document</field>
       <field name="arch" type="xml">
@@ -12675,7 +12675,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ae8c07cd_bfdc_44bd_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ae8c07cd-bfdc-44bd-bac8-55e32df187c2_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ae8c07cd-bfdc-44bd-bac8-55e32df187c2_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ae8c07cd-bfdc-44bd-bac8-55e32df187c2_document</field>
       <field name="arch" type="xml">
@@ -12688,7 +12688,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_b00e12f5_d579_4de3_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_b00e12f5-d579-4de3-b18b-c1aa681ba384_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_b00e12f5-d579-4de3-b18b-c1aa681ba384_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_b00e12f5-d579-4de3-b18b-c1aa681ba384_document</field>
       <field name="arch" type="xml">
@@ -12701,7 +12701,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_b0cc4641_17fe_4787_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_b0cc4641-17fe-4787-9113-3469754efb02_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_b0cc4641-17fe-4787-9113-3469754efb02_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_b0cc4641-17fe-4787-9113-3469754efb02_document</field>
       <field name="arch" type="xml">
@@ -12714,7 +12714,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_b589ee56_493a_4d58_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_b589ee56-493a-4d58-b45a-fa099d95dbf9_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_b589ee56-493a-4d58-b45a-fa099d95dbf9_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_b589ee56-493a-4d58-b45a-fa099d95dbf9_document</field>
       <field name="arch" type="xml">
@@ -12725,7 +12725,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_bbe16ed6_f933_48cc_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7_document</field>
       <field name="arch" type="xml">
@@ -12739,7 +12739,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_bd0f3923_a7f4_4086" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_bd0f3923-a7f4-4086-bb6a-899bb01fd315_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_bd0f3923-a7f4-4086-bb6a-899bb01fd315_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_bd0f3923-a7f4-4086-bb6a-899bb01fd315_document</field>
       <field name="arch" type="xml">
@@ -12752,7 +12752,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c10929ff_9e4d_4dfc_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c10929ff-9e4d-4dfc-b92c-2270c737ff72_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c10929ff-9e4d-4dfc-b92c-2270c737ff72_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c10929ff-9e4d-4dfc-b92c-2270c737ff72_document</field>
       <field name="arch" type="xml">
@@ -12763,7 +12763,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c5719c77_3a10_4707" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f_document</field>
       <field name="arch" type="xml">
@@ -12929,7 +12929,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c60b7e6a_dee4_416a" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4_document</field>
       <field name="arch" type="xml">
@@ -12943,7 +12943,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c6838480_51c3_4695_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3_document</field>
       <field name="arch" type="xml">
@@ -12957,7 +12957,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd_3" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_c7ca354f-58cc-4fdd-9121-455c94642383_document</field>
       <field name="arch" type="xml">
@@ -12970,7 +12970,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_cdd1aa9a_19c7_4db6_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303_document</field>
       <field name="arch" type="xml">
@@ -12984,7 +12984,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_d573c563_728c_4341" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0_document</field>
       <field name="arch" type="xml">
@@ -12996,7 +12996,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_dcb81ec9_d265_44f7_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_dcb81ec9-d265-44f7-96c9-29d8101e38c0_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_dcb81ec9-d265-44f7-96c9-29d8101e38c0_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_dcb81ec9-d265-44f7-96c9-29d8101e38c0_document</field>
       <field name="arch" type="xml">
@@ -13009,7 +13009,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_df0fd28d_9e06_4113" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4_document</field>
       <field name="arch" type="xml">
@@ -13023,7 +13023,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_e0221f08_22e8_499c_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_e0221f08-22e8-499c-b4d8-aa7a69096dc9_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_e0221f08-22e8-499c-b4d8-aa7a69096dc9_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_e0221f08-22e8-499c-b4d8-aa7a69096dc9_document</field>
       <field name="arch" type="xml">
@@ -13037,7 +13037,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_e35b2999_abea_4330" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54_document</field>
       <field name="arch" type="xml">
@@ -13051,7 +13051,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_e6601e89_775c_4221" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_e6601e89-775c-4221-ae07-7bdeb3b6ea53_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_e6601e89-775c-4221-ae07-7bdeb3b6ea53_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_e6601e89-775c-4221-ae07-7bdeb3b6ea53_document</field>
       <field name="arch" type="xml">
@@ -13065,7 +13065,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_e996c666_0ac8_4b32" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_e996c666-0ac8-4b32-a472-c92b4d11fdc1_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_e996c666-0ac8-4b32-a472-c92b4d11fdc1_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_e996c666-0ac8-4b32-a472-c92b4d11fdc1_document</field>
       <field name="arch" type="xml">
@@ -13163,7 +13163,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ed99f184_744e_48de_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ed99f184-744e-48de-8322-5ec18a0634af_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ed99f184-744e-48de-8322-5ec18a0634af_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ed99f184-744e-48de-8322-5ec18a0634af_document</field>
       <field name="arch" type="xml">
@@ -13177,7 +13177,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ef77bdb2_9ac7_4021_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ef77bdb2-9ac7-4021-b3df-50f85b984a85_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ef77bdb2-9ac7-4021-b3df-50f85b984a85_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ef77bdb2-9ac7-4021-b3df-50f85b984a85_document</field>
       <field name="arch" type="xml">
@@ -13195,7 +13195,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_11" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document</field>
       <field name="arch" type="xml">
@@ -13209,7 +13209,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_29" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document</field>
       <field name="arch" type="xml">
@@ -13222,7 +13222,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f42597b2_77c1_4142_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb_document</field>
       <field name="arch" type="xml">
@@ -13236,7 +13236,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f65e00b0_a1eb_4dc8_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f65e00b0-a1eb-4dc8-be6b-246e5514146b_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f65e00b0-a1eb-4dc8-be6b-246e5514146b_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f65e00b0-a1eb-4dc8-be6b-246e5514146b_document</field>
       <field name="arch" type="xml">
@@ -13247,7 +13247,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f6ae6474_631e_4a8a_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f6ae6474-631e-4a8a-a139-c3b015e2e80d_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f6ae6474-631e-4a8a-a139-c3b015e2e80d_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f6ae6474-631e-4a8a-a139-c3b015e2e80d_document</field>
       <field name="arch" type="xml">
@@ -13260,7 +13260,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_f865ee07_5757_4db7_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_f865ee07-5757-4db7-9af6-8b6a307241e4_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_f865ee07-5757-4db7-9af6-8b6a307241e4_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_f865ee07-5757-4db7-9af6-8b6a307241e4_document</field>
       <field name="arch" type="xml">
@@ -13271,7 +13271,7 @@
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_ff3abb7a_b545_42bf_1" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_ff3abb7a-b545-42bf-bc98-d5312049bfd4_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_ff3abb7a-b545-42bf-bc98-d5312049bfd4_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_ff3abb7a-b545-42bf-bc98-d5312049bfd4_document</field>
       <field name="arch" type="xml">
@@ -13284,7 +13284,7 @@
     </record>
 
     <record id="view_qweb_tax_groups_totals_copy_1" model="ir.ui.view">
-      <field name="name">tax_groups_totals copy(1)</field>
+      <field name="active" eval="True"/><field name="name">tax_groups_totals copy(1)</field>
       <field name="type">qweb</field>
       <field name="key">account.tax_groups_totals_copy_1</field>
       <field name="arch" type="xml">
@@ -19262,7 +19262,7 @@ Estimated Sheet</span></h2>
     </record>
 
     <record id="view_qweb_web_studio_report_editor_customization_full_view_purchase_re" model="ir.ui.view">
-      <field name="name">web_studio.report_editor_customization_full.view._purchase.report_purchasequotation_document</field>
+      <field name="active" eval="True"/><field name="name">web_studio.report_editor_customization_full.view._purchase.report_purchasequotation_document</field>
       <field name="type">qweb</field>
       <field name="key">web_studio.report_editor_customization_full.view._purchase.report_purchasequotation_document</field>
       <field name="priority">9999999</field>
@@ -19345,7 +19345,7 @@ Estimated Sheet</span></h2>
     </record>
 
     <record id="view_qweb_web_studio_report_editor_customization_full_view_web_externa" model="ir.ui.view">
-      <field name="name">web_studio.report_editor_customization_full.view._web.external_layout_standard</field>
+      <field name="active" eval="True"/><field name="name">web_studio.report_editor_customization_full.view._web.external_layout_standard</field>
       <field name="type">qweb</field>
       <field name="key">web_studio.report_editor_customization_full.view._web.external_layout_standard</field>
       <field name="priority">9999999</field>
@@ -19427,7 +19427,7 @@ Estimated Sheet</span></h2>
     </record>
 
     <record id="view_qweb_web_studio_report_editor_customization_full_view_web_address" model="ir.ui.view">
-      <field name="name">web_studio.report_editor_customization_full.view._web.address_layout</field>
+      <field name="active" eval="True"/><field name="name">web_studio.report_editor_customization_full.view._web.address_layout</field>
       <field name="type">qweb</field>
       <field name="key">web_studio.report_editor_customization_full.view._web.address_layout</field>
       <field name="priority">9999999</field>
@@ -19443,7 +19443,7 @@ Estimated Sheet</span></h2>
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_4ba14515_b356_4e1d" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_4ba14515-b356-4e1d-8b52-1811bba71761_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_4ba14515-b356-4e1d-8b52-1811bba71761_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_4ba14515-b356-4e1d-8b52-1811bba71761_document</field>
       <field name="arch" type="xml">
@@ -19457,7 +19457,7 @@ Estimated Sheet</span></h2>
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_16" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document</field>
       <field name="arch" type="xml">
@@ -19471,7 +19471,7 @@ Estimated Sheet</span></h2>
     </record>
 
     <record id="view_qweb_studio_customization_studio_report_docume_78e655c4_b305_48ac" model="ir.ui.view">
-      <field name="name">studio_customization.studio_report_docume_78e655c4-b305-48ac-95e4-92166e28f8f8_document</field>
+      <field name="active" eval="True"/><field name="name">studio_customization.studio_report_docume_78e655c4-b305-48ac-95e4-92166e28f8f8_document</field>
       <field name="type">qweb</field>
       <field name="key">studio_customization.studio_report_docume_78e655c4-b305-48ac-95e4-92166e28f8f8_document</field>
       <field name="arch" type="xml">
