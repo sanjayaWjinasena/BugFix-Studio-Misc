@@ -1,0 +1,3891 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <data>
+    <record id="report_saleorder_doc_c5e75404_19c5_4400_bbe1_d5c9d54d8f3a" model="ir.ui.view">
+      <field name="name">report_saleorder_document copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">sale.report_saleorder_document_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="sale.report_saleorder_document_copy_1">
+    <t t-call="web.external_layout">
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+        <t t-set="address">
+            <div t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+            <p t-if="doc.partner_id.vat"><t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="doc.partner_id.vat"/></p>
+        </t>
+        <t t-if="doc.partner_shipping_id == doc.partner_invoice_id                              and doc.partner_invoice_id != doc.partner_id                              or doc.partner_shipping_id != doc.partner_invoice_id">
+            <t t-set="information_block">
+                <strong t-if="doc.partner_shipping_id == doc.partner_invoice_id">Invoicing and Shipping Address:</strong>
+                <strong t-if="doc.partner_shipping_id != doc.partner_invoice_id">Invoicing Address:</strong>
+                <div t-field="doc.partner_invoice_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                <t t-if="doc.partner_shipping_id != doc.partner_invoice_id">
+                    <strong>Shipping Address:</strong>
+                    <div t-field="doc.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                </t>
+            </t>
+        </t>
+        <div class="page">
+            <div class="oe_structure"/>
+
+            <h2 class="mt16">
+                <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                    <span t-if="doc.state not in ['draft','sent']">Order # </span>
+                    <span t-if="doc.state in ['draft','sent']">Quotation # </span>
+                </t>
+                <t t-if="env.context.get('proforma', False) or is_pro_forma">
+                    <span>Pro-Forma Invoice # </span>
+                </t>
+                <span t-field="doc.name"/>
+            </h2>
+
+            <div class="row mt32 mb32" id="informations">
+                <div t-if="doc.client_order_ref" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Your Reference:</strong>
+                    <p class="m-0" t-field="doc.client_order_ref"/>
+                </div>
+                <div t-if="doc.date_order and doc.state not in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Order Date:</strong>
+                    <p class="m-0" t-field="doc.date_order"/>
+                </div>
+                <div t-if="doc.date_order and doc.state in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Quotation Date:</strong>
+                    <p class="m-0" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                </div>
+                <div t-if="doc.validity_date and doc.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2" name="expiration_date">
+                    <strong>Expiration:</strong>
+                    <p class="m-0" t-field="doc.validity_date"/>
+                </div>
+            <div class="col-3" t-if="doc.incoterm" groups="sale_stock.group_display_incoterm">
+                <strong>Incoterm:</strong>
+                <p t-field="doc.incoterm.code"/>
+            </div>
+        
+                <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Salesperson:</strong>
+                    <p class="m-0" t-field="doc.user_id"/>
+                </div>
+            </div>
+
+            <!-- Is there a discount on at least one line? -->
+            <t t-set="display_discount" t-value="any(l.discount for l in doc.order_line)"/>
+
+            <table class="table table-sm o_main_table">
+                <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                <thead style="display: table-row-group">
+                    <tr>
+                        <th name="th_description" class="text-start">Description</th>
+                        <th name="th_quantity" class="text-end">Quantity</th>
+                        <th name="th_priceunit" class="text-end">Unit Price</th>
+                        <th name="th_discount" t-if="display_discount" class="text-end" groups="product.group_discount_per_so_line">
+                            <span>Disc.%</span>
+                        </th>
+                        <th name="th_taxes" class="text-end">Taxes</th>
+                        <th name="th_subtotal" class="text-end">
+                            <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
+                            <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="sale_tbody">
+
+                    <t t-set="current_subtotal" t-value="0"/>
+
+                    <t t-foreach="doc.order_line" t-as="line">
+
+                        <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+                        <t t-set="current_subtotal" t-value="current_subtotal + line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+
+                        <tr t-att-class="'bg-200 fw-bold o_line_section' if line.display_type == 'line_section' else 'fst-italic o_line_note' if line.display_type == 'line_note' else ''">
+                            <t t-if="not line.display_type">
+                                <td name="td_name"><span t-field="line.name"/></td>
+                                <td name="td_quantity" class="text-end">
+                                    <span t-field="line.product_uom_qty"/>
+                                    <span t-field="line.product_uom"/>
+                                </td>
+                                <td name="td_priceunit" class="text-end">
+                                    <span t-field="line.price_unit"/>
+                                </td>
+                                <td t-if="display_discount" class="text-end" groups="product.group_discount_per_so_line">
+                                    <span t-field="line.discount"/>
+                                </td>
+                                <td name="td_taxes" class="text-end">
+                                    <span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_id))"/>
+                                </td>
+                                <td name="td_subtotal" class="text-end o_price_total">
+                                    <span t-field="line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+                                    <span t-field="line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+                                </td>
+                            </t>
+                            <t t-if="line.display_type == 'line_section'">
+                                <td name="td_section_line" colspan="99">
+                                    <span t-field="line.name"/>
+                                </td>
+                                <t t-set="current_section" t-value="line"/>
+                                <t t-set="current_subtotal" t-value="0"/>
+                            </t>
+                            <t t-if="line.display_type == 'line_note'">
+                                <td name="td_note_line" colspan="99">
+                                    <span t-field="line.name"/>
+                                </td>
+                            </t>
+                        </tr>
+
+                        <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
+                            <tr class="is-subtotal text-end">
+                                <td name="td_section_subtotal" colspan="99">
+                                    <strong class="mr16">Subtotal</strong>
+                                    <span t-esc="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </t>
+                </tbody>
+            </table>
+
+            <div class="clearfix" name="so_total_summary">
+                <div id="total" class="row" name="total">
+                    <div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ms-auto">
+                        <table class="table table-sm">
+                            <tr class="border-black o_subtotal" style="">
+                                <td name="td_amount_untaxed_label"><strong>Subtotal</strong></td>
+                                <td name="td_amount_untaxed" class="text-end">
+                                    <span t-field="doc.amount_untaxed"/>
+                                </td>
+                            </tr>
+                            <t t-foreach="doc.amount_by_group" t-as="amount_by_group">
+                                <tr style="">
+                                    <t t-if="amount_by_group[5] == 1 and doc.amount_untaxed == amount_by_group[2]">
+                                        <td name="td_amount_by_group_label_3">
+                                            <span t-esc="amount_by_group[0]"/>
+                                            <span>&amp;nbsp;<span>on</span>&amp;nbsp;<t t-esc="amount_by_group[2]" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/></span>
+                                        </td>
+                                        <td name="td_amount_by_group_3" class="text-end o_price_total">
+                                            <span t-esc="amount_by_group[1]" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
+                                        </td>
+                                    </t>
+                                    <t t-else="">
+                                        <td name="td_amount_by_group_label">
+                                            <span t-esc="amount_by_group[0]"/>
+                                        </td>
+                                        <td name="td_amount_by_group" class="text-end o_price_total">
+                                            <span t-esc="amount_by_group[1]" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </t>
+                            <tr class="border-black o_total">
+                                <td name="td_amount_total_label"><strong>Total</strong></td>
+                                <td name="td_amount_total" class="text-end">
+                                    <span t-field="doc.amount_total"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div t-if="doc.signature" class="mt32 ml64 mr4" name="signature">
+                <div class="offset-8">
+                    <strong>Signature</strong>
+                </div>
+                <div class="offset-8">
+                    <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                </div>
+                <div class="offset-8 text-center">
+                    <p t-field="doc.signed_by"/>
+                </div>
+            </div>
+        <div t-if="doc.sale_order_option_ids and doc.state in ['draft', 'sent']">
+            <t t-set="has_option_discount" t-value="any(option.discount != 0.0 for option in doc.sale_order_option_ids)"/>
+            <h4 name="h_optional_products">
+                <span>Options</span>
+            </h4>
+            <table name="table_optional_products" class="table table-sm">
+                <thead>
+                    <tr>
+                        <th name="th_option_name" class="text-start">Description</th>
+                        <th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-start">Disc.%</th>
+                        <th name="th_option_price_unit" class="text-end">Unit Price</th>
+                    </tr>
+                </thead>
+                <tbody class="sale_tbody">
+                    <tr t-foreach="doc.sale_order_option_ids" t-as="option">
+                        <td name="td_option_name">
+                            <span t-field="option.name"/>
+                        </td>
+                        <td t-if="has_option_discount" name="td_option_discount" groups="product.group_discount_per_so_line">
+                            <strong t-if="option.discount != 0.0" class="text-info">
+                                <t t-esc="((option.discount % 1) and '%s' or '%d') % option.discount"/>%
+                            </strong>
+                        </td>
+                        <td name="td_option_price_unit">
+                            <strong class="text-end">
+                                <div t-field="option.price_unit" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}" t-att-style="option.discount and 'text-decoration: line-through' or None" t-att-class="option.discount and 'text-danger' or None"/>
+                                <div t-if="option.discount">
+                                    <t t-esc="'%.2f' % ((1-option.discount / 100.0) * option.price_unit)"/>
+                                </div>
+                            </strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+
+            <div class="oe_structure"/>
+
+            <p t-field="doc.note"/>
+            <p t-if="doc.payment_term_id.note">
+                <span t-field="doc.payment_term_id.note"/>
+            </p>
+            <p id="fiscal_position_remark" t-if="doc.fiscal_position_id and doc.fiscal_position_id.sudo().note">
+                <strong>Fiscal Position Remark:</strong>
+                <span t-field="doc.fiscal_position_id.sudo().note"/>
+            </p>
+        </div>
+    </t>
+</t>
+      </field>
+    </record>
+    <record id="studio_report_docume_4271f2c9_24c7_4c75_911d_9d550305b31d" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_4271f2c9-24c7-4c75-911d-9d550305b31d_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_8730847d_290b_4196_ba35_861e99591d73" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_8730847d-290b-4196-ba35-861e99591d73_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_05008680_4a72_4fc7_b020_c485d9a8f9ff" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_05008680-4a72-4fc7-b020-c485d9a8f9ff_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_bbe16ed6_f933_48cc_8667_7d74a4173fd7" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_bbe16ed6-f933-48cc-8667-7d74a4173fd7_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_2dbc48cc_8374_4344_a3c6_a3a5cbd38b0b" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_2dbc48cc-8374-4344-a3c6-a3a5cbd38b0b_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_01559fbb_91f5_4c8c_ab49_885dde7da1f3" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_8e5bb340_e4f9_4a67_a37a_aaca87caebcc" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_8e5bb340-e4f9-4a67-a37a-aaca87caebcc_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_8e5bb340-e4f9-4a67-a37a-aaca87caebcc_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_8a65ecd7_ad78_47e6_817e_7b59a80c4552" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_a69780d2_1641_40be_9f08_d8ac1917a271" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_a69780d2-1641-40be-9f08-d8ac1917a271_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_2be3d602_6356_4576_afb3_159f22e3135d" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_37ad8061_c594_4b2f_9519_2d44ab657bb5" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_7f2cd4cb_39ee_4afa_b0c2_4f435abb4619" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_7f2cd4cb-39ee-4afa-b0c2-4f435abb4619_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_68dacd5f_6ff2_45b9_ad76_83b24e878d9b" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document copy(4)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_4</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_document_copy_4">
+                    <t t-call="web.internal_layout">
+                        <div class="page">
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+  
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col h2 o_bold">
+        <span>Purchase Order lines.</span>
+  </div>
+    </div>
+  
+    <table class="table o_report_block_table">
+      <thead>
+        <tr>
+          
+    <th>
+      <span>Order Reference</span>
+    </th>
+    <th>
+      <span>PR Type</span>
+    </th>
+    <th>
+      <span>Vendor</span>
+  </th>
+    <th>
+            <span style="display:inline-block;width:200px">Item Name</span>
+  </th>
+    <th class="text-end">
+      <span>Unit Price</span>
+    </th>
+    <th class="text-end">
+      <span>Quantity</span>
+    </th>
+    <th class="text-end">
+      <span>Received Qty</span>
+    </th>
+    <th class="text-end">
+      <span>Deliver Remainder</span>
+    </th>
+    <th class="text-end">
+      <span>Billed Qty</span>
+    </th>
+    <th class="text-end">
+      <span>Invoice Remainder</span>
+  </th>
+  
+    <th>
+      <span>UOM</span>
+  </th>
+    <th class="text-end">
+      <span>Amount</span>
+  </th>
+    </tr>
+      </thead>
+      <tbody>
+        <tr t-foreach="docs" t-as="table_line">
+          
+    <td>
+      <span t-field="table_line.order_id"/>
+    </td>
+    <td>
+      <span t-field="table_line.x_studio_pr_type"/>
+    </td>
+    <td>
+      <span t-field="table_line.partner_id.name" style="display:inline-block;width:150px"/>
+    </td>
+    <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+    <td class="text-end">
+      <span t-field="table_line.price_unit" t-options-widget="&quot;float&quot;"/>
+    </td>
+    <td class="text-end">
+      <span t-field="table_line.product_qty" t-options-widget="&quot;&quot;"/>
+    </td>
+    <td class="text-end">
+      <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
+    </td>
+    <td class="text-end">
+      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+    </td>
+    <td class="text-end">
+      <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
+    </td>
+    <td class="text-end" style="color:#CE0000">
+      <span t-field="table_line.qty_to_invoice"/>
+    </td>
+  
+    <td>
+      <span t-field="table_line.product_uom"/>
+    </td>
+    <td class="text-end">
+      <span t-field="table_line.price_subtotal"/>
+    </td>
+    </tr>
+      </tbody>
+    </table>
+  
+  
+  </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_1ca14cc9_3f76_4518_8f18_c4b7418f09ce" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_1ca14cc9-3f76-4518-8f18-c4b7418f09ce_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_c60b7e6a_dee4_416a_8c7d_136a80aef4a4" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_cdd1aa9a_19c7_4db6_a36e_24faaefcf303" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_cdd1aa9a-19c7-4db6-a36e-24faaefcf303_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_f42597b2_77c1_4142_8bfa_339ea0d0dbbb" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_f42597b2-77c1-4142-8bfa-339ea0d0dbbb_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_f180ff3e_4244_4fd5_b147_ed1ebad9cd31" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_3a0946dd_78e9_4a0b_9451_7ee77c0c9d2a" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2">
+    <t t-call="web.internal_layout">
+    <div class="page">
+    <div class="row">
+      <div class="col h2">
+        <span>Indent Costing - </span>
+  <span t-field="doc.x_studio_indent"/>
+  
+    </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col-3">
+        <span>
+          <strong>Order Reference:</strong>
+          <br/>
+        </span>
+        <span t-field="doc.name"/>
+      </div>
+      <div class="col-3">
+    <span>
+      <strong>Delivery Date:</strong>
+      <br/>
+    </span>
+  
+    <span t-field="doc.x_studio_delivery_date"/>
+  </div>
+      <div class="col-3"/>
+    </div>
+  
+  
+  </div>
+ </t>
+</t>
+      </field>
+    </record>
+    <record id="studio_report_docume_df0fd28d_9e06_4113_a4d2_7b8efb8250a4" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_7e600042_d9b3_43a6_82b5_09d153937ffb" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_7e600042-d9b3-43a6-82b5-09d153937ffb_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_e6f471ae_804e_4a83_b220_c3e62975db70" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document copy(2) copy(2) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2_copy_2_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_document_copy_2_copy_2_copy_1">
+                    <t t-call="web.internal_layout">
+                        <div class="page">
+    <div class="row">
+      <div class="col h2">
+        <span>Indent Costing - Working </span>
+  <span t-field="doc.x_studio_indent"/>
+  
+    </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col-3">
+        <span>
+          <strong>Order Reference:</strong>
+          <br/>
+        </span>
+        <span t-field="doc.name"/>
+      </div>
+      <div class="col-3">
+    <span>
+      <strong>Delivery Date:</strong>
+      <br/>
+    </span>
+  
+    <span t-field="doc.x_studio_delivery_date"/>
+  </div>
+      <div class="col-3"/>
+    </div>
+  
+  
+  </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_1c323f95_bff0_4e36_b903_dc64854508a8" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_0582785a_b7ef_48d1_9ee3_b0fe01626888" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_1aa2ef46_1ca1_4d9a_bdcd_1fa5c397679d" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <div class="page"/>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_e3c8bea6_14c4_4174_a0f7_eb13d5a14aac" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+    <div class="row">
+      <div class="col-3"/>
+      <div class="col-3"/>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col h2">
+        <span>
+      <p>Jinasena Limited - Daily Sales Summary    </p>
+    </span>
+  </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-4 o_bold">
+        <span>
+      <p>FOR THE DATE               </p>
+    </span>
+  </div>
+      <div class="col-4 o_bold">
+        <span>
+      <p>FOR THE MONTH    </p>
+    </span>
+  </div>
+      <div class="col-4 o_bold">
+        <span>
+      <p>FOR THE YEAR    </p>
+    </span>
+  </div>
+    </div>
+    <table class="table o_report_block_table">
+      <thead>
+        <tr>
+          
+    
+    
+    
+    
+    
+    
+    
+    <th>
+      <span>Sales Centre</span>
+    </th>
+  <th>
+      <span>Net Invoice Value - Day</span>
+    </th>
+  <th>
+      <span>Net Invoice Value - Month</span>
+    </th>
+  <th>
+      <span>M. Sales Target</span>
+    </th>
+  <th>
+      <span>Achievement (%)</span>
+    </th>
+  <th>
+      <span>Net Invoice Value - Cumulative</span>
+    </th>
+  <th>
+      <span>S. Target - Cumulative </span>
+    </th>
+  <th>
+      <span>Achieve Cumulative (%)</span>
+    </th>
+  </tr>
+      </thead>
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          
+    
+    
+    
+    
+    
+    
+    
+    <td>
+      <span t-field="table_line.x_studio_sales_centre"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_m_sales_target"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_achievement_"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_s_target_cumulative"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+    </td>
+  </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      </div>
+  
+  
+  
+    </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_14b55225_a9cb_47c6_9021_ff1edf75c5f5" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+    <div class="row">
+      <div class="col-3"/>
+      <div class="col-3"/>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col h2">
+        <span>
+      <p>Jinasena Limited - Daily Sales Summary    </p>
+    </span>
+  </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-4 o_bold">
+        <span>
+      <p>FOR THE DATE               </p>
+    </span>
+  </div>
+      </div>
+    <div class="row">
+      <div class="col">
+        <span t-field="doc.x_studio_as_on_date"/>
+      </div>
+    </div>
+  
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          
+    
+    
+    
+    
+    
+    
+    
+    <td>
+      <span t-field="table_line.x_studio_sales_centre"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_m_sales_target"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_achievement_"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_s_target_cumulative"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+    </td>
+  </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table o_report_block_table">
+      <thead>
+        <tr>
+          
+    
+    
+    
+    
+    
+    
+    
+    
+    <th>
+      <span>Invoice Date</span>
+    </th>
+  <th>
+      <span>Sales Centre</span>
+    </th>
+  <th>
+      <span>Partner</span>
+    </th>
+  <th>
+      <span>Number</span>
+    </th>
+  <th>
+      <span>Product</span>
+    </th>
+  <th>
+      <span>Quantity</span>
+    </th>
+  <th>
+      <span>Value</span>
+    </th>
+  </tr>
+      </thead>
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id_1" t-as="table_line">
+          
+    
+    
+    
+    
+    
+    
+    
+    
+    <td>
+      <span t-field="table_line.x_studio_invoice_date"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_sales_centre"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_partner"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_number"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_product_id"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_quantity"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_value"/>
+    </td>
+  </tr>
+      </tbody>
+    </table>
+  
+  
+  
+  
+  
+  
+  
+    </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_52dc21f4_edab_4fdc_aeed_f915dc6b94b8" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document copy(1) copy(1) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1_copy_1_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_document_copy_1_copy_1_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+    <div class="row">
+      <div class="col-3"/>
+      <div class="col-3"/>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col h2">
+        <span>
+      <p>Sales Details for Incentive Calculation            </p>
+  </span>
+  </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-4 o_bold">
+        <span>
+      <p>FOR THE DATE               </p>
+    </span>
+  </div>
+      </div>
+    <div class="row">
+      <div class="col">
+        <span t-field="doc.x_studio_as_on_date"/>
+      </div>
+    </div>
+  
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          
+    
+    
+    
+    
+    
+    
+    
+    <td>
+      <span t-field="table_line.x_studio_sales_centre"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_m_sales_target"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_achievement_"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_s_target_cumulative"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+    </td>
+  </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table o_report_block_table">
+      <thead>
+        <tr>
+          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <th>
+      <span>Customer Acc</span>
+    </th>
+  <th>
+      <span>Customer Group</span>
+    </th>
+  <th>
+      <span>Name</span>
+    </th>
+  <th>
+      <span>Product</span>
+    </th>
+  <th>
+      <span>Sales Order</span>
+    </th>
+  <th>
+      <span>Invoice</span>
+    </th>
+  <th>
+      <span>Date</span>
+    </th>
+  <th>
+      <span>Product Category</span>
+    </th>
+  <th>
+      <span>Quantity</span>
+    </th>
+  <th>
+      <span>Unit Price</span>
+    </th>
+  <th>
+      <span>Net Value</span>
+    </th>
+  </tr>
+      </thead>
+      <tbody>
+        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <td>
+      <span t-field="table_line.x_studio_customer_acc"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_customer_group"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_name"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_product_1"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_sales_order"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_invoice"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_date"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_product_category"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_quantity"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_unit_price"/>
+    </td>
+  <td>
+      <span t-field="table_line.x_studio_net_value"/>
+    </td>
+  </tr>
+      </tbody>
+    </table>
+  
+  
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+  
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      <div class="col-3"/>
+      <div class="col-3"/>
+      <div class="col-3"/>
+    </div>
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table o_report_block_table">
+      <tbody>
+        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_90fbe3de_374e_45ef_83f3_402f3bd3542f" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_90fbe3de-374e-45ef-83f3-402f3bd3542f_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_e35b2999_abea_4330_ad6c_71fad437bf54" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_a2ae4430_adbe_4daa_a5c5_e03e683ddc01" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_889bd190_016a_4aa3_a1aa_dad6e31bf4d3" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_51c9e0e4_8f52_4b48_a344_8db5a8f2352a" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_39af7eba_e661_4a41_806f_d79c2de390c8" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_39af7eba-e661-4a41-806f-d79c2de390c8_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_c2f97a43_b240_4833_b33e_b0c0f51cfb40" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+    
+    <div class="row">
+      <div class="col h2">
+        <span>
+      <strong>Repair Receipt</strong>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+  
+  <div class="row">
+      </div>
+    <div class="row">
+      <div class="col-6">
+        <span style="width:150px;display:inline-block">
+      <strong>Repair Receipt No:</strong>
+    </span>
+  <span t-field="doc.display_name" class="o_bold"/>
+  
+      </div>
+      <div class="col-6">
+        <span>
+      <strong>Date:</strong>
+    <span t-field="doc.create_date" class="o_bold"/>
+  
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Customer Name:</span>
+    <span t-field="doc.partner_id"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Address:</span>
+    <span t-field="doc.partner_id.street"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.street2"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.city"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.zip"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.country_id"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Phone:</span>
+    <span t-field="doc.partner_phone"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Mobile:</span>
+    <span t-field="doc.partner_id.mobile"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Email:</span>
+    <span t-field="doc.partner_email"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Product No:</span>
+    <span t-field="doc.product_id.code"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Product Name</span>
+    <span t-field="doc.product_id"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Serial No:</span>
+    <span t-field="doc.x_studio_serial_no"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">
+        <strong>In Handling over this item &amp; obtaining this receipt, I accept the conditions below.</strong>
+      </span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <span>
+      <span style="font-size: 13px"><strong>CONDITIONS</strong>  </span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">1. This receipt must be produced when taking delivery of the machine, whether it is repaired or not. If the receipt</span>
+      <br/>
+      <span style="font-size: 13px">is lost, an affidavit must be submitted. In the alternative, the pump will be handed over to the holder of the ID card</span>
+      <br/>
+      <span style="font-size: 13px">where the number is given above.</span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">2. All repair transactions are strictly on CASH basis.</span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">3. In order to submit a quotation for the repair of this Machine, it is necessary for us to dismantle the same. Our</span>
+      <br/>
+      <span style="font-size: 13px">charges for this work is Rs....................... In event of the quotation not being accepted, the amount will have to</span>
+      <br/>
+      <span style="font-size: 13px">be paid to us before the machine can be returned.</span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">4. Machinery and parts sent for repairs are stored at customers risk from all causes, and must be removed within</span>
+      <br/>
+      <span style="font-size: 13px">7 days from the date of submission of our quotation, unless an order is accepted by us for the repair.    </span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <span>
+
+<span style="font-size: 13px"><strong>Jinasena Ltd</strong></span>
+
+<br/></span>
+  </div>
+      <div class="col-6">
+        <span>
+
+<span style="font-size: 13px"><strong>For &amp; on behalf of the Owner</strong></span>
+
+<br/></span>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_c43e7450_f2c2_4d3d_ad17_3254ba5424c2" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+    
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+  
+  <div class="row">
+      </div>
+    <div class="row">
+      <div class="col-6">
+        <span style="width:150px;display:inline-block">
+      <strong>Repair Receipt No:</strong>
+    </span>
+  <span t-field="doc.display_name" class="o_bold"/>
+  
+      </div>
+      <div class="col-6">
+        <span>
+      <strong>Date:</strong>
+    <span t-field="doc.create_date" class="o_bold"/>
+  
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Customer Name:</span>
+    <span t-field="doc.partner_id"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Address:</span>
+    <span t-field="doc.partner_id.street"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.street2"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.city"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.zip"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.country_id"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Phone:</span>
+    <span t-field="doc.partner_phone"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Mobile:</span>
+    <span t-field="doc.partner_id.mobile"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Email:</span>
+    <span t-field="doc.partner_email"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Product No:</span>
+    <span t-field="doc.product_id.code"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Product Name</span>
+    <span t-field="doc.product_id"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Serial No:</span>
+    <span t-field="doc.x_studio_serial_no"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>Dear Sir/Madam ,</span>
+  </div>
+    </div>
+  
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">We have pleasure in advising you that the " " pumping unit sent to us for repairs is now is ready for collection.</span>
+  <br/>
+      <span style="font-size: 13px">(IF THIS UNIT IS NOT COLLECTED WITHIN 2 WEEKS OF LETTER STORAGE CHARGE OF RS  15/- PER DAY WILL BE LEVIED.)<br/><br/></span>
+  <br/>
+    <span>
+      <br/>
+    </span>
+    <span>The balance due Rs.</span>
+  <span t-field="doc.x_studio_balance_due" style="display:inline-block" class="o_bold"/>
+    <span>should be paid in cash prior to collection 
+
+<span style="color: rgb(0, 0, 0);font-size: 13px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">(IF PAYMENT IS MADE BY CHEQUE, THE PUMP CAN BE COLLECTED ONLY ON REALIZATION OF THE CHEQUE)<br/><br/></span>
+  </span>
+    <span>When calling to make final payment and collecting the pump our reservation deposit number and our machinery report number </span>
+    <span t-field="doc.display_name"/>
+    <span>must be surrendered. (IF EITHER OR BOTH OF RECEIPTS  ARE LOST, OT CANNOT BE SURRENDERED, AN AFFIDAVIT MUST BE SUBMITTED.)<br/><br/></span>
+  <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">If the pump is to be handed over to a representative, please send through him/her letter authorizing us to hand over the pump to him/her. His/her specimen signature and national identity card should be certified by you.</span>
+      <br/>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col">
+        <span><br/>Assuring your of our best attention</span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span><br/>Yours faithfully,</span>
+  </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <span>
+
+<span style="font-size: 13px"><strong><br/><br/><br/>Jinasena Ltd</strong>
+  </span>
+
+<br/></span>
+  </div>
+      <div class="col-6">
+        <span>
+
+<br/></span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <strong><br/><br/><br/><br/><br/>Repairs Department</strong>
+  </span>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_22494c7a_28e3_4ef6_b584_064eda38ea58" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(1) copy(1) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1_copy_1_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_1_copy_1_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+    
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+  
+  <div class="row">
+      </div>
+    <div class="row">
+      <div class="col-6">
+        <span style="width:150px;display:inline-block">
+      <strong>Repair Receipt No:</strong>
+    </span>
+  <span t-field="doc.display_name" class="o_bold"/>
+  
+      </div>
+      <div class="col-6">
+        <span>
+      <strong>Date:</strong>
+    <span t-field="doc.create_date" class="o_bold"/>
+  
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Customer Name:</span>
+    <span t-field="doc.partner_id"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Address:</span>
+    <span t-field="doc.partner_id.street"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.street2"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.city"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.zip"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">
+      <br/>
+    </span>
+  <span t-field="doc.partner_id.country_id"/>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Phone:</span>
+    <span t-field="doc.partner_phone"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Mobile:</span>
+    <span t-field="doc.partner_id.mobile"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Email:</span>
+    <span t-field="doc.partner_email"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Product No:</span>
+    <span t-field="doc.product_id.code"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Product Name</span>
+    <span t-field="doc.product_id"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span style="width:150px;display:inline-block">Serial No:</span>
+    <span t-field="doc.x_studio_serial_no"/>
+  
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>Dear Sir/Madam ,</span>
+  </div>
+    </div>
+  
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span style="font-size: 13px">We refer to the "CENTRIC" type </span>
+    <span t-field="doc.product_id.code"/>
+    <span>pumping unit No </span>
+    <span t-field="doc.x_studio_serial_no.display_name"/>
+  
+    <span t-field="doc.x_studio_serial_no.display_name"/>
+  
+    <span t-field="doc.x_studio_serial_no.display_name"/>
+  
+    <span t-field="doc.x_studio_serial_no"/>
+  
+  <br/>
+      <br/>
+    <span>
+      
+    <span>repaired on the above references and job number. We note that you have not responded to our letter dated ........................ and .........................  requesting you to collect same.<br/><br/></span>
+  <br/>
+    </span>
+    <span>Since we are unable to store this pumping unit any longer, we must finally request you to make payment of Rs.</span>
+    <span t-field="doc.x_studio_balance_due"/>
+  
+  <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      
+    <span>in cash and remove same from our workshop within 2 weeks of this letter. (PLEASE NOTE THAT A STORAGGE CHARGE OF RS 15/- PER DAY WILL BE LEVIED FROM ................... IN ADDITION TO THE REPAIR CHARGE. )</span>
+  <br/>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <span>When calling to make final payment and collecting the pup our reservation deposit receipt number ......................  OR BOTH OF THESE RECEIPTS ARE LOST, OR CANNOT BE SURRENDERED AN AFFIDAVIT MUST BE SUBMITTED. )<br/><br/></span>
+  <br/>
+    <span>If the pump is to be handed over to a representative, please send through him a letter authorizing us to hand over the pump to him/her. His/her specimen signature and national identity card number should be certified by you.<br/><br/></span>
+  </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+    <span>If the pump is not collected within 2 weeks of this letter, it will be considered to be abandoned and will be destroyed.</span>
+  <br/>Yours faithfully,</span>
+  </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="col">
+        <span>
+      <br/>
+    </span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <span>
+
+<span style="font-size: 13px"><strong><br/><br/><br/>Jinasena Ltd</strong>
+  </span>
+
+<br/></span>
+  </div>
+      <div class="col-6">
+        <span>
+
+<br/></span>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>
+      <strong><br/><br/><br/><br/><br/>Repairs Department</strong>
+  </span>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="report_saleorder_doc_9a734b47_22b0_440a_b9d0_6fb0f5301219" model="ir.ui.view">
+      <field name="name">report_saleorder_document copy(3)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">sale.report_saleorder_document_copy_3</field>
+      <field name="arch" type="xml">
+        <t t-name="sale.report_saleorder_document_copy_3">
+    <t t-call="web.external_layout">
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+        <t t-set="forced_vat" t-value="doc.fiscal_position_id.foreign_vat"/> <!-- So that it appears in the footer of the report instead of the company VAT if it's set -->
+        <t t-set="address">
+            <div t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+            <p t-if="doc.partner_id.vat"><t t-esc="doc.company_id.account_fiscal_country_id.vat_label or 'Tax ID'"/>: <span t-field="doc.partner_id.vat"/></p>
+        </t>
+        <t t-if="doc.partner_shipping_id == doc.partner_invoice_id                              and doc.partner_invoice_id != doc.partner_id                              or doc.partner_shipping_id != doc.partner_invoice_id">
+            <t t-set="information_block">
+                <strong t-if="doc.partner_shipping_id == doc.partner_invoice_id">Invoicing and Shipping Address:</strong>
+                <strong t-if="doc.partner_shipping_id != doc.partner_invoice_id">Invoicing Address:</strong>
+                <div t-field="doc.partner_invoice_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                <t t-if="doc.partner_shipping_id != doc.partner_invoice_id">
+                    <strong>Shipping Address:</strong>
+                    <div t-field="doc.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                </t>
+            </t>
+        </t>
+        <div class="page">
+            <div class="oe_structure"/>
+
+            <h2 class="mt16">
+                <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                    <span t-if="doc.state not in ['draft','sent']">Order # </span>
+                    <span t-if="doc.state in ['draft','sent']">Quotation # </span>
+                </t>
+                <t t-if="env.context.get('proforma', False) or is_pro_forma">
+                    <span>Pro-Forma Invoice # </span>
+                </t>
+                <span t-field="doc.name"/>
+            </h2>
+
+            <div class="row mt32 mb32" id="informations">
+                <div t-if="doc.client_order_ref" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Your Reference:</strong>
+                    <p class="m-0" t-field="doc.client_order_ref"/>
+                </div>
+                <div t-if="doc.date_order and doc.state not in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Order Date:</strong>
+                    <p class="m-0" t-field="doc.date_order"/>
+                </div>
+                <div t-if="doc.date_order and doc.state in ['draft','sent']" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Quotation Date:</strong>
+                    <p class="m-0" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                </div>
+                <div t-if="doc.validity_date and doc.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2" name="expiration_date">
+                    <strong>Expiration:</strong>
+                    <p class="m-0" t-field="doc.validity_date"/>
+                </div>
+            <div class="col-auto col-3 mw-100 mb-2" t-if="doc.incoterm" groups="sale_stock.group_display_incoterm">
+                <strong>Incoterm:</strong>
+                <p class="m-0" t-field="doc.incoterm.code"/>
+            </div>
+        
+                <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Salesperson:</strong>
+                    <p class="m-0" t-field="doc.user_id"/>
+                </div>
+            </div>
+
+            <!-- Is there a discount on at least one line? -->
+            <t t-set="display_discount" t-value="any(l.discount for l in doc.order_line)"/>
+
+            <table class="table table-sm o_main_table">
+                <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                <thead style="display: table-row-group">
+                    <tr>
+                        <th name="th_description" class="text-start">Description</th>
+    <th>
+      <span>Total</span>
+    </th>
+  
+                        <th name="th_quantity" class="text-end">Quantity</th>
+                        <th name="th_priceunit" class="text-end">Unit Price</th>
+                        <th name="th_discount" t-if="display_discount" class="text-end" groups="product.group_discount_per_so_line">
+                            <span>Disc.%</span>
+                        </th>
+                        <th name="th_taxes" class="text-end">Taxes</th>
+                        <th name="th_subtotal" class="text-end">
+                            <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
+                            <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="sale_tbody">
+
+                    <t t-set="current_subtotal" t-value="0"/>
+
+                    <t t-foreach="doc.order_line" t-as="line">
+
+                        <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+                        <t t-set="current_subtotal" t-value="current_subtotal + line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+
+                        <tr t-att-class="'bg-200 fw-bold o_line_section' if line.display_type == 'line_section' else 'fst-italic o_line_note' if line.display_type == 'line_note' else ''">
+                            <t t-if="not line.display_type">
+                                <td name="td_name"><span t-field="line.name"/></td>
+                                <td name="td_quantity" class="text-end">
+                                    <span t-field="line.product_uom_qty"/>
+                                    <span t-field="line.product_uom"/>
+                                </td>
+                                <td name="td_priceunit" class="text-end">
+                                    <span t-field="line.price_unit"/>
+                                </td>
+                                <td t-if="display_discount" class="text-end" groups="product.group_discount_per_so_line">
+                                    <span t-field="line.discount"/>
+                                </td>
+                                <td name="td_taxes" class="text-end">
+                                    <span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_id))"/>
+                                </td>
+                                <td name="td_subtotal" class="text-end o_price_total">
+                                    <span t-field="line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+                                    <span t-field="line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+                                </td>
+                            </t>
+                            <t t-if="line.display_type == 'line_section'">
+                                <td name="td_section_line" colspan="99">
+                                    <span t-field="line.name"/>
+                                </td>
+                                <t t-set="current_section" t-value="line"/>
+                                <t t-set="current_subtotal" t-value="0"/>
+                            </t>
+                            <t t-if="line.display_type == 'line_note'">
+                                <td name="td_note_line" colspan="99">
+                                    <span t-field="line.name"/>
+                                </td>
+                            </t>
+                        </tr>
+
+                        <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
+                            <tr class="is-subtotal text-end">
+                                <td name="td_section_subtotal" colspan="100">
+                                    <strong class="mr16">Subtotal</strong>
+                                    <span t-esc="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </t>
+                </tbody>
+            </table>
+
+            <div class="clearfix" name="so_total_summary">
+                </div>
+
+            <div t-if="doc.signature" class="mt32 ml64 mr4" name="signature">
+                <div class="offset-8">
+                    <strong>Signature</strong>
+                </div>
+                <div class="offset-8">
+                    <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                </div>
+                <div class="offset-8 text-center">
+                    <p t-field="doc.signed_by"/>
+                </div>
+            </div>
+        <div t-if="doc.sale_order_option_ids and doc.state in ['draft', 'sent']">
+            <t t-set="has_option_discount" t-value="any(option.discount != 0.0 for option in doc.sale_order_option_ids)"/>
+            <h4 name="h_optional_products">
+                <span>Options</span>
+            </h4>
+            <table name="table_optional_products" class="table table-sm">
+                <thead>
+                    <tr>
+                        <th name="th_option_name" class="text-start">Description</th>
+                        <th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-start">Disc.%</th>
+                        <th name="th_option_price_unit" class="text-end">Unit Price</th>
+                    </tr>
+                </thead>
+                <tbody class="sale_tbody">
+                    <tr t-foreach="doc.sale_order_option_ids" t-as="option">
+                        <td name="td_option_name">
+                            <span t-field="option.name"/>
+                        </td>
+                        <td t-if="has_option_discount" name="td_option_discount" groups="product.group_discount_per_so_line">
+                            <strong t-if="option.discount != 0.0" class="text-info">
+                                <t t-esc="((option.discount % 1) and '%s' or '%d') % option.discount"/>%
+                            </strong>
+                        </td>
+                        <td name="td_option_price_unit">
+                            <strong class="text-end">
+                                <div t-field="option.price_unit" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}" t-att-style="option.discount and 'text-decoration: line-through' or None" t-att-class="option.discount and 'text-danger' or None"/>
+                                <div t-if="option.discount">
+                                    <t t-esc="'%.2f' % ((1-option.discount / 100.0) * option.price_unit)"/>
+                                </div>
+                            </strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+
+            <div class="oe_structure"/>
+    <div class="row">
+      <div class="col-5"/>
+      <div class="col-5 offset-2">
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-5"/>
+      <div class="col-5 offset-2">
+        <table class="table table-sm o_report_block_total">
+          <t t-set="total_currency_id" t-value="doc.pricelist_id.currency_id"/>
+          <t t-set="total_amount_total" t-value="doc.amount_total"/>
+          <t t-set="total_amount_untaxed" t-value="doc.amount_untaxed"/>
+          <tr class="border-black o_subtotal">
+            <td>
+              <strong>Subtotal</strong>
+            </td>
+            <td class="text-end">
+              <span t-esc="total_amount_untaxed" t-options="{'widget': 'monetary', 'display_currency': total_currency_id}"/>
+            </td>
+          </tr>
+          <t t-foreach="total_amount_by_groups" t-as="total_amount_by_group">
+            <tr>
+              <t t-if="len(total_amount_by_group) == 1 and total_amount_untaxed == total_amount_by_group[2]">
+                <td>
+                  <span t-esc="total_amount_by_group[0]"/>
+                </td>
+                <td class="text-end o_price_total">
+                  <span t-esc="total_amount_by_group[3]"/>
+                </td>
+              </t>
+              <t t-else="">
+                <td>
+                  <span t-esc="total_amount_by_group[0]"/>
+                  <span>
+                    <span>on</span>
+                    <t t-esc="total_amount_by_group[4]"/>
+                  </span>
+                </td>
+                <td class="text-end o_price_total">
+                  <span t-esc="total_amount_by_group[3]"/>
+                </td>
+              </t>
+            </tr>
+          </t>
+          <t t-if="total_amount_by_groups is None">
+            <tr>
+              <td>Taxes</td>
+              <td class="text-end">
+                <span t-esc="total_amount_total - total_amount_untaxed" t-options="{'widget': 'monetary', 'display_currency': total_currency_id}"/>
+              </td>
+            </tr>
+          </t>
+          <tr class="border-black o_total">
+            <td>
+              <strong>Total</strong>
+            </td>
+            <td class="text-end">
+              <span t-esc="total_amount_total" t-options="{'widget': 'monetary', 'display_currency': total_currency_id}"/>
+            </td>
+          </tr>
+        <t t-set="tax_totals" t-value="json.loads(doc.tax_totals_json)"/><t t-call="account.document_tax_totals_copy_1"/></table>
+      </div>
+    </div>
+  
+  
+
+            <p t-field="doc.note"/>
+            <p t-if="not is_html_empty(doc.payment_term_id.note)">
+                <span t-field="doc.payment_term_id.note"/>
+            </p>
+            <p id="fiscal_position_remark" t-if="doc.fiscal_position_id and not is_html_empty(doc.fiscal_position_id.sudo().note)">
+                <strong>Fiscal Position Remark:</strong>
+                <span t-field="doc.fiscal_position_id.sudo().note"/>
+            </p>
+        </div>
+    </t>
+</t>
+      </field>
+    </record>
+    <record id="studio_report_docume_5bbc45eb_3fc4_45c3_a051_d728d238f95b" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_5bbc45eb-3fc4-45c3-a051-d728d238f95b_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <div class="page"/>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_c6838480_51c3_4695_8729_8025cbfd70a3" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_c6838480-51c3-4695-8729-8025cbfd70a3_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.internal_layout">
+                        <div class="page"/>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_d573c563_728c_4341_ab10_9845f7d721f0" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <div class="page"/>
+                </t>
+      </field>
+    </record>
+    <record id="studio_main_report_8114d490_c5c3_4d6c_808a_e59830b8e190" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_main_report">
+                    <t t-foreach="docs" t-as="doc">
+                        <t t-call="web.basic_layout">
+                            <t t-call="studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0_document"/>
+                            <p style="page-break-after: always;"/>
+                        </t>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="report_purchasequota_6d8e8720_3f12_486a_8a85_a22a8699cea0" model="ir.ui.view">
+      <field name="name">report_purchasequotation_document copy(3)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">purchase.report_purchasequotation_document_copy_3</field>
+      <field name="arch" type="xml">
+        <t t-name="purchase.report_purchasequotation_document_copy_3"><t t-call="web.external_layout">
+        <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/><t t-set="forced_vat" t-value="o.fiscal_position_id.foreign_vat"/><t t-set="address">
+            <div t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;, &quot;vat&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+        </t><t t-if="o.dest_address_id">
+            <t t-set="information_block">
+                <strong>Shipping address:</strong>
+                <div t-field="o.dest_address_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}" name="purchase_shipping_address"/>
+            </t>
+        </t><t t-else="">
+                <t t-set="information_block">
+                    <strong>Shipping address:</strong>
+                    <div t-if="o.picking_type_id and o.picking_type_id.warehouse_id">
+                        <span t-field="o.picking_type_id.warehouse_id.name"/>
+                        <div t-field="o.picking_type_id.warehouse_id.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                    </div>
+                </t>
+            </t>
+            <div class="page">
+                <div style="width: 100%; margin-bottom: 5px;">
+                  <h2 class="mt-4" style="font-weight: bold; font-size: 28px; text-align: left; display: block;">Purchase Order</h2>
+                  <span style="font-size: 14px; text-align: left; display: block;"> Purchasing Dept. - 11 2 239 250, 11 2 236 341 Fax: 11 2 239 103, 11 2 229 995 </span>
+                  <br/>
+                </div>
+                 
+                <div class="row mb-4">
+                    <div t-if="o.user_id" class="col">
+                        <label>Shipping Address:</label>
+                        <br/>
+                        <t t-set="address" t-value="o.dest_address_id"/>
+                        <label>VAT Number:</label>
+                        <span t-field="o.user_id"/>    
+                    </div>
+                    <div t-if="o.user_id" class="col">
+                        <label>PO Number:</label>
+                        <span t-field="o.partner_ref"/>
+                        <br/>
+                        <t t-if="o.state == 'purchase' and o.date_approve">
+                        <label>Date:</label>
+                        <span t-field="o.date_approve" t-options="{'date_only': 'true'}"/>
+                        <br/>
+                        </t>
+                        <label>Customer Reference:</label>
+                        <span t-field="o.partner_ref"/>
+                        <br/>
+                        <label>Customer Requisition:</label>
+                        <span t-field="o.partner_ref"/>
+                        <br/>
+                        <label>Payment Term:</label>
+                        <span t-field="o.partner_ref"/>
+                    
+                    </div>
+                    <div t-if="o.user_id" class="col">
+                        <label>Delivery Address:</label>
+                        <br/>
+                        <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                        <br/>
+                        <label>VAT Number:</label>
+                        <span t-field="o.user_id"/>
+                        <br/>
+                        <label>NBT Number:</label>
+                        <span t-field="o.user_id"/>
+                    
+                    </div>
+                    <p>Please supply following goods at the agreed price:</p>
+                </div>    
+            </div>
+            <!--  Order Lines Table  -->
+            <table class="o_has_total_table table o_main_table table-borderless" style="width: 100%; table-layout: fixed; word-wrap: break-word;">
+                <thead>
+                    <tr>
+                    <th>
+                    <strong>SN</strong>
+                    </th>
+                    <th>
+                    <strong>LPR NO.</strong>
+                    </th>
+                    <th>
+                    <strong>Item Code</strong>
+                    </th>
+                    <th>
+                    <strong>Description</strong>
+                    </th>
+                    <th class="text-end">
+                    <strong>Disc.</strong>
+                    </th>
+                    <th class="text-end">
+                    <strong>Taxes</strong>
+                    </th>
+                    <th class="text-end">
+                    <strong>Qty</strong>
+                    </th>
+                    <th class="text-end">
+                    <strong>Unit</strong>
+                    </th>
+                    <th class="text-end">
+                    <strong>Unit Price</strong>
+                    </th>
+                    <th class="text-end">
+                    <strong>Amount</strong>
+                    </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-set="current_subtotal" t-value="0"/>
+                    <t t-foreach="o.order_line.filtered(lambda l: l.display_type or l.product_qty != 0)" t-as="line">
+                        <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"/>
+                        <tr>
+                            <t t-if="not line.display_type">
+                                <td>
+                                    <span t-esc="line_index + 1"/>
+                                </td>
+                                <td>
+                                    <span t-esc="line.product_id.default_code"/>
+                                </td>
+                                <td>
+                                    <span t-field="line.product_id.barcode"/>
+                                </td>
+                                <td class="text-start">
+                                    <span t-field="line.name"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.discount"/>
+                                    %
+                                </td>
+                                <td class="text-end">
+                                  <!--  <span t-out="', '.join(tax.tax_label for tax in line.tax_ids if tax.tax_label)"/> --> 
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.product_qty"/>
+                                </td>
+                                <td class="text-end">
+                                    <!-- <span t-field="line.product_uom_id.name"/> -->
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.price_unit"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.price_subtotal" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                </td>
+                            </t>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+            
+            <div style="height: 40px;"/>
+            
+            <!--  Totals  -->
+            <table class="table-borderless" style="width:100%; border-collapse: collapse; border: none; border-spacing: 0; border: none; border-top: none !important; border-bottom: none; border-left: none; border-right: none;">
+                <t t-if="not line.display_type">
+                    <tr>
+                        <th class="text-end">
+                        <strong>Sales Balance</strong>
+                        </th>
+                        <td class="text-end">
+                        <strong>Total Discount</strong>
+                        </td>
+                        <td class="text-end">
+                        <strong>Misc. Charges</strong>
+                        </td>
+                        <td class="text-end">
+                        <strong>VAT</strong>
+                        </td>
+                        <td class="text-end">
+                        <strong>Round-off</strong>
+                        </td>
+                        <td class="text-end">
+                        <strong>Total</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">
+                        <span t-esc="o.amount_untaxed"/>
+                        </td>
+                        <td class="text-end">0.00</td>
+                        <td class="text-end">0.00</td>
+                        <td class="text-end">
+                        <span t-esc="o.amount_tax"/>
+                        </td>
+                        <td class="text-end">0.00</td>
+                        <td class="text-end">
+                        <span t-esc="o.amount_total"/>
+                        <span t-field="o.currency_id.symbol"/>
+                        </td>
+                    </tr>
+                </t>
+            </table>
+            <br/>
+            <table>
+                <t t-if="not line.display_type">
+                    <tr>
+                        <td class="text-start">
+                        <strong>Terms Conditions:</strong>
+                        <p>
+                            Please inform the purchasing division when you deliver goods.
+                            <br/>
+                            The original invoice or priced AOD must be sent with goods to Purchasing Division, No.9, Gampaha Rd, Ekala. (Fax: 0112239103)
+                        </p>
+                        <hr/>
+                        <p>Thank You</p>
+                        <p>Yours Faithfully,</p>
+                        <span t-field="o.user_id"/>
+                        <br/>
+                        <br/>
+                        <strong>Approved By</strong>
+                        <p>This is a computer generated Purchase Order. No signature is required.</p>
+                        </td>
+                    </tr>
+                </t>   
+            </table>
+            <p t-field="o.notes" class="mt-4"/>
+        </t>
+</t>
+      </field>
+    </record>
+    <record id="report_purchasequota_4a184d90_0fda_484d_b568_010c98eb96ab" model="ir.ui.view">
+      <field name="name">report_purchasequotation_document copy(4)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">purchase.report_purchasequotation_document_copy_4</field>
+      <field name="arch" type="xml">
+        <t t-name="purchase.report_purchasequotation_document_copy_4"><t t-call="web.external_layout">
+        <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/><t t-set="forced_vat" t-value="o.fiscal_position_id.foreign_vat"/><t t-set="address">
+            <div t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;, &quot;vat&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+        </t><t t-if="o.dest_address_id">
+            <t t-set="information_block">
+                <strong>Shipping address:</strong>
+                <div t-field="o.dest_address_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}" name="purchase_shipping_address"/>
+            </t>
+        </t><t t-else="">
+                <t t-set="information_block">
+                    <strong>Shipping address:</strong>
+                    <div t-if="o.picking_type_id and o.picking_type_id.warehouse_id">
+                        <span t-field="o.picking_type_id.warehouse_id.name"/>
+                        <div t-field="o.picking_type_id.warehouse_id.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                    </div>
+                </t>
+            </t><div class="page">
+            <div class="oe_structure"><p><br/></p></div>
+
+            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <div id="informations" class="row mt16 mb16">
+                <div t-if="o.incoterm_id" class="col-3 bm-2">
+                    <strong>Incoterm:</strong>
+                    <p t-if="o.incoterm_location">
+                        <span t-field="o.incoterm_id.code"/> <br/>
+                        <span t-field="o.incoterm_location"/>
+                    </p>
+                    <p t-else="" t-field="o.incoterm_id.code" class="m-0"/>
+                </div>
+            </div>
+
+            <table class="table table-sm mt-4">
+                <thead style="display: table-row-group">
+                    <tr>
+                        <th name="th_description"><strong>Description</strong></th>
+                        <th name="th_expected_date" class="text-center"><strong>Expected Date</strong></th>
+                        <th name="th_quantity" class="text-end"><strong>Qty</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="o.order_line" t-as="order_line">
+                        <tr t-att-class="'bg-200 fw-bold o_line_section' if order_line.display_type == 'line_section' else 'fst-italic o_line_note' if order_line.display_type == 'line_note' else ''">
+                            <t t-if="not order_line.display_type">
+                                <td id="product">
+                                    <span t-field="order_line.name"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="order_line.date_planned"/>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="order_line.product_qty"/>
+                                    <span t-field="order_line.product_uom" groups="uom.group_uom"/>
+                                    <span t-if="order_line.product_packaging_id">
+                                        (<span t-field="order_line.product_packaging_qty" t-options="{&quot;widget&quot;: &quot;integer&quot;}"/> <span t-field="order_line.product_packaging_id"/>)
+                                    </span>
+                                </td>
+                            </t>
+                            <t t-else="">
+                                <td colspan="99" id="section">
+                                    <span t-field="order_line.name"/>
+                                </td>
+                            </t>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+
+            <p t-field="o.notes" class="mt-4"/>
+
+            <div class="oe_structure"/>
+        </div></t>
+</t>
+      </field>
+    </record>
+    <record id="studio_report_docume_4efc8736_12b5_44fc_97b7_def40ea490cf" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_4efc8736-12b5-44fc-97b7-def40ea490cf_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+                    <t t-call="web.external_layout">
+                        <div class="page"><div class="oe_structure"/></div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_report_docume_c5719c77_3a10_4707_aa7f_ac107f54932f" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f_document</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f_document</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_report_document">
+  <t t-call="web.external_layout">
+    <t t-foreach="docs" t-as="doc">
+      <div class="page" style="font-family: Arial, sans-serif; font-size: 10pt; position: relative;">
+        
+        <div class="oe_structure"/>
+        
+        <!-- HEADER -->
+        <div class="header" style="border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+          <table style="width: 100%; border: none;">
+            <tr>
+              <td style="width: 25%; vertical-align: top;">
+                <!-- Company Logo -->
+                <img t-if="doc.company_id.logo" t-att-src="image_data_uri(doc.company_id.logo)" style="max-height: 96px; max-width: 100%; display: block;" alt="Company Logo"/>
+              </td>
+              <td style="width: 75%; vertical-align: top; padding-left: 20px;">
+                <div style="text-align: left; font-size: 16.8pt; font-weight: bold;">JINASENA (PVT)<br/></div>
+                <div><br/></div>
+                <div style="text-align: left; font-size: 12pt;">
+                  No:186, Elvitigala Mawatha, Colombo 08. | 
+                  Hotline: 0112688966, 0112684912 | Fax: 0112688969
+                  <br/>Repair &amp; Service Hotline: 0740600700 | Sales &amp; Marketing Hotline: 0740600600<br/>
+                  E-mail: jinasena@jinasena.com.lk | Web: www.jinasena.com<br/>
+                  Business Reg.No: PV3568 | VAT Reg.No: 1040249557000 | SVAT Reg.No: 001873
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- DOCUMENT TITLE -->
+        <div style="text-align: center; font-size: 16pt; font-weight: bold; margin: 20px 0;">QUOTATION</div>
+
+        <!-- METADATA TABLE -->
+        <table style="width: 100%; font-size: 9pt; margin-bottom: 20px;">
+          <tr>
+            <td style="width: 50%; vertical-align: top;">
+              <!-- DYNAMIC CUSTOMER DETAILS -->
+              <strong><t t-esc="doc.partner_id.name"/></strong><br/>
+              <t t-esc="doc.partner_id.street or ''"/><br/>
+              <t t-if="doc.partner_id.street2"><t t-esc="doc.partner_id.street2"/><br/></t>
+              <t t-if="doc.partner_id.city or doc.partner_id.state_id or doc.partner_id.zip">
+                <t t-esc="doc.partner_id.city or ''"/>, <t t-esc="doc.partner_id.state_id.name or ''"/> <t t-esc="doc.partner_id.zip or ''"/><br/>
+              </t>
+              <t t-if="doc.partner_id.country_id"><t t-esc="doc.partner_id.country_id.name"/><br/></t>
+              <t t-if="doc.partner_id.vat">VAT: <t t-esc="doc.partner_id.vat"/></t>
+            </td>
+            <td style="width: 50%; vertical-align: top;">
+              <table style="width: 100%;">
+                <tr><td style="width: 40%;">Number:</td><td><t t-esc="doc.name"/></td></tr>
+                <tr><td>Date:</td><td><t t-esc="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></td></tr>
+                <tr><td>Quotation deadline:</td><td><t t-esc="doc.validity_date" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></td></tr>
+                <tr><td>Payment:</td><td><t t-esc="doc.payment_term_id.name or '30 Days Credit'"/></td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- LINE ITEMS TABLE -->
+        <table class="table table-sm" style="width: 100%; font-size: 9pt; border-collapse: collapse; margin-bottom: 20px;">
+          <thead>
+            <tr style="border-top: 1px solid #000; border-bottom: 1px solid #000;">
+              <th style="text-align: left; padding: 5px;">Item</th>
+              <th style="text-align: left; padding: 5px;">Description</th>
+              <th style="text-align: right; padding: 5px;">Qty</th>
+              <th style="text-align: left; padding: 5px;">Unit</th>
+              <th style="text-align: right; padding: 5px;">Unit price</th>
+              <th style="text-align: right; padding: 5px;">Disc%</th>
+              <th style="text-align: right; padding: 5px;">DiscAmt</th>
+              <th style="text-align: right; padding: 5px;">TAX Amt</th>
+              <th style="text-align: right; padding: 5px;">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <t t-foreach="doc.order_line" t-as="line">
+              <tr style="border-bottom: 1px solid #ddd;">
+                <td style="padding: 5px;"><t t-esc="line_index + 1"/></td>
+                <td style="padding: 5px;">
+                  <t t-esc="line.product_id.default_code or ''"/><br/>
+                  <t t-esc="line.name"/>
+                </td>
+                <!-- Quantity with 2 decimal places -->
+                <td style="text-align: right; padding: 5px;">
+                  <span t-esc="'%.2f' % line.product_uom_qty"/>
+                </td>
+                <td style="padding: 5px;"><t t-esc="line.product_uom.name"/></td>
+                <!-- Unit price with 2 decimal places -->
+                <td style="text-align: right; padding: 5px;">
+                  <span t-esc="'%.2f' % line.price_unit"/>
+                </td>
+                <!-- Discount percentage with 2 decimal places -->
+                <td style="text-align: right; padding: 5px;">
+                  <span t-esc="'%.2f' % line.discount"/>%
+                </td>
+                <!-- Discount amount with 2 decimal places -->
+                <td style="text-align: right; padding: 5px;">
+                  <t t-set="discount_amount" t-value="line.product_uom_qty * line.price_unit * line.discount / 100"/>
+                  <span t-esc="'%.2f' % discount_amount"/>
+                </td>
+                <!-- Tax amount with 2 decimal places -->
+                <td style="text-align: right; padding: 5px;">
+                  <span t-esc="'%.2f' % line.price_tax"/>
+                </td>
+                <!-- Subtotal with 2 decimal places -->
+                <td style="text-align: right; padding: 5px;">
+                  <span t-esc="'%.2f' % line.price_subtotal"/>
+                </td>
+              </tr>
+            </t>
+          </tbody>
+        </table>
+
+        <!-- TERMS SECTION -->
+        <div style="font-size: 9pt; margin-top: 30px;">
+          <strong>Availability:</strong> 2-3 weeks from the date of receipt of confirmed order.<br/><br/>
+          <strong>Terms of Payment:</strong> 60% advance with confirmed order and balance on collection. Full payment on delivery.<br/><br/>
+          <strong>Guarantee:</strong> The pumps offered herewith are guaranteed against faulty workmanship and defective materials for not less than one year from the date of commissioning.<br/><br/>
+          <strong>Taxes:</strong> Taxes will be subject to any change made by the government at the time of delivery.
+        </div>
+
+        <!-- TOTALS TABLE -->
+        <table style="width: 50%; margin-left: auto; margin-top: 20px; font-size: 10pt;">
+          <tr>
+            <td style="padding: 5px;"><strong>Sales balance</strong></td>
+            <td style="text-align: right; padding: 5px;">
+              <span t-esc="'%.2f' % doc.amount_untaxed"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 5px;"><strong>TOT TAX</strong></td>
+            <td style="text-align: right; padding: 5px;">
+              <span t-esc="'%.2f' % doc.amount_tax"/>
+            </td>
+          </tr>
+          <tr style="border-top: 1px solid #000;">
+            <td style="padding: 5px;"><strong>Total</strong></td>
+            <td style="text-align: right; padding: 5px; font-size: 12pt;">
+              <span t-esc="'%.2f' % doc.amount_total"/>
+            </td>
+          </tr>
+        </table>
+
+        <!-- FOOTER -->
+        <div style="position: absolute; bottom: 0; width: 100%; font-size: 8pt; border-top: 1px solid #000; padding-top: 10px; margin-top: 50px;">
+          <div style="text-align: center; font-style: italic; margin-bottom: 10px;">
+            We trust this quotation is in accordance with your requirement and assure you our best attention in processing your order.<br/>
+            Yours Faithfully
+          </div>
+          <div style="background-color: #f0f0f0; padding: 8px;">
+            <strong>Please draw cheques in favour of "JINASENA (PVT) LIMITED" crossed "ACCOUNT PAYEE ONLY", or an online transfer to:</strong><br/>
+            Commercial Bank - Foreign Branch | Account No: [YOUR_ACCOUNT_NUMBER]
+          </div>
+        </div>
+
+      </div>
+    </t>
+  </t>
+</t>
+      </field>
+    </record>
+    <record id="report_repairorder_5f10a0cb_44e1_42ee_befe_e825f2faf99a" model="ir.ui.view">
+      <field name="name">report_repairorder copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">repair.report_repairorder_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="repair.report_repairorder_copy_1">
+        <t t-set="o" t-value="doc"/>
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h2>
+                        <span>Repair Order #:</span>
+                        <span t-field="o.name">RO123456</span>
+                    </h2>
+                    <div class="oe_structure"/>
+                    <div id="informations" class="row mb-3">
+                        <div class="col-6">
+                            <p t-if="o.partner_id" class="m-0">
+                                <strong>Customer:</strong>
+                                <span t-field="o.partner_id">John Doe</span>
+                            </p>
+                            <p t-if="o.product_id" class="m-0">
+                                <strong>Product:</strong>
+                                <span t-field="o.product_id">Laptop</span>
+                            </p>
+                            <p t-if="o.lot_id" class="m-0" groups="stock.group_production_lot">
+                                <strong>Lot/Serial:</strong>
+                                <span t-field="o.lot_id">L12345</span>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-0">
+                                <strong>Status:</strong>
+                                <span t-field="o.state">Pending</span>
+                            </p>
+                            <p t-if="o.user_id" class="m-0">
+                                <strong>Responsible:</strong>
+                                <span t-field="o.user_id">Jane Smith</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                    <h2 class="mb-3 border-bottom border-2 border-dark">Parts</h2>
+                    <table class="table table-sm o_main_table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-end">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.move_ids" t-as="line">
+                                <td>
+                                    <p t-if="line.repair_line_type == 'add'"><i>(Add)</i> <span t-field="line.product_id">Product A</span></p>
+                                    <p t-if="line.repair_line_type == 'remove'">(<i>Remove</i>) <span t-field="line.product_id">Product B</span></p>
+                                    <p t-if="line.repair_line_type == 'recycle'">(<i>Recycle</i>) <span t-field="line.product_id" data-oe-demo="Product C"/></p>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.product_uom_qty">5</span>
+                                    <span groups="uom.group_uom" t-field="line.product_uom.name">Units</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="oe_structure"/>
+                    <div t-if="o.internal_notes">
+                        <h2 class="mb-3 border-bottom border-2 border-dark">Repair Notes</h2>
+                        <span t-field="o.internal_notes">This is a repair note.</span>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+</t>
+      </field>
+    </record>
+    <record id="report_repairorder_f604a71b_282c_46ee_8c29_2cec799cea1d" model="ir.ui.view">
+      <field name="name">report_repairorder copy(2)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">repair.report_repairorder_copy_2</field>
+      <field name="arch" type="xml">
+        <t t-name="repair.report_repairorder_copy_2">
+        <t t-set="o" t-value="doc"/>
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h2>
+                        <span>Repair Order #:</span>
+                        <span t-field="o.name">RO123456</span>
+                    </h2>
+                    <div class="oe_structure"/>
+                    <div id="informations" class="row mb-3">
+                        <div class="col-6">
+                            <p t-if="o.partner_id" class="m-0">
+                                <strong>Customer:</strong>
+                                <span t-field="o.partner_id">John Doe</span>
+                            </p>
+                            <p t-if="o.product_id" class="m-0">
+                                <strong>Product:</strong>
+                                <span t-field="o.product_id">Laptop</span>
+                            </p>
+                            <p t-if="o.lot_id" class="m-0" groups="stock.group_production_lot">
+                                <strong>Lot/Serial:</strong>
+                                <span t-field="o.lot_id">L12345</span>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-0">
+                                <strong>Status:</strong>
+                                <span t-field="o.state">Pending</span>
+                            </p>
+                            <p t-if="o.user_id" class="m-0">
+                                <strong>Responsible:</strong>
+                                <span t-field="o.user_id">Jane Smith</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                    <h2 class="mb-3 border-bottom border-2 border-dark">Parts</h2>
+                    <table class="table table-sm o_main_table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-end">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.move_ids" t-as="line">
+                                <td>
+                                    <p t-if="line.repair_line_type == 'add'"><i>(Add)</i> <span t-field="line.product_id">Product A</span></p>
+                                    <p t-if="line.repair_line_type == 'remove'">(<i>Remove</i>) <span t-field="line.product_id">Product B</span></p>
+                                    <p t-if="line.repair_line_type == 'recycle'">(<i>Recycle</i>) <span t-field="line.product_id" data-oe-demo="Product C"/></p>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.product_uom_qty">5</span>
+                                    <span groups="uom.group_uom" t-field="line.product_uom.name">Units</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="oe_structure"/>
+                    <div t-if="o.internal_notes">
+                        <h2 class="mb-3 border-bottom border-2 border-dark">Repair Notes</h2>
+                        <span t-field="o.internal_notes">This is a repair note.</span>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+</t>
+      </field>
+    </record>
+    <record id="report_repairorder_ad64bed4_7375_4d2d_aabe_02e43482568e" model="ir.ui.view">
+      <field name="name">report_repairorder copy(3)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">repair.report_repairorder_copy_3</field>
+      <field name="arch" type="xml">
+        <t t-name="repair.report_repairorder_copy_3">
+        <t t-set="o" t-value="doc"/>
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h2>
+                        <span>Repair Order #:</span>
+                        <span t-field="o.name">RO123456</span>
+                    </h2>
+                    <div class="oe_structure"/>
+                    <div id="informations" class="row mb-3">
+                        <div class="col-6">
+                            <p t-if="o.partner_id" class="m-0">
+                                <strong>Customer:</strong>
+                                <span t-field="o.partner_id">John Doe</span>
+                            </p>
+                            <p t-if="o.product_id" class="m-0">
+                                <strong>Product:</strong>
+                                <span t-field="o.product_id">Laptop</span>
+                            </p>
+                            <p t-if="o.lot_id" class="m-0" groups="stock.group_production_lot">
+                                <strong>Lot/Serial:</strong>
+                                <span t-field="o.lot_id">L12345</span>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-0">
+                                <strong>Status:</strong>
+                                <span t-field="o.state">Pending</span>
+                            </p>
+                            <p t-if="o.user_id" class="m-0">
+                                <strong>Responsible:</strong>
+                                <span t-field="o.user_id">Jane Smith</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                    <h2 class="mb-3 border-bottom border-2 border-dark">Parts</h2>
+                    <table class="table table-sm o_main_table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-end">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.move_ids" t-as="line">
+                                <td>
+                                    <p t-if="line.repair_line_type == 'add'"><i>(Add)</i> <span t-field="line.product_id">Product A</span></p>
+                                    <p t-if="line.repair_line_type == 'remove'">(<i>Remove</i>) <span t-field="line.product_id">Product B</span></p>
+                                    <p t-if="line.repair_line_type == 'recycle'">(<i>Recycle</i>) <span t-field="line.product_id" data-oe-demo="Product C"/></p>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.product_uom_qty">5</span>
+                                    <span groups="uom.group_uom" t-field="line.product_uom.name">Units</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="oe_structure"/>
+                    <div t-if="o.internal_notes">
+                        <h2 class="mb-3 border-bottom border-2 border-dark">Repair Notes</h2>
+                        <span t-field="o.internal_notes">This is a repair note.</span>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+</t>
+      </field>
+    </record>
+    <record id="report_repairorder_8d6acf7a_01ac_4f54_9ebb_8ecbea4e05f8" model="ir.ui.view">
+      <field name="name">report_repairorder copy(4)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">repair.report_repairorder_copy_4</field>
+      <field name="arch" type="xml">
+        <t t-name="repair.report_repairorder_copy_4">
+        <t t-set="o" t-value="doc"/>
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h2>
+                        <span>Repair Order #:</span>
+                        <span t-field="o.name">RO123456</span>
+                    </h2>
+                    <div class="oe_structure"/>
+                    <div id="informations" class="row mb-3">
+                        <div class="col-6">
+                            <p t-if="o.partner_id" class="m-0">
+                                <strong>Customer:</strong>
+                                <span t-field="o.partner_id">John Doe</span>
+                            </p>
+                            <p t-if="o.product_id" class="m-0">
+                                <strong>Product:</strong>
+                                <span t-field="o.product_id">Laptop</span>
+                            </p>
+                            <p t-if="o.lot_id" class="m-0" groups="stock.group_production_lot">
+                                <strong>Lot/Serial:</strong>
+                                <span t-field="o.lot_id">L12345</span>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-0">
+                                <strong>Status:</strong>
+                                <span t-field="o.state">Pending</span>
+                            </p>
+                            <p t-if="o.user_id" class="m-0">
+                                <strong>Responsible:</strong>
+                                <span t-field="o.user_id">Jane Smith</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                    <h2 class="mb-3 border-bottom border-2 border-dark">Parts</h2>
+                    <table class="table table-sm o_main_table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-end">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.move_ids" t-as="line">
+                                <td>
+                                    <p t-if="line.repair_line_type == 'add'"><i>(Add)</i> <span t-field="line.product_id">Product A</span></p>
+                                    <p t-if="line.repair_line_type == 'remove'">(<i>Remove</i>) <span t-field="line.product_id">Product B</span></p>
+                                    <p t-if="line.repair_line_type == 'recycle'">(<i>Recycle</i>) <span t-field="line.product_id" data-oe-demo="Product C"/></p>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.product_uom_qty">5</span>
+                                    <span groups="uom.group_uom" t-field="line.product_uom.name">Units</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="oe_structure"/>
+                    <div t-if="o.internal_notes">
+                        <h2 class="mb-3 border-bottom border-2 border-dark">Repair Notes</h2>
+                        <span t-field="o.internal_notes">This is a repair note.</span>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+</t>
+      </field>
+    </record>
+    <record id="report_repairorder_0a55e338_417a_477d_9c3f_5e5054b8142f" model="ir.ui.view">
+      <field name="name">report_repairorder copy(5)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">repair.report_repairorder_copy_5</field>
+      <field name="arch" type="xml">
+        <t t-name="repair.report_repairorder_copy_5">
+        <t t-set="o" t-value="doc"/>
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h2>
+                        <span>Repair Order #:</span>
+                        <span t-field="o.name">RO123456</span>
+                    </h2>
+                    <div class="oe_structure"/>
+                    <div id="informations" class="row mb-3">
+                        <div class="col-6">
+                            <p t-if="o.partner_id" class="m-0">
+                                <strong>Customer:</strong>
+                                <span t-field="o.partner_id">John Doe</span>
+                            </p>
+                            <p t-if="o.product_id" class="m-0">
+                                <strong>Product:</strong>
+                                <span t-field="o.product_id">Laptop</span>
+                            </p>
+                            <p t-if="o.lot_id" class="m-0" groups="stock.group_production_lot">
+                                <strong>Lot/Serial:</strong>
+                                <span t-field="o.lot_id">L12345</span>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-0">
+                                <strong>Status:</strong>
+                                <span t-field="o.state">Pending</span>
+                            </p>
+                            <p t-if="o.user_id" class="m-0">
+                                <strong>Responsible:</strong>
+                                <span t-field="o.user_id">Jane Smith</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                    <h2 class="mb-3 border-bottom border-2 border-dark">Parts</h2>
+                    <table class="table table-sm o_main_table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-end">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.move_ids" t-as="line">
+                                <td>
+                                    <p t-if="line.repair_line_type == 'add'"><i>(Add)</i> <span t-field="line.product_id">Product A</span></p>
+                                    <p t-if="line.repair_line_type == 'remove'">(<i>Remove</i>) <span t-field="line.product_id">Product B</span></p>
+                                    <p t-if="line.repair_line_type == 'recycle'">(<i>Recycle</i>) <span t-field="line.product_id" data-oe-demo="Product C"/></p>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="line.product_uom_qty">5</span>
+                                    <span groups="uom.group_uom" t-field="line.product_uom.name">Units</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="oe_structure"/>
+                    <div t-if="o.internal_notes">
+                        <h2 class="mb-3 border-bottom border-2 border-dark">Repair Notes</h2>
+                        <span t-field="o.internal_notes">This is a repair note.</span>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+</t>
+      </field>
+    </record>
+    <record id="studio_customization_a9fa811b_a727_45ac_933c_8a2795e2abe6" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page"><div class="oe_structure"/>
+                        
+                        <!-- Content -->
+                        <h2 class="mt-4">Invoice</h2>
+                        <p>Purchasing Dept. - Mr. Deepal: 0719710 434, 11 2 239 250 Fax : 11 2 239 103, 11 2 229 995</p>
+                        
+                        
+                        <div class="row">
+                            <!-- ===== Column 1 ===== -->
+                            <div class="col-4">
+                                <span style="white-space: pre-line;">
+                                    Customer Id : 0056550 <span/>
+                                    <span/>
+                                    D and D ENTERPRISES
+                                    No.650/1 Kapuwawewa Road,
+                                    Ragama,
+                                    Cust. VAT Reg No.   : <span/>
+                                    Cust. SVAT Reg No.  :<span/>
+                                </span>
+                            </div>
+                            <!-- ===== Column 2 ===== -->
+                            <div class="col-4">
+                                <span style="white-space: pre-line;">
+                                    Invoice Number  : BR-EK-001006-25 <span/>
+                                    Sales order     : 00514687_055 <span/>
+                                    Requisition     : <span/>
+                                    Payment         : 60 Days Credit <span/>
+                                    Warehouse       : Branch warehouse - Ekala <span/>
+                                </span>
+                            </div>
+                            <!-- ===== Column 4 ===== -->
+                            <div class="col-4">
+                                <span style="white-space: pre-line;">
+                                    Date        : 24/09/2025 <span/>
+                                    Your ref    : 1160 <span/>
+                                    Our ref     : <span/>
+                                    Com.Vat RegNo   : 104024955 7000 <span/>
+                                    Com.SVat RegNo  : 001873<span/>
+                                    Com.NBT RegNo.  : 104024955 9000<span/>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- ITEMS TABLE -->
+                        <table class="table table-sm no-border" style="width: 100%; font-size: 10pt; border-collapse: collapse; margin-bottom: 20px;">
+                            <thead>
+                                <tr style="border-top: none; border-bottom: 0.5px solid #000;">
+                                    <th name="th_sn">
+                                        <strong>Item number</strong>
+                                    </th>
+                                    <th name="th_description">
+                                        <strong>Description</strong>
+                                    </th>
+                                    <th name="th_quantity">
+                                        <strong>Quantity</strong>
+                                    </th>
+                                    <th name="th_unit">
+                                        <strong>Unit</strong>
+                                    </th>
+                                    <th name="th_wh">
+                                        <strong>Unit price</strong>
+                                    </th>
+                                    <th name="th_prno">
+                                        <strong>Disc %</strong>
+                                    </th>
+                                    <th name="th_expected_date" class="text-center">
+                                        <strong>Discount</strong>
+                                    </th>
+                                    <th name="th_expected_date" class="text-center">
+                                        <strong>Amount</strong>
+                                    </th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                   
+                                </t>
+                               
+                            </tbody>
+                        </table>
+                        
+                        <!-- Total TABLE -->
+                        <table class="table table-sm no-border" style="width: 100%; font-size: 10pt; border-collapse: collapse; margin-bottom: 20px;">
+                            <thead>
+                                <tr style="border-top: none; border-bottom: 0.5px solid #000;">
+                                    <th name="th_sn">
+                                        <strong/>
+                                    </th>
+                                    <th name="th_description">
+                                        <strong/>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                TOTAL INVOICE VALUE:
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                ADVANCE     :
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                BALANCE     : 
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                        
+                        <div class="row">
+                            <span style="white-space: pre-line;">
+                                * Goods returns will not be accepted once sold, unless warranty conditions apply.
+                                * All payments should be made by A/C payee cheques in favor of "JINASENA (PVT) LTD".
+                                * GOODS RECEIVED IN CORRECT QUANTITY AND IN GOOD CONDITION.
+                            </span>
+                        </div>
+                        
+                        <div class="row" style="width: 40%; height: 50px; margin: 5 auto 5px auto;"/>
+                        <div class="row">
+                            <div class="col-2" style="align:left; border-top: 1px solid #000; width: 20%; margin: 1 auto 0px auto;">
+                                Prepared by
+                            </div>
+                            <div class="col-2" style="border-top: 1px solid #000; width: 20%; margin: 0 auto 5px auto;">
+                                Authorized by
+                            </div>
+                            <div class="col-2" style="border-top: 1px solid #000; width: 20%; margin: 0 auto 5px auto;">
+                                Customer's Name and NIC No
+                            </div>
+                            <div class="col-2" style="border-top: 1px solid #000; width: 20%; margin: 0 auto 5px auto;">
+                                Customer's Signature
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_2ff9e7b2_65d5_4092_a0f5_1c938ef9d3eb" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document copy(1) copy(4) copy(1) copy(2) copy(1) copy(1)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_document_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1">
+                    <t t-call="web.external_layout">
+                        <div class="page"><div class="oe_structure"/>
+                        
+                        <!-- Content -->
+                        <h2 class="mt-4">Invoice</h2>
+                        <p>Purchasing Dept. - Mr. Deepal: 0719710 434, 11 2 239 250 Fax : 11 2 239 103, 11 2 229 995</p>
+                        
+                        
+                        <div class="row">
+                            <!-- ===== Column 1 ===== -->
+                            <div class="col-4">
+                                <span style="white-space: pre-line;">
+                                    Customer Id : 0056550 <span/>
+                                    <span/>
+                                    D and D ENTERPRISES
+                                    No.650/1 Kapuwawewa Road,
+                                    Ragama,
+                                    Cust. VAT Reg No.   : <span/>
+                                    Cust. SVAT Reg No.  :<span/>
+                                </span>
+                            </div>
+                            <!-- ===== Column 2 ===== -->
+                            <div class="col-4">
+                                <span style="white-space: pre-line;">
+                                    Invoice Number  : BR-EK-001006-25 <span/>
+                                    Sales order     : 00514687_055 <span/>
+                                    Requisition     : <span/>
+                                    Payment         : 60 Days Credit <span/>
+                                    Warehouse       : Branch warehouse - Ekala <span/>
+                                </span>
+                            </div>
+                            <!-- ===== Column 4 ===== -->
+                            <div class="col-4">
+                                <span style="white-space: pre-line;">
+                                    Date        : 24/09/2025 <span/>
+                                    Your ref    : 1160 <span/>
+                                    Our ref     : <span/>
+                                    Com.Vat RegNo   : 104024955 7000 <span/>
+                                    Com.SVat RegNo  : 001873<span/>
+                                    Com.NBT RegNo.  : 104024955 9000<span/>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- ITEMS TABLE -->
+                        <table class="table table-sm no-border" style="width: 100%; font-size: 10pt; border-collapse: collapse; margin-bottom: 20px;">
+                            <thead>
+                                <tr style="border-top: none; border-bottom: 0.5px solid #000;">
+                                    <th name="th_sn">
+                                        <strong>Item number</strong>
+                                    </th>
+                                    <th name="th_description">
+                                        <strong>Description</strong>
+                                    </th>
+                                    <th name="th_quantity">
+                                        <strong>Quantity</strong>
+                                    </th>
+                                    <th name="th_unit">
+                                        <strong>Unit</strong>
+                                    </th>
+                                    <th name="th_wh">
+                                        <strong>Unit price</strong>
+                                    </th>
+                                    <th name="th_prno">
+                                        <strong>Disc %</strong>
+                                    </th>
+                                    <th name="th_expected_date" class="text-center">
+                                        <strong>Discount</strong>
+                                    </th>
+                                    <th name="th_expected_date" class="text-center">
+                                        <strong>Amount</strong>
+                                    </th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                   
+                                </t>
+                               
+                            </tbody>
+                        </table>
+                        
+                        <!-- Total TABLE -->
+                        <table class="table table-sm no-border" style="width: 100%; font-size: 10pt; border-collapse: collapse; margin-bottom: 20px;">
+                            <thead>
+                                <tr style="border-top: none; border-bottom: 0.5px solid #000;">
+                                    <th name="th_sn">
+                                        <strong/>
+                                    </th>
+                                    <th name="th_description">
+                                        <strong/>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                TOTAL INVOICE VALUE:
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                ADVANCE     :
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                    <tr>
+                                        <t>
+                                            <td id="product">
+                                                BALANCE     : 
+                                            </td>
+                                            <td id="product">
+                                                <span/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                        
+                        <div class="row">
+                            <span style="white-space: pre-line;">
+                                * Goods returns will not be accepted once sold, unless warranty conditions apply.
+                                * All payments should be made by A/C payee cheques in favor of "JINASENA (PVT) LTD".
+                                * GOODS RECEIVED IN CORRECT QUANTITY AND IN GOOD CONDITION.
+                            </span>
+                        </div>
+                        
+                        <div class="row" style="width: 40%; height: 50px; margin: 5 auto 5px auto;"/>
+                        <div class="row">
+                            <div class="col-2" style="align:left; border-top: 1px solid #000; width: 20%; margin: 1 auto 0px auto;">
+                                Prepared by
+                            </div>
+                            <div class="col-2" style="border-top: 1px solid #000; width: 20%; margin: 0 auto 5px auto;">
+                                Authorized by
+                            </div>
+                            <div class="col-2" style="border-top: 1px solid #000; width: 20%; margin: 0 auto 5px auto;">
+                                Customer's Name and NIC No
+                            </div>
+                            <div class="col-2" style="border-top: 1px solid #000; width: 20%; margin: 0 auto 5px auto;">
+                                Customer's Signature
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div>
+                    </t>
+                </t>
+      </field>
+    </record>
+    <record id="studio_customization_f2ddc019_4852_49de_9d3e_dd48479a9290" model="ir.ui.view">
+      <field name="name">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document copy(2)</field>
+      <field name="type">qweb</field>
+      <field name="mode">primary</field>
+      <field name="key">studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2</field>
+      <field name="arch" type="xml">
+        <t t-name="studio_customization.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_document_copy_2">
+    <t t-call="web.external_layout">
+        
+        <div class="page">
+            <h2><strong>Repair Receipt</strong>
+            </h2>
+          
+             <div class="row">
+                <div class="col-6">
+                    <span style="white-space: pre-line;">
+                        Customer Name   : <span t-field="doc.partner_id"/>
+                        Address         : <span t-field="doc.partner_id.street"/><span t-field="doc.partner_id.street2"/><span t-field="doc.partner_id.city"/><span t-field="doc.partner_id.zip"/><span t-field="doc.partner_id.country_id"/>
+                        Phone           : <span t-field="doc.partner_phone"/>
+                        FAX NO.         : 
+                        Mobile          : <span t-field="doc.partner_id.mobile"/>
+                        E Mail          : <span t-field="doc.partner_email"/>
+                        Item Id         : <span t-field="doc.product_id.code"/>
+                        Item Name       : <span t-field="doc.product_id"/>
+                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        NAT:I/D Card No :
+                    </span>
+                </div>
+                <div class="col-6">
+                    <span style="white-space: pre-line;">
+                        Repair Receipts Id  : <span t-field="doc.display_name"/>
+                        Date                : <span t-field="doc.create_date"/>
+                    </span>
+                </div>
+            </div>
+            <strong style="white-space: pre-line; height: 50px;">When handing over this item and obtaining this receipt, I accept the conditions below.</strong>
+            <div>
+                <h4 class="mb-3 border-bottom border-2 border-dark"/>
+                <div style="text-align: center; width: 100%;">
+                    <strong>CONDITIONS</strong>
+                </div>
+                <span style="font-size: 11pt;">
+                    <p>
+                    1. This receipt must be produced at the time the pump is collected either after repairs or otherwise. If the receipt is lost or misplaced,
+                    an affidavit must be submitted. Alternatively, the pump will be handed over to the person whose ID card and other details are given
+                    in the receipt above.
+                    </p>
+                    <p>
+                    2. Payments can be made either by cash or by online bank transfer. Bank account details are given below. Once the payment is made,
+                    WhatsApp the payment receipt to 0740 600 700 or email it to customercare@jinasena.com.lk for confirmation.
+                        <span style="white-space: pre-line;">
+                            • Beneficiary Account No.: 1500007722 | Bank: Commercial Bank of Ceylon PLC | Branch: Foreign Branch – 003
+                        </span>
+                    </p><p>
+                    3. Please note that it is required to dismantle the pump in order to prepare an estimate which consumes a considerable amount of
+                    resources including skilled manpower. Therefore a fee will be charged as per the below rates, only if the quotation is not accepted.
+                    The appropriate amount shall be paid at the time of the collection of the pump.
+                        <span style="white-space: pre-line;">
+                            Pump categories and the Rates charged:
+                            • Domestic Pumps: Rs. 500/-
+                            • Small and Medium Industrial Pumps: Rs.1000/-
+                            • Other Pumps (Large industrial, Multistage, Engine driven): Rs.1500/-
+                        </span>
+                    </p><p>
+                    4. Once an estimate is issued, if we do not receive confirmation to proceed within sixty(60) days from the date of the estimate, such
+                    quotations are considered canceled. Customers are required to collect item/items handed over for repair estimates within the
+                    above specified period. Please note that Jinasena (Pvt) Ltd, will not be responsible for failure to collect items within the specified
+                    period and shall have the right to dispose appropriately.
+                    </p>
+                </span>
+                
+            </div>
+            <div class="row" style="width: 100%; height: 50px; margin: 5 auto 5px auto;"/>
+            <div class="row">
+                <div class="col-4" style="align:right; border-top: 1px solid #000; width: 40%;">
+                    Jinasena (Pvt) Ltd.
+                </div>
+                <div class="col-2"/>
+                <div class="col-4" style="align:right; border-top: 1px solid #000; width: 40%;">
+                    For &amp; on behalf of the Owner
+                </div>
+            </div>
+            <div class="oe_structure"/>
+               
+        </div>
+    </t>
+</t>
+      </field>
+    </record>
+  </data>
+</odoo>
