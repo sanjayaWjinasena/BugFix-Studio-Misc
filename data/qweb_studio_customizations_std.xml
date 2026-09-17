@@ -1,0 +1,783 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <data>
+    <record id="view_std_ir_actions_server_2382" model="ir.ui.view">
+      <field name="name">Odoo Studio: Server Actions customization</field>
+      <field name="model">ir.actions.server</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_server_action_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='state']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_base_automation_4868" model="ir.ui.view">
+      <field name="name">Odoo Studio: base.automation.tree customization</field>
+      <field name="model">base.automation</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base_automation.view_base_automation_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='model_id']" position="after">
+    <field name="x_studio_status" optional="hide"/>
+    <field name="x_studio_comments" optional="hide"/>
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_mail_template_5042" model="ir.ui.view">
+      <field name="name">Odoo Studio: email.template.tree customization</field>
+      <field name="model">mail.template</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="mail.email_template_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name=&quot;partner_to&quot;]" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_helpdesk_team_5302" model="ir.ui.view">
+      <field name="name">Odoo Studio: helpdesk.team.tree customization</field>
+      <field name="model">helpdesk.team</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_team_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name=&quot;use_alias&quot;]" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_actions_actions_2416" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.actions.actions.tree customization</field>
+      <field name="model">ir.actions.actions</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.action_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]/field[@name='name']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_actions_act_window_2441" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.actions.windows.tree customization</field>
+      <field name="model">ir.actions.act_window</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_window_action_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='view_id']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_config_parameter_6117" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.config_parameter tree customization</field>
+      <field name="model">ir.config_parameter</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_ir_config_list"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='value']" position="after">
+    <field name="create_uid" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_cron_6148" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.cron tree customization</field>
+      <field name="model">ir.cron</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_cron_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='numbercall']" position="after">
+    <xpath expr="//field[@name='active']" position="move"/>
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_default_6116" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.default tree view customization</field>
+      <field name="model">ir.default</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_default_tree_view"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='json_value']" position="after">
+    <field name="create_uid" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_model_3111" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model form customization</field>
+      <field name="model">ir.model</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_model_form"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='fields']/field[@name='field_id']/tree[1]/field[@name='ttype']" position="after">
+    <field name="relation"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_model_access_2323" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model.access search customization</field>
+      <field name="model">ir.model.access</field>
+      <field name="type">search</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_access_view_search"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='group_id']" position="after">
+    <field name="name"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_model_access_5301" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model.access.view.tree.edition customization</field>
+      <field name="model">ir.model.access</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_access_view_tree_edition"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]/field[@name='name']" position="before">
+    <field optional="show" name="x_studio_user_name" string="User Name" column_invisible="1"/>
+  </xpath>
+  <xpath expr="//tree[1]/field[@name='name']" position="after">
+    <field optional="show" name="x_studio_number_of_users" string="Users" widget="many2many_tags"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_model_data_3847" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model.data search customization</field>
+      <field name="model">ir.model.data</field>
+      <field name="type">search</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_model_data_search"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//search[1]/field[@name='res_id']" position="after">
+    <field name="res_id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_rule_5297" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.rule form customization</field>
+      <field name="model">ir.rule</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_rule_form"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='perm_create']" position="after">
+    <field name="x_studio_description"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_rule_5296" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.rule tree customization</field>
+      <field name="model">ir.rule</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_rule_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='domain_force']" position="after">
+    <field optional="show" name="x_studio_description" string="Description"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_sequence_6060" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.sequence form customization</field>
+      <field name="model">ir.sequence</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.sequence_view"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sequence']/field[@name='date_range_ids']/tree[1]/field[@name='date_to']" position="after">
+    <field name="number_next" optional="show"/>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sequence']/field[@name='date_range_ids']/tree[1]/field[@name='number_next_actual']" position="attributes">
+    <attribute name="string">Next Number Actual</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sequence']/field[@name='date_range_ids']/tree[1]" position="after">
+    <form>
+      <sheet string="Sequence Date Range" name="studio_sheet_919f69">
+        <group col="4" name="studio_group_2ebefe">
+          <field name="date_from"/>
+          <field name="date_to"/>
+          <field name="sequence_id"/>
+          <field name="number_next"/>
+          <field name="number_next_actual"/>
+          <separator/>
+        </group>
+      </sheet>
+    </form>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_sequence_3255" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.sequence tree customization</field>
+      <field name="model">ir.sequence</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.sequence_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='code']" position="after">
+    <field name="id"/>
+  </xpath>
+  <xpath expr="//field[@name='company_id']" position="after">
+    <field name="number_next" optional="show"/>
+  </xpath>
+  <xpath expr="//field[@name='number_next_actual']" position="attributes">
+    <attribute name="string">Next Number Actual</attribute>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_ui_menu_5317" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.ui.menu tree customization</field>
+      <field name="model">ir.ui.menu</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.edit_menu"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='sequence']" position="after">
+    <field name="parent_id" optional="show"/>
+  </xpath>
+  <xpath expr="//field[@name='complete_name']" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_ui_view_2658" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.ui.view tree customization</field>
+      <field name="model">ir.ui.view</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='model']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_product_category_5552" model="ir.ui.view">
+      <field name="name">Odoo Studio: product.category.list customization</field>
+      <field name="model">product.category</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="product.product_category_list_view"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='display_name']" position="after">
+    <field name="x_studio_company_id" optional="show"/>
+    <field optional="show" name="x_studio_description" string="Description"/>
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_project_project_stage_5899" model="ir.ui.view">
+      <field name="name">Odoo Studio: project.project.stage.view.tree customization</field>
+      <field name="model">project.project.stage</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="project.project_project_stage_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='fold']" position="after">
+    <field name="id" optional="show"/>
+    <field name="create_uid" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_res_groups_5298" model="ir.ui.view">
+      <field name="name">Odoo Studio: res.groups.form customization</field>
+      <field name="model">res.groups</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_groups_form"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='users']/field[@name='users']" position="inside">
+    <tree string="Users" decoration-info="state == 'new'">
+      <field name="name"/>
+      <field name="login"/>
+      <field name="lang"/>
+      <field name="login_date"/>
+      <field name="state" column_invisible="1"/>
+      <field name="company_id" groups="base.group_multi_company"/>
+      <field name="active"/>
+      <field name="create_uid" optional="show"/>
+      <field name="create_date" optional="show"/>
+    </tree>
+  </xpath>
+  <xpath expr="//field[@name='implied_ids']" position="inside">
+    <form string="Groups">
+      <sheet>
+        <group col="4">
+          <field name="category_id"/>
+          <field name="name"/>
+          <field name="share"/>
+        </group>
+        <notebook>
+          <page string="Users" name="users">
+            <field name="users" context="{'search_default_no_share':1}">
+              <tree string="Users" decoration-info="state == 'new'">
+                <field name="name"/>
+                <field name="login"/>
+                <field name="lang"/>
+                <field name="login_date"/>
+                <field name="state" column_invisible="1"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="active"/>
+                <field name="create_uid" optional="show"/>
+                <field name="create_date" optional="show"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Inherited" name="inherit_groups">
+            <label for="implied_ids" string="Users added to this group are automatically added in the following groups."/>
+            <field name="implied_ids">
+              <tree string="Access Groups">
+                <field name="id" optional="show"/>
+                <field name="full_name" modifiers="{&quot;readonly&quot;: true}"/>
+                <field name="create_uid" optional="show"/>
+                <field name="comment" optional="show"/>
+                <field name="create_date" optional="show"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Menus" name="menus">
+            <field name="menu_access"/>
+          </page>
+          <page string="Views" name="views">
+            <field name="view_access" groups="base.group_system"/>
+          </page>
+          <page string="Access Rights" name="access_rights">
+            <field name="model_access">
+              <tree string="Access Rights" editable="top">
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="perm_read"/>
+                <field name="perm_write"/>
+                <field name="perm_create"/>
+                <field name="perm_unlink"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Record Rules" name="record_rules">
+            <field name="rule_groups">
+              <tree string="Record Rules" editable="top">
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="domain_force"/>
+                <field name="x_studio_description" optional="show"/>
+                <field name="perm_read"/>
+                <field name="perm_write"/>
+                <field name="perm_create"/>
+                <field name="perm_unlink"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Notes" name="notes">
+            <field name="comment"/>
+          </page>
+        </notebook>
+      </sheet>
+    </form>
+    <tree string="Access Groups">
+      <field name="id" optional="show"/>
+      <field name="full_name" modifiers="{&quot;readonly&quot;: true}"/>
+      <field name="create_uid" optional="show"/>
+      <field name="comment" optional="show"/>
+      <field name="create_date" optional="show"/>
+    </tree>
+  </xpath>
+  <xpath expr="//field[@name='domain_force']" position="after">
+    <field name="x_studio_description" optional="show"/>
+  </xpath>
+  <xpath expr="//field[@name='implied_ids']/form//field[@name='implied_ids']" position="inside">
+    <form string="Groups">
+      <sheet>
+        <group col="4">
+          <field name="category_id"/>
+          <field name="name"/>
+          <field name="share"/>
+        </group>
+        <notebook>
+          <page string="Users" name="users">
+            <field name="users" context="{'search_default_no_share':1}">
+              <tree string="Users" decoration-info="state == 'new'">
+                <field name="name"/>
+                <field name="login"/>
+                <field name="lang"/>
+                <field name="login_date"/>
+                <field name="state" column_invisible="1"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="active"/>
+                <field name="create_uid" optional="show"/>
+                <field name="create_date" optional="show"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Inherited" name="inherit_groups">
+            <label for="implied_ids" string="Users added to this group are automatically added in the following groups."/>
+            <field name="implied_ids">
+              <form string="Groups">
+                <sheet>
+                  <group col="4">
+                    <field name="category_id"/>
+                    <field name="name"/>
+                    <field name="share"/>
+                  </group>
+                  <notebook>
+                    <page string="Users" name="users">
+                      <field name="users" context="{'search_default_no_share':1}">
+                        <tree string="Users" decoration-info="state == 'new'">
+                          <field name="name"/>
+                          <field name="login"/>
+                          <field name="lang"/>
+                          <field name="login_date"/>
+                          <field name="state" column_invisible="1"/>
+                          <field name="company_id" groups="base.group_multi_company"/>
+                          <field name="active"/>
+                          <field name="create_uid" optional="show"/>
+                          <field name="create_date" optional="show"/>
+                        </tree>
+                      </field>
+                    </page>
+                    <page string="Inherited" name="inherit_groups">
+                      <label for="implied_ids" string="Users added to this group are automatically added in the following groups."/>
+                      <field name="implied_ids">
+                        <tree string="Access Groups">
+                          <field name="id" optional="show"/>
+                          <field name="full_name" modifiers="{&quot;readonly&quot;: true}"/>
+                          <field name="create_uid" optional="show"/>
+                          <field name="comment" optional="show"/>
+                          <field name="create_date" optional="show"/>
+                        </tree>
+                      </field>
+                    </page>
+                    <page string="Menus" name="menus">
+                      <field name="menu_access"/>
+                    </page>
+                    <page string="Views" name="views">
+                      <field name="view_access" groups="base.group_system"/>
+                    </page>
+                    <page string="Access Rights" name="access_rights">
+                      <field name="model_access">
+                        <tree string="Access Rights" editable="top">
+                          <field name="name"/>
+                          <field name="model_id"/>
+                          <field name="perm_read"/>
+                          <field name="perm_write"/>
+                          <field name="perm_create"/>
+                          <field name="perm_unlink"/>
+                        </tree>
+                      </field>
+                    </page>
+                    <page string="Record Rules" name="record_rules">
+                      <field name="rule_groups">
+                        <tree string="Record Rules" editable="top">
+                          <field name="name"/>
+                          <field name="model_id"/>
+                          <field name="domain_force"/>
+                          <field name="x_studio_description" optional="show"/>
+                          <field name="x_studio_description" optional="show"/>
+                          <field name="perm_read"/>
+                          <field name="perm_write"/>
+                          <field name="perm_create"/>
+                          <field name="perm_unlink"/>
+                        </tree>
+                      </field>
+                    </page>
+                    <page string="Notes" name="notes">
+                      <field name="comment"/>
+                    </page>
+                  </notebook>
+                </sheet>
+              </form>
+              <tree string="Access Groups">
+                <field name="id" optional="show"/>
+                <field name="full_name" modifiers="{&quot;readonly&quot;: true}"/>
+                <field name="create_uid" optional="show"/>
+                <field name="comment" optional="show"/>
+                <field name="create_date" optional="show"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Menus" name="menus">
+            <field name="menu_access"/>
+          </page>
+          <page string="Views" name="views">
+            <field name="view_access" groups="base.group_system"/>
+          </page>
+          <page string="Access Rights" name="access_rights">
+            <field name="model_access">
+              <tree string="Access Rights" editable="top">
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="perm_read"/>
+                <field name="perm_write"/>
+                <field name="perm_create"/>
+                <field name="perm_unlink"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Record Rules" name="record_rules">
+            <field name="rule_groups">
+              <tree string="Record Rules" editable="top">
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="domain_force"/>
+                <field name="perm_read"/>
+                <field name="perm_write"/>
+                <field name="perm_create"/>
+                <field name="perm_unlink"/>
+              </tree>
+            </field>
+          </page>
+          <page string="Notes" name="notes">
+            <field name="comment"/>
+          </page>
+        </notebook>
+      </sheet>
+    </form>
+  </xpath>
+  <xpath expr="//field[@name='model_access']" position="inside">
+    <form string="Access Rights">
+                   <sheet>
+                    <div class="alert alert-warning text-center" role="alert">
+                        Please note that modifications will be applied for all users of the specified group
+                    </div>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="model_id"/>
+                        <field name="group_id"/>
+                        <field name="active" widget="boolean_toggle"/>
+                    </group>
+                    <group string="Access" col="4">
+                        <field name="perm_read"/>
+                        <field name="perm_write"/>
+                        <field name="perm_create"/>
+                        <field name="perm_unlink"/>
+                    </group>
+                   </sheet> 
+                </form>
+    <form string="Access Rights">
+      <sheet>
+        <div class="alert alert-warning text-center" role="alert">
+                        Please note that modifications will be applied for all users of the specified group
+                    </div>
+        <group col="4">
+          <field name="name"/>
+          <field name="model_id"/>
+          <field name="group_id"/>
+          <field name="active" widget="boolean_toggle"/>
+        </group>
+        <group string="Access" col="4">
+          <field name="perm_read"/>
+          <field name="perm_write"/>
+          <field name="perm_create"/>
+          <field name="perm_unlink"/>
+        </group>
+      </sheet>
+    </form>
+    <form string="Access Rights">
+      <sheet>
+        <div class="alert alert-warning text-center" role="alert">
+                        Please note that modifications will be applied for all users of the specified group
+                    </div>
+        <group col="4">
+          <field name="name"/>
+          <field name="model_id"/>
+          <field name="group_id"/>
+          <field name="active" widget="boolean_toggle"/>
+        </group>
+        <group string="Access" col="4">
+          <field name="perm_read"/>
+          <field name="perm_write"/>
+          <field name="perm_create"/>
+          <field name="perm_unlink"/>
+        </group>
+      </sheet>
+    </form>
+    <form string="Access Rights">
+      <sheet>
+        <div class="alert alert-warning text-center" role="alert">
+                        Please note that modifications will be applied for all users of the specified group
+                    </div>
+        <group col="4">
+          <field name="name"/>
+          <field name="model_id"/>
+          <field name="group_id"/>
+          <field name="active" widget="boolean_toggle"/>
+        </group>
+        <group string="Access" col="4">
+          <field name="perm_read"/>
+          <field name="perm_write"/>
+          <field name="perm_create"/>
+          <field name="perm_unlink"/>
+        </group>
+      </sheet>
+    </form>
+  </xpath>
+  <xpath expr="//field[@name='users']" position="inside">
+    <form string="Users">
+      <sheet>
+        <field name="id" invisible="1"/>
+        <div class="alert alert-info text-center mb-3" role="alert" invisible="id &gt; 0">
+                            You are inviting a new user.
+                        </div>
+        <field name="avatar_128" invisible="1"/>
+        <field name="image_1920" widget="image" class="oe_avatar" options="{&quot;zoom&quot;: true, &quot;preview_image&quot;: &quot;avatar_128&quot;}"/>
+        <div class="oe_title">
+          <label for="name"/>
+          <h1>
+            <field name="name" placeholder="e.g. John Doe" required="1"/>
+          </h1>
+          <field name="email" invisible="1"/>
+          <label for="login" string="Email Address"/>
+          <h2>
+            <field name="login" placeholder="e.g. email@yourcompany.com"/>
+          </h2>
+          <label for="company_id" groups="base.group_multi_company"/>
+          <field name="company_id" context="{'user_preference': 0}" groups="base.group_multi_company"/>
+        </div>
+        <group name="phone_numbers">
+          <label for="groups_id" string="Access Rights" groups="base.group_no_one" invisible="id &gt; 0"/>
+          <div groups="base.group_no_one" invisible="id &gt; 0"><field name="groups_id" readonly="1" widget="many2many_tags" options="{'color_field': 'color'}" style="display: inline;"/> You will be able to define additional access rights by editing the newly created user under the Settings / Users menu.
+                            </div>
+          <field name="phone" widget="phone" options="{'enable_sms': false}"/>
+          <field name="mobile" widget="phone" options="{'enable_sms': false}"/>
+        </group>
+        <group name="Warehouses">
+          <field name="property_warehouse_id" groups="stock.group_stock_multi_warehouses"/>
+        </group>
+      </sheet>
+    </form>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_actions_server_5444" model="ir.ui.view">
+      <field name="name">Odoo Studio: Server Action customization</field>
+      <field name="model">ir.actions.server</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_server_action_form"/>
+      <field name="priority" eval="160"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='model_id']" position="before">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_product_category_5548" model="ir.ui.view">
+      <field name="name">Odoo Studio: product.category.form customization</field>
+      <field name="model">product.category</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="product.product_category_form_view"/>
+      <field name="priority" eval="160"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='parent_id']" position="before">
+    <field name="x_studio_description"/>
+  </xpath>
+  <xpath expr="//field[@name='removal_strategy_id']" position="after">
+    <field name="x_studio_company_id" string="Company"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_res_groups_4947" model="ir.ui.view">
+      <field name="name">Default tree view for ir.model(89,)</field>
+      <field name="model">res.groups</field>
+      <field name="type">tree</field>
+      <field name="mode">primary</field>
+      <field name="priority" eval="16"/>
+      <field name="arch" type="xml">
+        <tree string="Access Groups">
+          <field name="full_name" modifiers="{&quot;readonly&quot;: true}"/>
+        </tree>
+      </field>
+    </record>
+    <record id="view_std_project_sale_line_employee_map_6068" model="ir.ui.view">
+      <field name="name">Default tree view for ir.model(646,)</field>
+      <field name="model">project.sale.line.employee.map</field>
+      <field name="type">tree</field>
+      <field name="mode">primary</field>
+      <field name="priority" eval="16"/>
+      <field name="arch" type="xml">
+        <tree string="Project Sales line, employee mapping">
+          <field name="id" modifiers="{&quot;readonly&quot;: true}"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>
