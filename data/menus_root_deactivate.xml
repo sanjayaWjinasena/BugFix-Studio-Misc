@@ -81,5 +81,25 @@
     <record id="menu_f6r3_purchase_cash_purchase_cash_purchase_lines" model="ir.ui.menu">
       <field name="active" eval="False"/>
     </record>
+
+    <!-- ============================================================
+         v0.0.101 Accounting-app cleanup: 3 Studio-Misc-owned Accounting
+         menu duplicates.
+    ============================================================ -->
+    <!-- Employee Expenses duplicates hr_expense's core menu -->
+    <record id="menu_f6_employee_expenses" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+
+    <!-- Tax Units duplicates account_reports.menu_view_tax_units -->
+    <record id="menu_f6_tax_units" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+
+    <!-- Taxes (root of Accounting app) duplicates
+         BugFix-Accounting.menu_1340_taxes -->
+    <record id="menu_f6_taxes" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
   </data>
 </odoo>
