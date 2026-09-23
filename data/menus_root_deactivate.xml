@@ -43,5 +43,43 @@
     <record id="menu_f6url_tariff_3" model="ir.ui.menu">
       <field name="active" eval="False"/>
     </record>
+
+    <!-- ============================================================
+         v0.0.65 Purchase-app cleanup companion to BugFix-Purchase v161.
+         Kill Studio-Misc-owned menu junk stubs (f6url_* variants had no
+         children) and duplicate/root Cash-Purchase / Purchase-Request-Cash
+         trees never present on CDB.
+    ============================================================ -->
+
+    <!-- Empty stub root menus (f6url_* extractor artifacts, no children) -->
+    <record id="menu_f6url_cash_purchase" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <record id="menu_f6url_imports" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <record id="menu_f6url_imports_configurations" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+
+    <!-- 'Purchase Request Cash' at Purchase-app root - not on CDB.
+         CDB has Cash Purchase only nested under Orders (menu_1167). -->
+    <record id="menu_f6r3_purchase" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+
+    <!-- 'Cash purchase' at Purchase-app root + its 2 subitems.
+         CDB has Cash Purchase only as leaf under Orders. Deactivating
+         parent hides children automatically but we also mark them
+         inactive for cleanliness. -->
+    <record id="menu_f6r3_purchase_cash_purchase" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <record id="menu_f6r3_purchase_cash_purchase_cash_purchase" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
+    <record id="menu_f6r3_purchase_cash_purchase_cash_purchase_lines" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
   </data>
 </odoo>
