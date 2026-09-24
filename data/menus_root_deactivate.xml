@@ -101,5 +101,14 @@
     <record id="menu_f6_taxes" model="ir.ui.menu">
       <field name="active" eval="False"/>
     </record>
+
+    <!-- ============================================================
+         Inventory-app cleanup: orphan 'Test Menu' under Inventory >
+         Overview. Not on CDB, points at base.action_open_website
+         (Studio scratch). Kill.
+    ============================================================ -->
+    <record id="menu_f6url_test_menu" model="ir.ui.menu">
+      <field name="active" eval="False"/>
+    </record>
   </data>
 </odoo>
