@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- BugFix-Studio-Misc: 1 previously-DROPPED ir.default records now re-shippable (selection options ported since original drop) -->
+<!-- BugFix-Studio-Misc: 1 ir.default records ported from CDB. -->
 <odoo>
   <data noupdate="1">
 
