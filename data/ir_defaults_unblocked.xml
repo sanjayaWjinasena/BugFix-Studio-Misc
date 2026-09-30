@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- BugFix-Studio-Misc: 1 previously-DROPPED ir.default records now re-shippable (selection options ported since original drop) -->
+<odoo>
+  <data noupdate="1">
+
+    <record id="default_241_maintenance_request_name" model="ir.default">
+      <field name="field_id" ref="maintenance.field_maintenance_request__name"/>
+      <field name="json_value">"New"</field>
+    </record>
+  </data>
+</odoo>

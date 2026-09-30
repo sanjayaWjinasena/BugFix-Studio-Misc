@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.105',
+    'version': '17.0.0.0.106',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -40,7 +40,7 @@ etc.).
     # installed on target — no risk of pulling in unwanted modules.
     # Enables porting artefacts on crm.lead / calendar.event /
     # loyalty.* / pos.* / website.* / stock.* / sale.* / account.*.
-    'depends': [
+    'depends': ['maintenance', 
         'base_setup',
         'base_automation',
         'mail',
@@ -173,6 +173,7 @@ etc.).
         'data/qweb_studio_customizations_std.xml',
         'data/defaults_and_rules_ported.xml',
         'data/purchase_request_rules.xml',
+        'data/ir_defaults_unblocked.xml',
     ],
     'post_init_hook': 'post_init_hook',
     'installable': True,
