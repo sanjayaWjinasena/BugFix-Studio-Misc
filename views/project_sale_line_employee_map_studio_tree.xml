@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Studio dormant tree view (CDB view 6068, active=False).
+     A bare <tree> scaffold Studio created for the model but never
+     activated. Shipped in the deactivated state for audit parity;
+     if the view is ever needed, flip active=True from Settings. -->
+<odoo>
+  <data>
+
+    <record id="view_project_sale_line_employee_map_tree_studio" model="ir.ui.view">
+      <field name="name">project.sale.line.employee.map.tree.studio</field>
+      <field name="model">project.sale.line.employee.map</field>
+      <field name="type">tree</field>
+      <field name="mode">primary</field>
+      <field name="active" eval="False"/>
+      <field name="arch" type="xml">
+        <tree string="Project Sales line, employee mapping">
+          <field name="id" readonly="1"/>
+        </tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>
