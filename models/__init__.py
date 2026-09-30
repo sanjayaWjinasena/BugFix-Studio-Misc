@@ -59,3 +59,4 @@ from . import x_work_center_costing_gap
 from . import x_x_studio_request_line_gap
 from . import x_material_request_mt_o2m
 from . import x_material_request_tes_o2m
+from . import product_category
