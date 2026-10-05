@@ -177,6 +177,8 @@ etc.).
         'views/project_sale_line_employee_map_studio_tree.xml',
         'data/approval_rules_group_fix.xml',
     ],
+    # Staging_Migration: repo-own existing Studio models before data loads.
+    'pre_init_hook': 'pre_init_hook',
     'post_init_hook': 'post_init_hook',
     'installable': True,
     'auto_install': False,
