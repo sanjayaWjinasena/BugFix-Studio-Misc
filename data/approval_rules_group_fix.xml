@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Approval rules owned by BugFix-Approvals whose Clear-DB approver group
+  lives in this module (BugFix-Approvals cannot depend on BugFix-Studio-Misc).
+  Port had dropped group_id, so they defaulted to Internal User.
+-->
+<odoo>
+  <record id="BugFix-Approvals.rule_91_production_order_button_unbuild_manufacturing_jin_manufactur" model="studio.approval.rule">
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_manufacturing_jin_manufacturing_production_orders_dismantler"/>
+  </record>
+  <record id="BugFix-Approvals.rule_92_production_order_button_scrap_manufacturing_jin_manufacturin" model="studio.approval.rule">
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_manufacturing_jin_manufacturing_production_orders_dismantler"/>
+  </record>
+</odoo>

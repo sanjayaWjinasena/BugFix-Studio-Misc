@@ -16,12 +16,14 @@
     <field name="model_id" search="[('model', '=', 'x_purchase_request')]"/>
     <field name="action_id" ref="BugFix-Purchase.server_action_818_confirm_pr"/>
     <field name="group_id" ref="BugFix-Studio-Misc.group_g_misc_pr_approval"/>
+    <field name="message">PR Should be Approved to Proceed.</field>
   </record>
   <record id="ar_final_purchase_request_done_pr_copy_pr_to_rfq_purchase_pr_approval" model="studio.approval.rule">
     <field name="name">Purchase Request/Done PR + Copy PR to RFQ (Purchase / PR Approval) (10)</field>
     <field name="model_id" search="[('model', '=', 'x_purchase_request')]"/>
     <field name="action_id" ref="BugFix-Purchase.server_action_831_done_pr_copy_pr_to_rfq"/>
     <field name="group_id" ref="BugFix-Studio-Misc.group_g_misc_pr_approval"/>
+    <field name="message">PR Should be Approved to Proceed.</field>
   </record>
   </data>
 </odoo>
