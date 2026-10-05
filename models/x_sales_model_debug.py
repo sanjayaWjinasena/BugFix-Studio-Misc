@@ -3,6 +3,7 @@ from odoo import models, fields
 
 class XSalesModelDebug(models.Model):
     _name = 'x_sales_model_debug'
+    _rec_name = 'x_name'  # Clear-DB Studio model: records are named by x_name
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Sales Model Debug'
 

@@ -3,6 +3,7 @@ from odoo import models, fields
 
 class XProjectTaskWorksheetTemplate1(models.Model):
     _name = 'x_project_task_worksheet_template_1'
+    _rec_name = 'x_name'  # Clear-DB Studio model: records are named by x_name
     _description = 'Default Worksheet'
 
     x_comments = fields.Text(string='Comments')

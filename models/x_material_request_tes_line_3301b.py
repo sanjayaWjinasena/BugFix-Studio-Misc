@@ -3,6 +3,7 @@ from odoo import models, fields
 
 class XMaterialRequestTesLine3301b(models.Model):
     _name = 'x_material_request_tes_line_3301b'
+    _rec_name = 'x_name'  # Clear-DB Studio model: records are named by x_name
     _description = 'material_request_tes_line'
 
     x_material_request_tes_id = fields.Many2one(comodel_name='x_material_request_tes', string='X Material Request Tes')
