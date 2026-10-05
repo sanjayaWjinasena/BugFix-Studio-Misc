@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- BugFix-Studio-Misc: 2 gap record rules -->
+<!-- BugFix-Studio-Misc: 2 gap record rules
+     v0.0.116: groups corrected from Clear-DB (rule 425: Project / User; rule 426:
+     Project / Administrator + Field Service / User). The port had mapped Clear-DB
+     group ids onto the dev DB's ids and written survey / hr_contract groups. -->
 <odoo>
   <data noupdate="0">
 
@@ -12,7 +15,7 @@
       <field name="perm_create" eval="True"/>
       <field name="perm_unlink" eval="True"/>
       <field name="active" eval="True"/>
-      <field name="groups" eval="[(6, 0, [ref('survey.group_survey_user')])]"/>
+      <field name="groups" eval="[(6, 0, [ref('project.group_project_user')])]"/>
     </record>
 
     <record id="rule_426_x_project_task_worksheet_template_1_all" model="ir.rule">
@@ -24,7 +27,7 @@
       <field name="perm_create" eval="True"/>
       <field name="perm_unlink" eval="True"/>
       <field name="active" eval="True"/>
-      <field name="groups" eval="[(6, 0, [ref('hr_contract.group_hr_contract_manager'), ref('survey.group_survey_user')])]"/>
+      <field name="groups" eval="[(6, 0, [ref('project.group_project_manager'), ref('industry_fsm.group_fsm_user')])]"/>
     </record>
 
   </data>
