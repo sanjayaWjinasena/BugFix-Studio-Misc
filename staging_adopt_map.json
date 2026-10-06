@@ -243,294 +243,6 @@
 ]
 ]
 },
-"access_5675_barcode_nomenclature_stock_user": {
-"ir.model.access": [
-[
-5675,
-"2023-11-27 04:27:47"
-]
-]
-},
-"access_5676_barcode_rule_stock_user": {
-"ir.model.access": [
-[
-5676,
-"2023-11-27 04:27:47"
-]
-]
-},
-"access_5697_pos_order_stock_worker": {
-"ir.model.access": [
-[
-5697,
-"2023-11-27 04:27:47"
-]
-]
-},
-"access_5720_access_choose_delivery_carrier": {
-"ir.model.access": [
-[
-5720,
-"2023-11-27 04:27:47"
-]
-]
-},
-"access_6032_jin_maintenance_maintenance_users": {
-"ir.model.access": [
-[
-6032,
-"2023-12-04 10:31:21"
-]
-]
-},
-"access_6107_jin_maintenance_maintenance_users": {
-"ir.model.access": [
-[
-6107,
-"2023-12-13 09:37:20"
-]
-]
-},
-"access_6410_barcode_nomenclature_stock_user": {
-"ir.model.access": [
-[
-6410,
-"2024-02-13 08:22:17"
-]
-]
-},
-"access_6411_barcode_rule_stock_user": {
-"ir.model.access": [
-[
-6411,
-"2024-02-13 08:22:17"
-]
-]
-},
-"access_6432_pos_order_stock_worker": {
-"ir.model.access": [
-[
-6432,
-"2024-02-13 08:22:17"
-]
-]
-},
-"access_6455_access_choose_delivery_carrier": {
-"ir.model.access": [
-[
-6455,
-"2024-02-13 08:22:17"
-]
-]
-},
-"access_6524_barcode_nomenclature_stock_user": {
-"ir.model.access": [
-[
-6524,
-"2024-02-14 09:10:51"
-]
-]
-},
-"access_6525_barcode_rule_stock_user": {
-"ir.model.access": [
-[
-6525,
-"2024-02-14 09:10:51"
-]
-]
-},
-"access_6546_pos_order_stock_worker": {
-"ir.model.access": [
-[
-6546,
-"2024-02-14 09:10:51"
-]
-]
-},
-"access_6569_access_choose_delivery_carrier": {
-"ir.model.access": [
-[
-6569,
-"2024-02-14 09:10:51"
-]
-]
-},
-"access_6768_calendar_event": {
-"ir.model.access": [
-[
-6768,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6773_crm_lead": {
-"ir.model.access": [
-[
-6773,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6778_crm_team_user": {
-"ir.model.access": [
-[
-6778,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6785_crm_recurring_plan_access_salesman": {
-"ir.model.access": [
-[
-6785,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6786_crm_tag_salesman": {
-"ir.model.access": [
-[
-6786,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6787_access_crm_lead2opportunity_partner_mass": {
-"ir.model.access": [
-[
-6787,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6788_access_crm_lead2opportunity_partner": {
-"ir.model.access": [
-[
-6788,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6789_coupon__salesperson": {
-"ir.model.access": [
-[
-6789,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6790_coupon_program__salesperson": {
-"ir.model.access": [
-[
-6790,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6791_coupon_reward__salesperson": {
-"ir.model.access": [
-[
-6791,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6792_coupon_rule__salesperson": {
-"ir.model.access": [
-[
-6792,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6795_access_crm_quotation_partner": {
-"ir.model.access": [
-[
-6795,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6797_calendar_event_type_salesman": {
-"ir.model.access": [
-[
-6797,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6798_access_crm_lead_scoring_frequency_field": {
-"ir.model.access": [
-[
-6798,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6799_coupon_generation": {
-"ir.model.access": [
-[
-6799,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6801_access_crm_lead_lost": {
-"ir.model.access": [
-[
-6801,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6804_access_crm_lead_scoring_frequency": {
-"ir.model.access": [
-[
-6804,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6805_access_crm_merge_opportunity": {
-"ir.model.access": [
-[
-6805,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6807_crm_lost_reason_salesman": {
-"ir.model.access": [
-[
-6807,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6814_uom_uom_user": {
-"ir.model.access": [
-[
-6814,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6835_access_website_track_salesman": {
-"ir.model.access": [
-[
-6835,
-"2024-03-20 06:21:14"
-]
-]
-},
-"access_6843_x_sales_model_debug": {
-"ir.model.access": [
-[
-6843,
-"2024-03-20 09:27:21"
-]
-]
-},
 "access_6851_x_sales_model_debug": {
 "ir.model.access": [
 [
@@ -551,43 +263,11 @@
 ]
 ]
 },
-"access_6939_access_validate_account_move": {
-"ir.model.access": [
-[
-6939,
-"2024-04-22 09:03:43"
-]
-]
-},
-"access_7034_access_validate_account_move": {
-"ir.model.access": [
-[
-7034,
-"2024-05-03 10:19:19"
-]
-]
-},
 "access_7063_access_account_winbooks_import_wizard": {
 "ir.model.access": [
 [
 7063,
 "2024-05-07 08:23:45"
-]
-]
-},
-"access_7321_coupon_rules": {
-"ir.model.access": [
-[
-7321,
-"2024-10-17 02:01:13"
-]
-]
-},
-"access_7322_coupon_reward": {
-"ir.model.access": [
-[
-7322,
-"2024-10-17 02:04:54"
 ]
 ]
 },
@@ -716,214 +396,6 @@
 [
 8575,
 "2026-02-19 09:59:04"
-]
-]
-},
-"access_8624_access_calendar_event_rohana_read": {
-"ir.model.access": [
-[
-8624,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8625_access_calendar_event_type_rohana_read": {
-"ir.model.access": [
-[
-8625,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8626_access_choose_delivery_carrier_rohana_read": {
-"ir.model.access": [
-[
-8626,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8629_access_delivery_zip_prefix_rohana_read": {
-"ir.model.access": [
-[
-8629,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8630_access_crm_activity_report_rohana_read": {
-"ir.model.access": [
-[
-8630,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8631_access_crm_lead_rohana_read": {
-"ir.model.access": [
-[
-8631,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8632_access_crm_lead_lost_rohana_read": {
-"ir.model.access": [
-[
-8632,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8633_access_crm_lead_scoring_frequency_rohana_read": {
-"ir.model.access": [
-[
-8633,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8634_access_crm_lead_scoring_frequency_field_rohana_read": {
-"ir.model.access": [
-[
-8634,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8635_access_crm_lead2opportunity_partner_rohana_read": {
-"ir.model.access": [
-[
-8635,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8636_access_crm_lead2opportunity_partner_mass_rohana_read": {
-"ir.model.access": [
-[
-8636,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8637_access_crm_lost_reason_rohana_read": {
-"ir.model.access": [
-[
-8637,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8638_access_crm_merge_opportunity_rohana_read": {
-"ir.model.access": [
-[
-8638,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8639_access_crm_recurring_plan_rohana_read": {
-"ir.model.access": [
-[
-8639,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8640_access_crm_tag_rohana_read": {
-"ir.model.access": [
-[
-8640,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8641_access_crm_team_rohana_read": {
-"ir.model.access": [
-[
-8641,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8644_access_loyalty_card_rohana_read": {
-"ir.model.access": [
-[
-8644,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8645_access_loyalty_generate_wizard_rohana_read": {
-"ir.model.access": [
-[
-8645,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8646_access_loyalty_mail_rohana_read": {
-"ir.model.access": [
-[
-8646,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8647_access_loyalty_program_rohana_read": {
-"ir.model.access": [
-[
-8647,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8648_access_loyalty_reward_rohana_read": {
-"ir.model.access": [
-[
-8648,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8649_access_loyalty_rule_rohana_read": {
-"ir.model.access": [
-[
-8649,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8675_access_crm_quotation_partner_rohana_read": {
-"ir.model.access": [
-[
-8675,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8702_access_uom_category_rohana_read": {
-"ir.model.access": [
-[
-8702,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8703_access_uom_uom_rohana_read": {
-"ir.model.access": [
-[
-8703,
-"2026-05-20 02:54:10"
-]
-]
-},
-"access_8704_access_website_track_rohana_read": {
-"ir.model.access": [
-[
-8704,
-"2026-05-20 02:54:10"
 ]
 ]
 },
@@ -3232,6 +2704,38 @@
 [
 3567,
 "2025-12-22 08:04:16"
+]
+]
+},
+"ar_final_purchase_request_confirm_pr_purchase_pr_approval_9": {
+"studio.approval.rule": [
+[
+9,
+"2021-06-22 04:01:59"
+]
+]
+},
+"ar_final_test02_sample_server_action_2_sales_test_sales_2_76": {
+"studio.approval.rule": [
+[
+2,
+"2021-06-20 15:49:30"
+]
+]
+},
+"ar_final_test02_sample_server_action_user_types_internal_user_44": {
+"studio.approval.rule": [
+[
+44,
+"2023-04-20 09:36:57"
+]
+]
+},
+"ar_relaxed_purchase_requisition_request_for_quotation_user_types_intern": {
+"studio.approval.rule": [
+[
+77,
+"2023-11-09 10:34:07"
 ]
 ]
 },
