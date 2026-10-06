@@ -1,0 +1,11438 @@
+{
+"access_1115_customer_groups_group_system": {
+"ir.model.access": [
+[
+1115,
+"2021-05-06 14:21:47"
+]
+]
+},
+"access_1116_customer_groups_group_user": {
+"ir.model.access": [
+[
+1116,
+"2021-05-06 14:21:47"
+]
+]
+},
+"access_1141_testapp_group_system": {
+"ir.model.access": [
+[
+1141,
+"2021-06-09 15:11:20"
+]
+]
+},
+"access_1142_testapp_group_user": {
+"ir.model.access": [
+[
+1142,
+"2021-06-09 15:11:20"
+]
+]
+},
+"access_1143_testdepartment_group_system": {
+"ir.model.access": [
+[
+1143,
+"2021-06-17 07:38:19"
+]
+]
+},
+"access_1144_testdepartment_group_user": {
+"ir.model.access": [
+[
+1144,
+"2021-06-17 07:38:19"
+]
+]
+},
+"access_1149_test_1_group_system": {
+"ir.model.access": [
+[
+1149,
+"2021-06-22 09:06:00"
+]
+]
+},
+"access_1150_test_1_group_user": {
+"ir.model.access": [
+[
+1150,
+"2021-06-22 09:06:00"
+]
+]
+},
+"access_1151_test02_group_system": {
+"ir.model.access": [
+[
+1151,
+"2021-06-22 09:18:16"
+]
+]
+},
+"access_1152_test02_group_user": {
+"ir.model.access": [
+[
+1152,
+"2021-06-22 09:18:16"
+]
+]
+},
+"access_1153_test_1_group": {
+"ir.model.access": [
+[
+1153,
+"2021-06-22 09:33:28"
+]
+]
+},
+"access_1154_test02_group": {
+"ir.model.access": [
+[
+1154,
+"2021-06-22 09:34:01"
+]
+]
+},
+"access_1210_work_center_costing_group_system": {
+"ir.model.access": [
+[
+1210,
+"2021-08-12 06:35:18"
+]
+]
+},
+"access_1211_work_center_costing_group_user": {
+"ir.model.access": [
+[
+1211,
+"2021-08-12 06:35:18"
+]
+]
+},
+"access_1212_product_test_group_system": {
+"ir.model.access": [
+[
+1212,
+"2021-08-15 03:16:37"
+]
+]
+},
+"access_1213_product_test_group_user": {
+"ir.model.access": [
+[
+1213,
+"2021-08-15 03:16:37"
+]
+]
+},
+"access_1496_test_form_group_system": {
+"ir.model.access": [
+[
+1496,
+"2022-03-24 06:18:50"
+]
+]
+},
+"access_1497_test_form_group_user": {
+"ir.model.access": [
+[
+1497,
+"2022-03-24 06:18:50"
+]
+]
+},
+"access_1514_test_model_primary_group_system": {
+"ir.model.access": [
+[
+1514,
+"2022-04-07 07:18:18"
+]
+]
+},
+"access_1515_test_model_primary_group_user": {
+"ir.model.access": [
+[
+1515,
+"2022-04-07 07:18:18"
+]
+]
+},
+"access_1516_test_model_link_group_system": {
+"ir.model.access": [
+[
+1516,
+"2022-04-07 07:20:57"
+]
+]
+},
+"access_1517_test_model_link_group_user": {
+"ir.model.access": [
+[
+1517,
+"2022-04-07 07:20:57"
+]
+]
+},
+"access_1518_test_model_link_2_group_system": {
+"ir.model.access": [
+[
+1518,
+"2022-04-18 05:25:07"
+]
+]
+},
+"access_1519_test_model_link_2_group_user": {
+"ir.model.access": [
+[
+1519,
+"2022-04-18 05:25:07"
+]
+]
+},
+"access_1680_x_project_task_worksheet_template_1_access": {
+"ir.model.access": [
+[
+1680,
+"2023-02-08 09:43:59"
+],
+[
+1681,
+"2023-02-08 09:43:59"
+]
+]
+},
+"access_1681_x_project_task_worksheet_template_1_access": {
+"ir.model.access": [
+[
+1681,
+"2023-02-08 09:43:59"
+]
+]
+},
+"access_1737_test_layout_group_system": {
+"ir.model.access": [
+[
+1737,
+"2023-03-16 05:30:57"
+]
+]
+},
+"access_1738_test_layout_group_user": {
+"ir.model.access": [
+[
+1738,
+"2023-03-16 05:30:57"
+]
+]
+},
+"access_1874_sales_model_debug_group_system": {
+"ir.model.access": [
+[
+1874,
+"2023-09-21 03:19:22"
+]
+]
+},
+"access_1875_sales_model_debug_group_user": {
+"ir.model.access": [
+[
+1875,
+"2023-09-21 03:19:22"
+]
+]
+},
+"access_5675_barcode_nomenclature_stock_user": {
+"ir.model.access": [
+[
+5675,
+"2023-11-27 04:27:47"
+]
+]
+},
+"access_5676_barcode_rule_stock_user": {
+"ir.model.access": [
+[
+5676,
+"2023-11-27 04:27:47"
+]
+]
+},
+"access_5697_pos_order_stock_worker": {
+"ir.model.access": [
+[
+5697,
+"2023-11-27 04:27:47"
+]
+]
+},
+"access_5720_access_choose_delivery_carrier": {
+"ir.model.access": [
+[
+5720,
+"2023-11-27 04:27:47"
+]
+]
+},
+"access_6032_jin_maintenance_maintenance_users": {
+"ir.model.access": [
+[
+6032,
+"2023-12-04 10:31:21"
+]
+]
+},
+"access_6107_jin_maintenance_maintenance_users": {
+"ir.model.access": [
+[
+6107,
+"2023-12-13 09:37:20"
+]
+]
+},
+"access_6410_barcode_nomenclature_stock_user": {
+"ir.model.access": [
+[
+6410,
+"2024-02-13 08:22:17"
+]
+]
+},
+"access_6411_barcode_rule_stock_user": {
+"ir.model.access": [
+[
+6411,
+"2024-02-13 08:22:17"
+]
+]
+},
+"access_6432_pos_order_stock_worker": {
+"ir.model.access": [
+[
+6432,
+"2024-02-13 08:22:17"
+]
+]
+},
+"access_6455_access_choose_delivery_carrier": {
+"ir.model.access": [
+[
+6455,
+"2024-02-13 08:22:17"
+]
+]
+},
+"access_6524_barcode_nomenclature_stock_user": {
+"ir.model.access": [
+[
+6524,
+"2024-02-14 09:10:51"
+]
+]
+},
+"access_6525_barcode_rule_stock_user": {
+"ir.model.access": [
+[
+6525,
+"2024-02-14 09:10:51"
+]
+]
+},
+"access_6546_pos_order_stock_worker": {
+"ir.model.access": [
+[
+6546,
+"2024-02-14 09:10:51"
+]
+]
+},
+"access_6569_access_choose_delivery_carrier": {
+"ir.model.access": [
+[
+6569,
+"2024-02-14 09:10:51"
+]
+]
+},
+"access_6768_calendar_event": {
+"ir.model.access": [
+[
+6768,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6773_crm_lead": {
+"ir.model.access": [
+[
+6773,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6778_crm_team_user": {
+"ir.model.access": [
+[
+6778,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6785_crm_recurring_plan_access_salesman": {
+"ir.model.access": [
+[
+6785,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6786_crm_tag_salesman": {
+"ir.model.access": [
+[
+6786,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6787_access_crm_lead2opportunity_partner_mass": {
+"ir.model.access": [
+[
+6787,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6788_access_crm_lead2opportunity_partner": {
+"ir.model.access": [
+[
+6788,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6789_coupon__salesperson": {
+"ir.model.access": [
+[
+6789,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6790_coupon_program__salesperson": {
+"ir.model.access": [
+[
+6790,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6791_coupon_reward__salesperson": {
+"ir.model.access": [
+[
+6791,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6792_coupon_rule__salesperson": {
+"ir.model.access": [
+[
+6792,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6795_access_crm_quotation_partner": {
+"ir.model.access": [
+[
+6795,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6797_calendar_event_type_salesman": {
+"ir.model.access": [
+[
+6797,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6798_access_crm_lead_scoring_frequency_field": {
+"ir.model.access": [
+[
+6798,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6799_coupon_generation": {
+"ir.model.access": [
+[
+6799,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6801_access_crm_lead_lost": {
+"ir.model.access": [
+[
+6801,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6804_access_crm_lead_scoring_frequency": {
+"ir.model.access": [
+[
+6804,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6805_access_crm_merge_opportunity": {
+"ir.model.access": [
+[
+6805,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6807_crm_lost_reason_salesman": {
+"ir.model.access": [
+[
+6807,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6814_uom_uom_user": {
+"ir.model.access": [
+[
+6814,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6835_access_website_track_salesman": {
+"ir.model.access": [
+[
+6835,
+"2024-03-20 06:21:14"
+]
+]
+},
+"access_6843_x_sales_model_debug": {
+"ir.model.access": [
+[
+6843,
+"2024-03-20 09:27:21"
+]
+]
+},
+"access_6851_x_sales_model_debug": {
+"ir.model.access": [
+[
+6851,
+"2024-03-21 07:55:07"
+],
+[
+6843,
+"2024-03-20 09:27:21"
+]
+]
+},
+"access_6857_coupon_coupon": {
+"ir.model.access": [
+[
+6857,
+"2024-03-21 08:07:34"
+]
+]
+},
+"access_6939_access_validate_account_move": {
+"ir.model.access": [
+[
+6939,
+"2024-04-22 09:03:43"
+]
+]
+},
+"access_7034_access_validate_account_move": {
+"ir.model.access": [
+[
+7034,
+"2024-05-03 10:19:19"
+]
+]
+},
+"access_7063_access_account_winbooks_import_wizard": {
+"ir.model.access": [
+[
+7063,
+"2024-05-07 08:23:45"
+]
+]
+},
+"access_7321_coupon_rules": {
+"ir.model.access": [
+[
+7321,
+"2024-10-17 02:01:13"
+]
+]
+},
+"access_7322_coupon_reward": {
+"ir.model.access": [
+[
+7322,
+"2024-10-17 02:04:54"
+]
+]
+},
+"access_7829_website_faq_group_system": {
+"ir.model.access": [
+[
+7829,
+"2025-04-23 07:20:02"
+]
+]
+},
+"access_7830_website_faq_group_user": {
+"ir.model.access": [
+[
+7830,
+"2025-04-23 07:20:02"
+]
+]
+},
+"access_7831_website_faqs_group_system": {
+"ir.model.access": [
+[
+7831,
+"2025-04-23 09:38:49"
+]
+]
+},
+"access_7832_website_faqs_group_user": {
+"ir.model.access": [
+[
+7832,
+"2025-04-23 09:38:49"
+]
+]
+},
+"access_7883_website_integration_public_model_access": {
+"ir.model.access": [
+[
+7883,
+"2025-04-23 10:34:23"
+]
+]
+},
+"access_8261_custom_reports_line_group_system": {
+"ir.model.access": [
+[
+8261,
+"2025-10-21 09:48:26"
+]
+]
+},
+"access_8262_custom_reports_line_group_user": {
+"ir.model.access": [
+[
+8262,
+"2025-10-21 09:48:26"
+]
+]
+},
+"access_8265_custom_reports_tags_group_system": {
+"ir.model.access": [
+[
+8265,
+"2025-10-21 09:48:26"
+]
+]
+},
+"access_8266_custom_reports_tags_group_user": {
+"ir.model.access": [
+[
+8266,
+"2025-10-21 09:48:26"
+]
+]
+},
+"access_8269_material_request_tes_line_group_system": {
+"ir.model.access": [
+[
+8269,
+"2025-10-24 03:44:16"
+]
+]
+},
+"access_8270_material_request_tes_line_group_user": {
+"ir.model.access": [
+[
+8270,
+"2025-10-24 03:44:16"
+]
+]
+},
+"access_8293_material_request_mt_line_group_system": {
+"ir.model.access": [
+[
+8293,
+"2025-10-24 04:49:59"
+]
+]
+},
+"access_8294_material_request_mt_line_group_user": {
+"ir.model.access": [
+[
+8294,
+"2025-10-24 04:49:59"
+]
+]
+},
+"access_8519_read_access_to_x_bve_test1": {
+"ir.model.access": [
+[
+8519,
+"2026-02-12 06:10:50"
+]
+]
+},
+"access_8538_read_access_to_x_bve_salesreport": {
+"ir.model.access": [
+[
+8538,
+"2026-02-18 03:23:11"
+]
+]
+},
+"access_8575_read_access_to_x_bve_samplebalancemovementreport": {
+"ir.model.access": [
+[
+8575,
+"2026-02-19 09:59:04"
+]
+]
+},
+"access_8624_access_calendar_event_rohana_read": {
+"ir.model.access": [
+[
+8624,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8625_access_calendar_event_type_rohana_read": {
+"ir.model.access": [
+[
+8625,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8626_access_choose_delivery_carrier_rohana_read": {
+"ir.model.access": [
+[
+8626,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8629_access_delivery_zip_prefix_rohana_read": {
+"ir.model.access": [
+[
+8629,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8630_access_crm_activity_report_rohana_read": {
+"ir.model.access": [
+[
+8630,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8631_access_crm_lead_rohana_read": {
+"ir.model.access": [
+[
+8631,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8632_access_crm_lead_lost_rohana_read": {
+"ir.model.access": [
+[
+8632,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8633_access_crm_lead_scoring_frequency_rohana_read": {
+"ir.model.access": [
+[
+8633,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8634_access_crm_lead_scoring_frequency_field_rohana_read": {
+"ir.model.access": [
+[
+8634,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8635_access_crm_lead2opportunity_partner_rohana_read": {
+"ir.model.access": [
+[
+8635,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8636_access_crm_lead2opportunity_partner_mass_rohana_read": {
+"ir.model.access": [
+[
+8636,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8637_access_crm_lost_reason_rohana_read": {
+"ir.model.access": [
+[
+8637,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8638_access_crm_merge_opportunity_rohana_read": {
+"ir.model.access": [
+[
+8638,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8639_access_crm_recurring_plan_rohana_read": {
+"ir.model.access": [
+[
+8639,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8640_access_crm_tag_rohana_read": {
+"ir.model.access": [
+[
+8640,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8641_access_crm_team_rohana_read": {
+"ir.model.access": [
+[
+8641,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8644_access_loyalty_card_rohana_read": {
+"ir.model.access": [
+[
+8644,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8645_access_loyalty_generate_wizard_rohana_read": {
+"ir.model.access": [
+[
+8645,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8646_access_loyalty_mail_rohana_read": {
+"ir.model.access": [
+[
+8646,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8647_access_loyalty_program_rohana_read": {
+"ir.model.access": [
+[
+8647,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8648_access_loyalty_reward_rohana_read": {
+"ir.model.access": [
+[
+8648,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8649_access_loyalty_rule_rohana_read": {
+"ir.model.access": [
+[
+8649,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8675_access_crm_quotation_partner_rohana_read": {
+"ir.model.access": [
+[
+8675,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8702_access_uom_category_rohana_read": {
+"ir.model.access": [
+[
+8702,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8703_access_uom_uom_rohana_read": {
+"ir.model.access": [
+[
+8703,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_8704_access_website_track_rohana_read": {
+"ir.model.access": [
+[
+8704,
+"2026-05-20 02:54:10"
+]
+]
+},
+"access_f3_product_product_group_user": {
+"ir.model.access": [
+[
+1219,
+"2021-08-17 10:01:59"
+]
+]
+},
+"access_f3_res_config_settings_group_user": {
+"ir.model.access": [
+[
+1532,
+"2022-09-14 02:49:53"
+]
+]
+},
+"access_f3_test_1_group": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_f3_x_project_task_worksheet_template_1_access": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_access_expiry_picking_confirmation_confirmation_manufacturing_jin_manufacturing_m": {
+"ir.model.access": [
+[
+6563,
+"2024-02-14 09:10:51"
+],
+[
+6449,
+"2024-02-13 08:22:17"
+],
+[
+5714,
+"2023-11-27 04:27:47"
+],
+[
+5287,
+"2023-11-21 11:05:25"
+],
+[
+1682,
+"2023-02-08 09:50:01"
+]
+]
+},
+"access_g_account_tax_group_sale_manager_group_sales_jin_sales_view_only": {
+"ir.model.access": [
+[
+6834,
+"2024-03-20 06:21:14"
+],
+[
+2337,
+"2023-10-19 12:24:35"
+],
+[
+817,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_cash_purchase_lines_x_pr_line_cash_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2407,
+"2023-11-03 08:38:17"
+],
+[
+2387,
+"2023-11-01 13:19:29"
+],
+[
+5556,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_cash_purchase_x_purchase_request_cas_accounting_jin_accountexecutive": {
+"ir.model.access": [
+[
+4745,
+"2023-11-21 06:00:30"
+],
+[
+2590,
+"2023-11-15 04:32:37"
+],
+[
+2408,
+"2023-11-03 08:38:17"
+],
+[
+2388,
+"2023-11-01 13:19:29"
+],
+[
+5553,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_hr_expense_expense_purchase_jin_po_invoicing_payment_invent": {
+"ir.model.access": [
+[
+6914,
+"2024-04-17 13:19:30"
+],
+[
+7010,
+"2024-05-03 08:40:31"
+],
+[
+6916,
+"2024-04-17 14:18:57"
+]
+]
+},
+"access_g_hr_expense_sheet_sheet_purchase_jin_po_invoicing_payment_invent": {
+"ir.model.access": [
+[
+6913,
+"2024-04-17 12:57:48"
+],
+[
+7009,
+"2024-05-03 08:40:31"
+],
+[
+6915,
+"2024-04-17 14:16:11"
+]
+]
+},
+"access_g_jin_maintenance_maintenance_users_x_material_request_maintenance_jin_maintenance__1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_jin_maintenance_maintenance_users_x_mr_config_maintenance_jin_maintenance_mainten": {
+"ir.model.access": [
+[
+6031,
+"2023-12-04 10:28:15"
+],
+[
+6106,
+"2023-12-13 09:37:20"
+],
+[
+6030,
+"2023-12-04 10:25:54"
+],
+[
+6105,
+"2023-12-13 09:37:20"
+],
+[
+6032,
+"2023-12-04 10:31:21"
+],
+[
+6107,
+"2023-12-13 09:37:20"
+]
+]
+},
+"access_g_jin_maintenance_maintenance_users_x_x_studio_request_line_maintenance_jin_mainten_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_jin_manufacturing_minimum_rights_x_mr_config_manufacturing_jin_manufacturing_thos": {
+"ir.model.access": [
+[
+6044,
+"2023-12-05 10:11:53"
+],
+[
+6043,
+"2023-12-05 10:10:42"
+]
+]
+},
+"access_g_jin_manufacturing_mo_full_writes_mps_x_mass_produce_serial_manufacturing_jin_manu": {
+"ir.model.access": [
+[
+7249,
+"2024-08-07 05:32:28"
+],
+[
+7950,
+"2025-05-14 07:21:29"
+],
+[
+7250,
+"2024-08-07 05:33:45"
+],
+[
+7951,
+"2025-05-14 07:21:29"
+]
+]
+},
+"access_g_jin_manufacturing_mo_full_writes_mps_x_mass_produce_serial_manufacturing_jin_manu_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_jin_manufacturing_mo_full_writes_mps_x_mass_produce_serial_manufacturing_jin_manu_2": {
+"ir.model.access": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_jin_manufacturing_mo_full_writes_mps_x_mass_produce_serial_manufacturing_jin_manu_3": {
+"ir.model.access": [
+[
+3,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_jin_manufacturing_mo_full_writes_x_material_request_manufacturing_jin_manufacturi": {
+"ir.model.access": [
+[
+6469,
+"2024-02-13 08:22:17"
+]
+]
+},
+"access_g_jin_repair_minimum_rights_x_material_request_helpdesk_jin_repair_full_rights": {
+"ir.model.access": [
+[
+6078,
+"2023-12-06 06:07:17"
+],
+[
+6063,
+"2023-12-06 05:52:37"
+]
+]
+},
+"access_g_material_request_group_system_x_material_request_manufacturing_jin_manufacturing_": {
+"ir.model.access": [
+[
+6047,
+"2023-12-05 10:16:55"
+],
+[
+1429,
+"2022-02-15 09:46:19"
+]
+]
+},
+"access_g_non_inventory_po_lines_x_po_line_non_inventor_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+2410,
+"2023-11-03 08:38:17"
+],
+[
+2390,
+"2023-11-01 13:24:37"
+],
+[
+5550,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_non_inventory_po_x_po_non_inventory_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2411,
+"2023-11-03 08:38:17"
+],
+[
+2391,
+"2023-11-01 13:24:37"
+],
+[
+5549,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_po_header_x_po_non_inventory_accounting_jin_accountexecutive": {
+"ir.model.access": [
+[
+4743,
+"2023-11-21 06:00:06"
+],
+[
+2592,
+"2023-11-15 04:41:57"
+]
+]
+},
+"access_g_pr_line_cash_x_pr_line_cash_accounting_jin_accountexecutive": {
+"ir.model.access": [
+[
+4746,
+"2023-11-21 06:01:06"
+],
+[
+2591,
+"2023-11-15 04:40:53"
+]
+]
+},
+"access_g_proj_category_group_x_project_category_gro_accounting_jin_projectinvoice": {
+"ir.model.access": [
+[
+5581,
+"2023-11-23 05:59:58"
+]
+]
+},
+"access_g_proj_category_x_project_category_accounting_jin_projectinvoice": {
+"ir.model.access": [
+[
+5580,
+"2023-11-23 05:59:12"
+]
+]
+},
+"access_g_proj_groups_x_project_groups_accounting_jin_projectinvoice": {
+"ir.model.access": [
+[
+5582,
+"2023-11-23 06:00:23"
+]
+]
+},
+"access_g_purchase_order_line_non_inventory_x_po_line_non_inventor_purchase_jin_pr_view_onl": {
+"ir.model.access": [
+[
+5570,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_cash_x_purchase_request_cas_purchase_jin_pr_administrator": {
+"ir.model.access": [
+[
+2449,
+"2023-11-08 09:11:29"
+],
+[
+5564,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_line_cash_x_pr_line_cash_purchase_jin_pr_administrator": {
+"ir.model.access": [
+[
+2448,
+"2023-11-08 09:11:29"
+]
+]
+},
+"access_g_purchase_request_line_cash_x_pr_line_cash_purchase_jin_pr_view_only": {
+"ir.model.access": [
+[
+5563,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_line_make_po_item_item_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2412,
+"2023-11-03 08:38:17"
+],
+[
+2392,
+"2023-11-01 13:28:37"
+],
+[
+5559,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_purchase_request_line_make_purchase_orde_item_purchase_jin_pr_administrator": {
+"ir.model.access": [
+[
+2452,
+"2023-11-08 09:12:16"
+],
+[
+5565,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_line_make_purchase_orde_order_purchase_jin_pr_administrator": {
+"ir.model.access": [
+[
+2453,
+"2023-11-08 09:12:16"
+],
+[
+5566,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_line_non_inventory_x_pr_line_non_inventor_purchase_jin_inv_pr_cr": {
+"ir.model.access": [
+[
+2437,
+"2023-11-08 07:34:07"
+],
+[
+6500,
+"2024-02-14 03:34:37"
+],
+[
+2446,
+"2023-11-08 09:11:29"
+],
+[
+5561,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_line_x_purchase_request_lin_purchase_jin_inv_pr_creators": {
+"ir.model.access": [
+[
+2454,
+"2023-11-08 09:13:38"
+],
+[
+6503,
+"2024-02-14 03:34:37"
+],
+[
+2450,
+"2023-11-08 09:11:29"
+],
+[
+5568,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_lines_non_inventory_x_pr_line_non_inventor_purchase_jin_procurem": {
+"ir.model.access": [
+[
+2403,
+"2023-11-03 08:38:17"
+],
+[
+2383,
+"2023-11-01 13:13:08"
+],
+[
+5555,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_purchase_request_lines_non_inventory_x_pr_line_non_inventor_purchase_jin_procurem_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_purchase_request_lines_non_inventory_x_pr_line_non_inventor_purchase_jin_procurem_2": {
+"ir.model.access": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_purchase_request_lines_x_purchase_request_lin_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+2405,
+"2023-11-03 08:38:17"
+],
+[
+2385,
+"2023-11-01 13:13:08"
+],
+[
+5554,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_purchase_request_non_inventory_x_pr_non_inventory_purchase_jin_inv_pr_creators": {
+"ir.model.access": [
+[
+2438,
+"2023-11-08 07:34:07"
+],
+[
+6501,
+"2024-02-14 03:34:37"
+],
+[
+2447,
+"2023-11-08 09:11:29"
+],
+[
+5562,
+"2023-11-23 04:06:35"
+]
+]
+},
+"access_g_purchase_request_non_inventory_x_pr_non_inventory_purchase_jin_procurement_end_us": {
+"ir.model.access": [
+[
+2404,
+"2023-11-03 08:38:17"
+],
+[
+2384,
+"2023-11-01 13:13:08"
+],
+[
+5552,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_purchase_request_non_inventory_x_pr_non_inventory_purchase_jin_procurement_end_us_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_purchase_requisition_lines_order_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2413,
+"2023-11-03 08:38:17"
+],
+[
+2393,
+"2023-11-01 13:28:37"
+],
+[
+5558,
+"2023-11-22 12:04:45"
+]
+]
+},
+"access_g_tariff_dates_x_tariff_date_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2428,
+"2023-11-07 11:47:00"
+]
+]
+},
+"access_g_tariff_master_x_tariffmaster_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2427,
+"2023-11-07 11:47:00"
+]
+]
+},
+"access_g_tariff_rates_x_tariff_rates_purchase_jin_procurement_end_user_import": {
+"ir.model.access": [
+[
+2426,
+"2023-11-07 11:47:00"
+]
+]
+},
+"access_g_temp_budget_x_temp_actual_budget_accounting_jin_projectinvoice": {
+"ir.model.access": [
+[
+5657,
+"2023-11-23 07:10:34"
+]
+]
+},
+"access_g_test_access_rights_2_x_departments_test_department_2": {
+"ir.model.access": [
+[
+1122,
+"2021-05-17 05:55:15"
+]
+]
+},
+"access_g_test_access_rights_x_departments_test_department": {
+"ir.model.access": [
+[
+1121,
+"2021-05-17 04:53:12"
+]
+]
+},
+"access_g_user_x_material_request_helpdesk_jin_repair_ticket_creater": {
+"ir.model.access": [
+[
+6150,
+"2023-12-14 07:54:11"
+],
+[
+6085,
+"2023-12-06 08:17:08"
+],
+[
+6972,
+"2024-04-29 07:30:26"
+]
+]
+},
+"access_g_vendors_x_vendor_group_accounting_jin_accountexecutive": {
+"ir.model.access": [
+[
+1802,
+"2023-06-29 03:40:32"
+]
+]
+},
+"access_g_x_con_consolidated_hea_x_con_consolidated_hea_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6666,
+"2024-02-28 09:56:47"
+]
+]
+},
+"access_g_x_con_consolidated_line_x_con_consolidated_lin_purchase_jin_procurement_end_user_": {
+"ir.model.access": [
+[
+6667,
+"2024-02-28 09:57:30"
+]
+]
+},
+"access_g_x_consignment_charge_h_x_consignment_charge_h_purchase_jin_po_invoicing_payment_i": {
+"ir.model.access": [
+[
+6883,
+"2024-04-03 15:12:23"
+],
+[
+6670,
+"2024-02-28 10:08:49"
+]
+]
+},
+"access_g_x_consignment_charge_l_x_consignment_charge_l_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6673,
+"2024-02-28 10:13:37"
+]
+]
+},
+"access_g_x_consignment_header_x_consignment_header_purchase_jin_po_invoicing_payment_impor": {
+"ir.model.access": [
+[
+6880,
+"2024-04-03 15:06:03"
+],
+[
+6661,
+"2024-02-21 11:53:11"
+]
+]
+},
+"access_g_x_consignment_line_x_consignment_line_purchase_jin_po_goods_receivers": {
+"ir.model.access": [
+[
+6674,
+"2024-02-28 11:30:15"
+],
+[
+6662,
+"2024-02-21 11:54:19"
+]
+]
+},
+"access_g_x_import_rfq_charge_he_x_import_rfq_charge_he_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6659,
+"2024-02-21 09:25:57"
+]
+]
+},
+"access_g_x_import_rfq_charge_li_x_import_rfq_charge_li_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6660,
+"2024-02-21 09:28:42"
+]
+]
+},
+"access_g_x_non_inventory_produc_x_non_inventory_produc_purchase_jin_create_ni_invoice_jour": {
+"ir.model.access": [
+[
+6511,
+"2024-02-14 09:08:59"
+],
+[
+6472,
+"2024-02-13 09:19:30"
+],
+[
+6504,
+"2024-02-14 03:34:37"
+],
+[
+6476,
+"2024-02-13 10:46:34"
+],
+[
+6589,
+"2024-02-14 09:21:44"
+]
+]
+},
+"access_g_x_non_inventory_produc_x_non_inventory_produc_purchase_jin_po_invoicing_payment_n_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_x_po_non_inventory_x_po_non_inventory_purchase_jin_create_ni_invoice_journal_f": {
+"ir.model.access": [
+[
+6510,
+"2024-02-14 09:08:59"
+],
+[
+6474,
+"2024-02-13 10:10:40"
+],
+[
+6475,
+"2024-02-13 10:45:53"
+],
+[
+6588,
+"2024-02-14 09:21:44"
+]
+]
+},
+"access_g_x_po_non_inventory_x_po_non_inventory_purchase_jin_po_invoicing_payment_non_in_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_x_pr_line_cash_cash_purchase_lines_x_pr_line_cash_purchase_jin_procurement_end_us": {
+"ir.model.access": [
+[
+6018,
+"2023-11-30 05:07:08"
+]
+]
+},
+"access_g_x_pr_non_inventory_non_inventory_pos_x_po_non_inventory_purchase_jin_pr_view_only": {
+"ir.model.access": [
+[
+5576,
+"2023-11-23 05:39:02"
+]
+]
+},
+"access_g_x_project_task_worksheet_template_1_acce_x_project_task_worksheet_template_1_proj": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_x_project_task_worksheet_template_1_acce_x_project_task_worksheet_template_1_proj_1": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_g_x_purchase_request_cas_x_purchase_request_cas_accounting_billing_limited_cashier": {
+"ir.model.access": [
+[
+7061,
+"2024-05-03 11:01:39"
+]
+]
+},
+"access_g_x_purchase_request_cash_cash_purchase_x_purchase_request_cas_purchase_jin_procure": {
+"ir.model.access": [
+[
+6017,
+"2023-11-30 05:04:33"
+]
+]
+},
+"access_g_x_purchase_request_line_make_purchase_or_order_purchase_jin_procurement_end_user_": {
+"ir.model.access": [
+[
+6507,
+"2024-02-14 06:14:04"
+]
+]
+},
+"access_g_x_purchase_request_x_purchase_request_sales_jin_sales_add_edit_del_ca_customer": {
+"ir.model.access": [
+[
+6687,
+"2024-03-20 05:34:34"
+],
+[
+6840,
+"2024-03-20 09:24:51"
+]
+]
+},
+"access_g_x_tariff_date_x_tariff_date_purchase_jin_pr_view_only": {
+"ir.model.access": [
+[
+5877,
+"2023-11-27 11:46:47"
+]
+]
+},
+"access_g_x_tariff_rates_x_tariff_rates_purchase_jin_pr_view_only": {
+"ir.model.access": [
+[
+5876,
+"2023-11-27 11:46:47"
+]
+]
+},
+"access_g_x_tariffmaster_x_tariffmaster_purchase_jin_pr_view_only": {
+"ir.model.access": [
+[
+5875,
+"2023-11-27 11:45:05"
+]
+]
+},
+"access_g_x_temp_con_conso_line_x_temp_con_conso_line_purchase_jin_procurement_end_user_imp": {
+"ir.model.access": [
+[
+6669,
+"2024-02-28 10:01:22"
+]
+]
+},
+"access_g_x_temp_con_consolidate_x_temp_con_consolidate_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6668,
+"2024-02-28 09:58:33"
+]
+]
+},
+"access_g_x_temp_consignment_hea_x_temp_consignment_hea_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6663,
+"2024-02-28 09:04:49"
+],
+[
+6665,
+"2024-02-28 09:37:47"
+]
+]
+},
+"access_g_x_temp_consignment_lin_x_temp_consignment_lin_purchase_jin_procurement_end_user_i": {
+"ir.model.access": [
+[
+6664,
+"2024-02-28 09:08:21"
+]
+]
+},
+"access_g_x_temp_tp_invoice_head_x_temp_tp_invoice_head_purchase_jin_po_invoicing_payment_i": {
+"ir.model.access": [
+[
+6881,
+"2024-04-03 15:09:31"
+]
+]
+},
+"access_g_x_temp_tp_invoice_line_x_temp_tp_invoice_line_purchase_jin_po_invoicing_payment_i": {
+"ir.model.access": [
+[
+6882,
+"2024-04-03 15:11:59"
+]
+]
+},
+"access_g_x_tp_invoice_header_x_tp_invoice_header_purchase_jin_po_invoicing_payment_import": {
+"ir.model.access": [
+[
+6884,
+"2024-04-03 15:13:10"
+]
+]
+},
+"access_g_x_tp_invoice_line_x_tp_invoice_line_purchase_jin_po_invoicing_payment_import": {
+"ir.model.access": [
+[
+6885,
+"2024-04-03 15:14:20"
+]
+]
+},
+"access_x_project_task_worksheet_template_1_admin": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_x_test_1_admin": {
+"ir.model.access": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"access_x_test_model_link_2_admin": {
+"ir.model.access": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"act_window_1134_work_center_costing": {
+"ir.actions.act_window": [
+[
+1134,
+"2021-08-12 06:35:18"
+]
+]
+},
+"act_window_1139_product_test": {
+"ir.actions.act_window": [
+[
+1139,
+"2021-08-15 03:16:37"
+]
+]
+},
+"act_window_1232_my_activities": {
+"ir.actions.act_window": [
+[
+1232,
+"2021-09-24 07:06:56"
+]
+]
+},
+"act_window_1570_sales_invoice_lines_d7": {
+"ir.actions.act_window": [
+[
+1570,
+"2022-02-15 14:54:30"
+]
+]
+},
+"act_window_1666_test_form": {
+"ir.actions.act_window": [
+[
+1666,
+"2022-03-24 06:18:50"
+]
+]
+},
+"act_window_1685_test_model_primary": {
+"ir.actions.act_window": [
+[
+1685,
+"2022-04-07 07:18:18"
+]
+]
+},
+"act_window_1686_test_model_link": {
+"ir.actions.act_window": [
+[
+1686,
+"2022-04-07 07:20:57"
+]
+]
+},
+"act_window_1687_test_model_link_2": {
+"ir.actions.act_window": [
+[
+1687,
+"2022-04-18 05:25:07"
+]
+]
+},
+"act_window_1696_purchase_agreements_d7": {
+"ir.actions.act_window": [
+[
+1696,
+"2022-05-18 04:32:56"
+]
+]
+},
+"act_window_1749_config_settings": {
+"ir.actions.act_window": [
+[
+1749,
+"2022-09-14 02:50:10"
+]
+]
+},
+"act_window_1977_stock_picking_d7": {
+"ir.actions.act_window": [
+[
+1977,
+"2023-02-07 10:36:29"
+]
+]
+},
+"act_window_2014_worksheets": {
+"ir.actions.act_window": [
+[
+2014,
+"2023-02-08 09:43:59"
+]
+]
+},
+"act_window_2095_stock_location_route_d7": {
+"ir.actions.act_window": [
+[
+2095,
+"2023-03-06 05:37:02"
+]
+]
+},
+"act_window_2109_test_layout": {
+"ir.actions.act_window": [
+[
+2109,
+"2023-03-16 05:30:57"
+]
+]
+},
+"act_window_2187_stock_quant_d7": {
+"ir.actions.act_window": [
+[
+2187,
+"2023-05-17 02:36:28"
+]
+]
+},
+"act_window_2190_project_budgeted_cash_flow_d7": {
+"ir.actions.act_window": [
+[
+2190,
+"2023-05-17 10:39:14"
+]
+]
+},
+"act_window_2191_project_budgeted_cash_flow_d7": {
+"ir.actions.act_window": [
+[
+2191,
+"2023-05-17 10:52:48"
+]
+]
+},
+"act_window_2239_customer_letter_report_d7": {
+"ir.actions.act_window": [
+[
+2239,
+"2023-06-22 04:22:36"
+]
+]
+},
+"act_window_2306_ecos_d7": {
+"ir.actions.act_window": [
+[
+2306,
+"2023-08-02 12:24:06"
+]
+]
+},
+"act_window_2380_sales_model_debug": {
+"ir.actions.act_window": [
+[
+2380,
+"2023-09-21 03:19:22"
+]
+]
+},
+"act_window_2471_product_categories_d7": {
+"ir.actions.act_window": [
+[
+2471,
+"2024-01-16 05:00:23"
+]
+]
+},
+"act_window_2472_uom_categories": {
+"ir.actions.act_window": [
+[
+2472,
+"2024-01-16 05:06:15"
+]
+]
+},
+"act_window_2472_uom_categories_d7": {
+"ir.actions.act_window": [
+[
+2472,
+"2024-01-16 05:06:15"
+]
+]
+},
+"act_window_2494_inventory_routes_d7": {
+"ir.actions.act_window": [
+[
+2494,
+"2024-02-15 06:15:44"
+]
+]
+},
+"act_window_2557_hr_attendance_overtime_d7": {
+"ir.actions.act_window": [
+[
+2557,
+"2024-05-15 07:24:32"
+]
+]
+},
+"act_window_2677_x_customer_groups": {
+"ir.actions.act_window": [
+[
+2677,
+"2024-07-17 16:34:37"
+]
+]
+},
+"act_window_2741_account_payment_method_line_d7": {
+"ir.actions.act_window": [
+[
+2741,
+"2024-07-31 08:06:27"
+]
+]
+},
+"act_window_2758_taxes_d7": {
+"ir.actions.act_window": [
+[
+2758,
+"2024-08-06 02:45:02"
+]
+]
+},
+"act_window_2805_project_milestone_d7": {
+"ir.actions.act_window": [
+[
+2805,
+"2024-10-09 03:33:13"
+]
+]
+},
+"act_window_2806_project_sale_line_employee_map_d7": {
+"ir.actions.act_window": [
+[
+2806,
+"2024-10-09 03:56:21"
+]
+]
+},
+"act_window_2811_purchase_requisition_line_d7": {
+"ir.actions.act_window": [
+[
+2811,
+"2024-10-09 04:52:17"
+]
+]
+},
+"act_window_2812_purchase_requisition_d7": {
+"ir.actions.act_window": [
+[
+2812,
+"2024-10-09 04:52:40"
+]
+]
+},
+"act_window_2813_stock_landed_cos_d7": {
+"ir.actions.act_window": [
+[
+2813,
+"2024-10-09 04:57:03"
+]
+]
+},
+"act_window_2814_stock_landed_cost_line_d7": {
+"ir.actions.act_window": [
+[
+2814,
+"2024-10-09 04:59:15"
+]
+]
+},
+"act_window_2815_account_bank_statement_d7": {
+"ir.actions.act_window": [
+[
+2815,
+"2024-10-09 05:01:38"
+]
+]
+},
+"act_window_2816_hr_expense_d7": {
+"ir.actions.act_window": [
+[
+2816,
+"2024-10-09 05:05:34"
+]
+]
+},
+"act_window_2818_pos_config": {
+"ir.actions.act_window": [
+[
+2821,
+"2024-10-09 05:07:47"
+],
+[
+2818,
+"2024-10-09 05:06:45"
+]
+]
+},
+"act_window_2818_pos_config_d7": {
+"ir.actions.act_window": [
+[
+2818,
+"2024-10-09 05:06:45"
+]
+]
+},
+"act_window_2819_pos_order": {
+"ir.actions.act_window": [
+[
+2819,
+"2024-10-09 05:07:08"
+]
+]
+},
+"act_window_2819_pos_order_d7": {
+"ir.actions.act_window": [
+[
+2819,
+"2024-10-09 05:07:08"
+]
+]
+},
+"act_window_2820_pos_payment": {
+"ir.actions.act_window": [
+[
+2820,
+"2024-10-09 05:07:29"
+]
+]
+},
+"act_window_2820_pos_payment_d7": {
+"ir.actions.act_window": [
+[
+2820,
+"2024-10-09 05:07:29"
+]
+]
+},
+"act_window_2821_pos_config": {
+"ir.actions.act_window": [
+[
+2821,
+"2024-10-09 05:07:47"
+]
+]
+},
+"act_window_2821_pos_config_d7": {
+"ir.actions.act_window": [
+[
+2821,
+"2024-10-09 05:07:47"
+]
+]
+},
+"act_window_2822_pos_session": {
+"ir.actions.act_window": [
+[
+2822,
+"2024-10-09 05:08:02"
+]
+]
+},
+"act_window_2822_pos_session_d7": {
+"ir.actions.act_window": [
+[
+2822,
+"2024-10-09 05:08:02"
+]
+]
+},
+"act_window_2829_calendar_attendee_information_calendar_attendee": {
+"ir.actions.act_window": [
+[
+2829,
+"2024-10-15 11:20:50"
+]
+]
+},
+"act_window_2829_calendar_attendee_information_calendar_attendee_d7": {
+"ir.actions.act_window": [
+[
+2829,
+"2024-10-15 11:20:50"
+]
+]
+},
+"act_window_2830_calendar_filters": {
+"ir.actions.act_window": [
+[
+2830,
+"2024-10-15 11:38:08"
+]
+]
+},
+"act_window_2830_calendar_filters_d7": {
+"ir.actions.act_window": [
+[
+2830,
+"2024-10-15 11:38:08"
+]
+]
+},
+"act_window_2832_calendar_filters": {
+"ir.actions.act_window": [
+[
+2832,
+"2024-10-17 05:13:43"
+]
+]
+},
+"act_window_2832_calendar_filters_d7": {
+"ir.actions.act_window": [
+[
+2832,
+"2024-10-17 05:13:43"
+]
+]
+},
+"act_window_2833_calendar_attendee": {
+"ir.actions.act_window": [
+[
+2833,
+"2024-10-17 10:38:00"
+]
+]
+},
+"act_window_2833_calendar_attendee_d7": {
+"ir.actions.act_window": [
+[
+2833,
+"2024-10-17 10:38:00"
+]
+]
+},
+"act_window_2834_mrp_eco_bom_change_d7": {
+"ir.actions.act_window": [
+[
+2834,
+"2024-10-17 11:10:03"
+]
+]
+},
+"act_window_2835_stock_rule_d7": {
+"ir.actions.act_window": [
+[
+2835,
+"2024-10-17 11:21:16"
+]
+]
+},
+"act_window_2841_coupon_rule": {
+"ir.actions.act_window": [
+[
+2841,
+"2024-10-22 03:39:47"
+]
+]
+},
+"act_window_2841_coupon_rule_d7": {
+"ir.actions.act_window": [
+[
+2841,
+"2024-10-22 03:39:47"
+]
+]
+},
+"act_window_2842_coupon_reward": {
+"ir.actions.act_window": [
+[
+2842,
+"2024-10-22 03:40:21"
+]
+]
+},
+"act_window_2842_coupon_reward_d7": {
+"ir.actions.act_window": [
+[
+2842,
+"2024-10-22 03:40:21"
+]
+]
+},
+"act_window_2874_purchase_agreement_type_purchase_requisition_type_d7": {
+"ir.actions.act_window": [
+[
+2874,
+"2024-10-31 05:46:27"
+]
+]
+},
+"act_window_2875_purchase_agreement_types_purchase_requisition_type_d7": {
+"ir.actions.act_window": [
+[
+2875,
+"2024-10-31 05:50:43"
+]
+]
+},
+"act_window_2876_helpdesk_team_helpdesk_team_d7": {
+"ir.actions.act_window": [
+[
+2876,
+"2024-11-07 02:43:18"
+]
+]
+},
+"act_window_2878_project_stage_project_project_stage_d7": {
+"ir.actions.act_window": [
+[
+2878,
+"2024-11-07 02:44:35"
+]
+]
+},
+"act_window_2882_sales_team_member": {
+"ir.actions.act_window": [
+[
+2882,
+"2024-11-21 04:33:17"
+]
+]
+},
+"act_window_2882_sales_team_member_d7": {
+"ir.actions.act_window": [
+[
+2882,
+"2024-11-21 04:33:17"
+]
+]
+},
+"act_window_3205_website_faq": {
+"ir.actions.act_window": [
+[
+3205,
+"2025-04-23 07:20:02"
+]
+]
+},
+"act_window_3206_website_faqs": {
+"ir.actions.act_window": [
+[
+3206,
+"2025-04-23 09:38:49"
+]
+]
+},
+"act_window_3275_journal_d7": {
+"ir.actions.act_window": [
+[
+3275,
+"2025-07-11 02:32:41"
+]
+]
+},
+"act_window_3279_test02": {
+"ir.actions.act_window": [
+[
+848,
+"2021-06-22 09:22:21"
+],
+[
+3279,
+"2025-08-05 10:11:37"
+],
+[
+846,
+"2021-06-22 09:18:16"
+]
+]
+},
+"act_window_3349_jinasena_custom_reports_tags": {
+"ir.actions.act_window": [
+[
+3349,
+"2025-10-21 09:48:26"
+]
+]
+},
+"act_window_3573_test_1": {
+"ir.actions.act_window": [
+[
+3573,
+"2026-02-12 06:10:50"
+]
+]
+},
+"act_window_3592_sales_report": {
+"ir.actions.act_window": [
+[
+3592,
+"2026-02-18 03:23:11"
+]
+]
+},
+"act_window_3622_sample_balance_movement_report": {
+"ir.actions.act_window": [
+[
+3622,
+"2026-02-19 09:59:04"
+]
+]
+},
+"act_window_396_sales_teams": {
+"ir.actions.act_window": [
+[
+396,
+"2021-02-03 05:30:53"
+]
+]
+},
+"act_window_776_purchase_requisition_d7": {
+"ir.actions.act_window": [
+[
+776,
+"2021-04-23 08:29:06"
+]
+]
+},
+"act_window_777_pr_type_d7": {
+"ir.actions.act_window": [
+[
+777,
+"2021-04-23 08:29:45"
+]
+]
+},
+"act_window_809_testapp": {
+"ir.actions.act_window": [
+[
+809,
+"2021-06-09 15:11:20"
+]
+]
+},
+"act_window_812_testdepartment": {
+"ir.actions.act_window": [
+[
+812,
+"2021-06-17 07:38:19"
+]
+]
+},
+"act_window_842_test_1": {
+"ir.actions.act_window": [
+[
+842,
+"2021-06-22 09:06:00"
+]
+]
+},
+"act_window_843_test_app": {
+"ir.actions.act_window": [
+[
+843,
+"2021-06-22 09:14:39"
+]
+]
+},
+"act_window_844_test_app_02": {
+"ir.actions.act_window": [
+[
+844,
+"2021-06-22 09:15:36"
+]
+]
+},
+"act_window_845_test_01": {
+"ir.actions.act_window": [
+[
+845,
+"2021-06-22 09:17:42"
+]
+]
+},
+"act_window_846_test02": {
+"ir.actions.act_window": [
+[
+846,
+"2021-06-22 09:18:16"
+]
+]
+},
+"act_window_847_test01": {
+"ir.actions.act_window": [
+[
+847,
+"2021-06-22 09:21:57"
+]
+]
+},
+"act_window_848_test02": {
+"ir.actions.act_window": [
+[
+848,
+"2021-06-22 09:22:21"
+]
+]
+},
+"act_window_849_test01": {
+"ir.actions.act_window": [
+[
+849,
+"2021-06-22 10:16:58"
+],
+[
+847,
+"2021-06-22 09:21:57"
+]
+]
+},
+"action_report_1440_test_report_kapila": {
+"ir.actions.report": [
+[
+1440,
+"2021-11-23 08:49:18"
+]
+]
+},
+"action_report_1523_purchase_report_report": {
+"ir.actions.report": [
+[
+1523,
+"2022-01-06 06:22:05"
+]
+]
+},
+"action_report_1524_purchase_request_report_12345": {
+"ir.actions.report": [
+[
+1524,
+"2022-01-06 06:22:39"
+]
+]
+},
+"action_report_1596_sales_order_lines": {
+"ir.actions.report": [
+[
+1596,
+"2022-02-23 05:49:59"
+]
+]
+},
+"action_report_1597_purchase_order_list": {
+"ir.actions.report": [
+[
+1597,
+"2022-02-23 11:42:43"
+]
+]
+},
+"action_report_1619_purchase_order_lines_backup": {
+"ir.actions.report": [
+[
+1619,
+"2022-02-24 12:33:38"
+]
+]
+},
+"action_report_1621_purchase_order_lines_new": {
+"ir.actions.report": [
+[
+1621,
+"2022-02-24 13:02:23"
+]
+]
+},
+"action_report_1622_purchase_order_lines": {
+"ir.actions.report": [
+[
+1622,
+"2022-02-24 14:52:24"
+]
+]
+},
+"action_report_1631_import_rfq_charge_header_report": {
+"ir.actions.report": [
+[
+1631,
+"2022-02-28 08:09:27"
+]
+]
+},
+"action_report_1634_indent_cost_estimation_working_backup": {
+"ir.actions.report": [
+[
+1634,
+"2022-02-28 09:39:40"
+]
+]
+},
+"action_report_1635_indent_cost_estimation": {
+"ir.actions.report": [
+[
+1635,
+"2022-02-28 11:41:06"
+]
+]
+},
+"action_report_1674_daily_sales_report": {
+"ir.actions.report": [
+[
+1674,
+"2022-03-30 03:25:59"
+]
+]
+},
+"action_report_1684_customer_invoice_details": {
+"ir.actions.report": [
+[
+1684,
+"2022-04-07 04:43:58"
+]
+]
+},
+"action_report_1713_sales_report_model_report": {
+"ir.actions.report": [
+[
+1713,
+"2022-06-30 07:55:43"
+]
+]
+},
+"action_report_1728_daily_sales_report": {
+"ir.actions.report": [
+[
+1728,
+"2022-07-29 02:38:45"
+]
+]
+},
+"action_report_1736_sales_details_for_incentive_calculation": {
+"ir.actions.report": [
+[
+1736,
+"2022-08-10 15:24:56"
+]
+]
+},
+"action_report_1739_production_order_wip": {
+"ir.actions.report": [
+[
+1739,
+"2022-08-11 13:01:57"
+]
+]
+},
+"action_report_2093_repair_status": {
+"ir.actions.report": [
+[
+2093,
+"2023-03-02 04:35:39"
+]
+]
+},
+"action_report_2094_repair_receipt": {
+"ir.actions.report": [
+[
+2094,
+"2023-03-02 05:26:19"
+]
+]
+},
+"action_report_2111_project_gross_margin": {
+"ir.actions.report": [
+[
+2111,
+"2023-03-21 02:06:03"
+]
+]
+},
+"action_report_2230_purchase_order_non_inventory_report": {
+"ir.actions.report": [
+[
+2230,
+"2023-06-14 09:35:07"
+]
+]
+},
+"action_report_2232_import_rfq_charge_line_report": {
+"ir.actions.report": [
+[
+2232,
+"2023-06-15 06:56:01"
+]
+]
+},
+"action_report_2233_purchase_order_non_inventory_report": {
+"ir.actions.report": [
+[
+2233,
+"2023-06-15 06:59:22"
+]
+]
+},
+"action_report_2237_customer_letter": {
+"ir.actions.report": [
+[
+2237,
+"2023-06-16 05:45:26"
+]
+]
+},
+"action_report_2240_repair_final_notice": {
+"ir.actions.report": [
+[
+2240,
+"2023-06-22 04:41:13"
+]
+]
+},
+"action_report_2241_repair_final_notice_scrappage": {
+"ir.actions.report": [
+[
+2241,
+"2023-06-22 05:13:03"
+]
+]
+},
+"action_report_2420_helpdesk_ticket_report": {
+"ir.actions.report": [
+[
+2420,
+"2023-10-11 07:26:33"
+]
+]
+},
+"action_report_2792_budget_report": {
+"ir.actions.report": [
+[
+2792,
+"2024-10-01 04:56:44"
+]
+]
+},
+"action_report_3368_custom_reports_report": {
+"ir.actions.report": [
+[
+3368,
+"2025-10-22 05:19:39"
+]
+]
+},
+"action_report_3435_custom_reports_report": {
+"ir.actions.report": [
+[
+3435,
+"2025-11-11 04:44:58"
+]
+]
+},
+"action_report_3436_custom_reports_report": {
+"ir.actions.report": [
+[
+3436,
+"2025-11-11 04:46:50"
+]
+]
+},
+"action_report_3437_c08_purchase_order": {
+"ir.actions.report": [
+[
+3437,
+"2025-11-11 05:20:49"
+]
+]
+},
+"action_report_3438_c07_request_for_quotation": {
+"ir.actions.report": [
+[
+3438,
+"2025-11-17 03:31:47"
+]
+]
+},
+"action_report_3445_jinasena_quotation_1": {
+"ir.actions.report": [
+[
+3445,
+"2025-11-17 05:19:11"
+]
+]
+},
+"action_report_3446_sales_order_report": {
+"ir.actions.report": [
+[
+3446,
+"2025-11-17 06:07:19"
+]
+]
+},
+"action_report_3447_template_c09_repair_receipt": {
+"ir.actions.report": [
+[
+3447,
+"2025-11-17 06:40:46"
+]
+]
+},
+"action_report_3448_template_c10_repair_estimate": {
+"ir.actions.report": [
+[
+3448,
+"2025-11-17 06:41:44"
+]
+]
+},
+"action_report_3449_jinasena_quotation": {
+"ir.actions.report": [
+[
+3449,
+"2025-11-17 08:43:06"
+]
+]
+},
+"action_report_3450_jinasena_sales_order": {
+"ir.actions.report": [
+[
+3450,
+"2025-11-17 09:20:17"
+]
+]
+},
+"action_report_3451_template_c11_repair_quotation": {
+"ir.actions.report": [
+[
+3451,
+"2025-11-17 09:45:29"
+]
+]
+},
+"action_report_3452_template_c12_repair_invoice": {
+"ir.actions.report": [
+[
+3452,
+"2025-11-17 11:11:41"
+]
+]
+},
+"action_report_3453_template_c13_repair_aod": {
+"ir.actions.report": [
+[
+3453,
+"2025-11-17 11:12:25"
+]
+]
+},
+"action_report_3457_template_c14_ready_for_collection_letter": {
+"ir.actions.report": [
+[
+3457,
+"2025-11-18 04:16:55"
+]
+]
+},
+"action_report_3458_template_c15_final_notice": {
+"ir.actions.report": [
+[
+3458,
+"2025-11-18 04:19:32"
+]
+]
+},
+"action_report_3463_template_c16_final_notice_estimated": {
+"ir.actions.report": [
+[
+3463,
+"2025-11-18 05:05:31"
+]
+]
+},
+"action_report_3464_template_c17_final_notice_scrappage": {
+"ir.actions.report": [
+[
+3464,
+"2025-11-18 05:06:59"
+]
+]
+},
+"action_report_3465_template_c18_final_notice_estimated_scrappage": {
+"ir.actions.report": [
+[
+3465,
+"2025-11-18 05:08:18"
+]
+]
+},
+"action_report_3466_template_c19_reminder_repair_reminding_letter": {
+"ir.actions.report": [
+[
+3466,
+"2025-11-18 05:09:38"
+]
+]
+},
+"action_report_3476_c06_1_sales_invoice_non_vat_product_sale": {
+"ir.actions.report": [
+[
+3476,
+"2025-11-21 10:19:01"
+]
+]
+},
+"action_report_3477_template_c06_2_sales_invoice_non_vat_spares_sale": {
+"ir.actions.report": [
+[
+3477,
+"2025-11-25 10:17:02"
+]
+]
+},
+"action_report_3478_template_c06_3_sales_invoice_vat_product_sale": {
+"ir.actions.report": [
+[
+3478,
+"2025-11-25 10:18:03"
+]
+]
+},
+"action_report_3479_template_c06_4_sales_invoice_vat_spares_sale": {
+"ir.actions.report": [
+[
+3479,
+"2025-11-25 10:19:02"
+]
+]
+},
+"action_report_3480_template_c06_5_sales_invoice_svat_product_sale": {
+"ir.actions.report": [
+[
+3480,
+"2025-11-25 10:21:23"
+]
+]
+},
+"action_report_3481_template_c06_6_sales_invoice_svat_spares_sale": {
+"ir.actions.report": [
+[
+3481,
+"2025-11-25 10:25:08"
+]
+]
+},
+"action_report_3482_c05_proforma_invoice": {
+"ir.actions.report": [
+[
+3482,
+"2025-11-25 10:26:58"
+]
+]
+},
+"action_report_3483_c04_sales_order_delivery_order_packing_slip": {
+"ir.actions.report": [
+[
+3483,
+"2025-11-25 10:28:07"
+]
+]
+},
+"action_report_3484_c03_customer_payment_receipt": {
+"ir.actions.report": [
+[
+3484,
+"2025-11-25 10:30:46"
+]
+]
+},
+"action_report_3485_c02_sales_order_confirmation": {
+"ir.actions.report": [
+[
+3485,
+"2025-11-25 10:31:20"
+]
+]
+},
+"action_report_3486_c01_sales_quotation": {
+"ir.actions.report": [
+[
+3486,
+"2025-11-25 10:33:44"
+]
+]
+},
+"action_report_3490_resolutions_report": {
+"ir.actions.report": [
+[
+3490,
+"2025-12-02 02:57:46"
+]
+]
+},
+"action_report_3491_helpdesk_team_report": {
+"ir.actions.report": [
+[
+3491,
+"2025-12-02 03:32:23"
+]
+]
+},
+"action_report_3492_c09_repair_receipt": {
+"ir.actions.report": [
+[
+3492,
+"2025-12-02 03:35:46"
+]
+]
+},
+"action_report_3494_c10_repair_estimate": {
+"ir.actions.report": [
+[
+3494,
+"2025-12-02 05:18:23"
+]
+]
+},
+"action_report_3495_c11_repair_quotation": {
+"ir.actions.report": [
+[
+3495,
+"2025-12-02 05:52:14"
+]
+]
+},
+"action_report_3496_c12_repair_invoice": {
+"ir.actions.report": [
+[
+3496,
+"2025-12-02 07:54:04"
+]
+]
+},
+"action_report_3510_c19_reminder_repair_reminding_letter": {
+"ir.actions.report": [
+[
+3510,
+"2025-12-09 03:25:03"
+]
+]
+},
+"action_report_3511_c18_final_notice_estimated_scrappage": {
+"ir.actions.report": [
+[
+3511,
+"2025-12-09 04:22:48"
+]
+]
+},
+"action_report_3512_c17_final_notice_scrappage": {
+"ir.actions.report": [
+[
+3512,
+"2025-12-09 04:46:27"
+]
+]
+},
+"action_report_3513_c16_final_notice_estimated": {
+"ir.actions.report": [
+[
+3513,
+"2025-12-09 05:44:50"
+]
+]
+},
+"action_report_3514_c15_final_notice": {
+"ir.actions.report": [
+[
+3514,
+"2025-12-09 06:03:10"
+]
+]
+},
+"action_report_3515_c14_ready_for_collection_letter": {
+"ir.actions.report": [
+[
+3515,
+"2025-12-09 06:24:59"
+]
+]
+},
+"action_report_3516_c13_repair_aod": {
+"ir.actions.report": [
+[
+3516,
+"2025-12-11 09:00:36"
+]
+]
+},
+"action_report_3562_c06_2_sales_invoice_non_vat_spares_sale": {
+"ir.actions.report": [
+[
+3562,
+"2025-12-22 04:52:11"
+]
+]
+},
+"action_report_3563_c06_3_sales_invoice_vat_product_sale": {
+"ir.actions.report": [
+[
+3563,
+"2025-12-22 04:53:25"
+]
+]
+},
+"action_report_3564_c06_4_sales_invoice_vat_spares_sale": {
+"ir.actions.report": [
+[
+3564,
+"2025-12-22 04:54:21"
+]
+]
+},
+"action_report_3565_c06_5_sales_invoice_svat_product_sale": {
+"ir.actions.report": [
+[
+3565,
+"2025-12-22 04:55:24"
+]
+]
+},
+"action_report_3566_c06_6_sales_invoice_svat_spares_sale": {
+"ir.actions.report": [
+[
+3566,
+"2025-12-22 04:58:00"
+]
+]
+},
+"action_report_3567_template_c06_1_sales_invoice_non_vat_product_sale": {
+"ir.actions.report": [
+[
+3567,
+"2025-12-22 08:04:16"
+]
+]
+},
+"aw_f4x_ir_model_access_ir_model": {
+"ir.actions.act_window": [
+[
+2446,
+"2023-11-16 12:00:49"
+]
+]
+},
+"aw_f4x_ir_model_access_ir_model_access": {
+"ir.actions.act_window": [
+[
+2473,
+"2024-01-24 12:26:05"
+]
+]
+},
+"aw_f4x_ir_model_access_user_group_access_rights": {
+"ir.actions.act_window": [
+[
+2429,
+"2023-10-19 12:13:15"
+]
+]
+},
+"aw_f4x_ir_model_access_user_group_access_rights_1": {
+"ir.actions.act_window": [
+[
+3252,
+"2025-05-22 05:30:05"
+]
+]
+},
+"aw_f4x_ir_module_category_application_1": {
+"ir.actions.act_window": [
+[
+2277,
+"2023-07-12 11:40:35"
+]
+]
+},
+"aw_f4x_ir_module_category_ir_module_category": {
+"ir.actions.act_window": [
+[
+2428,
+"2023-10-18 05:39:36"
+]
+]
+},
+"aw_f4x_ir_module_category_ir_module_cateory": {
+"ir.actions.act_window": [
+[
+2433,
+"2023-10-27 06:15:37"
+]
+]
+},
+"aw_f4x_ir_property_company_property": {
+"ir.actions.act_window": [
+[
+2880,
+"2024-11-12 11:03:49"
+]
+]
+},
+"aw_f4x_ir_sequence_ir_sequence": {
+"ir.actions.act_window": [
+[
+2766,
+"2024-08-26 08:49:36"
+]
+]
+},
+"aw_f4x_mail_activity_mail_activity": {
+"ir.actions.act_window": [
+[
+2839,
+"2024-10-18 10:09:18"
+],
+[
+2872,
+"2024-10-30 09:59:18"
+]
+]
+},
+"aw_f4x_sign_request_item_signature_request_item_sign_request_item": {
+"ir.actions.act_window": [
+[
+2824,
+"2024-10-10 05:01:11"
+]
+]
+},
+"aw_f4x_studio_approval_entry_studio_approval_entry_studio_approval_entry": {
+"ir.actions.act_window": [
+[
+2825,
+"2024-10-10 05:39:04"
+]
+]
+},
+"base_automation_183_test_layout_changes": {
+"base.automation": [
+[
+183,
+"2023-03-16 05:27:27"
+]
+]
+},
+"base_automation_208_janitha_ranasinghe_d7": {
+"base.automation": [
+[
+208,
+"2023-07-06 02:08:49"
+]
+]
+},
+"base_automation_244_user_group_change_notify_d7": {
+"base.automation": [
+[
+244,
+"2024-01-10 02:37:36"
+]
+]
+},
+"base_automation_245_user_group_updation_d7": {
+"base.automation": [
+[
+245,
+"2024-01-10 22:52:18"
+]
+]
+},
+"base_automation_261_exp_validate_negative_quantities_d7": {
+"base.automation": [
+[
+261,
+"2024-07-01 08:58:45"
+]
+]
+},
+"base_automation_274_restrict_attachment_delete_for_approved_expenses": {
+"base.automation": [
+[
+274,
+"2024-07-10 02:25:14"
+]
+]
+},
+"base_automation_332_chk_sample_automated_action": {
+"base.automation": [
+[
+332,
+"2024-10-02 05:16:31"
+]
+]
+},
+"default_10_x_customer_groups_x_studio_sequence": {
+"ir.default": [
+[
+10,
+"2021-05-06 14:21:47"
+]
+]
+},
+"default_16_x_testapp_x_active": {
+"ir.default": [
+[
+16,
+"2021-06-09 15:11:20"
+]
+]
+},
+"default_17_x_testapp_x_studio_sequence": {
+"ir.default": [
+[
+17,
+"2021-06-09 15:11:20"
+]
+]
+},
+"default_18_x_testdepartment_x_active": {
+"ir.default": [
+[
+18,
+"2021-06-17 07:38:19"
+]
+]
+},
+"default_19_x_testdepartment_x_studio_sequence": {
+"ir.default": [
+[
+19,
+"2021-06-17 07:38:19"
+]
+]
+},
+"default_1_res_partner_lang": {
+"ir.default": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"default_241_maintenance_request_name": {
+"ir.default": [
+[
+241,
+"2022-02-15 10:21:14"
+]
+]
+},
+"default_243_x_test02_x_studio_pipeline_status_bar": {
+"ir.default": [
+[
+243,
+"2022-02-22 04:10:55"
+]
+]
+},
+"default_248_x_test_form_x_active": {
+"ir.default": [
+[
+248,
+"2022-03-24 06:18:50"
+]
+]
+},
+"default_249_x_test_form_x_studio_sequence": {
+"ir.default": [
+[
+249,
+"2022-03-24 06:18:50"
+]
+]
+},
+"default_267_x_test_model_primary_x_active": {
+"ir.default": [
+[
+267,
+"2022-04-07 07:18:18"
+]
+]
+},
+"default_268_x_test_model_primary_x_studio_sequence": {
+"ir.default": [
+[
+268,
+"2022-04-07 07:18:18"
+]
+]
+},
+"default_269_x_test_model_link_x_active": {
+"ir.default": [
+[
+269,
+"2022-04-07 07:20:57"
+]
+]
+},
+"default_270_x_test_model_link_x_studio_sequence": {
+"ir.default": [
+[
+270,
+"2022-04-07 07:20:57"
+]
+]
+},
+"default_271_x_test_model_link_2_x_active": {
+"ir.default": [
+[
+271,
+"2022-04-18 05:25:07"
+]
+]
+},
+"default_272_x_test_model_link_2_x_studio_sequence": {
+"ir.default": [
+[
+272,
+"2022-04-18 05:25:07"
+]
+]
+},
+"default_29_x_test_1_x_active": {
+"ir.default": [
+[
+29,
+"2021-06-22 09:06:00"
+]
+]
+},
+"default_2_product_template_invoice_policy": {
+"ir.default": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"default_30_x_test_1_x_studio_sequence": {
+"ir.default": [
+[
+30,
+"2021-06-22 09:06:00"
+]
+]
+},
+"default_314_x_test_layout_x_active": {
+"ir.default": [
+[
+314,
+"2023-03-16 05:30:57"
+]
+]
+},
+"default_315_x_test_layout_x_studio_sequence": {
+"ir.default": [
+[
+315,
+"2023-03-16 05:30:57"
+]
+]
+},
+"default_31_x_test02_x_active": {
+"ir.default": [
+[
+31,
+"2021-06-22 09:18:16"
+]
+]
+},
+"default_32_x_test02_x_studio_sequence": {
+"ir.default": [
+[
+32,
+"2021-06-22 09:18:16"
+]
+]
+},
+"default_379_x_sales_model_debug_x_active": {
+"ir.default": [
+[
+379,
+"2023-09-21 03:19:22"
+]
+]
+},
+"default_380_x_sales_model_debug_x_studio_sequence": {
+"ir.default": [
+[
+380,
+"2023-09-21 03:19:22"
+]
+]
+},
+"default_472_x_test02_x_studio_test_value": {
+"ir.default": [
+[
+472,
+"2024-08-08 03:28:04"
+]
+]
+},
+"default_474_product_template_default_code": {
+"ir.default": [
+[
+474,
+"2024-08-12 04:53:38"
+]
+]
+},
+"default_476_x_test02_x_studio_testing": {
+"ir.default": [
+[
+476,
+"2024-08-15 03:46:31"
+]
+]
+},
+"default_490_x_test02_x_studio_testing_02": {
+"ir.default": [
+[
+490,
+"2024-08-29 09:46:48"
+]
+]
+},
+"default_533_x_test02_x_test123": {
+"ir.default": [
+[
+533,
+"2024-09-10 10:23:32"
+]
+]
+},
+"default_575_x_test02_x_studio_chk_atomated_action": {
+"ir.default": [
+[
+575,
+"2024-10-02 05:08:11"
+]
+]
+},
+"default_576_x_test02_x_studio_chk_server_action": {
+"ir.default": [
+[
+576,
+"2024-10-02 05:08:47"
+]
+]
+},
+"default_578_x_test02_x_currency_id": {
+"ir.default": [
+[
+578,
+"2024-10-04 03:58:54"
+]
+]
+},
+"default_579_product_template_purchase_method": {
+"ir.default": [
+[
+579,
+"2025-03-05 03:57:30"
+]
+]
+},
+"default_582_x_website_faq_x_active": {
+"ir.default": [
+[
+582,
+"2025-04-23 07:20:02"
+]
+]
+},
+"default_583_x_website_faq_x_studio_sequence": {
+"ir.default": [
+[
+583,
+"2025-04-23 07:20:02"
+]
+]
+},
+"default_584_x_website_faqs_x_active": {
+"ir.default": [
+[
+584,
+"2025-04-23 09:38:49"
+]
+]
+},
+"default_585_x_website_faqs_x_studio_sequence": {
+"ir.default": [
+[
+585,
+"2025-04-23 09:38:49"
+]
+]
+},
+"default_76_x_work_center_costing_x_active": {
+"ir.default": [
+[
+76,
+"2021-08-12 06:35:18"
+]
+]
+},
+"default_77_x_work_center_costing_x_studio_sequence": {
+"ir.default": [
+[
+77,
+"2021-08-12 06:35:18"
+]
+]
+},
+"default_78_x_product_test_x_active": {
+"ir.default": [
+[
+78,
+"2021-08-15 03:16:37"
+]
+]
+},
+"default_79_x_product_test_x_studio_sequence": {
+"ir.default": [
+[
+79,
+"2021-08-15 03:16:37"
+]
+]
+},
+"default_x_misc_charge_codes_x_active_109": {
+"ir.default": [
+[
+109,
+"2021-08-25 05:18:29"
+]
+]
+},
+"default_x_misc_charge_codes_x_studio_sequence_110": {
+"ir.default": [
+[
+110,
+"2021-08-25 05:18:29"
+]
+]
+},
+"menu_1087_repair_job_details": {
+"ir.ui.menu": [
+[
+1087,
+"2023-08-02 16:49:43"
+]
+]
+},
+"menu_1233_update_ot": {
+"ir.ui.menu": [
+[
+1233,
+"2024-05-26 15:44:48"
+]
+]
+},
+"menu_1644_website_faq": {
+"ir.ui.menu": [
+[
+1644,
+"2025-04-23 09:38:49"
+]
+]
+},
+"menu_1645_website_faqs": {
+"ir.ui.menu": [
+[
+1645,
+"2025-04-23 09:38:49"
+]
+]
+},
+"menu_1750_purchase_request_mt": {
+"ir.ui.menu": [
+[
+1750,
+"2025-10-24 05:06:48"
+]
+]
+},
+"menu_1751_purchase_request_mt_stages": {
+"ir.ui.menu": [
+[
+1751,
+"2025-10-24 05:06:48"
+]
+]
+},
+"menu_1752_purchase_request_mt_tags": {
+"ir.ui.menu": [
+[
+1752,
+"2025-10-24 05:06:48"
+]
+]
+},
+"menu_1860_paymaster_config": {
+"ir.ui.menu": [
+[
+1860,
+"2026-04-08 03:44:39"
+]
+]
+},
+"menu_633_work_center_costing": {
+"ir.ui.menu": [
+[
+633,
+"2021-08-12 06:35:18"
+]
+]
+},
+"menu_830_mr_config": {
+"ir.ui.menu": [
+[
+830,
+"2022-02-15 10:03:27"
+]
+]
+},
+"menu_f6_customer_letter_report": {
+"ir.ui.menu": [
+[
+1077,
+"2023-06-22 04:22:36"
+]
+]
+},
+"menu_f6_product_categories": {
+"ir.ui.menu": [
+[
+1151,
+"2024-01-16 05:00:23"
+]
+]
+},
+"menu_f6_purchase_request_line": {
+"ir.ui.menu": [
+[
+1741,
+"2025-10-24 04:18:48"
+]
+]
+},
+"menu_f6_purchase_request_t_stages": {
+"ir.ui.menu": [
+[
+1739,
+"2025-10-24 03:58:33"
+]
+]
+},
+"menu_f6_purchase_request_t_tags": {
+"ir.ui.menu": [
+[
+1740,
+"2025-10-24 03:58:33"
+]
+]
+},
+"menu_f6_purchase_request_test": {
+"ir.ui.menu": [
+[
+1738,
+"2025-10-24 03:58:33"
+]
+]
+},
+"menu_f6_sales_invoice_lines": {
+"ir.ui.menu": [
+[
+834,
+"2022-02-15 14:54:30"
+]
+]
+},
+"menu_f6_test_app": {
+"ir.ui.menu": [
+[
+582,
+"2021-06-22 09:14:39"
+]
+]
+},
+"menu_f6_test_app_02": {
+"ir.ui.menu": [
+[
+584,
+"2021-06-22 09:15:36"
+]
+]
+},
+"menu_f6_uom_categories": {
+"ir.ui.menu": [
+[
+1152,
+"2024-01-16 05:06:15"
+]
+]
+},
+"menu_f6_work_center_costing": {
+"ir.ui.menu": [
+[
+633,
+"2021-08-12 06:35:18"
+]
+]
+},
+"menu_f6f_application_1": {
+"ir.ui.menu": [
+[
+1078,
+"2023-07-12 11:40:35"
+]
+]
+},
+"menu_f6f_calendar_filters": {
+"ir.ui.menu": [
+[
+1404,
+"2024-10-17 05:13:43"
+]
+]
+},
+"menu_f6f_company_property": {
+"ir.ui.menu": [
+[
+1463,
+"2024-11-12 11:03:49"
+]
+]
+},
+"menu_f6f_ir_model": {
+"ir.ui.menu": [
+[
+1131,
+"2023-11-16 12:00:49"
+]
+]
+},
+"menu_f6f_ir_model_access": {
+"ir.ui.menu": [
+[
+1153,
+"2024-01-24 12:26:05"
+]
+]
+},
+"menu_f6f_ir_module_category": {
+"ir.ui.menu": [
+[
+1124,
+"2023-10-18 05:39:36"
+]
+]
+},
+"menu_f6f_ir_module_cateory": {
+"ir.ui.menu": [
+[
+1128,
+"2023-10-27 06:15:37"
+]
+]
+},
+"menu_f6f_ir_sequence": {
+"ir.ui.menu": [
+[
+1345,
+"2024-08-26 08:49:36"
+]
+]
+},
+"menu_f6f_mail_activity": {
+"ir.ui.menu": [
+[
+1410,
+"2024-10-18 10:09:18"
+],
+[
+1454,
+"2024-10-30 09:59:18"
+]
+]
+},
+"menu_f6f_product_product": {
+"ir.ui.menu": [
+[
+1236,
+"2024-07-08 15:52:07"
+],
+[
+1464,
+"2024-11-18 09:38:14"
+]
+]
+},
+"menu_f6f_product_template": {
+"ir.ui.menu": [
+[
+1246,
+"2024-07-14 02:24:36"
+]
+]
+},
+"menu_f6f_purchase_order_line": {
+"ir.ui.menu": [
+[
+625,
+"2021-07-19 06:42:48"
+]
+]
+},
+"menu_f6f_signature_request_item_sign_request_item": {
+"ir.ui.menu": [
+[
+1400,
+"2024-10-10 05:01:11"
+]
+]
+},
+"menu_f6f_stock_move": {
+"ir.ui.menu": [
+[
+908,
+"2022-09-28 08:57:06"
+]
+]
+},
+"menu_f6f_studio_approval_entry_studio_approval_entry": {
+"ir.ui.menu": [
+[
+1401,
+"2024-10-10 05:39:04"
+]
+]
+},
+"menu_f6f_tariff_periods": {
+"ir.ui.menu": [
+[
+1017,
+"2023-02-16 06:17:03"
+]
+]
+},
+"menu_f6f_tariff_rates": {
+"ir.ui.menu": [
+[
+1018,
+"2023-02-16 06:17:22"
+]
+]
+},
+"menu_f6f_temp_consignment_header": {
+"ir.ui.menu": [
+[
+734,
+"2021-09-29 09:25:52"
+],
+[
+711,
+"2021-09-28 07:55:50"
+]
+]
+},
+"menu_f6f_user_group_access_rights": {
+"ir.ui.menu": [
+[
+1125,
+"2023-10-19 12:13:15"
+]
+]
+},
+"menu_f6r2_test_app_05": {
+"ir.ui.menu": [
+[
+593,
+"2021-06-22 10:16:58"
+]
+]
+},
+"menu_f6r2_test_app_05_account_analytic_account": {
+"ir.ui.menu": [
+[
+1692,
+"2025-07-14 16:48:44"
+]
+]
+},
+"menu_f6r2_test_app_05_account_analytic_line": {
+"ir.ui.menu": [
+[
+1325,
+"2024-08-01 06:03:12"
+]
+]
+},
+"menu_f6r2_test_app_05_account_analytic_plan": {
+"ir.ui.menu": [
+[
+1693,
+"2025-07-14 17:10:25"
+]
+]
+},
+"menu_f6r2_test_app_05_account_bank_statement": {
+"ir.ui.menu": [
+[
+1392,
+"2024-10-09 05:01:38"
+]
+]
+},
+"menu_f6r2_test_app_05_account_move": {
+"ir.ui.menu": [
+[
+1248,
+"2024-07-16 10:11:14"
+]
+]
+},
+"menu_f6r2_test_app_05_account_move_line": {
+"ir.ui.menu": [
+[
+635,
+"2021-08-16 10:55:07"
+]
+]
+},
+"menu_f6r2_test_app_05_account_payment": {
+"ir.ui.menu": [
+[
+793,
+"2021-11-24 09:23:50"
+]
+]
+},
+"menu_f6r2_test_app_05_account_payment_method_line": {
+"ir.ui.menu": [
+[
+1324,
+"2024-07-31 08:06:27"
+]
+]
+},
+"menu_f6r2_test_app_05_calendar_attendee": {
+"ir.ui.menu": [
+[
+1405,
+"2024-10-17 10:38:00"
+]
+]
+},
+"menu_f6r2_test_app_05_calendar_attendee_information_calendar_attendee": {
+"ir.ui.menu": [
+[
+1402,
+"2024-10-15 11:20:50"
+]
+]
+},
+"menu_f6r2_test_app_05_calendar_filters": {
+"ir.ui.menu": [
+[
+1403,
+"2024-10-15 11:38:08"
+]
+]
+},
+"menu_f6r2_test_app_05_companies_res_company": {
+"ir.ui.menu": [
+[
+1411,
+"2024-10-21 11:24:18"
+]
+]
+},
+"menu_f6r2_test_app_05_config_settings": {
+"ir.ui.menu": [
+[
+903,
+"2022-09-14 02:50:10"
+]
+]
+},
+"menu_f6r2_test_app_05_costing_worksheet": {
+"ir.ui.menu": [
+[
+1170,
+"2024-03-22 08:34:22"
+]
+]
+},
+"menu_f6r2_test_app_05_coupon_reward": {
+"ir.ui.menu": [
+[
+1413,
+"2024-10-22 03:40:21"
+]
+]
+},
+"menu_f6r2_test_app_05_coupon_rule": {
+"ir.ui.menu": [
+[
+1412,
+"2024-10-22 03:39:47"
+]
+]
+},
+"menu_f6r2_test_app_05_hr_attendance_overtime": {
+"ir.ui.menu": [
+[
+1232,
+"2024-05-15 07:24:32"
+]
+]
+},
+"menu_f6r2_test_app_05_hr_expense": {
+"ir.ui.menu": [
+[
+1393,
+"2024-10-09 05:05:34"
+]
+]
+},
+"menu_f6r2_test_app_05_hr_expense_sheet": {
+"ir.ui.menu": [
+[
+1235,
+"2024-07-04 07:22:00"
+],
+[
+1240,
+"2024-07-10 01:30:20"
+],
+[
+1394,
+"2024-10-09 05:05:55"
+]
+]
+},
+"menu_f6r2_test_app_05_imports": {
+"ir.ui.menu": [
+[
+1418,
+"2024-10-23 09:09:21"
+],
+[
+1431,
+"2024-10-23 12:11:06"
+],
+[
+1433,
+"2024-10-23 12:15:20"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_consignment_charge_header": {
+"ir.ui.menu": [
+[
+1438,
+"2024-10-23 12:24:27"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_consignment_charge_line": {
+"ir.ui.menu": [
+[
+1439,
+"2024-10-23 12:24:52"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_consignment_header_x_consignment_header": {
+"ir.ui.menu": [
+[
+1443,
+"2024-10-23 12:27:05"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_consignment_line_x_consignment_line": {
+"ir.ui.menu": [
+[
+1444,
+"2024-10-23 12:27:30"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_consignment_lines": {
+"ir.ui.menu": [
+[
+1437,
+"2024-10-23 12:21:58"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_import_rfq_charge_header": {
+"ir.ui.menu": [
+[
+1434,
+"2024-10-23 12:20:10"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_import_rfq_charge_line": {
+"ir.ui.menu": [
+[
+1436,
+"2024-10-23 12:21:09"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_purchase_agreement_types_purchase_requis": {
+"ir.ui.menu": [
+[
+1455,
+"2024-10-31 05:42:49"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_structures": {
+"ir.ui.menu": [
+[
+1453,
+"2024-10-30 04:22:29"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_structures_structure_details_x_structure": {
+"ir.ui.menu": [
+[
+1452,
+"2024-10-30 04:21:13"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_structures_structure_master_x_structure_": {
+"ir.ui.menu": [
+[
+1432,
+"2024-10-23 12:13:09"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_tariff": {
+"ir.ui.menu": [
+[
+1447,
+"2024-10-24 05:37:57"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_tariff_tariff_dates": {
+"ir.ui.menu": [
+[
+1450,
+"2024-10-24 05:39:35"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_tariff_tariff_master": {
+"ir.ui.menu": [
+[
+1449,
+"2024-10-24 05:39:04"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_tariff_tariff_rates": {
+"ir.ui.menu": [
+[
+1448,
+"2024-10-24 05:38:26"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_temp_consignment_header": {
+"ir.ui.menu": [
+[
+1442,
+"2024-10-23 12:26:05"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_temp_consignment_line": {
+"ir.ui.menu": [
+[
+1440,
+"2024-10-23 12:25:11"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_tp_invoice_header": {
+"ir.ui.menu": [
+[
+1445,
+"2024-10-23 12:27:57"
+]
+]
+},
+"menu_f6r2_test_app_05_imports_tp_invoice_line": {
+"ir.ui.menu": [
+[
+1446,
+"2024-10-23 12:28:33"
+]
+]
+},
+"menu_f6r2_test_app_05_inventory_routes": {
+"ir.ui.menu": [
+[
+1169,
+"2024-02-15 06:15:44"
+]
+]
+},
+"menu_f6r2_test_app_05_journal": {
+"ir.ui.menu": [
+[
+1691,
+"2025-07-11 02:32:41"
+]
+]
+},
+"menu_f6r2_test_app_05_journal_item": {
+"ir.ui.menu": [
+[
+1116,
+"2023-09-11 08:57:38"
+]
+]
+},
+"menu_f6r2_test_app_05_journal_item_2": {
+"ir.ui.menu": [
+[
+1117,
+"2023-09-18 02:09:51"
+]
+]
+},
+"menu_f6r2_test_app_05_lc_header": {
+"ir.ui.menu": [
+[
+787,
+"2021-11-03 07:34:17"
+]
+]
+},
+"menu_f6r2_test_app_05_mass_produce_serial": {
+"ir.ui.menu": [
+[
+636,
+"2021-08-17 03:04:04"
+]
+]
+},
+"menu_f6r2_test_app_05_mass_produce_serial_line": {
+"ir.ui.menu": [
+[
+637,
+"2021-08-17 09:55:26"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_bom": {
+"ir.ui.menu": [
+[
+1409,
+"2024-10-18 07:56:25"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_bom_general_cost": {
+"ir.ui.menu": [
+[
+631,
+"2021-08-06 03:12:34"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_bom_labour_cost": {
+"ir.ui.menu": [
+[
+629,
+"2021-08-03 07:38:44"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_bom_material_cost": {
+"ir.ui.menu": [
+[
+628,
+"2021-08-03 07:37:33"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_bom_overhead_cost": {
+"ir.ui.menu": [
+[
+630,
+"2021-08-03 07:39:17"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_eco_bom_change": {
+"ir.ui.menu": [
+[
+1406,
+"2024-10-17 11:10:03"
+]
+]
+},
+"menu_f6r2_test_app_05_mrp_workcenter_productivity": {
+"ir.ui.menu": [
+[
+1231,
+"2024-05-09 05:02:51"
+]
+]
+},
+"menu_f6r2_test_app_05_pos_config": {
+"ir.ui.menu": [
+[
+1395,
+"2024-10-09 05:06:45"
+],
+[
+1398,
+"2024-10-09 05:07:47"
+]
+]
+},
+"menu_f6r2_test_app_05_pos_order": {
+"ir.ui.menu": [
+[
+1396,
+"2024-10-09 05:07:08"
+]
+]
+},
+"menu_f6r2_test_app_05_pos_payment": {
+"ir.ui.menu": [
+[
+1397,
+"2024-10-09 05:07:29"
+]
+]
+},
+"menu_f6r2_test_app_05_pos_session": {
+"ir.ui.menu": [
+[
+1399,
+"2024-10-09 05:08:02"
+]
+]
+},
+"menu_f6r2_test_app_05_product_product": {
+"ir.ui.menu": [
+[
+781,
+"2021-10-26 05:17:00"
+]
+]
+},
+"menu_f6r2_test_app_05_product_template": {
+"ir.ui.menu": [
+[
+1086,
+"2023-08-01 08:03:30"
+]
+]
+},
+"menu_f6r2_test_app_05_product_test": {
+"ir.ui.menu": [
+[
+634,
+"2021-08-15 03:16:37"
+]
+]
+},
+"menu_f6r2_test_app_05_project_category_x_project_category": {
+"ir.ui.menu": [
+[
+1462,
+"2024-11-07 02:48:43"
+]
+]
+},
+"menu_f6r2_test_app_05_projects": {
+"ir.ui.menu": [
+[
+1458,
+"2024-11-07 02:42:46"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_helpdesk_team_helpdesk_team": {
+"ir.ui.menu": [
+[
+1459,
+"2024-11-07 02:43:18"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_project_milestone": {
+"ir.ui.menu": [
+[
+1382,
+"2024-10-09 03:33:13"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_project_project": {
+"ir.ui.menu": [
+[
+1244,
+"2024-07-12 03:36:01"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_project_sale_line_employee_map": {
+"ir.ui.menu": [
+[
+1383,
+"2024-10-09 03:56:21"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_project_stage_project_project_stage": {
+"ir.ui.menu": [
+[
+1461,
+"2024-11-07 02:44:35"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_project_task": {
+"ir.ui.menu": [
+[
+1379,
+"2024-10-09 02:19:18"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_project_update": {
+"ir.ui.menu": [
+[
+1380,
+"2024-10-09 02:48:32"
+]
+]
+},
+"menu_f6r2_test_app_05_projects_projects_project_project": {
+"ir.ui.menu": [
+[
+1460,
+"2024-11-07 02:43:57"
+]
+]
+},
+"menu_f6r2_test_app_05_pump_price_costing": {
+"ir.ui.menu": [
+[
+1166,
+"2024-02-01 01:47:17"
+]
+]
+},
+"menu_f6r2_test_app_05_purchase_agreement_type_purchase_requisition_typ": {
+"ir.ui.menu": [
+[
+1456,
+"2024-10-31 05:46:27"
+]
+]
+},
+"menu_f6r2_test_app_05_purchase_agreement_types_purchase_requisition_ty": {
+"ir.ui.menu": [
+[
+1457,
+"2024-10-31 05:50:43"
+]
+]
+},
+"menu_f6r2_test_app_05_purchase_requisition": {
+"ir.ui.menu": [
+[
+1389,
+"2024-10-09 04:52:40"
+]
+]
+},
+"menu_f6r2_test_app_05_purchase_requisition_line": {
+"ir.ui.menu": [
+[
+1388,
+"2024-10-09 04:52:17"
+]
+]
+},
+"menu_f6r2_test_app_05_repair_order": {
+"ir.ui.menu": [
+[
+1384,
+"2024-10-09 04:11:59"
+]
+]
+},
+"menu_f6r2_test_app_05_res_partner": {
+"ir.ui.menu": [
+[
+792,
+"2021-11-17 09:44:39"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_cust_invoice_s1": {
+"ir.ui.menu": [
+[
+888,
+"2022-04-07 04:20:55"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_customer_wise_invoices": {
+"ir.ui.menu": [
+[
+887,
+"2022-04-07 03:29:31"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_daily_s1": {
+"ir.ui.menu": [
+[
+884,
+"2022-04-07 01:41:42"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_daily_s2": {
+"ir.ui.menu": [
+[
+885,
+"2022-04-07 01:41:59"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_daily_s3": {
+"ir.ui.menu": [
+[
+886,
+"2022-04-07 01:42:14"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_date_test": {
+"ir.ui.menu": [
+[
+899,
+"2022-08-25 03:12:12"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_gross_margin_actuals": {
+"ir.ui.menu": [
+[
+1045,
+"2023-03-16 03:26:59"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_gross_margin_comparison": {
+"ir.ui.menu": [
+[
+1055,
+"2023-05-10 09:32:50"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_gross_margin_estimated": {
+"ir.ui.menu": [
+[
+1044,
+"2023-03-16 03:25:48"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_gross_margin_invoice_details": {
+"ir.ui.menu": [
+[
+1046,
+"2023-03-16 03:29:06"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_none_moving": {
+"ir.ui.menu": [
+[
+897,
+"2022-08-24 04:00:56"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_prod_summary_split": {
+"ir.ui.menu": [
+[
+906,
+"2022-09-27 06:22:23"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_production_orders": {
+"ir.ui.menu": [
+[
+896,
+"2022-08-11 10:44:56"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_production_variance": {
+"ir.ui.menu": [
+[
+907,
+"2022-09-28 05:46:35"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_sales_order_line": {
+"ir.ui.menu": [
+[
+895,
+"2022-08-04 04:28:18"
+]
+]
+},
+"menu_f6r2_test_app_05_rm_sales_prod_purch": {
+"ir.ui.menu": [
+[
+905,
+"2022-09-27 04:44:28"
+]
+]
+},
+"menu_f6r2_test_app_05_sale_order": {
+"ir.ui.menu": [
+[
+1084,
+"2023-07-17 14:17:32"
+]
+]
+},
+"menu_f6r2_test_app_05_sales": {
+"ir.ui.menu": [
+[
+1466,
+"2024-11-21 04:37:07"
+]
+]
+},
+"menu_f6r2_test_app_05_sales_model_debug": {
+"ir.ui.menu": [
+[
+1121,
+"2023-09-21 03:19:22"
+]
+]
+},
+"menu_f6r2_test_app_05_sales_sales_team_member": {
+"ir.ui.menu": [
+[
+1465,
+"2024-11-21 04:33:17"
+]
+]
+},
+"menu_f6r2_test_app_05_ss": {
+"ir.ui.menu": [
+[
+1130,
+"2023-11-08 07:46:35"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_landed_cos": {
+"ir.ui.menu": [
+[
+1390,
+"2024-10-09 04:57:03"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_landed_cost_line": {
+"ir.ui.menu": [
+[
+1391,
+"2024-10-09 04:59:15"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_location": {
+"ir.ui.menu": [
+[
+1122,
+"2023-10-04 02:06:37"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_location_route": {
+"ir.ui.menu": [
+[
+1042,
+"2023-03-06 05:37:02"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_move": {
+"ir.ui.menu": [
+[
+632,
+"2021-08-10 14:58:39"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_move_line": {
+"ir.ui.menu": [
+[
+780,
+"2021-10-15 05:32:16"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_picking": {
+"ir.ui.menu": [
+[
+979,
+"2023-02-07 10:36:59"
+],
+[
+1174,
+"2024-04-17 10:00:57"
+],
+[
+978,
+"2023-02-07 10:36:29"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_picking_type": {
+"ir.ui.menu": [
+[
+1123,
+"2023-10-04 02:16:43"
+],
+[
+1367,
+"2024-09-11 08:34:42"
+],
+[
+1408,
+"2024-10-18 01:47:19"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_quant": {
+"ir.ui.menu": [
+[
+1056,
+"2023-05-17 02:36:28"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_rule": {
+"ir.ui.menu": [
+[
+1407,
+"2024-10-17 11:21:16"
+]
+]
+},
+"menu_f6r2_test_app_05_stock_valuation_layer": {
+"ir.ui.menu": [
+[
+1386,
+"2024-10-09 04:38:55"
+]
+]
+},
+"menu_f6r2_test_app_05_structure_details": {
+"ir.ui.menu": [
+[
+668,
+"2021-09-21 02:44:03"
+]
+]
+},
+"menu_f6r2_test_app_05_structure_master_x_structure_master": {
+"ir.ui.menu": [
+[
+1419,
+"2024-10-23 09:11:18"
+]
+]
+},
+"menu_f6r2_test_app_05_task_diagnosis": {
+"ir.ui.menu": [
+[
+1070,
+"2023-06-01 05:40:18"
+]
+]
+},
+"menu_f6r2_test_app_05_temp123": {
+"ir.ui.menu": [
+[
+870,
+"2022-03-18 05:18:43"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_actual_budget": {
+"ir.ui.menu": [
+[
+1050,
+"2023-03-29 03:31:44"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_conn_line": {
+"ir.ui.menu": [
+[
+869,
+"2022-03-18 05:07:52"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_consignment_header": {
+"ir.ui.menu": [
+[
+733,
+"2021-09-29 06:25:04"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_consignment_line": {
+"ir.ui.menu": [
+[
+712,
+"2021-09-28 08:03:52"
+],
+[
+735,
+"2021-09-29 09:26:20"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_estimated": {
+"ir.ui.menu": [
+[
+1049,
+"2023-03-28 14:52:18"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_tp_invoice_header": {
+"ir.ui.menu": [
+[
+782,
+"2021-10-27 07:39:35"
+]
+]
+},
+"menu_f6r2_test_app_05_temp_tp_invoice_line": {
+"ir.ui.menu": [
+[
+783,
+"2021-10-27 07:40:27"
+]
+]
+},
+"menu_f6r2_test_app_05_test02": {
+"ir.ui.menu": [
+[
+1695,
+"2025-08-05 10:11:37"
+]
+]
+},
+"menu_f6r2_test_app_05_test_form": {
+"ir.ui.menu": [
+[
+877,
+"2022-03-24 06:18:50"
+]
+]
+},
+"menu_f6r2_test_app_05_test_layout": {
+"ir.ui.menu": [
+[
+1047,
+"2023-03-16 05:30:57"
+]
+]
+},
+"menu_f6r2_test_app_05_test_model_link": {
+"ir.ui.menu": [
+[
+890,
+"2022-04-07 07:20:57"
+]
+]
+},
+"menu_f6r2_test_app_05_test_model_link_2": {
+"ir.ui.menu": [
+[
+891,
+"2022-04-18 05:25:07"
+]
+]
+},
+"menu_f6r2_test_app_05_test_model_primary": {
+"ir.ui.menu": [
+[
+889,
+"2022-04-07 07:18:18"
+]
+]
+},
+"menu_f6r2_test_app_05_test_rm_gross_margin_actuals": {
+"ir.ui.menu": [
+[
+1856,
+"2026-03-17 06:05:24"
+]
+]
+},
+"menu_f6r2_test_app_05_x_con_consolidated_lin": {
+"ir.ui.menu": [
+[
+1243,
+"2024-07-11 08:05:10"
+]
+]
+},
+"menu_f6r2_test_app_05_x_customer_groups": {
+"ir.ui.menu": [
+[
+1283,
+"2024-07-17 16:34:37"
+]
+]
+},
+"menu_f6r2_test_app_05_x_customer_posting_pro": {
+"ir.ui.menu": [
+[
+1284,
+"2024-07-17 16:36:07"
+]
+]
+},
+"menu_f6r2_test_app_05_x_material_request": {
+"ir.ui.menu": [
+[
+1387,
+"2024-10-09 04:39:46"
+]
+]
+},
+"menu_f6r2_test_app_05_x_po_line_non_inventor": {
+"ir.ui.menu": [
+[
+1242,
+"2024-07-11 05:09:01"
+]
+]
+},
+"menu_f6r2_test_app_05_x_po_non_inventory": {
+"ir.ui.menu": [
+[
+1127,
+"2023-10-26 06:06:08"
+],
+[
+1241,
+"2024-07-11 05:07:43"
+]
+]
+},
+"menu_f6r2_test_app_05_x_pr_line_cash": {
+"ir.ui.menu": [
+[
+1239,
+"2024-07-09 15:48:09"
+]
+]
+},
+"menu_f6r2_test_app_05_x_purchase_request_cas": {
+"ir.ui.menu": [
+[
+1238,
+"2024-07-09 15:40:00"
+]
+]
+},
+"menu_f6r2_test_app_05_x_purchase_request_lin": {
+"ir.ui.menu": [
+[
+1237,
+"2024-07-09 14:28:29"
+]
+]
+},
+"menu_f6r2_test_app_05_x_structure_master": {
+"ir.ui.menu": [
+[
+1451,
+"2024-10-30 04:19:59"
+]
+]
+},
+"menu_f6r2_test_app_05_x_tp_invoice_header": {
+"ir.ui.menu": [
+[
+1126,
+"2023-10-26 06:04:19"
+]
+]
+},
+"menu_f6r3_all_models": {
+"ir.ui.menu": [
+[
+1681,
+"2025-05-22 05:30:05"
+]
+]
+},
+"menu_f6r3_employees_bulk_inputs": {
+"ir.ui.menu": [
+[
+1814,
+"2025-12-17 08:42:50"
+],
+[
+1813,
+"2025-12-17 08:42:10"
+]
+]
+},
+"menu_f6r3_faqs": {
+"ir.ui.menu": [
+[
+1642,
+"2025-04-23 07:20:02"
+]
+]
+},
+"menu_f6r3_faqs_website_faq": {
+"ir.ui.menu": [
+[
+1643,
+"2025-04-23 07:20:02"
+]
+]
+},
+"menu_f6r3_jinasena_reports_configuration_jinasena_custom_reports_tags": {
+"ir.ui.menu": [
+[
+1732,
+"2025-10-21 09:48:26"
+]
+]
+},
+"menu_f6r3_payroll_configuration_custom_configuration_paye_tax": {
+"ir.ui.menu": [
+[
+824,
+"2022-02-02 03:35:01"
+]
+]
+},
+"menu_f6r3_payroll_configuration_custom_configuration_paye_tax_tags": {
+"ir.ui.menu": [
+[
+826,
+"2022-02-02 03:35:01"
+]
+]
+},
+"menu_f6r3_posting_profiles": {
+"ir.ui.menu": [
+[
+546,
+"2021-05-10 04:59:57"
+]
+]
+},
+"menu_f6r3_posting_profiles_customer_posting_profile": {
+"ir.ui.menu": [
+[
+547,
+"2021-05-10 04:59:57"
+]
+]
+},
+"menu_f6r3_project_reporting_project_budgeted_cash_flow": {
+"ir.ui.menu": [
+[
+1057,
+"2023-05-17 10:39:14"
+]
+]
+},
+"menu_f6r3_purchase_cash_purchase": {
+"ir.ui.menu": [
+[
+1035,
+"2023-02-22 10:12:52"
+]
+]
+},
+"menu_f6r3_purchase_cash_purchase_cash_purchase": {
+"ir.ui.menu": [
+[
+1036,
+"2023-02-22 10:13:58"
+]
+]
+},
+"menu_f6r3_purchase_cash_purchase_cash_purchase_lines": {
+"ir.ui.menu": [
+[
+1039,
+"2023-02-22 10:53:44"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations": {
+"ir.ui.menu": [
+[
+1012,
+"2023-02-16 06:13:47"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_charges": {
+"ir.ui.menu": [
+[
+1024,
+"2023-02-16 06:25:22"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_charges_charge": {
+"ir.ui.menu": [
+[
+1025,
+"2023-02-16 06:26:04"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_charges_duties": {
+"ir.ui.menu": [
+[
+1026,
+"2023-02-16 06:26:28"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_charges_taxes": {
+"ir.ui.menu": [
+[
+1027,
+"2023-02-16 06:26:58"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_custom_currenc": {
+"ir.ui.menu": [
+[
+1022,
+"2023-02-16 06:23:45"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_delivery_terms": {
+"ir.ui.menu": [
+[
+1019,
+"2023-02-16 06:20:40"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_import_charges": {
+"ir.ui.menu": [
+[
+1013,
+"2023-02-16 06:14:27"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_misc_charge_co": {
+"ir.ui.menu": [
+[
+1020,
+"2023-02-16 06:21:56"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_payment_method": {
+"ir.ui.menu": [
+[
+1023,
+"2023-02-16 06:24:38"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_structures": {
+"ir.ui.menu": [
+[
+1014,
+"2023-02-16 06:15:38"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_tariff": {
+"ir.ui.menu": [
+[
+1015,
+"2023-02-16 06:16:06"
+]
+]
+},
+"menu_f6r3_purchase_configuration_imports_configurations_tariff_tariff_": {
+"ir.ui.menu": [
+[
+1016,
+"2023-02-16 06:16:37"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_charges": {
+"ir.ui.menu": [
+[
+648,
+"2021-08-23 08:40:00"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_charges_charges": {
+"ir.ui.menu": [
+[
+645,
+"2021-08-23 08:33:26"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_charges_duties": {
+"ir.ui.menu": [
+[
+646,
+"2021-08-23 08:35:47"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_charges_taxes": {
+"ir.ui.menu": [
+[
+647,
+"2021-08-23 08:37:15"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_custom_currency_rate": {
+"ir.ui.menu": [
+[
+738,
+"2021-10-05 02:27:53"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_custom_currency_rates": {
+"ir.ui.menu": [
+[
+737,
+"2021-10-05 02:27:32"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_delivery_term_charges": {
+"ir.ui.menu": [
+[
+665,
+"2021-09-03 07:33:34"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_delivery_terms": {
+"ir.ui.menu": [
+[
+664,
+"2021-09-03 07:22:16"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_import_charges": {
+"ir.ui.menu": [
+[
+649,
+"2021-08-23 09:19:28"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_imports_ledger_setup": {
+"ir.ui.menu": [
+[
+736,
+"2021-10-04 08:25:08"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_misc_charges": {
+"ir.ui.menu": [
+[
+653,
+"2021-08-25 06:21:01"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_misc_charges_misc_charge_codes": {
+"ir.ui.menu": [
+[
+652,
+"2021-08-25 05:18:29"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_structures": {
+"ir.ui.menu": [
+[
+654,
+"2021-08-25 09:42:57"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_tariffs": {
+"ir.ui.menu": [
+[
+639,
+"2021-08-23 03:50:12"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_temp_structure_details_2": {
+"ir.ui.menu": [
+[
+661,
+"2021-09-01 08:49:02"
+]
+]
+},
+"menu_f6r3_purchase_configuration_setups_ttt_structure_master": {
+"ir.ui.menu": [
+[
+663,
+"2021-09-02 02:02:40"
+]
+]
+},
+"menu_f6r3_purchase_imports": {
+"ir.ui.menu": [
+[
+1008,
+"2023-02-16 06:09:44"
+],
+[
+1467,
+"2025-01-27 08:03:42"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_con_consolidated_line": {
+"ir.ui.menu": [
+[
+789,
+"2021-11-15 03:51:06"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_consolidated_consignments": {
+"ir.ui.menu": [
+[
+788,
+"2021-11-15 03:50:30"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration": {
+"ir.ui.menu": [
+[
+743,
+"2021-10-07 06:48:56"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_charges": {
+"ir.ui.menu": [
+[
+748,
+"2021-10-07 07:05:11"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_charges_charges": {
+"ir.ui.menu": [
+[
+749,
+"2021-10-07 07:15:56"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_charges_duties": {
+"ir.ui.menu": [
+[
+750,
+"2021-10-07 07:17:46"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_charges_taxes": {
+"ir.ui.menu": [
+[
+751,
+"2021-10-07 07:19:30"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_custom_currency_ra": {
+"ir.ui.menu": [
+[
+754,
+"2021-10-07 07:29:54"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_delivery_terms": {
+"ir.ui.menu": [
+[
+747,
+"2021-10-07 07:03:17"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_import_charges": {
+"ir.ui.menu": [
+[
+744,
+"2021-10-07 06:56:45"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_imports_ledger_set": {
+"ir.ui.menu": [
+[
+753,
+"2021-10-07 07:27:12"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_misc_charge_codes": {
+"ir.ui.menu": [
+[
+752,
+"2021-10-07 07:24:09"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_payment_methods": {
+"ir.ui.menu": [
+[
+786,
+"2021-11-02 09:13:10"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_structures": {
+"ir.ui.menu": [
+[
+745,
+"2021-10-07 06:58:24"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_tariff": {
+"ir.ui.menu": [
+[
+997,
+"2023-02-16 04:58:26"
+],
+[
+998,
+"2023-02-16 05:47:38"
+],
+[
+1004,
+"2023-02-16 06:06:31"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_tariff_tariff_mast": {
+"ir.ui.menu": [
+[
+1005,
+"2023-02-16 06:07:13"
+],
+[
+999,
+"2023-02-16 05:49:03"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_tariff_tariff_peri": {
+"ir.ui.menu": [
+[
+1006,
+"2023-02-16 06:07:36"
+],
+[
+1000,
+"2023-02-16 05:56:34"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_imports_configuration_tariff_tariff_rate": {
+"ir.ui.menu": [
+[
+1007,
+"2023-02-16 06:07:54"
+],
+[
+1001,
+"2023-02-16 05:56:52"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_purchase_invoice_lines": {
+"ir.ui.menu": [
+[
+875,
+"2022-03-23 04:21:03"
+],
+[
+874,
+"2022-03-23 03:09:02"
+]
+]
+},
+"menu_f6r3_purchase_imports_01_purchase_invoices": {
+"ir.ui.menu": [
+[
+755,
+"2021-10-07 07:33:06"
+]
+]
+},
+"menu_f6r3_purchase_imports_consolidated_consignments": {
+"ir.ui.menu": [
+[
+1471,
+"2025-01-27 08:07:10"
+],
+[
+1011,
+"2023-02-16 06:13:12"
+]
+]
+},
+"menu_f6r3_purchase_imports_letter_of_credit": {
+"ir.ui.menu": [
+[
+1472,
+"2025-01-27 08:07:47"
+],
+[
+1032,
+"2023-02-20 14:00:27"
+]
+]
+},
+"menu_f6r3_purchase_imports_purchase_invoice_lines": {
+"ir.ui.menu": [
+[
+1010,
+"2023-02-16 06:12:11"
+],
+[
+1469,
+"2025-01-27 08:05:55"
+]
+]
+},
+"menu_f6r3_purchase_imports_purchase_invoices": {
+"ir.ui.menu": [
+[
+1009,
+"2023-02-16 06:11:26"
+],
+[
+1470,
+"2025-01-27 08:06:45"
+],
+[
+1468,
+"2025-01-27 08:04:50"
+]
+]
+},
+"menu_f6r3_purchase_requisition_mgmt_cash_purchases_cash_purchase": {
+"ir.ui.menu": [
+[
+598,
+"2021-07-06 07:31:23"
+]
+]
+},
+"menu_f6r3_purchase_requisition_mgmt_cash_purchases_cash_purchase_line": {
+"ir.ui.menu": [
+[
+599,
+"2021-07-07 03:05:02"
+]
+]
+},
+"menu_f6r3_purchase_requisition_mgmt_purchase_order_non_inventory_purch": {
+"ir.ui.menu": [
+[
+624,
+"2021-07-19 06:42:18"
+]
+]
+},
+"menu_f6r3_sales_configuration_sales_configurations": {
+"ir.ui.menu": [
+[
+904,
+"2022-09-14 02:59:55"
+]
+]
+},
+"menu_f6r3_sales_reporting_project_budgeted_cash_flow": {
+"ir.ui.menu": [
+[
+1058,
+"2023-05-17 10:52:48"
+]
+]
+},
+"menu_f6r3_tariff": {
+"ir.ui.menu": [
+[
+1429,
+"2024-10-23 11:47:11"
+]
+]
+},
+"menu_f6r3_tariff_tariff_master": {
+"ir.ui.menu": [
+[
+1003,
+"2023-02-16 06:05:19"
+]
+]
+},
+"menu_f6r3_tariff_tariff_periods_x_tariff_date": {
+"ir.ui.menu": [
+[
+1029,
+"2023-02-16 06:29:18"
+]
+]
+},
+"menu_f6r3_website_faq_website_faqs": {
+"ir.ui.menu": [
+[
+1645,
+"2025-04-23 09:38:49"
+]
+]
+},
+"menu_f6url_consignment": {
+"ir.ui.menu": [
+[
+873,
+"2022-03-22 12:00:18"
+]
+]
+},
+"menu_f6url_imp_temp": {
+"ir.ui.menu": [
+[
+1435,
+"2024-10-23 12:20:32"
+]
+]
+},
+"menu_f6url_imports_temp": {
+"ir.ui.menu": [
+[
+1441,
+"2024-10-23 12:25:34"
+]
+]
+},
+"menu_f6url_my_menu_01": {
+"ir.ui.menu": [
+[
+583,
+"2021-06-22 09:15:04"
+]
+]
+},
+"menu_f6url_repair_diagnosis": {
+"ir.ui.menu": [
+[
+1061,
+"2023-06-01 04:47:13"
+]
+]
+},
+"menu_f6url_tariff_02": {
+"ir.ui.menu": [
+[
+1028,
+"2023-02-16 06:28:38"
+]
+]
+},
+"menu_f6url_test_menu": {
+"ir.ui.menu": [
+[
+1145,
+"2024-01-11 08:42:01"
+]
+]
+},
+"menu_studio_bulk_inputs_manager": {
+"ir.ui.menu": [
+[
+1816,
+"2025-12-17 08:44:12"
+]
+]
+},
+"menu_studio_divisional_pl": {
+"ir.ui.menu": [
+[
+1640,
+"2025-03-19 15:36:18"
+]
+]
+},
+"menu_studio_import_bulk_inputs_hr": {
+"ir.ui.menu": [
+[
+1815,
+"2025-12-17 08:44:12"
+],
+[
+1818,
+"2025-12-17 08:45:37"
+]
+]
+},
+"menu_studio_manufacturing_reports": {
+"ir.ui.menu": [
+[
+898,
+"2022-08-24 11:21:25"
+]
+]
+},
+"menu_studio_profit_loss_rohana": {
+"ir.ui.menu": [
+[
+1639,
+"2025-03-18 15:13:15"
+]
+]
+},
+"menu_studio_test_app_05_access_management": {
+"ir.ui.menu": [
+[
+1172,
+"2024-04-10 03:25:52"
+]
+]
+},
+"odoo_studio_report_s_41208986_5ebe_49a7_82f1_4baeb6dd9764": {
+"ir.ui.view": [
+[
+5070,
+"2023-08-07 10:24:16"
+]
+]
+},
+"odoo_studio_report_s_e19d97ca_7ec3_431e_a6e4_3e03b6b858a3": {
+"ir.ui.view": [
+[
+3088,
+"2021-11-17 10:24:47"
+]
+]
+},
+"odoo_studio_studio_c_031ebf41_60fd_4f2b_b8e1_955f4e7ba0a8": {
+"ir.ui.view": [
+[
+3272,
+"2022-02-23 05:04:52"
+]
+]
+},
+"odoo_studio_studio_c_094518fc_d226_4668_93a9_efa0389b9c5e": {
+"ir.ui.view": [
+[
+5032,
+"2023-06-16 05:10:41"
+]
+]
+},
+"odoo_studio_studio_c_15b6d0b3_f4e2_4fce_b856_729857a81be4": {
+"ir.ui.view": [
+[
+5307,
+"2023-10-11 07:28:39"
+]
+]
+},
+"odoo_studio_studio_c_22241ee3_678d_4dbe_ad15_5b06d6c718ba": {
+"ir.ui.view": [
+[
+3726,
+"2022-02-24 03:46:57"
+]
+]
+},
+"odoo_studio_studio_c_2482f058_053f_4150_9e24_af192c98638c": {
+"ir.ui.view": [
+[
+3826,
+"2022-04-07 04:45:51"
+]
+]
+},
+"odoo_studio_studio_c_39118f17_ddd1_4cfc_8997_a5059c7ef70d": {
+"ir.ui.view": [
+[
+3103,
+"2021-11-19 09:46:44"
+]
+]
+},
+"odoo_studio_studio_c_44aa5b45_80a7_4a40_890b_c0adb1b5d513": {
+"ir.ui.view": [
+[
+5038,
+"2023-06-22 04:44:20"
+]
+]
+},
+"odoo_studio_studio_c_4b190db3_faa5_42af_a04f_17272c907a60": {
+"ir.ui.view": [
+[
+3898,
+"2022-08-10 15:26:52"
+]
+]
+},
+"odoo_studio_studio_c_4fa89f05_b484_452d_bd85_69b50ecd801f": {
+"ir.ui.view": [
+[
+3737,
+"2022-02-24 13:05:22"
+]
+]
+},
+"odoo_studio_studio_c_527878df_4a8a_4a6b_b909_8154cc93471b": {
+"ir.ui.view": [
+[
+3734,
+"2022-02-24 12:56:09"
+]
+]
+},
+"odoo_studio_studio_c_59374783_78ad_4e75_adfd_e068f5077baf": {
+"ir.ui.view": [
+[
+3802,
+"2022-03-30 03:27:36"
+]
+]
+},
+"odoo_studio_studio_c_5dc8943f_dc2a_42bf_a6f9_d1f083125db2": {
+"ir.ui.view": [
+[
+3759,
+"2022-02-28 08:09:36"
+]
+]
+},
+"odoo_studio_studio_c_65a12a89_b480_499c_a040_6b0af21f995f": {
+"ir.ui.view": [
+[
+3382,
+"2022-02-23 11:43:25"
+]
+]
+},
+"odoo_studio_studio_c_73e8560d_051c_4016_86c8_72eb5a1ec427": {
+"ir.ui.view": [
+[
+3109,
+"2021-11-23 08:50:07"
+]
+]
+},
+"odoo_studio_studio_c_75e1eb8e_d6d5_400f_9929_623ea8c30936": {
+"ir.ui.view": [
+[
+3750,
+"2022-02-24 15:58:28"
+]
+]
+},
+"odoo_studio_studio_c_788ffa8c_0af4_4d02_adcd_aefe75923667": {
+"ir.ui.view": [
+[
+3742,
+"2022-02-24 15:28:12"
+]
+]
+},
+"odoo_studio_studio_c_7a0cd37b_003f_45d2_be22_a8484cfc9844": {
+"ir.ui.view": [
+[
+5025,
+"2023-06-15 06:59:41"
+]
+]
+},
+"odoo_studio_studio_c_82bddb69_556e_445b_897f_1e125e828edb": {
+"ir.ui.view": [
+[
+5022,
+"2023-06-15 06:57:51"
+]
+]
+},
+"odoo_studio_studio_c_910a9143_2ba2_45d3_913e_08ac1df79b3f": {
+"ir.ui.view": [
+[
+4891,
+"2023-03-21 02:07:07"
+]
+]
+},
+"odoo_studio_studio_c_9a30e078_ea77_426d_8831_13a4b61bc62e": {
+"ir.ui.view": [
+[
+3770,
+"2022-02-28 11:42:06"
+]
+]
+},
+"odoo_studio_studio_c_a14d1e1f_c62d_4d8e_ba43_a599fecfb3a3": {
+"ir.ui.view": [
+[
+5018,
+"2023-06-14 09:36:06"
+]
+]
+},
+"odoo_studio_studio_c_a41c1044_4088_47d7_a815_43c0af5977b6": {
+"ir.ui.view": [
+[
+3891,
+"2022-07-29 02:42:30"
+]
+]
+},
+"odoo_studio_studio_c_ac28ff42_7f4d_437c_b122_bdafef8999d9": {
+"ir.ui.view": [
+[
+3731,
+"2022-02-24 12:49:41"
+]
+]
+},
+"odoo_studio_studio_c_b53edde0_d7d7_405c_a734_25ce3b07b251": {
+"ir.ui.view": [
+[
+6063,
+"2024-10-01 04:55:21"
+]
+]
+},
+"odoo_studio_studio_c_ba347846_ff40_4e99_8010_77d737155c63": {
+"ir.ui.view": [
+[
+5041,
+"2023-06-22 05:31:24"
+]
+]
+},
+"odoo_studio_studio_c_bdb4da57_12fe_43ca_9d8e_73cbb4b4c673": {
+"ir.ui.view": [
+[
+6067,
+"2024-10-01 04:58:07"
+]
+]
+},
+"odoo_studio_studio_c_c49ca5bd_fa0a_461c_b2aa_ef3052e2fa58": {
+"ir.ui.view": [
+[
+3747,
+"2022-02-24 15:46:27"
+]
+]
+},
+"odoo_studio_studio_c_c71a320f_0dae_4922_83e7_df8b3fe71634": {
+"ir.ui.view": [
+[
+3765,
+"2022-02-28 09:28:19"
+]
+]
+},
+"odoo_studio_studio_c_c9125438_7276_4af7_a722_716aca43d3a2": {
+"ir.ui.view": [
+[
+3100,
+"2021-11-19 06:09:09"
+]
+]
+},
+"odoo_studio_studio_c_d430423e_afb2_4b9b_a61a_8f8643c35f6c": {
+"ir.ui.view": [
+[
+3264,
+"2022-02-21 07:20:29"
+]
+]
+},
+"odoo_studio_studio_c_d6346645_64fe_466e_adba_90fef0f693ec": {
+"ir.ui.view": [
+[
+3856,
+"2022-06-30 07:56:47"
+]
+]
+},
+"odoo_studio_studio_c_d80eb087_e85f_4b43_8cfb_18bbbd7b6f6d": {
+"ir.ui.view": [
+[
+3379,
+"2022-02-23 05:50:44"
+]
+]
+},
+"odoo_studio_studio_c_d9083117_e0c1_46a1_b1e5_233525c38fe0": {
+"ir.ui.view": [
+[
+3092,
+"2021-11-19 03:45:07"
+]
+]
+},
+"odoo_studio_studio_c_db5c3c6d_7463_460e_879c_e48954a39183": {
+"ir.ui.view": [
+[
+3905,
+"2022-08-11 13:02:34"
+]
+]
+},
+"odoo_studio_studio_c_de5f9339_3655_45b7_a088_f4d7a7bdacb1": {
+"ir.ui.view": [
+[
+6066,
+"2024-10-01 04:57:28"
+]
+]
+},
+"odoo_studio_studio_c_dfb4c6fb_e1f6_4489_a218_9b79d7f850cb": {
+"ir.ui.view": [
+[
+3148,
+"2022-01-06 06:25:34"
+]
+]
+},
+"odoo_studio_studio_c_e332ee8f_be15_4a15_b896_e22cf2e37d80": {
+"ir.ui.view": [
+[
+3762,
+"2022-02-28 08:38:34"
+]
+]
+},
+"odoo_studio_studio_c_e5c8d31e_a3f9_44f8_a7bc_6b222fc55057": {
+"ir.ui.view": [
+[
+5035,
+"2023-06-16 06:15:26"
+]
+]
+},
+"odoo_studio_studio_c_e7ece274_d9a8_4c67_86fd_8ebdb89898e2": {
+"ir.ui.view": [
+[
+3106,
+"2021-11-22 07:34:13"
+]
+]
+},
+"odoo_studio_studio_c_f9cad3bd_7cfc_477f_8376_b3882793a6dc": {
+"ir.ui.view": [
+[
+3097,
+"2021-11-19 05:55:22"
+]
+]
+},
+"odoo_studio_studio_c_f9ebb75f_45a8_492a_a7ee_cd7b9116d110": {
+"ir.ui.view": [
+[
+4833,
+"2023-03-02 00:46:50"
+]
+]
+},
+"report_purchasequota_4a184d90_0fda_484d_b568_010c98eb96ab": {
+"ir.ui.view": [
+[
+8898,
+"2025-11-17 03:31:47"
+]
+]
+},
+"report_purchasequota_6d8e8720_3f12_486a_8a85_a22a8699cea0": {
+"ir.ui.view": [
+[
+8890,
+"2025-11-11 05:20:49"
+]
+]
+},
+"report_repairorder_0a55e338_417a_477d_9c3f_5e5054b8142f": {
+"ir.ui.view": [
+[
+8976,
+"2025-11-17 11:12:25"
+]
+]
+},
+"report_repairorder_5f10a0cb_44e1_42ee_befe_e825f2faf99a": {
+"ir.ui.view": [
+[
+8945,
+"2025-11-17 06:40:46"
+]
+]
+},
+"report_repairorder_8d6acf7a_01ac_4f54_9ebb_8ecbea4e05f8": {
+"ir.ui.view": [
+[
+8974,
+"2025-11-17 11:11:41"
+]
+]
+},
+"report_repairorder_ad64bed4_7375_4d2d_aabe_02e43482568e": {
+"ir.ui.view": [
+[
+8966,
+"2025-11-17 09:45:29"
+]
+]
+},
+"report_repairorder_f604a71b_282c_46ee_8c29_2cec799cea1d": {
+"ir.ui.view": [
+[
+8947,
+"2025-11-17 06:41:44"
+]
+]
+},
+"report_saleorder_doc_9a734b47_22b0_440a_b9d0_6fb0f5301219": {
+"ir.ui.view": [
+[
+5067,
+"2023-08-07 10:23:44"
+]
+]
+},
+"report_saleorder_doc_c5e75404_19c5_4400_bbe1_d5c9d54d8f3a": {
+"ir.ui.view": [
+[
+3087,
+"2021-11-17 10:24:14"
+]
+]
+},
+"rule_116_all_salesteam": {
+"ir.rule": [
+[
+116,
+"2021-02-03 05:30:53"
+]
+]
+},
+"rule_117_sales_team_multi_company": {
+"ir.rule": [
+[
+117,
+"2021-02-03 05:30:53"
+]
+]
+},
+"rule_151_point_of_sale_order": {
+"ir.rule": [
+[
+151,
+"2021-02-03 05:30:53"
+]
+]
+},
+"rule_153_point_of_sale_config": {
+"ir.rule": [
+[
+153,
+"2021-02-03 05:30:53"
+]
+]
+},
+"rule_156_pos_payment": {
+"ir.rule": [
+[
+156,
+"2021-02-03 05:30:53"
+]
+]
+},
+"rule_189_pos_sales_team": {
+"ir.rule": [
+[
+189,
+"2021-02-03 05:30:53"
+]
+]
+},
+"rule_244_own_events": {
+"ir.rule": [
+[
+244,
+"2021-03-18 05:56:12"
+]
+]
+},
+"rule_245_all_calendar_event_for_employees": {
+"ir.rule": [
+[
+245,
+"2021-03-18 05:56:12"
+]
+]
+},
+"rule_246_own_attendees": {
+"ir.rule": [
+[
+246,
+"2021-03-18 05:56:12"
+]
+]
+},
+"rule_247_private_events": {
+"ir.rule": [
+[
+247,
+"2021-03-18 05:56:12"
+]
+]
+},
+"rule_311_personal_leads": {
+"ir.rule": [
+[
+311,
+"2021-09-24 07:06:56"
+]
+]
+},
+"rule_312_crm_lead_multi_company": {
+"ir.rule": [
+[
+312,
+"2021-09-24 07:06:56"
+]
+]
+},
+"rule_313_all_leads": {
+"ir.rule": [
+[
+313,
+"2021-09-24 07:06:56"
+]
+]
+},
+"rule_314_all_activities": {
+"ir.rule": [
+[
+314,
+"2021-09-24 07:06:56"
+]
+]
+},
+"rule_315_personal_activities": {
+"ir.rule": [
+[
+315,
+"2021-09-24 07:06:56"
+]
+]
+},
+"rule_316_crm_lead_multi_company": {
+"ir.rule": [
+[
+316,
+"2021-09-24 07:06:56"
+]
+]
+},
+"rule_425_x_project_task_worksheet_template_1_own": {
+"ir.rule": [
+[
+425,
+"2023-02-08 09:43:59"
+]
+]
+},
+"rule_426_x_project_task_worksheet_template_1_all": {
+"ir.rule": [
+[
+426,
+"2023-02-08 09:43:59"
+]
+]
+},
+"rule_428_generate_sales_coupon_rule": {
+"ir.rule": [
+[
+428,
+"2023-02-15 05:43:10"
+]
+]
+},
+"rule_448_import_purchase_requests_write": {
+"ir.rule": [
+[
+448,
+"2023-10-27 12:36:19"
+]
+]
+},
+"rule_449_local_purchase_requests_write": {
+"ir.rule": [
+[
+449,
+"2023-11-08 08:49:00"
+]
+]
+},
+"rule_628_jin_multi_company_coupon_program": {
+"ir.rule": [
+[
+628,
+"2024-10-24 04:00:56"
+]
+]
+},
+"rule_653_loyalty_program_multi_company_rule": {
+"ir.rule": [
+[
+653,
+"2025-03-18 10:02:53"
+]
+]
+},
+"rule_654_loyalty_card_multi_company_rule": {
+"ir.rule": [
+[
+654,
+"2025-03-18 10:02:53"
+]
+]
+},
+"rule_655_loyalty_rule_multi_company_rule": {
+"ir.rule": [
+[
+655,
+"2025-03-18 10:02:53"
+]
+]
+},
+"rule_656_loyalty_reward_multi_company_rule": {
+"ir.rule": [
+[
+656,
+"2025-03-18 10:02:53"
+]
+]
+},
+"rule_f7_hr_expense_hr_expense": {
+"ir.rule": [
+[
+441,
+"2023-08-22 10:21:47"
+]
+]
+},
+"sa_f5_ir_attachment_restrict_attachment_delete_for_approved_expenses": {
+"ir.actions.server": [
+[
+2598,
+"2024-07-10 02:25:14"
+]
+]
+},
+"sa_f5_res_groups_user_group_change_notify": {
+"ir.actions.server": [
+[
+2465,
+"2024-01-10 02:37:36"
+]
+]
+},
+"sa_f5_x_test02_chk_sample_automated_action": {
+"ir.actions.server": [
+[
+2798,
+"2024-10-02 05:16:31"
+]
+]
+},
+"sa_f5_x_test02_test_layout_changes": {
+"ir.actions.server": [
+[
+2108,
+"2023-03-16 05:27:27"
+]
+]
+},
+"server_action_1140_test_test_test": {
+"ir.actions.server": [
+[
+1140,
+"2021-08-15 03:45:14"
+]
+]
+},
+"server_action_1230_mark_as_lost": {
+"ir.actions.server": [
+[
+1230,
+"2021-09-24 07:06:56"
+]
+]
+},
+"server_action_1575_update_status": {
+"ir.actions.server": [
+[
+1575,
+"2022-02-22 04:23:45"
+]
+]
+},
+"server_action_1630_test_server_action": {
+"ir.actions.server": [
+[
+1630,
+"2022-02-28 05:10:56"
+]
+]
+},
+"server_action_1743_sample_server_action": {
+"ir.actions.server": [
+[
+1743,
+"2022-08-24 05:42:54"
+]
+]
+},
+"server_action_2108_test_layout_changes": {
+"ir.actions.server": [
+[
+2108,
+"2023-03-16 05:27:27"
+]
+]
+},
+"server_action_2223_sample_server_action_1": {
+"ir.actions.server": [
+[
+2223,
+"2023-06-07 11:42:12"
+]
+]
+},
+"server_action_2268_sample_server_action_2": {
+"ir.actions.server": [
+[
+2268,
+"2023-07-06 05:42:08"
+]
+]
+},
+"server_action_2577_exp_validate_negative_quantities_d7": {
+"ir.actions.server": [
+[
+2577,
+"2024-07-01 08:58:45"
+]
+]
+},
+"server_action_2578_sample_server_action_multi_company": {
+"ir.actions.server": [
+[
+2578,
+"2024-07-02 09:01:07"
+]
+]
+},
+"server_action_2586_sample_server_action_to_get_company_id": {
+"ir.actions.server": [
+[
+2586,
+"2024-07-05 02:30:48"
+]
+]
+},
+"server_action_2598_restrict_attachment_delete_for_approved_expenses": {
+"ir.actions.server": [
+[
+2598,
+"2024-07-10 02:25:14"
+]
+]
+},
+"server_action_2599_sample_server_action_update_stock_quant": {
+"ir.actions.server": [
+[
+2599,
+"2024-07-11 03:53:41"
+]
+]
+},
+"server_action_2797_chk_sample_server_action": {
+"ir.actions.server": [
+[
+2797,
+"2024-10-02 05:10:48"
+]
+]
+},
+"server_action_2798_chk_sample_automated_action": {
+"ir.actions.server": [
+[
+2798,
+"2024-10-02 05:16:31"
+]
+]
+},
+"server_action_2799_mst_odoo_data_clean_up": {
+"ir.actions.server": [
+[
+2799,
+"2024-10-07 09:17:50"
+]
+]
+},
+"server_action_2827_jin_company_id_in_payment_terms_d7": {
+"ir.actions.server": [
+[
+2827,
+"2024-10-15 10:07:17"
+]
+]
+},
+"server_action_2831_mst_odoo_data_clean_up_001": {
+"ir.actions.server": [
+[
+2831,
+"2024-10-16 05:22:32"
+]
+]
+},
+"server_action_2836_mst_odoo_data_clean_up_002": {
+"ir.actions.server": [
+[
+2836,
+"2024-10-17 15:12:55"
+]
+]
+},
+"server_action_2883_mst_odoo_data_clean_up_004": {
+"ir.actions.server": [
+[
+2883,
+"2024-12-04 05:48:08"
+]
+]
+},
+"studio_customization_14b55225_a9cb_47c6_9021_ff1edf75c5f5": {
+"ir.ui.view": [
+[
+3897,
+"2022-08-10 15:24:56"
+]
+]
+},
+"studio_customization_22494c7a_28e3_4ef6_b584_064eda38ea58": {
+"ir.ui.view": [
+[
+5040,
+"2023-06-22 05:13:03"
+]
+]
+},
+"studio_customization_2ff9e7b2_65d5_4092_a0f5_1c938ef9d3eb": {
+"ir.ui.view": [
+[
+9068,
+"2025-11-25 10:30:46"
+]
+]
+},
+"studio_customization_3a0946dd_78e9_4a0b_9451_7ee77c0c9d2a": {
+"ir.ui.view": [
+[
+3754,
+"2022-02-24 16:24:39"
+]
+]
+},
+"studio_customization_52dc21f4_edab_4fdc_aeed_f915dc6b94b8": {
+"ir.ui.view": [
+[
+3904,
+"2022-08-11 13:01:57"
+]
+]
+},
+"studio_customization_68dacd5f_6ff2_45b9_ad76_83b24e878d9b": {
+"ir.ui.view": [
+[
+3730,
+"2022-02-24 12:33:38"
+]
+]
+},
+"studio_customization_a9fa811b_a727_45ac_933c_8a2795e2abe6": {
+"ir.ui.view": [
+[
+9066,
+"2025-11-25 10:28:07"
+]
+]
+},
+"studio_customization_c2f97a43_b240_4833_b33e_b0c0f51cfb40": {
+"ir.ui.view": [
+[
+5034,
+"2023-06-16 05:45:26"
+]
+]
+},
+"studio_customization_c43e7450_f2c2_4d3d_ad17_3254ba5424c2": {
+"ir.ui.view": [
+[
+5037,
+"2023-06-22 04:41:13"
+]
+]
+},
+"studio_customization_e3c8bea6_14c4_4174_a0f7_eb13d5a14aac": {
+"ir.ui.view": [
+[
+3890,
+"2022-07-29 02:38:45"
+]
+]
+},
+"studio_customization_e6f471ae_804e_4a83_b220_c3e62975db70": {
+"ir.ui.view": [
+[
+3769,
+"2022-02-28 11:41:06"
+]
+]
+},
+"studio_customization_f2ddc019_4852_49de_9d3e_dd48479a9290": {
+"ir.ui.view": [
+[
+9101,
+"2025-12-02 03:35:46"
+]
+]
+},
+"studio_main_report_8114d490_c5c3_4d6c_808a_e59830b8e190": {
+"ir.ui.view": [
+[
+6065,
+"2024-10-01 04:56:44"
+]
+]
+},
+"studio_report_docume_01559fbb_91f5_4c8c_ab49_885dde7da1f3": {
+"ir.ui.view": [
+[
+3107,
+"2021-11-23 08:49:18"
+]
+]
+},
+"studio_report_docume_05008680_4a72_4fc7_b020_c485d9a8f9ff": {
+"ir.ui.view": [
+[
+3098,
+"2021-11-19 06:08:18"
+]
+]
+},
+"studio_report_docume_0582785a_b7ef_48d1_9ee3_b0fe01626888": {
+"ir.ui.view": [
+[
+3824,
+"2022-04-07 04:43:58"
+]
+]
+},
+"studio_report_docume_1aa2ef46_1ca1_4d9a_bdcd_1fa5c397679d": {
+"ir.ui.view": [
+[
+3854,
+"2022-06-30 07:55:43"
+]
+]
+},
+"studio_report_docume_1c323f95_bff0_4e36_b903_dc64854508a8": {
+"ir.ui.view": [
+[
+3800,
+"2022-03-30 03:25:59"
+]
+]
+},
+"studio_report_docume_1ca14cc9_3f76_4518_8f18_c4b7418f09ce": {
+"ir.ui.view": [
+[
+3732,
+"2022-02-24 12:54:17"
+]
+]
+},
+"studio_report_docume_2be3d602_6356_4576_afb3_159f22e3135d": {
+"ir.ui.view": [
+[
+3377,
+"2022-02-23 05:49:59"
+]
+]
+},
+"studio_report_docume_2dbc48cc_8374_4344_a3c6_a3a5cbd38b0b": {
+"ir.ui.view": [
+[
+3104,
+"2021-11-22 07:32:14"
+]
+]
+},
+"studio_report_docume_37ad8061_c594_4b2f_9519_2d44ab657bb5": {
+"ir.ui.view": [
+[
+3380,
+"2022-02-23 11:42:43"
+]
+]
+},
+"studio_report_docume_39af7eba_e661_4a41_806f_d79c2de390c8": {
+"ir.ui.view": [
+[
+5030,
+"2023-06-16 05:08:13"
+]
+]
+},
+"studio_report_docume_4271f2c9_24c7_4c75_911d_9d550305b31d": {
+"ir.ui.view": [
+[
+3090,
+"2021-11-19 03:44:21"
+]
+]
+},
+"studio_report_docume_4efc8736_12b5_44fc_97b7_def40ea490cf": {
+"ir.ui.view": [
+[
+8906,
+"2025-11-17 04:22:02"
+]
+]
+},
+"studio_report_docume_51c9e0e4_8f52_4b48_a344_8db5a8f2352a": {
+"ir.ui.view": [
+[
+5023,
+"2023-06-15 06:59:22"
+]
+]
+},
+"studio_report_docume_5bbc45eb_3fc4_45c3_a051_d728d238f95b": {
+"ir.ui.view": [
+[
+5305,
+"2023-10-11 07:28:06"
+]
+]
+},
+"studio_report_docume_7e600042_d9b3_43a6_82b5_09d153937ffb": {
+"ir.ui.view": [
+[
+3760,
+"2022-02-28 08:38:24"
+]
+]
+},
+"studio_report_docume_7f2cd4cb_39ee_4afa_b0c2_4f435abb4619": {
+"ir.ui.view": [
+[
+3724,
+"2022-02-24 03:46:27"
+]
+]
+},
+"studio_report_docume_8730847d_290b_4196_ba35_861e99591d73": {
+"ir.ui.view": [
+[
+3095,
+"2021-11-19 05:52:40"
+]
+]
+},
+"studio_report_docume_889bd190_016a_4aa3_a1aa_dad6e31bf4d3": {
+"ir.ui.view": [
+[
+5020,
+"2023-06-15 06:56:01"
+]
+]
+},
+"studio_report_docume_8a65ecd7_ad78_47e6_817e_7b59a80c4552": {
+"ir.ui.view": [
+[
+3262,
+"2022-02-21 07:20:17"
+]
+]
+},
+"studio_report_docume_8e5bb340_e4f9_4a67_a37a_aaca87caebcc": {
+"ir.ui.view": [
+[
+3146,
+"2022-01-06 06:22:39"
+]
+]
+},
+"studio_report_docume_90fbe3de_374e_45ef_83f3_402f3bd3542f": {
+"ir.ui.view": [
+[
+4831,
+"2023-03-02 00:45:05"
+]
+]
+},
+"studio_report_docume_a2ae4430_adbe_4daa_a5c5_e03e683ddc01": {
+"ir.ui.view": [
+[
+5016,
+"2023-06-14 09:35:07"
+]
+]
+},
+"studio_report_docume_a69780d2_1641_40be_9f08_d8ac1917a271": {
+"ir.ui.view": [
+[
+3270,
+"2022-02-23 05:03:52"
+]
+]
+},
+"studio_report_docume_bbe16ed6_f933_48cc_8667_7d74a4173fd7": {
+"ir.ui.view": [
+[
+3101,
+"2021-11-19 09:46:13"
+]
+]
+},
+"studio_report_docume_c5719c77_3a10_4707_aa7f_ac107f54932f": {
+"ir.ui.view": [
+[
+8939,
+"2025-11-17 05:19:11"
+]
+]
+},
+"studio_report_docume_c60b7e6a_dee4_416a_8c7d_136a80aef4a4": {
+"ir.ui.view": [
+[
+3735,
+"2022-02-24 13:02:23"
+]
+]
+},
+"studio_report_docume_c6838480_51c3_4695_8729_8025cbfd70a3": {
+"ir.ui.view": [
+[
+6061,
+"2024-10-01 04:48:58"
+]
+]
+},
+"studio_report_docume_cdd1aa9a_19c7_4db6_a36e_24faaefcf303": {
+"ir.ui.view": [
+[
+3740,
+"2022-02-24 15:28:07"
+]
+]
+},
+"studio_report_docume_d573c563_728c_4341_ab10_9845f7d721f0": {
+"ir.ui.view": [
+[
+6064,
+"2024-10-01 04:56:44"
+]
+]
+},
+"studio_report_docume_df0fd28d_9e06_4113_a4d2_7b8efb8250a4": {
+"ir.ui.view": [
+[
+3757,
+"2022-02-28 08:09:27"
+]
+]
+},
+"studio_report_docume_e35b2999_abea_4330_ad6c_71fad437bf54": {
+"ir.ui.view": [
+[
+4889,
+"2023-03-21 02:06:03"
+]
+]
+},
+"studio_report_docume_f180ff3e_4244_4fd5_b147_ed1ebad9cd31": {
+"ir.ui.view": [
+[
+3748,
+"2022-02-24 15:57:56"
+]
+]
+},
+"studio_report_docume_f42597b2_77c1_4142_8bfa_339ea0d0dbbb": {
+"ir.ui.view": [
+[
+3745,
+"2022-02-24 15:46:22"
+]
+]
+},
+"view_2384_default_list_view_for_x_testapp": {
+"ir.ui.view": [
+[
+2384,
+"2021-06-09 15:11:20"
+]
+]
+},
+"view_2385_default_form_view_for_x_testapp": {
+"ir.ui.view": [
+[
+2385,
+"2021-06-09 15:11:20"
+]
+]
+},
+"view_2386_default_search_view_for_x_testapp": {
+"ir.ui.view": [
+[
+2386,
+"2021-06-09 15:11:20"
+]
+]
+},
+"view_2393_default_list_view_for_x_testdepartment": {
+"ir.ui.view": [
+[
+2393,
+"2021-06-17 07:38:19"
+]
+]
+},
+"view_2394_default_form_view_for_x_testdepartment": {
+"ir.ui.view": [
+[
+2394,
+"2021-06-17 07:38:19"
+]
+]
+},
+"view_2395_default_search_view_for_x_testdepartment": {
+"ir.ui.view": [
+[
+2395,
+"2021-06-17 07:38:19"
+]
+]
+},
+"view_2396_odoo_studio_default_form_view_for_x_testdepartment_customiza_ext": {
+"ir.ui.view": [
+[
+2396,
+"2021-06-17 07:39:48"
+]
+]
+},
+"view_2397_test_departmet_desc_3_ext": {
+"ir.ui.view": [
+[
+2397,
+"2021-06-17 08:06:16"
+]
+]
+},
+"view_2410_default_list_view_for_x_test_1": {
+"ir.ui.view": [
+[
+2410,
+"2021-06-22 09:06:00"
+]
+]
+},
+"view_2411_default_form_view_for_x_test_1": {
+"ir.ui.view": [
+[
+2411,
+"2021-06-22 09:06:00"
+]
+]
+},
+"view_2412_default_search_view_for_x_test_1": {
+"ir.ui.view": [
+[
+2412,
+"2021-06-22 09:06:00"
+]
+]
+},
+"view_2413_default_list_view_for_x_test02": {
+"ir.ui.view": [
+[
+2413,
+"2021-06-22 09:18:16"
+]
+]
+},
+"view_2414_default_form_view_for_x_test02": {
+"ir.ui.view": [
+[
+2414,
+"2021-06-22 09:18:16"
+]
+]
+},
+"view_2415_default_search_view_for_x_test02": {
+"ir.ui.view": [
+[
+2415,
+"2021-06-22 09:18:16"
+]
+]
+},
+"view_2580_default_list_view_for_x_work_center_costing_e": {
+"ir.ui.view": [
+[
+2580,
+"2021-08-12 06:35:18"
+]
+]
+},
+"view_2581_default_form_view_for_x_work_center_costing_e": {
+"ir.ui.view": [
+[
+2581,
+"2021-08-12 06:35:18"
+]
+]
+},
+"view_2582_default_search_view_for_x_work_center_costing_e": {
+"ir.ui.view": [
+[
+2582,
+"2021-08-12 06:35:18"
+]
+]
+},
+"view_2586_default_list_view_for_x_product_test": {
+"ir.ui.view": [
+[
+2586,
+"2021-08-15 03:16:37"
+]
+]
+},
+"view_2587_default_form_view_for_x_product_test": {
+"ir.ui.view": [
+[
+2587,
+"2021-08-15 03:16:37"
+]
+]
+},
+"view_2588_default_search_view_for_x_product_test": {
+"ir.ui.view": [
+[
+2588,
+"2021-08-15 03:16:37"
+]
+]
+},
+"view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext": {
+"ir.ui.view": [
+[
+2589,
+"2021-08-15 03:17:37"
+]
+]
+},
+"view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext": {
+"ir.ui.view": [
+[
+2590,
+"2021-08-15 03:18:25"
+]
+]
+},
+"view_2607_default_list_view_for_x_product_product": {
+"ir.ui.view": [
+[
+2607,
+"2021-08-17 10:01:59"
+]
+]
+},
+"view_2608_default_form_view_for_x_product_product": {
+"ir.ui.view": [
+[
+2608,
+"2021-08-17 10:01:59"
+]
+]
+},
+"view_2609_default_search_view_for_x_product_product": {
+"ir.ui.view": [
+[
+2609,
+"2021-08-17 10:01:59"
+]
+]
+},
+"view_2955_default_kanban_view_for_ir_model_782": {
+"ir.ui.view": [
+[
+2955,
+"2021-10-08 08:56:40"
+]
+]
+},
+"view_2956_odoo_studio_default_kanban_view_for_ir_model_782_customizati_ext": {
+"ir.ui.view": [
+[
+2956,
+"2021-10-08 08:56:44"
+]
+]
+},
+"view_3267_odoo_studio_default_form_view_for_x_test02_customization_e": {
+"ir.ui.view": [
+[
+3267,
+"2022-02-22 04:10:55"
+]
+]
+},
+"view_3269_odoo_studio_default_list_view_for_x_test_1_customization_ext": {
+"ir.ui.view": [
+[
+3269,
+"2022-02-22 09:09:43"
+]
+]
+},
+"view_3779_default_list_view_for_x_test_form": {
+"ir.ui.view": [
+[
+3779,
+"2022-03-24 06:18:50"
+]
+]
+},
+"view_3780_default_form_view_for_x_test_form": {
+"ir.ui.view": [
+[
+3780,
+"2022-03-24 06:18:50"
+]
+]
+},
+"view_3781_default_search_view_for_x_test_form": {
+"ir.ui.view": [
+[
+3781,
+"2022-03-24 06:18:50"
+]
+]
+},
+"view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext": {
+"ir.ui.view": [
+[
+3782,
+"2022-03-24 06:26:38"
+]
+]
+},
+"view_3827_default_list_view_for_x_test_model_primary": {
+"ir.ui.view": [
+[
+3827,
+"2022-04-07 07:18:18"
+]
+]
+},
+"view_3828_default_form_view_for_x_test_model_primary": {
+"ir.ui.view": [
+[
+3828,
+"2022-04-07 07:18:18"
+]
+]
+},
+"view_3829_default_search_view_for_x_test_model_primary": {
+"ir.ui.view": [
+[
+3829,
+"2022-04-07 07:18:18"
+]
+]
+},
+"view_3830_odoo_studio_default_form_view_for_x_test_model_primary_custo_ext": {
+"ir.ui.view": [
+[
+3830,
+"2022-04-07 07:18:57"
+]
+]
+},
+"view_3831_odoo_studio_default_list_view_for_x_test_model_primary_custo_ext": {
+"ir.ui.view": [
+[
+3831,
+"2022-04-07 07:19:51"
+]
+]
+},
+"view_3832_default_list_view_for_x_test_model_link": {
+"ir.ui.view": [
+[
+3832,
+"2022-04-07 07:20:57"
+]
+]
+},
+"view_3833_default_form_view_for_x_test_model_link": {
+"ir.ui.view": [
+[
+3833,
+"2022-04-07 07:20:57"
+]
+]
+},
+"view_3834_default_search_view_for_x_test_model_link": {
+"ir.ui.view": [
+[
+3834,
+"2022-04-07 07:20:57"
+]
+]
+},
+"view_3835_odoo_studio_default_form_view_for_x_test_model_link_customiz_ext": {
+"ir.ui.view": [
+[
+3835,
+"2022-04-07 07:21:51"
+]
+]
+},
+"view_3836_odoo_studio_default_list_view_for_x_test_model_link_customiz_ext": {
+"ir.ui.view": [
+[
+3836,
+"2022-04-07 07:26:42"
+]
+]
+},
+"view_3839_default_list_view_for_x_test_model_link_2": {
+"ir.ui.view": [
+[
+3839,
+"2022-04-18 05:25:07"
+]
+]
+},
+"view_3840_default_form_view_for_x_test_model_link_2": {
+"ir.ui.view": [
+[
+3840,
+"2022-04-18 05:25:07"
+]
+]
+},
+"view_3841_default_search_view_for_x_test_model_link_2": {
+"ir.ui.view": [
+[
+3841,
+"2022-04-18 05:25:07"
+]
+]
+},
+"view_3842_odoo_studio_default_form_view_for_x_test_model_link_2_custom_ext": {
+"ir.ui.view": [
+[
+3842,
+"2022-04-18 05:26:42"
+]
+]
+},
+"view_3919_test_inherited_view_e": {
+"ir.ui.view": [
+[
+3919,
+"2022-09-05 04:14:00"
+]
+]
+},
+"view_3923_default_list_view_for_x_res_config_settings_e": {
+"ir.ui.view": [
+[
+3923,
+"2022-09-14 02:49:53"
+]
+]
+},
+"view_3924_default_form_view_for_x_res_config_settings_e": {
+"ir.ui.view": [
+[
+3924,
+"2022-09-14 02:49:53"
+]
+]
+},
+"view_3925_default_search_view_for_x_res_config_settings_e": {
+"ir.ui.view": [
+[
+3925,
+"2022-09-14 02:49:53"
+]
+]
+},
+"view_4653_template_view_default_worksheet_e": {
+"ir.ui.view": [
+[
+4653,
+"2023-02-08 09:43:59"
+]
+]
+},
+"view_4882_default_list_view_for_x_test_layout": {
+"ir.ui.view": [
+[
+4882,
+"2023-03-16 05:30:57"
+]
+]
+},
+"view_4883_default_form_view_for_x_test_layout": {
+"ir.ui.view": [
+[
+4883,
+"2023-03-16 05:30:57"
+]
+]
+},
+"view_4884_default_search_view_for_x_test_layout": {
+"ir.ui.view": [
+[
+4884,
+"2023-03-16 05:30:57"
+]
+]
+},
+"view_4886_odoo_studio_default_list_view_for_x_test_layout_customizatio_ext": {
+"ir.ui.view": [
+[
+4886,
+"2023-03-16 05:32:09"
+]
+]
+},
+"view_4901_odoo_studio_res_currency_tree_customization_ext": {
+"ir.ui.view": [
+[
+4901,
+"2023-03-28 07:53:02"
+]
+]
+},
+"view_5292_default_list_view_for_x_sales_model_debug_e": {
+"ir.ui.view": [
+[
+5292,
+"2023-09-21 03:19:22"
+]
+]
+},
+"view_5293_default_form_view_for_x_sales_model_debug_e": {
+"ir.ui.view": [
+[
+5293,
+"2023-09-21 03:19:22"
+]
+]
+},
+"view_5294_default_search_view_for_x_sales_model_debug_e": {
+"ir.ui.view": [
+[
+5294,
+"2023-09-21 03:19:22"
+]
+]
+},
+"view_5420_odoo_studio_default_list_view_for_x_test02_customization_ext": {
+"ir.ui.view": [
+[
+5420,
+"2024-01-31 06:11:20"
+]
+]
+},
+"view_5682_default_tree_view_for_ir_model_759_e": {
+"ir.ui.view": [
+[
+5682,
+"2024-07-17 16:35:53"
+]
+]
+},
+"view_6053_odoo_studio_crm_team_form_customization_ext": {
+"ir.ui.view": [
+[
+6053,
+"2024-09-10 11:46:50"
+]
+]
+},
+"view_6070_default_tree_view_for_ir_model_747": {
+"ir.ui.view": [
+[
+6070,
+"2024-10-17 10:37:31"
+]
+]
+},
+"view_6079_odoo_studio_crm_team_tree_customization_ext": {
+"ir.ui.view": [
+[
+6079,
+"2024-10-21 12:14:44"
+]
+]
+},
+"view_6118_odoo_studio_crm_team_member_view_tree_customization_ext": {
+"ir.ui.view": [
+[
+6118,
+"2024-11-21 04:34:19"
+]
+]
+},
+"view_8026_default_list_view_for_x_website_faq": {
+"ir.ui.view": [
+[
+8026,
+"2025-04-23 07:20:02"
+]
+]
+},
+"view_8027_default_form_view_for_x_website_faq": {
+"ir.ui.view": [
+[
+8027,
+"2025-04-23 07:20:02"
+]
+]
+},
+"view_8028_default_search_view_for_x_website_faq": {
+"ir.ui.view": [
+[
+8028,
+"2025-04-23 07:20:02"
+]
+]
+},
+"view_8029_odoo_studio_default_form_view_for_x_website_faq_customizatio_ext": {
+"ir.ui.view": [
+[
+8029,
+"2025-04-23 07:20:18"
+]
+]
+},
+"view_8031_odoo_studio_default_list_view_for_x_website_faq_customizatio_ext": {
+"ir.ui.view": [
+[
+8031,
+"2025-04-23 08:46:32"
+]
+]
+},
+"view_8032_default_list_view_for_x_website_faqs": {
+"ir.ui.view": [
+[
+8032,
+"2025-04-23 09:38:49"
+]
+]
+},
+"view_8033_default_form_view_for_x_website_faqs": {
+"ir.ui.view": [
+[
+8033,
+"2025-04-23 09:38:49"
+]
+]
+},
+"view_8034_default_search_view_for_x_website_faqs": {
+"ir.ui.view": [
+[
+8034,
+"2025-04-23 09:38:49"
+]
+]
+},
+"view_8035_odoo_studio_default_form_view_for_x_website_faqs_customizati_ext": {
+"ir.ui.view": [
+[
+8035,
+"2025-04-23 09:38:56"
+]
+]
+},
+"view_8036_odoo_studio_default_list_view_for_x_website_faqs_customizati_ext": {
+"ir.ui.view": [
+[
+8036,
+"2025-04-23 09:40:22"
+]
+]
+},
+"view_8241_qweb_faq": {
+"ir.ui.view": [
+[
+8241,
+"2025-04-23 11:00:24"
+],
+[
+8246,
+"2025-04-24 02:14:34"
+],
+[
+8247,
+"2025-04-24 04:47:43"
+],
+[
+8248,
+"2025-04-24 04:48:47"
+]
+]
+},
+"view_8245_website_published": {
+"ir.ui.view": [
+[
+8245,
+"2025-04-23 11:13:18"
+]
+]
+},
+"view_8246_qweb_faq": {
+"ir.ui.view": [
+[
+8246,
+"2025-04-24 02:14:34"
+]
+]
+},
+"view_8247_qweb_faq": {
+"ir.ui.view": [
+[
+8247,
+"2025-04-24 04:47:43"
+]
+]
+},
+"view_8248_qweb_faq": {
+"ir.ui.view": [
+[
+8248,
+"2025-04-24 04:48:47"
+]
+]
+},
+"view_8637_default_list_view_for_x_custom_reports_line_c55e7_e": {
+"ir.ui.view": [
+[
+8637,
+"2025-10-21 09:48:26"
+]
+]
+},
+"view_8638_default_form_view_for_x_custom_reports_line_c55e7_e": {
+"ir.ui.view": [
+[
+8638,
+"2025-10-21 09:48:26"
+]
+]
+},
+"view_8639_default_search_view_for_x_custom_reports_line_c55e7_e": {
+"ir.ui.view": [
+[
+8639,
+"2025-10-21 09:48:26"
+]
+]
+},
+"view_8643_default_list_view_for_x_custom_reports_tag_e": {
+"ir.ui.view": [
+[
+8643,
+"2025-10-21 09:48:26"
+]
+]
+},
+"view_8644_default_form_view_for_x_custom_reports_tag_e": {
+"ir.ui.view": [
+[
+8644,
+"2025-10-21 09:48:26"
+]
+]
+},
+"view_8645_default_search_view_for_x_custom_reports_tag_e": {
+"ir.ui.view": [
+[
+8645,
+"2025-10-21 09:48:26"
+]
+]
+},
+"view_8717_default_list_view_for_x_material_request_tes_line_3301b_e": {
+"ir.ui.view": [
+[
+8717,
+"2025-10-24 03:44:16"
+]
+]
+},
+"view_8718_default_form_view_for_x_material_request_tes_line_3301b_e": {
+"ir.ui.view": [
+[
+8718,
+"2025-10-24 03:44:16"
+]
+]
+},
+"view_8719_default_search_view_for_x_material_request_tes_line_3301b_e": {
+"ir.ui.view": [
+[
+8719,
+"2025-10-24 03:44:16"
+]
+]
+},
+"view_8771_default_list_view_for_x_material_request_mt_line_9a011_e": {
+"ir.ui.view": [
+[
+8771,
+"2025-10-24 04:49:59"
+]
+]
+},
+"view_8772_default_form_view_for_x_material_request_mt_line_9a011_e": {
+"ir.ui.view": [
+[
+8772,
+"2025-10-24 04:49:59"
+]
+]
+},
+"view_8773_default_search_view_for_x_material_request_mt_line_9a011_e": {
+"ir.ui.view": [
+[
+8773,
+"2025-10-24 04:49:59"
+]
+]
+},
+"view_9311_pivot_analysis_e": {
+"ir.ui.view": [
+[
+9311,
+"2026-02-12 06:10:50"
+]
+]
+},
+"view_9312_graph_analysis_e": {
+"ir.ui.view": [
+[
+9312,
+"2026-02-12 06:10:50"
+]
+]
+},
+"view_9313_search_bi_view_e": {
+"ir.ui.view": [
+[
+9313,
+"2026-02-12 06:10:50"
+]
+]
+},
+"view_9314_tree_analysis_e": {
+"ir.ui.view": [
+[
+9314,
+"2026-02-12 06:10:50"
+]
+]
+},
+"view_9387_pivot_analysis_e": {
+"ir.ui.view": [
+[
+9387,
+"2026-02-18 03:23:11"
+]
+]
+},
+"view_9388_graph_analysis_e": {
+"ir.ui.view": [
+[
+9388,
+"2026-02-18 03:23:11"
+]
+]
+},
+"view_9389_search_bi_view_e": {
+"ir.ui.view": [
+[
+9389,
+"2026-02-18 03:23:11"
+]
+]
+},
+"view_9390_tree_analysis_e": {
+"ir.ui.view": [
+[
+9390,
+"2026-02-18 03:23:11"
+]
+]
+},
+"view_9485_pivot_analysis_e": {
+"ir.ui.view": [
+[
+9485,
+"2026-02-19 09:59:04"
+]
+]
+},
+"view_9486_graph_analysis_e": {
+"ir.ui.view": [
+[
+9486,
+"2026-02-19 09:59:04"
+]
+]
+},
+"view_9487_search_bi_view_e": {
+"ir.ui.view": [
+[
+9487,
+"2026-02-19 09:59:04"
+]
+]
+},
+"view_9488_tree_analysis_e": {
+"ir.ui.view": [
+[
+9488,
+"2026-02-19 09:59:04"
+]
+]
+},
+"view_final_hr_expense_hr_expense_extract_view_form_studio_cus": {
+"ir.ui.view": [
+[
+5546,
+"2024-07-01 09:10:58"
+]
+]
+},
+"view_final_hr_expense_sheet_odoo_studio_hr_expense_sheet_form_customization": {
+"ir.ui.view": [
+[
+5553,
+"2024-07-04 07:24:51"
+]
+]
+},
+"view_final_x_res_config_settings_odoo_studio_default_form_view_for_x_res_config_settings_c": {
+"ir.ui.view": [
+[
+3926,
+"2022-09-14 02:53:56"
+]
+]
+},
+"view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo": {
+"ir.ui.view": [
+[
+5295,
+"2023-09-21 03:27:18"
+]
+]
+},
+"view_final_x_work_center_costing_odoo_studio_default_form_view_for_x_work_center_costing_c": {
+"ir.ui.view": [
+[
+2583,
+"2021-08-12 06:36:35"
+]
+]
+},
+"view_final_x_work_center_costing_odoo_studio_default_list_view_for_x_work_center_costing_c": {
+"ir.ui.view": [
+[
+2584,
+"2021-08-12 06:51:07"
+]
+]
+},
+"view_project_task_studio_cohort": {
+"ir.ui.view": [
+[
+4894,
+"2023-03-22 09:33:51"
+]
+]
+},
+"view_qweb_document_tax_totals_copy_1": {
+"ir.ui.view": [
+[
+5068,
+"2023-08-07 10:23:44"
+]
+]
+},
+"view_qweb_odoo_studio_report_purchasequotation_document_customization": {
+"ir.ui.view": [
+[
+5310,
+"2023-10-25 10:25:30"
+]
+]
+},
+"view_qweb_report_purchasequotation_copy_1": {
+"ir.ui.view": [
+[
+8670,
+"2025-10-21 10:41:12"
+]
+]
+},
+"view_qweb_report_purchasequotation_copy_2": {
+"ir.ui.view": [
+[
+8706,
+"2025-10-22 05:39:46"
+]
+]
+},
+"view_qweb_report_purchasequotation_document_copy_1": {
+"ir.ui.view": [
+[
+8671,
+"2025-10-21 10:41:12"
+]
+]
+},
+"view_qweb_report_purchasequotation_document_copy_2": {
+"ir.ui.view": [
+[
+8707,
+"2025-10-22 05:39:46"
+]
+]
+},
+"view_qweb_report_purchasequotation_document_copy_3": {
+"ir.ui.view": [
+[
+3,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_purchasequotation_document_copy_4": {
+"ir.ui.view": [
+[
+4,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_repairorder2_copy_10": {
+"ir.ui.view": [
+[
+9011,
+"2025-11-18 04:22:50"
+]
+]
+},
+"view_qweb_report_repairorder2_copy_11": {
+"ir.ui.view": [
+[
+9013,
+"2025-11-18 04:23:15"
+]
+]
+},
+"view_qweb_report_repairorder2_copy_8": {
+"ir.ui.view": [
+[
+9007,
+"2025-11-18 04:21:00"
+]
+]
+},
+"view_qweb_report_repairorder2_copy_9": {
+"ir.ui.view": [
+[
+9009,
+"2025-11-18 04:21:52"
+]
+]
+},
+"view_qweb_report_repairorder_copy_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_repairorder_copy_10": {
+"ir.ui.view": [
+[
+9012,
+"2025-11-18 04:22:50"
+]
+]
+},
+"view_qweb_report_repairorder_copy_11": {
+"ir.ui.view": [
+[
+9014,
+"2025-11-18 04:23:15"
+]
+]
+},
+"view_qweb_report_repairorder_copy_2": {
+"ir.ui.view": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_repairorder_copy_3": {
+"ir.ui.view": [
+[
+3,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_repairorder_copy_4": {
+"ir.ui.view": [
+[
+4,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_repairorder_copy_5": {
+"ir.ui.view": [
+[
+5,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_repairorder_copy_6": {
+"ir.ui.view": [
+[
+9004,
+"2025-11-18 04:16:55"
+]
+]
+},
+"view_qweb_report_repairorder_copy_7": {
+"ir.ui.view": [
+[
+9006,
+"2025-11-18 04:19:32"
+]
+]
+},
+"view_qweb_report_repairorder_copy_7_copy_1": {
+"ir.ui.view": [
+[
+9018,
+"2025-11-18 05:05:31"
+]
+]
+},
+"view_qweb_report_repairorder_copy_7_copy_2": {
+"ir.ui.view": [
+[
+9020,
+"2025-11-18 05:06:59"
+]
+]
+},
+"view_qweb_report_repairorder_copy_7_copy_3": {
+"ir.ui.view": [
+[
+9022,
+"2025-11-18 05:08:18"
+]
+]
+},
+"view_qweb_report_repairorder_copy_7_copy_4": {
+"ir.ui.view": [
+[
+9024,
+"2025-11-18 05:09:38"
+]
+]
+},
+"view_qweb_report_repairorder_copy_8": {
+"ir.ui.view": [
+[
+9008,
+"2025-11-18 04:21:00"
+]
+]
+},
+"view_qweb_report_repairorder_copy_9": {
+"ir.ui.view": [
+[
+9010,
+"2025-11-18 04:21:52"
+]
+]
+},
+"view_qweb_report_saleorder_copy_1": {
+"ir.ui.view": [
+[
+3086,
+"2021-11-17 10:24:14"
+]
+]
+},
+"view_qweb_report_saleorder_copy_2": {
+"ir.ui.view": [
+[
+3093,
+"2021-11-19 05:51:53"
+]
+]
+},
+"view_qweb_report_saleorder_copy_3": {
+"ir.ui.view": [
+[
+5066,
+"2023-08-07 10:23:44"
+]
+]
+},
+"view_qweb_report_saleorder_document_copy_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_report_saleorder_document_copy_2": {
+"ir.ui.view": [
+[
+3094,
+"2021-11-19 05:51:53"
+]
+]
+},
+"view_qweb_report_saleorder_document_copy_3": {
+"ir.ui.view": [
+[
+3,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_05008680_4a72_4fc7": {
+"ir.ui.view": [
+[
+3099,
+"2021-11-19 06:08:18"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_05008680_4a72_4fc7_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_16b39d57_fc89_4495": {
+"ir.ui.view": [
+[
+8651,
+"2025-10-21 09:54:21"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_16b39d57_fc89_4495_1": {
+"ir.ui.view": [
+[
+8650,
+"2025-10-21 09:54:21"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1793edd0_e445_4f56": {
+"ir.ui.view": [
+[
+8701,
+"2025-10-22 05:22:31"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1793edd0_e445_4f56_1": {
+"ir.ui.view": [
+[
+8700,
+"2025-10-22 05:22:31"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36_2": {
+"ir.ui.view": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1c323f95_bff0_4e36_3": {
+"ir.ui.view": [
+[
+3,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1ca14cc9_3f76_4518": {
+"ir.ui.view": [
+[
+3733,
+"2022-02-24 12:54:17"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1ca14cc9_3f76_4518_1": {
+"ir.ui.view": [
+[
+4518,
+"2023-02-02 11:34:58"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1cf74e61_31b6_45b4": {
+"ir.ui.view": [
+[
+8658,
+"2025-10-21 10:07:01"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1cf74e61_31b6_45b4_1": {
+"ir.ui.view": [
+[
+8657,
+"2025-10-21 10:07:01"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1e3ae6de_34bc_47b4": {
+"ir.ui.view": [
+[
+3799,
+"2022-03-30 03:25:40"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1e3ae6de_34bc_47b4_1": {
+"ir.ui.view": [
+[
+3798,
+"2022-03-30 03:25:40"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1e8a3306_4e92_495b": {
+"ir.ui.view": [
+[
+8875,
+"2025-11-11 03:52:55"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1e8a3306_4e92_495b_1": {
+"ir.ui.view": [
+[
+8874,
+"2025-11-11 03:52:55"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1f67a143_7e16_46dc": {
+"ir.ui.view": [
+[
+8695,
+"2025-10-22 05:18:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_1f67a143_7e16_46dc_1": {
+"ir.ui.view": [
+[
+8694,
+"2025-10-22 05:18:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2201dd3d_bdcc_4e2b": {
+"ir.ui.view": [
+[
+5015,
+"2023-06-09 03:11:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2201dd3d_bdcc_4e2b_1": {
+"ir.ui.view": [
+[
+5014,
+"2023-06-09 03:11:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2be3d602_6356_4576": {
+"ir.ui.view": [
+[
+6356,
+"2025-03-18 10:05:26"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2bf89ea3_bcea_48f3": {
+"ir.ui.view": [
+[
+4888,
+"2023-03-21 02:05:29"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2bf89ea3_bcea_48f3_1": {
+"ir.ui.view": [
+[
+4887,
+"2023-03-21 02:05:29"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2ca36fe5_f729_4e78": {
+"ir.ui.view": [
+[
+8986,
+"2025-11-18 02:50:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2ca36fe5_f729_4e78_1": {
+"ir.ui.view": [
+[
+8983,
+"2025-11-18 02:50:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2dbc48cc_8374_4344": {
+"ir.ui.view": [
+[
+3105,
+"2021-11-22 07:32:14"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2dbc48cc_8374_4344_1": {
+"ir.ui.view": [
+[
+8374,
+"2025-08-11 06:03:36"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2eed4aa6_549b_46a1": {
+"ir.ui.view": [
+[
+8964,
+"2025-11-17 09:20:17"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_2eed4aa6_549b_46a1_1": {
+"ir.ui.view": [
+[
+8957,
+"2025-11-17 08:43:06"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_33324e75_c153_4215": {
+"ir.ui.view": [
+[
+9085,
+"2025-12-02 02:55:25"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_33324e75_c153_4215_1": {
+"ir.ui.view": [
+[
+9084,
+"2025-12-02 02:55:25"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18": {
+"ir.ui.view": [
+[
+8673,
+"2025-10-21 10:42:08"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18_1": {
+"ir.ui.view": [
+[
+8672,
+"2025-10-21 10:42:08"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18_2": {
+"ir.ui.view": [
+[
+8668,
+"2025-10-21 10:14:35"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_37e05fae_856e_4e18_3": {
+"ir.ui.view": [
+[
+8667,
+"2025-10-21 10:14:35"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_380ab12f_645f_4686": {
+"ir.ui.view": [
+[
+9031,
+"2025-11-19 05:13:59"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_380ab12f_645f_4686_1": {
+"ir.ui.view": [
+[
+9030,
+"2025-11-19 05:13:59"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_39af7eba_e661_4a41": {
+"ir.ui.view": [
+[
+5031,
+"2023-06-16 05:08:13"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_39af7eba_e661_4a41_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_42161fef_4356_4034": {
+"ir.ui.view": [
+[
+8985,
+"2025-11-18 02:50:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_42161fef_4356_4034_1": {
+"ir.ui.view": [
+[
+8981,
+"2025-11-18 02:50:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_4271f2c9_24c7_4c75": {
+"ir.ui.view": [
+[
+3091,
+"2021-11-19 03:44:21"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_4271f2c9_24c7_4c75_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_42c807e1_c6af_42c6": {
+"ir.ui.view": [
+[
+9087,
+"2025-12-02 02:56:06"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_42c807e1_c6af_42c6_1": {
+"ir.ui.view": [
+[
+9086,
+"2025-12-02 02:56:06"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_45c43da2_023d_4ca9": {
+"ir.ui.view": [
+[
+8937,
+"2025-11-17 05:10:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_45c43da2_023d_4ca9_1": {
+"ir.ui.view": [
+[
+8936,
+"2025-11-17 05:10:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_4ba14515_b356_4e1d": {
+"ir.ui.view": [
+[
+4860,
+"2023-03-02 04:35:39"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_4efc8736_12b5_44fc": {
+"ir.ui.view": [
+[
+8907,
+"2025-11-17 04:22:02"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_4efc8736_12b5_44fc_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_50c3b9df_c892_4cb5": {
+"ir.ui.view": [
+[
+9098,
+"2025-12-02 03:32:23"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_599c1af7_146b_44f2": {
+"ir.ui.view": [
+[
+3797,
+"2022-03-30 03:25:19"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_599c1af7_146b_44f2_1": {
+"ir.ui.view": [
+[
+3796,
+"2022-03-30 03:25:19"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_5bbc45eb_3fc4_45c3": {
+"ir.ui.view": [
+[
+5306,
+"2023-10-11 07:28:06"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_5bbc45eb_3fc4_45c3_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_5beecb7c_3184_45c9": {
+"ir.ui.view": [
+[
+8887,
+"2025-11-11 04:46:50"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_5d598073_6b78_41c5": {
+"ir.ui.view": [
+[
+5013,
+"2023-06-09 03:11:14"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_5d598073_6b78_41c5_1": {
+"ir.ui.view": [
+[
+5012,
+"2023-06-09 03:11:14"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_648d8300_c9d4_47cf": {
+"ir.ui.view": [
+[
+8683,
+"2025-10-22 05:01:12"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_648d8300_c9d4_47cf_1": {
+"ir.ui.view": [
+[
+8682,
+"2025-10-22 05:01:12"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_66f3d18c_016c_424e": {
+"ir.ui.view": [
+[
+8878,
+"2025-11-11 04:41:32"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_66f3d18c_016c_424e_1": {
+"ir.ui.view": [
+[
+8877,
+"2025-11-11 04:41:32"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_67942c03_d21d_483b": {
+"ir.ui.view": [
+[
+8689,
+"2025-10-22 05:07:31"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_67942c03_d21d_483b_1": {
+"ir.ui.view": [
+[
+8688,
+"2025-10-22 05:07:31"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9183,
+"2025-12-09 06:24:59"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_1": {
+"ir.ui.view": [
+[
+9158,
+"2025-12-09 03:25:03"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_10": {
+"ir.ui.view": [
+[
+9109,
+"2025-12-02 05:16:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_11": {
+"ir.ui.view": [
+[
+9108,
+"2025-12-02 05:16:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_12": {
+"ir.ui.view": [
+[
+9164,
+"2025-12-09 04:22:48"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_13": {
+"ir.ui.view": [
+[
+9179,
+"2025-12-09 06:03:10"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_14": {
+"ir.ui.view": [
+[
+9179,
+"2025-12-09 06:03:10"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_15": {
+"ir.ui.view": [
+[
+9179,
+"2025-12-09 06:03:10"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_16": {
+"ir.ui.view": [
+[
+4863,
+"2023-03-02 05:26:19"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_2": {
+"ir.ui.view": [
+[
+9179,
+"2025-12-09 06:03:10"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_3": {
+"ir.ui.view": [
+[
+9114,
+"2025-12-02 05:52:14"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_4": {
+"ir.ui.view": [
+[
+9117,
+"2025-12-02 07:54:04"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_5": {
+"ir.ui.view": [
+[
+9186,
+"2025-12-11 09:00:36"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_6": {
+"ir.ui.view": [
+[
+9179,
+"2025-12-09 06:03:10"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_7": {
+"ir.ui.view": [
+[
+9170,
+"2025-12-09 04:46:27"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_8": {
+"ir.ui.view": [
+[
+9111,
+"2025-12-02 05:18:23"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_73c7b165_9179_4119_9": {
+"ir.ui.view": [
+[
+9175,
+"2025-12-09 05:44:50"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_78e655c4_b305_48ac": {
+"ir.ui.view": [
+[
+5303,
+"2023-10-11 07:26:33"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_7d191b57_7743_4c00": {
+"ir.ui.view": [
+[
+8703,
+"2025-10-22 05:23:12"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_7d191b57_7743_4c00_1": {
+"ir.ui.view": [
+[
+8702,
+"2025-10-22 05:23:12"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_7e600042_d9b3_43a6": {
+"ir.ui.view": [
+[
+3761,
+"2022-02-28 08:38:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_7e600042_d9b3_43a6_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_7f2cd4cb_39ee_4afa": {
+"ir.ui.view": [
+[
+3725,
+"2022-02-24 03:46:27"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_7f2cd4cb_39ee_4afa_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8730847d_290b_4196": {
+"ir.ui.view": [
+[
+3096,
+"2021-11-19 05:52:40"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8730847d_290b_4196_1": {
+"ir.ui.view": [
+[
+4196,
+"2023-02-02 11:27:36"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6": {
+"ir.ui.view": [
+[
+3727,
+"2022-02-24 12:33:05"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_1": {
+"ir.ui.view": [
+[
+3722,
+"2022-02-23 15:02:25"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_2": {
+"ir.ui.view": [
+[
+2,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_3": {
+"ir.ui.view": [
+[
+3266,
+"2022-02-21 12:04:44"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_4": {
+"ir.ui.view": [
+[
+3265,
+"2022-02-21 12:04:44"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_5": {
+"ir.ui.view": [
+[
+3723,
+"2022-02-23 15:02:25"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_6": {
+"ir.ui.view": [
+[
+3739,
+"2022-02-24 14:52:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_7": {
+"ir.ui.view": [
+[
+3728,
+"2022-02-24 12:33:05"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_8": {
+"ir.ui.view": [
+[
+3263,
+"2022-02-21 07:20:17"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6_9": {
+"ir.ui.view": [
+[
+9,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8f032a01_f27a_4dc4": {
+"ir.ui.view": [
+[
+8984,
+"2025-11-18 02:50:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_8f032a01_f27a_4dc4_1": {
+"ir.ui.view": [
+[
+8982,
+"2025-11-18 02:50:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_90fbe3de_374e_45ef": {
+"ir.ui.view": [
+[
+4832,
+"2023-03-02 00:45:05"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_90fbe3de_374e_45ef_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_96136e4a_ca46_4d87": {
+"ir.ui.view": [
+[
+8882,
+"2025-11-11 04:44:58"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_9b09ab9d_d084_4b15": {
+"ir.ui.view": [
+[
+9037,
+"2025-11-19 05:50:18"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_9b09ab9d_d084_4b15_1": {
+"ir.ui.view": [
+[
+9036,
+"2025-11-19 05:50:18"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_a69780d2_1641_40be": {
+"ir.ui.view": [
+[
+3271,
+"2022-02-23 05:03:52"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_a69780d2_1641_40be_1": {
+"ir.ui.view": [
+[
+1641,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ae400924_613e_49e9": {
+"ir.ui.view": [
+[
+9083,
+"2025-12-02 02:55:13"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ae400924_613e_49e9_1": {
+"ir.ui.view": [
+[
+9082,
+"2025-12-02 02:55:13"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ae8c07cd_bfdc_44bd": {
+"ir.ui.view": [
+[
+8873,
+"2025-11-11 03:52:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ae8c07cd_bfdc_44bd_1": {
+"ir.ui.view": [
+[
+8872,
+"2025-11-11 03:52:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_b00e12f5_d579_4de3": {
+"ir.ui.view": [
+[
+8649,
+"2025-10-21 09:53:29"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_b00e12f5_d579_4de3_1": {
+"ir.ui.view": [
+[
+8648,
+"2025-10-21 09:53:29"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_b0cc4641_17fe_4787": {
+"ir.ui.view": [
+[
+8693,
+"2025-10-22 05:13:12"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_b0cc4641_17fe_4787_1": {
+"ir.ui.view": [
+[
+8692,
+"2025-10-22 05:13:12"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_b589ee56_493a_4d58": {
+"ir.ui.view": [
+[
+9033,
+"2025-11-19 05:25:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_b589ee56_493a_4d58_1": {
+"ir.ui.view": [
+[
+9032,
+"2025-11-19 05:25:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_bbe16ed6_f933_48cc": {
+"ir.ui.view": [
+[
+3102,
+"2021-11-19 09:46:13"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_bbe16ed6_f933_48cc_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_bd0f3923_a7f4_4086": {
+"ir.ui.view": [
+[
+8696,
+"2025-10-22 05:19:39"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c10929ff_9e4d_4dfc": {
+"ir.ui.view": [
+[
+8881,
+"2025-11-11 04:41:50"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c10929ff_9e4d_4dfc_1": {
+"ir.ui.view": [
+[
+8880,
+"2025-11-11 04:41:50"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c5719c77_3a10_4707": {
+"ir.ui.view": [
+[
+4707,
+"2023-02-08 09:50:22"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c6838480_51c3_4695": {
+"ir.ui.view": [
+[
+6062,
+"2024-10-01 04:48:58"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c6838480_51c3_4695_1": {
+"ir.ui.view": [
+[
+4695,
+"2023-02-08 09:50:06"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd": {
+"ir.ui.view": [
+[
+8687,
+"2025-10-22 05:06:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd_1": {
+"ir.ui.view": [
+[
+8686,
+"2025-10-22 05:06:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd_2": {
+"ir.ui.view": [
+[
+8685,
+"2025-10-22 05:05:04"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_c7ca354f_58cc_4fdd_3": {
+"ir.ui.view": [
+[
+8684,
+"2025-10-22 05:05:04"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_cdd1aa9a_19c7_4db6": {
+"ir.ui.view": [
+[
+3741,
+"2022-02-24 15:28:07"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_cdd1aa9a_19c7_4db6_1": {
+"ir.ui.view": [
+[
+1,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_d573c563_728c_4341": {
+"ir.ui.view": [
+[
+4341,
+"2023-02-02 11:28:55"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_dcb81ec9_d265_44f7": {
+"ir.ui.view": [
+[
+8681,
+"2025-10-22 04:53:58"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_dcb81ec9_d265_44f7_1": {
+"ir.ui.view": [
+[
+8680,
+"2025-10-22 04:53:58"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_df0fd28d_9e06_4113": {
+"ir.ui.view": [
+[
+4113,
+"2023-02-02 11:26:55"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_e0221f08_22e8_499c": {
+"ir.ui.view": [
+[
+5029,
+"2023-06-16 05:07:14"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_e0221f08_22e8_499c_1": {
+"ir.ui.view": [
+[
+5028,
+"2023-06-16 05:07:14"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_e35b2999_abea_4330": {
+"ir.ui.view": [
+[
+4330,
+"2023-02-02 11:28:49"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_e6601e89_775c_4221": {
+"ir.ui.view": [
+[
+3144,
+"2022-01-06 06:22:05"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_e996c666_0ac8_4b32": {
+"ir.ui.view": [
+[
+9089,
+"2025-12-02 02:57:46"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ed99f184_744e_48de": {
+"ir.ui.view": [
+[
+3744,
+"2022-02-24 15:44:22"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ed99f184_744e_48de_1": {
+"ir.ui.view": [
+[
+3743,
+"2022-02-24 15:44:22"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ef77bdb2_9ac7_4021": {
+"ir.ui.view": [
+[
+8909,
+"2025-11-17 04:22:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ef77bdb2_9ac7_4021_1": {
+"ir.ui.view": [
+[
+8908,
+"2025-11-17 04:22:37"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5": {
+"ir.ui.view": [
+[
+4244,
+"2023-02-02 11:27:46"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_1": {
+"ir.ui.view": [
+[
+3764,
+"2022-02-28 09:15:20"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_10": {
+"ir.ui.view": [
+[
+3749,
+"2022-02-24 15:57:56"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_11": {
+"ir.ui.view": [
+[
+4244,
+"2023-02-02 11:27:46"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_2": {
+"ir.ui.view": [
+[
+3751,
+"2022-02-24 15:58:50"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_3": {
+"ir.ui.view": [
+[
+3763,
+"2022-02-28 09:15:20"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_4": {
+"ir.ui.view": [
+[
+3755,
+"2022-02-24 16:25:15"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_5": {
+"ir.ui.view": [
+[
+3753,
+"2022-02-24 16:24:39"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_6": {
+"ir.ui.view": [
+[
+3767,
+"2022-02-28 09:39:40"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_7": {
+"ir.ui.view": [
+[
+3756,
+"2022-02-24 16:25:15"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_8": {
+"ir.ui.view": [
+[
+4244,
+"2023-02-02 11:27:46"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f180ff3e_4244_4fd5_9": {
+"ir.ui.view": [
+[
+3752,
+"2022-02-24 15:58:50"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9276,
+"2025-12-22 04:51:38"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_1": {
+"ir.ui.view": [
+[
+9280,
+"2025-12-22 04:53:25"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_10": {
+"ir.ui.view": [
+[
+9058,
+"2025-11-25 10:19:02"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_11": {
+"ir.ui.view": [
+[
+9041,
+"2025-11-21 10:09:19"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_12": {
+"ir.ui.view": [
+[
+9056,
+"2025-11-25 10:18:03"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_13": {
+"ir.ui.view": [
+[
+9042,
+"2025-11-21 10:09:19"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_14": {
+"ir.ui.view": [
+[
+9043,
+"2025-11-21 10:10:16"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_15": {
+"ir.ui.view": [
+[
+9062,
+"2025-11-25 10:25:08"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_16": {
+"ir.ui.view": [
+[
+9070,
+"2025-11-25 10:31:20"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_17": {
+"ir.ui.view": [
+[
+9040,
+"2025-11-21 10:06:17"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_18": {
+"ir.ui.view": [
+[
+9072,
+"2025-11-25 10:33:44"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_19": {
+"ir.ui.view": [
+[
+9039,
+"2025-11-21 10:06:17"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_2": {
+"ir.ui.view": [
+[
+9282,
+"2025-12-22 04:54:21"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_20": {
+"ir.ui.view": [
+[
+9054,
+"2025-11-25 10:17:02"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_21": {
+"ir.ui.view": [
+[
+9047,
+"2025-11-21 10:17:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_22": {
+"ir.ui.view": [
+[
+22,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_23": {
+"ir.ui.view": [
+[
+9046,
+"2025-11-21 10:10:23"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_24": {
+"ir.ui.view": [
+[
+9048,
+"2025-11-21 10:17:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_25": {
+"ir.ui.view": [
+[
+9044,
+"2025-11-21 10:10:16"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_26": {
+"ir.ui.view": [
+[
+9275,
+"2025-12-22 04:51:38"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_27": {
+"ir.ui.view": [
+[
+9278,
+"2025-12-22 04:52:11"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_28": {
+"ir.ui.view": [
+[
+9286,
+"2025-12-22 04:58:00"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_29": {
+"ir.ui.view": [
+[
+8942,
+"2025-11-17 06:07:19"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_3": {
+"ir.ui.view": [
+[
+9293,
+"2025-12-22 08:04:16"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_4": {
+"ir.ui.view": [
+[
+9050,
+"2025-11-21 10:19:01"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_5": {
+"ir.ui.view": [
+[
+5,
+"2021-02-03 05:30:53"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_6": {
+"ir.ui.view": [
+[
+9064,
+"2025-11-25 10:26:58"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_7": {
+"ir.ui.view": [
+[
+9060,
+"2025-11-25 10:21:23"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_8": {
+"ir.ui.view": [
+[
+9284,
+"2025-12-22 04:55:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f2b09337_839b_4d5d_9": {
+"ir.ui.view": [
+[
+9045,
+"2025-11-21 10:10:23"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f42597b2_77c1_4142": {
+"ir.ui.view": [
+[
+3746,
+"2022-02-24 15:46:22"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f42597b2_77c1_4142_1": {
+"ir.ui.view": [
+[
+4142,
+"2023-02-02 11:27:16"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f65e00b0_a1eb_4dc8": {
+"ir.ui.view": [
+[
+8679,
+"2025-10-22 04:43:32"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f65e00b0_a1eb_4dc8_1": {
+"ir.ui.view": [
+[
+8678,
+"2025-10-22 04:43:32"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f6ae6474_631e_4a8a": {
+"ir.ui.view": [
+[
+8655,
+"2025-10-21 09:59:57"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f6ae6474_631e_4a8a_1": {
+"ir.ui.view": [
+[
+8654,
+"2025-10-21 09:59:57"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f865ee07_5757_4db7": {
+"ir.ui.view": [
+[
+9035,
+"2025-11-19 05:50:04"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_f865ee07_5757_4db7_1": {
+"ir.ui.view": [
+[
+9034,
+"2025-11-19 05:50:04"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ff3abb7a_b545_42bf": {
+"ir.ui.view": [
+[
+8905,
+"2025-11-17 04:20:24"
+]
+]
+},
+"view_qweb_studio_customization_studio_report_docume_ff3abb7a_b545_42bf_1": {
+"ir.ui.view": [
+[
+8904,
+"2025-11-17 04:20:24"
+]
+]
+},
+"view_qweb_tax_groups_totals_copy_1": {
+"ir.ui.view": [
+[
+5069,
+"2023-08-07 10:23:44"
+]
+]
+},
+"view_qweb_web_studio_backup_address_layout": {
+"ir.ui.view": [
+[
+8677,
+"2025-10-22 03:34:17"
+]
+]
+},
+"view_qweb_web_studio_backup_basic_layout": {
+"ir.ui.view": [
+[
+8666,
+"2025-10-21 10:13:09"
+]
+]
+},
+"view_qweb_web_studio_backup_external_layout_standard": {
+"ir.ui.view": [
+[
+8675,
+"2025-10-22 03:15:38"
+]
+]
+},
+"view_qweb_web_studio_backup_report_payslip": {
+"ir.ui.view": [
+[
+8618,
+"2025-10-20 02:51:50"
+]
+]
+},
+"view_qweb_web_studio_backup_report_purchasequotation_document": {
+"ir.ui.view": [
+[
+8626,
+"2025-10-21 06:46:17"
+]
+]
+},
+"view_qweb_web_studio_backup_report_purchasequotation_document_copy_1": {
+"ir.ui.view": [
+[
+8674,
+"2025-10-21 10:51:20"
+]
+]
+},
+"view_qweb_web_studio_backup_report_purchasequotation_document_copy_3": {
+"ir.ui.view": [
+[
+8891,
+"2025-11-11 06:07:35"
+]
+]
+},
+"view_qweb_web_studio_backup_report_purchasequotation_document_copy_4": {
+"ir.ui.view": [
+[
+8899,
+"2025-11-17 03:42:10"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_1": {
+"ir.ui.view": [
+[
+8948,
+"2025-11-17 07:20:04"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_2": {
+"ir.ui.view": [
+[
+8960,
+"2025-11-17 08:57:22"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_3": {
+"ir.ui.view": [
+[
+8967,
+"2025-11-17 09:46:47"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_4": {
+"ir.ui.view": [
+[
+8977,
+"2025-11-17 11:14:43"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_5": {
+"ir.ui.view": [
+[
+8999,
+"2025-11-18 03:52:50"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_6": {
+"ir.ui.view": [
+[
+9015,
+"2025-11-18 04:27:41"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_7": {
+"ir.ui.view": [
+[
+9016,
+"2025-11-18 04:38:01"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_7_copy_1": {
+"ir.ui.view": [
+[
+9025,
+"2025-11-18 05:14:43"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_7_copy_2": {
+"ir.ui.view": [
+[
+9026,
+"2025-11-18 05:20:18"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_7_copy_3": {
+"ir.ui.view": [
+[
+9027,
+"2025-11-18 05:25:41"
+]
+]
+},
+"view_qweb_web_studio_backup_report_repairorder_copy_7_copy_4": {
+"ir.ui.view": [
+[
+9028,
+"2025-11-18 05:30:52"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume_": {
+"ir.ui.view": [
+[
+8911,
+"2025-11-17 04:29:29"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__1": {
+"ir.ui.view": [
+[
+9161,
+"2025-12-09 03:26:58"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__10": {
+"ir.ui.view": [
+[
+9115,
+"2025-12-02 05:53:17"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__11": {
+"ir.ui.view": [
+[
+9184,
+"2025-12-09 06:28:36"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__12": {
+"ir.ui.view": [
+[
+9112,
+"2025-12-02 05:19:23"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__13": {
+"ir.ui.view": [
+[
+9288,
+"2025-12-22 07:45:09"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__14": {
+"ir.ui.view": [
+[
+9173,
+"2025-12-09 04:49:46"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__15": {
+"ir.ui.view": [
+[
+8669,
+"2025-10-21 10:19:55"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__16": {
+"ir.ui.view": [
+[
+9038,
+"2025-11-19 05:50:23"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__17": {
+"ir.ui.view": [
+[
+9078,
+"2025-11-26 05:15:00"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__18": {
+"ir.ui.view": [
+[
+8656,
+"2025-10-21 10:00:54"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__19": {
+"ir.ui.view": [
+[
+8910,
+"2025-11-17 04:25:06"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__2": {
+"ir.ui.view": [
+[
+8938,
+"2025-11-17 05:10:30"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__20": {
+"ir.ui.view": [
+[
+9118,
+"2025-12-02 08:10:01"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__21": {
+"ir.ui.view": [
+[
+8824,
+"2025-11-07 11:03:53"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__22": {
+"ir.ui.view": [
+[
+9052,
+"2025-11-21 10:26:19"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__23": {
+"ir.ui.view": [
+[
+8941,
+"2025-11-17 05:19:25"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__24": {
+"ir.ui.view": [
+[
+9081,
+"2025-11-26 07:45:41"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__25": {
+"ir.ui.view": [
+[
+9107,
+"2025-12-02 03:40:40"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__26": {
+"ir.ui.view": [
+[
+9074,
+"2025-11-26 02:54:47"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__27": {
+"ir.ui.view": [
+[
+9097,
+"2025-12-02 03:04:41"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__28": {
+"ir.ui.view": [
+[
+9291,
+"2025-12-22 07:46:45"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__29": {
+"ir.ui.view": [
+[
+9073,
+"2025-11-25 10:37:05"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__3": {
+"ir.ui.view": [
+[
+9177,
+"2025-12-09 05:47:54"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__30": {
+"ir.ui.view": [
+[
+8980,
+"2025-11-18 02:25:42"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__31": {
+"ir.ui.view": [
+[
+9287,
+"2025-12-22 07:44:39"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__32": {
+"ir.ui.view": [
+[
+8876,
+"2025-11-11 04:29:34"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__33": {
+"ir.ui.view": [
+[
+8959,
+"2025-11-17 08:43:28"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__34": {
+"ir.ui.view": [
+[
+9075,
+"2025-11-26 05:08:47"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__4": {
+"ir.ui.view": [
+[
+9168,
+"2025-12-09 04:28:00"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__5": {
+"ir.ui.view": [
+[
+9289,
+"2025-12-22 07:45:36"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__6": {
+"ir.ui.view": [
+[
+9290,
+"2025-12-22 07:46:22"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__7": {
+"ir.ui.view": [
+[
+9181,
+"2025-12-09 06:05:49"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__8": {
+"ir.ui.view": [
+[
+8997,
+"2025-11-18 02:54:54"
+]
+]
+},
+"view_qweb_web_studio_backup_studio_customization_studio_report_docume__9": {
+"ir.ui.view": [
+[
+9199,
+"2025-12-11 09:15:12"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful": {
+"ir.ui.view": [
+[
+8950,
+"2025-11-17 07:22:05"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_1": {
+"ir.ui.view": [
+[
+8979,
+"2025-11-17 11:19:47"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_10": {
+"ir.ui.view": [
+[
+8895,
+"2025-11-11 09:11:28"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_11": {
+"ir.ui.view": [
+[
+9077,
+"2025-11-26 05:12:55"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_2": {
+"ir.ui.view": [
+[
+9001,
+"2025-11-18 03:54:08"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_3": {
+"ir.ui.view": [
+[
+9080,
+"2025-11-26 05:15:25"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_4": {
+"ir.ui.view": [
+[
+8969,
+"2025-11-17 09:47:47"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_5": {
+"ir.ui.view": [
+[
+8894,
+"2025-11-11 09:09:13"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_6": {
+"ir.ui.view": [
+[
+8901,
+"2025-11-17 03:43:16"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_7": {
+"ir.ui.view": [
+[
+8956,
+"2025-11-17 08:42:28"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_8": {
+"ir.ui.view": [
+[
+8962,
+"2025-11-17 08:59:05"
+]
+]
+},
+"view_qweb_web_studio_backup_web_studio_report_editor_customization_ful_9": {
+"ir.ui.view": [
+[
+9296,
+"2025-12-23 09:42:46"
+]
+]
+},
+"view_qweb_web_studio_report_editor_customization_full_view_purchase_re": {
+"ir.ui.view": [
+[
+8627,
+"2025-10-21 06:46:17"
+]
+]
+},
+"view_qweb_web_studio_report_editor_customization_full_view_web_address": {
+"ir.ui.view": [
+[
+8952,
+"2025-11-17 08:36:46"
+]
+]
+},
+"view_qweb_web_studio_report_editor_customization_full_view_web_externa": {
+"ir.ui.view": [
+[
+8892,
+"2025-11-11 09:05:59"
+]
+]
+},
+"view_report_3108_studio_customization_studio_report_docume_01559fbb_91f5_4c8c": {
+"ir.ui.view": [
+[
+3108,
+"2021-11-23 08:49:18"
+]
+]
+},
+"view_report_3145_studio_customization_studio_report_docume_e6601e89_775c_4221": {
+"ir.ui.view": [
+[
+3145,
+"2022-01-06 06:22:05"
+]
+]
+},
+"view_report_3147_studio_customization_studio_report_docume_8e5bb340_e4f9_4a67": {
+"ir.ui.view": [
+[
+3147,
+"2022-01-06 06:22:39"
+]
+]
+},
+"view_report_3378_studio_customization_studio_report_docume_2be3d602_6356_4576": {
+"ir.ui.view": [
+[
+3378,
+"2022-02-23 05:49:59"
+]
+]
+},
+"view_report_3381_studio_customization_studio_report_docume_37ad8061_c594_4b2f": {
+"ir.ui.view": [
+[
+3381,
+"2022-02-23 11:42:43"
+]
+]
+},
+"view_report_3729_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6": {
+"ir.ui.view": [
+[
+3729,
+"2022-02-24 12:33:38"
+]
+]
+},
+"view_report_3736_studio_customization_studio_report_docume_c60b7e6a_dee4_416a": {
+"ir.ui.view": [
+[
+3736,
+"2022-02-24 13:02:23"
+]
+]
+},
+"view_report_3738_studio_customization_studio_report_docume_8a65ecd7_ad78_47e6": {
+"ir.ui.view": [
+[
+3738,
+"2022-02-24 14:52:24"
+]
+]
+},
+"view_report_3758_studio_customization_studio_report_docume_df0fd28d_9e06_4113": {
+"ir.ui.view": [
+[
+3758,
+"2022-02-28 08:09:27"
+]
+]
+},
+"view_report_3766_studio_customization_studio_report_docume_f180ff3e_4244_4fd5": {
+"ir.ui.view": [
+[
+3766,
+"2022-02-28 09:39:40"
+]
+]
+},
+"view_report_3768_studio_customization_studio_report_docume_f180ff3e_4244_4fd5": {
+"ir.ui.view": [
+[
+3768,
+"2022-02-28 11:41:06"
+]
+]
+},
+"view_report_3801_studio_customization_studio_report_docume_1c323f95_bff0_4e36": {
+"ir.ui.view": [
+[
+3801,
+"2022-03-30 03:25:59"
+]
+]
+},
+"view_report_3825_studio_customization_studio_report_docume_0582785a_b7ef_48d1": {
+"ir.ui.view": [
+[
+3825,
+"2022-04-07 04:43:58"
+]
+]
+},
+"view_report_3855_studio_customization_studio_report_docume_1aa2ef46_1ca1_4d9a": {
+"ir.ui.view": [
+[
+3855,
+"2022-06-30 07:55:43"
+]
+]
+},
+"view_report_3889_studio_customization_studio_report_docume_1c323f95_bff0_4e36": {
+"ir.ui.view": [
+[
+3889,
+"2022-07-29 02:38:45"
+]
+]
+},
+"view_report_3896_studio_customization_studio_report_docume_1c323f95_bff0_4e36": {
+"ir.ui.view": [
+[
+3896,
+"2022-08-10 15:24:56"
+]
+]
+},
+"view_report_3903_studio_customization_studio_report_docume_1c323f95_bff0_4e36": {
+"ir.ui.view": [
+[
+3903,
+"2022-08-11 13:01:57"
+]
+]
+},
+"view_report_4861_studio_customization_studio_report_docume_4ba14515_b356_4e1d": {
+"ir.ui.view": [
+[
+4861,
+"2023-03-02 04:35:39"
+]
+]
+},
+"view_report_4864_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+4864,
+"2023-03-02 05:26:19"
+]
+]
+},
+"view_report_4890_studio_customization_studio_report_docume_e35b2999_abea_4330": {
+"ir.ui.view": [
+[
+4890,
+"2023-03-21 02:06:03"
+]
+]
+},
+"view_report_5017_studio_customization_studio_report_docume_a2ae4430_adbe_4daa": {
+"ir.ui.view": [
+[
+5017,
+"2023-06-14 09:35:07"
+]
+]
+},
+"view_report_5021_studio_customization_studio_report_docume_889bd190_016a_4aa3": {
+"ir.ui.view": [
+[
+5021,
+"2023-06-15 06:56:01"
+]
+]
+},
+"view_report_5024_studio_customization_studio_report_docume_51c9e0e4_8f52_4b48": {
+"ir.ui.view": [
+[
+5024,
+"2023-06-15 06:59:22"
+]
+]
+},
+"view_report_5033_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+5033,
+"2023-06-16 05:45:26"
+]
+]
+},
+"view_report_5036_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+5036,
+"2023-06-22 04:41:13"
+]
+]
+},
+"view_report_5039_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+5039,
+"2023-06-22 05:13:03"
+]
+]
+},
+"view_report_5304_studio_customization_studio_report_docume_78e655c4_b305_48ac": {
+"ir.ui.view": [
+[
+5304,
+"2023-10-11 07:26:33"
+]
+]
+},
+"view_report_6065_studio_customization_studio_report_docume_d573c563_728c_4341": {
+"ir.ui.view": [
+[
+6065,
+"2024-10-01 04:56:44"
+]
+]
+},
+"view_report_8697_studio_customization_studio_report_docume_bd0f3923_a7f4_4086": {
+"ir.ui.view": [
+[
+8697,
+"2025-10-22 05:19:39"
+]
+]
+},
+"view_report_8883_studio_customization_studio_report_docume_96136e4a_ca46_4d87": {
+"ir.ui.view": [
+[
+8883,
+"2025-11-11 04:44:58"
+]
+]
+},
+"view_report_8888_studio_customization_studio_report_docume_5beecb7c_3184_45c9": {
+"ir.ui.view": [
+[
+8888,
+"2025-11-11 04:46:50"
+]
+]
+},
+"view_report_8889_report_purchasequotation_copy_3": {
+"ir.ui.view": [
+[
+8889,
+"2025-11-11 05:20:49"
+]
+]
+},
+"view_report_8897_report_purchasequotation_copy_4": {
+"ir.ui.view": [
+[
+8897,
+"2025-11-17 03:31:47"
+]
+]
+},
+"view_report_8940_studio_customization_studio_report_docume_c5719c77_3a10_4707": {
+"ir.ui.view": [
+[
+8940,
+"2025-11-17 05:19:11"
+]
+]
+},
+"view_report_8943_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+8943,
+"2025-11-17 06:07:19"
+]
+]
+},
+"view_report_8944_report_repairorder2_copy_1": {
+"ir.ui.view": [
+[
+8944,
+"2025-11-17 06:40:46"
+]
+]
+},
+"view_report_8946_report_repairorder2_copy_2": {
+"ir.ui.view": [
+[
+8946,
+"2025-11-17 06:41:44"
+]
+]
+},
+"view_report_8958_studio_customization_studio_report_docume_2eed4aa6_549b_46a1": {
+"ir.ui.view": [
+[
+8958,
+"2025-11-17 08:43:06"
+]
+]
+},
+"view_report_8963_studio_customization_studio_report_docume_2eed4aa6_549b_46a1": {
+"ir.ui.view": [
+[
+8963,
+"2025-11-17 09:20:17"
+]
+]
+},
+"view_report_8965_report_repairorder2_copy_3": {
+"ir.ui.view": [
+[
+8965,
+"2025-11-17 09:45:29"
+]
+]
+},
+"view_report_8973_report_repairorder2_copy_4": {
+"ir.ui.view": [
+[
+8973,
+"2025-11-17 11:11:41"
+]
+]
+},
+"view_report_8975_report_repairorder2_copy_5": {
+"ir.ui.view": [
+[
+8975,
+"2025-11-17 11:12:25"
+]
+]
+},
+"view_report_9003_report_repairorder2_copy_6": {
+"ir.ui.view": [
+[
+9003,
+"2025-11-18 04:16:55"
+]
+]
+},
+"view_report_9005_report_repairorder2_copy_7": {
+"ir.ui.view": [
+[
+9005,
+"2025-11-18 04:19:32"
+]
+]
+},
+"view_report_9017_report_repairorder2_copy_7_copy_1": {
+"ir.ui.view": [
+[
+9017,
+"2025-11-18 05:05:31"
+]
+]
+},
+"view_report_9019_report_repairorder2_copy_7_copy_2": {
+"ir.ui.view": [
+[
+9019,
+"2025-11-18 05:06:59"
+]
+]
+},
+"view_report_9021_report_repairorder2_copy_7_copy_3": {
+"ir.ui.view": [
+[
+9021,
+"2025-11-18 05:08:18"
+]
+]
+},
+"view_report_9023_report_repairorder2_copy_7_copy_4": {
+"ir.ui.view": [
+[
+9023,
+"2025-11-18 05:09:38"
+]
+]
+},
+"view_report_9049_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9049,
+"2025-11-21 10:19:01"
+]
+]
+},
+"view_report_9053_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9053,
+"2025-11-25 10:17:02"
+]
+]
+},
+"view_report_9055_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9055,
+"2025-11-25 10:18:03"
+]
+]
+},
+"view_report_9057_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9057,
+"2025-11-25 10:19:02"
+]
+]
+},
+"view_report_9059_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9059,
+"2025-11-25 10:21:23"
+]
+]
+},
+"view_report_9061_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9061,
+"2025-11-25 10:25:08"
+]
+]
+},
+"view_report_9063_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9063,
+"2025-11-25 10:26:58"
+]
+]
+},
+"view_report_9065_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9065,
+"2025-11-25 10:28:07"
+]
+]
+},
+"view_report_9067_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9067,
+"2025-11-25 10:30:46"
+]
+]
+},
+"view_report_9069_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9069,
+"2025-11-25 10:31:20"
+]
+]
+},
+"view_report_9071_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9071,
+"2025-11-25 10:33:44"
+]
+]
+},
+"view_report_9090_studio_customization_studio_report_docume_e996c666_0ac8_4b32": {
+"ir.ui.view": [
+[
+9090,
+"2025-12-02 02:57:46"
+]
+]
+},
+"view_report_9099_studio_customization_studio_report_docume_50c3b9df_c892_4cb5": {
+"ir.ui.view": [
+[
+9099,
+"2025-12-02 03:32:23"
+]
+]
+},
+"view_report_9100_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9100,
+"2025-12-02 03:35:46"
+]
+]
+},
+"view_report_9110_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9110,
+"2025-12-02 05:18:23"
+]
+]
+},
+"view_report_9113_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9113,
+"2025-12-02 05:52:14"
+]
+]
+},
+"view_report_9116_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9116,
+"2025-12-02 07:54:04"
+]
+]
+},
+"view_report_9157_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9157,
+"2025-12-09 03:25:03"
+]
+]
+},
+"view_report_9163_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9163,
+"2025-12-09 04:22:48"
+]
+]
+},
+"view_report_9169_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9169,
+"2025-12-09 04:46:27"
+]
+]
+},
+"view_report_9174_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9174,
+"2025-12-09 05:44:50"
+]
+]
+},
+"view_report_9178_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9178,
+"2025-12-09 06:03:10"
+]
+]
+},
+"view_report_9182_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9182,
+"2025-12-09 06:24:59"
+]
+]
+},
+"view_report_9185_studio_customization_studio_report_docume_73c7b165_9179_4119": {
+"ir.ui.view": [
+[
+9185,
+"2025-12-11 09:00:36"
+]
+]
+},
+"view_report_9277_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9277,
+"2025-12-22 04:52:11"
+]
+]
+},
+"view_report_9279_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9279,
+"2025-12-22 04:53:25"
+]
+]
+},
+"view_report_9281_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9281,
+"2025-12-22 04:54:21"
+]
+]
+},
+"view_report_9283_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9283,
+"2025-12-22 04:55:24"
+]
+]
+},
+"view_report_9285_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9285,
+"2025-12-22 04:58:00"
+]
+]
+},
+"view_report_9292_studio_customization_studio_report_docume_f2b09337_839b_4d5d": {
+"ir.ui.view": [
+[
+9292,
+"2025-12-22 08:04:16"
+]
+]
+},
+"view_std_base_automation_4868": {
+"ir.ui.view": [
+[
+4868,
+"2023-03-09 09:58:37"
+]
+]
+},
+"view_std_helpdesk_team_5302": {
+"ir.ui.view": [
+[
+5302,
+"2023-10-11 01:29:16"
+]
+]
+},
+"view_std_ir_actions_act_window_2441": {
+"ir.ui.view": [
+[
+2441,
+"2021-07-08 16:00:05"
+]
+]
+},
+"view_std_ir_actions_actions_2416": {
+"ir.ui.view": [
+[
+2416,
+"2021-06-25 02:17:16"
+]
+]
+},
+"view_std_ir_actions_server_2382": {
+"ir.ui.view": [
+[
+2382,
+"2021-06-09 07:59:51"
+]
+]
+},
+"view_std_ir_actions_server_5444": {
+"ir.ui.view": [
+[
+5444,
+"2024-02-09 07:19:24"
+]
+]
+},
+"view_std_ir_config_parameter_6117": {
+"ir.ui.view": [
+[
+6117,
+"2024-11-12 08:57:50"
+]
+]
+},
+"view_std_ir_cron_6148": {
+"ir.ui.view": [
+[
+6148,
+"2025-03-13 15:41:52"
+]
+]
+},
+"view_std_ir_default_6116": {
+"ir.ui.view": [
+[
+6116,
+"2024-11-12 08:55:56"
+]
+]
+},
+"view_std_ir_model_3111": {
+"ir.ui.view": [
+[
+3111,
+"2021-11-24 08:53:22"
+]
+]
+},
+"view_std_ir_model_access_2323": {
+"ir.ui.view": [
+[
+2323,
+"2021-05-17 04:50:23"
+]
+]
+},
+"view_std_ir_model_access_5301": {
+"ir.ui.view": [
+[
+5301,
+"2023-10-04 14:59:38"
+]
+]
+},
+"view_std_ir_model_data_3847": {
+"ir.ui.view": [
+[
+3847,
+"2022-05-05 05:19:22"
+]
+]
+},
+"view_std_ir_rule_5296": {
+"ir.ui.view": [
+[
+5296,
+"2023-09-21 09:05:10"
+]
+]
+},
+"view_std_ir_rule_5297": {
+"ir.ui.view": [
+[
+5297,
+"2023-09-21 09:07:16"
+]
+]
+},
+"view_std_ir_sequence_3255": {
+"ir.ui.view": [
+[
+3255,
+"2022-02-15 10:26:07"
+]
+]
+},
+"view_std_ir_sequence_6060": {
+"ir.ui.view": [
+[
+6060,
+"2024-09-12 08:45:32"
+]
+]
+},
+"view_std_ir_ui_menu_5317": {
+"ir.ui.view": [
+[
+5317,
+"2023-11-14 09:07:08"
+]
+]
+},
+"view_std_ir_ui_view_2658": {
+"ir.ui.view": [
+[
+2658,
+"2021-08-23 08:48:13"
+]
+]
+},
+"view_std_mail_template_5042": {
+"ir.ui.view": [
+[
+5042,
+"2023-07-05 16:21:14"
+]
+]
+},
+"view_std_product_category_5548": {
+"ir.ui.view": [
+[
+5548,
+"2024-07-03 04:37:31"
+]
+]
+},
+"view_std_product_category_5552": {
+"ir.ui.view": [
+[
+5552,
+"2024-07-04 04:27:48"
+]
+]
+},
+"view_std_project_project_stage_5899": {
+"ir.ui.view": [
+[
+5899,
+"2024-07-25 02:45:18"
+]
+]
+},
+"view_x_customer_group_form_studio_ext": {
+"ir.ui.view": [
+[
+3116,
+"2021-11-25 04:28:20"
+]
+]
+},
+"web_studio_report_ed_198c3b36_11a5_4efc_a5d5_212e51ca4b55": {
+"ir.ui.view": [
+[
+8961,
+"2025-11-17 08:57:22"
+]
+]
+},
+"web_studio_report_ed_2929ac5c_0911_46d2_91d6_9b2de2e5d84d": {
+"ir.ui.view": [
+[
+9079,
+"2025-11-26 05:15:00"
+]
+]
+},
+"web_studio_report_ed_4b97caa7_3200_48bc_ad4c_350caed39a26": {
+"ir.ui.view": [
+[
+8900,
+"2025-11-17 03:42:10"
+]
+]
+},
+"web_studio_report_ed_50cfeea6_d032_449f_b433_075945a6b96e": {
+"ir.ui.view": [
+[
+8825,
+"2025-11-07 11:03:53"
+]
+]
+},
+"web_studio_report_ed_5c8ed9aa_5a27_446f_8f25_fa687a05c57b": {
+"ir.ui.view": [
+[
+9000,
+"2025-11-18 03:52:50"
+]
+]
+},
+"web_studio_report_ed_6865a6b5_4380_4425_b452_725a62d4f821": {
+"ir.ui.view": [
+[
+8953,
+"2025-11-17 08:36:46"
+]
+]
+},
+"web_studio_report_ed_70a55ef5_9c0b_4cc0_ac00_d97c5ad85d33": {
+"ir.ui.view": [
+[
+8912,
+"2025-11-17 04:29:29"
+]
+]
+},
+"web_studio_report_ed_72bae608_be2b_4b42_aeda_7cc98c10a47d": {
+"ir.ui.view": [
+[
+9076,
+"2025-11-26 05:08:47"
+]
+]
+},
+"web_studio_report_ed_820cf160_778f_4317_a607_71bd035062fc": {
+"ir.ui.view": [
+[
+8978,
+"2025-11-17 11:14:43"
+]
+]
+},
+"web_studio_report_ed_d429a4d5_76dc_4b15_a6c0_a04df0cbbce3": {
+"ir.ui.view": [
+[
+8968,
+"2025-11-17 09:46:47"
+]
+]
+},
+"web_studio_report_ed_f0b78a90_11f7_4214_97ab_717ef85356ec": {
+"ir.ui.view": [
+[
+8893,
+"2025-11-11 09:05:59"
+]
+]
+},
+"web_studio_report_ed_f2dfe00c_79e8_407d_8e0b_abddac81b21a": {
+"ir.ui.view": [
+[
+8949,
+"2025-11-17 07:20:04"
+]
+]
+},
+"web_studio_report_ed_fe03557d_a201_4f1c_856a_a4fbb4ca175f": {
+"ir.ui.view": [
+[
+9294,
+"2025-12-23 09:41:08"
+]
+]
+}
+}
