@@ -1,0 +1,23 @@
+# BugFix-Studio-Misc — `purchase.order.line`
+
+[← back to Functional_Documentation.md](../Functional_Documentation.md)
+
+### `purchase.order.line` — Purchase Order Line
+
+*Extends a model created by `purchase`.*
+
+Other repos that use this model: `access right BugFix-Purchase.access_6248_inv___administrator` (BugFix-Purchase)<br>`access right BugFix-Purchase.access_6378_po_lines` (BugFix-Purchase)<br>`account.move.line.x_studio_related_field_zy8mz` (BugFix-Accounting)<br>`automation BugFix-Purchase.base_automation_108_imp_track_unit_price_change` (BugFix-Purchase)<br>`automation BugFix-Purchase.base_automation_109_imp_track_quantity_change` (BugFix-Purchase)<br>`automation BugFix-Purchase.base_automation_231_update_analytic_tag_line_product` (BugFix-Purchase)<br>`record rule BugFix-Purchase.rule_139_purchase_order_line_multi_company` (BugFix-Purchase)<br>`record rule BugFix-Purchase.rule_143_portal_purchase_order_lines` (BugFix-Purchase)<details><summary>+21 more</summary>`server action BugFix-Accounting.sa_f5_x_sales_report_model_srm_rpt_sales_production_purchase_report` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_1726_srm_auto_populate_data` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_1763_srm_rpt_sales_production_purchase_report` (BugFix-Accounting)<br>`server action BugFix-Purchase.server_action_1212_imp_allocate_header_charges` (BugFix-Purchase)<br>`server action BugFix-Purchase.server_action_1705_imp_track_unit_price_change_in_po_line_3` (BugFix-Purchase)<br>`server action BugFix-Purchase.server_action_1707_imp_track_unit_price_change_in_po_line` (BugFix-Purchase)<br>`server action BugFix-Purchase.server_action_1708_imp_track_quantity_change_in_po_line` (BugFix-Purchase)<br>`server action BugFix-Purchase.server_action_2411_update_analytic_tag_parameters_purchase_line_produ` (BugFix-Purchase)<br>`server action BugFix-Stock.sa_f5_x_consignment_line_imp_invoice_qty_validation_in_consignment` (BugFix-Stock)<br>`server action BugFix-Stock.server_action_1263_imp_copy_po_lines_to_consignment` (BugFix-Stock)<br>`server action BugFix-Stock.server_action_1304_imp_invoice_qty_validation_in_consignment` (BugFix-Stock)<br>`server action BugFix-Stock.server_action_1358_imp_update_consignment` (BugFix-Stock)<br>`window action BugFix-Purchase.act_window_1567_purchase_order_lines` (BugFix-Purchase)<br>`window action BugFix-Purchase.act_window_1735_rfq_lines` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_1567_purchase_order_lines` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_1735_rfq_lines` (BugFix-Purchase)<br>`window action BugFix-Purchase.aw_f4_purchase_order_line_purchase_order_lines` (BugFix-Purchase)<br>`window action BugFix-Purchase.aw_f4_purchase_order_line_rfq_lines` (BugFix-Purchase)<br>`x_consignment_line.x_studio_purchase_line_id` (BugFix-Stock)<br>`x_purchase_request._compute_related_purchase_order_line_count()` (BugFix-Purchase)<br>`x_temp_consignment_lin.x_studio_purchase_line_id` (BugFix-Stock)</details>
+
+**Summary:**
+
+<!-- SUMMARY:model:purchase.order.line -->
+This repo only adds three PDF reports for purchase order lines: Purchase Order Lines, a Backup copy and a New version. Each uses a Studio report template. No fields or logic are changed.
+<!-- /SUMMARY -->
+
+**Reports (3):**
+
+| Name | Record name | Function | Depends on | Used by |
+|---|---|---|---|---|
+| Purchase Order Lines | `action_report_1622_purchase_order_lines` | Prints **Purchase Order Lines** (qweb-pdf) for purchase.order.line records using template `studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4_copy_1`. | `model purchase.order.line` (purchase)<br>`record studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4_copy_1` (studio_customization) |  |
+| Purchase Order Lines - Backup | `action_report_1619_purchase_order_lines_backup` | Prints **Purchase Order Lines - Backup** (qweb-pdf) for purchase.order.line records using template `studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4`. | `model purchase.order.line` (purchase)<br>`record studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4` (studio_customization) |  |
+| Purchase Order Lines - New | `action_report_1621_purchase_order_lines_new` | Prints **Purchase Order Lines - New** (qweb-pdf) for purchase.order.line records using template `studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4`. | `model purchase.order.line` (purchase)<br>`record studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4` (studio_customization) |  |
