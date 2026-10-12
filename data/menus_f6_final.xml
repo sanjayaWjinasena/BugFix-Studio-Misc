@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- BugFix-Studio-Misc: F6 final -->
 <odoo>
-  <menuitem id="menu_f6f_tariff_periods" name="Tariff Periods" parent="BugFix-Studio-Misc.menu_f6url_tariff_1" action="BugFix-Purchase.act_window_2042_tariff_periods" sequence="1"/>
-  <menuitem id="menu_f6f_tariff_rates" name="Tariff Rates" parent="BugFix-Studio-Misc.menu_f6url_tariff_1" action="BugFix-Purchase.act_window_2047_tariff_rates" sequence="2"/>
+  <menuitem id="menu_f6f_tariff_periods" name="Tariff Periods" parent="BugFix-Studio-Misc.menu_f6r3_purchase_configuration_imports_configurations_tariff" action="BugFix-Purchase.act_window_2042_tariff_periods" sequence="1"/>
+  <menuitem id="menu_f6f_tariff_rates" name="Tariff Rates" parent="BugFix-Studio-Misc.menu_f6r3_purchase_configuration_imports_configurations_tariff" action="BugFix-Purchase.act_window_2047_tariff_rates" sequence="2"/>
   <menuitem id="menu_f6f_stock_move" name="Stock.Move" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Stock.action_1757_stock_move" sequence="41"/>
   <menuitem id="menu_f6f_ir_module_category" name="ir.module.category" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_module_category_ir_module_category" sequence="60"/>
   <menuitem id="menu_f6f_user_group_access_rights" name="User Group Access Rights" parent="BugFix-Studio-Misc.menu_f6r2_test_app_05" action="BugFix-Studio-Misc.aw_f4x_ir_model_access_user_group_access_rights" sequence="61"/>
