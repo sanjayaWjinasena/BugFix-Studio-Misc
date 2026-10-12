@@ -151,7 +151,7 @@ etc.).
         'views/x_customer_groups_e_views.xml',
         'views/x_material_request_mt_line_9a011_e_views.xml',
         'views/x_material_request_tes_line_3301b_e_views.xml',
-        'views/x_project_task_worksheet_template_1_e_views.xml',
+        # 'views/x_project_task_worksheet_template_1_e_views.xml',  # upgrade-testing: x_project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
         'views/x_res_config_settings_e_views.xml',
         'views/x_sales_model_debug_e_views.xml',
         'views/x_test02_e_views.xml',
