@@ -178,6 +178,7 @@ etc.).
         # 'data/ir_defaults_unblocked.xml',  # upgrade-testing: data, not shipped
         'views/project_sale_line_employee_map_studio_tree.xml',
         'data/approval_rules_group_fix.xml',
+        'views/x_test02_buttons_late.xml',  # upgrade-testing: button needs server_action_1575 loaded first
     ],
     'post_init_hook': 'post_init_hook',
     'installable': True,

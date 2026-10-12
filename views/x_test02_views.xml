@@ -9,7 +9,7 @@
       <field name="arch" type="xml">
         <form><field name="x_studio_status" invisible="1"/>
   <header>
-    <button type="action" name="1575" string="Move to Second" class="btn-primary" invisible="x_studio_status == 'S2'"/>
+    <!-- upgrade-testing: "Move to Second" (numeric action 1575) is added by views/x_test02_buttons_late.xml, after its server action loads -->
   </header>
   <header/>
   <sheet string="TEST02">
