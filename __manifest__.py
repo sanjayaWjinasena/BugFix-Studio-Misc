@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 {
+    # upgrade-testing branch: data files below are commented out - this branch installs functions only, no data is seeded.
     'name': 'Jinasena : Module : Studio-Misc',
     'version': '17.0.0.0.119',
     'summary': (
@@ -100,7 +101,7 @@ etc.).
         'security/ir.model.access.csv',
         'security/removed_handmade_access_rights.xml',
         'data/record_rules.xml',
-        'data/sequences.xml',
+        # 'data/sequences.xml',  # upgrade-testing: data, not shipped
         'views/calendar_filters_views.xml',
         'views/x_product_product_views.xml',
         'views/x_product_test_views.xml',
@@ -136,7 +137,7 @@ etc.).
         'data/approval_rules_final.xml',
         'data/automations_gap.xml',
         'data/window_actions_gap.xml',
-        'data/ir_defaults_ported.xml',
+        # 'data/ir_defaults_ported.xml',  # upgrade-testing: data, not shipped
         'data/report_templates.xml',
         'data/report_actions.xml',
         'data/server_actions_d7.xml',
@@ -172,9 +173,9 @@ etc.).
         'data/qweb_studio_reports.xml',
         'data/qweb_studio_customizations.xml',
         'data/qweb_studio_customizations_std.xml',
-        'data/defaults_and_rules_ported.xml',
+        # 'data/defaults_and_rules_ported.xml',  # upgrade-testing: data, not shipped
         'data/purchase_request_rules.xml',
-        'data/ir_defaults_unblocked.xml',
+        # 'data/ir_defaults_unblocked.xml',  # upgrade-testing: data, not shipped
         'views/project_sale_line_employee_map_studio_tree.xml',
         'data/approval_rules_group_fix.xml',
     ],
