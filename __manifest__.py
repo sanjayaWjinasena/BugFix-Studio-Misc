@@ -65,9 +65,9 @@ etc.).
         'point_of_sale',
         'pos_sale',
         'pos_loyalty',
-        'pos_mercury',
-        'pos_restaurant',
-        'pos_restaurant_appointment',
+        # 'pos_mercury',  # upgrade-testing: unused; its install creates a Restaurant POS (data)
+        # 'pos_restaurant',  # upgrade-testing: unused; its install creates a Restaurant POS (data)
+        # 'pos_restaurant_appointment',  # upgrade-testing: unused; its install creates a Restaurant POS (data)
         'pos_online_payment',
         'website',
         'website_sale',
