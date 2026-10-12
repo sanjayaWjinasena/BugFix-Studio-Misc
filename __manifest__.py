@@ -137,7 +137,7 @@ etc.).
         'data/approval_rules_final.xml',
         'data/automations_gap.xml',
         'data/window_actions_gap.xml',
-        # 'data/ir_defaults_ported.xml',  # upgrade-testing: data, not shipped
+        'data/ir_defaults_ported.xml',  # upgrade-testing: form defaults shipped; record-specific ones commented inside
         'data/report_templates.xml',
         'data/report_actions.xml',
         'data/server_actions_d7.xml',
@@ -173,9 +173,9 @@ etc.).
         'data/qweb_studio_reports.xml',
         'data/qweb_studio_customizations.xml',
         'data/qweb_studio_customizations_std.xml',
-        # 'data/defaults_and_rules_ported.xml',  # upgrade-testing: data, not shipped
+        'data/defaults_and_rules_ported.xml',  # upgrade-testing: form defaults shipped; record-specific ones commented inside
         'data/purchase_request_rules.xml',
-        # 'data/ir_defaults_unblocked.xml',  # upgrade-testing: data, not shipped
+        'data/ir_defaults_unblocked.xml',  # upgrade-testing: form defaults shipped; record-specific ones commented inside
         'views/project_sale_line_employee_map_studio_tree.xml',
         'data/approval_rules_group_fix.xml',
         'views/x_test02_buttons_late.xml',  # upgrade-testing: button needs server_action_1575 loaded first
