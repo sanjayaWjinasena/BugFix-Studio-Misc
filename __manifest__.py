@@ -158,6 +158,7 @@ etc.).
         'views/views_final.xml',
         'data/menus_studio_gap.xml',
         'data/menus_f6r3_remaining.xml',
+        'data/menus_tiles_into_imports.xml',  # 2026-10-13: TP Invoice Line / Temp Consignment tiles -> Purchase > Imports
         'data/menus_f6r2_test_app_05.xml',
         'data/menus_f6_url.xml',
         'data/menus_f6_final.xml',
