@@ -2,7 +2,8 @@
 <!-- BugFix-Studio-Misc: F6 round 3 - remaining 114 menus -->
 <odoo>
   <menuitem id="menu_f6r3_all_models" name="All Models"/>
-  <menuitem id="menu_f6r3_jinasena_reports" name="Jinasena Reports"/>
+  <!-- 2026-10-13: moved from a home-screen tile into Accounting > Reporting -->
+  <menuitem id="menu_f6r3_jinasena_reports" name="Jinasena Reports" parent="account.menu_finance_reports"/>
   <menuitem id="menu_f6r3_faqs" name="FAQs"/>
   <menuitem id="menu_f6r3_" name="" action="BugFix-Purchase.action_1194_structure_details" sequence="11"/>
   <menuitem id="menu_f6r3_inventory_warehouse" name="Inventory/wAREHOUSE"/>
