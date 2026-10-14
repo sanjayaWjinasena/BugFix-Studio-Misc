@@ -10,29 +10,6 @@
         'BugFix-MRP, BugFix-HR, BugFix-Project, BugFix-Maintenance, '
         'BugFix-Analytics, Fix-repair, Jinasena_Masterdata_Reporting).'
     ),
-    'description': """
-Studio-Misc Landing Zone
-========================
-
-Created 2026-09-07 as part of the routing audit for the remaining
-~4,261 unported Studio artefacts. Serves as the owning module for:
-
-* orphan ``x_*`` custom models that don't belong to a specific
-  domain (test/scratch models like ``x_test02``, ``x_website_faq*``,
-  ``x_sales_model_debug``, etc.)
-* small standard-Odoo Studio-touched buckets that don't warrant
-  their own repo (``crm.*``, ``quality.*``, ``loyalty.*``,
-  ``pos.*``, ``delivery.carrier``, etc.)
-* ``ir.sequence`` records without a target-model context
-* ``ir.ui.menu`` records without a routable action
-
-The alternative was creating 15+ tiny per-domain modules — this
-consolidates them into one landing zone with clear scope.
-
-Ports land in ``data/`` and ``views/`` subdirectories, one file per
-category (server_actions.xml, base_automations.xml, window_actions.xml,
-etc.).
-""",
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Extra Tools',
     'license': 'LGPL-3',
@@ -182,7 +159,5 @@ etc.).
         'views/x_test02_buttons_late.xml',  # upgrade-testing: button needs server_action_1575 loaded first
     ],
     'post_init_hook': 'post_init_hook',
-    'installable': True,
-    'auto_install': False,
     'application': False,
 }
