@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from . import x_account_winbooks_import_wizard
 from . import x_product_product
 from . import x_product_test

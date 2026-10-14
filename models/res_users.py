@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """res.users Many2ones to x_customer_groups, moved here from
 studio_usermodel_migration (v1.0.60) in v0.0.112.
 

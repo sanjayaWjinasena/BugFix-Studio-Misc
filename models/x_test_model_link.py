@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class X_test_model_link(models.Model):
     _name = 'x_test_model_link'

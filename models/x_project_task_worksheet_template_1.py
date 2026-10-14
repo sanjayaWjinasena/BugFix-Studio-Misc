@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XProjectTaskWorksheetTemplate1(models.Model):
     _name = 'x_project_task_worksheet_template_1'

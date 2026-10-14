@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     # upgrade-testing branch: data files below are commented out - this branch installs functions only, no data is seeded.
     'name': 'Jinasena : Module : Studio-Misc',
@@ -18,7 +17,7 @@
     # installed on target — no risk of pulling in unwanted modules.
     # Enables porting artefacts on crm.lead / calendar.event /
     # loyalty.* / pos.* / website.* / stock.* / sale.* / account.*.
-    'depends': ['maintenance', 
+    'depends': ['maintenance',
         'base_setup',
         'base_automation',
         'mail',

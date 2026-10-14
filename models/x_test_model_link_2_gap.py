@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XTestModelLink2Gap(models.Model):
     _inherit = 'x_test_model_link_2'

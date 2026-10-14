@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XCustomReportsTag(models.Model):
     _name = 'x_custom_reports_tag'

@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XCustomerGroups(models.Model):
     _name = 'x_customer_groups'

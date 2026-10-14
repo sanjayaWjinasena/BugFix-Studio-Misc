@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """v17.0.0.0.110: set evaluation_type='equation' on object_write actions
 whose `value` is a Python expression (not a literal).
 
@@ -26,7 +25,7 @@ ORM only, no cr.execute.
 import logging
 import re
 
-from odoo import api, SUPERUSER_ID
+from odoo import SUPERUSER_ID, api
 
 _logger = logging.getLogger(__name__)
 

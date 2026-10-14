@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class X_x_studio_request_line(models.Model):
     _name = 'x_x_studio_request_line'

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Studio fields on product.category — company scope + description.
 
 CDB added these 2 fields via Studio directly on the core product.category

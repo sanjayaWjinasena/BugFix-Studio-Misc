@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Cross-repo M2M ref restoration.
 
 To break install-time dep cycles, several base.automation records in

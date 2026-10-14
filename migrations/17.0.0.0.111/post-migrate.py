@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """v17.0.0.0.111: repair next_activity server actions broken by the 15->17 migration.
 
 Two failure modes, both on ir.actions.server with state='next_activity':
@@ -37,7 +36,7 @@ ORM only, no cr.execute.
 """
 import logging
 
-from odoo import api, SUPERUSER_ID
+from odoo import SUPERUSER_ID, api
 
 _logger = logging.getLogger(__name__)
 TAG = '[BugFix-Studio-Misc v111]'

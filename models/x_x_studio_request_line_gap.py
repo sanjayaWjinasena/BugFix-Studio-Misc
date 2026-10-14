@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XXStudioRequestLineGap(models.Model):
     _inherit = 'x_x_studio_request_line'

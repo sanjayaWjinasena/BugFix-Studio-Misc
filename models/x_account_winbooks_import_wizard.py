@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class X_account_winbooks_import_wizard(models.Model):
     _name = 'x_account_winbooks_import_wizard'

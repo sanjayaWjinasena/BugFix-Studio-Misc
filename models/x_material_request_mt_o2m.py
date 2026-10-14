@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Add parent-side O2M x_material_request_mt_line_ids_7737e via _inherit.
 
 Declared in this module (not BugFix-Stock where the parent x_material_request_mt

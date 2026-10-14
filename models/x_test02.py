@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class X_test02(models.Model):
     _name = 'x_test02'
@@ -35,5 +35,5 @@ class X_test02(models.Model):
     x_studio_test_value = fields.Integer(string='Test Value', copy=False)
     x_studio_testing = fields.Text(string='Testing')
     x_studio_testing_02 = fields.Float(string='Testing02')
-    x_studio_text_field_eKlfk = fields.Text(string='X Studio Text Field Eklfk')
+    x_studio_text_field_eKlfk = fields.Text()
     x_test123 = fields.Float(string='test123')

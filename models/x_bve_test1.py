@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XBveTest1(models.Model):
     _name = 'x_bve.test1'

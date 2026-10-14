@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XSalesModelDebug(models.Model):
     _name = 'x_sales_model_debug'

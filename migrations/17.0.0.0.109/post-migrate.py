@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """v17.0.0.0.109: back-fill ir.actions.server.update_path from update_field_id.name.
 
 Odoo 15 object_write server actions were defined by setting
@@ -27,7 +26,7 @@ ORM only, no cr.execute.
 """
 import logging
 
-from odoo import api, SUPERUSER_ID
+from odoo import SUPERUSER_ID, api
 
 _logger = logging.getLogger(__name__)
 

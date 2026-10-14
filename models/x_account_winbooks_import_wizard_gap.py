@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class XAccountWinbooksImportWizardGap(models.Model):
     _inherit = 'x_account_winbooks_import_wizard'

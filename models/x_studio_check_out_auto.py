@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import fields, models
+
 
 class X_studio_check_out_auto(models.Model):
     _name = 'x_studio_check_out_auto'

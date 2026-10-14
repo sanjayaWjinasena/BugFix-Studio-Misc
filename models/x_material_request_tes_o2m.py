@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Add parent-side O2M x_material_request_tes_line_ids_661d3 via _inherit.
 Same load-order-safety pattern as x_material_request_mt_o2m.py.
 """
