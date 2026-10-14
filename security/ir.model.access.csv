@@ -64,9 +64,9 @@ access_7829_website_faq_group_system,website.faq group_system,BugFix-Studio-Misc
 access_7063_access_account_winbooks_import_wizard,access.account.winbooks.import.wizard,BugFix-Studio-Misc.model_x_account_winbooks_import_wizard,account.group_account_manager,0,0,0,0
 access_8266_custom_reports_tags_group_user,Custom Reports Tags group_user,BugFix-Studio-Misc.model_x_custom_reports_tag,base.group_user,1,1,1,0
 access_8265_custom_reports_tags_group_system,Custom Reports Tags group_system,BugFix-Studio-Misc.model_x_custom_reports_tag,base.group_system,1,1,1,1
-access_8538_read_access_to_x_bve_salesreport,read access to x_bve.salesreport,BugFix-Studio-Misc.model_x_bve_salesreport,,1,0,0,0
-access_8575_read_access_to_x_bve_samplebalancemovementreport,read access to x_bve.samplebalancemovementreport,BugFix-Studio-Misc.model_x_bve_samplebalancemovementreport,,1,0,0,0
-access_8519_read_access_to_x_bve_test1,read access to x_bve.test1,BugFix-Studio-Misc.model_x_bve_test1,,1,0,0,0
+access_8538_read_access_to_x_bve_salesreport,read access to x_bve.salesreport,BugFix-Studio-Misc.model_x_bve_salesreport,base.group_user,1,0,0,0
+access_8575_read_access_to_x_bve_samplebalancemovementreport,read access to x_bve.samplebalancemovementreport,BugFix-Studio-Misc.model_x_bve_samplebalancemovementreport,base.group_user,1,0,0,0
+access_8519_read_access_to_x_bve_test1,read access to x_bve.test1,BugFix-Studio-Misc.model_x_bve_test1,base.group_user,1,0,0,0
 access_8262_custom_reports_line_group_user,custom_reports_line group_user,BugFix-Studio-Misc.model_x_custom_reports_line_c55e7,base.group_user,1,1,1,0
 access_8261_custom_reports_line_group_system,custom_reports_line group_system,BugFix-Studio-Misc.model_x_custom_reports_line_c55e7,base.group_system,1,1,1,1
 access_8294_material_request_mt_line_group_user,material_request_mt_line group_user,BugFix-Studio-Misc.model_x_material_request_mt_line_9a011,base.group_user,1,1,1,0
