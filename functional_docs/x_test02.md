@@ -80,21 +80,26 @@ TEST02 is a Studio sandbox model for trying out fields, layouts, approvals and a
   <details><summary>code (15 lines)</summary>
 
 ```python
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+# record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
+# record['x_start_time'] = datetime.datetime.now()
+
+
+# start_time = datetime.datetime.now()
+record.write(
+    {
+        "x_studio_chk_atomated_action": record.x_studio_test_value
+        + record.x_studio_testing_02
+        + 100
+    }
+)
+# end_time = datetime.datetime.now()
+
 
 _logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
-#record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
-#record['x_start_time'] = datetime.datetime.now()
-
-
-#start_time = datetime.datetime.now()
-record.write({'x_studio_chk_atomated_action': record.x_studio_test_value + record.x_studio_testing_02 + 100})
-#end_time = datetime.datetime.now()
-
-
-_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
-#record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
-#record['x_endt_time'] = datetime.datetime.now()
-#raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))
+# record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
+# record['x_endt_time'] = datetime.datetime.now()
+# raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))
 ```
   </details>
 - **CHK - Sample Server Action** (`server_action_2797_chk_sample_server_action`, type `code`)
@@ -104,8 +109,12 @@ _logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
   <details><summary>code (2 lines)</summary>
 
 ```python
-
-record.write({'x_studio_chk_server_action': record.x_studio_test_value + record.x_studio_testing_02})
+record.write(
+    {
+        "x_studio_chk_server_action": record.x_studio_test_value
+        + record.x_studio_testing_02
+    }
+)
 ```
   </details>
 - **Execute Code** (`server_action_2798_chk_sample_automated_action`, type `code`)
@@ -115,22 +124,26 @@ record.write({'x_studio_chk_server_action': record.x_studio_test_value + record.
   <details><summary>code (16 lines)</summary>
 
 ```python
+_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
+# record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
+# record['x_start_time'] = datetime.datetime.now()
+
+
+# start_time = datetime.datetime.now()
+record.write(
+    {
+        "x_studio_chk_atomated_action": record.x_studio_test_value
+        + record.x_studio_testing_02
+        + 100
+    }
+)
+# end_time = datetime.datetime.now()
 
 
 _logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
-#record.message_post(body="JLD Automated Action Start Time: %s" % datetime.datetime.now())
-#record['x_start_time'] = datetime.datetime.now()
-
-
-#start_time = datetime.datetime.now()
-record.write({'x_studio_chk_atomated_action': record.x_studio_test_value + record.x_studio_testing_02 + 100})
-#end_time = datetime.datetime.now()
-
-
-_logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
-#record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
-#record['x_endt_time'] = datetime.datetime.now()
-#raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))
+# record.message_post(body="JLD Automated Action End Time: %s" % datetime.datetime.now())
+# record['x_endt_time'] = datetime.datetime.now()
+# raise UserError("Automated Action Start Time: %s, End Time: %s" % (start_time, end_time))
 ```
   </details>
 - **Execute Code** (`server_action_2108_test_layout_changes`, type `code`)
@@ -140,15 +153,14 @@ _logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
   <details><summary>code (9 lines)</summary>
 
 ```python
-
 if record.id:
-  if record.x_studio_status_1 == 'Status 02':
-    #record.blocked  = False
-    #record.readonly  = True 
-    raise UserError("Found2")
-  else:
-    #record.blocked  = True
-    raise UserError("Found1")
+    if record.x_studio_status_1 == "Status 02":
+        # record.blocked  = False
+        # record.readonly  = True
+        raise UserError("Found2")
+    else:
+        # record.blocked  = True
+        raise UserError("Found1")
 ```
   </details>
 - **MST - ODOO Data Clean-up** (`server_action_2799_mst_odoo_data_clean_up`, type `code`)
@@ -158,126 +170,113 @@ if record.id:
   <details><summary>code (638 lines)</summary>
 
 ```python
+# charge_lines = env['pos.config'].search([])
 
-#charge_lines = env['pos.config'].search([])
+# charge_lines = env['pos.order'].search([])
 
-#charge_lines = env['pos.order'].search([])
+# charge_lines = env['pos.payment'].search([])
 
-#charge_lines = env['pos.payment'].search([])
+# charge_lines = env['pos.session'].search([])
 
-#charge_lines = env['pos.session'].search([])
+# charge_lines = env['account.move.line'].search([])
 
-#charge_lines = env['account.move.line'].search([])
+# charge_lines = env['account.move'].search([])
 
-#charge_lines = env['account.move'].search([])
-
-#charge_lines = env['mrp.production'].search([])
-
+# charge_lines = env['mrp.production'].search([])
 
 
-#charge_lines_1 = env['x_purchase_request'].search([])
+# charge_lines_1 = env['x_purchase_request'].search([])
 
-#for loop_lines in charge_lines_1:
+# for loop_lines in charge_lines_1:
 
 #  loop_lines.write({'x_studio_status':'Draft'})
 
 #  loop_lines.unlink()
 
-  
 
-#charge_lines_2 = env['x_purchase_request_lin'].search([])
+# charge_lines_2 = env['x_purchase_request_lin'].search([])
 
-#for loop_lines in charge_lines_2:
+# for loop_lines in charge_lines_2:
 
 #  loop_lines.write({'x_studio_status_1':'Draft'})
 
 #  loop_lines.unlink()
 
-  
 
-#charge_lines_3 = env['x_pr_non_inventory'].search([])  
+# charge_lines_3 = env['x_pr_non_inventory'].search([])
 
-#for loop_lines in charge_lines_3:
-
-#  loop_lines.write({'x_studio_status':'Draft'})
-
-#  loop_lines.unlink()
-
-  
-
-#charge_lines_4 = env['x_purchase_request_cas'].search([])
-
-#for loop_lines in charge_lines_4:
-
-#  loop_lines.write({'x_studio_status':'Draft'})
-
-#  loop_lines.unlink()
-
-  
-
-#charge_lines_5 = env['x_pr_line_cash'].search([])
-
-#for loop_lines in charge_lines_5:
+# for loop_lines in charge_lines_3:
 
 #  loop_lines.write({'x_studio_status':'Draft'})
 
 #  loop_lines.unlink()
 
 
+# charge_lines_4 = env['x_purchase_request_cas'].search([])
 
-#charge_lines_6 = env['x_consignment_line'].search([])
-
-#for loop_lines in charge_lines_6:
-
-#  loop_lines.write({'x_studio_status':'Draft'})
-
-#  loop_lines.unlink()
-
-  
-
-#charge_lines_7 = env['x_consignment_header'].search([])
-
-#for loop_lines in charge_lines_7:
+# for loop_lines in charge_lines_4:
 
 #  loop_lines.write({'x_studio_status':'Draft'})
 
 #  loop_lines.unlink()
 
-  
 
-#charge_lines_8 = env['x_consignment_charge_l'].search([])
+# charge_lines_5 = env['x_pr_line_cash'].search([])
 
-#for loop_lines in charge_lines_8:
+# for loop_lines in charge_lines_5:
 
-#  loop_lines.unlink()
-
-  
-
-#charge_lines_9 = env['x_consignment_charge_h'].search([])
-
-#for loop_lines in charge_lines_9:
+#  loop_lines.write({'x_studio_status':'Draft'})
 
 #  loop_lines.unlink()
 
 
+# charge_lines_6 = env['x_consignment_line'].search([])
 
-#charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+# for loop_lines in charge_lines_6:
 
-#for loop_lines in charge_lines_10:
-
-#  loop_lines.unlink()
-
-  
-
-#charge_lines_11 = env['x_import_rfq_charge_he'].search([])
-
-#for loop_lines in charge_lines_11:
+#  loop_lines.write({'x_studio_status':'Draft'})
 
 #  loop_lines.unlink()
 
-  
 
-#charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+# charge_lines_7 = env['x_consignment_header'].search([])
+
+# for loop_lines in charge_lines_7:
+
+#  loop_lines.write({'x_studio_status':'Draft'})
+
+#  loop_lines.unlink()
+
+
+# charge_lines_8 = env['x_consignment_charge_l'].search([])
+
+# for loop_lines in charge_lines_8:
+
+#  loop_lines.unlink()
+
+
+# charge_lines_9 = env['x_consignment_charge_h'].search([])
+
+# for loop_lines in charge_lines_9:
+
+#  loop_lines.unlink()
+
+
+# charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+
+# for loop_lines in charge_lines_10:
+
+#  loop_lines.unlink()
+
+
+# charge_lines_11 = env['x_import_rfq_charge_he'].search([])
+
+# for loop_lines in charge_lines_11:
+
+#  loop_lines.unlink()
+
+
+# charge_lines_10 = env['x_import_rfq_charge_li'].search([])
 # … 518 more lines
 ```
   </details>
@@ -288,17 +287,15 @@ if record.id:
   <details><summary>code (96 lines)</summary>
 
 ```python
-
 c = 0
 
-#raise UserError('done')
+# raise UserError('done')
 
-#journals_to_delete = env['account.move'].search([('state', 'in', ['draft', 'posted'])])
+# journals_to_delete = env['account.move'].search([('state', 'in', ['draft', 'posted'])])
 
-#for journal in journals_to_delete:
+# for journal in journals_to_delete:
 
 #    journal_line_ids = journal.line_ids
-
 
 
 #    journal_line_ids.unlink()
@@ -309,49 +306,38 @@ c = 0
 
 #    journal.with_context(force_delete=True).unlink()
 
-    
-
-
 
 # Get the user record
 
-#user = env['res.users'].search([('id', '=', 33)])  # Replace user_id with the actual user's ID
-
+# user = env['res.users'].search([('id', '=', 33)])  # Replace user_id with the actual user's ID
 
 
 # Set the related partner field to False (unlink it)
 
-#user.write({'partner_id': False})
+# user.write({'partner_id': False})
 
 
+# item = env['product.template'].search([('company_id', '=', 2)])
 
-
-
-#item = env['product.template'].search([('company_id', '=', 2)])
-
-#for items in item:
+# for items in item:
 
 #  items.write({'categ_id': 1})
 
-  #items.write({'company_id': 3})
+# items.write({'company_id': 3})
 
 
+# charge_lines_100 = env['mrp.eco.bom.change'].search([])
 
-#charge_lines_100 = env['mrp.eco.bom.change'].search([])
-
-#for loop_lines in charge_lines_100:
+# for loop_lines in charge_lines_100:
 
 #  #loop_lines.write({'state':'open'})
 
 #  loop_lines.unlink()
 
- 
 
+# charge_lines_101 = env['stock.rule'].search(['warehouse_id', '=', 41])
 
-
-#charge_lines_101 = env['stock.rule'].search(['warehouse_id', '=', 41])
-
-#for loop_lines in charge_lines_101:
+# for loop_lines in charge_lines_101:
 
 #  c += 1
 
@@ -359,31 +345,27 @@ c = 0
 
 #  #loop_lines.unlink()
 
-#raise UserError(str(c))
+# raise UserError(str(c))
 
 
+# workcentre = env['mrp.workcenter'].search([('company_id', '=', 3)])
 
-#workcentre = env['mrp.workcenter'].search([('company_id', '=', 3)])
-
-#for lines in workcentre:
+# for lines in workcentre:
 
 #  lines.write({'company_id': 1})
 
 
+# sturcture = env['x_structure_master'].search([])
 
-#sturcture = env['x_structure_master'].search([])
-
-#for lines in sturcture:
+# for lines in sturcture:
 
 #  lines.write({'x_studio_status': 'Draft', 'x_studio_selection_field_ba7aA': 'Draft'})
 
 
-
-charge_lines_6 = env['mail.activity'].search([])
+charge_lines_6 = env["mail.activity"].search([])
 
 for loop_lines in charge_lines_6:
-
-  loop_lines.unlink()
+    loop_lines.unlink()
 ```
   </details>
 - **MST - ODOO Data Clean-up - 002** (`server_action_2836_mst_odoo_data_clean_up_002`, type `code`)
@@ -393,22 +375,19 @@ for loop_lines in charge_lines_6:
   <details><summary>code (18 lines)</summary>
 
 ```python
-
-c=0
-
+c = 0
 
 
-charge_lines_102 = env['mrp.bom'].search([('product_tmpl_id', '=', 334394)])
+charge_lines_102 = env["mrp.bom"].search([("product_tmpl_id", "=", 334394)])
 
 for loop_lines in charge_lines_102:
+    c += 1
 
-  c += 1
+    # loop_lines.write({'state':'open'})
 
-  #loop_lines.write({'state':'open'})
+    loop_lines.unlink()
 
-  loop_lines.unlink()
-
-  #loop_lines.with_context(force_delete=True).unlink()
+    # loop_lines.with_context(force_delete=True).unlink()
 
 raise UserError(str(c))
 ```
@@ -420,40 +399,35 @@ raise UserError(str(c))
   <details><summary>code (34 lines)</summary>
 
 ```python
+# charge_lines = env['pos.config'].search([])
 
-#charge_lines = env['pos.config'].search([])
+# charge_lines = env['pos.order'].search([])
 
-#charge_lines = env['pos.order'].search([])
+# charge_lines = env['pos.payment'].search([])
 
-#charge_lines = env['pos.payment'].search([])
+# charge_lines = env['pos.session'].search([])
 
-#charge_lines = env['pos.session'].search([])
+# charge_lines = env['account.move.line'].search([])
 
-#charge_lines = env['account.move.line'].search([])
+# charge_lines = env['account.move'].search([])
 
-#charge_lines = env['account.move'].search([])
-
-#charge_lines = env['mrp.production'].search([])
-
+# charge_lines = env['mrp.production'].search([])
 
 
-charge_lines_1 = env['x_purchase_request'].search([])
+charge_lines_1 = env["x_purchase_request"].search([])
 
 for loop_lines in charge_lines_1:
+    loop_lines.write({"x_studio_status": "Draft"})
 
-  loop_lines.write({'x_studio_status':'Draft'})
+    loop_lines.unlink()
 
-  loop_lines.unlink()
 
-  
-
-charge_lines_2 = env['x_purchase_request_lin'].search([])
+charge_lines_2 = env["x_purchase_request_lin"].search([])
 
 for loop_lines in charge_lines_2:
+    loop_lines.write({"x_studio_status_1": "Draft"})
 
-  loop_lines.write({'x_studio_status_1':'Draft'})
-
-  loop_lines.unlink()
+    loop_lines.unlink()
 ```
   </details>
 - **TEST SERVER ACTION** (`server_action_1630_test_server_action`, type `code`)
@@ -463,8 +437,7 @@ for loop_lines in charge_lines_2:
   <details><summary>code (2 lines)</summary>
 
 ```python
-
-raise UserError('Error 123')
+raise UserError("Error 123")
 ```
   </details>
 - **Test - Layout Changes** (`sa_f5_x_test02_test_layout_changes`, type `code`)
@@ -475,13 +448,13 @@ raise UserError('Error 123')
 
 ```python
 if record.id:
-  if record.x_studio_status_1 == 'Status 02':
-    #record.blocked  = False
-    #record.readonly  = True 
-    raise UserError("Found2")
-  else:
-    #record.blocked  = True
-    raise UserError("Found1")
+    if record.x_studio_status_1 == "Status 02":
+        # record.blocked  = False
+        # record.readonly  = True
+        raise UserError("Found2")
+    else:
+        # record.blocked  = True
+        raise UserError("Found1")
 ```
   </details>
 - **Update Status** (`server_action_1575_update_status`, type `object_write`)
@@ -642,9 +615,8 @@ if product:
   <details><summary>code (3 lines)</summary>
 
 ```python
-
 if record.id:
-  raise UserError(str(record.x_studio_date - datetime.datetime.now()))
+    raise UserError(str(record.x_studio_date - datetime.datetime.now()))
 ```
   </details>
 - **sample server action - multi company** (`server_action_2578_sample_server_action_multi_company`, type `code`)
@@ -654,14 +626,11 @@ if record.id:
   <details><summary>code (8 lines)</summary>
 
 ```python
-
-partner = env['res.partner'].search([]) 
+partner = env["res.partner"].search([])
 
 if partner:
-
-  for partners in partner:
-
-    partners.write({'company_id':1})
+    for partners in partner:
+        partners.write({"company_id": 1})
 ```
   </details>
 - **sample server action - to get company id** (`server_action_2586_sample_server_action_to_get_company_id`, type `code`)
@@ -671,19 +640,21 @@ if partner:
   <details><summary>code (13 lines)</summary>
 
 ```python
+# raise UserError(user.company_id.name)
 
-#raise UserError(user.company_id.name)
-
-company_id = env.context.get('allowed_company_ids', [env.user.company_id.id])[0]
-company = env['res.company'].browse(company_id)
+company_id = env.context.get("allowed_company_ids", [env.user.company_id.id])[0]
+company = env["res.company"].browse(company_id)
 
 raise UserError(company.name)
 
-product = env['product.template'].search([('default_code', '=ilike', record.default_code),('company_id', '=', company.id)], limit=1)
+product = env["product.template"].search(
+    [("default_code", "=ilike", record.default_code), ("company_id", "=", company.id)],
+    limit=1,
+)
 if product:
-  for p in product:
-   if p.id != record.id:
-      raise UserError("Duplicate Found Try Another Code!")
+    for p in product:
+        if p.id != record.id:
+            raise UserError("Duplicate Found Try Another Code!")
 ```
   </details>
 - **sample server action - update stock.quant** (`server_action_2599_sample_server_action_update_stock_quant`, type `code`)
@@ -693,14 +664,12 @@ if product:
   <details><summary>code (8 lines)</summary>
 
 ```python
+stock = env["stock.quant"].search([("company_id", "=", False)])
 
-stock = env['stock.quant'].search([('company_id', '=', False)]) 
-
-c= 0
+c = 0
 
 for stocks in stock:
-
-  stocks.write({'company_id':1})
+    stocks.write({"company_id": 1})
 ```
   </details>
 - **sample server action-2** (`server_action_2268_sample_server_action_2`, type `code`)
@@ -710,7 +679,6 @@ for stocks in stock:
   <details><summary>code (134 lines)</summary>
 
 ```python
-
 c = 0
 
 line_ids = []
@@ -720,116 +688,103 @@ line_ids1 = []
 line_ids2 = []
 
 
+# line_ids = record.x_studio_many2many_field_c0IAp
 
-#line_ids = record.x_studio_many2many_field_c0IAp
+# line_ids1 = record.x_studio_charges_1
 
-#line_ids1 = record.x_studio_charges_1
+# line_ids2 = line_ids + line_ids1
 
-#line_ids2 = line_ids + line_ids1
+# line_ids2 = "TEST-1"
 
-#line_ids2 = "TEST-1"
+# line_ids2.append("TEST-1")
 
-#line_ids2.append("TEST-1")
+# new_val = "TEST-1"
 
-#new_val = "TEST-1"
-
-#line_ids2.append([0,0,new_val])
-
+# line_ids2.append([0,0,new_val])
 
 
-#record.write({'x_studio_charges_2':[(6, 0, record.x_studio_many2many_field_c0IAp.id)]})
+# record.write({'x_studio_charges_2':[(6, 0, record.x_studio_many2many_field_c0IAp.id)]})
 
-#record.write({'x_studio_charges_2':record.x_studio_many2many_field_c0IAp})
+# record.write({'x_studio_charges_2':record.x_studio_many2many_field_c0IAp})
 
-#record.write({'x_studio_charges_2':line_ids + line_ids1})
+# record.write({'x_studio_charges_2':line_ids + line_ids1})
 
-#record.write({'x_studio_charges_2':[(4, line_ids2, 0)]})
-
-  
-
-  
+# record.write({'x_studio_charges_2':[(4, line_ids2, 0)]})
 
 
+# charge_lines = env['x_trf_charges'].search([])
 
-#charge_lines = env['x_trf_charges'].search([]) 
-
-#if charge_lines:
+# if charge_lines:
 
 #  for loop_lines in charge_lines:
 
-    #line_ids = [(6, 0, [loop_lines.id])]
+# line_ids = [(6, 0, [loop_lines.id])]
 
-    #line_ids.append([0,0,loop_lines.id])
+# line_ids.append([0,0,loop_lines.id])
 
-    #line_ids.append((0, 0, loop_lines.id))
+# line_ids.append((0, 0, loop_lines.id))
 
-    #line_ids.append(loop_lines.id)
+# line_ids.append(loop_lines.id)
 
-    #record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
+# record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
 
-    #record.write({'x_studio_many2many_field_c0IAp':[(6, 0, [loop_lines.id])]})
+# record.write({'x_studio_many2many_field_c0IAp':[(6, 0, [loop_lines.id])]})
 
-    #record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
+# record.write({'x_studio_many2many_field_c0IAp': [(6, 0, loop_lines.id)]})
 
-    #record.write({'x_studio_many2many_field_c0IAp':[(4, 0, [loop_lines.id])]})
+# record.write({'x_studio_many2many_field_c0IAp':[(4, 0, [loop_lines.id])]})
 
-    #record.write({'x_studio_many2many_field_c0IAp':[(4, [loop_lines.id])]})
+# record.write({'x_studio_many2many_field_c0IAp':[(4, [loop_lines.id])]})
 
-    #[(4, new_value_id, 0)]
-
-
-
-#line_ids = [19,20,21]
-
-#line_ids = [19]
-
-#record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)]})
-
-  #template.write({'attachment_ids':[(6, 0, [attachment.id])]})
-
-  #record.write({'x_studio_many2many_field_c0IAp':line_ids})
-
-  
-
-  #raise UserError(line_ids)
+# [(4, new_value_id, 0)]
 
 
+# line_ids = [19,20,21]
 
-#trf = env['x_trf_charges'].create({'x_name':"Test-1", 'x_studio_description':"Test-1"})
+# line_ids = [19]
 
-#line_ids.append(trf.id)
+# record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)]})
 
-#record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)]})
+# template.write({'attachment_ids':[(6, 0, [attachment.id])]})
 
-
-
-#for lins in record.x_studio_charges_1:
-
- #line_ids.append(lins.id)
-
- 
-
-#record.write({'x_studio_charges_2':[(6, 0, line_ids)]})
+# record.write({'x_studio_many2many_field_c0IAp':line_ids})
 
 
+# raise UserError(line_ids)
 
-#free_items = env['sale.order.line'].search([('order_id', '=', 1395)])
 
-#if free_items:
+# trf = env['x_trf_charges'].create({'x_name':"Test-1", 'x_studio_description':"Test-1"})
 
-    #raise UserError(str(free_items.product_id.display_name))
+# line_ids.append(trf.id)
 
-  #for del_items in free_items:
+# record.write({'x_studio_many2many_field_c0IAp':[(6, 0, line_ids)]})
 
-    #del_items.unlink()
 
-    #raise UserError(str(del_items.id))
+# for lins in record.x_studio_charges_1:
 
-    #line_ids.append(del_items.product_uom_qty)
+# line_ids.append(lins.id)
 
-  #record.write({'x_studio_test_char':line_ids})
 
-expired_so = env['sale.order'].search([('id', '=', 1404)])
+# record.write({'x_studio_charges_2':[(6, 0, line_ids)]})
+
+
+# free_items = env['sale.order.line'].search([('order_id', '=', 1395)])
+
+# if free_items:
+
+# raise UserError(str(free_items.product_id.display_name))
+
+# for del_items in free_items:
+
+# del_items.unlink()
+
+# raise UserError(str(del_items.id))
+
+# line_ids.append(del_items.product_uom_qty)
+
+# record.write({'x_studio_test_char':line_ids})
+
+expired_so = env["sale.order"].search([("id", "=", 1404)])
 # … 14 more lines
 ```
   </details>

@@ -21,12 +21,11 @@ This repo adds the server action Mark as lost, which marks leads as lost directl
   <details><summary>code (7 lines)</summary>
 
 ```python
-
-if not 'opportunity' in records.mapped('type'):
+if not "opportunity" in records.mapped("type"):
     records.action_set_lost()
 elif records:
-    action_values = env.ref('crm.crm_lead_lost_action').sudo().read()[0]
-    action_values.update({'context': env.context})
+    action_values = env.ref("crm.crm_lead_lost_action").sudo().read()[0]
+    action_values.update({"context": env.context})
     action = action_values
 ```
   </details>

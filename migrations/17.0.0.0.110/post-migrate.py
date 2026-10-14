@@ -22,6 +22,7 @@ eval_type != 'equation' already.
 
 ORM only, no cr.execute.
 """
+
 import logging
 import re
 
@@ -31,38 +32,45 @@ _logger = logging.getLogger(__name__)
 
 # Signals that a value is a Python expression, not a literal:
 #   record.x_...   env['...']   self.id   + - * /   assignment
-EXPR_HINT = re.compile(r'record\.|\benv\[|\benv\.|\bself\.|[+\-*/()]|^[a-zA-Z_]+\s*=')
+EXPR_HINT = re.compile(r"record\.|\benv\[|\benv\.|\bself\.|[+\-*/()]|^[a-zA-Z_]+\s*=")
 
 
 def migrate(cr, version):
     if not version:
         return
     env = api.Environment(cr, SUPERUSER_ID, {})
-    Action = env['ir.actions.server'].sudo()
-    candidates = Action.search([
-        ('state', '=', 'object_write'),
-        ('value', '!=', False),
-        ('evaluation_type', '!=', 'equation'),
-    ])
+    Action = env["ir.actions.server"].sudo()
+    candidates = Action.search(
+        [
+            ("state", "=", "object_write"),
+            ("value", "!=", False),
+            ("evaluation_type", "!=", "equation"),
+        ]
+    )
     fixed = 0
     for act in candidates:
-        val = act.value or ''
+        val = act.value or ""
         if not EXPR_HINT.search(val):
             continue
         try:
-            act.evaluation_type = 'equation'
+            act.evaluation_type = "equation"
             fixed += 1
             _logger.info(
-                '[BugFix-Studio-Misc v110] action id=%s %r: evaluation_type '
-                '<- equation (value=%r)',
-                act.id, act.name, val[:80],
+                "[BugFix-Studio-Misc v110] action id=%s %r: evaluation_type "
+                "<- equation (value=%r)",
+                act.id,
+                act.name,
+                val[:80],
             )
         except Exception as e:
             _logger.warning(
-                '[BugFix-Studio-Misc v110] action id=%s %r: skip, %s',
-                act.id, act.name, e,
+                "[BugFix-Studio-Misc v110] action id=%s %r: skip, %s",
+                act.id,
+                act.name,
+                e,
             )
     _logger.info(
-        '[BugFix-Studio-Misc v110] fixed %d of %d candidate object_write actions.',
-        fixed, len(candidates),
+        "[BugFix-Studio-Misc v110] fixed %d of %d candidate object_write actions.",
+        fixed,
+        len(candidates),
     )

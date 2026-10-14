@@ -23,14 +23,13 @@ This repo adds the automation Restrict Attachment Delete for Approved Expenses: 
   <details><summary>code (8 lines)</summary>
 
 ```python
-
-attach = env['ir.attachment'].search([('id', '=', record.id)])
+attach = env["ir.attachment"].search([("id", "=", record.id)])
 if attach:
-  for attachment in attach:
-    if attachment.res_model == 'hr.expense' and attachment.res_id:
-      expense = env['hr.expense'].browse(attachment.res_id)
-      if expense.sheet_id.state not in ['draft', 'submit']:
-        raise UserError("You cannot delete attachments from approved expenses.")
+    for attachment in attach:
+        if attachment.res_model == "hr.expense" and attachment.res_id:
+            expense = env["hr.expense"].browse(attachment.res_id)
+            if expense.sheet_id.state not in ["draft", "submit"]:
+                raise UserError("You cannot delete attachments from approved expenses.")
 ```
   </details>
 - **Restrict Attachment Delete for Approved Expenses** (`sa_f5_ir_attachment_restrict_attachment_delete_for_approved_expenses`, type `code`)
@@ -40,13 +39,13 @@ if attach:
   <details><summary>code (7 lines)</summary>
 
 ```python
-attach = env['ir.attachment'].search([('id', '=', record.id)])
+attach = env["ir.attachment"].search([("id", "=", record.id)])
 if attach:
-  for attachment in attach:
-    if attachment.res_model == 'hr.expense' and attachment.res_id:
-      expense = env['hr.expense'].browse(attachment.res_id)
-      if expense.sheet_id.state not in ['draft', 'submit']:
-        raise UserError("You cannot delete attachments from approved expenses.")
+    for attachment in attach:
+        if attachment.res_model == "hr.expense" and attachment.res_id:
+            expense = env["hr.expense"].browse(attachment.res_id)
+            if expense.sheet_id.state not in ["draft", "submit"]:
+                raise UserError("You cannot delete attachments from approved expenses.")
 ```
   </details>
 **Automations (1):**

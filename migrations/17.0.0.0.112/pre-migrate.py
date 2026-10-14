@@ -26,16 +26,15 @@ This pre-migrate does two ORM-only things (no cr.execute):
 
 Idempotent: no-op on fresh installs (version is None) and when rows are gone.
 """
+
 import logging
 
 from odoo import SUPERUSER_ID, api
 
 _logger = logging.getLogger(__name__)
 
-MODULE = 'BugFix-Studio-Misc'
-MOVED_FIELDS = (
-    ('x_custom_reports_line_c55e7', 'x_custom_reports_id'),
-)
+MODULE = "BugFix-Studio-Misc"
+MOVED_FIELDS = (("x_custom_reports_line_c55e7", "x_custom_reports_id"),)
 STALE_VIEWS = (
     # (none)
 )
@@ -45,30 +44,43 @@ def migrate(cr, version):
     if not version:
         return
     env = api.Environment(cr, SUPERUSER_ID, {})
-    Fields = env['ir.model.fields'].sudo()
-    IMD = env['ir.model.data'].sudo()
+    Fields = env["ir.model.fields"].sudo()
+    IMD = env["ir.model.data"].sudo()
 
     field_ids = []
     for model, name in MOVED_FIELDS:
-        field_ids += Fields.search([('model', '=', model), ('name', '=', name)]).ids
+        field_ids += Fields.search([("model", "=", model), ("name", "=", name)]).ids
     if field_ids:
-        imd = IMD.search([
-            ('module', '=', MODULE),
-            ('model', '=', 'ir.model.fields'),
-            ('res_id', 'in', field_ids),
-        ])
+        imd = IMD.search(
+            [
+                ("module", "=", MODULE),
+                ("model", "=", "ir.model.fields"),
+                ("res_id", "in", field_ids),
+            ]
+        )
         if imd:
-            names = imd.mapped('name')
+            names = imd.mapped("name")
             imd.unlink()
-            _logger.info("%s v0.0.112: detached %d ir.model.data pointer(s) for moved "
-                         "fields: %s", MODULE, len(names), names)
+            _logger.info(
+                "%s v0.0.112: detached %d ir.model.data pointer(s) for moved "
+                "fields: %s",
+                MODULE,
+                len(names),
+                names,
+            )
 
-    View = env['ir.ui.view'].sudo().with_context(active_test=False)
+    View = env["ir.ui.view"].sudo().with_context(active_test=False)
     for xmlid in STALE_VIEWS:
         view = env.ref(xmlid, raise_if_not_found=False)
         if not view:
             continue
         view = View.browse(view.id)
-        _logger.info("%s v0.0.112: unlinking stale extension view %s (id=%s, model=%s) "
-                     "for recreation from the new file arch", MODULE, xmlid, view.id, view.model)
+        _logger.info(
+            "%s v0.0.112: unlinking stale extension view %s (id=%s, model=%s) "
+            "for recreation from the new file arch",
+            MODULE,
+            xmlid,
+            view.id,
+            view.model,
+        )
         view.unlink()

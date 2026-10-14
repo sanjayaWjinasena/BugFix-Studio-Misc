@@ -23,9 +23,9 @@ This repo adds the server action JIN - Company Id in Payment Terms, which sets a
   <details><summary>code (4 lines)</summary>
 
 ```python
-company_id = env.context.get('allowed_company_ids', [env.user.company_id.id])[0]
-company = env['res.company'].browse(company_id)
+company_id = env.context.get("allowed_company_ids", [env.user.company_id.id])[0]
+company = env["res.company"].browse(company_id)
 
-record['company_id'] = company.id
+record["company_id"] = company.id
 ```
   </details>

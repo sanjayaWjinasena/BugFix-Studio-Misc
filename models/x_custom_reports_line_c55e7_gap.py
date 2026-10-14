@@ -5,8 +5,9 @@ from odoo import fields, models
 # `_unknown` for the whole upgrade-mode registry build (see BugFix-Purchase
 # models/upstream_link_fields.py). Do NOT re-add them here.
 
-class XCustomReportsLineC55e7Gap(models.Model):
-    _inherit = 'x_custom_reports_line_c55e7'
-    _rec_name = 'x_name'  # Clear-DB Studio model: records are named by x_name
 
-    x_name = fields.Char(string='Description', required=True)
+class XCustomReportsLineC55e7Gap(models.Model):
+    _inherit = "x_custom_reports_line_c55e7"
+    _rec_name = "x_name"  # Clear-DB Studio model: records are named by x_name
+
+    x_name = fields.Char(string="Description", required=True)

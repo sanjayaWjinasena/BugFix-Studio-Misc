@@ -12,13 +12,20 @@ Column data is preserved: the source module's pre-migrate drops its
 ir.model.data pointers so Odoo's end-of-load cleanup never unlinks the
 fields; this module's reflection re-attaches the xmlids.
 """
+
 from odoo import fields, models
 
 
 class ResUsers(models.Model):
-    _inherit = 'res.users'
+    _inherit = "res.users"
 
-    x_studio_customer_group2 = fields.Many2one('x_customer_groups', string='Customer Group2')
-    x_studio_many2one_field_3LBKs = fields.Many2one('x_customer_groups', string='Group')
-    x_studio_many2one_field_9xxxo = fields.Many2one('x_customer_groups', string='Customer Groups XXX')
-    x_studio_many2one_field_V9cmo = fields.Many2one('x_customer_groups', string='Customer Groups')
+    x_studio_customer_group2 = fields.Many2one(
+        "x_customer_groups", string="Customer Group2"
+    )
+    x_studio_many2one_field_3LBKs = fields.Many2one("x_customer_groups", string="Group")
+    x_studio_many2one_field_9xxxo = fields.Many2one(
+        "x_customer_groups", string="Customer Groups XXX"
+    )
+    x_studio_many2one_field_V9cmo = fields.Many2one(
+        "x_customer_groups", string="Customer Groups"
+    )

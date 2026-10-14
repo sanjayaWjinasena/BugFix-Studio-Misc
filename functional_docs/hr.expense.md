@@ -22,7 +22,7 @@ This repo adds the server action EXP - Validate Negative Quantities, which block
 
 ```python
 if record.quantity < 0:
-  raise UserError("Invalid quantity")
+    raise UserError("Invalid quantity")
 ```
   </details>
 **Automations (1):**

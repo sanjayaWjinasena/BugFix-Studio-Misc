@@ -25,12 +25,14 @@ This repo adds a server action, User Group Change - Notify, that emails 'Access 
 ```python
 # Workaround: original mail_post SA can't run on res.groups (no mail.thread).
 # Manual mail.mail create + send.
-env['mail.mail'].sudo().create({
-    'subject': 'Access Rights have Changed',
-    'body_html': '<p>Access Rights have Changed.....</p>',
-    'email_to': 'rohana.b@jinasena.com.lk',
-    'auto_delete': True,
-}).send()
+env["mail.mail"].sudo().create(
+    {
+        "subject": "Access Rights have Changed",
+        "body_html": "<p>Access Rights have Changed.....</p>",
+        "email_to": "rohana.b@jinasena.com.lk",
+        "auto_delete": True,
+    }
+).send()
 ```
   </details>
 **Automations (3):**

@@ -24,6 +24,7 @@ technical name of update_field_id. Matches CDB's values verbatim
 
 ORM only, no cr.execute.
 """
+
 import logging
 
 from odoo import SUPERUSER_ID, api
@@ -35,15 +36,19 @@ def migrate(cr, version):
     if not version:
         return
     env = api.Environment(cr, SUPERUSER_ID, {})
-    Action = env['ir.actions.server'].sudo()
-    broken = Action.search([
-        ('state', '=', 'object_write'),
-        ('update_field_id', '!=', False),
-        '|', ('update_path', '=', False), ('update_path', '=', ''),
-    ])
+    Action = env["ir.actions.server"].sudo()
+    broken = Action.search(
+        [
+            ("state", "=", "object_write"),
+            ("update_field_id", "!=", False),
+            "|",
+            ("update_path", "=", False),
+            ("update_path", "=", ""),
+        ]
+    )
     if not broken:
         _logger.info(
-            '[BugFix-Studio-Misc v109] no broken object_write actions; nothing to do.'
+            "[BugFix-Studio-Misc v109] no broken object_write actions; nothing to do."
         )
         return
     fixed = 0
@@ -55,17 +60,23 @@ def migrate(cr, version):
             act.update_path = field.name
             fixed += 1
             _logger.info(
-                '[BugFix-Studio-Misc v109] action id=%s %r: update_path <- %r '
-                '(field %r on %r)',
-                act.id, act.name, field.name, field.field_description,
-                (field.model_id.model if field.model_id else '?'),
+                "[BugFix-Studio-Misc v109] action id=%s %r: update_path <- %r "
+                "(field %r on %r)",
+                act.id,
+                act.name,
+                field.name,
+                field.field_description,
+                (field.model_id.model if field.model_id else "?"),
             )
         except Exception as e:
             _logger.warning(
-                '[BugFix-Studio-Misc v109] action id=%s %r: skip, %s',
-                act.id, act.name, e,
+                "[BugFix-Studio-Misc v109] action id=%s %r: skip, %s",
+                act.id,
+                act.name,
+                e,
             )
     _logger.info(
-        '[BugFix-Studio-Misc v109] fixed %d of %d broken object_write actions.',
-        fixed, len(broken),
+        "[BugFix-Studio-Misc v109] fixed %d of %d broken object_write actions.",
+        fixed,
+        len(broken),
     )

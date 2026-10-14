@@ -52,12 +52,11 @@ A Studio test (sandbox) model labelled product.test, with test links to products
   <details><summary>code (6 lines)</summary>
 
 ```python
-
-#record['x_name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
+# record['x_name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
 
 if record.x_name:
- seq = env['ir.sequence'].next_by_code('purchase.request.seq')
- record.write({'x_name': seq})
+    seq = env["ir.sequence"].next_by_code("purchase.request.seq")
+    record.write({"x_name": seq})
 ```
   </details>
 **Window actions (1):**
