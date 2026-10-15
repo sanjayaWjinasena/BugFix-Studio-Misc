@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_final_hr_expense_sheet_odoo_studio_hr_expense_sheet_form_customization" model="ir.ui.view">
+      <field name="name">Odoo Studio: hr.expense.sheet.form customization</field>
+      <field name="model">hr.expense.sheet</field>
+      <field name="type">form</field>
+      <field name="priority">160</field>
+      <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]/h1[1]/field[@name='name']" position="attributes">
+    <attribute name="readonly">(not is_editable) or (state != 'draft')</attribute></xpath>
+  <xpath expr="//field[@name='accounting_date']" position="attributes">
+    <attribute name="invisible">(state not in ['approve', 'post', 'done']) or (state not in ['approve', 'post', 'done'])</attribute><attribute name="readonly">(not is_editable) or (state != 'draft')</attribute></xpath>
+  <xpath expr="//field[@name='date']" position="attributes">
+    <attribute name="readonly">(parent.state != 'draft') or (state not in ['draft', 'reported', 'approved', 'refused'])</attribute></xpath>
+  <xpath expr="//field[@name='product_id']" position="attributes">
+    <attribute name="readonly">(parent.state != 'draft') or (state not in ['draft', 'reported', 'approved', 'refused'])</attribute></xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='expenses']/field[@name='expense_line_ids']/tree[1]/field[@name='name']" position="attributes">
+    <attribute name="readonly">(parent.state != 'draft') or (state not in ['draft', 'reported', 'approved', 'refused'])</attribute></xpath>
+  <xpath expr="//field[@name='sale_order_id']" position="attributes">
+    <attribute name="invisible">(not can_be_reinvoiced) or (can_be_reinvoiced == False)</attribute><attribute name="readonly">(state in ['done', 'refused']) or ((parent.state != 'draft') or (state in ['done', 'refused']))</attribute></xpath>
+  <xpath expr="//field[@name='tax_ids']" position="attributes">
+    <attribute name="readonly">True</attribute></xpath>
+  </data>
+      </field>
+    </record>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3368_custom_reports_report" model="ir.actions.report">
+      <field name="name">Custom Reports Report</field>
+      <field name="model">x_custom_reports</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_bd0f3923-a7f4-4086-bb6a-899bb01fd315</field>
+    </record>
+    <record id="action_report_3435_custom_reports_report" model="ir.actions.report">
+      <field name="name">Custom Reports Report</field>
+      <field name="model">x_custom_reports</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_96136e4a-ca46-4d87-890d-01114a610c91</field>
+    </record>
+    <record id="action_report_3436_custom_reports_report" model="ir.actions.report">
+      <field name="name">Custom Reports Report</field>
+      <field name="model">x_custom_reports</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_5beecb7c-3184-45c9-b2ed-2b6f709186da</field>
+    </record>
+</odoo>

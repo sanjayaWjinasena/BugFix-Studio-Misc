@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_2792_budget_report" model="ir.actions.report">
+      <field name="name">Budget Report</field>
+      <field name="model">crossovered.budget</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0</field>
+    </record>
+</odoo>

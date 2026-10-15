@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for calendar.filters (1 views) -->
 <odoo>
-  <data>
+  <record id="act_window_2830_calendar_filters" model="ir.actions.act_window">
+    <field name="name">Calendar.filters</field>
+    <field name="res_model">calendar.filters</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+  <record id="act_window_2832_calendar_filters" model="ir.actions.act_window">
+    <field name="name">calendar.filters</field>
+    <field name="res_model">calendar.filters</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
     <record id="view_6070_default_tree_view_for_ir_model_747" model="ir.ui.view">
       <field name="name">Default tree view for ir.model(747,)</field>
       <field name="model">calendar.filters</field>
@@ -10,6 +42,14 @@
         <tree string="Calendar Filters"><field name="id" readonly="1"/></tree>
       </field>
     </record>
-
-  </data>
+  <record id="act_window_2832_calendar_filters_d7" model="ir.actions.act_window">
+    <field name="name">calendar.filters</field>
+    <field name="res_model">calendar.filters</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="act_window_2830_calendar_filters_d7" model="ir.actions.act_window">
+    <field name="name">Calendar.filters</field>
+    <field name="res_model">calendar.filters</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 </odoo>

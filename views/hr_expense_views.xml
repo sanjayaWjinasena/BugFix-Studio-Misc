@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2816_hr_expense_d7" model="ir.actions.act_window">
+    <field name="name">hr.expense</field>
+    <field name="res_model">hr.expense</field>
+    <field name="view_mode">kanban,tree,form,pivot,graph,activity</field>
+  </record>
+    <record id="view_final_hr_expense_hr_expense_extract_view_form_studio_cus" model="ir.ui.view">
+      <field name="name">hr.expense.extract.view.form_studio_cus</field>
+      <field name="model">hr.expense</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="hr_expense_extract.hr_expense_extract_view_form"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+    </data>
+      </field>
+    </record>
+</odoo>

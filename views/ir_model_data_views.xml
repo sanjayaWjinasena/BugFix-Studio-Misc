@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_ir_model_data_3847" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model.data search customization</field>
+      <field name="model">ir.model.data</field>
+      <field name="type">search</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_model_data_search"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//search[1]/field[@name='res_id']" position="after">
+    <field name="res_id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

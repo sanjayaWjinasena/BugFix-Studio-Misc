@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2494_inventory_routes_d7" model="ir.actions.act_window">
+    <field name="name">Inventory routes</field>
+    <field name="res_model">stock.route</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="act_window_2095_stock_location_route_d7" model="ir.actions.act_window">
+    <field name="name">stock.location.route</field>
+    <field name="res_model">stock.route</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

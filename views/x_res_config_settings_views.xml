@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_1749_config_settings" model="ir.actions.act_window">
+    <field name="name">config.settings</field>
+    <field name="res_model">x_res_config_settings</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+    <record id="view_3924_default_form_view_for_x_res_config_settings_e" model="ir.ui.view">
+      <field name="name">Default form view for x_res_config_settings</field>
+      <field name="model">x_res_config_settings</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+  <header/>
+  <sheet string="res.config.settings">
+    <div class="oe_title">
+                <h1>
+                    <field name="x_name" required="1" placeholder="Name..."/>
+                </h1>
+            </div>
+    <group name="studio_group_8804bd">
+      <group name="studio_group_8804bd_left"/>
+      <group name="studio_group_8804bd_right"/>
+    </group>
+  </sheet>
+</form>
+      </field>
+    </record>
+    <record id="view_3923_default_list_view_for_x_res_config_settings_e" model="ir.ui.view">
+      <field name="name">Default list view for x_res_config_settings</field>
+      <field name="model">x_res_config_settings</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree>
+  <field name="x_name"/>
+</tree>
+      </field>
+    </record>
+    <record id="view_3925_default_search_view_for_x_res_config_settings_e" model="ir.ui.view">
+      <field name="name">Default search view for x_res_config_settings</field>
+      <field name="model">x_res_config_settings</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search>
+  <field name="x_name"/>
+</search>
+      </field>
+    </record>
+    <record id="view_final_x_res_config_settings_odoo_studio_default_form_view_for_x_res_config_settings_c" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_res_config_settings customization</field>
+      <field name="model">x_res_config_settings</field>
+      <field name="type">form</field>
+      <field name="priority">99</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3924_default_form_view_for_x_res_config_settings_e"/>
+      <field name="mode">extension</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_8804bd_left']" position="inside">
+    <field name="x_studio_minimum_sales_margin_" string="Minimum Sales Margin %"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

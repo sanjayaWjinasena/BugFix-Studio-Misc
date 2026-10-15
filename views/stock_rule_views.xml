@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2835_stock_rule_d7" model="ir.actions.act_window">
+    <field name="name">stock.rule</field>
+    <field name="res_model">stock.rule</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

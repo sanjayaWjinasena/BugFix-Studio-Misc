@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_2230_purchase_order_non_inventory_report" model="ir.actions.report">
+      <field name="name">Purchase Order (Non-Inventory) Report</field>
+      <field name="model">x_po_non_inventory</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_a2ae4430-adbe-4daa-a5c5-e03e683ddc01</field>
+    </record>
+    <record id="action_report_2233_purchase_order_non_inventory_report" model="ir.actions.report">
+      <field name="name">Purchase Order (Non-Inventory) Report</field>
+      <field name="model">x_po_non_inventory</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_51c9e0e4-8f52-4b48-a344-8db5a8f2352a</field>
+    </record>
+</odoo>

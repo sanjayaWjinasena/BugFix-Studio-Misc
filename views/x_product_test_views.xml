@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for x_product_test (3 views) -->
 <odoo>
-  <data>
     <record id="view_2587_default_form_view_for_x_product_test" model="ir.ui.view">
       <field name="name">Default form view for x_product_test</field>
       <field name="model">x_product_test</field>
@@ -30,7 +28,6 @@
 </form>
       </field>
     </record>
-
     <record id="view_2586_default_list_view_for_x_product_test" model="ir.ui.view">
       <field name="name">Default list view for x_product_test</field>
       <field name="model">x_product_test</field>
@@ -42,7 +39,6 @@
 </tree>
       </field>
     </record>
-
     <record id="view_2588_default_search_view_for_x_product_test" model="ir.ui.view">
       <field name="name">Default search view for x_product_test</field>
       <field name="model">x_product_test</field>
@@ -56,6 +52,49 @@
 </search>
       </field>
     </record>
-
-  </data>
+    <record id="view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_product_test customization</field>
+      <field name="model">x_product_test</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="attributes">
+    <attribute name="required"/></xpath>
+  <xpath expr="//group[@name='studio_group_2ae04f_left']" position="inside">
+    <field name="x_studio_many2one_field_cmfRx"/>
+    <field name="x_studio_product_1" string="Product_1"/>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_2ae04f_right']" position="inside">
+    <field widget="many2many_tags" name="x_studio_many2many_field_R1u9s"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_product_test customization</field>
+      <field name="model">x_product_test</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field name="x_studio_many2one_field_wTxgi"/>
+    <field name="x_studio_journal_name" string="Journal Name"/>
+    <field name="x_studio_stock_move"/>
+    <field name="x_studio_many2one_field_cmfRx"/>
+    <field name="x_studio_product_1"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+  <record id="act_window_1139_product_test" model="ir.actions.act_window">
+    <field name="name">product.test</field>
+    <field name="res_model">x_product_test</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 </odoo>

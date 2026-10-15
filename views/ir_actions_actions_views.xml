@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_ir_actions_actions_2416" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.actions.actions.tree customization</field>
+      <field name="model">ir.actions.actions</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.action_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]/field[@name='name']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

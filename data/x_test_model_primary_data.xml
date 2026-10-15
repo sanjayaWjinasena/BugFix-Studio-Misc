@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!-- DROPPED default_250_x_sales_report_model_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_251_x_sales_report_model_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_252_x_sales_report_type_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_253_x_sales_report_type_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_254_x_rm_daily_sales_repor_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_255_x_rm_daily_sales_repor_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_256_x_sales_report_model_x_studio_selection_field_Fb: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_257_x_rm_daily_s1_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_258_x_rm_daily_s1_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_259_x_rm_daily_s2_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_260_x_rm_daily_s2_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_261_x_rm_daily_s3_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_262_x_rm_daily_s3_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_263_x_rm_customer_wise_inv_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_264_x_rm_customer_wise_inv_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_265_x_rm_cust_invoice_s1_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_266_x_rm_cust_invoice_s1_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<record id="default_267_x_test_model_primary_x_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test_model_primary__x_active"/>
+      <field name="json_value">true</field>
+    </record>
+    <record id="default_268_x_test_model_primary_x_studio_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test_model_primary__x_studio_sequence"/>
+      <field name="json_value">10</field>
+    </record>
+    </data>
+</odoo>

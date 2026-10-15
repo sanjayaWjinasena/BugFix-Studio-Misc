@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for x_product_product (3 views) -->
 <odoo>
-  <data>
     <record id="view_2608_default_form_view_for_x_product_product" model="ir.ui.view">
       <field name="name">Default form view for x_product_product</field>
       <field name="model">x_product_product</field>
@@ -23,7 +21,6 @@
 </form>
       </field>
     </record>
-
     <record id="view_2607_default_list_view_for_x_product_product" model="ir.ui.view">
       <field name="name">Default list view for x_product_product</field>
       <field name="model">x_product_product</field>
@@ -34,7 +31,6 @@
 </tree>
       </field>
     </record>
-
     <record id="view_2609_default_search_view_for_x_product_product" model="ir.ui.view">
       <field name="name">Default search view for x_product_product</field>
       <field name="model">x_product_product</field>
@@ -45,6 +41,4 @@
 </search>
       </field>
     </record>
-
-  </data>
 </odoo>

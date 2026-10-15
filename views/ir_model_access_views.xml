@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="aw_f4x_ir_model_access_ir_model" model="ir.actions.act_window">
+    <field name="name">ir.model</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_ir_model_access" model="ir.actions.act_window">
+    <field name="name">ir.model.access</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_user_group_access_rights" model="ir.actions.act_window">
+    <field name="name">User Group Access Rights</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="aw_f4x_ir_model_access_user_group_access_rights_1" model="ir.actions.act_window">
+    <field name="name">User Group - Access Rights</field>
+    <field name="res_model">ir.model.access</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+    <record id="view_std_ir_model_access_2323" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model.access search customization</field>
+      <field name="model">ir.model.access</field>
+      <field name="type">search</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_access_view_search"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='group_id']" position="after">
+    <field name="name"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_model_access_5301" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.model.access.view.tree.edition customization</field>
+      <field name="model">ir.model.access</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_access_view_tree_edition"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//tree[1]/field[@name='name']" position="before">
+    </xpath>
+  <xpath expr="//tree[1]/field[@name='name']" position="after">
+    </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

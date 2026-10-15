@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <record id="default_2_product_template_invoice_policy" model="ir.default">
+      <field name="field_id" ref="sale.field_product_template__invoice_policy"/>
+      <field name="json_value">"delivery"</field>
+    </record>
+    <!-- DROPPED default_473_account_move_x_studio_journal_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<record id="default_474_product_template_default_code" model="ir.default">
+      <field name="field_id" ref="product.field_product_template__default_code"/>
+      <field name="json_value">""</field>
+    </record>
+    <!-- DROPPED default_573_crossovered_budget_x_studio_total: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_574_crossovered_budget_x_currency_id: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- upgrade-testing: points at a specific record (company/user/partner/location/stage...), not shipped (company/user specific):
+    <record id="default_575_x_test02_x_studio_chk_atomated_action" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__x_studio_chk_atomated_action"/>
+      <field name="json_value">"0"</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+    -->
+    <!-- upgrade-testing: points at a specific record (company/user/partner/location/stage...), not shipped (company/user specific):
+    <record id="default_576_x_test02_x_studio_chk_server_action" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__x_studio_chk_server_action"/>
+      <field name="json_value">"0"</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+    </record>
+    -->
+    <!-- upgrade-testing: points at a specific record (company/user/partner/location/stage...), not shipped (company/user specific):
+    <record id="default_578_x_test02_x_currency_id" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__x_currency_id"/>
+      <field name="json_value">145</field>
+      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+    </record>
+    -->
+    <record id="default_579_product_template_purchase_method" model="ir.default">
+      <field name="field_id" ref="purchase.field_product_template__purchase_method"/>
+      <field name="json_value">"receive"</field>
+    </record>
+    </data>
+</odoo>

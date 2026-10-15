@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="sa_f5_res_groups_user_group_change_notify" model="ir.actions.server">
+    <field name="name">User Group Change - Notify</field>
+    <field name="model_id" search="[('model', '=', 'res.groups')]"/>
+    <field name="state">code</field>
+    <field name="code"><![CDATA[# Workaround: original mail_post SA can't run on res.groups (no mail.thread).
+# Manual mail.mail create + send.
+env['mail.mail'].sudo().create({
+    'subject': 'Access Rights have Changed',
+    'body_html': '<p>Access Rights have Changed.....</p>',
+    'email_to': 'rohana.b@jinasena.com.lk',
+    'auto_delete': True,
+}).send()]]></field>
+    <field name="usage">base_automation</field>
+  </record>
+  <record id="base_automation_208_janitha_ranasinghe_d7" model="base.automation">
+    <field name="name">Janitha Ranasinghe</field>
+    <field name="active" eval="True"/>
+    <field name="model_id" ref="base.model_res_groups"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+  <record id="base_automation_244_user_group_change_notify_d7" model="base.automation">
+    <field name="name">User Group Change - Notify</field>
+    <field name="active" eval="False"/>
+    <field name="model_id" ref="base.model_res_groups"/>
+    <field name="trigger">on_write</field>
+  </record>
+  <record id="base_automation_245_user_group_updation_d7" model="base.automation">
+    <field name="name">User Group updation</field>
+    <field name="active" eval="False"/>
+    <field name="model_id" ref="base.model_res_groups"/>
+    <field name="trigger">on_write</field>
+  </record>
+</odoo>

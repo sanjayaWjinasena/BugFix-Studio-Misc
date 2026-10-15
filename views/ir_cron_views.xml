@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_ir_cron_6148" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.cron tree customization</field>
+      <field name="model">ir.cron</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.ir_cron_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='numbercall']" position="after">
+    <xpath expr="//field[@name='active']" position="move"/>
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for x_test_model_link (3 views) -->
 <odoo>
-  <data>
     <record id="view_3833_default_form_view_for_x_test_model_link" model="ir.ui.view">
       <field name="name">Default form view for x_test_model_link</field>
       <field name="model">x_test_model_link</field>
@@ -30,7 +28,6 @@
 </form>
       </field>
     </record>
-
     <record id="view_3832_default_list_view_for_x_test_model_link" model="ir.ui.view">
       <field name="name">Default list view for x_test_model_link</field>
       <field name="model">x_test_model_link</field>
@@ -42,7 +39,6 @@
 </tree>
       </field>
     </record>
-
     <record id="view_3834_default_search_view_for_x_test_model_link" model="ir.ui.view">
       <field name="name">Default search view for x_test_model_link</field>
       <field name="model">x_test_model_link</field>
@@ -56,6 +52,40 @@
 </search>
       </field>
     </record>
-
-  </data>
+    <record id="view_3835_odoo_studio_default_form_view_for_x_test_model_link_customiz_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_test_model_link customization</field>
+      <field name="model">x_test_model_link</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3833_default_form_view_for_x_test_model_link"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_61934b_left']" position="inside">
+    <field name="x_studio_many2one_field_sctrD"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_3836_odoo_studio_default_list_view_for_x_test_model_link_customiz_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for x_test_model_link customization</field>
+      <field name="model">x_test_model_link</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3832_default_list_view_for_x_test_model_link"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='x_name']" position="after">
+    <field name="x_studio_many2one_field_sctrD"/>
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+  <record id="act_window_1686_test_model_link" model="ir.actions.act_window">
+    <field name="name">TEST MODEL LINK</field>
+    <field name="res_model">x_test_model_link</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 </odoo>

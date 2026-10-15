@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3492_c09_repair_receipt" model="ir.actions.report">
+      <field name="name">C09 Repair Receipt</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2</field>
+    </record>
+    <record id="action_report_3494_c10_repair_estimate" model="ir.actions.report">
+      <field name="name">C10 Repair Estimate</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_1</field>
+    </record>
+    <record id="action_report_3495_c11_repair_quotation" model="ir.actions.report">
+      <field name="name">C11 Repair Quotation</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_2</field>
+    </record>
+    <record id="action_report_3496_c12_repair_invoice" model="ir.actions.report">
+      <field name="name">C12 Repair Invoice</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_3</field>
+    </record>
+    <record id="action_report_3516_c13_repair_aod" model="ir.actions.report">
+      <field name="name">C13 Repair AOD</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_10</field>
+    </record>
+    <record id="action_report_3515_c14_ready_for_collection_letter" model="ir.actions.report">
+      <field name="name">C14 Ready for collection letter</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_9</field>
+    </record>
+    <record id="action_report_3514_c15_final_notice" model="ir.actions.report">
+      <field name="name">C15 Final notice</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_8</field>
+    </record>
+    <record id="action_report_3513_c16_final_notice_estimated" model="ir.actions.report">
+      <field name="name">C16 Final notice - Estimated</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_7</field>
+    </record>
+    <record id="action_report_3512_c17_final_notice_scrappage" model="ir.actions.report">
+      <field name="name">C17 Final notice - Scrappage</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_6</field>
+    </record>
+    <record id="action_report_3511_c18_final_notice_estimated_scrappage" model="ir.actions.report">
+      <field name="name">C18 Final notice - Estimated Scrappage</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_5</field>
+    </record>
+    <record id="action_report_3510_c19_reminder_repair_reminding_letter" model="ir.actions.report">
+      <field name="name">C19 Reminder (Repair reminding letter)</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_2_copy_4</field>
+    </record>
+    <record id="action_report_2237_customer_letter" model="ir.actions.report">
+      <field name="name">Customer Letter</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_1</field>
+    </record>
+    <record id="action_report_2420_helpdesk_ticket_report" model="ir.actions.report">
+      <field name="name">Helpdesk Ticket Report</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_78e655c4-b305-48ac-95e4-92166e28f8f8</field>
+    </record>
+    <record id="action_report_2240_repair_final_notice" model="ir.actions.report">
+      <field name="name">Repair Final Notice</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_2241_repair_final_notice_scrappage" model="ir.actions.report">
+      <field name="name">Repair Final Notice - Scrappage</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_2094_repair_receipt" model="ir.actions.report">
+      <field name="name">Repair Receipt</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_73c7b165-9179-4119-993c-d9ea506c43eb</field>
+    </record>
+    <record id="action_report_2093_repair_status" model="ir.actions.report">
+      <field name="name">Repair Status</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">Fix-repair.studio_report_docume_4ba14515-b356-4e1d-8b52-1811bba71761</field>
+    </record>
+</odoo>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!-- DROPPED default_33_x_purchase_request_x_name: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_34_purchase_order_x_studio_selection_field_8m78i: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_35_x_purchase_request_cas_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_36_x_purchase_request_cas_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_37_x_purchase_request_cas_x_name: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_38_x_purchase_request_cas_x_studio_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_40_x_pr_line_cash_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_41_x_pr_line_cash_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_43_x_pr_line_cash_x_currency_id: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_44_x_purchase_request_cas_x_currency_id: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_45_x_purchase_request_cas_x_studio_selection_field_I: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_46_x_purchase_request_cas_x_studio_pr_reference: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_47_x_pr_non_inventory_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_48_x_pr_non_inventory_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_49_x_pr_line_non_inventor_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_50_x_pr_line_non_inventor_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_51_x_pr_non_inventory_x_name: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_52_x_pr_non_inventory_x_studio_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_53_x_pr_non_inventory_x_studio_selection_field_BRAVP: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_54_x_non_inventory_produc_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_55_x_non_inventory_produc_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_56_x_po_non_inventory_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_57_x_po_non_inventory_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_58_x_po_line_non_inventor_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_59_x_po_line_non_inventor_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_60_x_po_non_inventory_x_name: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_61_x_po_non_inventory_x_studio_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_62_x_po_non_inventory_x_studio_pr_reference: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_63_x_po_non_inventory_x_studio_selection_field_zl1K4: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_64_x_po_line_non_inventor_x_currency_id: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_65_x_po_non_inventory_x_currency_id: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_66_x_mrp_bom_material_cos_x_active: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_67_x_mrp_bom_material_cos_x_studio_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_68_x_mrp_bom_labour_cost_x_active: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_69_x_mrp_bom_labour_cost_x_studio_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_70_x_mrp_bom_overhead_cos_x_active: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_71_x_mrp_bom_overhead_cos_x_studio_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_72_mrp_bom_x_studio_bom_total_labour_cost: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_73_mrp_bom_x_studio_bom_total_overhead_cost: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_74_x_mrp_bom_general_cost_x_active: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_75_x_mrp_bom_general_cost_x_studio_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
+<record id="default_76_x_work_center_costing_x_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_work_center_costing__x_active"/>
+      <field name="json_value">true</field>
+    </record>
+    <record id="default_77_x_work_center_costing_x_studio_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_work_center_costing__x_studio_sequence"/>
+      <field name="json_value">10</field>
+    </record>
+    </data>
+</odoo>

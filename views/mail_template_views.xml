@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_mail_template_5042" model="ir.ui.view">
+      <field name="name">Odoo Studio: email.template.tree customization</field>
+      <field name="model">mail.template</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="mail.email_template_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name=&quot;partner_to&quot;]" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

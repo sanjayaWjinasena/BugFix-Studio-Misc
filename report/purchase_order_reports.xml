@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3438_c07_request_for_quotation" model="ir.actions.report">
+      <field name="name">C07 Request for Quotation</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">purchase.report_purchasequotation_copy_4</field>
+    </record>
+    <record id="action_report_3437_c08_purchase_order" model="ir.actions.report">
+      <field name="name">C08 Purchase Order </field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">purchase.report_purchasequotation_copy_3</field>
+      <field name="attachment_use" eval="True"/>
+      <field name="attachment">'C8 Purchase Order '</field>
+    </record>
+    <record id="action_report_1635_indent_cost_estimation" model="ir.actions.report">
+      <field name="name">Indent Cost Estimation</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_2_copy_2_copy_1</field>
+    </record>
+    <record id="action_report_1634_indent_cost_estimation_working_backup" model="ir.actions.report">
+      <field name="name">Indent Cost Estimation - Working - Backup</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f180ff3e-4244-4fd5-b147-ed1ebad9cd31_copy_2_copy_2</field>
+    </record>
+    <record id="action_report_1597_purchase_order_list" model="ir.actions.report">
+      <field name="name">Purchase Order List</field>
+      <field name="model">purchase.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_37ad8061-c594-4b2f-9519-2d44ab657bb5</field>
+    </record>
+</odoo>

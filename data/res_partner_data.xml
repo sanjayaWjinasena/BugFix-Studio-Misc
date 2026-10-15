@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <record id="default_1_res_partner_lang" model="ir.default">
+      <field name="field_id" ref="base.field_res_partner__lang"/>
+      <field name="json_value">"en_US"</field>
+    </record>
+    </data>
+</odoo>

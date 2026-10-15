@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2882_sales_team_member" model="ir.actions.act_window">
+    <field name="name">Sales Team Member</field>
+    <field name="res_model">crm.team.member</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="context">{}</field>
+    <field name="help" type="html"><p class="o_view_nocontent_smiling_face">
+                    This is your new action.
+                </p>
+                <p>By default, it contains a list and a form view and possibly
+                    other view types depending on the options you chose for your model.
+                </p>
+                <p>
+                    You can start customizing these screens by clicking on the Studio icon on the
+                    top right corner (you can also customize this help message there).
+                </p>
+            </field>
+  </record>
+    <record id="view_6118_odoo_studio_crm_team_member_view_tree_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: crm.team.member.view.tree customization</field>
+      <field name="model">crm.team.member</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="crm.crm_team_member_view_tree"/>
+      <field name="mode">extension</field>
+      <field name="priority">320</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='lead_month_count']" position="after">
+    <field name="company_id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+  <record id="act_window_2882_sales_team_member_d7" model="ir.actions.act_window">
+    <field name="name">Sales Team Member</field>
+    <field name="res_model">crm.team.member</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+</odoo>

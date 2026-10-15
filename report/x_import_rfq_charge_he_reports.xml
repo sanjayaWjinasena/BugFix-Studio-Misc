@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_1631_import_rfq_charge_header_report" model="ir.actions.report">
+      <field name="name">Import RFQ Charge Header Report</field>
+      <field name="model">x_import_rfq_charge_he</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_df0fd28d-9e06-4113-a4d2-7b8efb8250a4</field>
+    </record>
+</odoo>

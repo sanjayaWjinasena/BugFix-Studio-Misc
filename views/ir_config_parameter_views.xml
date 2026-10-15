@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_ir_config_parameter_6117" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.config_parameter tree customization</field>
+      <field name="model">ir.config_parameter</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_ir_config_list"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='value']" position="after">
+    <field name="create_uid" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="ar_broader_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">
+    <field name="name">Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - Non-Inv PR Approvers) (97)</field>
+    <field name="model_id" search="[('model', '=', 'x_pr_non_inventory')]"/>
+    <field name="action_id" ref="BugFix-Purchase.server_action_954_approve_pr_non_inventory"/>
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_purchase_jin_non_inv_pr_approvers"/>
+    <field name="domain">[]</field>
+  </record>
+</odoo>

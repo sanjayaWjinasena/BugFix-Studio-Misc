@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="server_action_2827_jin_company_id_in_payment_terms_d7" model="ir.actions.server">
+    <field name="name">JIN - Company Id in Payment Terms</field>
+    <field name="model_id" ref="account.model_account_payment_term"/>
+    <field name="state">code</field>
+    <field name="usage">base_automation</field>
+    <field name="code"><![CDATA[company_id = env.context.get('allowed_company_ids', [env.user.company_id.id])[0]
+company = env['res.company'].browse(company_id)
+
+record['company_id'] = company.id]]></field>
+  </record>
+</odoo>

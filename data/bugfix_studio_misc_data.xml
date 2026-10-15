@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="default_x_misc_charge_codes_x_active_109" model="ir.default">
+      <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_active')]"/>
+      <field name="json_value">true</field>
+    </record>
+    <record id="default_x_misc_charge_codes_x_studio_sequence_110" model="ir.default">
+      <field name="field_id" search="[('model','=','x_misc_charge_codes'),('name','=','x_studio_sequence')]"/>
+      <field name="json_value">10</field>
+    </record>
+  <record id="BugFix-Approvals.rule_91_production_order_button_unbuild_manufacturing_jin_manufactur" model="studio.approval.rule">
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_manufacturing_jin_manufacturing_production_orders_dismantler"/>
+  </record>
+  <record id="BugFix-Approvals.rule_92_production_order_button_scrap_manufacturing_jin_manufacturin" model="studio.approval.rule">
+    <field name="group_id" ref="BugFix-Studio-Misc.group_g_manufacturing_jin_manufacturing_production_orders_dismantler"/>
+  </record>
+</odoo>

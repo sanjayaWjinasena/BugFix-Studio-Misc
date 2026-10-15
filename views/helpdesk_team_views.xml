@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2239_customer_letter_report_d7" model="ir.actions.act_window">
+    <field name="name">Customer Letter Report</field>
+    <field name="res_model">helpdesk.team</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  <record id="act_window_2876_helpdesk_team_helpdesk_team_d7" model="ir.actions.act_window">
+    <field name="name">Helpdesk Team (helpdesk.team)</field>
+    <field name="res_model">helpdesk.team</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+    <record id="view_std_helpdesk_team_5302" model="ir.ui.view">
+      <field name="name">Odoo Studio: helpdesk.team.tree customization</field>
+      <field name="model">helpdesk.team</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_team_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name=&quot;use_alias&quot;]" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

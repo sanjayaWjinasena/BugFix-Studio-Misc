@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_1684_customer_invoice_details" model="ir.actions.report">
+      <field name="name">Customer Invoice Details</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_0582785a-b7ef-48d1-9ee3-b0fe01626888</field>
+    </record>
+    <record id="action_report_1674_daily_sales_report" model="ir.actions.report">
+      <field name="name">Daily Sales Report</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8</field>
+    </record>
+    <record id="action_report_1728_daily_sales_report" model="ir.actions.report">
+      <field name="name">Daily Sales Report </field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_copy_1</field>
+    </record>
+    <record id="action_report_1739_production_order_wip" model="ir.actions.report">
+      <field name="name">Production Order - WIP</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_2111_project_gross_margin" model="ir.actions.report">
+      <field name="name">Project Gross Margin</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_e35b2999-abea-4330-ad6c-71fad437bf54</field>
+    </record>
+    <record id="action_report_1736_sales_details_for_incentive_calculation" model="ir.actions.report">
+      <field name="name">Sales Details for Incentive Calculation </field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1c323f95-bff0-4e36-b903-dc64854508a8_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_1713_sales_report_model_report" model="ir.actions.report">
+      <field name="name">Sales Report Model Report</field>
+      <field name="model">x_sales_report_model</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_1aa2ef46-1ca1-4d9a-bdcd-1fa5c397679d</field>
+    </record>
+</odoo>

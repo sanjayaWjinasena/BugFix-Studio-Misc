@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2190_project_budgeted_cash_flow_d7" model="ir.actions.act_window">
+    <field name="name">Project Budgeted Cash Flow</field>
+    <field name="res_model">account.account</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  <record id="act_window_2191_project_budgeted_cash_flow_d7" model="ir.actions.act_window">
+    <field name="name">Project Budgeted Cash Flow</field>
+    <field name="res_model">account.account</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  <record id="act_window_1977_stock_picking_d7" model="ir.actions.act_window">
+    <field name="name">stock.picking</field>
+    <field name="res_model">account.account</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+</odoo>

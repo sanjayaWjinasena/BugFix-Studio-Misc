@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_project_task_studio_cohort" model="ir.ui.view">
+      <field name="name">Default cohort view for project.task</field>
+      <field name="model">project.task</field>
+      <field name="type">cohort</field>
+      <field name="arch" type="xml">
+        <cohort date_start="date_assign" date_stop="date_assign" string="Default cohort view for project.task"/>
+      </field>
+    </record>
+</odoo>

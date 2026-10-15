@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!-- DROPPED default_274_purchase_order_x_studio_receive_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_275_x_misc_charge_codes_x_studio_debit_acc_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_276_x_misc_charge_codes_x_studio_credit_acc_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_277_x_rm_sales_order_line_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_278_x_rm_sales_order_line_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_279_x_rm_production_orders_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_280_x_rm_production_orders_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_281_x_rm_none_moving_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_282_x_rm_none_moving_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_283_x_rm_date_test_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_284_x_rm_date_test_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_285_x_minimum_sales_margin_x_active: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_286_x_minimum_sales_margin_x_studio_sequence: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_287_x_rm_sales_prod_purch_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_288_x_rm_sales_prod_purch_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_289_x_rm_prod_summary_spli_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_290_x_rm_prod_summary_spli_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_292_x_rm_production_varian_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_293_x_rm_production_varian_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_298_helpdesk_ticket_x_studio_pick_id: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_299_x_repair_reason_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_300_x_repair_reason_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_301_helpdesk_ticket_name: field owned by helpdesk not in Studio-Misc deps -->
+<!-- DROPPED default_302_x_project_category_gro_x_active: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_303_x_project_category_gro_x_studio_sequence: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_304_x_project_category_x_active: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_305_x_project_category_x_studio_sequence: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_306_x_project_groups_x_active: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_307_x_project_groups_x_studio_sequence: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_308_x_rm_gross_margin_esti_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_309_x_rm_gross_margin_esti_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_310_x_rm_gross_margin_actu_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_311_x_rm_gross_margin_actu_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_312_x_rm_gross_margin_invo_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_313_x_rm_gross_margin_invo_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<record id="default_314_x_test_layout_x_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test_layout__x_active"/>
+      <field name="json_value">true</field>
+    </record>
+    <record id="default_315_x_test_layout_x_studio_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test_layout__x_studio_sequence"/>
+      <field name="json_value">10</field>
+    </record>
+    </data>
+</odoo>

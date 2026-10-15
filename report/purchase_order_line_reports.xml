@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_1622_purchase_order_lines" model="ir.actions.report">
+      <field name="name">Purchase Order Lines</field>
+      <field name="model">purchase.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4_copy_1</field>
+    </record>
+    <record id="action_report_1619_purchase_order_lines_backup" model="ir.actions.report">
+      <field name="name">Purchase Order Lines - Backup</field>
+      <field name="model">purchase.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_8a65ecd7-ad78-47e6-817e-7b59a80c4552_copy_4</field>
+    </record>
+    <record id="action_report_1621_purchase_order_lines_new" model="ir.actions.report">
+      <field name="name">Purchase Order Lines - New</field>
+      <field name="model">purchase.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_c60b7e6a-dee4-416a-8c7d-136a80aef4a4</field>
+    </record>
+</odoo>

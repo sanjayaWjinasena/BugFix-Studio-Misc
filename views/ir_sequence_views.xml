@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="aw_f4x_ir_sequence_ir_sequence" model="ir.actions.act_window">
+    <field name="name">ir.sequence</field>
+    <field name="res_model">ir.sequence</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+    <record id="view_std_ir_sequence_6060" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.sequence form customization</field>
+      <field name="model">ir.sequence</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.sequence_view"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sequence']/field[@name='date_range_ids']/tree[1]/field[@name='date_to']" position="after">
+    <field name="number_next" optional="show"/>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sequence']/field[@name='date_range_ids']/tree[1]/field[@name='number_next_actual']" position="attributes">
+    <attribute name="string">Next Number Actual</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sequence']/field[@name='date_range_ids']/tree[1]" position="after">
+    <form>
+      <sheet string="Sequence Date Range" name="studio_sheet_919f69">
+        <group col="4" name="studio_group_2ebefe">
+          <field name="number_next"/>
+          <field name="number_next_actual"/>
+          <separator/>
+        </group>
+      </sheet>
+    </form>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_sequence_3255" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.sequence tree customization</field>
+      <field name="model">ir.sequence</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.sequence_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='code']" position="after">
+    <field name="id"/>
+  </xpath>
+  <xpath expr="//field[@name='company_id']" position="after">
+    <field name="number_next" optional="show"/>
+  </xpath>
+  <xpath expr="//field[@name='number_next_actual']" position="attributes">
+    <attribute name="string">Next Number Actual</attribute>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

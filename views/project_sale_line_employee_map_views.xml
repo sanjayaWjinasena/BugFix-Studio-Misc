@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2806_project_sale_line_employee_map_d7" model="ir.actions.act_window">
+    <field name="name">project.sale.line.employee.map</field>
+    <field name="res_model">project.sale.line.employee.map</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+    <record id="view_project_sale_line_employee_map_tree_studio" model="ir.ui.view">
+      <field name="name">project.sale.line.employee.map.tree.studio</field>
+      <field name="model">project.sale.line.employee.map</field>
+      <field name="type">tree</field>
+      <field name="mode">primary</field>
+      <field name="active" eval="False"/>
+      <field name="arch" type="xml">
+        <tree string="Project Sales line, employee mapping">
+          <field name="id" readonly="1"/>
+        </tree>
+      </field>
+    </record>
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_ir_actions_server_2382" model="ir.ui.view">
+      <field name="name">Odoo Studio: Server Actions customization</field>
+      <field name="model">ir.actions.server</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_server_action_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='state']" position="after">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_ir_actions_server_5444" model="ir.ui.view">
+      <field name="name">Odoo Studio: Server Action customization</field>
+      <field name="model">ir.actions.server</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.view_server_action_form"/>
+      <field name="priority" eval="160"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='model_id']" position="before">
+    <field name="id"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

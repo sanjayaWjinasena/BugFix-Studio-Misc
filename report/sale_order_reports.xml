@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3486_c01_sales_quotation" model="ir.actions.report">
+      <field name="name">C01 Sales Quotation</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3485_c02_sales_order_confirmation" model="ir.actions.report">
+      <field name="name">C02 Sales Order Confirmation</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3484_c03_customer_payment_receipt" model="ir.actions.report">
+      <field name="name">C03 Customer Payment Receipt</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3483_c04_sales_order_delivery_order_packing_slip" model="ir.actions.report">
+      <field name="name">C04 Sales Order - Delivery Order (Packing Slip)</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2_copy_1</field>
+    </record>
+    <record id="action_report_3482_c05_proforma_invoice" model="ir.actions.report">
+      <field name="name">C05 Proforma Invoice</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_2</field>
+    </record>
+    <record id="action_report_3476_c06_1_sales_invoice_non_vat_product_sale" model="ir.actions.report">
+      <field name="name">C06.1 Sales Invoice - Non VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1</field>
+    </record>
+    <record id="action_report_3562_c06_2_sales_invoice_non_vat_spares_sale" model="ir.actions.report">
+      <field name="name">C06.2 Sales Invoice - Non VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_3</field>
+    </record>
+    <record id="action_report_3563_c06_3_sales_invoice_vat_product_sale" model="ir.actions.report">
+      <field name="name">C06.3 Sales Invoice - VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_4</field>
+    </record>
+    <record id="action_report_3564_c06_4_sales_invoice_vat_spares_sale" model="ir.actions.report">
+      <field name="name">C06.4 Sales Invoice - VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_5</field>
+    </record>
+    <record id="action_report_3565_c06_5_sales_invoice_svat_product_sale" model="ir.actions.report">
+      <field name="name">C06.5 Sales Invoice - SVAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_6</field>
+    </record>
+    <record id="action_report_3566_c06_6_sales_invoice_svat_spares_sale" model="ir.actions.report">
+      <field name="name">C06.6 Sales Invoice - SVAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_7</field>
+    </record>
+    <record id="action_report_3449_jinasena_quotation" model="ir.actions.report">
+      <field name="name">Jinasena Quotation</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d</field>
+    </record>
+    <record id="action_report_3445_jinasena_quotation_1" model="ir.actions.report">
+      <field name="name">Jinasena Quotation 1</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_c5719c77-3a10-4707-aa7f-ac107f54932f</field>
+    </record>
+    <record id="action_report_3450_jinasena_sales_order" model="ir.actions.report">
+      <field name="name">Jinasena Sales Order</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_2eed4aa6-549b-46a1-9d61-9a206e5f675d_copy_1</field>
+    </record>
+    <record id="action_report_3446_sales_order_report" model="ir.actions.report">
+      <field name="name">Sales Order Report</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d</field>
+    </record>
+    <record id="action_report_3567_template_c06_1_sales_invoice_non_vat_product_sale" model="ir.actions.report">
+      <field name="name">Template C06.1 Sales Invoice - Non VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_8</field>
+    </record>
+    <record id="action_report_3477_template_c06_2_sales_invoice_non_vat_spares_sale" model="ir.actions.report">
+      <field name="name">Template C06.2 Sales Invoice - Non VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3478_template_c06_3_sales_invoice_vat_product_sale" model="ir.actions.report">
+      <field name="name">Template C06.3 Sales Invoice - VAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3479_template_c06_4_sales_invoice_vat_spares_sale" model="ir.actions.report">
+      <field name="name">Template C06.4 Sales Invoice - VAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3480_template_c06_5_sales_invoice_svat_product_sale" model="ir.actions.report">
+      <field name="name">Template C06.5 Sales Invoice - SVAT Product Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_3481_template_c06_6_sales_invoice_svat_spares_sale" model="ir.actions.report">
+      <field name="name">Template C06.6 Sales Invoice - SVAT Spares Sale</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_f2b09337-839b-4d5d-80f0-96399d88273d_copy_1_copy_4_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1</field>
+    </record>
+    <record id="action_report_1440_test_report_kapila" model="ir.actions.report">
+      <field name="name">Test report - Kapila</field>
+      <field name="model">sale.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_01559fbb-91f5-4c8c-ab49-885dde7da1f3</field>
+    </record>
+</odoo>

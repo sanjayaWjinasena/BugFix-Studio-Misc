@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_std_ir_ui_menu_5317" model="ir.ui.view">
+      <field name="name">Odoo Studio: ir.ui.menu tree customization</field>
+      <field name="model">ir.ui.menu</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="base.edit_menu"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='sequence']" position="after">
+    <field name="parent_id" optional="show"/>
+  </xpath>
+  <xpath expr="//field[@name='complete_name']" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

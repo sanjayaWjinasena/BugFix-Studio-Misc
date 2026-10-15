@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="aw_f4x_studio_approval_entry_studio_approval_entry_studio_approval_entry" model="ir.actions.act_window">
+    <field name="name">Studio Approval Entry - (studio.approval.entry)</field>
+    <field name="res_model">studio.approval.entry</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

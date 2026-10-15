@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!-- DROPPED default_11_x_customer_posting_pro_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_12_x_customer_posting_pro_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_14_x_departments_x_active: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_15_x_departments_x_studio_sequence: field owned by BugFix-Project not in Studio-Misc deps -->
+<record id="default_16_x_testapp_x_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_testapp__x_active"/>
+      <field name="json_value">true</field>
+    </record>
+    <record id="default_17_x_testapp_x_studio_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_testapp__x_studio_sequence"/>
+      <field name="json_value">10</field>
+    </record>
+    </data>
+</odoo>

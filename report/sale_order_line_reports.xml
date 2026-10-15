@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_1596_sales_order_lines" model="ir.actions.report">
+      <field name="name">Sales Order Lines</field>
+      <field name="model">sale.order.line</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_2be3d602-6356-4576-afb3-159f22e3135d</field>
+    </record>
+</odoo>

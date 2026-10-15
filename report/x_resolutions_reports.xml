@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3490_resolutions_report" model="ir.actions.report">
+      <field name="name">Resolutions Report</field>
+      <field name="model">x_resolutions</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_e996c666-0ac8-4b32-a472-c92b4d11fdc1</field>
+    </record>
+</odoo>

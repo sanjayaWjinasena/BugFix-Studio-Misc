@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!-- DROPPED default_316_x_project_category_x_studio_claimability: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_317_x_temp_estimated_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_318_x_temp_estimated_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_319_x_temp_estimated_x_currency_id: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_321_x_temp_actual_budget_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_322_x_temp_actual_budget_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_323_x_temp_actual_budget_x_currency_id: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_325_sale_order_line_x_studio_product_status: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_326_project_update_x_studio_selection_field_0zgmv: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_328_x_repair_accounts_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_329_x_repair_accounts_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_330_x_rm_gross_margin_comp_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_331_x_rm_gross_margin_comp_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_332_x_conditions_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_333_x_conditions_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_334_x_symptom_areas_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_335_x_symptom_areas_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_336_x_symptom_codes_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_337_x_symptom_codes_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_338_x_diagnosis_areas_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_339_x_diagnosis_areas_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_340_x_diagnosis_codes_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_341_x_diagnosis_codes_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_343_x_repair_sub_reason_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_344_x_repair_sub_reason_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_349_x_resolutions_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_350_x_resolutions_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_353_x_repair_stages_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_354_x_repair_stages_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_355_x_task_diagnosis_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_356_x_task_diagnosis_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_357_x_repair_reason_custom_x_active: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_358_x_repair_reason_custom_x_studio_sequence: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_359_stock_lot_x_studio_no_of_days_2: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_360_helpdesk_ticket_x_studio_cancel_status: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_361_helpdesk_ticket_x_studio_reopen_status: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_362_stock_lot_x_currency_id: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_363_sale_order_x_studio_re_estimate_count: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_364_sale_order_x_studio_re_estimate_request_count_1: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_366_sale_order_line_x_studio_count_1: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_367_sale_order_line_x_studio_count_2: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_368_helpdesk_ticket_x_studio_re_estimate_status: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_369_helpdesk_ticket_x_studio_re_estimate_count: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_370_purchase_order_x_studio_quality_check: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_371_mrp_eco_x_studio_error: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_372_helpdesk_ticket_x_studio_quick_repair_status: field owned by Fix-repair not in Studio-Misc deps -->
+<!-- DROPPED default_373_x_minimum_sales_margin_x_studio_sales_order_vali: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_374_sale_order_x_studio_repair_validation: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_375_product_template_allow_out_of_stock_order: field owned by website_sale_stock not in Studio-Misc deps -->
+<!-- DROPPED default_376_product_template_available_threshold: field owned by website_sale_stock not in Studio-Misc deps -->
+<!-- DROPPED default_377_product_template_show_availability: field owned by website_sale_stock not in Studio-Misc deps -->
+<!-- DROPPED default_378_stock_picking_x_studio_validation: field owned by BugFix-Stock not in Studio-Misc deps -->
+<record id="default_379_x_sales_model_debug_x_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_sales_model_debug__x_active"/>
+      <field name="json_value">true</field>
+    </record>
+    <record id="default_380_x_sales_model_debug_x_studio_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_sales_model_debug__x_studio_sequence"/>
+      <field name="json_value">10</field>
+    </record>
+    </data>
+</odoo>

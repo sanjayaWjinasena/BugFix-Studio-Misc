@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for x_testapp (3 views) -->
 <odoo>
-  <data>
     <record id="view_2385_default_form_view_for_x_testapp" model="ir.ui.view">
       <field name="name">Default form view for x_testapp</field>
       <field name="model">x_testapp</field>
@@ -30,7 +28,6 @@
 </form>
       </field>
     </record>
-
     <record id="view_2384_default_list_view_for_x_testapp" model="ir.ui.view">
       <field name="name">Default list view for x_testapp</field>
       <field name="model">x_testapp</field>
@@ -42,7 +39,6 @@
 </tree>
       </field>
     </record>
-
     <record id="view_2386_default_search_view_for_x_testapp" model="ir.ui.view">
       <field name="name">Default search view for x_testapp</field>
       <field name="model">x_testapp</field>
@@ -56,6 +52,14 @@
 </search>
       </field>
     </record>
-
-  </data>
+  <record id="act_window_844_test_app_02" model="ir.actions.act_window">
+    <field name="name">Test App 02</field>
+    <field name="res_model">x_testapp</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="act_window_809_testapp" model="ir.actions.act_window">
+    <field name="name">TestApp</field>
+    <field name="res_model">x_testapp</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 </odoo>

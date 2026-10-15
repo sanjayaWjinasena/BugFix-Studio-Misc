@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_777_pr_type_d7" model="ir.actions.act_window">
+    <field name="name">PR Type</field>
+    <field name="res_model">purchase.requisition.type</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  <record id="act_window_2875_purchase_agreement_types_purchase_requisition_type_d7" model="ir.actions.act_window">
+    <field name="name">Purchase Agreement Types (purchase.requisition.type)</field>
+    <field name="res_model">purchase.requisition.type</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  <record id="act_window_2874_purchase_agreement_type_purchase_requisition_type_d7" model="ir.actions.act_window">
+    <field name="name">Purchase Agreement Type (purchase.requisition.type)</field>
+    <field name="res_model">purchase.requisition.type</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+</odoo>

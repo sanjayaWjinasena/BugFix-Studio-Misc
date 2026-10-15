@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_1523_purchase_report_report" model="ir.actions.report">
+      <field name="name">Purchase Report Report</field>
+      <field name="model">purchase.report</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_e6601e89-775c-4221-ae07-7bdeb3b6ea53</field>
+    </record>
+</odoo>

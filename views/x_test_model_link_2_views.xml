@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for x_test_model_link_2 (3 views) -->
 <odoo>
-  <data>
     <record id="view_3840_default_form_view_for_x_test_model_link_2" model="ir.ui.view">
       <field name="name">Default form view for x_test_model_link_2</field>
       <field name="model">x_test_model_link_2</field>
@@ -30,7 +28,6 @@
 </form>
       </field>
     </record>
-
     <record id="view_3839_default_list_view_for_x_test_model_link_2" model="ir.ui.view">
       <field name="name">Default list view for x_test_model_link_2</field>
       <field name="model">x_test_model_link_2</field>
@@ -42,7 +39,6 @@
 </tree>
       </field>
     </record>
-
     <record id="view_3841_default_search_view_for_x_test_model_link_2" model="ir.ui.view">
       <field name="name">Default search view for x_test_model_link_2</field>
       <field name="model">x_test_model_link_2</field>
@@ -56,6 +52,25 @@
 </search>
       </field>
     </record>
-
-  </data>
+    <record id="view_3842_odoo_studio_default_form_view_for_x_test_model_link_2_custom_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_test_model_link_2 customization</field>
+      <field name="model">x_test_model_link_2</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3840_default_form_view_for_x_test_model_link_2"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_861128_left']" position="inside">
+    <field name="x_studio_many2many_field_2PxmY" widget="many2many_tags"/>
+    <field name="x_studio_test_model_primary_2" string="TEST MODEL PRIMARY 2"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+  <record id="act_window_1687_test_model_link_2" model="ir.actions.act_window">
+    <field name="name">Test Model Link 2</field>
+    <field name="res_model">x_test_model_link_2</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 </odoo>

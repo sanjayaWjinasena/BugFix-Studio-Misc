@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3447_template_c09_repair_receipt" model="ir.actions.report">
+      <field name="name">Template C09 Repair Receipt</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_1</field>
+    </record>
+    <record id="action_report_3448_template_c10_repair_estimate" model="ir.actions.report">
+      <field name="name">Template C10 Repair Estimate</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_2</field>
+    </record>
+    <record id="action_report_3451_template_c11_repair_quotation" model="ir.actions.report">
+      <field name="name">Template C11 Repair Quotation</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_3</field>
+    </record>
+    <record id="action_report_3452_template_c12_repair_invoice" model="ir.actions.report">
+      <field name="name">Template C12 Repair Invoice</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_4</field>
+    </record>
+    <record id="action_report_3453_template_c13_repair_aod" model="ir.actions.report">
+      <field name="name">Template C13 Repair AOD</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_5</field>
+    </record>
+    <record id="action_report_3457_template_c14_ready_for_collection_letter" model="ir.actions.report">
+      <field name="name">Template C14 Ready for collection letter</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_6</field>
+    </record>
+    <record id="action_report_3458_template_c15_final_notice" model="ir.actions.report">
+      <field name="name">Template C15 Final notice</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7</field>
+    </record>
+    <record id="action_report_3463_template_c16_final_notice_estimated" model="ir.actions.report">
+      <field name="name">Template C16 Final notice - Estimated</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_1</field>
+    </record>
+    <record id="action_report_3464_template_c17_final_notice_scrappage" model="ir.actions.report">
+      <field name="name">Template C17 Final notice - Scrappage</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_2</field>
+    </record>
+    <record id="action_report_3465_template_c18_final_notice_estimated_scrappage" model="ir.actions.report">
+      <field name="name">Template C18 Final notice - Estimated Scrappage</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_3</field>
+    </record>
+    <record id="action_report_3466_template_c19_reminder_repair_reminding_letter" model="ir.actions.report">
+      <field name="name">Template C19 Reminder (Repair reminding letter)</field>
+      <field name="model">repair.order</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">repair.report_repairorder2_copy_7_copy_4</field>
+    </record>
+</odoo>

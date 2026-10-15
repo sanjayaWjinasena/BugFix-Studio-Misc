@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2878_project_stage_project_project_stage_d7" model="ir.actions.act_window">
+    <field name="name">Project Stage (project.project.stage)</field>
+    <field name="res_model">project.project.stage</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+    <record id="view_std_project_project_stage_5899" model="ir.ui.view">
+      <field name="name">Odoo Studio: project.project.stage.view.tree customization</field>
+      <field name="model">project.project.stage</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="project.project_project_stage_view_tree"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='fold']" position="after">
+    <field name="id" optional="show"/>
+    <field name="create_uid" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

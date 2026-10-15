@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Studio-Misc primary views for x_test_form (3 views) -->
 <odoo>
-  <data>
     <record id="view_3780_default_form_view_for_x_test_form" model="ir.ui.view">
       <field name="name">Default form view for x_test_form</field>
       <field name="model">x_test_form</field>
@@ -30,7 +28,6 @@
 </form>
       </field>
     </record>
-
     <record id="view_3779_default_list_view_for_x_test_form" model="ir.ui.view">
       <field name="name">Default list view for x_test_form</field>
       <field name="model">x_test_form</field>
@@ -42,7 +39,6 @@
 </tree>
       </field>
     </record>
-
     <record id="view_3781_default_search_view_for_x_test_form" model="ir.ui.view">
       <field name="name">Default search view for x_test_form</field>
       <field name="model">x_test_form</field>
@@ -56,6 +52,24 @@
 </search>
       </field>
     </record>
-
-  </data>
+    <record id="view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for x_test_form customization</field>
+      <field name="model">x_test_form</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//group[@name='studio_group_7e1a9f_left']" position="inside">
+    <field name="x_studio_char_field_3aVUG"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+  <record id="act_window_1666_test_form" model="ir.actions.act_window">
+    <field name="name">TEST FORM</field>
+    <field name="res_model">x_test_form</field>
+    <field name="view_mode">tree,form</field>
+  </record>
 </odoo>

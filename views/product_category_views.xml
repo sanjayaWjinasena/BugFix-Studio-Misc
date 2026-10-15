@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2471_product_categories_d7" model="ir.actions.act_window">
+    <field name="name">Product Categories</field>
+    <field name="res_model">product.category</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+    <record id="view_std_product_category_5552" model="ir.ui.view">
+      <field name="name">Odoo Studio: product.category.list customization</field>
+      <field name="model">product.category</field>
+      <field name="type">tree</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="product.product_category_list_view"/>
+      <field name="priority" eval="99"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='display_name']" position="after">
+    <field name="id" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_std_product_category_5548" model="ir.ui.view">
+      <field name="name">Odoo Studio: product.category.form customization</field>
+      <field name="model">product.category</field>
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="inherit_id" ref="product.product_category_form_view"/>
+      <field name="priority" eval="160"/>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='parent_id']" position="before">
+    </xpath>
+  <xpath expr="//field[@name='removal_strategy_id']" position="after">
+    </xpath>
+</data>
+      </field>
+    </record>
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="act_window_2811_purchase_requisition_line_d7" model="ir.actions.act_window">
+    <field name="name">purchase.requisition.line</field>
+    <field name="res_model">purchase.requisition.line</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

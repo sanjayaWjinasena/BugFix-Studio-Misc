@@ -8,3 +8,10 @@ class XResConfigSettings(models.Model):
 
     x_name = fields.Char(string="Name")
     x_studio_minimum_sales_margin_ = fields.Float(string="Minimum Sales Margin %")
+
+
+class XResConfigSettingsGap(models.Model):
+    _inherit = "x_res_config_settings"
+    _rec_name = "x_name"  # Clear-DB Studio model: records are named by x_name
+
+    x_name = fields.Char(string="Name")

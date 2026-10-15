@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_2232_import_rfq_charge_line_report" model="ir.actions.report">
+      <field name="name">Import RFQ Charge Line Report</field>
+      <field name="model">x_import_rfq_charge_li</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_889bd190-016a-4aa3-a1aa-dad6e31bf4d3</field>
+    </record>
+</odoo>

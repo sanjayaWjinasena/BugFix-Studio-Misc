@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_3491_helpdesk_team_report" model="ir.actions.report">
+      <field name="name">Helpdesk Team Report</field>
+      <field name="model">helpdesk.team</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">studio_customization.studio_report_docume_50c3b9df-c892-4cb5-97d5-e049b72e9f8b</field>
+    </record>
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="aw_f4x_mail_activity_mail_activity" model="ir.actions.act_window">
+    <field name="name">mail.activity</field>
+    <field name="res_model">mail.activity</field>
+    <field name="view_mode">tree,form,calendar</field>
+  </record>
+</odoo>
