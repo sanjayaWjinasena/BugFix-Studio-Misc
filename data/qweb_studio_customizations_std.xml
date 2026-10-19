@@ -318,6 +318,8 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='display_name']" position="after">
+    <field name="x_studio_company_id" optional="show"/>
+    <field optional="show" name="x_studio_description" string="Description"/>
     <field name="id" optional="show"/>
   </xpath>
 </data>
@@ -364,9 +366,11 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='parent_id']" position="before">
-    </xpath>
+    <field name="x_studio_description"/>
+  </xpath>
   <xpath expr="//field[@name='removal_strategy_id']" position="after">
-    </xpath>
+    <field name="x_studio_company_id" string="Company"/>
+  </xpath>
 </data>
       </field>
     </record>
