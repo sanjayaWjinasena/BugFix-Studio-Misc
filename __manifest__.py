@@ -2,7 +2,7 @@
 {
     # upgrade-testing branch: data files below are commented out - this branch installs functions only, no data is seeded.
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.119',
+    'version': '17.0.0.0.120',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
@@ -101,7 +101,7 @@ etc.).
         'security/ir.model.access.csv',
         'security/removed_handmade_access_rights.xml',
         'data/record_rules.xml',
-        # 'data/sequences.xml',  # upgrade-testing: data, not shipped
+        'data/sequences.xml',
         'views/calendar_filters_views.xml',
         'views/x_product_product_views.xml',
         'views/x_product_test_views.xml',
