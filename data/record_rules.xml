@@ -252,4 +252,16 @@
     <field name="active" eval="True"/>
   </record>
 
+  <!-- Clear-DB group scoping for rules declared in other modules. The groups are declared in this
+       module (data/groups_g.xml), so the groups are set here; the owning modules do not set them. -->
+  <record id="BugFix-Project.rule_271_test_users_records_only" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_misc_test_department')])]"/>
+  </record>
+  <record id="BugFix-Sales.rule_498_jin_sales_add_edit_del_ca_customers" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_sales_jin_sales_add_edit_del_ca_customers'), ref('BugFix-Approvals.group_132_jin_sales_pos_users')])]"/>
+  </record>
+  <record id="BugFix-Sales.rule_499_jin_sales_add_edit_del_non_ca_customers" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_sales_jin_sales_add_edit_del_ca_customers'), ref('BugFix-Approvals.group_132_jin_sales_pos_users')])]"/>
+  </record>
+
 </odoo>
