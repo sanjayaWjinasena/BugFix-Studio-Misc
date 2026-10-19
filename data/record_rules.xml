@@ -264,4 +264,8 @@
     <field name="groups" eval="[(6, 0, [ref('group_g_sales_jin_sales_add_edit_del_ca_customers'), ref('BugFix-Approvals.group_132_jin_sales_pos_users')])]"/>
   </record>
 
+  <record id="BugFix-MRP.rule_338_work_centre_visibility" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_manufacturing_work_centre_visibility')])]"/>
+  </record>
+
 </odoo>

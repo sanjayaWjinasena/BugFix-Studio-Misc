@@ -160,4 +160,8 @@ They have to be removed after testing.   - Already removed.
     <field name="category_id" ref="base.module_category_inventory_purchase"/>
     <field name="comment">Original Name: Jin - PO Invoicing &amp; Payment - Inventory Credit</field>
   </record>
+  <record id="group_g_manufacturing_work_centre_visibility" model="res.groups">
+    <field name="name">Work Centre Visibility</field>
+    <field name="category_id" ref="base.module_category_manufacturing"/>
+  </record>
 </odoo>
