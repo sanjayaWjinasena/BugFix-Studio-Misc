@@ -6,8 +6,13 @@
       <field name="name">Profit and Loss (Rohana)</field>
       <field name="sequence">10</field>
     </record>
+    <!-- Clear-DB: Accounting/Reporting/Divisional P&L opens the hand-made
+         account.report "Divisional P&L". The report and its client action are
+         environment data (no xmlid), so the action is linked by
+         migrations/17.0.0.0.125/post-migrate.py, not here. -->
     <record id="menu_studio_divisional_pl" model="ir.ui.menu">
       <field name="name">Divisional P&amp;L</field>
+      <field name="parent_id" ref="account.menu_finance_reports"/>
       <field name="sequence">10</field>
     </record>
     <record id="menu_studio_bulk_inputs_manager" model="ir.ui.menu">

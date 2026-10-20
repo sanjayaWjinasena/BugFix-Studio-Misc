@@ -2,7 +2,7 @@
 {
     # upgrade-testing branch: data files below are commented out - this branch installs functions only, no data is seeded.
     'name': 'Jinasena : Module : Studio-Misc',
-    'version': '17.0.0.0.124',
+    'version': '17.0.0.0.125',
     'summary': (
         'Catch-all landing zone for Studio-created artefacts that '
         'don\'t fit any of the domain-specific companion modules '
