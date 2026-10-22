@@ -1,5 +1,6 @@
 {
-    # upgrade-testing branch: data files below are commented out - this branch installs functions only, no data is seeded.
+    # upgrade-testing branch: data files below are commented out - this branch installs
+    # functions only, no data is seeded.
     "name": "Jinasena : Module : Studio-Misc",
     "version": "17.0.0.0.120",
     "summary": (
@@ -59,7 +60,8 @@
         "BugFix-Accounting",  # ACL rows use account.move, x_studio_* fields
         "BugFix-Stock",  # ACL rows use stock.picking, x_material_request_* models
         "BugFix-MRP",  # ACL rows use mrp.production, x_mrp_* models
-        "BugFix-Sales",  # declares res.partner.x_studio_payment_method + other Sales x_ fields
+        # declares res.partner.x_studio_payment_method + other Sales x_ fields
+        "BugFix-Sales",
         "BugFix-Purchase",  # declares x_payment_methods + purchase-side x_ fields
     ],
     "data": [
