@@ -61,3 +61,4 @@ from . import x_material_request_mt_o2m
 from . import x_material_request_tes_o2m
 from . import product_category
 from . import res_users
+from . import mrp_eco
