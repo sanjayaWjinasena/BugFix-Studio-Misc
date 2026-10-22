@@ -200,5 +200,4 @@
         # 'views/x_project_task_worksheet_template_1_e_views.xml',  # upgrade-testing: x_project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
     ],
     "post_init_hook": "post_init_hook",
-    "application": False,
 }
