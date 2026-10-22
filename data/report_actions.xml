@@ -8,6 +8,9 @@
       <field name="model">crossovered.budget</field>
       <field name="report_type">qweb-pdf</field>
       <field name="report_name">studio_customization.studio_report_docume_d573c563-728c-4341-ab10-9845f7d721f0</field>
+      <!-- Clear-DB binds it to Budget: shows under Print on Budgets -->
+      <field name="binding_model_id" ref="account_budget.model_crossovered_budget"/>
+      <field name="binding_type">report</field>
     </record>
 
     <record id="action_report_3486_c01_sales_quotation" model="ir.actions.report">
