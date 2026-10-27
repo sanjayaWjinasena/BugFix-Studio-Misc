@@ -6,6 +6,7 @@
     </record>
     <record id="menu_studio_divisional_pl" model="ir.ui.menu">
       <field name="name">Divisional P&amp;L</field>
+      <field name="parent_id" ref="account.menu_finance_reports"/>
       <field name="sequence">10</field>
     </record>
     <record id="menu_studio_bulk_inputs_manager" model="ir.ui.menu">

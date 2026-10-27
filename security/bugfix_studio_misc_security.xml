@@ -161,23 +161,11 @@ They have to be removed after testing.   - Already removed.
     <field name="comment">Original Name: Jin - PO Invoicing &amp; Payment - Inventory Credit</field>
   </record>
     </data>
-  <record id="rule_f7_hr_expense_employee_expense" model="ir.rule">
-    <field name="name">Employee Expense</field>
-    <field name="model_id" search="[('model', '=', 'hr.expense')]"/>
-    <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
-  </record>
   <record id="rule_f7_hr_expense_hr_expense" model="ir.rule">
     <field name="name">Hr Expense</field>
     <field name="model_id" search="[('model', '=', 'hr.expense')]"/>
     <field name="domain_force">[('create_uid', '=', user.id)]</field>
-  </record>
-  <record id="rule_f7_hr_expense_employee_can_t_modify_expense_that_is_not_in_draft_state" model="ir.rule">
-    <field name="name">Employee can't modify expense that is not in draft state</field>
-    <field name="model_id" search="[('model', '=', 'hr.expense')]"/>
-    <field name="domain_force">[('employee_id.user_id', '=', user.id), ('state', '!=', 'draft')]</field>
-    <field name="perm_write" eval="False"/>
-    <field name="perm_create" eval="False"/>
-    <field name="perm_unlink" eval="False"/>
+    <field name="groups" eval="[(6, 0, [ref('account.group_account_readonly')])]"/>
   </record>
   <record id="rule_246_own_attendees" model="ir.rule">
     <field name="name">Own attendees</field>
@@ -430,4 +418,22 @@ They have to be removed after testing.   - Already removed.
             <field name="perm_unlink" eval="False"/>
             <field name="active" eval="True"/>
         </record>
+    <data noupdate="1">
+    <record id="group_g_manufacturing_work_centre_visibility" model="res.groups">
+    <field name="name">Work Centre Visibility</field>
+    <field name="category_id" ref="base.module_category_manufacturing"/>
+  </record>
+    </data>
+    <record id="BugFix-Project.rule_271_test_users_records_only" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_misc_test_department')])]"/>
+  </record>
+    <record id="BugFix-Sales.rule_498_jin_sales_add_edit_del_ca_customers" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_sales_jin_sales_add_edit_del_ca_customers'), ref('BugFix-Approvals.group_132_jin_sales_pos_users')])]"/>
+  </record>
+    <record id="BugFix-Sales.rule_499_jin_sales_add_edit_del_non_ca_customers" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_sales_jin_sales_add_edit_del_ca_customers'), ref('BugFix-Approvals.group_132_jin_sales_pos_users')])]"/>
+  </record>
+    <record id="BugFix-MRP.rule_338_work_centre_visibility" model="ir.rule">
+    <field name="groups" eval="[(6, 0, [ref('group_g_manufacturing_work_centre_visibility')])]"/>
+  </record>
 </odoo>

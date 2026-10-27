@@ -2,7 +2,7 @@
     # upgrade-testing branch: data files below are commented out - this branch installs
     # functions only, no data is seeded.
     "name": "Jinasena : Module : Studio-Misc",
-    "version": "17.0.0.0.120",
+    "version": "17.0.0.0.127",
     "summary": (
         "Catch-all landing zone for Studio-created artefacts that "
         "don't fit any of the domain-specific companion modules "
@@ -198,7 +198,7 @@
         "views/bugfix_studio_misc_templates.xml",
         "views/bugfix_studio_misc_menus.xml",
         # Not loaded on this branch:
-        # 'data/ir_sequence_data.xml',  # upgrade-testing: data, not shipped
+        "data/ir_sequence_data.xml",
         # 'views/x_project_task_worksheet_template_1_extra_views.xml',  # upgrade-testing: x_project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
     ],
     "post_init_hook": "post_init_hook",

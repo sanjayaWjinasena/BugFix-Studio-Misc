@@ -10,9 +10,8 @@
       <field name="prefix">CON/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_887_con_consolidated_seq" model="ir.sequence">
@@ -21,9 +20,8 @@
       <field name="prefix">CON/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_228_consignment_det_seq" model="ir.sequence">
@@ -32,9 +30,8 @@
       <field name="prefix">CON/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_888_consignment_det_seq" model="ir.sequence">
@@ -43,9 +40,8 @@
       <field name="prefix">CON/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_230_custom_clearance_seq" model="ir.sequence">
@@ -54,9 +50,8 @@
       <field name="prefix">CC/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_889_custom_clearance_seq" model="ir.sequence">
@@ -65,9 +60,8 @@
       <field name="prefix">CC/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_232_lc_registration_seq" model="ir.sequence">
@@ -76,9 +70,8 @@
       <field name="prefix">LC/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_890_lc_registration_seq" model="ir.sequence">
@@ -87,9 +80,8 @@
       <field name="prefix">LC/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_1342_material_request_sequence" model="ir.sequence">
@@ -98,9 +90,8 @@
       <field name="prefix">MR/%(year)s</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_248_mnt_req_seq" model="ir.sequence">
@@ -109,9 +100,8 @@
       <field name="prefix">MNT/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_891_mnt_req_seq" model="ir.sequence">
@@ -120,9 +110,8 @@
       <field name="prefix">MNT/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_247_mtrl_req_seq" model="ir.sequence">
@@ -131,9 +120,8 @@
       <field name="prefix">MR/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_892_mtrl_req_seq" model="ir.sequence">
@@ -142,9 +130,8 @@
       <field name="prefix">MR/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_557_ot_update_seq" model="ir.sequence">
@@ -153,9 +140,8 @@
       <field name="prefix">OT/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_893_ot_update_seq" model="ir.sequence">
@@ -164,9 +150,8 @@
       <field name="prefix">OT/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_558_project_sale_order_seq" model="ir.sequence">
@@ -175,9 +160,8 @@
       <field name="prefix">PSO</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_896_project_sale_order_seq" model="ir.sequence">
@@ -186,9 +170,8 @@
       <field name="prefix">PSO</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_271_report_model_seq" model="ir.sequence">
@@ -197,9 +180,8 @@
       <field name="prefix">RM/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_900_report_model_seq" model="ir.sequence">
@@ -208,9 +190,8 @@
       <field name="prefix">RM/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_231_tp_invoice_seq" model="ir.sequence">
@@ -219,9 +200,8 @@
       <field name="prefix">TP/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_pvt_ltd"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena (Pvt) Ltd.')]"/>
     </record>
 
     <record id="seq_899_tp_invoice_seq" model="ir.sequence">
@@ -230,9 +210,8 @@
       <field name="prefix">TP/%(year)s/</field>
       <field name="padding">5</field>
       <field name="number_increment">1</field>
-      <field name="number_next">1</field>
       <field name="implementation">standard</field>
-      <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
+      <field name="company_id" search="[('name', '=', 'Jinasena Agricultural Machinery (Pvt) Ltd.')]"/>
     </record>
 
   </data>
