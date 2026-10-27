@@ -74,6 +74,7 @@ def migrate(cr, version):
                 act.id,
                 act.name,
                 e,
+                exc_info=True,
             )
     _logger.info(
         "[BugFix-Studio-Misc v109] fixed %d of %d broken object_write actions.",

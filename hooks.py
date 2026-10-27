@@ -91,5 +91,8 @@ def post_init_hook(env):
                 )
             except Exception as e:
                 _logger.warning(
-                    "post_init_hook: %s restoration failed: %s", auto_xmlid, e
+                    "post_init_hook: %s restoration failed: %s",
+                    auto_xmlid,
+                    e,
+                    exc_info=True,
                 )
