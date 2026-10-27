@@ -5,7 +5,8 @@ v0.0.109 back-filled update_path from update_field_id.name, which unblocked
 the KeyError('') crash. But the next error path hit was:
 
   ValueError: could not convert string to float:
-    'record.x_studio_quantity - (record.x_studio_po_quantity + record.x_studio_cash_quantity)'
+    'record.x_studio_quantity - (record.x_studio_po_quantity +
+    record.x_studio_cash_quantity)'
 
 Odoo's object_write handler reads `value` and, with evaluation_type='value'
 (the default), tries to coerce it to the field's native type. For a numeric
