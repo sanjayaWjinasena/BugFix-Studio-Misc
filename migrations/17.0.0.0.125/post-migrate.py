@@ -26,7 +26,7 @@ MENU_XMLID = "BugFix-Studio-Misc.menu_studio_divisional_pl"
 def _report_id_of(action):
     try:
         return (ast.literal_eval(action.context or "{}") or {}).get("report_id")
-    except Exception:
+    except (ValueError, SyntaxError, TypeError, AttributeError):
         return None
 
 
