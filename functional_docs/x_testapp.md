@@ -4,7 +4,7 @@
 
 ### `x_testapp` — TestApp
 
-*Created by this repo.* Python: `models/x_testapp.py`, `models/x_testapp_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_testapp.py`, `models/x_testapp_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -33,9 +33,9 @@ TestApp is a Studio sandbox model that has only a name, a sort order and an arch
 | `my_activity_date_deadline` | My Activity Deadline | date | Standard activity field: deadline of the current user’s next activity on the record. | not stored |  |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_active` | Active | boolean | Archive flag of TestApp records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_16_x_testapp_x_active`<br>`view BugFix-Studio-Misc.view_2385_default_form_view_for_x_testapp`<br>`view BugFix-Studio-Misc.view_2386_default_search_view_for_x_testapp` |
-| `x_name` | Name | char | Name of a TestApp record, entered by the user and used as its display name. Shown in the list, form and search views. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_2384_default_list_view_for_x_testapp`<br>`view BugFix-Studio-Misc.view_2385_default_form_view_for_x_testapp`<br>`view BugFix-Studio-Misc.view_2386_default_search_view_for_x_testapp` |
-| `x_studio_sequence` | Sequence | integer | Integer sort order for TestApp records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_17_x_testapp_x_studio_sequence`<br>`view BugFix-Studio-Misc.view_2384_default_list_view_for_x_testapp` |
+| `active` | Active | boolean | Archive flag of TestApp records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_16_x_testapp_active`<br>`view BugFix-Studio-Misc.view_2385_default_form_view_for_x_testapp`<br>`view BugFix-Studio-Misc.view_2386_default_search_view_for_x_testapp` |
+| `name` | Name | char | Name of a TestApp record, entered by the user and used as its display name. Shown in the list, form and search views. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_2384_default_list_view_for_x_testapp`<br>`view BugFix-Studio-Misc.view_2385_default_form_view_for_x_testapp`<br>`view BugFix-Studio-Misc.view_2386_default_search_view_for_x_testapp` |
+| `sequence` | Sequence | integer | Integer sort order for TestApp records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_17_x_testapp_sequence`<br>`view BugFix-Studio-Misc.view_2384_default_list_view_for_x_testapp` |
 
 **Window actions (2):**
 
@@ -48,9 +48,9 @@ TestApp is a Studio sandbox model that has only a name, a sort order and an arch
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for x_testapp | `view_2385_default_form_view_for_x_testapp` | form | full form layout with 2 fields | Default Studio form for the test model x_testapp: required Name and archived ribbon; chatter fields stripped because the model has no mail support. | `x_testapp.x_active`<br>`x_testapp.x_name` |  |
-| Default list view for x_testapp | `view_2384_default_list_view_for_x_testapp` | tree | full tree layout with 2 fields | Default Studio list view for x_testapp: drag-handle Sequence and Name. | `x_testapp.x_name`<br>`x_testapp.x_studio_sequence` |  |
-| Default search view for x_testapp | `view_2386_default_search_view_for_x_testapp` | search | full search layout with 1 fields | Default Studio search view for x_testapp: search by Name plus an 'Archived' filter. | `x_testapp.x_active`<br>`x_testapp.x_name` |  |
+| Default form view for x_testapp | `view_2385_default_form_view_for_x_testapp` | form | full form layout with 2 fields | Default Studio form for the test model x_testapp: required Name and archived ribbon; chatter fields stripped because the model has no mail support. | `x_testapp.active`<br>`x_testapp.name` |  |
+| Default list view for x_testapp | `view_2384_default_list_view_for_x_testapp` | tree | full tree layout with 2 fields | Default Studio list view for x_testapp: drag-handle Sequence and Name. | `x_testapp.name`<br>`x_testapp.sequence` |  |
+| Default search view for x_testapp | `view_2386_default_search_view_for_x_testapp` | search | full search layout with 1 fields | Default Studio search view for x_testapp: search by Name plus an 'Archived' filter. | `x_testapp.active`<br>`x_testapp.name` |  |
 
 **Access rights (3):**
 

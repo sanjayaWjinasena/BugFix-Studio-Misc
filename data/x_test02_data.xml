@@ -137,7 +137,7 @@ custom_currency = env['sale.order'].search([('name', '=', 'S00706')],limit=1)
 
 if custom_currency:
 
-  custom_currency.write({'x_studio_quotation_type':'Repair','x_studio_order_payment_method':custom_currency.partner_id.x_studio_payment_method})
+  custom_currency.write({'quotation_type':'Repair','x_studio_order_payment_method':custom_currency.partner_id.x_studio_payment_method})
 
 """
 
@@ -392,7 +392,7 @@ line_ids2 = []
 
 
 
-#trf = env['x_trf_charges'].create({'x_name':"Test-1", 'x_studio_description':"Test-1"})
+#trf = env['x_trf_charges'].create({'name':"Test-1", 'description':"Test-1"})
 
 #line_ids.append(trf.id)
 
@@ -949,7 +949,7 @@ for loop_lines in charge_lines_45:
 
   
 
-charge_lines_46 = env['x_task_diagnosis'].search([])
+charge_lines_46 = env['task_diagnosis'].search([])
 
 for loop_lines in charge_lines_46:
 
@@ -1390,105 +1390,105 @@ for loop_lines in charge_lines_2:
     <field name="action_server_ids" eval="[(6, 0, [ref('BugFix-Studio-Misc.server_action_2108_test_layout_changes')])]"/>
   </record>
     <data noupdate="1">
-    <record id="default_31_x_test02_x_active" model="ir.default">
-      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__x_active"/>
+    <record id="default_31_x_test02_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__active"/>
       <field name="json_value">true</field>
     </record>
-    <record id="default_32_x_test02_x_studio_sequence" model="ir.default">
-      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__x_studio_sequence"/>
+    <record id="default_32_x_test02_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__sequence"/>
       <field name="json_value">10</field>
     </record>
-    <!-- DROPPED default_80_x_mass_produce_serial_x_active: field owned by BugFix-MRP not in Studio-Misc deps -->
-<!-- DROPPED default_81_x_mass_produce_serial_x_studio_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
-<!-- DROPPED default_82_x_mass_produce_serial__x_active: field owned by BugFix-MRP not in Studio-Misc deps -->
-<!-- DROPPED default_83_x_mass_produce_serial__x_studio_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
+    <!-- DROPPED default_80_x_mass_produce_serial_active: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_81_x_mass_produce_serial_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_82_x_mass_produce_serial__active: field owned by BugFix-MRP not in Studio-Misc deps -->
+<!-- DROPPED default_83_x_mass_produce_serial__sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_85_x_mass_produce_serial_x_studio_sequence_size: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_86_x_mass_produce_serial_x_studio_starting_serial_no: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_87_x_mass_produce_serial__x_studio_sequence_size: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_88_x_mass_produce_serial__x_studio_starting_serial_n: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_89_stock_lot_x_studio_sequence_size: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_90_stock_lot_x_studio_starting_serial_no: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_91_x_tariffmaster_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_92_x_tariffmaster_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_94_x_tariff_date_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_98_x_tariff_rates_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_99_x_trf_charges_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_100_x_trf_charges_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_101_x_trf_duty_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_102_x_trf_duty_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_104_x_trf_taxes_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_105_x_trf_taxes_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_106_x_import_charges_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_107_x_import_charges_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_109_x_misc_charge_codes_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_110_x_misc_charge_codes_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_111_x_structure_master_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_112_x_structure_master_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_91_x_tariffmaster_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_92_x_tariffmaster_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_94_x_tariff_date_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_98_x_tariff_rates_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_99_x_trf_charges_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_100_x_trf_charges_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_101_x_trf_duty_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_102_x_trf_duty_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_104_x_trf_taxes_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_105_x_trf_taxes_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_106_x_import_charges_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_107_x_import_charges_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_109_x_misc_charge_codes_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_110_x_misc_charge_codes_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_111_x_structure_master_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_112_x_structure_master_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_113_x_structure_master_x_studio_structure_no: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_114_x_structure_master_x_studio_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_115_x_structure_details_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_116_x_structure_details_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_115_x_structure_details_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_116_x_structure_details_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_117_x_structure_details_x_studio_structure_no: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_122_x_structure_master_x_studio_selection_field_ba7a: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_124_x_temp_structure_detai_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_126_x_temp_structure_maste_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_127_x_delivery_terms_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_128_x_delivery_terms_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_129_x_delivery_term_charge_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_130_x_delivery_term_charge_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_124_x_temp_structure_detai_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_126_x_temp_structure_maste_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_127_x_delivery_terms_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_128_x_delivery_terms_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_129_x_delivery_term_charge_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_130_x_delivery_term_charge_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_131_purchase_order_x_studio_pr_type: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_132_x_import_rfq_charge_he_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_133_x_import_rfq_charge_he_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_132_x_import_rfq_charge_he_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_133_x_import_rfq_charge_he_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_134_x_import_rfq_charge_he_x_studio_structure_no: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_135_x_import_rfq_charge_li_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_136_x_import_rfq_charge_li_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_135_x_import_rfq_charge_li_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_136_x_import_rfq_charge_li_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_137_x_import_rfq_charge_li_x_studio_structure_no: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_138_x_consignment_header_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_139_x_consignment_header_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_140_x_consignment_line_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_141_x_consignment_line_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_142_x_consignment_header_x_name: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_138_x_consignment_header_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_139_x_consignment_header_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_140_x_consignment_line_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_141_x_consignment_line_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_142_x_consignment_header_name: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_143_x_consignment_header_x_studio_shipping_mode: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_144_x_consignment_header_x_studio_status: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_145_x_consignment_header_x_studio_status_bar: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_146_x_consignment_line_x_currency_id: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_148_x_temp_consignment_hea_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_149_x_temp_consignment_hea_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_150_x_temp_consignment_lin_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_151_x_temp_consignment_lin_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_148_x_temp_consignment_hea_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_149_x_temp_consignment_hea_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_150_x_temp_consignment_lin_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_151_x_temp_consignment_lin_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_152_x_temp_consignment_lin_x_currency_id: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_153_x_imports_ledger_setup_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_154_x_imports_ledger_setup_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_155_x_custom_currency_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_156_x_custom_currency_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_157_x_custom_currency_rate_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_158_x_custom_currency_rate_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_159_x_consignment_charge_h_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_160_x_consignment_charge_h_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_153_x_imports_ledger_setup_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_154_x_imports_ledger_setup_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_155_x_custom_currency_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_156_x_custom_currency_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_157_x_custom_currency_rate_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_158_x_custom_currency_rate_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_159_x_consignment_charge_h_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_160_x_consignment_charge_h_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_161_x_consignment_charge_h_x_studio_charge_group: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_162_x_consignment_charge_h_x_studio_structure_no: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_163_x_consignment_charge_l_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_164_x_consignment_charge_l_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_163_x_consignment_charge_l_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_164_x_consignment_charge_l_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_165_x_consignment_charge_h_x_studio_ledger_post: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_166_x_consignment_charge_l_x_studio_structure_no: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_167_x_consignment_header_x_studio_allocate_header_ch: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_168_x_consignment_header_x_studio_create_header_char: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_169_project_task_x_studio_priority: field owned by BugFix-Project not in Studio-Misc deps -->
-<!-- DROPPED default_170_x_temp_tp_invoice_head_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_171_x_temp_tp_invoice_head_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_172_x_temp_tp_invoice_line_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_173_x_temp_tp_invoice_line_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_174_x_tp_invoice_header_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_175_x_tp_invoice_header_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_176_x_tp_invoice_line_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_177_x_tp_invoice_line_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_178_x_tp_invoice_header_x_name: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_169_project_task_custom_reports_priority: field owned by BugFix-Project not in Studio-Misc deps -->
+<!-- DROPPED default_170_x_temp_tp_invoice_head_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_171_x_temp_tp_invoice_head_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_172_x_temp_tp_invoice_line_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_173_x_temp_tp_invoice_line_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_174_x_tp_invoice_header_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_175_x_tp_invoice_header_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_176_x_tp_invoice_line_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_177_x_tp_invoice_line_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_178_x_tp_invoice_header_name: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_179_x_tp_invoice_header_x_studio_pipeline_status_bar: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_180_x_tp_invoice_header_x_studio_status: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_183_x_payment_methods_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_184_x_payment_methods_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_185_x_lc_header_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_186_x_lc_header_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_183_x_payment_methods_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_184_x_payment_methods_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_185_x_lc_header_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_186_x_lc_header_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_187_x_lc_header_x_studio_lc_credit_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_188_x_lc_header_x_studio_lc_credit_sub_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_189_x_lc_header_x_studio_status: field owned by BugFix-Accounting not in Studio-Misc deps -->
@@ -1497,23 +1497,23 @@ for loop_lines in charge_lines_2:
 <!-- DROPPED default_192_x_lc_header_x_studio_transshipment: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_193_x_lc_header_x_studio_draft: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_194_x_lc_header_x_studio_confirmation_instructions: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_195_x_lc_header_x_name: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_195_x_lc_header_name: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_197_x_lc_header_x_studio_selection_field_yo4qM: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_199_x_lc_header_x_studio_version_no: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_200_x_con_consolidated_hea_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_201_x_con_consolidated_hea_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_202_x_con_consolidated_lin_x_active: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_203_x_con_consolidated_lin_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_204_x_con_consolidated_hea_x_name: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_200_x_con_consolidated_hea_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_201_x_con_consolidated_hea_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_202_x_con_consolidated_lin_active: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_203_x_con_consolidated_lin_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_204_x_con_consolidated_hea_name: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_205_x_con_consolidated_hea_x_studio_pipeline_status_: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_206_x_con_consolidated_hea_x_studio_status: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_208_x_temp_con_consolidate_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_210_x_temp_con_conso_line_x_studio_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_212_sale_order_x_studio_over_credit: field owned by BugFix-Sales not in Studio-Misc deps -->
-<!-- DROPPED default_213_x_customer_group_x_active: field owned by studio_usermodel_migration not in Studio-Misc deps -->
-<!-- DROPPED default_214_x_customer_group_x_studio_sequence: field owned by studio_usermodel_migration not in Studio-Misc deps -->
-<!-- DROPPED default_215_x_vendor_group_x_active: field owned by studio_usermodel_migration not in Studio-Misc deps -->
-<!-- DROPPED default_216_x_vendor_group_x_studio_sequence: field owned by studio_usermodel_migration not in Studio-Misc deps -->
+<!-- DROPPED default_208_x_temp_con_consolidate_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_210_x_temp_con_conso_line_sequence: field owned by BugFix-Stock not in Studio-Misc deps -->
+<!-- DROPPED default_212_sale_order_over_credit: field owned by BugFix-Sales not in Studio-Misc deps -->
+<!-- DROPPED default_213_x_customer_group_active: field owned by studio_usermodel_migration not in Studio-Misc deps -->
+<!-- DROPPED default_214_x_customer_group_sequence: field owned by studio_usermodel_migration not in Studio-Misc deps -->
+<!-- DROPPED default_215_x_vendor_group_active: field owned by studio_usermodel_migration not in Studio-Misc deps -->
+<!-- DROPPED default_216_x_vendor_group_sequence: field owned by studio_usermodel_migration not in Studio-Misc deps -->
 <!-- DROPPED default_217_x_mrp_bom_overhead_cos_x_studio_currency_id: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_218_x_mrp_bom_material_cos_x_studio_currency_id: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_219_x_mrp_bom_labour_cost_x_studio_currency_id: field owned by BugFix-MRP not in Studio-Misc deps -->
@@ -1526,15 +1526,15 @@ for loop_lines in charge_lines_2:
 <!-- DROPPED default_228_x_con_consolidated_lin_x_studio_currency_id: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_229_x_temp_con_conso_line_x_studio_currency_id: field owned by BugFix-Stock not in Studio-Misc deps -->
 <!-- DROPPED default_230_x_customer_group_x_studio_group_type: field owned by studio_usermodel_migration not in Studio-Misc deps -->
-<!-- DROPPED default_231_x_paye_tax_x_active: field owned by BugFix-HR not in Studio-Misc deps -->
-<!-- DROPPED default_232_x_paye_tax_x_studio_sequence: field owned by BugFix-HR not in Studio-Misc deps -->
-<!-- DROPPED default_233_x_material_request_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_234_x_material_request_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_235_x_configuration_x_active: field owned by BugFix-Custom-Reports not in Studio-Misc deps -->
-<!-- DROPPED default_236_x_configuration_x_studio_sequence: field owned by BugFix-Custom-Reports not in Studio-Misc deps -->
-<!-- DROPPED default_237_x_mr_config_x_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_238_x_mr_config_x_studio_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_239_x_mr_config_x_studio_qty: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_231_x_paye_tax_active: field owned by BugFix-HR not in Studio-Misc deps -->
+<!-- DROPPED default_232_x_paye_tax_sequence: field owned by BugFix-HR not in Studio-Misc deps -->
+<!-- DROPPED default_233_x_material_request_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_234_x_material_request_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_235_x_configuration_active: field owned by BugFix-Custom-Reports not in Studio-Misc deps -->
+<!-- DROPPED default_236_x_configuration_sequence: field owned by BugFix-Custom-Reports not in Studio-Misc deps -->
+<!-- DROPPED default_237_x_mr_config_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_238_x_mr_config_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_239_x_mr_config_qty: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_240_x_mr_config_x_studio_qty_1: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_241_maintenance_request_name: field owned by maintenance not in Studio-Misc deps -->
 <record id="default_243_x_test02_x_studio_pipeline_status_bar" model="ir.default">
@@ -1542,17 +1542,17 @@ for loop_lines in charge_lines_2:
       <field name="json_value">"status1"</field>
     </record>
     <!-- DROPPED default_381_x_material_request_x_studio_selection_field_BupK: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_382_x_material_request_x_name: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_382_x_material_request_name: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_383_x_mr_config_x_studio_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_384_sale_order_x_studio_sales_order_validity: field owned by BugFix-Sales not in Studio-Misc deps -->
 <!-- DROPPED default_385_account_payment_x_studio_payment_validation_1: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_386_x_tp_invoice_header_x_currency_id: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_387_maintenance_request_x_studio_integer_field_1Zbhs: field owned by BugFix-Maintenance not in Studio-Misc deps -->
-<!-- DROPPED default_390_x_journal_types_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_391_x_journal_types_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_390_x_journal_types_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_391_x_journal_types_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_392_stock_picking_x_studio_gl_account_status: field owned by BugFix-Stock not in Studio-Misc deps -->
-<!-- DROPPED default_393_x_pump_price_costing_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_394_x_pump_price_costing_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_393_x_pump_price_costing_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_394_x_pump_price_costing_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_395_x_sales_report_model_x_studio_idling_rate: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_396_x_sales_report_model_x_studio_distributor_additi: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_397_x_sales_report_model_x_studio_sscl: field owned by BugFix-Accounting not in Studio-Misc deps -->
@@ -1566,8 +1566,8 @@ for loop_lines in charge_lines_2:
 <!-- DROPPED default_405_x_sales_report_model_x_studio_oh_absorbed_2_fact: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_406_x_sales_report_model_x_studio_actuals: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_407_mrp_production_x_studio_process_error: field owned by BugFix-MRP not in Studio-Misc deps -->
-<!-- DROPPED default_410_x_update_ot_x_active: field owned by BugFix-HR not in Studio-Misc deps -->
-<!-- DROPPED default_411_x_update_ot_x_studio_sequence: field owned by BugFix-HR not in Studio-Misc deps -->
+<!-- DROPPED default_410_x_update_ot_active: field owned by BugFix-HR not in Studio-Misc deps -->
+<!-- DROPPED default_411_x_update_ot_sequence: field owned by BugFix-HR not in Studio-Misc deps -->
 <!-- DROPPED default_412_crossovered_budget_x_studio_confirm_validation: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_414_purchase_order_x_studio_pr_update_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_415_sale_order_x_studio_confirm_validation: field owned by BugFix-Sales not in Studio-Misc deps -->
@@ -1590,8 +1590,8 @@ for loop_lines in charge_lines_2:
 <!-- DROPPED default_433_hr_applicant_x_studio_interview_marks_2: field owned by BugFix-HR not in Studio-Misc deps -->
 <!-- DROPPED default_434_hr_applicant_x_studio_interview_marks_3: field owned by BugFix-HR not in Studio-Misc deps -->
 <!-- DROPPED default_451_account_payment_x_studio_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_452_x_advance_payment_acco_x_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_453_x_advance_payment_acco_x_studio_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_452_x_advance_payment_acco_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_453_x_advance_payment_acco_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <record id="default_472_x_test02_x_studio_test_value" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_x_test02__x_studio_test_value"/>
       <field name="json_value">"0"</field>

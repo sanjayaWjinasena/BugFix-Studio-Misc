@@ -13,11 +13,11 @@
         <form>
   <header/>
   <sheet string="Sales Model Debug">
-    <widget name="web_ribbon" text="Archived" bg_color="bg-danger" invisible="x_active == True"/>
-    <field name="x_active" invisible="1"/>
+    <widget name="web_ribbon" text="Archived" bg_color="bg-danger" invisible="active == True"/>
+    <field name="active" invisible="1"/>
     <div class="oe_title">
                 <h1>
-                    <field name="x_name" required="1" placeholder="Name..."/>
+                    <field name="name" required="1" placeholder="Name..."/>
                 </h1>
             </div>
     <group name="studio_group_8d6c04">
@@ -39,8 +39,8 @@
       <field name="type">tree</field>
       <field name="arch" type="xml">
         <tree>
-  <field name="x_studio_sequence" widget="handle"/>
-  <field name="x_name"/>
+  <field name="sequence" widget="handle"/>
+  <field name="name"/>
 </tree>
       </field>
     </record>
@@ -50,9 +50,9 @@
       <field name="type">search</field>
       <field name="arch" type="xml">
         <search>
-  <field name="x_name"/>
+  <field name="name"/>
   <separator/>
-  <filter string="Archived" name="archived_x_sales_model_debug" domain="[['x_active', '=', False]]"/>
+  <filter string="Archived" name="archived_x_sales_model_debug" domain="[['active', '=', False]]"/>
   <separator/>
 </search>
       </field>
@@ -69,10 +69,10 @@
   <xpath expr="//tree[1]" position="attributes">
     <attribute name="editable">bottom</attribute>
   </xpath>
-  <xpath expr="//field[@name='x_name']" position="attributes">
+  <xpath expr="//field[@name='name']" position="attributes">
     <attribute name="string">Method Name</attribute>
   </xpath>
-  <xpath expr="//field[@name='x_name']" position="after">
+  <xpath expr="//field[@name='name']" position="after">
     <field optional="show" name="x_studio_start_time" string="Start Time"/>
     <field optional="show" name="x_studio_end_time" string="End Time"/>
   </xpath>

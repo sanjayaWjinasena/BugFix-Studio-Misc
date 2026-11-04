@@ -3,12 +3,12 @@ from odoo import fields, models
 
 class X_test_model_primary(models.Model):
     _name = "x_test_model_primary"
-    _rec_name = "x_name"  # Clear-DB Studio model: records are named by x_name
+    _rec_name = "name"  # Clear-DB Studio model: records are named by name
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "TEST MODEL PRIMARY"
 
-    x_active = fields.Boolean(string="Active")
-    x_name = fields.Char(string="Name")
+    active = fields.Boolean(string="Active")
+    name = fields.Char(string="Name")
     x_studio_date_1 = fields.Date(string="Date")
     x_studio_one2many_field_5VwpV = fields.One2many(
         comodel_name="x_test_model_link",
@@ -16,4 +16,4 @@ class X_test_model_primary(models.Model):
         string="Line IDs",
         copy=False,
     )
-    x_studio_sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer(string="Sequence")

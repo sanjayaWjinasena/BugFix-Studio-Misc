@@ -16,15 +16,15 @@
       </button>
     </div>
   </xpath>
-  <xpath expr="//field[@name='x_name']" position="attributes">
+  <xpath expr="//field[@name='name']" position="attributes">
     <attribute name="string">Code</attribute>
   </xpath>
   <xpath expr="//group[@name='studio_group_36e52f_left']" position="inside">
-    <field name="x_studio_description" string="Description"/>
+    <field name="description" string="Description"/>
     <field name="x_studio_payment_term" string="Payment Term" required="1"/>
     <field name="x_studio_receivable_account" string="Receivable Account" required="1"/>
     <field name="x_studio_group_type" string="Group Type" required="1"/>
-    <field name="x_studio_company_id" string="Company" force_save="True" readonly="1"/>
+    <field name="accounting_company_id" string="Company" force_save="True" readonly="1"/>
   </xpath>
   <xpath expr="//group[@name='studio_group_36e52f']" position="after">
     <notebook name="studio_notebook_NLBUK">

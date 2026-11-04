@@ -20,32 +20,32 @@ RESTORATIONS = [
     (
         "BugFix-Sales.base_automation_163_sls_track_vat_registration_status_in_customer",
         "trigger_field_ids",
-        ["Fix-repair.field_res_partner__x_studio_vat_registration_status"],
+        ["Fix-repair.field_res_partner__vat_registration_status"],
     ),
     (
         "BugFix-Sales.base_automation_164_sls_track_vat_registration_no_in_customer",
         "trigger_field_ids",
-        ["Fix-repair.field_res_partner__x_studio_vat_registration_number"],
+        ["Fix-repair.field_res_partner__vat_registration_number"],
     ),
     (
         "BugFix-Sales.base_automation_165_sls_track_svat_registration_status_in_customer",
         "trigger_field_ids",
-        ["Fix-repair.field_res_partner__x_studio_svat_registration_status"],
+        ["Fix-repair.field_res_partner__svat_registration_status"],
     ),
     (
         "BugFix-Sales.base_automation_166_sls_track_svat_registration_no_in_customer",
         "trigger_field_ids",
-        ["Fix-repair.field_res_partner__x_studio_svat_registration_number"],
+        ["Fix-repair.field_res_partner__svat_registration_number"],
     ),
     (
         "BugFix-Sales.base_automation_168_sls_track_mandatory_bank_guarantee_in_customer",
         "trigger_field_ids",
-        ["Fix-repair.field_res_partner__x_studio_mandatory_bank_guarantee"],
+        ["Fix-repair.field_res_partner__mandatory_bank_guarantee"],
     ),
     (
         "BugFix-Sales.base_automation_180_sls_track_vat_exempted_number_in_customer",
         "trigger_field_ids",
-        ["Fix-repair.field_res_partner__x_studio_vat_exempted_number"],
+        ["Fix-repair.field_res_partner__vat_exempted_number"],
     ),
     (
         "BugFix-Sales.base_automation_316_jin_company_id_in_delivery_terms",

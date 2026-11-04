@@ -3,12 +3,12 @@
     <data noupdate="1">
     <!-- DROPPED default_580_sale_order_picking_policy: field owned by sale_stock not in Studio-Misc deps -->
 <!-- DROPPED default_581_x_minimum_sales_margin_x_studio_last_purchase_pr: field owned by BugFix-Sales not in Studio-Misc deps -->
-<record id="default_582_x_website_faq_x_active" model="ir.default">
-      <field name="field_id" ref="BugFix-Studio-Misc.field_x_website_faq__x_active"/>
+<record id="default_582_x_website_faq_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_website_faq__active"/>
       <field name="json_value">true</field>
     </record>
-    <record id="default_583_x_website_faq_x_studio_sequence" model="ir.default">
-      <field name="field_id" ref="BugFix-Studio-Misc.field_x_website_faq__x_studio_sequence"/>
+    <record id="default_583_x_website_faq_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_website_faq__sequence"/>
       <field name="json_value">10</field>
     </record>
     </data>

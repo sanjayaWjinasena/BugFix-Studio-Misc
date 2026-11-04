@@ -11,10 +11,10 @@ from odoo import fields, models
 class ProductCategory(models.Model):
     _inherit = "product.category"
 
-    x_studio_company_id = fields.Many2one(
+    accounting_company_id = fields.Many2one(
         "res.company",
         string="Company",
         ondelete="set null",
         copy=True,
     )
-    x_studio_description = fields.Char(string="Description", copy=True)
+    description = fields.Char(string="Description", copy=True)

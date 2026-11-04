@@ -4,7 +4,7 @@
 
 ### `x_x_studio_request_line` — x_studio_request_line
 
-*Created by this repo.* Python: `models/x_x_studio_request_line.py`, `models/x_x_studio_request_line_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_x_studio_request_line.py`, `models/x_x_studio_request_line_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -22,7 +22,7 @@ Purpose not evident from code. x_studio_request_line is a Studio model that has 
 | `id` | ID | integer | Unique database ID of the record (automatic). | stored |  |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_name` | Name | char | Name field of the Studio model `x_x_studio_request_line`; not used by any view or logic in this repo. | stored |  |  |
+| `name` | Name | char | Name field of the Studio model `x_x_studio_request_line`; not used by any view or logic in this repo. | stored |  |  |
 
 **Access rights (3):**
 

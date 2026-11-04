@@ -6,7 +6,7 @@
 
 *Extends a model created by `base`.*
 
-Other repos that use this model: `x_repair_master_data.migration._migrate_studio_repair_master_data_to_base()` (Fix-repair)
+Other repos that use this model: `repair_master_data.migration._migrate_studio_repair_master_data_to_base()` (Fix-repair)
 
 **Summary:**
 

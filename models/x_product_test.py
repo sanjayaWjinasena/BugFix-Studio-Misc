@@ -3,12 +3,12 @@ from odoo import fields, models
 
 class X_product_test(models.Model):
     _name = "x_product_test"
-    _rec_name = "x_name"  # Clear-DB Studio model: records are named by x_name
+    _rec_name = "name"  # Clear-DB Studio model: records are named by name
     _inherit = ["mail.activity.mixin"]
     _description = "product.test"
 
-    x_active = fields.Boolean(string="Active")
-    x_name = fields.Char(string="Name")
+    active = fields.Boolean(string="Active")
+    name = fields.Char(string="Name")
     x_studio_journal_name = fields.Char(string="Journal Name")
     x_studio_many2many_field_R1u9s = fields.Many2many(
         comodel_name="product.product", string="Product"
@@ -22,7 +22,7 @@ class X_product_test(models.Model):
     x_studio_product_1 = fields.Many2one(
         comodel_name="product.template", string="Product_1"
     )
-    x_studio_sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer(string="Sequence")
     x_studio_stock_move = fields.Many2one(
         comodel_name="stock.move", string="Stock Move"
     )

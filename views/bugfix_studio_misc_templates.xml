@@ -3280,7 +3280,7 @@
                             <span style="white-space: pre-line;">
                                 Date : <span t-field="o.close_date"/>
                                 Ref.No: <span t-field="o.display_name"/>
-                                Job No.: <span t-field="o.x_studio_job_location"/>
+                                Job No.: <span t-field="o.job_location"/>
                             </span>
                         </div>
                     </div>
@@ -3475,7 +3475,7 @@
       <span t-field="table_line.x_studio_product_id"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   <td>
       <span t-field="table_line.x_studio_value"/>
@@ -3676,7 +3676,7 @@
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   </div>
     </div>
@@ -3715,13 +3715,13 @@
       <span style="font-size: 13px">We refer to the "CENTRIC" type </span>
     <span t-field="doc.product_id.code"/>
     <span>pumping unit No </span>
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   <br/>
       <br/>
@@ -3731,7 +3731,7 @@
   <br/>
     </span>
     <span>Since we are unable to store this pumping unit any longer, we must finally request you to make payment of Rs.</span>
-    <span t-field="doc.x_studio_balance_due"/>
+    <span t-field="doc.balance_due"/>
   
   <br/>
     </span>
@@ -4074,7 +4074,7 @@
                         Quotation deadline:
                         Payment           :
                         Reference Number  : 
-                        Serial Number     :  <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number     :  <span t-field="doc.serial_no"/>
                         
                     </span>
                 </div>
@@ -4271,7 +4271,7 @@
                         Com.SVat RegNo  : <span/>
                         Com.NBT RegNo.  : <span/>
                         Reference Number: <span/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                     </span>
                 </div>
             </div>
@@ -5162,7 +5162,7 @@
       <span t-field="table_line.x_studio_product_1"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_sales_order"/>
+      <span t-field="table_line.sales_order"/>
     </td>
   <td>
       <span t-field="table_line.x_studio_invoice"/>
@@ -5174,10 +5174,10 @@
       <span t-field="table_line.x_studio_product_category"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_unit_price"/>
+      <span t-field="table_line.unit_price"/>
     </td>
   <td>
       <span t-field="table_line.x_studio_net_value"/>
@@ -6466,7 +6466,7 @@
                             <span style="white-space: pre-line;">
                                 Date : <span t-field="o.close_date"/>
                                 Ref.No: <span t-field="o.display_name"/>
-                                Job No.: <span t-field="o.x_studio_job_location"/>
+                                Job No.: <span t-field="o.job_location"/>
                             </span>
                         </div>
                     </div>
@@ -6544,7 +6544,7 @@
                         <span style="white-space: pre-line;">
                             Date : <span t-field="o.close_date"/>
                             Ref.No: <span t-field="o.display_name"/>
-                            Job No.: <span t-field="o.x_studio_job_location"/>
+                            Job No.: <span t-field="o.job_location"/>
                         </span>
                     </div>
                 </div>
@@ -7487,7 +7487,7 @@
                             <span style="white-space: pre-line;">
                                 Date : <span t-field="o.close_date"/>
                                 Ref.No: <span t-field="o.display_name"/>
-                                Job No.: <span t-field="o.x_studio_job_location"/>
+                                Job No.: <span t-field="o.job_location"/>
                             </span>
                         </div>
                     </div>
@@ -7829,7 +7829,7 @@
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   </div>
     </div>
     <div class="row">
@@ -8195,7 +8195,7 @@
                             <span style="white-space: pre-line;">
                                 Date : <span t-field="o.close_date"/>
                                 Ref.No: <span t-field="o.display_name"/>
-                                Job No.: <span t-field="o.x_studio_job_location"/>
+                                Job No.: <span t-field="o.job_location"/>
                             </span>
                         </div>
                     </div>
@@ -8356,7 +8356,7 @@
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   </div>
     </div>
@@ -8645,7 +8645,7 @@
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   </div>
     </div>
@@ -8689,7 +8689,7 @@
       <br/>
     </span>
     <span>The balance due Rs.</span>
-  <span t-field="doc.x_studio_balance_due" style="display:inline-block" class="o_bold"/>
+  <span t-field="doc.balance_due" style="display:inline-block" class="o_bold"/>
     <span>should be paid in cash prior to collection 
 
 <span style="color: rgb(0, 0, 0);font-size: 13px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">(IF PAYMENT IS MADE BY CHEQUE, THE PUMP CAN BE COLLECTED ONLY ON REALIZATION OF THE CHEQUE)<br/><br/></span>
@@ -9475,7 +9475,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -13984,7 +13984,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14086,7 +14086,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14175,7 +14175,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14630,7 +14630,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14732,7 +14732,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14821,7 +14821,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14910,7 +14910,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -14999,7 +14999,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -15271,7 +15271,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -15594,7 +15594,7 @@
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -15998,7 +15998,7 @@
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   </div>
     </div>
     <div class="row">
@@ -18138,7 +18138,7 @@ Estimated Sheet</span></h2>
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -20982,7 +20982,7 @@ Estimated Sheet</span></h2>
       <span t-field="table_line.x_studio_product_id"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   <td>
       <span t-field="table_line.x_studio_value"/>
@@ -21164,7 +21164,7 @@ Estimated Sheet</span></h2>
       <span t-field="table_line.x_studio_product_1"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_sales_order"/>
+      <span t-field="table_line.sales_order"/>
     </td>
   <td>
       <span t-field="table_line.x_studio_invoice"/>
@@ -21176,10 +21176,10 @@ Estimated Sheet</span></h2>
       <span t-field="table_line.x_studio_product_category"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_unit_price"/>
+      <span t-field="table_line.unit_price"/>
     </td>
   <td>
       <span t-field="table_line.x_studio_net_value"/>
@@ -21468,7 +21468,7 @@ Estimated Sheet</span></h2>
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   </div>
     </div>
@@ -21758,7 +21758,7 @@ Estimated Sheet</span></h2>
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   </div>
     </div>
@@ -21802,7 +21802,7 @@ Estimated Sheet</span></h2>
       <br/>
     </span>
     <span>The balance due Rs.</span>
-  <span t-field="doc.x_studio_balance_due" style="display:inline-block" class="o_bold"/>
+  <span t-field="doc.balance_due" style="display:inline-block" class="o_bold"/>
     <span>should be paid in cash prior to collection 
 
 <span style="color: rgb(0, 0, 0);font-size: 13px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">(IF PAYMENT IS MADE BY CHEQUE, THE PUMP CAN BE COLLECTED ONLY ON REALIZATION OF THE CHEQUE)<br/><br/></span>
@@ -22038,7 +22038,7 @@ Estimated Sheet</span></h2>
     <div class="row">
       <div class="col">
         <span style="width:150px;display:inline-block">Serial No:</span>
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   </div>
     </div>
@@ -22077,13 +22077,13 @@ Estimated Sheet</span></h2>
       <span style="font-size: 13px">We refer to the "CENTRIC" type </span>
     <span t-field="doc.product_id.code"/>
     <span>pumping unit No </span>
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   
   <br/>
       <br/>
@@ -22093,7 +22093,7 @@ Estimated Sheet</span></h2>
   <br/>
     </span>
     <span>Since we are unable to store this pumping unit any longer, we must finally request you to make payment of Rs.</span>
-    <span t-field="doc.x_studio_balance_due"/>
+    <span t-field="doc.balance_due"/>
   
   <br/>
     </span>
@@ -23789,7 +23789,7 @@ Estimated Sheet</span></h2>
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>
@@ -24430,7 +24430,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[2]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.partner_id.x_studio_address"/>
+        <span t-field="doc.partner_id.address"/>
       </div>
     </div>
   </xpath>
@@ -24447,7 +24447,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[3]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.partner_shipping_id.x_studio_address"/>
+        <span t-field="doc.partner_shipping_id.address"/>
       </div>
     </div>
   </xpath>
@@ -25509,7 +25509,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_description"/>
+      <span t-field="table_line.description"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25834,7 +25834,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_unit_price"/>
+      <span t-field="table_line.unit_price"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25844,7 +25844,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25884,7 +25884,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_sales_order"/>
+      <span t-field="table_line.sales_order"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -26058,7 +26058,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[4]/tbody[1]/tr[1]/td[3]" position="replace"/>
@@ -26951,15 +26951,15 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[23]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_serial_no.display_name"/>
+        <span t-field="doc.serial_no.display_name"/>
       </div>
     </div>
   </xpath>
   <xpath expr="/t/t/div/div[25]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   </xpath>
   <xpath expr="/t/t/div/div[25]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   </xpath>
   <xpath expr="/t/t/div/div[25]/div/span/span[3]" position="replace">
     <span>water pump handed over to us on ..................... under the reference number </span>
@@ -27012,19 +27012,19 @@ Estimated Sheet</span></h2>
     <span>pumping unit No </span>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_serial_no"/>
+    <span t-field="doc.serial_no"/>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[10]/span" position="before">
     <span>New Text Block</span>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_serial_no.display_name"/>
+    <span t-field="doc.serial_no.display_name"/>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[8]/br" position="before">
     <span>New Text Block</span>
@@ -27046,7 +27046,7 @@ Estimated Sheet</span></h2>
     <span>Since we are unable to store this pumping unit any longer, we must finally request you to make payment of Rs.</span>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[9]" position="after">
-    <span t-field="doc.x_studio_balance_due"/>
+    <span t-field="doc.balance_due"/>
   </xpath>
   <xpath expr="/t/t/div/div[29]/div/span/br[1]" position="before">
     <span>New Text Block</span>
@@ -27277,7 +27277,7 @@ Estimated Sheet</span></h2>
     <span>The balance due</span>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[3]" position="after">
-    <span t-field="doc.x_studio_balance_due"/>
+    <span t-field="doc.balance_due"/>
   </xpath>
   <xpath expr="/t/t/div/div[23]/div/span/span[3]" position="replace">
     <span>The balance due Rs.</span>
@@ -27930,7 +27930,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[2]" position="after">
     <td>
-      <span t-field="table_line.partner_id.x_studio_vendor_name"/>
+      <span t-field="table_line.partner_id.vendor_name"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[3]" position="after">
@@ -29413,7 +29413,7 @@ Estimated Sheet</span></h2>
     <attribute name="style" separator=";" add="width:100px;display:inline-block"/>
   </xpath>
   <xpath expr="/t/t/div/div[16]/div[2]/span/span" position="after">
-    <span t-field="doc.x_studio_created_by_5"/>
+    <span t-field="doc.created_by_5"/>
   </xpath>
   <xpath expr="/t/t/div/div[16]/div[2]/span/span[1]" position="attributes">
     <attribute name="style" separator=";" add="width:100px;display:inline-block"/>
@@ -29642,7 +29642,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[3]" position="after">
     <td>
-      <span t-field="table_line.x_studio_quantity"/>
+      <span t-field="table_line.quantity"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/div[8]" position="after">
@@ -29676,7 +29676,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[4]" position="after">
     <td>
-      <span t-field="table_line.x_studio_unit_price"/>
+      <span t-field="table_line.unit_price"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[5]" position="after">
@@ -33038,7 +33038,7 @@ Estimated Sheet</span></h2>
                         E Mail          : <span t-field="doc.partner_email"/>
                         Item Id         : <span t-field="doc.product_id.code"/>
                         Item Name       : <span t-field="doc.product_id"/>
-                        Serial Number   : <span t-field="doc.x_studio_serial_no"/>
+                        Serial Number   : <span t-field="doc.serial_no"/>
                         NAT:I/D Card No :
                     </span>
                 </div>

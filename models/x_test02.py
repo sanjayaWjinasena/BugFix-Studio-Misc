@@ -3,16 +3,16 @@ from odoo import fields, models
 
 class X_test02(models.Model):
     _name = "x_test02"
-    _rec_name = "x_name"  # Clear-DB Studio model: records are named by x_name
+    _rec_name = "name"  # Clear-DB Studio model: records are named by name
     _inherit = ["mail.activity.mixin"]
     _description = "TEST02"
 
-    x_active = fields.Boolean(string="Active")
+    active = fields.Boolean(string="Active")
     x_currency_id = fields.Many2one(comodel_name="res.currency", string="Currency")
-    x_name = fields.Char(string="Name")
+    name = fields.Char(string="Name")
     x_studio_chk_atomated_action = fields.Integer(string="CHK Atomated Action")
     x_studio_chk_server_action = fields.Integer(string="CHK Server Action")
-    x_studio_company_id = fields.Many2one(
+    accounting_company_id = fields.Many2one(
         comodel_name="res.company", string="Company", copy=False
     )
     x_studio_date = fields.Datetime(string="Date")
@@ -49,7 +49,7 @@ class X_test02(models.Model):
         ],
         string="Pipeline status bar",
     )
-    x_studio_sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer(string="Sequence")
     x_studio_status = fields.Selection(
         selection=[("S1", "S1"), ("S2", "S2"), ("S3", "S3")], string="Status"
     )

@@ -3,11 +3,11 @@ from odoo import fields, models
 
 class XTest02Gap(models.Model):
     _inherit = "x_test02"
-    _rec_name = "x_name"  # Clear-DB Studio model: records are named by x_name
+    _rec_name = "name"  # Clear-DB Studio model: records are named by name
 
-    x_active = fields.Boolean(string="Active")
+    active = fields.Boolean(string="Active")
     x_currency_id = fields.Many2one(comodel_name="res.currency", string="Currency")
-    x_name = fields.Char(string="Name")
+    name = fields.Char(string="Name")
     x_studio_charges_1 = fields.Many2many(
         comodel_name="x_trf_charges",
         relation="x_test02_x_trf_charges_x_studio_charges_1_rel",

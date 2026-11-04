@@ -4,7 +4,7 @@
 
 ### `x_product_test` — product.test
 
-*Created by this repo.* Python: `models/x_product_test.py`, `models/x_product_test_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_product_test.py`, `models/x_product_test_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -33,30 +33,30 @@ A Studio test (sandbox) model labelled product.test, with test links to products
 | `my_activity_date_deadline` | My Activity Deadline | date | Standard activity field: deadline of the current user’s next activity on the record. | not stored |  |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_active` | Active | boolean | Archive flag of product.test records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_78_x_product_test_x_active`<br>`view BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test`<br>`view BugFix-Studio-Misc.view_2588_default_search_view_for_x_product_test` |
-| `x_name` | Name | char | Name of a product.test sandbox record; shown in its list, form and search views and overwritten with a 'purchase.request.seq' number by the TEST-TEST-TEST server action. Part of a Studio test/sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_1140_test_test_test`<br>`view BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test`<br>`view BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test`<br>`view BugFix-Studio-Misc.view_2588_default_search_view_for_x_product_test` |
+| `active` | Active | boolean | Archive flag of product.test records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_78_x_product_test_active`<br>`view BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test`<br>`view BugFix-Studio-Misc.view_2588_default_search_view_for_x_product_test` |
+| `name` | Name | char | Name of a product.test sandbox record; shown in its list, form and search views and overwritten with a 'purchase.request.seq' number by the TEST-TEST-TEST server action. Part of a Studio test/sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_1140_test_test_test`<br>`view BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test`<br>`view BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test`<br>`view BugFix-Studio-Misc.view_2588_default_search_view_for_x_product_test` |
 | `x_studio_journal_name` | Journal Name | char | User-entered char value labelled 'Journal Name'. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
 | `x_studio_many2many_field_R1u9s` | Product | many2many → `product.product` | Many2many link labelled 'Product' to `product.product` records, chosen by the user. Shown in the form view. Part of a Studio test/sandbox model. | stored | `model product.product` (product) | `view BugFix-Studio-Misc.view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext` |
 | `x_studio_many2one_field_cmfRx` | Product | many2one → `product.product` | Many2one link labelled 'Product' to `product.product` records, chosen by the user. Shown in the form and list views. Part of a Studio test/sandbox model. | stored | `model product.product` (product) | `view BugFix-Studio-Misc.view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext`<br>`view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
 | `x_studio_many2one_field_wTxgi` | Journal Entry | many2one → `account.move` | Many2one link labelled 'Journal Entry' to `account.move` records, chosen by the user. Shown in the list view. Part of a Studio test/sandbox model. | stored | `model account.move` (account) | `view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
 | `x_studio_product_1` | Product_1 | many2one → `product.template` | Many2one link labelled 'Product_1' to `product.template` records, chosen by the user. Shown in the form and list views. Part of a Studio test/sandbox model. | stored | `model product.template` (product) | `view BugFix-Studio-Misc.view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext`<br>`view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
-| `x_studio_sequence` | Sequence | integer | Integer sort order for product.test records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_79_x_product_test_x_studio_sequence`<br>`view BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test` |
+| `sequence` | Sequence | integer | Integer sort order for product.test records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_79_x_product_test_sequence`<br>`view BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test` |
 | `x_studio_stock_move` | Stock Move | many2one → `stock.move` | Many2one link labelled 'Stock Move' to `stock.move` records, chosen by the user. Shown in the list view. Part of a Studio test/sandbox model. | stored | `model stock.move` (stock) | `view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
 
 **Server actions (1):**
 
 - **TEST-TEST-TEST** (`server_action_1140_test_test_test`, type `code`)
   - Function: Test action on product.test: replaces a non-empty name with the next 'purchase.request.seq' number (consuming purchase request numbers). Sandbox only.
-  - Depends on: `model ir.sequence` (base), `model x_product_test`, `x_product_test.x_name`
+  - Depends on: `model ir.sequence` (base), `model x_product_test`, `x_product_test.name`
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (6 lines)</summary>
 
 ```python
-# record['x_name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
+# record['name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
 
-if record.x_name:
+if record.name:
     seq = env["ir.sequence"].next_by_code("purchase.request.seq")
-    record.write({"x_name": seq})
+    record.write({"name": seq})
 ```
   </details>
 **Window actions (1):**
@@ -69,11 +69,11 @@ if record.x_name:
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for x_product_test | `view_2587_default_form_view_for_x_product_test` | form | full form layout with 2 fields | Default Studio form for the test model x_product_test: required Name, archived ribbon driven by Active; chatter fields were stripped because the model has no mail support. | `x_product_test.x_active`<br>`x_product_test.x_name` | `view BugFix-Studio-Misc.view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext` |
-| Default list view for x_product_test | `view_2586_default_list_view_for_x_product_test` | tree | full tree layout with 2 fields | Default Studio list view for x_product_test: drag-handle Sequence and Name. | `x_product_test.x_name`<br>`x_product_test.x_studio_sequence` | `view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
-| Default search view for x_product_test | `view_2588_default_search_view_for_x_product_test` | search | full search layout with 1 fields | Default Studio search view for x_product_test: search by Name plus an 'Archived' filter. | `x_product_test.x_active`<br>`x_product_test.x_name` |  |
-| Odoo Studio: Default form view for x_product_test customization | `view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext` | form | set required= on `//field[@name='x_name']`; inside `//group[@name='studio_group_2ae04f_left']`: add field x_studio_many2one_field_cmfRx, field x_studio_product_1; inside `//group[@name='studio_group_2ae04f_right']`: add field x_studio_many2many_field_R1u9s | Extends the x_product_test form: clears the required flag on Name and adds a Many2one field, 'Product_1' and a many2many tags field. | `view BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test`<br>`x_product_test.x_studio_many2many_field_R1u9s`<br>`x_product_test.x_studio_many2one_field_cmfRx`<br>`x_product_test.x_studio_product_1` |  |
-| Odoo Studio: Default list view for x_product_test customization | `view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` | tree | after `//field[@name='x_name']`: add field x_studio_many2one_field_wTxgi, field x_studio_journal_name, field x_studio_stock_move, field x_studio_many2one_field_cmfRx, field x_studio_product_1 | Extends the x_product_test list: adds a Many2one field, Journal Name, Stock Move, another Many2one and Product_1 columns after Name. | `view BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test`<br>`x_product_test.x_studio_journal_name`<br>`x_product_test.x_studio_many2one_field_cmfRx`<br>`x_product_test.x_studio_many2one_field_wTxgi`<br>`x_product_test.x_studio_product_1`<details><summary>+1 more</summary>`x_product_test.x_studio_stock_move`</details> |  |
+| Default form view for x_product_test | `view_2587_default_form_view_for_x_product_test` | form | full form layout with 2 fields | Default Studio form for the test model x_product_test: required Name, archived ribbon driven by Active; chatter fields were stripped because the model has no mail support. | `x_product_test.active`<br>`x_product_test.name` | `view BugFix-Studio-Misc.view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext` |
+| Default list view for x_product_test | `view_2586_default_list_view_for_x_product_test` | tree | full tree layout with 2 fields | Default Studio list view for x_product_test: drag-handle Sequence and Name. | `x_product_test.name`<br>`x_product_test.sequence` | `view BugFix-Studio-Misc.view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` |
+| Default search view for x_product_test | `view_2588_default_search_view_for_x_product_test` | search | full search layout with 1 fields | Default Studio search view for x_product_test: search by Name plus an 'Archived' filter. | `x_product_test.active`<br>`x_product_test.name` |  |
+| Odoo Studio: Default form view for x_product_test customization | `view_2589_odoo_studio_default_form_view_for_x_product_test_customizati_ext` | form | set required= on `//field[@name='name']`; inside `//group[@name='studio_group_2ae04f_left']`: add field x_studio_many2one_field_cmfRx, field x_studio_product_1; inside `//group[@name='studio_group_2ae04f_right']`: add field x_studio_many2many_field_R1u9s | Extends the x_product_test form: clears the required flag on Name and adds a Many2one field, 'Product_1' and a many2many tags field. | `view BugFix-Studio-Misc.view_2587_default_form_view_for_x_product_test`<br>`x_product_test.x_studio_many2many_field_R1u9s`<br>`x_product_test.x_studio_many2one_field_cmfRx`<br>`x_product_test.x_studio_product_1` |  |
+| Odoo Studio: Default list view for x_product_test customization | `view_2590_odoo_studio_default_list_view_for_x_product_test_customizati_ext` | tree | after `//field[@name='name']`: add field x_studio_many2one_field_wTxgi, field x_studio_journal_name, field x_studio_stock_move, field x_studio_many2one_field_cmfRx, field x_studio_product_1 | Extends the x_product_test list: adds a Many2one field, Journal Name, Stock Move, another Many2one and Product_1 columns after Name. | `view BugFix-Studio-Misc.view_2586_default_list_view_for_x_product_test`<br>`x_product_test.x_studio_journal_name`<br>`x_product_test.x_studio_many2one_field_cmfRx`<br>`x_product_test.x_studio_many2one_field_wTxgi`<br>`x_product_test.x_studio_product_1`<details><summary>+1 more</summary>`x_product_test.x_studio_stock_move`</details> |  |
 
 **Access rights (3):**
 

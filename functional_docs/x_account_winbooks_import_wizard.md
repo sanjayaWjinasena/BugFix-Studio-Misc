@@ -4,7 +4,7 @@
 
 ### `x_account_winbooks_import_wizard` — Account Winbooks import wizard
 
-*Created by this repo.* Python: `models/x_account_winbooks_import_wizard.py`, `models/x_account_winbooks_import_wizard_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_account_winbooks_import_wizard.py`, `models/x_account_winbooks_import_wizard_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -22,7 +22,7 @@ Purpose not evident from code. This is a Studio-created model with only a Name f
 | `id` | ID | integer | Unique database ID of the record (automatic). | stored |  |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_name` | Name | char | Name field of the Studio-created Account Winbooks import wizard model; not used by any view or logic in this repo. | stored |  |  |
+| `name` | Name | char | Name field of the Studio-created Account Winbooks import wizard model; not used by any view or logic in this repo. | stored |  |  |
 
 **Access rights (2):**
 

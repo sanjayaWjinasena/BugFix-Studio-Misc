@@ -4,7 +4,7 @@
 
 ### `x_material_request_mt_line_9a011` — material_request_mt_line
 
-*Created by this repo.* Python: `models/x_material_request_mt_line_9a011.py`, `models/x_material_request_mt_line_9a011_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_material_request_mt_line_9a011.py`, `models/x_material_request_mt_line_9a011_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -23,16 +23,16 @@ A line record of a Material Request MT, linked to its parent through X Material 
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
 | `x_material_request_mt_id` | X Material Request Mt | many2one → `x_material_request_mt` | Link from a Material Request MT line to its parent Material Request MT; inverse of the parent's lines field. Not shown on any view. | stored | `model x_material_request_mt` (BugFix-Stock) |  |
-| `x_name` | Description | char | Description of a Material Request MT line, entered by the user; shown in the line's default list, form and search views. | stored; required |  | `view BugFix-Studio-Misc.view_8771_default_list_view_for_x_material_request_mt_line_9a011_e`<br>`view BugFix-Studio-Misc.view_8772_default_form_view_for_x_material_request_mt_line_9a011_e`<br>`view BugFix-Studio-Misc.view_8773_default_search_view_for_x_material_request_mt_line_9a011_e` |
-| `x_studio_sequence` | Sequence | integer | Sort order of Material Request MT lines in the list view. | stored |  | `view BugFix-Studio-Misc.view_8771_default_list_view_for_x_material_request_mt_line_9a011_e` |
+| `name` | Description | char | Description of a Material Request MT line, entered by the user; shown in the line's default list, form and search views. | stored; required |  | `view BugFix-Studio-Misc.view_8771_default_list_view_for_x_material_request_mt_line_9a011_e`<br>`view BugFix-Studio-Misc.view_8772_default_form_view_for_x_material_request_mt_line_9a011_e`<br>`view BugFix-Studio-Misc.view_8773_default_search_view_for_x_material_request_mt_line_9a011_e` |
+| `sequence` | Sequence | integer | Sort order of Material Request MT lines in the list view. | stored |  | `view BugFix-Studio-Misc.view_8771_default_list_view_for_x_material_request_mt_line_9a011_e` |
 
 **Views (3):**
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for x_material_request_mt_line_9a011 | `view_8772_default_form_view_for_x_material_request_mt_line_9a011_e` | form | full form layout with 1 fields | Default Studio form for Material Request (MT) lines (x_material_request_mt_line_9a011): a single required Name field. | `x_material_request_mt_line_9a011.x_name` |  |
-| Default list view for x_material_request_mt_line_9a011 | `view_8771_default_list_view_for_x_material_request_mt_line_9a011_e` | tree | full tree layout with 2 fields | Default Studio inline-editable list for Material Request (MT) lines: drag-handle Sequence and Name. | `x_material_request_mt_line_9a011.x_name`<br>`x_material_request_mt_line_9a011.x_studio_sequence` |  |
-| Default search view for x_material_request_mt_line_9a011 | `view_8773_default_search_view_for_x_material_request_mt_line_9a011_e` | search | full search layout with 1 fields | Default Studio search view for Material Request (MT) lines allowing search by Name. | `x_material_request_mt_line_9a011.x_name` |  |
+| Default form view for x_material_request_mt_line_9a011 | `view_8772_default_form_view_for_x_material_request_mt_line_9a011_e` | form | full form layout with 1 fields | Default Studio form for Material Request (MT) lines (x_material_request_mt_line_9a011): a single required Name field. | `x_material_request_mt_line_9a011.name` |  |
+| Default list view for x_material_request_mt_line_9a011 | `view_8771_default_list_view_for_x_material_request_mt_line_9a011_e` | tree | full tree layout with 2 fields | Default Studio inline-editable list for Material Request (MT) lines: drag-handle Sequence and Name. | `x_material_request_mt_line_9a011.name`<br>`x_material_request_mt_line_9a011.sequence` |  |
+| Default search view for x_material_request_mt_line_9a011 | `view_8773_default_search_view_for_x_material_request_mt_line_9a011_e` | search | full search layout with 1 fields | Default Studio search view for Material Request (MT) lines allowing search by Name. | `x_material_request_mt_line_9a011.name` |  |
 
 **Access rights (3):**
 

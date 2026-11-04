@@ -4,12 +4,12 @@
 
 ### `x_sales_model_debug` — Sales Model Debug
 
-*Created by this repo.* Python: `models/x_sales_model_debug.py`, `models/x_sales_model_debug_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_sales_model_debug.py`, `models/x_sales_model_debug_gap.py`. Record name field: `name`.
 
 **Summary:**
 
 <!-- SUMMARY:model:x_sales_model_debug -->
-A timing and debug log model. Each record logs a method name (`x_name`, shown as Method Name) with a start time and an end time. It has mail chatter and activities, a window action, and an inline-editable list that shows the start and end times. The Jin Sales POS users and Sales View Only groups can read and create records, and administrators have full access.
+A timing and debug log model. Each record logs a method name (`name`, shown as Method Name) with a start time and an end time. It has mail chatter and activities, a window action, and an inline-editable list that shows the start and end times. The Jin Sales POS users and Sales View Only groups can read and create records, and administrators have full access.
 <!-- /SUMMARY -->
 
 **Fields (35):**
@@ -46,10 +46,10 @@ A timing and debug log model. Each record logs a method name (`x_name`, shown as
 | `website_message_ids` | Website Messages | one2many → `mail.message` | Standard chatter field: messages shown on the website/portal for this record. | stored | `model mail.message` (mail) |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_active` | Active | boolean | Archive flag of Sales Model Debug records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. | stored |  | `default BugFix-Studio-Misc.default_379_x_sales_model_debug_x_active`<br>`view BugFix-Studio-Misc.view_5293_default_form_view_for_x_sales_model_debug_e`<br>`view BugFix-Studio-Misc.view_5294_default_search_view_for_x_sales_model_debug_e` |
-| `x_name` | Method Name | char | Method Name logged in a Sales Model Debug record (a timing/debug log model); shown in its default views. | stored |  | `view BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e`<br>`view BugFix-Studio-Misc.view_5293_default_form_view_for_x_sales_model_debug_e`<br>`view BugFix-Studio-Misc.view_5294_default_search_view_for_x_sales_model_debug_e` |
+| `active` | Active | boolean | Archive flag of Sales Model Debug records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. | stored |  | `default BugFix-Studio-Misc.default_379_x_sales_model_debug_active`<br>`view BugFix-Studio-Misc.view_5293_default_form_view_for_x_sales_model_debug_e`<br>`view BugFix-Studio-Misc.view_5294_default_search_view_for_x_sales_model_debug_e` |
+| `name` | Method Name | char | Method Name logged in a Sales Model Debug record (a timing/debug log model); shown in its default views. | stored |  | `view BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e`<br>`view BugFix-Studio-Misc.view_5293_default_form_view_for_x_sales_model_debug_e`<br>`view BugFix-Studio-Misc.view_5294_default_search_view_for_x_sales_model_debug_e` |
 | `x_studio_end_time` | End Time | datetime | End time logged on a Sales Model Debug record; shown on its Studio form. Debug log model. | stored |  | `view BugFix-Studio-Misc.view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo` |
-| `x_studio_sequence` | Sequence | integer | Integer sort order for Sales Model Debug records (default set by an ir.default), used to order them in lists. Shown in the list view. | stored |  | `default BugFix-Studio-Misc.default_380_x_sales_model_debug_x_studio_sequence`<br>`view BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e` |
+| `sequence` | Sequence | integer | Integer sort order for Sales Model Debug records (default set by an ir.default), used to order them in lists. Shown in the list view. | stored |  | `default BugFix-Studio-Misc.default_380_x_sales_model_debug_sequence`<br>`view BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e` |
 | `x_studio_start_time` | Start Time | datetime | Start time logged on a Sales Model Debug record; shown on its Studio form. Debug log model. | stored |  | `view BugFix-Studio-Misc.view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo` |
 
 **Window actions (1):**
@@ -62,10 +62,10 @@ A timing and debug log model. Each record logs a method name (`x_name`, shown as
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for x_sales_model_debug | `view_5293_default_form_view_for_x_sales_model_debug_e` | form | full form layout with 5 fields | Default Studio form for Sales Model Debug records: required Name, archived ribbon and chatter. | `x_sales_model_debug.activity_ids`<br>`x_sales_model_debug.message_follower_ids`<br>`x_sales_model_debug.message_ids`<br>`x_sales_model_debug.x_active`<br>`x_sales_model_debug.x_name` |  |
-| Default list view for x_sales_model_debug | `view_5292_default_list_view_for_x_sales_model_debug_e` | tree | full tree layout with 2 fields | Default Studio list view for Sales Model Debug: drag-handle Sequence and Name. | `x_sales_model_debug.x_name`<br>`x_sales_model_debug.x_studio_sequence` | `view BugFix-Studio-Misc.view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo` |
-| Default search view for x_sales_model_debug | `view_5294_default_search_view_for_x_sales_model_debug_e` | search | full search layout with 1 fields | Default Studio search view for Sales Model Debug: search by Name plus an 'Archived' filter. | `x_sales_model_debug.x_active`<br>`x_sales_model_debug.x_name` |  |
-| Odoo Studio: Default list view for x_sales_model_debug customization | `view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo` | tree | set editable=bottom on `//tree[1]`; set string=Method Name on `//field[@name='x_name']`; after `//field[@name='x_name']`: add field x_studio_start_time, field x_studio_end_time | Makes the Sales Model Debug list inline-editable, relabels Name as 'Method Name' and adds optional Start Time and End Time columns. | `view BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e`<br>`x_sales_model_debug.x_studio_end_time`<br>`x_sales_model_debug.x_studio_start_time` |  |
+| Default form view for x_sales_model_debug | `view_5293_default_form_view_for_x_sales_model_debug_e` | form | full form layout with 5 fields | Default Studio form for Sales Model Debug records: required Name, archived ribbon and chatter. | `x_sales_model_debug.activity_ids`<br>`x_sales_model_debug.message_follower_ids`<br>`x_sales_model_debug.message_ids`<br>`x_sales_model_debug.active`<br>`x_sales_model_debug.name` |  |
+| Default list view for x_sales_model_debug | `view_5292_default_list_view_for_x_sales_model_debug_e` | tree | full tree layout with 2 fields | Default Studio list view for Sales Model Debug: drag-handle Sequence and Name. | `x_sales_model_debug.name`<br>`x_sales_model_debug.sequence` | `view BugFix-Studio-Misc.view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo` |
+| Default search view for x_sales_model_debug | `view_5294_default_search_view_for_x_sales_model_debug_e` | search | full search layout with 1 fields | Default Studio search view for Sales Model Debug: search by Name plus an 'Archived' filter. | `x_sales_model_debug.active`<br>`x_sales_model_debug.name` |  |
+| Odoo Studio: Default list view for x_sales_model_debug customization | `view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo` | tree | set editable=bottom on `//tree[1]`; set string=Method Name on `//field[@name='name']`; after `//field[@name='name']`: add field x_studio_start_time, field x_studio_end_time | Makes the Sales Model Debug list inline-editable, relabels Name as 'Method Name' and adds optional Start Time and End Time columns. | `view BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e`<br>`x_sales_model_debug.x_studio_end_time`<br>`x_sales_model_debug.x_studio_start_time` |  |
 
 **Access rights (5):**
 

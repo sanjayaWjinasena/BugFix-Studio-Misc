@@ -11,11 +11,11 @@
   </header>
   <header/>
   <sheet string="TEST02">
-    <widget name="web_ribbon" text="Archived" bg_color="bg-danger" invisible="x_active == True"/>
-    <field name="x_active" invisible="1"/>
+    <widget name="web_ribbon" text="Archived" bg_color="bg-danger" invisible="active == True"/>
+    <field name="active" invisible="1"/>
     <div class="oe_title">
                 <h1>
-                    <field name="x_name" required="1" placeholder="Name..."/>
+                    <field name="name" required="1" placeholder="Name..."/>
                 </h1>
             </div>
     <group name="studio_group_a1036a">
@@ -36,7 +36,7 @@
       <field name="model">x_test02</field>
       <field name="type">kanban</field>
       <field name="arch" type="xml">
-        <kanban string="TEST02"><templates><t t-name="kanban-box"><div t-attf-class="oe_kanban_card oe_kanban_global_click"><div class="o_kanban_card_content"><field name="x_name"/></div></div></t></templates></kanban>
+        <kanban string="TEST02"><templates><t t-name="kanban-box"><div t-attf-class="oe_kanban_card oe_kanban_global_click"><div class="o_kanban_card_content"><field name="name"/></div></div></t></templates></kanban>
       </field>
     </record>
     <record id="view_2413_default_list_view_for_x_test02" model="ir.ui.view">
@@ -45,8 +45,8 @@
       <field name="type">tree</field>
       <field name="arch" type="xml">
         <tree>
-  <field name="x_studio_sequence" widget="handle"/>
-  <field name="x_name"/>
+  <field name="sequence" widget="handle"/>
+  <field name="name"/>
 </tree>
       </field>
     </record>
@@ -56,9 +56,9 @@
       <field name="type">search</field>
       <field name="arch" type="xml">
         <search>
-  <field name="x_name"/>
+  <field name="name"/>
   <separator/>
-  <filter string="Archived" name="archived_x_test02" domain="[['x_active', '=', False]]"/>
+  <filter string="Archived" name="archived_x_test02" domain="[['active', '=', False]]"/>
   <separator/>
 </search>
       </field>
@@ -75,7 +75,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//kanban[1]" position="attributes">
-    <attribute name="default_group_by">x_name</attribute>
+    <attribute name="default_group_by">name</attribute>
   </xpath>
 </data>
       </field>
@@ -89,7 +89,7 @@
       <field name="priority">99</field>
       <field name="arch" type="xml">
         <data>
-  <xpath expr="//field[@name='x_name']" position="after">
+  <xpath expr="//field[@name='name']" position="after">
     <field optional="show" name="x_studio_name_1" string="Name-1"/>
   </xpath>
 </data>
@@ -167,9 +167,9 @@
     <field name="x_studio_test_value" string="Test Value"/>
     <field name="x_studio_testing" string="Testing"/>
     <field name="x_studio_testing_02" string="Testing02" default="24" readonly="x_studio_types != 1"/>
-    <field name="x_studio_jin_2" string="JIN" force_save="True" invisible="x_studio_company_id != 1"/>
-    <field name="x_studio_jam_1" string="JAM" invisible="x_studio_company_id != 2"/>
-    <field name="x_studio_company_id" string="Company"/>
+    <field name="x_studio_jin_2" string="JIN" force_save="True" invisible="accounting_company_id != 1"/>
+    <field name="x_studio_jam_1" string="JAM" invisible="accounting_company_id != 2"/>
+    <field name="accounting_company_id" string="Company"/>
     <field name="x_studio_chk_atomated_action" string="CHK Atomated Action"/>
     <field name="x_studio_chk_server_action" string="CHK Server Action"/>
     <field name="x_currency_id"/>

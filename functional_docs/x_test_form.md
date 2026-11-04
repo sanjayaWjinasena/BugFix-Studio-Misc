@@ -4,7 +4,7 @@
 
 ### `x_test_form` — TEST FORM
 
-*Created by this repo.* Python: `models/x_test_form.py`, `models/x_test_form_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_test_form.py`, `models/x_test_form_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -46,10 +46,10 @@ TEST FORM is a Studio sandbox model with a name, a sort order, chatter and one e
 | `website_message_ids` | Website Messages | one2many → `mail.message` | Standard chatter field: messages shown on the website/portal for this record. | stored | `model mail.message` (mail) |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_active` | Active | boolean | Archive flag of TEST FORM records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_248_x_test_form_x_active`<br>`view BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form`<br>`view BugFix-Studio-Misc.view_3781_default_search_view_for_x_test_form` |
-| `x_name` | Name | char | Name of a TEST FORM record, entered by the user and used as its display name. Shown in the list, form and search views. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3779_default_list_view_for_x_test_form`<br>`view BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form`<br>`view BugFix-Studio-Misc.view_3781_default_search_view_for_x_test_form` |
+| `active` | Active | boolean | Archive flag of TEST FORM records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_248_x_test_form_active`<br>`view BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form`<br>`view BugFix-Studio-Misc.view_3781_default_search_view_for_x_test_form` |
+| `name` | Name | char | Name of a TEST FORM record, entered by the user and used as its display name. Shown in the list, form and search views. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3779_default_list_view_for_x_test_form`<br>`view BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form`<br>`view BugFix-Studio-Misc.view_3781_default_search_view_for_x_test_form` |
 | `x_studio_char_field_3aVUG` | New Text | char | User-entered char value labelled 'New Text'. Shown in the form view. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext` |
-| `x_studio_sequence` | Sequence | integer | Integer sort order for TEST FORM records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_249_x_test_form_x_studio_sequence`<br>`view BugFix-Studio-Misc.view_3779_default_list_view_for_x_test_form` |
+| `sequence` | Sequence | integer | Integer sort order for TEST FORM records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_249_x_test_form_sequence`<br>`view BugFix-Studio-Misc.view_3779_default_list_view_for_x_test_form` |
 
 **Window actions (1):**
 
@@ -61,9 +61,9 @@ TEST FORM is a Studio sandbox model with a name, a sort order, chatter and one e
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for x_test_form | `view_3780_default_form_view_for_x_test_form` | form | full form layout with 5 fields | Default Studio form for the test model x_test_form: required Name, archived ribbon, and chatter (followers, messages, activities). | `x_test_form.activity_ids`<br>`x_test_form.message_follower_ids`<br>`x_test_form.message_ids`<br>`x_test_form.x_active`<br>`x_test_form.x_name` | `view BugFix-Studio-Misc.view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext` |
-| Default list view for x_test_form | `view_3779_default_list_view_for_x_test_form` | tree | full tree layout with 2 fields | Default Studio list view for x_test_form: drag-handle Sequence and Name. | `x_test_form.x_name`<br>`x_test_form.x_studio_sequence` |  |
-| Default search view for x_test_form | `view_3781_default_search_view_for_x_test_form` | search | full search layout with 1 fields | Default Studio search view for x_test_form: search by Name plus an 'Archived' filter. | `x_test_form.x_active`<br>`x_test_form.x_name` |  |
+| Default form view for x_test_form | `view_3780_default_form_view_for_x_test_form` | form | full form layout with 5 fields | Default Studio form for the test model x_test_form: required Name, archived ribbon, and chatter (followers, messages, activities). | `x_test_form.activity_ids`<br>`x_test_form.message_follower_ids`<br>`x_test_form.message_ids`<br>`x_test_form.active`<br>`x_test_form.name` | `view BugFix-Studio-Misc.view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext` |
+| Default list view for x_test_form | `view_3779_default_list_view_for_x_test_form` | tree | full tree layout with 2 fields | Default Studio list view for x_test_form: drag-handle Sequence and Name. | `x_test_form.name`<br>`x_test_form.sequence` |  |
+| Default search view for x_test_form | `view_3781_default_search_view_for_x_test_form` | search | full search layout with 1 fields | Default Studio search view for x_test_form: search by Name plus an 'Archived' filter. | `x_test_form.active`<br>`x_test_form.name` |  |
 | Odoo Studio: Default form view for x_test_form customization | `view_3782_odoo_studio_default_form_view_for_x_test_form_customization_ext` | form | inside `//group[@name='studio_group_7e1a9f_left']`: add field x_studio_char_field_3aVUG | Adds a Studio char field to the left group of the x_test_form form. | `view BugFix-Studio-Misc.view_3780_default_form_view_for_x_test_form`<br>`x_test_form.x_studio_char_field_3aVUG` |  |
 
 **Access rights (3):**

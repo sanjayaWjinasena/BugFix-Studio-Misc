@@ -6,11 +6,11 @@
     <field name="state">code</field>
     <field name="usage">base_automation</field>
     <field name="code"><![CDATA[
-#record['x_name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
+#record['name'] = env['ir.sequence'].next_by_code('purchase.request.seq')
 
-if record.x_name:
+if record.name:
  seq = env['ir.sequence'].next_by_code('purchase.request.seq')
- record.write({'x_name': seq})
+ record.write({'name': seq})
 
 
 
@@ -18,12 +18,12 @@ if record.x_name:
     ]]></field>
   </record>
     <data noupdate="1">
-    <record id="default_78_x_product_test_x_active" model="ir.default">
-      <field name="field_id" ref="BugFix-Studio-Misc.field_x_product_test__x_active"/>
+    <record id="default_78_x_product_test_active" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_product_test__active"/>
       <field name="json_value">true</field>
     </record>
-    <record id="default_79_x_product_test_x_studio_sequence" model="ir.default">
-      <field name="field_id" ref="BugFix-Studio-Misc.field_x_product_test__x_studio_sequence"/>
+    <record id="default_79_x_product_test_sequence" model="ir.default">
+      <field name="field_id" ref="BugFix-Studio-Misc.field_x_product_test__sequence"/>
       <field name="json_value">10</field>
     </record>
     </data>

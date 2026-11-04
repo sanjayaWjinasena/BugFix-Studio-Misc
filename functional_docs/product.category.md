@@ -18,8 +18,8 @@ This repo adds two Studio fields: a Company link, which a BugFix-Sales server ac
 
 | Field | Label | Type | Function | How it gets its value | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| `x_studio_company_id` | Company | many2one → `res.company` | Company owning the product category; set to the user's active company by the 'JIN - Company Id in Product Category' server action. | stored | `model res.company` (base) | `server action BugFix-Sales.server_action_2623_jin_company_id_in_product_category` (BugFix-Sales) |
-| `x_studio_description` | Description | char | Free-text description of a product category; not shown on any view or used by logic in this repo. | stored |  |  |
+| `accounting_company_id` | Company | many2one → `res.company` | Company owning the product category; set to the user's active company by the 'JIN - Company Id in Product Category' server action. | stored | `model res.company` (base) | `server action BugFix-Sales.server_action_2623_jin_company_id_in_product_category` (BugFix-Sales) |
+| `description` | Description | char | Free-text description of a product category; not shown on any view or used by logic in this repo. | stored |  |  |
 
 **Window actions (1):**
 

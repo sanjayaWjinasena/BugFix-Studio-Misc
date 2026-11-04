@@ -4,7 +4,7 @@
 
 ### `x_project_task_worksheet_template_1` — Default Worksheet
 
-*Created by this repo.* Python: `models/x_project_task_worksheet_template_1.py`, `models/x_project_task_worksheet_template_1_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_project_task_worksheet_template_1.py`, `models/x_project_task_worksheet_template_1_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -23,8 +23,8 @@ The Default Worksheet of a project task, used as a field-service worksheet templ
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
 | `x_comments` | Comments | text | Free-text comments entered on the Default Worksheet of a field-service task; shown on the worksheet template form. | stored |  | `view BugFix-Studio-Misc.view_4653_template_view_default_worksheet_e` |
-| `x_name` | Name | char | Name of the Default Worksheet, copied via related from the linked task's name (`x_project_task_id.name`). | related `x_project_task_id.name`; not stored | `project.task.name` (project)<br>`x_project_task_worksheet_template_1.x_project_task_id` |  |
-| `x_project_task_id` | Task | many2one → `project.task` | Project task this Default Worksheet belongs to; shown on the worksheet form and source of the worksheet's name. | stored; required | `model project.task` (project) | `view BugFix-Studio-Misc.view_4653_template_view_default_worksheet_e`<br>`x_project_task_worksheet_template_1.x_name` |
+| `name` | Name | char | Name of the Default Worksheet, copied via related from the linked task's name (`x_project_task_id.name`). | related `x_project_task_id.name`; not stored | `project.task.name` (project)<br>`x_project_task_worksheet_template_1.x_project_task_id` |  |
+| `x_project_task_id` | Task | many2one → `project.task` | Project task this Default Worksheet belongs to; shown on the worksheet form and source of the worksheet's name. | stored; required | `model project.task` (project) | `view BugFix-Studio-Misc.view_4653_template_view_default_worksheet_e`<br>`x_project_task_worksheet_template_1.name` |
 
 **Window actions (1):**
 

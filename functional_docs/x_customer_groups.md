@@ -4,7 +4,7 @@
 
 ### `x_customer_groups` — Customer Groups
 
-*Created by this repo.* Python: `models/x_customer_groups.py`, `models/x_customer_groups_gap.py`. Record name field: `x_name`.
+*Created by this repo.* Python: `models/x_customer_groups.py`, `models/x_customer_groups_gap.py`. Record name field: `name`.
 
 **Summary:**
 
@@ -46,8 +46,8 @@ A Studio-created Customer Groups record with a Group Description name, a Sequenc
 | `website_message_ids` | Website Messages | one2many → `mail.message` | Standard chatter field: messages shown on the website/portal for this record. | stored | `model mail.message` (mail) |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `x_name` | Group Description | char | Description of a Customer Group, entered by the user and used as its display name; shown in the Customer Groups list view. | stored |  | `view BugFix-Studio-Misc.view_5682_default_tree_view_for_ir_model_759_e` |
-| `x_studio_sequence` | Sequence | integer | Sort order of Customer Groups, default set by an ir.default; not shown on any view in this repo. | stored |  | `default BugFix-Studio-Misc.default_10_x_customer_groups_x_studio_sequence` |
+| `name` | Group Description | char | Description of a Customer Group, entered by the user and used as its display name; shown in the Customer Groups list view. | stored |  | `view BugFix-Studio-Misc.view_5682_default_tree_view_for_ir_model_759_e` |
+| `sequence` | Sequence | integer | Sort order of Customer Groups, default set by an ir.default; not shown on any view in this repo. | stored |  | `default BugFix-Studio-Misc.default_10_x_customer_groups_sequence` |
 
 **Window actions (1):**
 
@@ -59,7 +59,7 @@ A Studio-created Customer Groups record with a Group Description name, a Sequenc
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default tree view for ir.model(759,) | `view_5682_default_tree_view_for_ir_model_759_e` | tree | full tree layout with 1 fields | Inactive list view for Customer Groups (x_customer_groups) showing only Name; not used. | `x_customer_groups.x_name` |  |
+| Default tree view for ir.model(759,) | `view_5682_default_tree_view_for_ir_model_759_e` | tree | full tree layout with 1 fields | Inactive list view for Customer Groups (x_customer_groups) showing only Name; not used. | `x_customer_groups.name` |  |
 
 **Access rights (3):**
 
