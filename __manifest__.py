@@ -152,7 +152,7 @@
         "views/x_bve_test1_views.xml",
         "views/x_custom_reports_tag_views.xml",
         "views/x_customer_groups_views.xml",
-        "views/x_project_task_worksheet_template_1_views.xml",
+        # "views/x_project_task_worksheet_template_1_views.xml",  # x_project_task_worksheet_template_1 is not shipped (Field Service "Repair Worksheet" model, industry_fsm_report); its action fails on a fresh database
         "views/x_res_config_settings_views.xml",
         "views/x_sales_model_debug_views.xml",
         "views/x_work_center_costing_views.xml",
