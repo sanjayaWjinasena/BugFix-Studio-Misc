@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BugFix-Studio-Misc: operation type (stock.picking.type) access as on Clear-DB.
+     Bug sheet Inventory row 5 (15/Oct): on Upgrade Testing every Inventory Overview
+     card menu offered the colour picker and Configuration, because Inventory /
+     Administrator could edit, create and delete operation types. On Clear-DB that rule
+     is read-only, so Odoo hides the editing part of the menu, and four Jin groups have
+     their own rules. The group rules were set aside in
+     BugFix-Stock/security/removed_handmade_access_rights.xml; they live here because
+     this module owns the groups (BugFix-Stock cannot reference them). -->
+<odoo>
+  <!-- stock's own rule, read-only on Clear-DB (stock resets it if stock is updated alone;
+       updating this module applies it again). -->
+  <record id="stock.access_stock_picking_type_manager" model="ir.model.access">
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+  </record>
+
+  <record id="access_stock_picking_type_mo_operator" model="ir.model.access">
+    <field name="name">stock.picking.type user</field>
+    <field name="model_id" ref="stock.model_stock_picking_type"/>
+    <field name="group_id" ref="group_g_manufacturing_jin_manufacturing_mo_operator"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+  </record>
+
+  <record id="access_stock_picking_type_po_dismantler" model="ir.model.access">
+    <field name="name">stock.picking.type user</field>
+    <field name="model_id" ref="stock.model_stock_picking_type"/>
+    <field name="group_id" ref="group_g_manufacturing_jin_manufacturing_production_orders_dismantler"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+  </record>
+
+  <record id="access_stock_picking_type_mfg_view_only" model="ir.model.access">
+    <field name="name">stock.picking.type user</field>
+    <field name="model_id" ref="stock.model_stock_picking_type"/>
+    <field name="group_id" ref="group_g_manufacturing_jin_manufacturing_those_with_only_view_rights"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+  </record>
+
+  <record id="access_stock_picking_type_po_goods_receivers" model="ir.model.access">
+    <field name="name">stock.picking.type user</field>
+    <field name="model_id" ref="stock.model_stock_picking_type"/>
+    <field name="group_id" ref="group_g_purchase_jin_po_goods_receivers"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+  </record>
+</odoo>
