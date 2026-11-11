@@ -42,11 +42,11 @@
 <!-- DROPPED default_73_mrp_bom_bom_total_overhead_cost: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_74_x_mrp_bom_general_cost_active: field owned by BugFix-MRP not in Studio-Misc deps -->
 <!-- DROPPED default_75_x_mrp_bom_general_cost_sequence: field owned by BugFix-MRP not in Studio-Misc deps -->
-<record id="default_76_x_work_center_costing_active" model="ir.default">
+<record id="default_76_work_center_costing_active" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_work_center_costing__active"/>
       <field name="json_value">true</field>
     </record>
-    <record id="default_77_x_work_center_costing_sequence" model="ir.default">
+    <record id="default_77_work_center_costing_sequence" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_work_center_costing__sequence"/>
       <field name="json_value">10</field>
     </record>

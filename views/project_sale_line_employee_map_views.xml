@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2806_project_sale_line_employee_map_d7" model="ir.actions.act_window">
+  <record id="action_project_sale_line_employee_map_d7" model="ir.actions.act_window">
     <field name="name">project.sale.line.employee.map</field>
     <field name="res_model">project.sale.line.employee.map</field>
     <field name="view_mode">tree,form</field>

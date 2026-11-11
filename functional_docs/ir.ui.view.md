@@ -18,4 +18,4 @@ This repo adds the record ID column after Model in the Views list view (Settings
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.ui.view tree customization | `view_std_ir_ui_view_2658` | tree | after `//field[@name='model']`: add field id | Adds the record ID column after Model in the Views list view (Settings > Technical). | `view base.view_view_tree` (base) |  |
+| Odoo Studio: ir.ui.view tree customization | `view_ir_ui_view_tree_inherit` | tree | after `//field[@name='model']`: add field id | Adds the record ID column after Model in the Views list view (Settings > Technical). | `view base.view_view_tree` (base) |  |

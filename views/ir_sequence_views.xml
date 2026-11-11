@@ -5,7 +5,7 @@
     <field name="res_model">ir.sequence</field>
     <field name="view_mode">tree,form</field>
   </record>
-    <record id="view_std_ir_sequence_6060" model="ir.ui.view">
+    <record id="view_ir_sequence_form_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.sequence form customization</field>
       <field name="model">ir.sequence</field>
       <field name="type">form</field>
@@ -34,7 +34,7 @@
 </data>
       </field>
     </record>
-    <record id="view_std_ir_sequence_3255" model="ir.ui.view">
+    <record id="view_ir_sequence_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.sequence tree customization</field>
       <field name="model">ir.sequence</field>
       <field name="type">tree</field>

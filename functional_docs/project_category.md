@@ -6,7 +6,7 @@
 
 *Extends a model created by `BugFix-Project`.*
 
-Other repos that use this model: `access right BugFix-Project.access_1698_project_category_group_system` (BugFix-Project)<br>`access right BugFix-Project.access_1699_project_category_group_user` (BugFix-Project)<br>`access right BugFix-Project.access_x_project_category_user` (BugFix-Project)<br>`account.move.line.category` (BugFix-Accounting)<br>`sale.order.line.category` (BugFix-Sales)<br>`server action BugFix-Accounting.sa_f5_x_sales_report_model_srm_rpt_project_gross_margin` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_2102_srm_rpt_project_gross_margin` (BugFix-Accounting)<br>`window action BugFix-Project.action_2026_project_category` (BugFix-Project)<details><summary>+2 more</summary>`window action BugFix-Project.action_2879_project_category_project_category` (BugFix-Project)<br>`temp_estimated.category` (BugFix-Accounting)</details>
+Other repos that use this model: `access right BugFix-Project.access_project_category_group_system` (BugFix-Project)<br>`access right BugFix-Project.access_project_category_group_user` (BugFix-Project)<br>`access right BugFix-Project.access_project_category_user` (BugFix-Project)<br>`account.move.line.category` (BugFix-Accounting)<br>`sale.order.line.category` (BugFix-Sales)<br>`server action BugFix-Accounting.action_sales_report_model_srm_rpt_project_gross_margin` (BugFix-Accounting)<br>`server action BugFix-Accounting.action_srm_rpt_project_gross_margin` (BugFix-Accounting)<br>`window action BugFix-Project.action_project_category` (BugFix-Project)<details><summary>+2 more</summary>`window action BugFix-Project.action_project_category_project_category` (BugFix-Project)<br>`temp_estimated.category` (BugFix-Accounting)</details>
 
 **Summary:**
 
@@ -18,4 +18,4 @@ Project Category is created by BugFix-Project. This repo only adds one access ri
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Proj. Category | `access_g_proj_category_x_project_category_accounting_jin_projectinvoice` | Gives **Accounting / Jin - ProjectInvoice** read/write access to Project Category records. | `group BugFix-Studio-Misc.group_g_accounting_jin_projectinvoice`<br>`model project_category` (BugFix-Project) |  |
+| Proj. Category | `access_g_proj_category_project_category_accounting_jin_projectinvoice` | Gives **Accounting / Jin - ProjectInvoice** read/write access to Project Category records. | `group BugFix-Studio-Misc.group_g_accounting_jin_projectinvoice`<br>`model project_category` (BugFix-Project) |  |

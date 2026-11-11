@@ -18,4 +18,4 @@ This repo adds a second Record ID search field in the External Identifiers searc
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.model.data search customization | `view_std_ir_model_data_3847` | search | after `//search[1]/field[@name='res_id']`: add field res_id | Adds a second Record ID (res_id) search field in the External Identifiers search view; it duplicates the existing one. | `ir.model.data.res_id` (base)<br>`view base.view_model_data_search` (base) |  |
+| Odoo Studio: ir.model.data search customization | `view_ir_model_data_search_inherit` | search | after `//search[1]/field[@name='res_id']`: add field res_id | Adds a second Record ID (res_id) search field in the External Identifiers search view; it duplicates the existing one. | `ir.model.data.res_id` (base)<br>`view base.view_model_data_search` (base) |  |

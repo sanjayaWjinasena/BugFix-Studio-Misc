@@ -18,4 +18,4 @@ This repo adds an empty Studio customization of the Model form that has no visib
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.model form customization | `view_std_ir_model_3111` | form | after `//form[1]/sheet[1]/notebook[1]/page[@name='fields']/field[@name='field_id']/tree[1]/field[@name='ttype']`: add | Empty Studio customization of the Model form (xpath after the fields table's Type column adds nothing); has no visible effect. | `view base.view_model_form` (base) |  |
+| Odoo Studio: ir.model form customization | `view_ir_model_form_inherit` | form | after `//form[1]/sheet[1]/notebook[1]/page[@name='fields']/field[@name='field_id']/tree[1]/field[@name='ttype']`: add | Empty Studio customization of the Model form (xpath after the fields table's Type column adds nothing); has no visible effect. | `view base.view_model_form` (base) |  |

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2471_product_categories_d7" model="ir.actions.act_window">
+  <record id="action_product_categories_d7" model="ir.actions.act_window">
     <field name="name">Product Categories</field>
     <field name="res_model">product.category</field>
     <field name="view_mode">tree,form</field>
   </record>
-    <record id="view_std_product_category_5552" model="ir.ui.view">
+    <record id="view_product_category_list_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: product.category.list customization</field>
       <field name="model">product.category</field>
       <field name="type">tree</field>
@@ -22,7 +22,7 @@
 </data>
       </field>
     </record>
-    <record id="view_std_product_category_5548" model="ir.ui.view">
+    <record id="view_product_category_form_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: product.category.form customization</field>
       <field name="model">product.category</field>
       <field name="type">form</field>

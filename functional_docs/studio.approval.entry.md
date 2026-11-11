@@ -16,4 +16,4 @@ This repo only adds a window action that opens Studio Approval Entry records (th
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Studio Approval Entry - (studio.approval.entry) | `aw_f4x_studio_approval_entry_studio_approval_entry_studio_approval_entry` | Opens **Studio Approval Entry** records (tree,form). | `model studio.approval.entry` (web_studio) | `menu BugFix-Studio-Misc.menu_f6f_studio_approval_entry_studio_approval_entry` |
+| Studio Approval Entry - (studio.approval.entry) | `aw_f4x_studio_approval_entry_studio_approval_entry_studio_approval_entry` | Opens **Studio Approval Entry** records (tree,form). | `model studio.approval.entry` (web_studio) | `menu BugFix-Studio-Misc.menu_studio_approval_entry_studio_approval_entry` |

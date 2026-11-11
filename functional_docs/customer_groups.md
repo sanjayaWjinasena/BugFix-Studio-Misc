@@ -46,25 +46,25 @@ A Studio-created Customer Groups record with a Group Description name, a Sequenc
 | `website_message_ids` | Website Messages | one2many → `mail.message` | Standard chatter field: messages shown on the website/portal for this record. | stored | `model mail.message` (mail) |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `name` | Group Description | char | Description of a Customer Group, entered by the user and used as its display name; shown in the Customer Groups list view. | stored |  | `view BugFix-Studio-Misc.view_5682_default_tree_view_for_ir_model_759_e` |
-| `sequence` | Sequence | integer | Sort order of Customer Groups, default set by an ir.default; not shown on any view in this repo. | stored |  | `default BugFix-Studio-Misc.default_10_x_customer_groups_sequence` |
+| `name` | Group Description | char | Description of a Customer Group, entered by the user and used as its display name; shown in the Customer Groups list view. | stored |  | `view BugFix-Studio-Misc.view_customer_groups_tree` |
+| `sequence` | Sequence | integer | Sort order of Customer Groups, default set by an ir.default; not shown on any view in this repo. | stored |  | `default BugFix-Studio-Misc.default_10_customer_groups_sequence` |
 
 **Window actions (1):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| customer_groups | `act_window_2677_customer_groups` | Opens **Customer Groups** records (tree,form). | `model customer_groups` | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_customer_groups` |
+| customer_groups | `action_customer_groups` | Opens **Customer Groups** records (tree,form). | `model customer_groups` | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_customer_groups` |
 
 **Views (1):**
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default tree view for ir.model(759,) | `view_5682_default_tree_view_for_ir_model_759_e` | tree | full tree layout with 1 fields | Inactive list view for Customer Groups (customer_groups) showing only Name; not used. | `customer_groups.name` |  |
+| Default tree view for ir.model(759,) | `view_customer_groups_tree` | tree | full tree layout with 1 fields | Inactive list view for Customer Groups (customer_groups) showing only Name; not used. | `customer_groups.name` |  |
 
 **Access rights (3):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Customer Groups group_system | `access_1115_customer_groups_group_system` | Gives **Administration / Settings** read/write/create/delete access to Customer Groups records. | `group base.group_system` (base)<br>`model customer_groups` |  |
-| Customer Groups group_user | `access_1116_customer_groups_group_user` | Gives **User types / Internal User** read access to Customer Groups records. | `group base.group_user` (base)<br>`model customer_groups` |  |
-| customer_groups admin | `access_x_customer_groups_admin` | Gives **Administration / Settings** read/write/create/delete access to Customer Groups records. | `group base.group_system` (base)<br>`model customer_groups` |  |
+| Customer Groups group_system | `access_customer_groups_group_system` | Gives **Administration / Settings** read/write/create/delete access to Customer Groups records. | `group base.group_system` (base)<br>`model customer_groups` |  |
+| Customer Groups group_user | `access_customer_groups_group_user` | Gives **User types / Internal User** read access to Customer Groups records. | `group base.group_user` (base)<br>`model customer_groups` |  |
+| customer_groups admin | `access_customer_groups_admin` | Gives **Administration / Settings** read/write/create/delete access to Customer Groups records. | `group base.group_system` (base)<br>`model customer_groups` |  |

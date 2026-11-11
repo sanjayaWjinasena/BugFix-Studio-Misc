@@ -16,7 +16,7 @@ This repo adds a window action that opens the project sale-line and employee map
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| project.sale.line.employee.map | `act_window_2806_project_sale_line_employee_map_d7` | Opens **Project Sales line, employee mapping** records (tree,form). | `model project.sale.line.employee.map` (sale_timesheet) | `menu BugFix-Studio-Misc.menu_f6_project_sale_line_employee_map`<br>`menu BugFix-Studio-Misc.menu_f6r2_test_app_05_projects_project_sale_line_employee_map` |
+| project.sale.line.employee.map | `action_project_sale_line_employee_map_d7` | Opens **Project Sales line, employee mapping** records (tree,form). | `model project.sale.line.employee.map` (sale_timesheet) | `menu BugFix-Studio-Misc.menu_project_sale_line_employee_map`<br>`menu BugFix-Studio-Misc.menu_f6r2_test_app_05_projects_project_sale_line_employee_map` |
 
 **Views (1):**
 

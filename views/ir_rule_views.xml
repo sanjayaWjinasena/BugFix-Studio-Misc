@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_std_ir_rule_5297" model="ir.ui.view">
+    <record id="view_ir_rule_form_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.rule form customization</field>
       <field name="model">ir.rule</field>
       <field name="type">form</field>
@@ -14,7 +14,7 @@
 </data>
       </field>
     </record>
-    <record id="view_std_ir_rule_5296" model="ir.ui.view">
+    <record id="view_ir_rule_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.rule tree customization</field>
       <field name="model">ir.rule</field>
       <field name="type">tree</field>

@@ -18,4 +18,4 @@ This repo adds a Studio tweak to the Automation Rules list view that shows the r
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: base.automation.tree customization | `view_std_base_automation_4868` | tree | after `//field[@name='model_id']`: add field id | Adds an optional (shown by default) ID column after Model in the Automation Rules list view. | `view base_automation.view_base_automation_tree` (base_automation) |  |
+| Odoo Studio: base.automation.tree customization | `view_base_automation_tree_inherit` | tree | after `//field[@name='model_id']`: add field id | Adds an optional (shown by default) ID column after Model in the Automation Rules list view. | `view base_automation.view_base_automation_tree` (base_automation) |  |

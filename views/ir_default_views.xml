@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_std_ir_default_6116" model="ir.ui.view">
+    <record id="view_ir_default_tree_view_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.default tree view customization</field>
       <field name="model">ir.default</field>
       <field name="type">tree</field>

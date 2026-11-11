@@ -18,4 +18,4 @@ This repo adds an optional Created by column after Value in the System Parameter
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.config_parameter tree customization | `view_std_ir_config_parameter_6117` | tree | after `//field[@name='value']`: add field create_uid | Adds an optional Created by column after Value in the System Parameters list view. | `view base.view_ir_config_list` (base) |  |
+| Odoo Studio: ir.config_parameter tree customization | `view_ir_config_parameter_tree_inherit` | tree | after `//field[@name='value']`: add field create_uid | Adds an optional Created by column after Value in the System Parameters list view. | `view base.view_ir_config_list` (base) |  |

@@ -53,11 +53,11 @@
 <!-- DROPPED default_376_product_template_available_threshold: field owned by website_sale_stock not in Studio-Misc deps -->
 <!-- DROPPED default_377_product_template_show_availability: field owned by website_sale_stock not in Studio-Misc deps -->
 <!-- DROPPED default_378_stock_picking_validation: field owned by BugFix-Stock not in Studio-Misc deps -->
-<record id="default_379_x_sales_model_debug_active" model="ir.default">
+<record id="default_sales_model_debug_active" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_sales_model_debug__active"/>
       <field name="json_value">true</field>
     </record>
-    <record id="default_380_x_sales_model_debug_sequence" model="ir.default">
+    <record id="default_sales_model_debug_sequence" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_sales_model_debug__sequence"/>
       <field name="json_value">10</field>
     </record>

@@ -22,20 +22,20 @@ Purpose not evident from code. It is a Studio model labelled product.product, bu
 | `id` | ID | integer | Unique database ID of the record (automatic). | stored |  |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `name` | Name | char | Name of a record in the Studio model `misc_product_product` (labelled product.product but unrelated to real products); shown in its default list, form and search views. | stored |  | `view BugFix-Studio-Misc.view_2607_default_list_view_for_misc_product_product`<br>`view BugFix-Studio-Misc.view_2608_default_form_view_for_misc_product_product`<br>`view BugFix-Studio-Misc.view_2609_default_search_view_for_misc_product_product` |
+| `name` | Name | char | Name of a record in the Studio model `misc_product_product` (labelled product.product but unrelated to real products); shown in its default list, form and search views. | stored |  | `view BugFix-Studio-Misc.view_misc_product_product_list`<br>`view BugFix-Studio-Misc.view_misc_product_product_form`<br>`view BugFix-Studio-Misc.view_misc_product_product_search` |
 
 **Views (3):**
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for misc_product_product | `view_2608_default_form_view_for_misc_product_product` | form | full form layout with 1 fields | Default Studio form for the misc_product_product model: a single required Name field with empty groups. | `misc_product_product.name` |  |
-| Default list view for misc_product_product | `view_2607_default_list_view_for_misc_product_product` | tree | full tree layout with 1 fields | Default Studio list view for misc_product_product showing only Name. | `misc_product_product.name` |  |
-| Default search view for misc_product_product | `view_2609_default_search_view_for_misc_product_product` | search | full search layout with 1 fields | Default Studio search view for misc_product_product allowing search by Name. | `misc_product_product.name` |  |
+| Default form view for misc_product_product | `view_misc_product_product_form` | form | full form layout with 1 fields | Default Studio form for the misc_product_product model: a single required Name field with empty groups. | `misc_product_product.name` |  |
+| Default list view for misc_product_product | `view_misc_product_product_list` | tree | full tree layout with 1 fields | Default Studio list view for misc_product_product showing only Name. | `misc_product_product.name` |  |
+| Default search view for misc_product_product | `view_misc_product_product_search` | search | full search layout with 1 fields | Default Studio search view for misc_product_product allowing search by Name. | `misc_product_product.name` |  |
 
 **Access rights (3):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
 | product.product group_user | `access_f3_product_product_group_user` | Gives **User types / Internal User** read access to product.product records. | `group base.group_user` (base)<br>`model misc_product_product` |  |
-| product.product group_user | `access_g_product_product_group_user_x_product_product_user_types_internal_user` | Gives **User types / Internal User** read access to product.product records. | `group base.group_user` (base)<br>`model misc_product_product` |  |
-| misc_product_product admin | `access_x_product_product_admin` | Gives **Administration / Settings** read/write/create/delete access to product.product records. | `group base.group_system` (base)<br>`model misc_product_product` |  |
+| product.product group_user | `access_g_product_product_group_user_misc_product_product_user_types_internal_user` | Gives **User types / Internal User** read access to product.product records. | `group base.group_user` (base)<br>`model misc_product_product` |  |
+| misc_product_product admin | `access_misc_product_product_admin` | Gives **Administration / Settings** read/write/create/delete access to product.product records. | `group base.group_system` (base)<br>`model misc_product_product` |  |

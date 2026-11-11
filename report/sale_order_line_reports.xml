@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="action_report_1596_sales_order_lines" model="ir.actions.report">
+    <record id="report_sales_order_lines" model="ir.actions.report">
       <field name="name">Sales Order Lines</field>
       <field name="model">sale.order.line</field>
       <field name="report_type">qweb-pdf</field>

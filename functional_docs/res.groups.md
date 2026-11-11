@@ -6,7 +6,7 @@
 
 *Extends a model created by `base`.*
 
-Other repos that use this model: `automation studio_usermodel_migration.base_automation_208_janitha_ranasinghe` (studio_usermodel_migration)<br>`mail template studio_usermodel_migration.mail_template_55_janitha_ranasinghe` (studio_usermodel_migration)<br>`mail template studio_usermodel_migration.mail_template_74_user_group_updation` (studio_usermodel_migration)<br>`server action studio_usermodel_migration.server_action_2266_janitha_ranasinghe` (studio_usermodel_migration)
+Other repos that use this model: `automation studio_usermodel_migration.automation_janitha_ranasinghe` (studio_usermodel_migration)<br>`mail template studio_usermodel_migration.mail_template_55_janitha_ranasinghe` (studio_usermodel_migration)<br>`mail template studio_usermodel_migration.mail_template_74_user_group_updation` (studio_usermodel_migration)<br>`server action studio_usermodel_migration.action_janitha_ranasinghe` (studio_usermodel_migration)
 
 **Summary:**
 
@@ -16,7 +16,7 @@ This repo adds a server action, User Group Change - Notify, that emails 'Access 
 
 **Server actions (1):**
 
-- **User Group Change - Notify** (`sa_f5_res_groups_user_group_change_notify`, type `code`)
+- **User Group Change - Notify** (`action_res_groups_user_group_change_notify`, type `code`)
   - Function: Sends an 'Access Rights have Changed' email to a hard-coded address (rohana.b@jinasena.com.lk) when run on a user group; workaround for the original post-message action since groups have no chatter.
   - Depends on: `model mail.mail` (mail), `model res.groups` (base)
   - Used by: — (not linked to a button, menu or automation)
@@ -39,6 +39,6 @@ env["mail.mail"].sudo().create(
 
 | Name | Record name | State | Function | Depends on | Used by |
 |---|---|---|---|---|---|
-| Janitha Ranasinghe | `base_automation_208_janitha_ranasinghe_d7` |  | When a record is created or updated on Access Groups, runs nothing (no action linked). | `model res.groups` (base) |  |
-| User Group Change - Notify | `base_automation_244_user_group_change_notify_d7` | archived | When a record is updated on Access Groups, runs nothing (no action linked). **Archived — does not run.** | `model res.groups` (base) |  |
-| User Group updation | `base_automation_245_user_group_updation_d7` | archived | When a record is updated on Access Groups, runs nothing (no action linked). **Archived — does not run.** | `model res.groups` (base) |  |
+| Janitha Ranasinghe | `automation_janitha_ranasinghe_d7` |  | When a record is created or updated on Access Groups, runs nothing (no action linked). | `model res.groups` (base) |  |
+| User Group Change - Notify | `automation_user_group_change_notify_d7` | archived | When a record is updated on Access Groups, runs nothing (no action linked). **Archived — does not run.** | `model res.groups` (base) |  |
+| User Group updation | `automation_user_group_updation_d7` | archived | When a record is updated on Access Groups, runs nothing (no action linked). **Archived — does not run.** | `model res.groups` (base) |  |

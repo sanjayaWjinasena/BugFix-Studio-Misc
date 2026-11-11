@@ -6,7 +6,7 @@
 
 *Extends a model created by `account`.*
 
-Other repos that use this model: `access right BugFix-Accounting.access_f3_access_account_tax_group_rohana_read` (BugFix-Accounting)<br>`access right BugFix-Accounting.access_g_access_account_tax_group_rohana_read_group_rohana` (BugFix-Accounting)<br>`record rule BugFix-Accounting.rule_768_tax_group_multi_company` (BugFix-Accounting)<br>`window action BugFix-Accounting.action_1891_tax_groups` (BugFix-Accounting)
+Other repos that use this model: `access right BugFix-Accounting.access_f3_access_account_tax_group_rohana_read` (BugFix-Accounting)<br>`access right BugFix-Accounting.access_g_access_account_tax_group_rohana_read_group_rohana` (BugFix-Accounting)<br>`record rule BugFix-Accounting.rule_tax_group_multi_company` (BugFix-Accounting)<br>`window action BugFix-Accounting.action_tax_groups` (BugFix-Accounting)
 
 **Summary:**
 

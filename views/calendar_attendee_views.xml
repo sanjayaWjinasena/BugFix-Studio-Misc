@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2829_calendar_attendee_information_calendar_attendee" model="ir.actions.act_window">
+  <record id="action_calendar_attendee_information_calendar_attendee" model="ir.actions.act_window">
     <field name="name">Calendar Attendee Information - (calendar.attendee)</field>
     <field name="res_model">calendar.attendee</field>
     <field name="view_mode">tree,form</field>
@@ -17,7 +17,7 @@
                 </p>
             </field>
   </record>
-  <record id="act_window_2833_calendar_attendee" model="ir.actions.act_window">
+  <record id="action_calendar_attendee" model="ir.actions.act_window">
     <field name="name">calendar.attendee</field>
     <field name="res_model">calendar.attendee</field>
     <field name="view_mode">tree,form</field>
@@ -34,12 +34,12 @@
                 </p>
             </field>
   </record>
-  <record id="act_window_2833_calendar_attendee_d7" model="ir.actions.act_window">
+  <record id="action_calendar_attendee_d7" model="ir.actions.act_window">
     <field name="name">calendar.attendee</field>
     <field name="res_model">calendar.attendee</field>
     <field name="view_mode">tree,form</field>
   </record>
-  <record id="act_window_2829_calendar_attendee_information_calendar_attendee_d7" model="ir.actions.act_window">
+  <record id="action_calendar_attendee_information_calendar_attendee_d7" model="ir.actions.act_window">
     <field name="name">Calendar Attendee Information - (calendar.attendee)</field>
     <field name="res_model">calendar.attendee</field>
     <field name="view_mode">tree,form</field>

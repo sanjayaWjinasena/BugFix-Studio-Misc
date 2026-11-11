@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2239_customer_letter_report_d7" model="ir.actions.act_window">
+  <record id="action_customer_letter_report_d7" model="ir.actions.act_window">
     <field name="name">Customer Letter Report</field>
     <field name="res_model">helpdesk.team</field>
     <field name="view_mode">kanban,tree,form</field>
   </record>
-  <record id="act_window_2876_helpdesk_team_helpdesk_team_d7" model="ir.actions.act_window">
+  <record id="action_helpdesk_team_helpdesk_team_d7" model="ir.actions.act_window">
     <field name="name">Helpdesk Team (helpdesk.team)</field>
     <field name="res_model">helpdesk.team</field>
     <field name="view_mode">kanban,tree,form</field>
   </record>
-    <record id="view_std_helpdesk_team_5302" model="ir.ui.view">
+    <record id="view_helpdesk_team_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: helpdesk.team.tree customization</field>
       <field name="model">helpdesk.team</field>
       <field name="type">tree</field>

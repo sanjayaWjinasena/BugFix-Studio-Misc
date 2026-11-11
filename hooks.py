@@ -18,49 +18,49 @@ _logger = logging.getLogger(__name__)
 # (automation_xmlid, m2m_field_on_base_automation, [target_xmlid, ...])
 RESTORATIONS = [
     (
-        "BugFix-Sales.base_automation_163_sls_track_vat_registration_status_in_customer",
+        "BugFix-Sales.automation_sls_track_vat_registration_status_in_customer",
         "trigger_field_ids",
         ["Fix-repair.field_res_partner__vat_registration_status"],
     ),
     (
-        "BugFix-Sales.base_automation_164_sls_track_vat_registration_no_in_customer",
+        "BugFix-Sales.automation_sls_track_vat_registration_no_in_customer",
         "trigger_field_ids",
         ["Fix-repair.field_res_partner__vat_registration_number"],
     ),
     (
-        "BugFix-Sales.base_automation_165_sls_track_svat_registration_status_in_customer",
+        "BugFix-Sales.automation_sls_track_svat_registration_status_in_customer",
         "trigger_field_ids",
         ["Fix-repair.field_res_partner__svat_registration_status"],
     ),
     (
-        "BugFix-Sales.base_automation_166_sls_track_svat_registration_no_in_customer",
+        "BugFix-Sales.automation_sls_track_svat_registration_no_in_customer",
         "trigger_field_ids",
         ["Fix-repair.field_res_partner__svat_registration_number"],
     ),
     (
-        "BugFix-Sales.base_automation_168_sls_track_mandatory_bank_guarantee_in_customer",
+        "BugFix-Sales.automation_sls_track_mandatory_bank_guarantee_in_customer",
         "trigger_field_ids",
         ["Fix-repair.field_res_partner__mandatory_bank_guarantee"],
     ),
     (
-        "BugFix-Sales.base_automation_180_sls_track_vat_exempted_number_in_customer",
+        "BugFix-Sales.automation_sls_track_vat_exempted_number_in_customer",
         "trigger_field_ids",
         ["Fix-repair.field_res_partner__vat_exempted_number"],
     ),
     (
-        "BugFix-Sales.base_automation_316_jin_company_id_in_delivery_terms",
+        "BugFix-Sales.automation_jin_company_id_in_delivery_terms",
         "trigger_field_ids",
         ["BugFix-Purchase.field_delivery_terms__create_date"],
     ),
     (
-        "BugFix-Stock.base_automation_124_srm_auto_populate_report_type_in_product_moves",
+        "BugFix-Stock.automation_srm_auto_populate_report_type_in_product_moves",
         "on_change_field_ids",
         ["BugFix-Accounting.field_sales_report_model__as_on_date"],
     ),
     (
-        "BugFix-Accounting.base_automation_289_jin_company_id_in_consignment_charge_header",
+        "BugFix-Accounting.automation_jin_company_id_in_consignment_charge_header",
         "action_server_ids",
-        ["BugFix-Stock.server_action_2617_jin_company_id_in_consignment_charge_header"],
+        ["BugFix-Stock.action_jin_company_id_in_consignment_charge_header"],
     ),
 ]
 

@@ -14,7 +14,7 @@ This repo adds the server action EXP - Validate Negative Quantities, which block
 
 **Server actions (1):**
 
-- **EXP - Validate Negative Quantities** (`server_action_2577_exp_validate_negative_quantities_d7`, type `code`)
+- **EXP - Validate Negative Quantities** (`action_exp_validate_negative_quantities_d7`, type `code`)
   - Function: Blocks an expense with a negative quantity, raising 'Invalid quantity'.
   - Depends on: `hr.expense.quantity` (hr_expense), `model hr.expense` (hr_expense)
   - Used by: — (not linked to a button, menu or automation)
@@ -29,13 +29,13 @@ if record.quantity < 0:
 
 | Name | Record name | State | Function | Depends on | Used by |
 |---|---|---|---|---|---|
-| EXP - Validate Negative Quantities | `base_automation_261_exp_validate_negative_quantities_d7` | archived | When a record is created or updated on Expense, runs nothing (no action linked). **Archived — does not run.** | `model hr.expense` (hr_expense) |  |
+| EXP - Validate Negative Quantities | `automation_exp_validate_negative_quantities_d7` | archived | When a record is created or updated on Expense, runs nothing (no action linked). **Archived — does not run.** | `model hr.expense` (hr_expense) |  |
 
 **Window actions (1):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| hr.expense | `act_window_2816_hr_expense_d7` | Opens **Expense** records (kanban,tree,form,pivot,graph,activity). | `model hr.expense` (hr_expense) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_hr_expense` |
+| hr.expense | `action_hr_expense_d7` | Opens **Expense** records (kanban,tree,form,pivot,graph,activity). | `model hr.expense` (hr_expense) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_hr_expense` |
 
 **Views (1):**
 

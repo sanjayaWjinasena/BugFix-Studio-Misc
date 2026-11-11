@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_8772_default_form_view_for_x_material_request_mt_line_9a011_e" model="ir.ui.view">
+    <record id="view_material_request_mt_line_9a011_form" model="ir.ui.view">
       <field name="name">Default form view for material_request_mt_line_9a011</field>
       <field name="model">material_request_mt_line_9a011</field>
       <field name="type">form</field>
@@ -21,7 +21,7 @@
 </form>
       </field>
     </record>
-    <record id="view_8771_default_list_view_for_x_material_request_mt_line_9a011_e" model="ir.ui.view">
+    <record id="view_material_request_mt_line_9a011_list" model="ir.ui.view">
       <field name="name">Default list view for material_request_mt_line_9a011</field>
       <field name="model">material_request_mt_line_9a011</field>
       <field name="type">tree</field>
@@ -32,7 +32,7 @@
 </tree>
       </field>
     </record>
-    <record id="view_8773_default_search_view_for_x_material_request_mt_line_9a011_e" model="ir.ui.view">
+    <record id="view_material_request_mt_line_9a011_search" model="ir.ui.view">
       <field name="name">Default search view for material_request_mt_line_9a011</field>
       <field name="model">material_request_mt_line_9a011</field>
       <field name="type">search</field>

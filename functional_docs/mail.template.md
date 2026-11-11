@@ -6,7 +6,7 @@
 
 *Extends a model created by `mail`.*
 
-Other repos that use this model: `helpdesk.ticket._repair_send_stage13_email()` (Fix-repair)<br>`sale.order.action_quotation_send()` (Fix-Repair-Wizard-Nav, Fix-repair)<br>`server action BugFix-Purchase.server_action_2259_proj_send_specification_by_email` (BugFix-Purchase)<br>`server action BugFix-Purchase.server_action_2287_send_specification_by_email_user_manual` (BugFix-Purchase)
+Other repos that use this model: `helpdesk.ticket._repair_send_stage13_email()` (Fix-repair)<br>`sale.order.action_quotation_send()` (Fix-Repair-Wizard-Nav, Fix-repair)<br>`server action BugFix-Purchase.action_proj_send_specification_by_email` (BugFix-Purchase)<br>`server action BugFix-Purchase.action_send_specification_by_email_user_manual` (BugFix-Purchase)
 
 **Summary:**
 
@@ -18,4 +18,4 @@ This repo adds an optional ID column after To (Partners) in the Email Templates 
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: email.template.tree customization | `view_std_mail_template_5042` | tree | after `//field[@name="partner_to"]`: add field id | Adds an optional (shown by default) ID column after the To (Partners) field in the Email Templates list view. | `view mail.email_template_tree` (mail) |  |
+| Odoo Studio: email.template.tree customization | `view_email_template_tree_inherit` | tree | after `//field[@name="partner_to"]`: add field id | Adds an optional (shown by default) ID column after the To (Partners) field in the Email Templates list view. | `view mail.email_template_tree` (mail) |  |

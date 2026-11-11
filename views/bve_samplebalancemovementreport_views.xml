@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_3622_sample_balance_movement_report" model="ir.actions.act_window">
+  <record id="action_sample_balance_movement_report" model="ir.actions.act_window">
     <field name="name">Sample Balance Movement Report</field>
     <field name="res_model">bve.samplebalancemovementreport</field>
     <field name="view_mode">tree,graph,pivot</field>
     <field name="context">{'service_name': 'Sample Balance Movement Report'}</field>
   </record>
-    <record id="view_9486_graph_analysis_e" model="ir.ui.view">
+    <record id="view_graph_analysis_2" model="ir.ui.view">
       <field name="name">Graph Analysis</field>
       <field name="model">bve.samplebalancemovementreport</field>
       <field name="type">graph</field>
@@ -16,7 +16,7 @@
                        </graph>
       </field>
     </record>
-    <record id="view_9485_pivot_analysis_e" model="ir.ui.view">
+    <record id="view_pivot_analysis_2" model="ir.ui.view">
       <field name="name">Pivot Analysis</field>
       <field name="model">bve.samplebalancemovementreport</field>
       <field name="type">pivot</field>
@@ -26,7 +26,7 @@
                        </pivot>
       </field>
     </record>
-    <record id="view_9487_search_bi_view_e" model="ir.ui.view">
+    <record id="view_search_bi_view_2" model="ir.ui.view">
       <field name="name">Search BI View</field>
       <field name="model">bve.samplebalancemovementreport</field>
       <field name="type">search</field>
@@ -36,7 +36,7 @@
                        </search>
       </field>
     </record>
-    <record id="view_9488_tree_analysis_e" model="ir.ui.view">
+    <record id="view_tree_analysis_2" model="ir.ui.view">
       <field name="name">Tree Analysis</field>
       <field name="model">bve.samplebalancemovementreport</field>
       <field name="type">tree</field>

@@ -56,6 +56,6 @@ TestApp is a Studio sandbox model that has only a name, a sort order and an arch
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| TestApp group_system | `access_1141_testapp_group_system` | Gives **Administration / Settings** read/write/create/delete access to TestApp records. | `group base.group_system` (base)<br>`model x_testapp` |  |
-| TestApp group_user | `access_1142_testapp_group_user` | Gives **User types / Internal User** no access to TestApp records. | `group base.group_user` (base)<br>`model x_testapp` |  |
+| TestApp group_system | `access_testapp_group_system` | Gives **Administration / Settings** read/write/create/delete access to TestApp records. | `group base.group_system` (base)<br>`model x_testapp` |  |
+| TestApp group_user | `access_testapp_group_user` | Gives **User types / Internal User** no access to TestApp records. | `group base.group_user` (base)<br>`model x_testapp` |  |
 | x_testapp admin | `access_x_testapp_admin` | Gives **Administration / Settings** read/write/create/delete access to TestApp records. | `group base.group_system` (base)<br>`model x_testapp` |  |

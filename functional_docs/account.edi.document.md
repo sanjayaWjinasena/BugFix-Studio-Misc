@@ -16,4 +16,4 @@ This repo adds one window action, Sales invoice lines, that opens electronic doc
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Sales invoice lines | `act_window_1570_sales_invoice_lines_d7` | Opens **Electronic Document for an account.move** records (tree). | `model account.edi.document` (account_edi) | `menu BugFix-Studio-Misc.menu_f6_sales_invoice_lines` |
+| Sales invoice lines | `action_sales_invoice_lines_d7` | Opens **Electronic Document for an account.move** records (tree). | `model account.edi.document` (account_edi) | `menu BugFix-Studio-Misc.menu_sales_invoice_lines` |

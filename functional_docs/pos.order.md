@@ -16,11 +16,11 @@ This repo adds a pos.order window action that opens POS Orders in kanban, list, 
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| pos.order | `act_window_2819_pos_order` | Opens **Point of Sale Orders** records (kanban,tree,form,pivot). | `model pos.order` (point_of_sale) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_pos_order` |
-| pos.order | `act_window_2819_pos_order_d7` | Opens **Point of Sale Orders** records (kanban,tree,form,pivot). | `model pos.order` (point_of_sale) |  |
+| pos.order | `action_pos_order` | Opens **Point of Sale Orders** records (kanban,tree,form,pivot). | `model pos.order` (point_of_sale) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_pos_order` |
+| pos.order | `action_pos_order_d7` | Opens **Point of Sale Orders** records (kanban,tree,form,pivot). | `model pos.order` (point_of_sale) |  |
 
 **Record rules (1):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Point Of Sale Order | `rule_151_point_of_sale_order` | For everyone (global rule): read/write/create/delete on Point of Sale Orders only where `[('company_id', 'in', company_ids)]`. | `model pos.order` (point_of_sale)<br>`pos.order.company_id` (point_of_sale) |  |
+| Point Of Sale Order | `rule_point_of_sale_order` | For everyone (global rule): read/write/create/delete on Point of Sale Orders only where `[('company_id', 'in', company_ids)]`. | `model pos.order` (point_of_sale)<br>`pos.order.company_id` (point_of_sale) |  |

@@ -6,7 +6,7 @@
 
 *Extends a model created by `purchase_requisition`.*
 
-Other repos that use this model: `access right BugFix-Purchase.access_7075_purchase_requisition_type` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_2874_purchase_agreement_type_purchase_requisition_type` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_2875_purchase_agreement_types_purchase_requisition_type` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_777_pr_type` (BugFix-Purchase)
+Other repos that use this model: `access right BugFix-Purchase.access_purchase_requisition_type` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_purchase_agreement_type_purchase_requisition_type` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_purchase_agreement_types_purchase_requisition_type_2` (BugFix-Purchase)<br>`window action BugFix-Purchase.action_pr_type` (BugFix-Purchase)
 
 **Summary:**
 
@@ -18,6 +18,6 @@ This repo only adds three window actions that open Purchase Requisition Type (ag
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| PR Type | `act_window_777_pr_type_d7` | Opens **Purchase Requisition Type** records (kanban,tree,form). | `model purchase.requisition.type` (purchase_requisition) |  |
-| Purchase Agreement Type (purchase.requisition.type) | `act_window_2874_purchase_agreement_type_purchase_requisition_type_d7` | Opens **Purchase Requisition Type** records (kanban,tree,form). | `model purchase.requisition.type` (purchase_requisition) |  |
-| Purchase Agreement Types (purchase.requisition.type) | `act_window_2875_purchase_agreement_types_purchase_requisition_type_d7` | Opens **Purchase Requisition Type** records (kanban,tree,form). | `model purchase.requisition.type` (purchase_requisition) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_purchase_agreement_types_purchase_requisition_ty` |
+| PR Type | `action_pr_type_d7` | Opens **Purchase Requisition Type** records (kanban,tree,form). | `model purchase.requisition.type` (purchase_requisition) |  |
+| Purchase Agreement Type (purchase.requisition.type) | `action_purchase_agreement_type_purchase_requisition_type_d7` | Opens **Purchase Requisition Type** records (kanban,tree,form). | `model purchase.requisition.type` (purchase_requisition) |  |
+| Purchase Agreement Types (purchase.requisition.type) | `action_purchase_agreement_types_purchase_requisition_type_d7` | Opens **Purchase Requisition Type** records (kanban,tree,form). | `model purchase.requisition.type` (purchase_requisition) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_purchase_agreement_types_purchase_requisition_ty` |

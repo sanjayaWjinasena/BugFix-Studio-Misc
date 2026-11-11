@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="action_report_2232_import_rfq_charge_line_report" model="ir.actions.report">
+    <record id="report_import_rfq_charge_line_report" model="ir.actions.report">
       <field name="name">Import RFQ Charge Line Report</field>
       <field name="model">import_rfq_charge_li</field>
       <field name="report_type">qweb-pdf</field>

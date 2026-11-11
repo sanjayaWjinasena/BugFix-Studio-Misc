@@ -16,4 +16,4 @@ This repo only adds a window action that opens Signature Request Item records in
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Signature Request Item (sign.request.item) | `aw_f4x_sign_request_item_signature_request_item_sign_request_item` | Opens **Signature Request Item** records (tree,form). | `model sign.request.item` (sign) | `menu BugFix-Studio-Misc.menu_f6f_signature_request_item_sign_request_item` |
+| Signature Request Item (sign.request.item) | `aw_f4x_sign_request_item_signature_request_item_sign_request_item` | Opens **Signature Request Item** records (tree,form). | `model sign.request.item` (sign) | `menu BugFix-Studio-Misc.menu_signature_request_item_sign_request_item` |

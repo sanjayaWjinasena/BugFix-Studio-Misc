@@ -16,6 +16,6 @@ This repo adds three window actions that open Application categories in list and
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Application-1 | `aw_f4x_ir_module_category_application_1` | Opens **Application** records (tree,form). | `model ir.module.category` (base) | `menu BugFix-Studio-Misc.menu_f6f_application_1` |
-| ir.module.category | `aw_f4x_ir_module_category_ir_module_category` | Opens **Application** records (tree,form). | `model ir.module.category` (base) | `menu BugFix-Studio-Misc.menu_f6f_ir_module_category` |
-| ir.module.cateory | `aw_f4x_ir_module_category_ir_module_cateory` | Opens **Application** records (tree,form). | `model ir.module.category` (base) | `menu BugFix-Studio-Misc.menu_f6f_ir_module_cateory` |
+| Application-1 | `aw_f4x_ir_module_category_application_1` | Opens **Application** records (tree,form). | `model ir.module.category` (base) | `menu BugFix-Studio-Misc.menu_application_1` |
+| ir.module.category | `aw_f4x_ir_module_category_ir_module_category` | Opens **Application** records (tree,form). | `model ir.module.category` (base) | `menu BugFix-Studio-Misc.menu_ir_module_category` |
+| ir.module.cateory | `aw_f4x_ir_module_category_ir_module_cateory` | Opens **Application** records (tree,form). | `model ir.module.category` (base) | `menu BugFix-Studio-Misc.menu_ir_module_cateory` |

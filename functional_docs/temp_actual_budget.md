@@ -6,7 +6,7 @@
 
 *Extends a model created by `BugFix-Accounting`.*
 
-Other repos that use this model: `access right BugFix-Accounting.access_1753_temp_actual_budget_group_system` (BugFix-Accounting)<br>`access right BugFix-Accounting.access_1754_temp_actual_budget_group_user` (BugFix-Accounting)<br>`access right BugFix-Accounting.access_x_temp_actual_budget_user` (BugFix-Accounting)<br>`window action BugFix-Accounting.action_2123_temp_actual_budget` (BugFix-Accounting)<br>`rm_gross_margin_actu.budget_line_ids` (BugFix-Accounting)
+Other repos that use this model: `access right BugFix-Accounting.access_temp_actual_budget_group_system` (BugFix-Accounting)<br>`access right BugFix-Accounting.access_temp_actual_budget_group_user` (BugFix-Accounting)<br>`access right BugFix-Accounting.access_temp_actual_budget_user` (BugFix-Accounting)<br>`window action BugFix-Accounting.action_temp_actual_budget` (BugFix-Accounting)<br>`rm_gross_margin_actu.budget_line_ids` (BugFix-Accounting)
 
 **Summary:**
 
@@ -18,4 +18,4 @@ Temp_Actual_Budget is created by BugFix-Accounting. This repo only adds read acc
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Temp. Budget | `access_g_temp_budget_x_temp_actual_budget_accounting_jin_projectinvoice` | Gives **Accounting / Jin - ProjectInvoice** read access to Temp_Actual_Budget records. | `group BugFix-Studio-Misc.group_g_accounting_jin_projectinvoice`<br>`model temp_actual_budget` (BugFix-Accounting) |  |
+| Temp. Budget | `access_g_temp_budget_temp_actual_budget_accounting_jin_projectinvoice` | Gives **Accounting / Jin - ProjectInvoice** read access to Temp_Actual_Budget records. | `group BugFix-Studio-Misc.group_g_accounting_jin_projectinvoice`<br>`model temp_actual_budget` (BugFix-Accounting) |  |

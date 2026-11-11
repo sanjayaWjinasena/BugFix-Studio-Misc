@@ -16,4 +16,4 @@ This repo adds a Studio tweak to the generic Actions list view that shows the re
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.actions.actions.tree customization | `view_std_ir_actions_actions_2416` | tree | after `//tree[1]/field[@name='name']`: add field id | Adds the record ID column after Name in the generic Actions list view (Settings > Technical). | `view base.action_view_tree` (base) |  |
+| Odoo Studio: ir.actions.actions.tree customization | `view_ir_actions_actions_tree_inherit` | tree | after `//tree[1]/field[@name='name']`: add field id | Adds the record ID column after Name in the generic Actions list view (Settings > Technical). | `view base.action_view_tree` (base) |  |

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2818_pos_config" model="ir.actions.act_window">
+  <record id="action_pos_config" model="ir.actions.act_window">
     <field name="name">pos.config</field>
     <field name="res_model">pos.config</field>
     <field name="view_mode">kanban,tree,form</field>
@@ -17,7 +17,7 @@
                 </p>
             </field>
   </record>
-  <record id="act_window_2821_pos_config" model="ir.actions.act_window">
+  <record id="action_pos_config_2" model="ir.actions.act_window">
     <field name="name">pos.config</field>
     <field name="res_model">pos.config</field>
     <field name="view_mode">kanban,tree,form</field>
@@ -34,12 +34,12 @@
                 </p>
             </field>
   </record>
-  <record id="act_window_2821_pos_config_d7" model="ir.actions.act_window">
+  <record id="action_pos_config_d7_2" model="ir.actions.act_window">
     <field name="name">pos.config</field>
     <field name="res_model">pos.config</field>
     <field name="view_mode">kanban,tree,form</field>
   </record>
-  <record id="act_window_2818_pos_config_d7" model="ir.actions.act_window">
+  <record id="action_pos_config_d7" model="ir.actions.act_window">
     <field name="name">pos.config</field>
     <field name="res_model">pos.config</field>
     <field name="view_mode">kanban,tree,form</field>

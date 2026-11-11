@@ -6,7 +6,7 @@
 
 *Extends a model created by `BugFix-Stock`.* Python: `models/material_request_mt_o2m.py`.
 
-Other repos that use this model: `access right BugFix-Stock.access_8291_material_request_mt_group_system` (BugFix-Stock)<br>`access right BugFix-Stock.access_8292_material_request_mt_group_user` (BugFix-Stock)<br>`automation BugFix-Stock.base_automation_346_generate_sequence_number_for_mr` (BugFix-Stock)<br>`record rule BugFix-Stock.rule_884_material_request_mt_multi_company` (BugFix-Stock)<br>`server action BugFix-Stock.server_action_3399_execute_code` (BugFix-Stock)<br>`window action BugFix-Stock.act_window_3384_material_request_mt` (BugFix-Stock)
+Other repos that use this model: `access right BugFix-Stock.access_material_request_mt_group_system` (BugFix-Stock)<br>`access right BugFix-Stock.access_material_request_mt_group_user` (BugFix-Stock)<br>`automation BugFix-Stock.automation_generate_sequence_number_for_mr` (BugFix-Stock)<br>`record rule BugFix-Stock.rule_material_request_mt_multi_company` (BugFix-Stock)<br>`server action BugFix-Stock.action_execute_code` (BugFix-Stock)<br>`window action BugFix-Stock.action_material_request_mt` (BugFix-Stock)
 
 **Summary:**
 

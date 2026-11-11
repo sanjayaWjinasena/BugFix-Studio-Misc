@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2819_pos_order" model="ir.actions.act_window">
+  <record id="action_pos_order" model="ir.actions.act_window">
     <field name="name">pos.order</field>
     <field name="res_model">pos.order</field>
     <field name="view_mode">kanban,tree,form,pivot</field>
@@ -17,7 +17,7 @@
                 </p>
             </field>
   </record>
-  <record id="act_window_2819_pos_order_d7" model="ir.actions.act_window">
+  <record id="action_pos_order_d7" model="ir.actions.act_window">
     <field name="name">pos.order</field>
     <field name="res_model">pos.order</field>
     <field name="view_mode">kanban,tree,form,pivot</field>

@@ -22,28 +22,28 @@ A custom Studio settings table labelled res.config.settings. It is separate from
 | `id` | ID | integer | Unique database ID of the record (automatic). | stored |  |  |
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
-| `name` | Name | char | Name of a record in the Studio model `misc_res_config_settings` (a custom settings table, not Odoo's res.config.settings); shown in its default views. | stored |  | `view BugFix-Studio-Misc.view_3923_default_list_view_for_x_res_config_settings_e`<br>`view BugFix-Studio-Misc.view_3924_default_form_view_for_x_res_config_settings_e`<br>`view BugFix-Studio-Misc.view_3925_default_search_view_for_x_res_config_settings_e` |
-| `minimum_sales_margin_` | Minimum Sales Margin % | float | Minimum Sales Margin % stored on the custom `misc_res_config_settings` record, entered on its Studio form. No logic in this repo reads it. | stored |  | `view BugFix-Studio-Misc.view_final_x_res_config_settings_odoo_studio_default_form_view_for_x_res_config_settings_c` |
+| `name` | Name | char | Name of a record in the Studio model `misc_res_config_settings` (a custom settings table, not Odoo's res.config.settings); shown in its default views. | stored |  | `view BugFix-Studio-Misc.view_misc_res_config_settings_list`<br>`view BugFix-Studio-Misc.view_misc_res_config_settings_form`<br>`view BugFix-Studio-Misc.view_misc_res_config_settings_search` |
+| `minimum_sales_margin_` | Minimum Sales Margin % | float | Minimum Sales Margin % stored on the custom `misc_res_config_settings` record, entered on its Studio form. No logic in this repo reads it. | stored |  | `view BugFix-Studio-Misc.view_default_form_view_for_misc_res_config_settings_inherit` |
 
 **Window actions (1):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| config.settings | `act_window_1749_config_settings` | Opens **res.config.settings** records (tree,form). | `model misc_res_config_settings` | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_config_settings` |
+| config.settings | `action_config_settings` | Opens **res.config.settings** records (tree,form). | `model misc_res_config_settings` | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_config_settings` |
 
 **Views (4):**
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for misc_res_config_settings | `view_3924_default_form_view_for_x_res_config_settings_e` | form | full form layout with 1 fields | Default Studio form for the misc_res_config_settings model: a single required Name field. | `misc_res_config_settings.name` | `view BugFix-Studio-Misc.view_final_x_res_config_settings_odoo_studio_default_form_view_for_x_res_config_settings_c` |
-| Default list view for misc_res_config_settings | `view_3923_default_list_view_for_x_res_config_settings_e` | tree | full tree layout with 1 fields | Default Studio list view for misc_res_config_settings showing Name. | `misc_res_config_settings.name` |  |
-| Default search view for misc_res_config_settings | `view_3925_default_search_view_for_x_res_config_settings_e` | search | full search layout with 1 fields | Default Studio search view for misc_res_config_settings allowing search by Name. | `misc_res_config_settings.name` |  |
-| Odoo Studio: Default form view for misc_res_config_settings customization | `view_final_x_res_config_settings_odoo_studio_default_form_view_for_x_res_config_settings_c` | form | inside `//group[@name='studio_group_8804bd_left']`: add field minimum_sales_margin_ | Adds a 'Minimum Sales Margin %' field to the misc_res_config_settings form. | `view BugFix-Studio-Misc.view_3924_default_form_view_for_x_res_config_settings_e`<br>`misc_res_config_settings.minimum_sales_margin_` |  |
+| Default form view for misc_res_config_settings | `view_misc_res_config_settings_form` | form | full form layout with 1 fields | Default Studio form for the misc_res_config_settings model: a single required Name field. | `misc_res_config_settings.name` | `view BugFix-Studio-Misc.view_default_form_view_for_misc_res_config_settings_inherit` |
+| Default list view for misc_res_config_settings | `view_misc_res_config_settings_list` | tree | full tree layout with 1 fields | Default Studio list view for misc_res_config_settings showing Name. | `misc_res_config_settings.name` |  |
+| Default search view for misc_res_config_settings | `view_misc_res_config_settings_search` | search | full search layout with 1 fields | Default Studio search view for misc_res_config_settings allowing search by Name. | `misc_res_config_settings.name` |  |
+| Odoo Studio: Default form view for misc_res_config_settings customization | `view_default_form_view_for_misc_res_config_settings_inherit` | form | inside `//group[@name='studio_group_8804bd_left']`: add field minimum_sales_margin_ | Adds a 'Minimum Sales Margin %' field to the misc_res_config_settings form. | `view BugFix-Studio-Misc.view_misc_res_config_settings_form`<br>`misc_res_config_settings.minimum_sales_margin_` |  |
 
 **Access rights (3):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
 | res.config.settings group_user | `access_f3_res_config_settings_group_user` | Gives **User types / Internal User** read/write/create access to res.config.settings records. | `group base.group_user` (base)<br>`model misc_res_config_settings` |  |
-| res.config.settings group_user | `access_g_res_config_settings_group_user_x_res_config_settings_user_types_internal_user` | Gives **User types / Internal User** read/write/create access to res.config.settings records. | `group base.group_user` (base)<br>`model misc_res_config_settings` |  |
-| misc_res_config_settings admin | `access_x_res_config_settings_admin` | Gives **Administration / Settings** read/write/create/delete access to res.config.settings records. | `group base.group_system` (base)<br>`model misc_res_config_settings` |  |
+| res.config.settings group_user | `access_g_res_config_settings_group_user_misc_res_config_settings_user_types_internal_user` | Gives **User types / Internal User** read/write/create access to res.config.settings records. | `group base.group_user` (base)<br>`model misc_res_config_settings` |  |
+| misc_res_config_settings admin | `access_misc_res_config_settings_admin` | Gives **Administration / Settings** read/write/create/delete access to res.config.settings records. | `group base.group_system` (base)<br>`model misc_res_config_settings` |  |

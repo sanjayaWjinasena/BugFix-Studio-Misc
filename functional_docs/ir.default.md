@@ -16,4 +16,4 @@ This repo adds an optional Created by column in the User-defined Defaults list v
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.default tree view customization | `view_std_ir_default_6116` | tree | after `//field[@name='json_value']`: add field create_uid | Adds an optional Created by column after the default value in the User-defined Defaults list view. | `view base.ir_default_tree_view` (base) |  |
+| Odoo Studio: ir.default tree view customization | `view_ir_default_tree_view_inherit` | tree | after `//field[@name='json_value']`: add field create_uid | Adds an optional Created by column after the default value in the User-defined Defaults list view. | `view base.ir_default_tree_view` (base) |  |

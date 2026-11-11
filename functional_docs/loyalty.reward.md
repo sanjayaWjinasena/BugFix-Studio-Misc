@@ -16,11 +16,11 @@ This repo adds a coupon.reward window action that opens Loyalty Rewards in list 
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| coupon.reward | `act_window_2842_coupon_reward` | Opens **Loyalty Reward** records (tree,form). | `model loyalty.reward` (loyalty) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_coupon_reward` |
-| coupon.reward | `act_window_2842_coupon_reward_d7` | Opens **Loyalty Reward** records (tree,form). | `model loyalty.reward` (loyalty) |  |
+| coupon.reward | `action_coupon_reward` | Opens **Loyalty Reward** records (tree,form). | `model loyalty.reward` (loyalty) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_coupon_reward` |
+| coupon.reward | `action_coupon_reward_d7` | Opens **Loyalty Reward** records (tree,form). | `model loyalty.reward` (loyalty) |  |
 
 **Record rules (1):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Loyalty reward multi company rule | `rule_656_loyalty_reward_multi_company_rule` | For everyone (global rule): read/write/create/delete on Loyalty Reward only where `['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]`. | `loyalty.reward.company_id` (loyalty)<br>`model loyalty.reward` (loyalty) |  |
+| Loyalty reward multi company rule | `rule_loyalty_reward_multi_company_rule` | For everyone (global rule): read/write/create/delete on Loyalty Reward only where `['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]`. | `loyalty.reward.company_id` (loyalty)<br>`model loyalty.reward` (loyalty) |  |

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2472_uom_categories" model="ir.actions.act_window">
+  <record id="action_uom_categories" model="ir.actions.act_window">
     <field name="name">UoM Categories</field>
     <field name="res_model">uom.category</field>
     <field name="view_mode">tree,form</field>
@@ -41,9 +41,9 @@
 <!-- DROPPED act_window_844_test_app_02: model x_testapp missing on target -->
 <!-- DROPPED act_window_809_testapp: model x_testapp missing on target -->
 <!-- DROPPED act_window_812_testdepartment: model x_testdepartment missing on target -->
-<!-- DROPPED act_window_3205_website_faq: model website_faq missing on target -->
-<!-- DROPPED act_window_3206_website_faqs: model website_faqs missing on target -->
-  <record id="act_window_2472_uom_categories_d7" model="ir.actions.act_window">
+<!-- DROPPED action_website_faq: model website_faq missing on target -->
+<!-- DROPPED action_website_faqs: model website_faqs missing on target -->
+  <record id="action_uom_categories_d7" model="ir.actions.act_window">
     <field name="name">UoM Categories</field>
     <field name="res_model">uom.category</field>
     <field name="view_mode">tree,form</field>

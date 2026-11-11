@@ -6,7 +6,7 @@
 
 *Extends a model created by `stock_landed_costs`.*
 
-Other repos that use this model: `window action BugFix-Stock.act_window_2814_stock_landed_cost_line` (BugFix-Stock)
+Other repos that use this model: `window action BugFix-Stock.action_stock_landed_cost_line` (BugFix-Stock)
 
 **Summary:**
 
@@ -18,4 +18,4 @@ This repo only adds a window action that opens Stock Landed Cost Line records in
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| stock.landed.cost.line | `act_window_2814_stock_landed_cost_line_d7` | Opens **Stock Landed Cost Line** records (tree,form). | `model stock.landed.cost.lines` (stock_landed_costs) |  |
+| stock.landed.cost.line | `action_stock_landed_cost_line_d7` | Opens **Stock Landed Cost Line** records (tree,form). | `model stock.landed.cost.lines` (stock_landed_costs) |  |

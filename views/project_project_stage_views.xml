@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2878_project_stage_project_project_stage_d7" model="ir.actions.act_window">
+  <record id="action_project_stage_project_project_stage_d7" model="ir.actions.act_window">
     <field name="name">Project Stage (project.project.stage)</field>
     <field name="res_model">project.project.stage</field>
     <field name="view_mode">kanban,tree,form</field>
   </record>
-    <record id="view_std_project_project_stage_5899" model="ir.ui.view">
+    <record id="view_project_project_stage_view_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: project.project.stage.view.tree customization</field>
       <field name="model">project.project.stage</field>
       <field name="type">tree</field>

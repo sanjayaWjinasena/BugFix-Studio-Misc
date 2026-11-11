@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_std_ir_actions_act_window_2441" model="ir.ui.view">
+    <record id="view_ir_actions_windows_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.actions.windows.tree customization</field>
       <field name="model">ir.actions.act_window</field>
       <field name="type">tree</field>

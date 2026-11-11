@@ -62,6 +62,6 @@ TestDepartment is a Studio sandbox model with a code, three description fields a
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| TestDepartment group_system | `access_1143_testdepartment_group_system` | Gives **Administration / Settings** read/write/create/delete access to TestDepartment records. | `group base.group_system` (base)<br>`model x_testdepartment` |  |
-| TestDepartment group_user | `access_1144_testdepartment_group_user` | Gives **User types / Internal User** no access to TestDepartment records. | `group base.group_user` (base)<br>`model x_testdepartment` |  |
+| TestDepartment group_system | `access_testdepartment_group_system` | Gives **Administration / Settings** read/write/create/delete access to TestDepartment records. | `group base.group_system` (base)<br>`model x_testdepartment` |  |
+| TestDepartment group_user | `access_testdepartment_group_user` | Gives **User types / Internal User** no access to TestDepartment records. | `group base.group_user` (base)<br>`model x_testdepartment` |  |
 | x_testdepartment admin | `access_x_testdepartment_admin` | Gives **Administration / Settings** read/write/create/delete access to TestDepartment records. | `group base.group_system` (base)<br>`model x_testdepartment` |  |

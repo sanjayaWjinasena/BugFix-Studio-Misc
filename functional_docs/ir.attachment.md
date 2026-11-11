@@ -16,10 +16,10 @@ This repo adds the automation Restrict Attachment Delete for Approved Expenses: 
 
 **Server actions (2):**
 
-- **Execute Code** (`server_action_2598_restrict_attachment_delete_for_approved_expenses`, type `code`)
+- **Execute Code** (`action_restrict_attachment_delete_for_approved_expenses`, type `code`)
   - Function: Run by the Restrict Attachment Delete automation: blocks deleting attachments of expenses whose report is past Draft/Submitted.
   - Depends on: `model hr.expense` (hr_expense), `model ir.attachment` (base)
-  - Used by: `automation BugFix-Studio-Misc.base_automation_274_restrict_attachment_delete_for_approved_expenses`
+  - Used by: `automation BugFix-Studio-Misc.automation_restrict_attachment_delete_for_approved_expenses`
   <details><summary>code (8 lines)</summary>
 
 ```python
@@ -32,7 +32,7 @@ if attach:
                 raise UserError("You cannot delete attachments from approved expenses.")
 ```
   </details>
-- **Restrict Attachment Delete for Approved Expenses** (`sa_f5_ir_attachment_restrict_attachment_delete_for_approved_expenses`, type `code`)
+- **Restrict Attachment Delete for Approved Expenses** (`action_ir_attachment_restrict_attachment_delete_for_approved_expenses`, type `code`)
   - Function: Blocks deleting an attachment of an expense whose expense report is beyond Draft/Submitted, raising 'You cannot delete attachments from approved expenses'.
   - Depends on: `model hr.expense` (hr_expense), `model ir.attachment` (base)
   - Used by: — (not linked to a button, menu or automation)
@@ -52,4 +52,4 @@ if attach:
 
 | Name | Record name | State | Function | Depends on | Used by |
 |---|---|---|---|---|---|
-| Restrict Attachment Delete for Approved Expenses | `base_automation_274_restrict_attachment_delete_for_approved_expenses` |  | When a record is deleted on Attachment, runs _Execute Code_. | `model ir.attachment` (base)<br>`server action BugFix-Studio-Misc.server_action_2598_restrict_attachment_delete_for_approved_expenses` |  |
+| Restrict Attachment Delete for Approved Expenses | `automation_restrict_attachment_delete_for_approved_expenses` |  | When a record is deleted on Attachment, runs _Execute Code_. | `model ir.attachment` (base)<br>`server action BugFix-Studio-Misc.action_restrict_attachment_delete_for_approved_expenses` |  |

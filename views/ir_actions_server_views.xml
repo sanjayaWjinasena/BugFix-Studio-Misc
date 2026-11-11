@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_std_ir_actions_server_2382" model="ir.ui.view">
+    <record id="view_server_actions_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Server Actions customization</field>
       <field name="model">ir.actions.server</field>
       <field name="type">tree</field>
@@ -15,7 +15,7 @@
 </data>
       </field>
     </record>
-    <record id="view_std_ir_actions_server_5444" model="ir.ui.view">
+    <record id="view_server_action_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Server Action customization</field>
       <field name="model">ir.actions.server</field>
       <field name="type">form</field>

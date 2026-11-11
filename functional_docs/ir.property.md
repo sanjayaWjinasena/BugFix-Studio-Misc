@@ -16,4 +16,4 @@ This repo adds one window action, Company Property, that opens company propertie
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Company Property | `aw_f4x_ir_property_company_property` | Opens **Company Property** records (tree,form). | `model ir.property` (base) | `menu BugFix-Studio-Misc.menu_f6f_company_property` |
+| Company Property | `aw_f4x_ir_property_company_property` | Opens **Company Property** records (tree,form). | `model ir.property` (base) | `menu BugFix-Studio-Misc.menu_company_property` |

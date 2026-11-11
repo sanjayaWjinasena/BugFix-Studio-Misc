@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2882_sales_team_member" model="ir.actions.act_window">
+  <record id="action_sales_team_member" model="ir.actions.act_window">
     <field name="name">Sales Team Member</field>
     <field name="res_model">crm.team.member</field>
     <field name="view_mode">kanban,tree,form</field>
@@ -17,7 +17,7 @@
                 </p>
             </field>
   </record>
-    <record id="view_6118_odoo_studio_crm_team_member_view_tree_customization_ext" model="ir.ui.view">
+    <record id="view_crm_team_member_view_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: crm.team.member.view.tree customization</field>
       <field name="model">crm.team.member</field>
       <field name="type">tree</field>
@@ -32,7 +32,7 @@
 </data>
       </field>
     </record>
-  <record id="act_window_2882_sales_team_member_d7" model="ir.actions.act_window">
+  <record id="action_sales_team_member_d7" model="ir.actions.act_window">
     <field name="name">Sales Team Member</field>
     <field name="res_model">crm.team.member</field>
     <field name="view_mode">kanban,tree,form</field>

@@ -18,5 +18,5 @@ This repo adds Studio tweaks that show the record ID on the Server Action form (
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: Server Action customization | `view_std_ir_actions_server_5444` | form | before `//field[@name='model_id']`: add field id | Shows the record ID field before Model on the Server Action form. | `view base.view_server_action_form` (base) |  |
-| Odoo Studio: Server Actions customization | `view_std_ir_actions_server_2382` | tree | after `//field[@name='state']`: add field id | Adds the record ID column after Type in the Server Actions list view (Settings > Technical). | `view base.view_server_action_tree` (base) |  |
+| Odoo Studio: Server Action customization | `view_server_action_inherit` | form | before `//field[@name='model_id']`: add field id | Shows the record ID field before Model on the Server Action form. | `view base.view_server_action_form` (base) |  |
+| Odoo Studio: Server Actions customization | `view_server_actions_inherit` | tree | after `//field[@name='state']`: add field id | Adds the record ID column after Type in the Server Actions list view (Settings > Technical). | `view base.view_server_action_tree` (base) |  |

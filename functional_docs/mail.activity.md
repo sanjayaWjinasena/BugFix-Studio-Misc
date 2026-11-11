@@ -18,4 +18,4 @@ This repo adds one window action that opens Activities in list, form and calenda
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| mail.activity | `aw_f4x_mail_activity_mail_activity` | Opens **Activity** records (tree,form,calendar). | `model mail.activity` (mail) | `menu BugFix-Studio-Misc.menu_f6f_mail_activity` |
+| mail.activity | `aw_f4x_mail_activity_mail_activity` | Opens **Activity** records (tree,form,calendar). | `model mail.activity` (mail) | `menu BugFix-Studio-Misc.menu_mail_activity` |

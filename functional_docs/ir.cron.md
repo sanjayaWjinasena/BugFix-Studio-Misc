@@ -16,4 +16,4 @@ This repo adds a Studio tweak to the Scheduled Actions list view that moves the 
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.cron tree customization | `view_std_ir_cron_6148` | tree | after `//field[@name='numbercall']`: add xpath, field id | In the Scheduled Actions list view, moves the Active column after Number of Calls and adds an optional ID column. | `view base.ir_cron_view_tree` (base) |  |
+| Odoo Studio: ir.cron tree customization | `view_ir_cron_tree_inherit` | tree | after `//field[@name='numbercall']`: add xpath, field id | In the Scheduled Actions list view, moves the Active column after Number of Calls and adds an optional ID column. | `view base.ir_cron_view_tree` (base) |  |

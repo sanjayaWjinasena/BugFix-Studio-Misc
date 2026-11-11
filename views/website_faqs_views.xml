@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_8033_default_form_view_for_website_faqs" model="ir.ui.view">
+    <record id="view_website_faqs_form" model="ir.ui.view">
       <field name="name">Default form view for website_faqs</field>
       <field name="model">website_faqs</field>
       <field name="type">form</field>
@@ -28,7 +28,7 @@
 </form>
       </field>
     </record>
-    <record id="view_8032_default_list_view_for_website_faqs" model="ir.ui.view">
+    <record id="view_website_faqs_list" model="ir.ui.view">
       <field name="name">Default list view for website_faqs</field>
       <field name="model">website_faqs</field>
       <field name="type">tree</field>
@@ -39,7 +39,7 @@
 </tree>
       </field>
     </record>
-    <record id="view_8034_default_search_view_for_website_faqs" model="ir.ui.view">
+    <record id="view_website_faqs_search" model="ir.ui.view">
       <field name="name">Default search view for website_faqs</field>
       <field name="model">website_faqs</field>
       <field name="type">search</field>
@@ -52,11 +52,11 @@
 </search>
       </field>
     </record>
-    <record id="view_8035_odoo_studio_default_form_view_for_x_website_faqs_customizati_ext" model="ir.ui.view">
+    <record id="view_default_form_view_for_website_faqs_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Default form view for website_faqs customization</field>
       <field name="model">website_faqs</field>
       <field name="type">form</field>
-      <field name="inherit_id" ref="BugFix-Studio-Misc.view_8033_default_form_view_for_website_faqs"/>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_website_faqs_form"/>
       <field name="mode">extension</field>
       <field name="priority">99</field>
       <field name="arch" type="xml">
@@ -72,11 +72,11 @@
 </data>
       </field>
     </record>
-    <record id="view_8036_odoo_studio_default_list_view_for_x_website_faqs_customizati_ext" model="ir.ui.view">
+    <record id="view_default_list_view_for_website_faqs_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Default list view for website_faqs customization</field>
       <field name="model">website_faqs</field>
       <field name="type">tree</field>
-      <field name="inherit_id" ref="BugFix-Studio-Misc.view_8032_default_list_view_for_website_faqs"/>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_website_faqs_list"/>
       <field name="mode">extension</field>
       <field name="priority">99</field>
       <field name="arch" type="xml">
@@ -90,7 +90,7 @@
 </data>
       </field>
     </record>
-  <record id="act_window_3206_website_faqs" model="ir.actions.act_window">
+  <record id="action_website_faqs" model="ir.actions.act_window">
     <field name="name">website FAQs</field>
     <field name="res_model">website_faqs</field>
     <field name="view_mode">tree,form</field>

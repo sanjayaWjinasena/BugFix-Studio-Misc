@@ -6,7 +6,7 @@
 
 *Extends a model created by `account`.*
 
-Other repos that use this model: `record rule BugFix-Accounting.rule_631_tax_repartition_multi_company` (BugFix-Accounting)
+Other repos that use this model: `record rule BugFix-Accounting.rule_tax_repartition_multi_company` (BugFix-Accounting)
 
 **Summary:**
 

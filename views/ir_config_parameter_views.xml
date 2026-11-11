@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_std_ir_config_parameter_6117" model="ir.ui.view">
+    <record id="view_ir_config_parameter_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.config_parameter tree customization</field>
       <field name="model">ir.config_parameter</field>
       <field name="type">tree</field>

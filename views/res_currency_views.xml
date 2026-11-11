@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_4901_odoo_studio_res_currency_tree_customization_ext" model="ir.ui.view">
+    <record id="view_res_currency_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: res.currency.tree customization</field>
       <field name="model">res.currency</field>
       <field name="type">tree</field>

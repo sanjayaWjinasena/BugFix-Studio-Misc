@@ -6,7 +6,7 @@
 
 *Extends a model created by `stock`.*
 
-Other repos that use this model: `window action BugFix-Stock.act_window_2095_stock_location_route` (BugFix-Stock)<br>`window action BugFix-Stock.act_window_2494_inventory_routes` (BugFix-Stock)
+Other repos that use this model: `window action BugFix-Stock.action_stock_location_route` (BugFix-Stock)<br>`window action BugFix-Stock.action_inventory_routes` (BugFix-Stock)
 
 **Summary:**
 
@@ -18,5 +18,5 @@ This repo only adds two window actions that open Inventory Routes in list and fo
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| Inventory routes | `act_window_2494_inventory_routes_d7` | Opens **Inventory Routes** records (tree,form). | `model stock.route` (stock) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_inventory_routes` |
-| stock.location.route | `act_window_2095_stock_location_route_d7` | Opens **Inventory Routes** records (tree,form). | `model stock.route` (stock) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_stock_location_route` |
+| Inventory routes | `action_inventory_routes_d7` | Opens **Inventory Routes** records (tree,form). | `model stock.route` (stock) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_inventory_routes` |
+| stock.location.route | `action_stock_location_route_d7` | Opens **Inventory Routes** records (tree,form). | `model stock.route` (stock) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_stock_location_route` |

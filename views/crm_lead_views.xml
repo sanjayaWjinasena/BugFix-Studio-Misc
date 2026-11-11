@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_1232_my_activities" model="ir.actions.act_window">
+  <record id="action_my_activities" model="ir.actions.act_window">
     <field name="name">My Activities</field>
     <field name="res_model">crm.lead</field>
     <field name="view_mode">tree,kanban,graph,pivot,calendar,form,activity</field>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_396_sales_teams" model="ir.actions.act_window">
+  <record id="action_sales_teams" model="ir.actions.act_window">
     <field name="name">Sales Teams</field>
     <field name="res_model">crm.team</field>
     <field name="view_mode">tree,kanban,form</field>
@@ -13,7 +13,7 @@
             </p>
         </field>
   </record>
-    <record id="view_6053_odoo_studio_crm_team_form_customization_ext" model="ir.ui.view">
+    <record id="view_crm_team_form_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: crm.team.form customization</field>
       <field name="model">crm.team</field>
       <field name="type">form</field>
@@ -39,7 +39,7 @@
 </data>
       </field>
     </record>
-    <record id="view_6079_odoo_studio_crm_team_tree_customization_ext" model="ir.ui.view">
+    <record id="view_crm_team_tree_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: crm.team.tree customization</field>
       <field name="model">crm.team</field>
       <field name="type">tree</field>

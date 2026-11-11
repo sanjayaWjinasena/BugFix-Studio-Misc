@@ -6,7 +6,7 @@
       <field name="json_value">"delivery"</field>
     </record>
     <!-- DROPPED default_473_account_move_journal_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<record id="default_474_product_template_default_code" model="ir.default">
+<record id="default_product_template_default_code" model="ir.default">
       <field name="field_id" ref="product.field_product_template__default_code"/>
       <field name="json_value">""</field>
     </record>
@@ -33,7 +33,7 @@
       <field name="company_id" ref="seed_master_data_and_settings.company_jinasena_agricultural_machinery"/>
     </record>
     -->
-    <record id="default_579_product_template_purchase_method" model="ir.default">
+    <record id="default_product_template_purchase_method" model="ir.default">
       <field name="field_id" ref="purchase.field_product_template__purchase_method"/>
       <field name="json_value">"receive"</field>
     </record>

@@ -28,5 +28,5 @@ Purpose not evident from code. This is a Studio-created model with only a Name f
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| access.account.winbooks.import.wizard | `access_7063_access_account_winbooks_import_wizard` | Gives **Accounting / Accountant** no access to Account Winbooks import wizard records. | `group account.group_account_manager` (account)<br>`model misc_account_winbooks_import_wizard` |  |
-| misc_account_winbooks_import_wizard admin | `access_x_account_winbooks_import_wizard_admin` | Gives **Administration / Settings** read/write/create/delete access to Account Winbooks import wizard records. | `group base.group_system` (base)<br>`model misc_account_winbooks_import_wizard` |  |
+| access.account.winbooks.import.wizard | `access_account_winbooks_import_wizard` | Gives **Accounting / Accountant** no access to Account Winbooks import wizard records. | `group account.group_account_manager` (account)<br>`model misc_account_winbooks_import_wizard` |  |
+| misc_account_winbooks_import_wizard admin | `access_misc_account_winbooks_import_wizard_admin` | Gives **Administration / Settings** read/write/create/delete access to Account Winbooks import wizard records. | `group base.group_system` (base)<br>`model misc_account_winbooks_import_wizard` |  |

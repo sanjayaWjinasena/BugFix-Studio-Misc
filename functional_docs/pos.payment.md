@@ -16,11 +16,11 @@ This repo adds a pos.payment window action that opens POS Payments in list and f
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| pos.payment | `act_window_2820_pos_payment` | Opens **Point of Sale Payments** records (tree,form). | `model pos.payment` (point_of_sale) |  |
-| pos.payment | `act_window_2820_pos_payment_d7` | Opens **Point of Sale Payments** records (tree,form). | `model pos.payment` (point_of_sale) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_pos_payment` |
+| pos.payment | `action_pos_payment` | Opens **Point of Sale Payments** records (tree,form). | `model pos.payment` (point_of_sale) |  |
+| pos.payment | `action_pos_payment_d7` | Opens **Point of Sale Payments** records (tree,form). | `model pos.payment` (point_of_sale) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_pos_payment` |
 
 **Record rules (1):**
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| PoS Payment | `rule_156_pos_payment` | For everyone (global rule): read/write/create/delete on Point of Sale Payments only where `[('company_id', 'in', company_ids)]`. | `model pos.payment` (point_of_sale)<br>`pos.payment.company_id` (point_of_sale) |  |
+| PoS Payment | `rule_pos_payment` | For everyone (global rule): read/write/create/delete on Point of Sale Payments only where `[('company_id', 'in', company_ids)]`. | `model pos.payment` (point_of_sale)<br>`pos.payment.company_id` (point_of_sale) |  |

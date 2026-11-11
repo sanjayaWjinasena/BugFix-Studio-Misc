@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_1134_work_center_costing" model="ir.actions.act_window">
+  <record id="action_work_center_costing" model="ir.actions.act_window">
     <field name="name">Work Center Costing</field>
     <field name="res_model">work_center_costing</field>
     <field name="view_mode">tree,form</field>
   </record>
-    <record id="view_2581_default_form_view_for_x_work_center_costing_e" model="ir.ui.view">
+    <record id="view_work_center_costing_form" model="ir.ui.view">
       <field name="name">Default form view for work_center_costing</field>
       <field name="model">work_center_costing</field>
       <field name="type">form</field>
@@ -33,7 +33,7 @@
 </form>
       </field>
     </record>
-    <record id="view_2580_default_list_view_for_x_work_center_costing_e" model="ir.ui.view">
+    <record id="view_work_center_costing_list" model="ir.ui.view">
       <field name="name">Default list view for work_center_costing</field>
       <field name="model">work_center_costing</field>
       <field name="type">tree</field>
@@ -44,7 +44,7 @@
 </tree>
       </field>
     </record>
-    <record id="view_2582_default_search_view_for_x_work_center_costing_e" model="ir.ui.view">
+    <record id="view_work_center_costing_search" model="ir.ui.view">
       <field name="name">Default search view for work_center_costing</field>
       <field name="model">work_center_costing</field>
       <field name="type">search</field>
@@ -57,12 +57,12 @@
 </search>
       </field>
     </record>
-    <record id="view_final_x_work_center_costing_odoo_studio_default_form_view_for_x_work_center_costing_c" model="ir.ui.view">
+    <record id="view_default_form_view_for_work_center_costing_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Default form view for work_center_costing customization</field>
       <field name="model">work_center_costing</field>
       <field name="type">form</field>
       <field name="priority">99</field>
-      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2581_default_form_view_for_x_work_center_costing_e"/>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_work_center_costing_form"/>
       <field name="mode">extension</field>
       <field name="arch" type="xml">
         <data>
@@ -101,12 +101,12 @@
 </data>
       </field>
     </record>
-    <record id="view_final_x_work_center_costing_odoo_studio_default_list_view_for_x_work_center_costing_c" model="ir.ui.view">
+    <record id="view_default_list_view_for_work_center_costing_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Default list view for work_center_costing customization</field>
       <field name="model">work_center_costing</field>
       <field name="type">tree</field>
       <field name="priority">99</field>
-      <field name="inherit_id" ref="BugFix-Studio-Misc.view_2580_default_list_view_for_x_work_center_costing_e"/>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_work_center_costing_list"/>
       <field name="mode">extension</field>
       <field name="arch" type="xml">
         <data>

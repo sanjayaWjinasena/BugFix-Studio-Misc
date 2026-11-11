@@ -61,8 +61,8 @@ TEST-1 is a Studio sandbox model with a name, a sort order and a required Value 
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| TEST-1 GROUP | `access_1153_test_1_group` | Gives **PR Approval** no access to TEST-1 records. | `group BugFix-Approvals.group_107_pr_approval` (BugFix-Approvals)<br>`model x_test_1` |  |
-| TEST-1 GROUP | `access_f3_test_1_group` | Gives **PR Approval** no access to TEST-1 records. | `group BugFix-Approvals.group_107_pr_approval` (BugFix-Approvals)<br>`model x_test_1` |  |
+| TEST-1 GROUP | `access_1153_test_1_group` | Gives **PR Approval** no access to TEST-1 records. | `group BugFix-Approvals.group_pr_approval` (BugFix-Approvals)<br>`model x_test_1` |  |
+| TEST-1 GROUP | `access_f3_test_1_group` | Gives **PR Approval** no access to TEST-1 records. | `group BugFix-Approvals.group_pr_approval` (BugFix-Approvals)<br>`model x_test_1` |  |
 | TEST-1 group_system | `access_1149_test_1_group_system` | Gives **Administration / Settings** read/write/create/delete access to TEST-1 records. | `group base.group_system` (base)<br>`model x_test_1` |  |
 | TEST-1 group_user | `access_1150_test_1_group_user` | Gives **User types / Internal User** read access to TEST-1 records. | `group base.group_user` (base)<br>`model x_test_1` |  |
 | x_test_1 admin | `access_x_test_1_admin` | Gives **Administration / Settings** read/write/create/delete access to TEST-1 records. | `group base.group_system` (base)<br>`model x_test_1` |  |

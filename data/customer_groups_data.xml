@@ -4,7 +4,7 @@
     <!-- DROPPED default_5_purchase_requisition_warehouse_id: field owned by purchase_requisition_stock not in Studio-Misc deps -->
 <!-- DROPPED default_7_res_partner_vat_registration_status: field owned by Fix-repair not in Studio-Misc deps -->
 <!-- DROPPED default_8_res_partner_svat_registration_status: field owned by Fix-repair not in Studio-Misc deps -->
-<record id="default_10_x_customer_groups_sequence" model="ir.default">
+<record id="default_10_customer_groups_sequence" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_customer_groups__sequence"/>
       <field name="json_value">10</field>
     </record>

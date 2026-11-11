@@ -18,4 +18,4 @@ This repo adds optional Parent Menu and ID columns to the Menu Items list view. 
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.ui.menu tree customization | `view_std_ir_ui_menu_5317` | tree | after `//field[@name='sequence']`: add field parent_id; after `//field[@name='complete_name']`: add field id | In the Menu Items list view, adds optional Parent Menu and ID columns. | `ir.ui.menu.parent_id` (base)<br>`view base.edit_menu` (base) |  |
+| Odoo Studio: ir.ui.menu tree customization | `view_ir_ui_menu_tree_inherit` | tree | after `//field[@name='sequence']`: add field parent_id; after `//field[@name='complete_name']`: add field id | In the Menu Items list view, adds optional Parent Menu and ID columns. | `ir.ui.menu.parent_id` (base)<br>`view base.edit_menu` (base) |  |

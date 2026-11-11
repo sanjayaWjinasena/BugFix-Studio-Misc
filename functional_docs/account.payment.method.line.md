@@ -6,7 +6,7 @@
 
 *Extends a model created by `account`.*
 
-Other repos that use this model: `sale.order._seed_advance_payment_method_lines()` (Fix-repair)<br>`window action BugFix-Accounting.act_window_2741_account_payment_method_line` (BugFix-Accounting)
+Other repos that use this model: `sale.order._seed_advance_payment_method_lines()` (Fix-repair)<br>`window action BugFix-Accounting.action_account_payment_method_line` (BugFix-Accounting)
 
 **Summary:**
 
@@ -18,4 +18,4 @@ This repo adds one window action that opens Payment Methods in list and form vie
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| account.payment.method.line | `act_window_2741_account_payment_method_line_d7` | Opens **Payment Methods** records (tree,form). | `model account.payment.method.line` (account) |  |
+| account.payment.method.line | `action_account_payment_method_line_d7` | Opens **Payment Methods** records (tree,form). | `model account.payment.method.line` (account) |  |

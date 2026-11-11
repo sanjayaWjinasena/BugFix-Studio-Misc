@@ -20,7 +20,7 @@
     <field name="res_model">ir.model.access</field>
     <field name="view_mode">tree,form</field>
   </record>
-    <record id="view_std_ir_model_access_2323" model="ir.ui.view">
+    <record id="view_ir_model_access_search_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.model.access search customization</field>
       <field name="model">ir.model.access</field>
       <field name="type">search</field>
@@ -35,7 +35,7 @@
 </data>
       </field>
     </record>
-    <record id="view_std_ir_model_access_5301" model="ir.ui.view">
+    <record id="view_ir_model_access_view_tree_edition_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.model.access.view.tree.edition customization</field>
       <field name="model">ir.model.access</field>
       <field name="type">tree</field>

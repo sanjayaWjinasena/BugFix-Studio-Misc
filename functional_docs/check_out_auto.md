@@ -28,4 +28,4 @@ Purpose not evident from code. Check Out Auto is a Studio model that has only a 
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| check_out_auto admin | `access_x_studio_check_out_auto_admin` | Gives **Administration / Settings** read/write/create/delete access to Check Out Auto records. | `group base.group_system` (base)<br>`model check_out_auto` |  |
+| check_out_auto admin | `access_check_out_auto_admin` | Gives **Administration / Settings** read/write/create/delete access to Check Out Auto records. | `group base.group_system` (base)<br>`model check_out_auto` |  |

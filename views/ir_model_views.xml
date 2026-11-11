@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_std_ir_model_3111" model="ir.ui.view">
+    <record id="view_ir_model_form_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: ir.model form customization</field>
       <field name="model">ir.model</field>
       <field name="type">form</field>

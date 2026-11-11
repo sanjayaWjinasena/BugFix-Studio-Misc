@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2380_sales_model_debug" model="ir.actions.act_window">
+  <record id="action_sales_model_debug" model="ir.actions.act_window">
     <field name="name">Sales Model Debug</field>
     <field name="res_model">sales_model_debug</field>
     <field name="view_mode">tree,form</field>
   </record>
-    <record id="view_5293_default_form_view_for_x_sales_model_debug_e" model="ir.ui.view">
+    <record id="view_sales_model_debug_form" model="ir.ui.view">
       <field name="name">Default form view for sales_model_debug</field>
       <field name="model">sales_model_debug</field>
       <field name="type">form</field>
@@ -33,7 +33,7 @@
 </form>
       </field>
     </record>
-    <record id="view_5292_default_list_view_for_x_sales_model_debug_e" model="ir.ui.view">
+    <record id="view_sales_model_debug_list" model="ir.ui.view">
       <field name="name">Default list view for sales_model_debug</field>
       <field name="model">sales_model_debug</field>
       <field name="type">tree</field>
@@ -44,7 +44,7 @@
 </tree>
       </field>
     </record>
-    <record id="view_5294_default_search_view_for_x_sales_model_debug_e" model="ir.ui.view">
+    <record id="view_sales_model_debug_search" model="ir.ui.view">
       <field name="name">Default search view for sales_model_debug</field>
       <field name="model">sales_model_debug</field>
       <field name="type">search</field>
@@ -57,12 +57,12 @@
 </search>
       </field>
     </record>
-    <record id="view_final_x_sales_model_debug_odoo_studio_default_list_view_for_x_sales_model_debug_custo" model="ir.ui.view">
+    <record id="view_default_list_view_for_sales_model_debug_inherit" model="ir.ui.view">
       <field name="name">Odoo Studio: Default list view for sales_model_debug customization</field>
       <field name="model">sales_model_debug</field>
       <field name="type">tree</field>
       <field name="priority">99</field>
-      <field name="inherit_id" ref="BugFix-Studio-Misc.view_5292_default_list_view_for_x_sales_model_debug_e"/>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_sales_model_debug_list"/>
       <field name="mode">extension</field>
       <field name="arch" type="xml">
         <data>

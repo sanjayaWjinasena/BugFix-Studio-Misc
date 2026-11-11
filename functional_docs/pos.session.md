@@ -16,5 +16,5 @@ This repo only adds two window actions that open Point of Sale Session records i
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| pos.session | `act_window_2822_pos_session` | Opens **Point of Sale Session** records (kanban,tree,form). | `model pos.session` (point_of_sale) |  |
-| pos.session | `act_window_2822_pos_session_d7` | Opens **Point of Sale Session** records (kanban,tree,form). | `model pos.session` (point_of_sale) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_pos_session` |
+| pos.session | `action_pos_session` | Opens **Point of Sale Session** records (kanban,tree,form). | `model pos.session` (point_of_sale) |  |
+| pos.session | `action_pos_session_d7` | Opens **Point of Sale Session** records (kanban,tree,form). | `model pos.session` (point_of_sale) | `menu BugFix-Studio-Misc.menu_f6r2_test_app_05_pos_session` |

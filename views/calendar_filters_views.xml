@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2830_calendar_filters" model="ir.actions.act_window">
+  <record id="action_calendar_filters" model="ir.actions.act_window">
     <field name="name">Calendar.filters</field>
     <field name="res_model">calendar.filters</field>
     <field name="view_mode">tree,form</field>
@@ -17,7 +17,7 @@
                 </p>
             </field>
   </record>
-  <record id="act_window_2832_calendar_filters" model="ir.actions.act_window">
+  <record id="action_calendar_filters_2" model="ir.actions.act_window">
     <field name="name">calendar.filters</field>
     <field name="res_model">calendar.filters</field>
     <field name="view_mode">tree,form</field>
@@ -34,7 +34,7 @@
                 </p>
             </field>
   </record>
-    <record id="view_6070_default_tree_view_for_ir_model_747" model="ir.ui.view">
+    <record id="view_calendar_filters_tree" model="ir.ui.view">
       <field name="name">Default tree view for ir.model(747,)</field>
       <field name="model">calendar.filters</field>
       <field name="type">tree</field>
@@ -42,12 +42,12 @@
         <tree string="Calendar Filters"><field name="id" readonly="1"/></tree>
       </field>
     </record>
-  <record id="act_window_2832_calendar_filters_d7" model="ir.actions.act_window">
+  <record id="action_calendar_filters_d7_2" model="ir.actions.act_window">
     <field name="name">calendar.filters</field>
     <field name="res_model">calendar.filters</field>
     <field name="view_mode">tree,form</field>
   </record>
-  <record id="act_window_2830_calendar_filters_d7" model="ir.actions.act_window">
+  <record id="action_calendar_filters_d7" model="ir.actions.act_window">
     <field name="name">Calendar.filters</field>
     <field name="res_model">calendar.filters</field>
     <field name="view_mode">tree,form</field>

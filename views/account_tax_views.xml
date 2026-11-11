@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="act_window_2758_taxes_d7" model="ir.actions.act_window">
+  <record id="action_taxes_d7" model="ir.actions.act_window">
     <field name="name">Taxes</field>
     <field name="res_model">account.tax</field>
     <field name="view_mode">kanban,tree,form</field>

@@ -6,7 +6,7 @@
 
 *Extends a model created by `stock`.*
 
-Other repos that use this model: `record rule BugFix-Stock.rule_56_product_pulled_flow_multi_company` (BugFix-Stock)<br>`window action BugFix-Stock.act_window_2835_stock_rule` (BugFix-Stock)
+Other repos that use this model: `record rule BugFix-Stock.rule_56_product_pulled_flow_multi_company` (BugFix-Stock)<br>`window action BugFix-Stock.action_stock_rule` (BugFix-Stock)
 
 **Summary:**
 
@@ -18,4 +18,4 @@ This repo only adds a window action that opens Stock Rule records in list and fo
 
 | Name | Record name | Function | Depends on | Used by |
 |---|---|---|---|---|
-| stock.rule | `act_window_2835_stock_rule_d7` | Opens **Stock Rule** records (tree,form). | `model stock.rule` (stock) |  |
+| stock.rule | `action_stock_rule_d7` | Opens **Stock Rule** records (tree,form). | `model stock.rule` (stock) |  |

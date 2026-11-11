@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="sa_f5_res_groups_user_group_change_notify" model="ir.actions.server">
+  <record id="action_res_groups_user_group_change_notify" model="ir.actions.server">
     <field name="name">User Group Change - Notify</field>
     <field name="model_id" search="[('model', '=', 'res.groups')]"/>
     <field name="state">code</field>
@@ -14,19 +14,19 @@ env['mail.mail'].sudo().create({
 }).send()]]></field>
     <field name="usage">base_automation</field>
   </record>
-  <record id="base_automation_208_janitha_ranasinghe_d7" model="base.automation">
+  <record id="automation_janitha_ranasinghe_d7" model="base.automation">
     <field name="name">Janitha Ranasinghe</field>
     <field name="active" eval="True"/>
     <field name="model_id" ref="base.model_res_groups"/>
     <field name="trigger">on_create_or_write</field>
   </record>
-  <record id="base_automation_244_user_group_change_notify_d7" model="base.automation">
+  <record id="automation_user_group_change_notify_d7" model="base.automation">
     <field name="name">User Group Change - Notify</field>
     <field name="active" eval="False"/>
     <field name="model_id" ref="base.model_res_groups"/>
     <field name="trigger">on_write</field>
   </record>
-  <record id="base_automation_245_user_group_updation_d7" model="base.automation">
+  <record id="automation_user_group_updation_d7" model="base.automation">
     <field name="name">User Group updation</field>
     <field name="active" eval="False"/>
     <field name="model_id" ref="base.model_res_groups"/>

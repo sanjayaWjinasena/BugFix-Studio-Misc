@@ -18,4 +18,4 @@ This repo adds a Studio tweak to the Window Actions list view (Settings, Technic
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Odoo Studio: ir.actions.windows.tree customization | `view_std_ir_actions_act_window_2441` | tree | after `//field[@name='view_id']`: add field id | Adds the record ID column after View Ref. in the Window Actions list view (Settings > Technical). | `view base.view_window_action_tree` (base) |  |
+| Odoo Studio: ir.actions.windows.tree customization | `view_ir_actions_windows_tree_inherit` | tree | after `//field[@name='view_id']`: add field id | Adds the record ID column after View Ref. in the Window Actions list view (Settings > Technical). | `view base.view_window_action_tree` (base) |  |
