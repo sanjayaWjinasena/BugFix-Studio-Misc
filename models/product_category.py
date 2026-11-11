@@ -17,4 +17,4 @@ class ProductCategory(models.Model):
         ondelete="set null",
         copy=True,
     )
-    description = fields.Char(string="Description", copy=True)
+    description = fields.Char(copy=True)

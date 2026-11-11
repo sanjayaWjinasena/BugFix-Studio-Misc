@@ -8,7 +8,7 @@ class XMaterialRequestTesLine3301b(models.Model):
 
     material_request_tes_id = fields.Many2one(comodel_name="material_request_tes")
     name = fields.Char(string="Description", required=True)
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()
 
 
 class XMaterialRequestTesLine3301bGap(models.Model):

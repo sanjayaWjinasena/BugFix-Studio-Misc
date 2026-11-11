@@ -7,15 +7,15 @@ class X_test02(models.Model):
     _inherit = ["mail.activity.mixin"]
     _description = "TEST02"
 
-    active = fields.Boolean(string="Active")
-    currency_id = fields.Many2one(comodel_name="res.currency", string="Currency")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    currency_id = fields.Many2one(comodel_name="res.currency")
+    name = fields.Char()
     x_studio_chk_atomated_action = fields.Integer(string="CHK Atomated Action")
     x_studio_chk_server_action = fields.Integer(string="CHK Server Action")
     accounting_company_id = fields.Many2one(
         comodel_name="res.company", string="Company", copy=False
     )
-    date = fields.Datetime(string="Date")
+    date = fields.Datetime()
     x_studio_float_field_skhh9 = fields.Float(string="Test Number")
     x_studio_jam = fields.Char(string="New Text")
     x_studio_jam_1 = fields.Char(string="JAM")
@@ -49,10 +49,8 @@ class X_test02(models.Model):
         ],
         string="Pipeline status bar",
     )
-    sequence = fields.Integer(string="Sequence")
-    status = fields.Selection(
-        selection=[("S1", "S1"), ("S2", "S2"), ("S3", "S3")], string="Status"
-    )
+    sequence = fields.Integer()
+    status = fields.Selection(selection=[("S1", "S1"), ("S2", "S2"), ("S3", "S3")])
     x_studio_status2 = fields.Selection(
         selection=[("S5", "S5"), ("S6", "S6")], string="Status2"
     )

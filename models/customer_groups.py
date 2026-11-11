@@ -8,7 +8,7 @@ class XCustomerGroups(models.Model):
     _description = "Customer Groups"
 
     name = fields.Char(string="Group Description")
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()
 
 
 class XCustomerGroupsGap(models.Model):

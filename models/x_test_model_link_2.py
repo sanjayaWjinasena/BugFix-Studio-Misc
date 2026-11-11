@@ -7,12 +7,12 @@ class X_test_model_link_2(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Test Model Link 2"
 
-    active = fields.Boolean(string="Active")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    name = fields.Char()
     x_studio_many2many_field_2PxmY = fields.Many2many(
         comodel_name="x_test_model_primary", string="TEST MODEL PRIMARY"
     )
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()
     x_studio_test_model_primary_2 = fields.Many2one(
         comodel_name="x_test_model_primary", string="TEST MODEL PRIMARY 2"
     )

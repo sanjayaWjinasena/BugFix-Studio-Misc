@@ -7,7 +7,7 @@ class X_test_form(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "TEST FORM"
 
-    active = fields.Boolean(string="Active")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    name = fields.Char()
     x_studio_char_field_3aVUG = fields.Char(string="New Text")
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()

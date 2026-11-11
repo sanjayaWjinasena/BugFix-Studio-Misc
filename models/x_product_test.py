@@ -7,8 +7,8 @@ class X_product_test(models.Model):
     _inherit = ["mail.activity.mixin"]
     _description = "product.test"
 
-    active = fields.Boolean(string="Active")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    name = fields.Char()
     x_studio_journal_name = fields.Char(string="Journal Name")
     x_studio_many2many_field_R1u9s = fields.Many2many(
         comodel_name="product.product", string="Product"
@@ -19,10 +19,8 @@ class X_product_test(models.Model):
     x_studio_many2one_field_wTxgi = fields.Many2one(
         comodel_name="account.move", string="Journal Entry"
     )
-    product_1 = fields.Many2one(
-        comodel_name="product.template", string="Product_1"
-    )
-    sequence = fields.Integer(string="Sequence")
+    product_1 = fields.Many2one(comodel_name="product.template", string="Product_1")
+    sequence = fields.Integer()
     x_studio_stock_move = fields.Many2one(
         comodel_name="stock.move", string="Stock Move"
     )

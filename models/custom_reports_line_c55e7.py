@@ -13,7 +13,7 @@ class XCustomReportsLineC55e7(models.Model):
     _description = "custom_reports_line"
 
     name = fields.Char(string="Description", required=True)
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()
 
 
 class XCustomReportsLineC55e7Gap(models.Model):

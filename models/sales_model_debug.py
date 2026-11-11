@@ -7,8 +7,8 @@ class XSalesModelDebug(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Sales Model Debug"
 
-    active = fields.Boolean(string="Active")
+    active = fields.Boolean()
     name = fields.Char(string="Method Name")
-    end_time = fields.Datetime(string="End Time")
-    sequence = fields.Integer(string="Sequence")
-    start_time = fields.Datetime(string="Start Time")
+    end_time = fields.Datetime()
+    sequence = fields.Integer()
+    start_time = fields.Datetime()

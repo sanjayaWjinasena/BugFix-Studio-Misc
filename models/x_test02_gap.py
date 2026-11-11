@@ -5,9 +5,9 @@ class XTest02Gap(models.Model):
     _inherit = "x_test02"
     _rec_name = "name"  # Clear-DB Studio model: records are named by name
 
-    active = fields.Boolean(string="Active")
-    currency_id = fields.Many2one(comodel_name="res.currency", string="Currency")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    currency_id = fields.Many2one(comodel_name="res.currency")
+    name = fields.Char()
     x_studio_charges_1 = fields.Many2many(
         comodel_name="trf_charges",
         column1="x_test02_id",

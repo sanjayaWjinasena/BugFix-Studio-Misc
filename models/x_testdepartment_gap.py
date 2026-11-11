@@ -7,5 +7,5 @@ class XTestdepartmentGap(models.Model):
 
     x_Description2 = fields.Char(string="Description 2")
     x_Description3 = fields.Char(string="Description 3")
-    active = fields.Boolean(string="Active")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    name = fields.Char()

@@ -8,7 +8,7 @@ class XMaterialRequestMtLine9a011(models.Model):
 
     material_request_mt_id = fields.Many2one(comodel_name="material_request_mt")
     name = fields.Char(string="Description", required=True)
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()
 
 
 class XMaterialRequestMtLine9a011Gap(models.Model):

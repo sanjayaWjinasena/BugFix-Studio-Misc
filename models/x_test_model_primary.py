@@ -7,8 +7,8 @@ class X_test_model_primary(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "TEST MODEL PRIMARY"
 
-    active = fields.Boolean(string="Active")
-    name = fields.Char(string="Name")
+    active = fields.Boolean()
+    name = fields.Char()
     date_1 = fields.Date(string="Date")
     x_studio_one2many_field_5VwpV = fields.One2many(
         comodel_name="x_test_model_link",
@@ -16,4 +16,4 @@ class X_test_model_primary(models.Model):
         string="Line IDs",
         copy=False,
     )
-    sequence = fields.Integer(string="Sequence")
+    sequence = fields.Integer()

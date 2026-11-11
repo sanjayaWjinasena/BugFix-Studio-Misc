@@ -19,13 +19,9 @@ from odoo import fields, models
 class ResUsers(models.Model):
     _inherit = "res.users"
 
-    customer_group2 = fields.Many2one(
-        "customer_groups", string="Customer Group2"
-    )
+    customer_group2 = fields.Many2one("customer_groups")
     many2one_field_3LBKs = fields.Many2one("customer_groups", string="Group")
     many2one_field_9xxxo = fields.Many2one(
         "customer_groups", string="Customer Groups XXX"
     )
-    many2one_field_V9cmo = fields.Many2one(
-        "customer_groups", string="Customer Groups"
-    )
+    many2one_field_V9cmo = fields.Many2one("customer_groups", string="Customer Groups")
