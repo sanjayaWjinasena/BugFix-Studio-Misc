@@ -62,7 +62,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//field[@name='name']" position="after">
-    <field name="x_studio_value" string="Value" required="1"/>
+    <field name="value" string="Value" required="1"/>
   </xpath>
 </data>
       </field>

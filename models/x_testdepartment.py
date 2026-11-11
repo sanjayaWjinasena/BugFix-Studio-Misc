@@ -11,7 +11,7 @@ class X_testdepartment(models.Model):
     x_Description3 = fields.Char(string="Description 3")
     active = fields.Boolean(string="Active")
     name = fields.Char(string="Name")
-    x_studio_code = fields.Char(string="Code")
+    code = fields.Char(string="Code")
     description = fields.Char(string="Description")
     sequence = fields.Integer(string="Sequence")
     x_studio_sig = fields.Binary(string="Sig")

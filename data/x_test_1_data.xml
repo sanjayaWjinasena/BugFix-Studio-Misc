@@ -3,11 +3,11 @@
     <data noupdate="1">
     <!-- DROPPED default_20_x_purchase_request_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_21_x_purchase_request_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_23_x_purchase_request_x_studio_type: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_23_x_purchase_request_type: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_24_x_purchase_request_lin_active: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <!-- DROPPED default_25_x_purchase_request_lin_sequence: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_27_x_purchase_request_x_studio_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_28_x_purchase_request_x_studio_selection_field_yzPk1: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_27_x_purchase_request_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_28_x_purchase_request_selection_field_yzPk1: field owned by BugFix-Purchase not in Studio-Misc deps -->
 <record id="default_29_x_test_1_active" model="ir.default">
       <field name="field_id" ref="BugFix-Studio-Misc.field_x_test_1__active"/>
       <field name="json_value">true</field>

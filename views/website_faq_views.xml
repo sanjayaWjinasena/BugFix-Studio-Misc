@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_8027_default_form_view_for_website_faq" model="ir.ui.view">
+      <field name="name">Default form view for website_faq</field>
+      <field name="model">website_faq</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+  <header/>
+  <sheet string="website.faq">
+    <widget name="web_ribbon" text="Archived" bg_color="text-bg-danger" invisible="active"/>
+    <field name="active" invisible="1"/>
+    <div class="oe_title">
+                <h1>
+                    <field name="name" required="1" placeholder="Name..."/>
+                </h1>
+            </div>
+    <group name="studio_group_50153f">
+      <group name="studio_group_50153f_left"/>
+      <group name="studio_group_50153f_right"/>
+    </group>
+  </sheet>
+  <div class="oe_chatter" name="oe_chatter">
+    <field name="message_follower_ids"/>
+    <field name="message_ids"/>
+    <field name="activity_ids"/>
+  </div>
+</form>
+      </field>
+    </record>
+    <record id="view_8026_default_list_view_for_website_faq" model="ir.ui.view">
+      <field name="name">Default list view for website_faq</field>
+      <field name="model">website_faq</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree>
+  <field name="sequence" widget="handle"/>
+  <field name="name"/>
+</tree>
+      </field>
+    </record>
+    <record id="view_8028_default_search_view_for_website_faq" model="ir.ui.view">
+      <field name="name">Default search view for website_faq</field>
+      <field name="model">website_faq</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search>
+  <field name="name"/>
+  <separator/>
+  <filter string="Archived" name="archived_website_faq" domain="[['active', '=', False]]"/>
+  <separator/>
+</search>
+      </field>
+    </record>
+    <record id="view_8245_website_published" model="ir.ui.view">
+      <field name="name">website.published</field>
+      <field name="model">website_faq</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="FAQ">
+    <sheet>
+        <group>
+            <field name="question"/>
+            <field name="answer"/>
+        </group>
+    </sheet>
+</form>
+      </field>
+    </record>
+    <record id="view_8029_odoo_studio_default_form_view_for_x_website_faq_customizatio_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default form view for website_faq customization</field>
+      <field name="model">website_faq</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_8027_default_form_view_for_website_faq"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='name']" position="replace"/>
+  <xpath expr="//field[@name='active']" position="attributes">
+    <attribute name="invisible">True</attribute>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_50153f_left']" position="inside">
+    <field name="char_field_c3_1ipgu110c"/>
+    <field name="question"/>
+    <field name="answer"/>
+    <field name="published_on_the_website"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+    <record id="view_8031_odoo_studio_default_list_view_for_x_website_faq_customizatio_ext" model="ir.ui.view">
+      <field name="name">Odoo Studio: Default list view for website_faq customization</field>
+      <field name="model">website_faq</field>
+      <field name="type">tree</field>
+      <field name="inherit_id" ref="BugFix-Studio-Misc.view_8026_default_list_view_for_website_faq"/>
+      <field name="mode">extension</field>
+      <field name="priority">99</field>
+      <field name="arch" type="xml">
+        <data>
+  <xpath expr="//field[@name='name']" position="after">
+    <field name="question" optional="show"/>
+    <field name="answer" optional="show"/>
+  </xpath>
+</data>
+      </field>
+    </record>
+  <record id="act_window_3205_website_faq" model="ir.actions.act_window">
+    <field name="name">website.faq</field>
+    <field name="res_model">website_faq</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

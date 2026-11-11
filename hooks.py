@@ -50,12 +50,12 @@ RESTORATIONS = [
     (
         "BugFix-Sales.base_automation_316_jin_company_id_in_delivery_terms",
         "trigger_field_ids",
-        ["BugFix-Purchase.field_x_delivery_terms__create_date"],
+        ["BugFix-Purchase.field_delivery_terms__create_date"],
     ),
     (
         "BugFix-Stock.base_automation_124_srm_auto_populate_report_type_in_product_moves",
         "on_change_field_ids",
-        ["BugFix-Accounting.field_x_sales_report_model__x_studio_as_on_date"],
+        ["BugFix-Accounting.field_sales_report_model__as_on_date"],
     ),
     (
         "BugFix-Accounting.base_automation_289_jin_company_id_in_consignment_charge_header",

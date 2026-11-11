@@ -6,7 +6,7 @@
 
 *Extends a model created by `account`.*
 
-Other repos that use this model: `record rule BugFix-Accounting.rule_84_tax_multi_company` (BugFix-Accounting)<br>`server action BugFix-Accounting.sa_f5_x_tp_invoice_line_tp_invoice_linetax_update` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_2432_tp_invoice_linetax_update` (BugFix-Accounting)<br>`window action BugFix-Accounting.action_2758_taxes` (BugFix-Accounting)<br>`x_po_line_non_inventor.x_studio_taxes` (BugFix-Purchase)<br>`x_tp_invoice_line.x_studio_taxes` (BugFix-Accounting)
+Other repos that use this model: `record rule BugFix-Accounting.rule_84_tax_multi_company` (BugFix-Accounting)<br>`server action BugFix-Accounting.sa_f5_x_tp_invoice_line_tp_invoice_linetax_update` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_2432_tp_invoice_linetax_update` (BugFix-Accounting)<br>`window action BugFix-Accounting.action_2758_taxes` (BugFix-Accounting)<br>`po_line_non_inventor.taxes` (BugFix-Purchase)<br>`tp_invoice_line.taxes` (BugFix-Accounting)
 
 **Summary:**
 

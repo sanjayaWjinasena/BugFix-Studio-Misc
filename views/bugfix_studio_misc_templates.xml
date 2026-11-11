@@ -10,7 +10,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="/t/t/div/h2/span" position="after">
-    <span t-field="o.x_studio_rfq_number"/>
+    <span t-field="o.rfq_number"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/h2[1]/span[1]" position="replace"/>
 </data>
@@ -77,7 +77,7 @@
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -404,7 +404,7 @@
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -3349,13 +3349,13 @@
       </div>
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
     </div>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           
     
     
@@ -3365,28 +3365,28 @@
     
     
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </tr>
       </tbody>
@@ -3397,7 +3397,7 @@
       </div>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -3406,7 +3406,7 @@
     </table>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_3" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -3449,7 +3449,7 @@
   </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_1" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_1" t-as="table_line">
           
     
     
@@ -3460,25 +3460,25 @@
     
     
     <td>
-      <span t-field="table_line.x_studio_invoice_date"/>
+      <span t-field="table_line.accounting_invoice_date"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_partner"/>
+      <span t-field="table_line.partner"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_number"/>
+      <span t-field="table_line.number"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_product_id"/>
+      <span t-field="table_line.product_id"/>
     </td>
   <td>
       <span t-field="table_line.quantity"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_value"/>
+      <span t-field="table_line.value"/>
     </td>
   </tr>
       </tbody>
@@ -4942,7 +4942,7 @@
     <div class="row">
       <div class="col h2">
         <span>Indent Costing - </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -4962,7 +4962,7 @@
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
     </div>
@@ -5032,13 +5032,13 @@
       </div>
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
     </div>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           
     
     
@@ -5048,28 +5048,28 @@
     
     
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </tr>
       </tbody>
@@ -5080,7 +5080,7 @@
       </div>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5137,7 +5137,7 @@
   </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_jTZq4" t-as="table_line">
           
     
     
@@ -5150,28 +5150,28 @@
     
     
     <td>
-      <span t-field="table_line.x_studio_customer_acc"/>
+      <span t-field="table_line.customer_acc"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_customer_group"/>
+      <span t-field="table_line.customer_group"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_name"/>
+      <span t-field="table_line.accounting_name"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_product_1"/>
+      <span t-field="table_line.product_1"/>
     </td>
   <td>
       <span t-field="table_line.sales_order"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_invoice"/>
+      <span t-field="table_line.invoice"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_date"/>
+      <span t-field="table_line.date"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_product_category"/>
+      <span t-field="table_line.product_category"/>
     </td>
   <td>
       <span t-field="table_line.quantity"/>
@@ -5180,7 +5180,7 @@
       <span t-field="table_line.unit_price"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_value"/>
+      <span t-field="table_line.net_value"/>
     </td>
   </tr>
       </tbody>
@@ -5189,7 +5189,7 @@
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5200,7 +5200,7 @@
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5214,7 +5214,7 @@
     </div>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5224,7 +5224,7 @@
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_3" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5233,7 +5233,7 @@
     </table>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5242,7 +5242,7 @@
     </table>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -5266,9 +5266,9 @@
     <div class="row">
       <div class="col h2">
         <span>Indent Costing Final - </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -5288,7 +5288,7 @@
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -5748,7 +5748,7 @@
       <span t-field="table_line.order_id"/>
     </td>
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
     <td>
       <span t-field="table_line.partner_id.name" style="display:inline-block;width:150px"/>
@@ -5766,7 +5766,7 @@
       <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
     </td>
     <td class="text-end">
-      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+      <span t-field="table_line.Studio_Deliver_Remainder" style="color:#CE0000"/>
     </td>
     <td class="text-end">
       <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
@@ -6370,7 +6370,7 @@
       <span t-field="table_line.order_id"/>
     </td>
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
     <td>
       <span t-field="table_line.partner_id.name"/>
@@ -6388,7 +6388,7 @@
       <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
     </td>
     <td class="text-end">
-      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+      <span t-field="table_line.Studio_Deliver_Remainder" style="color:#CE0000"/>
     </td>
     <td class="text-end">
       <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
@@ -8083,7 +8083,7 @@
       <span t-field="table_line.order_id"/>
     </td>
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
     <td>
       <span t-field="table_line.partner_id.name" style="display:inline-block;width:150px"/>
@@ -8101,7 +8101,7 @@
       <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
     </td>
     <td class="text-end">
-      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+      <span t-field="table_line.Studio_Deliver_Remainder" style="color:#CE0000"/>
     </td>
     <td class="text-end">
       <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
@@ -8137,7 +8137,7 @@
     <div class="row">
       <div class="col h2">
         <span>Indent Costing - Working </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -8157,7 +8157,7 @@
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
     </div>
@@ -9004,7 +9004,7 @@
     <div class="row">
       <div class="col h2">
         <span>Indent Costing - </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -9024,7 +9024,7 @@
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -9110,7 +9110,7 @@
       <span t-field="table_line.order_id"/>
     </td>
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
     <td>
       <span t-field="table_line.partner_id.name" style="display:inline-block;width:150px"/>
@@ -9128,7 +9128,7 @@
       <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
     </td>
     <td class="text-end">
-      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+      <span t-field="table_line.Studio_Deliver_Remainder" style="color:#CE0000"/>
     </td>
     <td class="text-end">
       <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
@@ -9224,7 +9224,7 @@
       <span t-field="table_line.order_id"/>
     </td>
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
     <td>
       <span t-field="table_line.partner_id.name" style="display:inline-block;width:150px"/>
@@ -9242,7 +9242,7 @@
       <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
     </td>
     <td class="text-end">
-      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+      <span t-field="table_line.Studio_Deliver_Remainder" style="color:#CE0000"/>
     </td>
     <td class="text-end">
       <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
@@ -9344,7 +9344,7 @@
   </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           
     
     
@@ -9354,28 +9354,28 @@
     
     
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </tr>
       </tbody>
@@ -9401,7 +9401,7 @@
     <div class="row">
       <div class="col h2">
         <span>Indent Costing - Working </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -9421,7 +9421,7 @@
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
     </div>
@@ -12712,7 +12712,7 @@
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -12792,7 +12792,7 @@
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -13070,7 +13070,7 @@
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -17961,7 +17961,7 @@ Packing slip
             <div class="oe_structure"><p><br/></p></div>
 
             <h2 class="mt-4">Request for Quotation - 
-Remainder  <span t-field="o.x_studio_rfq_number"/></h2>
+Remainder  <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
 Purchasing Dept. - Mr. Deepal: 0719710 434, 11 2 239 250 Fax : 11 2 239 103, 11 2 229 995
@@ -18466,7 +18466,7 @@ Estimated Sheet</span></h2>
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -18657,7 +18657,7 @@ Estimated Sheet</span></h2>
     <record id="view_8241_qweb_faq" model="ir.ui.view">
       <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq-1</field>
-      <field name="model">x_website_faqs</field>
+      <field name="model">website_faqs</field>
       <field name="type">qweb</field>
       <field name="arch" type="xml">
         <t t-name="website_studio.faq-1">
@@ -18682,7 +18682,7 @@ Estimated Sheet</span></h2>
             </h1>
           </div>
         </div>
-        <div class="o_website_html" t-field="record.x_studio_website_description" data-editor-message="Drag building blocks to edit the website description of this record."/>
+        <div class="o_website_html" t-field="record.website_description" data-editor-message="Drag building blocks to edit the website description of this record."/>
       </div>
       <div class="oe_structure oe_new" data-editor-message="Drag building blocks to customize the footer of single record pages."/>
     </div>
@@ -18693,7 +18693,7 @@ Estimated Sheet</span></h2>
     <record id="view_8246_qweb_faq" model="ir.ui.view">
       <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq</field>
-      <field name="model">x_website_faqs</field>
+      <field name="model">website_faqs</field>
       <field name="type">qweb</field>
       <field name="arch" type="xml">
         <t t-name="website_studio.faq_partial">
@@ -18726,8 +18726,8 @@ Estimated Sheet</span></h2>
                 <div t-attf-class="#{'col-lg-3 col-md-4 col-sm-6' if layout_mode == 'grid' else 'col-12'} mb-3">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title text-primary" t-field="record.x_studio_question"/>
-                            <p class="card-text" t-field="record.x_studio_answer"/>
+                            <h5 class="card-title text-primary" t-field="record.question"/>
+                            <p class="card-text" t-field="record.answer"/>
                         </div>
                     </div>
                 </div>
@@ -18745,7 +18745,7 @@ Estimated Sheet</span></h2>
     <record id="view_8247_qweb_faq" model="ir.ui.view">
       <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq-2</field>
-      <field name="model">x_website_faqs</field>
+      <field name="model">website_faqs</field>
       <field name="type">qweb</field>
       <field name="arch" type="xml">
         <t t-name="website_studio.faq-2">
@@ -18802,7 +18802,7 @@ Estimated Sheet</span></h2>
     <record id="view_8248_qweb_faq" model="ir.ui.view">
       <field name="active" eval="True"/><field name="name">faq</field>
       <field name="key">website_studio.faq-2-8248</field>
-      <field name="model">x_website_faqs</field>
+      <field name="model">website_faqs</field>
       <field name="type">qweb</field>
       <field name="arch" type="xml">
         <t t-name="website_studio.faq">
@@ -18838,8 +18838,8 @@ Estimated Sheet</span></h2>
                     <div t-attf-class="#{'col-lg-3 col-md-4 col-sm-6' if layout_mode == 'grid' else 'col-12'} mb-3">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title text-primary" t-field="record.x_studio_question"/>
-                                <p class="card-text" t-field="record.x_studio_answer"/>
+                                <h5 class="card-title text-primary" t-field="record.question"/>
+                                <p class="card-text" t-field="record.answer"/>
                             </div>
                         </div>
                     </div>
@@ -20443,7 +20443,7 @@ Estimated Sheet</span></h2>
       <span t-field="table_line.order_id"/>
     </td>
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
     <td>
       <span t-field="table_line.partner_id.name" style="display:inline-block;width:150px"/>
@@ -20461,7 +20461,7 @@ Estimated Sheet</span></h2>
       <span t-field="table_line.qty_received" t-options-widget="&quot;&quot;"/>
     </td>
     <td class="text-end">
-      <span t-field="table_line.x_Studio_Deliver_Remainder" style="color:#CE0000"/>
+      <span t-field="table_line.Studio_Deliver_Remainder" style="color:#CE0000"/>
     </td>
     <td class="text-end">
       <span t-field="table_line.qty_invoiced" t-options-widget="&quot;&quot;"/>
@@ -20563,7 +20563,7 @@ Estimated Sheet</span></h2>
     <div class="row">
       <div class="col h2">
         <span>Indent Costing - </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -20583,7 +20583,7 @@ Estimated Sheet</span></h2>
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
     </div>
@@ -20632,7 +20632,7 @@ Estimated Sheet</span></h2>
     <div class="row">
       <div class="col h2">
         <span>Indent Costing - Working </span>
-  <span t-field="doc.x_studio_indent"/>
+  <span t-field="doc.indent"/>
   
     </div>
     </div>
@@ -20652,7 +20652,7 @@ Estimated Sheet</span></h2>
       <br/>
     </span>
   
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </div>
       <div class="col-3"/>
     </div>
@@ -20778,7 +20778,7 @@ Estimated Sheet</span></h2>
   </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           
     
     
@@ -20788,28 +20788,28 @@ Estimated Sheet</span></h2>
     
     
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </tr>
       </tbody>
@@ -20856,13 +20856,13 @@ Estimated Sheet</span></h2>
       </div>
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
     </div>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           
     
     
@@ -20872,28 +20872,28 @@ Estimated Sheet</span></h2>
     
     
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </tr>
       </tbody>
@@ -20904,7 +20904,7 @@ Estimated Sheet</span></h2>
       </div>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -20913,7 +20913,7 @@ Estimated Sheet</span></h2>
     </table>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_3" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -20956,7 +20956,7 @@ Estimated Sheet</span></h2>
   </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_1" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_1" t-as="table_line">
           
     
     
@@ -20967,25 +20967,25 @@ Estimated Sheet</span></h2>
     
     
     <td>
-      <span t-field="table_line.x_studio_invoice_date"/>
+      <span t-field="table_line.accounting_invoice_date"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_partner"/>
+      <span t-field="table_line.partner"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_number"/>
+      <span t-field="table_line.number"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_product_id"/>
+      <span t-field="table_line.product_id"/>
     </td>
   <td>
       <span t-field="table_line.quantity"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_value"/>
+      <span t-field="table_line.value"/>
     </td>
   </tr>
       </tbody>
@@ -21034,13 +21034,13 @@ Estimated Sheet</span></h2>
       </div>
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
     </div>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           
     
     
@@ -21050,28 +21050,28 @@ Estimated Sheet</span></h2>
     
     
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </tr>
       </tbody>
@@ -21082,7 +21082,7 @@ Estimated Sheet</span></h2>
       </div>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -21139,7 +21139,7 @@ Estimated Sheet</span></h2>
   </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_jTZq4" t-as="table_line">
           
     
     
@@ -21152,28 +21152,28 @@ Estimated Sheet</span></h2>
     
     
     <td>
-      <span t-field="table_line.x_studio_customer_acc"/>
+      <span t-field="table_line.customer_acc"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_customer_group"/>
+      <span t-field="table_line.customer_group"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_name"/>
+      <span t-field="table_line.accounting_name"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_product_1"/>
+      <span t-field="table_line.product_1"/>
     </td>
   <td>
       <span t-field="table_line.sales_order"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_invoice"/>
+      <span t-field="table_line.invoice"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_date"/>
+      <span t-field="table_line.date"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_product_category"/>
+      <span t-field="table_line.product_category"/>
     </td>
   <td>
       <span t-field="table_line.quantity"/>
@@ -21182,7 +21182,7 @@ Estimated Sheet</span></h2>
       <span t-field="table_line.unit_price"/>
     </td>
   <td>
-      <span t-field="table_line.x_studio_net_value"/>
+      <span t-field="table_line.net_value"/>
     </td>
   </tr>
       </tbody>
@@ -21191,7 +21191,7 @@ Estimated Sheet</span></h2>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -21202,7 +21202,7 @@ Estimated Sheet</span></h2>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -21216,7 +21216,7 @@ Estimated Sheet</span></h2>
     </div>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -21226,7 +21226,7 @@ Estimated Sheet</span></h2>
   
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_3" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -21235,7 +21235,7 @@ Estimated Sheet</span></h2>
     </table>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -21244,7 +21244,7 @@ Estimated Sheet</span></h2>
     </table>
     <table class="table o_report_block_table">
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -22777,7 +22777,7 @@ Estimated Sheet</span></h2>
             </t><div class="page">
             <div class="oe_structure"><p><br/></p></div>
 
-            <h2 class="mt-4">Request for Quotation <span t-field="o.x_studio_rfq_number"/></h2>
+            <h2 class="mt-4">Request for Quotation <span t-field="o.rfq_number"/></h2>
             <div id="informations" class="row mt16 mb16">
                 <div t-if="o.incoterm_id" class="col-3 bm-2">
                     <strong>Incoterm:</strong>
@@ -24250,7 +24250,7 @@ Estimated Sheet</span></h2>
     <span>Valid for </span>
   </xpath>
   <xpath expr="/t/t/div/div[3]/div/span" position="after">
-    <span t-field="doc.x_studio_sales_order_validity"/>
+    <span t-field="doc.sales_order_validity"/>
   </xpath>
   <xpath expr="/t/t/div/div[3]/div/span[1]" position="after">
     <span>New Text Block</span>
@@ -25220,7 +25220,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_sales_report_model_id_5" t-as="table_line">
+        <tr t-foreach="doc.sales_report_model_id_5" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25239,7 +25239,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_sales_report_model_id_4" t-as="table_line">
+        <tr t-foreach="doc.sales_report_model_id_4" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25258,7 +25258,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_sales_report_model_id_5" t-as="table_line">
+        <tr t-foreach="doc.sales_report_model_id_5" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25277,7 +25277,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25300,7 +25300,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_sales_report_model_id_5" t-as="table_line">
+        <tr t-foreach="doc.sales_report_model_id_5" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25320,7 +25320,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_sales_report_model_id_4" t-as="table_line">
+        <tr t-foreach="doc.sales_report_model_id_4" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25335,7 +25335,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_customer"/>
+      <span t-field="table_line.customer"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[1]" position="after">
@@ -25345,7 +25345,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="after">
     <td>
-      <span t-field="table_line.x_studio_total_invoice_amount"/>
+      <span t-field="table_line.total_invoice_amount"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]" position="replace"/>
@@ -25374,7 +25374,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25432,7 +25432,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_1rlRW" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_1rlRW" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25447,7 +25447,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_end"/>
+      <span t-field="table_line.accounting_end"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25457,7 +25457,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_start"/>
+      <span t-field="table_line.start"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[3]/thead[1]/tr[1]/th[3]" position="replace"/>
@@ -25469,7 +25469,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_started"/>
+      <span t-field="table_line.started"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25479,7 +25479,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_estimated"/>
+      <span t-field="table_line.estimated"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25489,7 +25489,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_status"/>
+      <span t-field="table_line.status"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25499,7 +25499,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_warehouse"/>
+      <span t-field="table_line.warehouse"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25519,7 +25519,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_product_code"/>
+      <span t-field="table_line.product_code"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25529,7 +25529,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_production_id"/>
+      <span t-field="table_line.production_id"/>
     </td>
   </xpath>
 </data>
@@ -25579,7 +25579,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_jTZq4" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25598,7 +25598,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_jTZq4" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25617,7 +25617,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25656,7 +25656,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25675,7 +25675,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25691,7 +25691,7 @@ Estimated Sheet</span></h2>
           <strong>Report Type:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_report_type"/>
+        <span t-field="doc.report_type"/>
       </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -25724,7 +25724,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_as_on_date"/>
+      <span t-field="table_line.as_on_date"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[3]/tbody[1]/tr[1]/td[1]" position="replace"/>
@@ -25741,7 +25741,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_jTZq4" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25766,7 +25766,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25785,7 +25785,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25807,7 +25807,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_jTZq4" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_jTZq4" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25822,7 +25822,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_net_value"/>
+      <span t-field="table_line.net_value"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[3]/thead[1]/tr[1]/th[2]" position="replace"/>
@@ -25854,7 +25854,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_product_category"/>
+      <span t-field="table_line.product_category"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25864,7 +25864,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_date"/>
+      <span t-field="table_line.date"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25874,7 +25874,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_invoice"/>
+      <span t-field="table_line.invoice"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25894,7 +25894,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_product_1"/>
+      <span t-field="table_line.product_1"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25904,7 +25904,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_name"/>
+      <span t-field="table_line.accounting_name"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25914,7 +25914,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_customer_group"/>
+      <span t-field="table_line.customer_group"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="before">
@@ -25924,7 +25924,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_customer_acc"/>
+      <span t-field="table_line.customer_acc"/>
     </td>
   </xpath>
 </data>
@@ -25943,7 +25943,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[5]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
     </div>
   </xpath>
@@ -25951,7 +25951,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[4]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
     </div>
   </xpath>
@@ -25972,7 +25972,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -25992,7 +25992,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_3" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_3" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26011,7 +26011,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id_1" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id_1" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26026,7 +26026,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[4]/tbody[1]/tr[1]/td[2]" position="replace"/>
@@ -26038,7 +26038,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_invoice_date"/>
+      <span t-field="table_line.accounting_invoice_date"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]/thead/tr/th[1]" position="before">
@@ -26048,7 +26048,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_value"/>
+      <span t-field="table_line.value"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]/thead/tr/th[1]" position="before">
@@ -26072,7 +26072,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_product_id"/>
+      <span t-field="table_line.product_id"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]/thead/tr/th[1]" position="before">
@@ -26082,7 +26082,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_number"/>
+      <span t-field="table_line.number"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]/thead/tr/th[1]" position="before">
@@ -26092,7 +26092,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_partner"/>
+      <span t-field="table_line.partner"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]/thead/tr/th[1]" position="before">
@@ -26102,7 +26102,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]/thead/tr/th[1]" position="before">
@@ -26112,7 +26112,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_invoice_date"/>
+      <span t-field="table_line.accounting_invoice_date"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[4]/tbody[1]/tr[1]/td[1]/span[1]" position="attributes">
@@ -26126,7 +26126,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[4]/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_invoice_date"/>
+      <span t-field="table_line.accounting_invoice_date"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[4]" position="after">
@@ -26165,7 +26165,7 @@ Estimated Sheet</span></h2>
           <strong>As on Date:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_as_on_date"/>
+        <span t-field="doc.as_on_date"/>
       </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -26182,7 +26182,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26201,7 +26201,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26218,7 +26218,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t[1]/t[1]/div[1]/table[2]/thead[1]" position="replace"/>
   <xpath expr="/t[1]/t[1]/div[1]/div[1]/div[1]" position="replace"/>
   <xpath expr="/t/t/div/div/div[1]" position="inside">
-    <span t-field="doc.x_studio_report_type"/>
+    <span t-field="doc.report_type"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/div[1]/div[1]" position="replace"/>
   <xpath expr="/t/t/div/table[1]" position="after">
@@ -26257,7 +26257,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26272,7 +26272,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[2]" position="replace"/>
@@ -26284,13 +26284,13 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[2]" position="replace"/>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]" position="replace"/>
   <xpath expr="/t/t/div/table/tbody/tr/td/span" position="after">
-    <span t-field="table_line.x_studio_achieve_cumulative_"/>
+    <span t-field="table_line.achieve_cumulative_"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/span[2]" position="replace"/>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/thead[1]" position="replace"/>
@@ -26342,7 +26342,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_daily_sales_report_id" t-as="table_line">
+        <tr t-foreach="doc.daily_sales_report_id" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26357,7 +26357,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_achieve_cumulative_"/>
+      <span t-field="table_line.achieve_cumulative_"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[2]" position="replace"/>
@@ -26369,7 +26369,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_s_target_cumulative"/>
+      <span t-field="table_line.s_target_cumulative"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
@@ -26379,7 +26379,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_net_invoice_value_cumulative"/>
+      <span t-field="table_line.net_invoice_value_cumulative"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
@@ -26389,7 +26389,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_achievement_"/>
+      <span t-field="table_line.achievement_"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
@@ -26399,7 +26399,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_m_sales_target"/>
+      <span t-field="table_line.m_sales_target"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
@@ -26409,7 +26409,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_net_invoice_value_month"/>
+      <span t-field="table_line.net_invoice_value_month"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
@@ -26419,7 +26419,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_net_invoice_value_day"/>
+      <span t-field="table_line.net_invoice_value_day"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/div[2]" position="after">
@@ -26458,7 +26458,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
     <td>
-      <span t-field="table_line.x_studio_sales_centre"/>
+      <span t-field="table_line.sales_centre"/>
     </td>
   </xpath>
 </data>
@@ -26853,7 +26853,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_Ff7zp" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_Ff7zp" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -26868,7 +26868,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_productdesc"/>
+      <span t-field="table_line.productdesc"/>
     </td>
   </xpath>
 </data>
@@ -26889,7 +26889,7 @@ Estimated Sheet</span></h2>
           <strong>Sales Order Validity:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_sales_order_validity"/>
+        <span t-field="doc.sales_order_validity"/>
       </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -26908,7 +26908,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t[1]/div[1]/div[1]/div[1]" position="replace"/>
   <xpath expr="/t/div/div[2]/div/span" position="after">
-    <span t-field="doc.x_studio_sales_order_validity"/>
+    <span t-field="doc.sales_order_validity"/>
   </xpath>
   <xpath expr="/t/div/div[1]/div[2]" position="inside">
     <span>New Text Block</span>
@@ -27525,7 +27525,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[2]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_pr_type"/>
+        <span t-field="doc.pr_type"/>
       </div>
     </div>
   </xpath>
@@ -27798,7 +27798,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div" position="inside">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_indent"/>
+        <span t-field="doc.indent"/>
       </div>
     </div>
   </xpath>
@@ -27884,7 +27884,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="after">
     <td>
-      <span t-field="table_line.x_studio_pr_type"/>
+      <span t-field="table_line.pr_type"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[2]" position="after">
@@ -28013,7 +28013,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[8]" position="after">
     <td>
-      <span t-field="table_line.x_Studio_Deliver_Remainder"/>
+      <span t-field="table_line.Studio_Deliver_Remainder"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[9]" position="after">
@@ -28073,7 +28073,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[13]" position="after">
     <td>
-      <span t-field="table_line.x_request_id"/>
+      <span t-field="table_line.request_id"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/tbody[1]/tr[1]/td[14]" position="replace"/>
@@ -28405,7 +28405,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_order_lines" t-as="table_line">
+        <tr t-foreach="doc.order_lines" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -29504,14 +29504,14 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[2]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_vendor"/>
+        <span t-field="doc.vendor"/>
       </div>
     </div>
   </xpath>
   <xpath expr="/t/t/div/div[3]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_vendor.name"/>
+        <span t-field="doc.vendor.name"/>
       </div>
     </div>
   </xpath>
@@ -29530,13 +29530,13 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/div[5]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_vendor"/>
+        <span t-field="doc.vendor"/>
       </div>
     </div>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/div[6]/div[1]" position="replace"/>
   <xpath expr="/t/t/div/div[5]/div[1]/span" position="after">
-    <span t-field="doc.x_studio_vendor"/>
+    <span t-field="doc.vendor"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/div[5]/div[1]/span[1]" position="replace"/>
   <xpath expr="/t/t/div/div[5]/div[2]/span" position="before">
@@ -29566,7 +29566,7 @@ Estimated Sheet</span></h2>
     <span t-field="doc.display_name"/>
   </xpath>
   <xpath expr="/t/t/div/div[7]/div[1]/span" position="after">
-    <span t-field="doc.x_studio_vendor"/>
+    <span t-field="doc.vendor"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/div[7]/div[1]/span[1]" position="replace"/>
   <xpath expr="/t/t/div/div[7]" position="after">
@@ -29595,7 +29595,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_Ff7zp" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_Ff7zp" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -29610,7 +29610,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_productdesc"/>
+      <span t-field="table_line.productdesc"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[2]" position="replace"/>
@@ -29622,7 +29622,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="after">
     <td>
-      <span t-field="table_line.x_studio_many2one_field_pQKBN"/>
+      <span t-field="table_line.many2one_field_pQKBN"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[2]" position="after">
@@ -29632,7 +29632,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[2]" position="after">
     <td>
-      <span t-field="table_line.x_studio_uom"/>
+      <span t-field="table_line.uom"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[3]" position="after">
@@ -29686,7 +29686,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[5]" position="after">
     <td>
-      <span t-field="table_line.x_studio_amount"/>
+      <span t-field="table_line.amount"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/div[8]/div[1]/span" position="replace">
@@ -29721,7 +29721,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_one2many_field_Ff7zp" t-as="table_line">
+        <tr t-foreach="doc.one2many_field_Ff7zp" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -29816,7 +29816,7 @@ Estimated Sheet</span></h2>
           <strong>Note to Supplier:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_note_to_supplier"/>
+        <span t-field="doc.note_to_supplier"/>
       </div>
       <div class="col-3"/>
     </div>
@@ -29861,7 +29861,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_many2one_field_btM1W.quality_alert_ids" t-as="table_line">
+        <tr t-foreach="doc.many2one_field_btM1W.quality_alert_ids" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -30264,7 +30264,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t[1]/t[1]/t[1]/span[1]" position="replace"/>
   <xpath expr="/t/t/t/p" position="after">
-    <span t-field="doc.x_studio_gross_margin_percentage_1"/>
+    <span t-field="doc.gross_margin_percentage_1"/>
   </xpath>
 </data>
       </field>
@@ -30519,7 +30519,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_estimated_line_ids" t-as="table_line">
+        <tr t-foreach="doc.estimated_line_ids" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -30534,7 +30534,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_transaction_type"/>
+      <span t-field="table_line.transaction_type"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[1]/thead[1]/tr[1]/th[2]" position="replace"/>
@@ -30546,7 +30546,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td" position="after">
     <td>
-      <span t-field="table_line.x_studio_category"/>
+      <span t-field="table_line.category"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[2]" position="after">
@@ -30556,7 +30556,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[2]" position="after">
     <td>
-      <span t-field="table_line.x_studio_estimated_amt"/>
+      <span t-field="table_line.estimated_amt"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[3]" position="after">
@@ -30566,7 +30566,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[3]" position="after">
     <td>
-      <span t-field="table_line.x_studio_actual_cost"/>
+      <span t-field="table_line.actual_cost"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/thead/tr/th[4]" position="after">
@@ -30576,7 +30576,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[4]" position="after">
     <td>
-      <span t-field="table_line.x_studio_balance_cost"/>
+      <span t-field="table_line.balance_cost"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table/tbody/tr/td[2]/span" position="attributes">
@@ -30616,7 +30616,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_actual_line_ids" t-as="table_line">
+        <tr t-foreach="doc.actual_line_ids" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -30631,7 +30631,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[2]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_transaction_type_1"/>
+      <span t-field="table_line.transaction_type_1"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[2]/thead[1]/tr[1]/th[2]" position="replace"/>
@@ -30643,7 +30643,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[2]/tbody/tr/td" position="after">
     <td>
-      <span t-field="table_line.x_studio_other_expenses"/>
+      <span t-field="table_line.other_expenses"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[2]/thead/tr/th[2]" position="after">
@@ -30653,7 +30653,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[2]/tbody/tr/td[2]" position="after">
     <td>
-      <span t-field="table_line.x_studio_estimated_total"/>
+      <span t-field="table_line.estimated_total"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[2]/thead/tr/th[3]" position="after">
@@ -30663,7 +30663,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[2]/tbody/tr/td[3]" position="after">
     <td>
-      <span t-field="table_line.x_studio_cost_price"/>
+      <span t-field="table_line.cost_price"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[2]/thead/tr/th[4]" position="after">
@@ -30673,7 +30673,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[2]/tbody/tr/td[4]" position="after">
     <td>
-      <span t-field="table_line.x_studio_variance_est_act"/>
+      <span t-field="table_line.variance_est_act"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[2]/thead/tr/th[2]/span" position="replace">
@@ -30691,7 +30691,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[1]/tbody/tr/td[2]" position="after">
     <td>
-      <span t-field="table_line.x_studio_group_title"/>
+      <span t-field="table_line.group_title"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[1]/tbody/tr/td[3]/span" position="attributes">
@@ -30769,7 +30769,7 @@ Estimated Sheet</span></h2>
         </tr>
       </thead>
       <tbody>
-        <tr t-foreach="doc.x_studio_invoice_details_line_ids" t-as="table_line">
+        <tr t-foreach="doc.invoice_details_line_ids" t-as="table_line">
           <td>
             <span t-field="table_line.display_name"/>
           </td>
@@ -30784,7 +30784,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td" position="before">
     <td>
-      <span t-field="table_line.x_studio_invoice_no"/>
+      <span t-field="table_line.invoice_no"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[1]" position="after">
@@ -30794,7 +30794,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[1]" position="after">
     <td>
-      <span t-field="table_line.x_studio_invoice_date"/>
+      <span t-field="table_line.accounting_invoice_date"/>
     </td>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[3]/thead[1]/tr[1]/th[3]" position="replace"/>
@@ -30806,7 +30806,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[2]" position="after">
     <td>
-      <span t-field="table_line.x_studio_status"/>
+      <span t-field="table_line.status"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[3]" position="after">
@@ -30816,7 +30816,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[3]" position="after">
     <td>
-      <span t-field="table_line.x_studio_payment_status"/>
+      <span t-field="table_line.payment_status"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[4]" position="after">
@@ -30826,7 +30826,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[4]" position="after">
     <td>
-      <span t-field="table_line.x_studio_group_title"/>
+      <span t-field="table_line.group_title"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/thead/tr/th[5]" position="after">
@@ -30836,7 +30836,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[5]" position="after">
     <td>
-      <span t-field="table_line.x_studio_amount"/>
+      <span t-field="table_line.amount"/>
     </td>
   </xpath>
   <xpath expr="/t/t/div/table[3]/tbody/tr/td[5]" position="attributes">
@@ -30848,16 +30848,16 @@ Estimated Sheet</span></h2>
     </span>
   </xpath>
   <xpath expr="/t/t/div/div[3]/div/span" position="after">
-    <span t-field="doc.x_studio_project_no"/>
+    <span t-field="doc.project_no"/>
   </xpath>
   <xpath expr="/t/t/div/div[4]/div/span" position="after">
-    <span t-field="doc.x_studio_project_no.partner_id"/>
+    <span t-field="doc.project_no.partner_id"/>
   </xpath>
   <xpath expr="/t/t/div/div[5]/div/span" position="after">
-    <span t-field="doc.x_studio_project_no.date_start"/>
+    <span t-field="doc.project_no.date_start"/>
   </xpath>
   <xpath expr="/t/t/div/div[6]/div/span" position="after">
-    <span t-field="doc.x_studio_project_no.date"/>
+    <span t-field="doc.project_no.date"/>
   </xpath>
 </data>
       </field>
@@ -30958,7 +30958,7 @@ Estimated Sheet</span></h2>
   <xpath expr="/t/t/div/table[4]" position="after">
     <div class="row">
       <div class="col">
-        <span t-field="doc.x_studio_create_header_charges"/>
+        <span t-field="doc.create_header_charges"/>
       </div>
     </div>
   </xpath>
@@ -31134,7 +31134,7 @@ Estimated Sheet</span></h2>
     <span>Indent Cost Estimation</span>
   </xpath>
   <xpath expr="/t/t/div/div[1]/div/span[1]" position="after">
-    <span t-field="doc.x_studio_indent"/>
+    <span t-field="doc.indent"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/table[9]/thead[1]" position="replace"/>
   <xpath expr="/t[1]/t[1]/div[1]/table[8]/tbody[1]/tr[1]/td[2]" position="replace"/>
@@ -31292,7 +31292,7 @@ Estimated Sheet</span></h2>
           <strong>PR Reference:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_selection_field_8m78i"/>
+        <span t-field="doc.selection_field_8m78i"/>
       </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -31300,7 +31300,7 @@ Estimated Sheet</span></h2>
     </div>
   </xpath>
   <xpath expr="/t/t/div/div[7]/div[1]/span[1]/strong" position="after">
-    <span t-field="doc.x_studio_selection_field_8m78i"/>
+    <span t-field="doc.selection_field_8m78i"/>
   </xpath>
   <xpath expr="/t/t/div/div[7]" position="after">
     <table class="table o_report_block_table">
@@ -31367,7 +31367,7 @@ Estimated Sheet</span></h2>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/div[1]/div[1]/span[2]" position="replace"/>
   <xpath expr="/t/t/div/div/div/span" position="after">
-    <span t-field="doc.x_studio_indent"/>
+    <span t-field="doc.indent"/>
   </xpath>
   <xpath expr="/t/t/div/div" position="after">
     <div class="row">
@@ -31396,10 +31396,10 @@ Estimated Sheet</span></h2>
     </span>
   </xpath>
   <xpath expr="/t/t/div/div[3]/div[2]" position="inside">
-    <span t-field="doc.x_studio_delivery_date"/>
+    <span t-field="doc.delivery_date"/>
   </xpath>
   <xpath expr="/t/t/div/div[1]/div/span[1]" position="after">
-    <span t-field="doc.x_studio_indent"/>
+    <span t-field="doc.indent"/>
   </xpath>
 </data>
       </field>
@@ -31429,7 +31429,7 @@ Estimated Sheet</span></h2>
           <strong>Indent:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_indent"/>
+        <span t-field="doc.indent"/>
       </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -31440,10 +31440,10 @@ Estimated Sheet</span></h2>
     <strong>Indent Number :</strong>
   </xpath>
   <xpath expr="/t/t/div/div[2]/div[2]" position="inside">
-    <span t-field="doc.x_studio_indent"/>
+    <span t-field="doc.indent"/>
   </xpath>
   <xpath expr="/t/t/div/div[1]/div/span" position="after">
-    <span t-field="doc.x_studio_indent"/>
+    <span t-field="doc.indent"/>
   </xpath>
   <xpath expr="/t[1]/t[1]/div[1]/div[2]/div[1]/span[1]/strong[1]" position="replace"/>
   <xpath expr="/t/t/div/div[1]" position="after">
@@ -31454,7 +31454,7 @@ Estimated Sheet</span></h2>
           <strong>Indent:</strong>
           <br/>
         </span>
-        <span t-field="doc.x_studio_indent"/>
+        <span t-field="doc.indent"/>
       </div>
       <div class="col-3"/>
       <div class="col-3"/>
@@ -31740,8 +31740,8 @@ Estimated Sheet</span></h2>
                     <!-- ===== Column 2 ===== -->
                     <div class="col-6">
                         <span style="white-space: pre-line;">
-                        RFQ Number          : <span t-field="o.x_studio_rfq_number"/>
-                        Delivery Date       : <span t-field="o.x_studio_delivery_date"/>
+                        RFQ Number          : <span t-field="o.rfq_number"/>
+                        Delivery Date       : <span t-field="o.delivery_date"/>
                         Deadline date       : <span t-field="o.date_order"/>
                         </span>
                         <span>
@@ -32773,7 +32773,7 @@ Estimated Sheet</span></h2>
                         <div class="col-4">
                             <span style="white-space: pre-line;">
                                 PO Number: <span t-field="o.name"/>
-                                Delivery Date : <span t-field="o.x_studio_delivery_date"/>
+                                Delivery Date : <span t-field="o.delivery_date"/>
                                 Customer reference: <span t-field="o.partner_ref"/>
                                 Customer requisition: <span t-field="o.partner_id"/>
                                 Payment Term: <span t-field="o.payment_term_id"/>

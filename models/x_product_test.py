@@ -19,7 +19,7 @@ class X_product_test(models.Model):
     x_studio_many2one_field_wTxgi = fields.Many2one(
         comodel_name="account.move", string="Journal Entry"
     )
-    x_studio_product_1 = fields.Many2one(
+    product_1 = fields.Many2one(
         comodel_name="product.template", string="Product_1"
     )
     sequence = fields.Integer(string="Sequence")

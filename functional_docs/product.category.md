@@ -6,7 +6,7 @@
 
 *Extends a model created by `product`.* Python: `models/product_category.py`.
 
-Other repos that use this model: `account.analytic.account.bugfix_analytics_product_category_id` (BugFix-Analytics)<br>`account.move.line.x_studio_product_category` (BugFix-Accounting)<br>`automation BugFix-Sales.base_automation_291_jin_company_id_in_product_category` (BugFix-Sales)<br>`server action BugFix-Sales.server_action_2623_jin_company_id_in_product_category` (BugFix-Sales)<br>`x_rm_none_moving.x_studio_product_category` (BugFix-Accounting)<br>`x_rm_sales_order_line.x_studio_product_category` (BugFix-Accounting)<br>`x_rm_sales_prod_purch.x_studio_product_category` (BugFix-Accounting)
+Other repos that use this model: `account.analytic.account.bugfix_analytics_product_category_id` (BugFix-Analytics)<br>`account.move.line.product_category` (BugFix-Accounting)<br>`automation BugFix-Sales.base_automation_291_jin_company_id_in_product_category` (BugFix-Sales)<br>`server action BugFix-Sales.server_action_2623_jin_company_id_in_product_category` (BugFix-Sales)<br>`rm_none_moving.product_category` (BugFix-Accounting)<br>`rm_sales_order_line.product_category` (BugFix-Accounting)<br>`rm_sales_prod_purch.product_category` (BugFix-Accounting)
 
 **Summary:**
 

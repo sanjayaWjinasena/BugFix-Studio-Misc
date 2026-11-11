@@ -5,7 +5,7 @@
       <field name="model">x_test02</field>
       <field name="type">form</field>
       <field name="arch" type="xml">
-        <form><field name="x_studio_status" invisible="1"/>
+        <form><field name="status" invisible="1"/>
   <header>
     <!-- upgrade-testing: "Move to Second" (numeric action 1575) is added by views/x_test02_buttons_late.xml, after its server action loads -->
   </header>
@@ -152,9 +152,9 @@
   <!-- STRIPPED xpath: numeric button ref unresolvable -->
   <!-- STRIPPED xpath: numeric button ref unresolvable -->
   <xpath expr="//group[@name='studio_group_a1036a_left']" position="inside">
-    <field name="x_studio_status_1" string="Status"/>
-    <field name="x_studio_status" string="Status" invisible="1"/>
-    <field name="x_studio_date" string="Date"/>
+    <field name="status_1" string="Status"/>
+    <field name="status" string="Status" invisible="1"/>
+    <field name="date" string="Date"/>
     <field name="x_studio_status2" string="Status2" invisible="1"/>
     <field name="x_studio_test_number_1" string="Test Number" invisible="1"/>
   </xpath>
@@ -172,7 +172,7 @@
     <field name="accounting_company_id" string="Company"/>
     <field name="x_studio_chk_atomated_action" string="CHK Atomated Action"/>
     <field name="x_studio_chk_server_action" string="CHK Server Action"/>
-    <field name="x_currency_id"/>
+    <field name="currency_id"/>
     <field name="x_studio_test_03" string="Test 03"/>
     <field name="x_studio_test_number_2" string="Test Number 2" invisible="1"/>
     <field name="x_studio_text_field_eKlfk" invisible="1"/>
@@ -186,7 +186,7 @@
     <field name="inherit_id" ref="BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02"/>
     <field name="arch" type="xml">
       <xpath expr="//header[1]" position="inside">
-        <button type="action" name="%(BugFix-Studio-Misc.server_action_1575_update_status)d" string="Move to Second" class="btn-primary" invisible="x_studio_status == 'S2'"/>
+        <button type="action" name="%(BugFix-Studio-Misc.server_action_1575_update_status)d" string="Move to Second" class="btn-primary" invisible="status == 'S2'"/>
       </xpath>
     </field>
   </record>

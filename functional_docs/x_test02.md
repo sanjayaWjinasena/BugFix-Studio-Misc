@@ -36,30 +36,30 @@ TEST02 is a Studio sandbox model for trying out fields, layouts, approvals and a
 | `write_date` | Last Updated on | datetime | Date and time the record was last changed (automatic). | stored |  |  |
 | `write_uid` | Last Updated by | many2one → `res.users` | User who last changed the record (automatic). | stored | `model res.users` (base) |  |
 | `active` | Active | boolean | Archive flag of TEST02 records (defaults to active via an ir.default); unticking archives the record and hides it from default searches. Shown in the form and search views. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_31_x_test02_active`<br>`view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02`<br>`view BugFix-Studio-Misc.view_2415_default_search_view_for_x_test02` |
-| `x_currency_id` | Currency | many2one → `res.currency` | Currency of a TEST02 record (default set by an ir.default), used for its monetary test fields; shown on the Studio form. Sandbox model. | stored | `model res.currency` (base) | `default BugFix-Studio-Misc.default_578_x_test02_x_currency_id`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `currency_id` | Currency | many2one → `res.currency` | Currency of a TEST02 record (default set by an ir.default), used for its monetary test fields; shown on the Studio form. Sandbox model. | stored | `model res.currency` (base) | `default BugFix-Studio-Misc.default_578_x_test02_currency_id`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `name` | Name | char | Name of a TEST02 sandbox record; shown in its list, form, search and kanban views. The 'User Location Validation-TEST' action in BugFix-Stock writes transfer source locations into it. Part of a Studio test/sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_2268_sample_server_action_2`<br>`view BugFix-Studio-Misc.view_2413_default_list_view_for_x_test02`<br>`view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02`<br>`view BugFix-Studio-Misc.view_2415_default_search_view_for_x_test02`<br>`view BugFix-Studio-Misc.view_2955_default_kanban_view_for_ir_model_782` |
-| `x_studio_charges_1` | Charges-1 | many2many → `x_trf_charges` | Many2many test link from TEST02 to TRF charges (`x_trf_charges`), shown on the Studio form; used in sample server action experiments. Sandbox model. | stored | `model x_trf_charges` (BugFix-Purchase) | `server action BugFix-Studio-Misc.server_action_1743_sample_server_action`<br>`server action BugFix-Studio-Misc.server_action_2268_sample_server_action_2`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
-| `x_studio_charges_2` | Charges-2 | many2many → `x_trf_charges` | Many2many test link from TEST02 to TRF charges (`x_trf_charges`), shown on the Studio form; used in sample server action-2 experiments. Sandbox model. | stored | `model x_trf_charges` (BugFix-Purchase) | `server action BugFix-Studio-Misc.server_action_2268_sample_server_action_2`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `x_studio_charges_1` | Charges-1 | many2many → `trf_charges` | Many2many test link from TEST02 to TRF charges (`trf_charges`), shown on the Studio form; used in sample server action experiments. Sandbox model. | stored | `model trf_charges` (BugFix-Purchase) | `server action BugFix-Studio-Misc.server_action_1743_sample_server_action`<br>`server action BugFix-Studio-Misc.server_action_2268_sample_server_action_2`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `x_studio_charges_2` | Charges-2 | many2many → `trf_charges` | Many2many test link from TEST02 to TRF charges (`trf_charges`), shown on the Studio form; used in sample server action-2 experiments. Sandbox model. | stored | `model trf_charges` (BugFix-Purchase) | `server action BugFix-Studio-Misc.server_action_2268_sample_server_action_2`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_chk_atomated_action` | CHK Atomated Action | integer | Test integer (default via ir.default) set by the CHK Sample Automated Action to Test Value + Testing02 + 100; shown on the TEST02 Studio form. Sandbox model used to time automated actions. | stored |  | `default BugFix-Studio-Misc.default_575_x_test02_x_studio_chk_atomated_action`<br>`server action BugFix-Studio-Misc.sa_f5_x_test02_chk_sample_automated_action`<br>`server action BugFix-Studio-Misc.server_action_2798_chk_sample_automated_action`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_chk_server_action` | CHK Server Action | integer | Test integer (default via ir.default) set by the CHK Sample Server Action to Test Value + Testing02; shown on the TEST02 Studio form. Sandbox model. | stored |  | `default BugFix-Studio-Misc.default_576_x_test02_x_studio_chk_server_action`<br>`server action BugFix-Studio-Misc.server_action_2797_chk_sample_server_action`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `accounting_company_id` | Company | many2one → `res.company` | Many2one link labelled 'Company' to `res.company` records, chosen by the user. Shown in the form view. Part of a Studio test/sandbox model. | stored | `model res.company` (base) | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
-| `x_studio_date` | Date | datetime | Test date-time on a TEST02 record, entered by the user; read by sample server action 1 (shows its difference from now). Shown on the Studio form. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_1743_sample_server_action`<br>`server action BugFix-Studio-Misc.server_action_2223_sample_server_action_1`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `date` | Date | datetime | Test date-time on a TEST02 record, entered by the user; read by sample server action 1 (shows its difference from now). Shown on the Studio form. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_1743_sample_server_action`<br>`server action BugFix-Studio-Misc.server_action_2223_sample_server_action_1`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_float_field_skhh9` | Test Number | float | User-entered float value labelled 'Test Number'. Not used by any view or logic in this repo. Part of a Studio test/sandbox model. | stored |  |  |
 | `x_studio_jam` | New Text | char | User-entered char value labelled 'New Text'. Not used by any view or logic in this repo. Part of a Studio test/sandbox model. | stored |  |  |
 | `x_studio_jam_1` | JAM | char | User-entered char value labelled 'JAM'. Shown in the form view. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_jin` | JIN | char | User-entered char value labelled 'JIN'. Not used by any view or logic in this repo. Part of a Studio test/sandbox model. | stored |  |  |
 | `x_studio_jin_2` | JIN | char | User-entered char value labelled 'JIN'. Shown in the form view. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
-| `x_studio_many2many_field_JKvVx` | Misc Charge Codes | many2many → `x_misc_charge_codes` | Many2many link labelled 'Misc Charge Codes' to `x_misc_charge_codes` records, chosen by the user. Not used by any view or logic in this repo. Part of a Studio test/sandbox model. | stored | `model x_misc_charge_codes` (BugFix-Stock) |  |
-| `x_studio_many2many_field_c0IAp` | Charges | many2many → `x_trf_charges` | Many2many link labelled 'Charges' to `x_trf_charges` records, chosen by the user. Shown in the form view. Part of a Studio test/sandbox model. | stored | `model x_trf_charges` (BugFix-Purchase) | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `x_studio_many2many_field_JKvVx` | Misc Charge Codes | many2many → `misc_charge_codes` | Many2many link labelled 'Misc Charge Codes' to `misc_charge_codes` records, chosen by the user. Not used by any view or logic in this repo. Part of a Studio test/sandbox model. | stored | `model misc_charge_codes` (BugFix-Stock) |  |
+| `x_studio_many2many_field_c0IAp` | Charges | many2many → `trf_charges` | Many2many link labelled 'Charges' to `trf_charges` records, chosen by the user. Shown in the form view. Part of a Studio test/sandbox model. | stored | `model trf_charges` (BugFix-Purchase) | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_name_1` | Name-1 | char | Second name text on TEST02; the 'User Location Validation-TEST' action (BugFix-Stock) writes a transfer's destination location into it. Shown in the Studio list view. Sandbox model. | stored |  | `view BugFix-Studio-Misc.view_5420_odoo_studio_default_list_view_for_x_test02_customization_ext` |
 | `x_studio_one2many_field_51FSD` | New One2many | one2many → `x_test_layout` | One2many list 'New One2many' of `x_test_layout` records belonging to this record. Shown in the form view. Part of a Studio test/sandbox model. | stored | `model x_test_layout` | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_one2many_field_D3cuD` | New One2many | one2many → `x_test_layout` | One2many list 'New One2many' of `x_test_layout` records belonging to this record. Not used by any view or logic in this repo. Part of a Studio test/sandbox model. | stored | `model x_test_layout` |  |
 | `x_studio_one2many_field_Q8Xws` | New One2many | one2many → `x_test_layout` | One2many list 'New One2many' of `x_test_layout` records belonging to this record. Shown in the form view. Part of a Studio test/sandbox model. | stored | `model x_test_layout` | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
-| `x_studio_pipeline_status_bar` | Pipeline status bar | selection: status1=First Status; status2=Second Status; status3=Third Status; Fourth Status=Fourth Status | Pipeline status of a TEST02 record (First/Second/Third/Fourth Status), default set by an ir.default; set to Second Status by the Update Status action. Sandbox model. | stored |  | `default BugFix-Studio-Misc.default_243_x_test02_x_studio_pipeline_status_bar`<br>`server action BugFix-Studio-Misc.server_action_1575_update_status` |
+| `pipeline_status_bar` | Pipeline status bar | selection: status1=First Status; status2=Second Status; status3=Third Status; Fourth Status=Fourth Status | Pipeline status of a TEST02 record (First/Second/Third/Fourth Status), default set by an ir.default; set to Second Status by the Update Status action. Sandbox model. | stored |  | `default BugFix-Studio-Misc.default_243_x_test02_pipeline_status_bar`<br>`server action BugFix-Studio-Misc.server_action_1575_update_status` |
 | `sequence` | Sequence | integer | Integer sort order for TEST02 records (default set by an ir.default), used to order them in lists. Shown in the list view. Part of a Studio test/sandbox model. | stored |  | `default BugFix-Studio-Misc.default_32_x_test02_sequence`<br>`view BugFix-Studio-Misc.view_2413_default_list_view_for_x_test02` |
-| `x_studio_status` | Status | selection: S1=S1; S2=S2; S3=S3 | Test status selection (S1/S2/S3) on TEST02, shown on its forms; referenced by the MST data clean-up scripts. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_2799_mst_odoo_data_clean_up`<br>`server action BugFix-Studio-Misc.server_action_2831_mst_odoo_data_clean_up_001`<br>`server action BugFix-Studio-Misc.server_action_2883_mst_odoo_data_clean_up_004`<br>`view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `status` | Status | selection: S1=S1; S2=S2; S3=S3 | Test status selection (S1/S2/S3) on TEST02, shown on its forms; referenced by the MST data clean-up scripts. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_2799_mst_odoo_data_clean_up`<br>`server action BugFix-Studio-Misc.server_action_2831_mst_odoo_data_clean_up_001`<br>`server action BugFix-Studio-Misc.server_action_2883_mst_odoo_data_clean_up_004`<br>`view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_status2` | Status2 | selection: S5=S5; S6=S6 | User-entered selection value labelled 'Status2'. Shown in the form view. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
-| `x_studio_status_1` | Status | selection: Status 01=Status 01; Status 02=Status 02 | Test status selection (Status 01/Status 02) on TEST02, shown on the Studio form; the Test - Layout Changes action raises 'Found1' or 'Found2' depending on it. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.sa_f5_x_test02_test_layout_changes`<br>`server action BugFix-Studio-Misc.server_action_2108_test_layout_changes`<br>`server action BugFix-Studio-Misc.server_action_2799_mst_odoo_data_clean_up`<br>`server action BugFix-Studio-Misc.server_action_2883_mst_odoo_data_clean_up_004`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
+| `status_1` | Status | selection: Status 01=Status 01; Status 02=Status 02 | Test status selection (Status 01/Status 02) on TEST02, shown on the Studio form; the Test - Layout Changes action raises 'Found1' or 'Found2' depending on it. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.sa_f5_x_test02_test_layout_changes`<br>`server action BugFix-Studio-Misc.server_action_2108_test_layout_changes`<br>`server action BugFix-Studio-Misc.server_action_2799_mst_odoo_data_clean_up`<br>`server action BugFix-Studio-Misc.server_action_2883_mst_odoo_data_clean_up_004`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_test_03` | Test 03 | monetary | Test monetary amount on TEST02 (in the record's Currency), shown on the Studio form. Sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_test_char` | Test Char | char | Test text on TEST02 shown on the Studio form; referenced only by sample server action-2 experiments. Sandbox model. | stored |  | `server action BugFix-Studio-Misc.server_action_2268_sample_server_action_2`<br>`view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
 | `x_studio_test_number_1` | Test Number | float | User-entered float value labelled 'Test Number'. Shown in the form view. Part of a Studio test/sandbox model. | stored |  | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` |
@@ -148,13 +148,13 @@ _logger.info("JLD Automated Action Start Time: %s", datetime.datetime.now())
   </details>
 - **Execute Code** (`server_action_2108_test_layout_changes`, type `code`)
   - Function: Run by the Test - Layout Changes automation on TEST02: always raises 'Found1' or 'Found2' depending on Status. Sandbox only.
-  - Depends on: `model x_test02`, `x_test02.x_studio_status_1`
+  - Depends on: `model x_test02`, `x_test02.status_1`
   - Used by: `automation BugFix-Studio-Misc.base_automation_183_test_layout_changes`
   <details><summary>code (9 lines)</summary>
 
 ```python
 if record.id:
-    if record.x_studio_status_1 == "Status 02":
+    if record.status_1 == "Status 02":
         # record.blocked  = False
         # record.readonly  = True
         raise UserError("Found2")
@@ -165,7 +165,7 @@ if record.id:
   </details>
 - **MST - ODOO Data Clean-up** (`server_action_2799_mst_odoo_data_clean_up`, type `code`)
   - Function: Data clean-up script run from TEST02 (very long, mostly commented-out) for resetting and deleting transactional records such as purchase requests and consignments. Dangerous one-off maintenance tool.
-  - Depends on: `model account.bank.statement` (account), `model account.move.line` (account), `model account.move` (account), `model helpdesk.ticket` (helpdesk), `model hr.attendance.overtime` (hr_attendance)<details><summary>+70 more</summary>`model mrp.production` (mrp), `model planning.slot` (planning), `model pos.config` (point_of_sale), `model pos.order` (point_of_sale), `model pos.payment` (point_of_sale), `model pos.session` (point_of_sale), `model project.milestone` (project), `model project.project` (project), `model project.sale.line.employee.map` (sale_timesheet), `model project.task` (project), `model project.update` (project), `model repair.order` (repair), `model stock.landed.cost` (stock_landed_costs), `model x_con_consolidated_hea` (BugFix-Stock), `model x_con_consolidated_lin` (BugFix-Stock), `model x_consignment_charge_h` (BugFix-Stock), `model x_consignment_charge_l` (BugFix-Stock), `model x_consignment_header` (BugFix-Stock), `model x_consignment_line` (BugFix-Stock), `model x_import_rfq_charge_he` (BugFix-Purchase), `model x_import_rfq_charge_li` (BugFix-Purchase), `model x_lc_header` (BugFix-Accounting), `model x_mass_produce_serial_` (BugFix-MRP), `model x_mass_produce_serial` (BugFix-MRP), `model x_material_request` (BugFix-Stock), `model x_mr_config` (BugFix-Stock), `model x_mrp_bom_general_cost` (BugFix-MRP), `model x_mrp_bom_labour_cost` (BugFix-MRP), `model x_mrp_bom_material_cos` (BugFix-MRP), `model x_mrp_bom_overhead_cos` (BugFix-MRP), `model x_po_line_non_inventor` (BugFix-Purchase), `model x_po_non_inventory` (BugFix-Purchase), `model x_pr_line_cash` (BugFix-Purchase), `model x_pr_non_inventory` (BugFix-Purchase), `model x_pump_price_costing` (BugFix-Accounting), `model x_purchase_request_cas` (BugFix-Purchase), `model x_purchase_request_lin` (BugFix-Purchase), `model x_purchase_request` (BugFix-Purchase), `model x_rm_cust_invoice_s1` (BugFix-Accounting), `model x_rm_customer_wise_inv` (BugFix-Accounting), `model x_rm_daily_s1` (BugFix-Accounting), `model x_rm_daily_s2` (BugFix-Accounting), `model x_rm_daily_s3` (BugFix-Accounting), `model x_rm_daily_sales_repor` (BugFix-Accounting), `model x_rm_gross_margin_actu` (BugFix-Accounting), `model x_rm_gross_margin_comp` (BugFix-Accounting), `model x_rm_gross_margin_esti_line_7e86d` (BugFix-Accounting), `model x_rm_gross_margin_esti` (BugFix-Accounting), `model x_rm_gross_margin_invo` (BugFix-Accounting), `model x_rm_none_moving` (BugFix-Accounting), `model x_rm_prod_summary_spli` (BugFix-Accounting), `model x_rm_production_orders` (BugFix-Accounting), `model x_rm_production_varian` (BugFix-Accounting), `model x_rm_sales_order_line` (BugFix-Accounting), `model x_rm_sales_prod_purch` (BugFix-Accounting), `model x_sales_model_debug`, `model x_sales_report_model` (Jinasena_Masterdata_Reporting), `model task_diagnosis` (Fix-repair), `model x_temp_estimated` (BugFix-Accounting), `model x_temp_tp_invoice_head` (BugFix-Accounting), `model x_temp_tp_invoice_line` (BugFix-Accounting), `model x_test02`, `model x_test_layout`, `model x_test_model_link_2`, `model x_test_model_link`, `model x_test_model_primary`, `model x_tp_invoice_header` (BugFix-Accounting), `model x_tp_invoice_line` (BugFix-Accounting), `x_test02.x_studio_status_1`, `x_test02.x_studio_status`</details>
+  - Depends on: `model account.bank.statement` (account), `model account.move.line` (account), `model account.move` (account), `model helpdesk.ticket` (helpdesk), `model hr.attendance.overtime` (hr_attendance)<details><summary>+70 more</summary>`model mrp.production` (mrp), `model planning.slot` (planning), `model pos.config` (point_of_sale), `model pos.order` (point_of_sale), `model pos.payment` (point_of_sale), `model pos.session` (point_of_sale), `model project.milestone` (project), `model project.project` (project), `model project.sale.line.employee.map` (sale_timesheet), `model project.task` (project), `model project.update` (project), `model repair.order` (repair), `model stock.landed.cost` (stock_landed_costs), `model con_consolidated_hea` (BugFix-Stock), `model con_consolidated_lin` (BugFix-Stock), `model consignment_charge_h` (BugFix-Stock), `model consignment_charge_l` (BugFix-Stock), `model consignment_header` (BugFix-Stock), `model consignment_line` (BugFix-Stock), `model import_rfq_charge_he` (BugFix-Purchase), `model import_rfq_charge_li` (BugFix-Purchase), `model lc_header` (BugFix-Accounting), `model mass_produce_serial_` (BugFix-MRP), `model mass_produce_serial` (BugFix-MRP), `model material_request` (BugFix-Stock), `model mr_config` (BugFix-Stock), `model mrp_bom_general_cost` (BugFix-MRP), `model mrp_bom_labour_cost` (BugFix-MRP), `model mrp_bom_material_cos` (BugFix-MRP), `model mrp_bom_overhead_cos` (BugFix-MRP), `model po_line_non_inventor` (BugFix-Purchase), `model po_non_inventory` (BugFix-Purchase), `model pr_line_cash` (BugFix-Purchase), `model pr_non_inventory` (BugFix-Purchase), `model pump_price_costing` (BugFix-Accounting), `model purchase_request_cas` (BugFix-Purchase), `model purchase_request_lin` (BugFix-Purchase), `model purchase_request` (BugFix-Purchase), `model rm_cust_invoice_s1` (BugFix-Accounting), `model rm_customer_wise_inv` (BugFix-Accounting), `model rm_daily_s1` (BugFix-Accounting), `model rm_daily_s2` (BugFix-Accounting), `model rm_daily_s3` (BugFix-Accounting), `model rm_daily_sales_repor` (BugFix-Accounting), `model rm_gross_margin_actu` (BugFix-Accounting), `model rm_gross_margin_comp` (BugFix-Accounting), `model rm_gross_margin_esti_line_7e86d` (BugFix-Accounting), `model rm_gross_margin_esti` (BugFix-Accounting), `model rm_gross_margin_invo` (BugFix-Accounting), `model rm_none_moving` (BugFix-Accounting), `model rm_prod_summary_spli` (BugFix-Accounting), `model rm_production_orders` (BugFix-Accounting), `model rm_production_varian` (BugFix-Accounting), `model rm_sales_order_line` (BugFix-Accounting), `model rm_sales_prod_purch` (BugFix-Accounting), `model sales_model_debug`, `model sales_report_model` (Jinasena_Masterdata_Reporting), `model task_diagnosis` (Fix-repair), `model temp_estimated` (BugFix-Accounting), `model temp_tp_invoice_head` (BugFix-Accounting), `model temp_tp_invoice_line` (BugFix-Accounting), `model x_test02`, `model x_test_layout`, `model x_test_model_link_2`, `model x_test_model_link`, `model x_test_model_primary`, `model tp_invoice_header` (BugFix-Accounting), `model tp_invoice_line` (BugFix-Accounting), `x_test02.status_1`, `x_test02.status`</details>
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (638 lines)</summary>
 
@@ -185,104 +185,104 @@ if record.id:
 # charge_lines = env['mrp.production'].search([])
 
 
-# charge_lines_1 = env['x_purchase_request'].search([])
+# charge_lines_1 = env['purchase_request'].search([])
 
 # for loop_lines in charge_lines_1:
 
-#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.write({'status':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_2 = env['x_purchase_request_lin'].search([])
+# charge_lines_2 = env['purchase_request_lin'].search([])
 
 # for loop_lines in charge_lines_2:
 
-#  loop_lines.write({'x_studio_status_1':'Draft'})
+#  loop_lines.write({'status_1':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_3 = env['x_pr_non_inventory'].search([])
+# charge_lines_3 = env['pr_non_inventory'].search([])
 
 # for loop_lines in charge_lines_3:
 
-#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.write({'status':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_4 = env['x_purchase_request_cas'].search([])
+# charge_lines_4 = env['purchase_request_cas'].search([])
 
 # for loop_lines in charge_lines_4:
 
-#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.write({'status':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_5 = env['x_pr_line_cash'].search([])
+# charge_lines_5 = env['pr_line_cash'].search([])
 
 # for loop_lines in charge_lines_5:
 
-#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.write({'status':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_6 = env['x_consignment_line'].search([])
+# charge_lines_6 = env['consignment_line'].search([])
 
 # for loop_lines in charge_lines_6:
 
-#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.write({'status':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_7 = env['x_consignment_header'].search([])
+# charge_lines_7 = env['consignment_header'].search([])
 
 # for loop_lines in charge_lines_7:
 
-#  loop_lines.write({'x_studio_status':'Draft'})
+#  loop_lines.write({'status':'Draft'})
 
 #  loop_lines.unlink()
 
 
-# charge_lines_8 = env['x_consignment_charge_l'].search([])
+# charge_lines_8 = env['consignment_charge_l'].search([])
 
 # for loop_lines in charge_lines_8:
 
 #  loop_lines.unlink()
 
 
-# charge_lines_9 = env['x_consignment_charge_h'].search([])
+# charge_lines_9 = env['consignment_charge_h'].search([])
 
 # for loop_lines in charge_lines_9:
 
 #  loop_lines.unlink()
 
 
-# charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+# charge_lines_10 = env['import_rfq_charge_li'].search([])
 
 # for loop_lines in charge_lines_10:
 
 #  loop_lines.unlink()
 
 
-# charge_lines_11 = env['x_import_rfq_charge_he'].search([])
+# charge_lines_11 = env['import_rfq_charge_he'].search([])
 
 # for loop_lines in charge_lines_11:
 
 #  loop_lines.unlink()
 
 
-# charge_lines_10 = env['x_import_rfq_charge_li'].search([])
+# charge_lines_10 = env['import_rfq_charge_li'].search([])
 # … 518 more lines
 ```
   </details>
 - **MST - ODOO Data Clean-up - 001** (`server_action_2831_mst_odoo_data_clean_up_001`, type `code`)
   - Function: Data clean-up script run from TEST02 made up almost entirely of commented-out one-off fixes (journal deletion, company reassignment, BoM changes). Maintenance tool.
-  - Depends on: `model account.move` (account), `model mail.activity` (mail), `model mrp.eco.bom.change` (mrp_plm), `model mrp.workcenter` (mrp), `model product.template` (product)<details><summary>+5 more</summary>`model res.users` (base), `model stock.rule` (stock), `model x_structure_master` (BugFix-Purchase), `model x_test02`, `x_test02.x_studio_status`</details>
+  - Depends on: `model account.move` (account), `model mail.activity` (mail), `model mrp.eco.bom.change` (mrp_plm), `model mrp.workcenter` (mrp), `model product.template` (product)<details><summary>+5 more</summary>`model res.users` (base), `model stock.rule` (stock), `model structure_master` (BugFix-Purchase), `model x_test02`, `x_test02.status`</details>
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (96 lines)</summary>
 
@@ -355,11 +355,11 @@ c = 0
 #  lines.write({'company_id': 1})
 
 
-# sturcture = env['x_structure_master'].search([])
+# sturcture = env['structure_master'].search([])
 
 # for lines in sturcture:
 
-#  lines.write({'x_studio_status': 'Draft', 'x_studio_selection_field_ba7aA': 'Draft'})
+#  lines.write({'status': 'Draft', 'selection_field_ba7aA': 'Draft'})
 
 
 charge_lines_6 = env["mail.activity"].search([])
@@ -394,7 +394,7 @@ raise UserError(str(c))
   </details>
 - **MST - ODOO Data Clean-up - 004** (`server_action_2883_mst_odoo_data_clean_up_004`, type `code`)
   - Function: Destructive clean-up: sets every Purchase Request and Purchase Request Line to Draft and deletes them all. Dangerous one-off maintenance tool.
-  - Depends on: `model account.move.line` (account), `model account.move` (account), `model mrp.production` (mrp), `model pos.config` (point_of_sale), `model pos.order` (point_of_sale)<details><summary>+7 more</summary>`model pos.payment` (point_of_sale), `model pos.session` (point_of_sale), `model x_purchase_request_lin` (BugFix-Purchase), `model x_purchase_request` (BugFix-Purchase), `model x_test02`, `x_test02.x_studio_status_1`, `x_test02.x_studio_status`</details>
+  - Depends on: `model account.move.line` (account), `model account.move` (account), `model mrp.production` (mrp), `model pos.config` (point_of_sale), `model pos.order` (point_of_sale)<details><summary>+7 more</summary>`model pos.payment` (point_of_sale), `model pos.session` (point_of_sale), `model purchase_request_lin` (BugFix-Purchase), `model purchase_request` (BugFix-Purchase), `model x_test02`, `x_test02.status_1`, `x_test02.status`</details>
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (34 lines)</summary>
 
@@ -414,18 +414,18 @@ raise UserError(str(c))
 # charge_lines = env['mrp.production'].search([])
 
 
-charge_lines_1 = env["x_purchase_request"].search([])
+charge_lines_1 = env["purchase_request"].search([])
 
 for loop_lines in charge_lines_1:
-    loop_lines.write({"x_studio_status": "Draft"})
+    loop_lines.write({"status": "Draft"})
 
     loop_lines.unlink()
 
 
-charge_lines_2 = env["x_purchase_request_lin"].search([])
+charge_lines_2 = env["purchase_request_lin"].search([])
 
 for loop_lines in charge_lines_2:
-    loop_lines.write({"x_studio_status_1": "Draft"})
+    loop_lines.write({"status_1": "Draft"})
 
     loop_lines.unlink()
 ```
@@ -442,13 +442,13 @@ raise UserError("Error 123")
   </details>
 - **Test - Layout Changes** (`sa_f5_x_test02_test_layout_changes`, type `code`)
   - Function: Test action on TEST02 that always raises an error, 'Found2' when Status is 'Status 02' otherwise 'Found1'. Sandbox/debug only.
-  - Depends on: `model x_test02`, `x_test02.x_studio_status_1`
+  - Depends on: `model x_test02`, `x_test02.status_1`
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (8 lines)</summary>
 
 ```python
 if record.id:
-    if record.x_studio_status_1 == "Status 02":
+    if record.status_1 == "Status 02":
         # record.blocked  = False
         # record.readonly  = True
         raise UserError("Found2")
@@ -459,7 +459,7 @@ if record.id:
   </details>
 - **Update Status** (`server_action_1575_update_status`, type `object_write`)
   - Function: Update-record action that sets the TEST02 Pipeline status bar to 'Second Status'. Sandbox only.
-  - Depends on: `model x_test02`, `x_test02.x_studio_pipeline_status_bar`
+  - Depends on: `model x_test02`, `x_test02.pipeline_status_bar`
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (12 lines)</summary>
 
@@ -480,7 +480,7 @@ if record.id:
   </details>
 - **sample server action** (`server_action_1743_sample_server_action`, type `code`)
   - Function: Sandbox action on TEST02 that raises an error showing today's end-of-day timestamp; the rest is commented-out experiments. Linked from two test approval rules.
-  - Depends on: `model product.template` (product), `model res.currency.rate` (base), `model res.currency` (base), `model sale.order` (sale), `model x_test02`<details><summary>+3 more</summary>`model x_trf_charges` (BugFix-Purchase), `x_test02.x_studio_charges_1`, `x_test02.x_studio_date`</details>
+  - Depends on: `model product.template` (product), `model res.currency.rate` (base), `model res.currency` (base), `model sale.order` (sale), `model x_test02`<details><summary>+3 more</summary>`model trf_charges` (BugFix-Purchase), `x_test02.x_studio_charges_1`, `x_test02.date`</details>
   - Used by: `approval rule BugFix-Studio-Misc.ar_final_test02_sample_server_action_technical_a_warning_can_be_set_o`, `approval rule BugFix-Studio-Misc.ar_final_test02_sample_server_action_user_types_internal_user_44`
   <details><summary>code (168 lines)</summary>
 
@@ -508,7 +508,7 @@ raise UserError(date_end)
 
 #currentdate = datetime.datetime.today()
 
-#currentdate = record.x_studio_date.date()
+#currentdate = record.date.date()
 
 """currentdate = datetime.date.today()
 
@@ -522,7 +522,7 @@ custom_currency = env['sale.order'].search([('name', '=', 'S00706')],limit=1)
 
 if custom_currency:
 
-  custom_currency.write({'quotation_type':'Repair','x_studio_order_payment_method':custom_currency.partner_id.x_studio_payment_method})
+  custom_currency.write({'quotation_type':'Repair','order_payment_method':custom_currency.partner_id.payment_method})
 
 """
 
@@ -610,13 +610,13 @@ if product:
   </details>
 - **sample server action - 1** (`server_action_2223_sample_server_action_1`, type `code`)
   - Function: Sandbox action on TEST02 that raises an error showing the difference between the record's Date and now.
-  - Depends on: `model x_test02`, `x_test02.x_studio_date`
+  - Depends on: `model x_test02`, `x_test02.date`
   - Used by: — (not linked to a button, menu or automation)
   <details><summary>code (3 lines)</summary>
 
 ```python
 if record.id:
-    raise UserError(str(record.x_studio_date - datetime.datetime.now()))
+    raise UserError(str(record.date - datetime.datetime.now()))
 ```
   </details>
 - **sample server action - multi company** (`server_action_2578_sample_server_action_multi_company`, type `code`)
@@ -674,7 +674,7 @@ for stocks in stock:
   </details>
 - **sample server action-2** (`server_action_2268_sample_server_action_2`, type `code`)
   - Function: Sandbox action on TEST02 containing mostly commented-out many2many write experiments with charges; linked from a test approval rule.
-  - Depends on: `model sale.order.line` (sale), `model sale.order` (sale), `model stock.picking` (stock), `model x_test02`, `model x_trf_charges` (BugFix-Purchase)<details><summary>+4 more</summary>`x_test02.name`, `x_test02.x_studio_charges_1`, `x_test02.x_studio_charges_2`, `x_test02.x_studio_test_char`</details>
+  - Depends on: `model sale.order.line` (sale), `model sale.order` (sale), `model stock.picking` (stock), `model x_test02`, `model trf_charges` (BugFix-Purchase)<details><summary>+4 more</summary>`x_test02.name`, `x_test02.x_studio_charges_1`, `x_test02.x_studio_charges_2`, `x_test02.x_studio_test_char`</details>
   - Used by: `approval rule BugFix-Studio-Misc.ar_final_test02_sample_server_action_2_sales_test_sales_2_76`
   <details><summary>code (134 lines)</summary>
 
@@ -712,7 +712,7 @@ line_ids2 = []
 # record.write({'x_studio_charges_2':[(4, line_ids2, 0)]})
 
 
-# charge_lines = env['x_trf_charges'].search([])
+# charge_lines = env['trf_charges'].search([])
 
 # if charge_lines:
 
@@ -753,7 +753,7 @@ line_ids2 = []
 # raise UserError(line_ids)
 
 
-# trf = env['x_trf_charges'].create({'name':"Test-1", 'description':"Test-1"})
+# trf = env['trf_charges'].create({'name':"Test-1", 'description':"Test-1"})
 
 # line_ids.append(trf.id)
 
@@ -815,11 +815,11 @@ expired_so = env["sale.order"].search([("id", "=", 1404)])
 
 | Name | Record name | Type | What it changes | Function | Depends on | Used by |
 |---|---|---|---|---|---|---|
-| Default form view for x_test02 | `view_2414_default_form_view_for_x_test02` | form | full form layout with 3 fields | Default Studio form for the test model x_test02: required Name, archived ribbon, and a 'Move to Second' header button (hidden once Status is 'S2') that runs the action with id 1575; chatter fields stripped. | `window action sale_loyalty.sale_loyalty_coupon_wizard_action` (sale_loyalty)<br>`x_test02.active`<br>`x_test02.name`<br>`x_test02.x_studio_status` | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e`<br>`view BugFix-Studio-Misc.view_3919_test_inherited_view_e` |
+| Default form view for x_test02 | `view_2414_default_form_view_for_x_test02` | form | full form layout with 3 fields | Default Studio form for the test model x_test02: required Name, archived ribbon, and a 'Move to Second' header button (hidden once Status is 'S2') that runs the action with id 1575; chatter fields stripped. | `window action sale_loyalty.sale_loyalty_coupon_wizard_action` (sale_loyalty)<br>`x_test02.active`<br>`x_test02.name`<br>`x_test02.status` | `view BugFix-Studio-Misc.view_3267_odoo_studio_default_form_view_for_x_test02_customization_e`<br>`view BugFix-Studio-Misc.view_3919_test_inherited_view_e` |
 | Default kanban view for ir.model(782,) | `view_2955_default_kanban_view_for_ir_model_782` | kanban | full kanban layout with 1 fields | Default Studio kanban view for x_test02 showing each record's Name on a card. | `x_test02.name` | `view BugFix-Studio-Misc.view_2956_odoo_studio_default_kanban_view_for_ir_model_782_customizati_ext` |
 | Default list view for x_test02 | `view_2413_default_list_view_for_x_test02` | tree | full tree layout with 2 fields | Default Studio list view for x_test02: drag-handle Sequence and Name. | `x_test02.name`<br>`x_test02.sequence` | `view BugFix-Studio-Misc.view_5420_odoo_studio_default_list_view_for_x_test02_customization_ext` |
 | Default search view for x_test02 | `view_2415_default_search_view_for_x_test02` | search | full search layout with 1 fields | Default Studio search view for x_test02: search by Name plus an 'Archived' filter. | `x_test02.active`<br>`x_test02.name` |  |
-| Odoo Studio: Default form view for x_test02 customization | `view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` | form | replace `//div[@name='oe_chatter']`: add notebook; inside `//group[@name='studio_group_a1036a_left']`: add field x_studio_status_1, field x_studio_status, field x_studio_date, field x_studio_status2, field x_studio_test_number_1; inside `//group[@name='studio_group_a1036a_right']`: add field x_studio_types, field x_studio_many2many_field_c0IAp, field x_studio_charges_1, field x_studio_charges_2, field x_studio_test_char, field x_studio_test_value, field x_studio_testing, field x_studio_testing_02, field x_studio_jin_2, field x_studio_jam_1, field accounting_company_id, field x_studio_chk_atomated_action … | Extends the x_test02 test form: replaces the chatter with a notebook of two one2many tabs ('Layout', 'New Page') and adds many test fields (status, date, types, charges, test values, company-dependent JIN/JAM fields, currency). Some button xpaths were stripped in the port. | `view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02`<br>`x_test02.x_currency_id`<br>`x_test02.x_studio_charges_1`<br>`x_test02.x_studio_charges_2`<br>`x_test02.x_studio_chk_atomated_action`<details><summary>+20 more</summary>`x_test02.x_studio_chk_server_action`<br>`x_test02.accounting_company_id`<br>`x_test02.x_studio_date`<br>`x_test02.x_studio_jam_1`<br>`x_test02.x_studio_jin_2`<br>`x_test02.x_studio_many2many_field_c0IAp`<br>`x_test02.x_studio_one2many_field_51FSD`<br>`x_test02.x_studio_one2many_field_Q8Xws`<br>`x_test02.x_studio_status2`<br>`x_test02.x_studio_status_1`<br>`x_test02.x_studio_status`<br>`x_test02.x_studio_test_03`<br>`x_test02.x_studio_test_char`<br>`x_test02.x_studio_test_number_1`<br>`x_test02.x_studio_test_number_2`<br>`x_test02.x_studio_test_value`<br>`x_test02.x_studio_testing_02`<br>`x_test02.x_studio_testing`<br>`x_test02.x_studio_text_field_eKlfk`<br>`x_test02.x_studio_types`</details> |  |
+| Odoo Studio: Default form view for x_test02 customization | `view_3267_odoo_studio_default_form_view_for_x_test02_customization_e` | form | replace `//div[@name='oe_chatter']`: add notebook; inside `//group[@name='studio_group_a1036a_left']`: add field status_1, field status, field date, field x_studio_status2, field x_studio_test_number_1; inside `//group[@name='studio_group_a1036a_right']`: add field x_studio_types, field x_studio_many2many_field_c0IAp, field x_studio_charges_1, field x_studio_charges_2, field x_studio_test_char, field x_studio_test_value, field x_studio_testing, field x_studio_testing_02, field x_studio_jin_2, field x_studio_jam_1, field accounting_company_id, field x_studio_chk_atomated_action … | Extends the x_test02 test form: replaces the chatter with a notebook of two one2many tabs ('Layout', 'New Page') and adds many test fields (status, date, types, charges, test values, company-dependent JIN/JAM fields, currency). Some button xpaths were stripped in the port. | `view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02`<br>`x_test02.currency_id`<br>`x_test02.x_studio_charges_1`<br>`x_test02.x_studio_charges_2`<br>`x_test02.x_studio_chk_atomated_action`<details><summary>+20 more</summary>`x_test02.x_studio_chk_server_action`<br>`x_test02.accounting_company_id`<br>`x_test02.date`<br>`x_test02.x_studio_jam_1`<br>`x_test02.x_studio_jin_2`<br>`x_test02.x_studio_many2many_field_c0IAp`<br>`x_test02.x_studio_one2many_field_51FSD`<br>`x_test02.x_studio_one2many_field_Q8Xws`<br>`x_test02.x_studio_status2`<br>`x_test02.status_1`<br>`x_test02.status`<br>`x_test02.x_studio_test_03`<br>`x_test02.x_studio_test_char`<br>`x_test02.x_studio_test_number_1`<br>`x_test02.x_studio_test_number_2`<br>`x_test02.x_studio_test_value`<br>`x_test02.x_studio_testing_02`<br>`x_test02.x_studio_testing`<br>`x_test02.x_studio_text_field_eKlfk`<br>`x_test02.x_studio_types`</details> |  |
 | Odoo Studio: Default kanban view for ir.model(782,) customization | `view_2956_odoo_studio_default_kanban_view_for_ir_model_782_customizati_ext` | kanban | set default_group_by=name on `//kanban[1]` | Makes the x_test02 kanban view group cards by Name by default. | `view BugFix-Studio-Misc.view_2955_default_kanban_view_for_ir_model_782` |  |
 | Odoo Studio: Default list view for x_test02 customization | `view_5420_odoo_studio_default_list_view_for_x_test02_customization_ext` | tree | after `//field[@name='name']`: add field x_studio_name_1 | Adds an optional 'Name-1' column after Name in the x_test02 list. | `view BugFix-Studio-Misc.view_2413_default_list_view_for_x_test02`<br>`x_test02.x_studio_name_1` |  |
 | TEST Inherited View | `view_3919_test_inherited_view_e` | form |  | Extension of the x_test02 form whose every xpath was stripped during the port (numeric button refs could not be resolved); it has no effect. | `view BugFix-Studio-Misc.view_2414_default_form_view_for_x_test02` |  |

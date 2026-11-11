@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-    <!-- DROPPED default_274_purchase_order_x_studio_receive_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
-<!-- DROPPED default_275_x_misc_charge_codes_x_studio_debit_acc_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
-<!-- DROPPED default_276_x_misc_charge_codes_x_studio_credit_acc_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
+    <!-- DROPPED default_274_purchase_order_receive_status: field owned by BugFix-Purchase not in Studio-Misc deps -->
+<!-- DROPPED default_275_x_misc_charge_codes_debit_acc_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
+<!-- DROPPED default_276_x_misc_charge_codes_credit_acc_type: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_277_x_rm_sales_order_line_active: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_278_x_rm_sales_order_line_sequence: field owned by BugFix-Accounting not in Studio-Misc deps -->
 <!-- DROPPED default_279_x_rm_production_orders_active: field owned by BugFix-Accounting not in Studio-Misc deps -->

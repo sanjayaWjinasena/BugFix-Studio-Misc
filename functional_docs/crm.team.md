@@ -6,7 +6,7 @@
 
 *Extends a model created by `sales_team`.*
 
-Other repos that use this model: `account.move.line.x_studio_sales_team` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_1670_rpt_daily_sales_report_generate` (BugFix-Accounting)<br>`x_rm_cust_invoice_s1.x_studio_sales_centre` (BugFix-Accounting)<br>`x_rm_daily_s1.x_studio_sales_centre` (BugFix-Accounting)<br>`x_rm_daily_s2.x_studio_sales_centre` (BugFix-Accounting)<br>`x_rm_daily_s3.x_studio_sales_centre` (BugFix-Accounting)<br>`x_sales_report_model.x_studio_sales_centre` (Jinasena_Masterdata_Reporting)
+Other repos that use this model: `account.move.line.sales_team` (BugFix-Accounting)<br>`server action BugFix-Accounting.server_action_1670_rpt_daily_sales_report_generate` (BugFix-Accounting)<br>`rm_cust_invoice_s1.sales_centre` (BugFix-Accounting)<br>`rm_daily_s1.sales_centre` (BugFix-Accounting)<br>`rm_daily_s2.sales_centre` (BugFix-Accounting)<br>`rm_daily_s3.sales_centre` (BugFix-Accounting)<br>`sales_report_model.sales_centre` (Jinasena_Masterdata_Reporting)
 
 **Summary:**
 

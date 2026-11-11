@@ -8,8 +8,8 @@ installation that don't fit any domain-specific companion module.
 Owns:
 
 - Orphan `x_*` custom models: test/scratch models
-  (`x_test02`, `x_test_layout`, `x_test_form`, `x_website_faq*`,
-  `x_sales_model_debug`, etc.)
+  (`x_test02`, `x_test_layout`, `x_test_form`, `website_faq*`,
+  `sales_model_debug`, etc.)
 - Standard-Odoo model customisations too small to justify their own
   repo: `crm.*`, `quality.*`, `loyalty.*`, `pos.*`,
   `delivery.carrier`, `crossovered.budget`, etc.

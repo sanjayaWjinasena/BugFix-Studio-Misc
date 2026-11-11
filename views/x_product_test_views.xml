@@ -65,7 +65,7 @@
     <attribute name="required"/></xpath>
   <xpath expr="//group[@name='studio_group_2ae04f_left']" position="inside">
     <field name="x_studio_many2one_field_cmfRx"/>
-    <field name="x_studio_product_1" string="Product_1"/>
+    <field name="product_1" string="Product_1"/>
   </xpath>
   <xpath expr="//group[@name='studio_group_2ae04f_right']" position="inside">
     <field widget="many2many_tags" name="x_studio_many2many_field_R1u9s"/>
@@ -87,7 +87,7 @@
     <field name="x_studio_journal_name" string="Journal Name"/>
     <field name="x_studio_stock_move"/>
     <field name="x_studio_many2one_field_cmfRx"/>
-    <field name="x_studio_product_1"/>
+    <field name="product_1"/>
   </xpath>
 </data>
       </field>

@@ -10,7 +10,7 @@ class X_test_layout(models.Model):
     active = fields.Boolean(string="Active")
     name = fields.Char(string="Name")
     x_studio_line_ids = fields.Many2one(comodel_name="x_test02", string="Line Ids")
-    x_studio_product_id = fields.Many2one(
+    product_id = fields.Many2one(
         comodel_name="product.product", string="Product Id"
     )
     quantity = fields.Float(string="Quantity")

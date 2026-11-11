@@ -757,11 +757,11 @@
     <field name="perm_unlink" eval="False"/>
   </record>
   -->
-<!-- REMOVED access_6843_x_sales_model_debug (1010): hand-made on production (hand-made (no id)); the port had dropped its group so it applied to every user. Production restricts it to group "Sales / Jin - Sales - View Only". Uncomment (and set the group) to bring it back. -->
+<!-- REMOVED access_6843_sales_model_debug (1010): hand-made on production (hand-made (no id)); the port had dropped its group so it applied to every user. Production restricts it to group "Sales / Jin - Sales - View Only". Uncomment (and set the group) to bring it back. -->
   <!--
-  <record id="access_6843_x_sales_model_debug" model="ir.model.access">
-    <field name="name">x_sales_model_debug</field>
-    <field name="model_id" ref="BugFix-Studio-Misc.model_x_sales_model_debug"/>
+  <record id="access_6843_sales_model_debug" model="ir.model.access">
+    <field name="name">sales_model_debug</field>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_sales_model_debug"/>
     <field name="group_id" ref="BugFix-Studio-Misc.group_g_sales_jin_sales_view_only"/>
     <field name="perm_read" eval="True"/>
     <field name="perm_write" eval="False"/>
@@ -773,7 +773,7 @@
   <!--
   <record id="access_6032_jin_maintenance_maintenance_users" model="ir.model.access">
     <field name="name">Jin - Maintenance + Maintenance users</field>
-    <field name="model_id" ref="BugFix-Studio-Misc.model_x_x_studio_request_line"/>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_request_line"/>
     <field name="group_id" ref="BugFix-Studio-Misc.group_g_maintenance_jin_maintenance_maintenance_user"/>
     <field name="perm_read" eval="True"/>
     <field name="perm_write" eval="True"/>
@@ -785,7 +785,7 @@
   <!--
   <record id="access_6107_jin_maintenance_maintenance_users" model="ir.model.access">
     <field name="name">Jin - Maintenance + Maintenance users</field>
-    <field name="model_id" ref="BugFix-Studio-Misc.model_x_x_studio_request_line"/>
+    <field name="model_id" ref="BugFix-Studio-Misc.model_request_line"/>
     <field name="group_id" ref="BugFix-Studio-Misc.group_g_maintenance_jin_maintenance_minimum_rights"/>
     <field name="perm_read" eval="True"/>
     <field name="perm_write" eval="False"/>

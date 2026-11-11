@@ -6,7 +6,7 @@
 
 *Extends a model created by `base`.*
 
-Other repos that use this model: `hr.payslip.action_export_bank_data_csv()` (bank-data)<br>`jinasena.paymaster.wizard.action_generate()` (bank-data)<br>`purchase.order.x_studio_photos` (BugFix-Purchase)<br>`purchase.order.x_studio_project_photos` (BugFix-Purchase)<br>`purchase.order.x_studio_specifications` (BugFix-Purchase)
+Other repos that use this model: `hr.payslip.action_export_bank_data_csv()` (bank-data)<br>`jinasena.paymaster.wizard.action_generate()` (bank-data)<br>`purchase.order.photos` (BugFix-Purchase)<br>`purchase.order.project_photos` (BugFix-Purchase)<br>`purchase.order.specifications` (BugFix-Purchase)
 
 **Summary:**
 

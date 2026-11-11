@@ -9,8 +9,8 @@ class MrpEco(models.Model):
     # without one, and Start Revision failed with "Expected singleton: mrp.bom()" (bug sheet PLM,
     # 22/Oct, Kapila). Declared here because the product field comes from BugFix-Sales, which
     # BugFix-MRP does not depend on; this module depends on both.
-    x_studio_item_approved = fields.Boolean(
+    item_approved = fields.Boolean(
         string="Approved Item",
-        related="product_tmpl_id.x_studio_item_approved",
+        related="product_tmpl_id.item_approved",
         store=True,
     )

@@ -62,7 +62,7 @@
       <field name="arch" type="xml">
         <data>
   <xpath expr="//group[@name='studio_group_5691c0_left']" position="inside">
-    <field name="x_studio_code" string="Code"/>
+    <field name="code" string="Code"/>
     <field name="description" string="Description"/>
     <field name="x_Description2" string="Description 2"/>
   </xpath>

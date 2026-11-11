@@ -2,7 +2,7 @@
     # upgrade-testing branch: data files below are commented out - this branch installs
     # functions only, no data is seeded.
     "name": "Jinasena : Module : Studio-Misc",
-    "version": "17.0.0.0.128",
+    "version": "17.0.0.0.129",
     "summary": (
         "Catch-all landing zone for Studio-created artefacts that "
         "don't fit any of the domain-specific companion modules "
@@ -56,13 +56,13 @@
         "purchase",
         "account",
         "studio_usermodel_migration",
-        "BugFix-Project",  # ACL rows use x_departments, x_project_category etc.
+        "BugFix-Project",  # ACL rows use departments, project_category etc.
         "BugFix-Accounting",  # ACL rows use account.move, x_studio_* fields
         "BugFix-Stock",  # ACL rows use stock.picking, x_material_request_* models
         "BugFix-MRP",  # ACL rows use mrp.production, x_mrp_* models
-        # declares res.partner.x_studio_payment_method + other Sales x_ fields
+        # declares res.partner.payment_method + other Sales x_ fields
         "BugFix-Sales",
-        "BugFix-Purchase",  # declares x_payment_methods + purchase-side x_ fields
+        "BugFix-Purchase",  # declares payment_methods + purchase-side x_ fields
     ],
     "data": [
         "security/bugfix_studio_misc_security.xml",
@@ -77,8 +77,8 @@
         "data/x_product_test_data.xml",
         "data/product_template_data.xml",
         "data/res_partner_data.xml",
-        "data/x_customer_groups_data.xml",
-        "data/x_sales_model_debug_data.xml",
+        "data/customer_groups_data.xml",
+        "data/sales_model_debug_data.xml",
         "data/x_test_1_data.xml",
         "data/x_test_form_data.xml",
         "data/x_test_layout_data.xml",
@@ -87,13 +87,13 @@
         "data/x_test_model_primary_data.xml",
         "data/x_testapp_data.xml",
         "data/x_testdepartment_data.xml",
-        "data/x_website_faq_data.xml",
-        "data/x_website_faqs_data.xml",
-        "data/x_work_center_costing_data.xml",
+        "data/website_faq_data.xml",
+        "data/website_faqs_data.xml",
+        "data/work_center_costing_data.xml",
         "data/account_payment_term_data.xml",
         "data/hr_expense_data.xml",
-        "data/x_pr_non_inventory_data.xml",
-        "data/x_purchase_request_data.xml",
+        "data/pr_non_inventory_data.xml",
+        "data/purchase_request_data.xml",
         "data/bugfix_studio_misc_data.xml",
         "data/maintenance_request_data.xml",
         "report/crossovered_budget_reports.xml",
@@ -105,15 +105,15 @@
         "report/repair_order_reports.xml",
         "report/sale_order_line_reports.xml",
         "report/sale_order_reports.xml",
-        "report/x_custom_reports_reports.xml",
-        "report/x_import_rfq_charge_he_reports.xml",
-        "report/x_import_rfq_charge_li_reports.xml",
-        "report/x_po_non_inventory_reports.xml",
-        "report/x_purchase_request_reports.xml",
-        "report/x_resolutions_reports.xml",
-        "report/x_sales_report_model_reports.xml",
+        "report/custom_reports_reports.xml",
+        "report/import_rfq_charge_he_reports.xml",
+        "report/import_rfq_charge_li_reports.xml",
+        "report/po_non_inventory_reports.xml",
+        "report/purchase_request_reports.xml",
+        "report/resolutions_reports.xml",
+        "report/sales_report_model_reports.xml",
         "views/project_task_views.xml",
-        "views/x_customer_group_views.xml",
+        "views/customer_group_views.xml",
         "views/ir_model_access_views.xml",
         "views/ir_module_category_views.xml",
         "views/ir_property_views.xml",
@@ -133,7 +133,7 @@
         "views/pos_payment_views.xml",
         "views/pos_session_views.xml",
         "views/uom_category_views.xml",
-        "views/x_product_product_views.xml",
+        "views/misc_product_product_views.xml",
         "views/x_product_test_views.xml",
         "views/x_test02_views.xml",
         "views/x_test_1_views.xml",
@@ -144,18 +144,18 @@
         "views/x_test_model_primary_views.xml",
         "views/x_testapp_views.xml",
         "views/x_testdepartment_views.xml",
-        "views/x_website_faq_views.xml",
-        "views/x_website_faqs_views.xml",
+        "views/website_faq_views.xml",
+        "views/website_faqs_views.xml",
         "views/res_currency_views.xml",
-        "views/x_bve_salesreport_views.xml",
-        "views/x_bve_samplebalancemovementreport_views.xml",
+        "views/bve_salesreport_views.xml",
+        "views/bve_samplebalancemovementreport_views.xml",
         "views/x_bve_test1_views.xml",
-        "views/x_custom_reports_tag_views.xml",
-        "views/x_customer_groups_views.xml",
-        # "views/x_project_task_worksheet_template_1_views.xml",  # x_project_task_worksheet_template_1 is not shipped (Field Service "Repair Worksheet" model, industry_fsm_report); its action fails on a fresh database
-        "views/x_res_config_settings_views.xml",
-        "views/x_sales_model_debug_views.xml",
-        "views/x_work_center_costing_views.xml",
+        "views/custom_reports_tag_views.xml",
+        "views/customer_groups_views.xml",
+        # "views/project_task_worksheet_template_1_views.xml",  # project_task_worksheet_template_1 is not shipped (Field Service "Repair Worksheet" model, industry_fsm_report); its action fails on a fresh database
+        "views/misc_res_config_settings_views.xml",
+        "views/sales_model_debug_views.xml",
+        "views/work_center_costing_views.xml",
         "views/account_account_views.xml",
         "views/account_bank_statement_views.xml",
         "views/account_edi_document_views.xml",
@@ -178,9 +178,9 @@
         "views/stock_quant_views.xml",
         "views/stock_route_views.xml",
         "views/stock_rule_views.xml",
-        "views/x_custom_reports_line_c55e7_views.xml",
-        "views/x_material_request_mt_line_9a011_views.xml",
-        "views/x_material_request_tes_line_3301b_views.xml",
+        "views/custom_reports_line_c55e7_views.xml",
+        "views/material_request_mt_line_9a011_views.xml",
+        "views/material_request_tes_line_3301b_views.xml",
         "views/hr_expense_sheet_views.xml",
         "views/base_automation_views.xml",
         "views/ir_actions_act_window_views.xml",
@@ -199,7 +199,7 @@
         "views/bugfix_studio_misc_menus.xml",
         # Not loaded on this branch:
         "data/ir_sequence_data.xml",
-        # 'views/x_project_task_worksheet_template_1_extra_views.xml',  # upgrade-testing: x_project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
+        # 'views/project_task_worksheet_template_1_extra_views.xml',  # upgrade-testing: project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
     ],
     "post_init_hook": "post_init_hook",
 }
