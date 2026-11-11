@@ -295,17 +295,6 @@ They have to be removed after testing.   - Already removed.
     <field name="perm_unlink" eval="True"/>
     <field name="active" eval="True"/>
   </record>
-  <record id="rule_pos_sales_team" model="ir.rule">
-    <field name="name">POS Sales Team</field>
-    <field name="model_id" ref="crm.model_crm_team"/>
-    <field name="domain_force">[(1,'=',1)]</field>
-    <field name="perm_read" eval="True"/>
-    <field name="perm_write" eval="True"/>
-    <field name="perm_create" eval="True"/>
-    <field name="perm_unlink" eval="True"/>
-    <field name="active" eval="True"/>
-    <field name="groups" eval="[(6, 0, [ref('point_of_sale.group_pos_manager')])]"/>
-  </record>
   <record id="rule_loyalty_card_multi_company_rule" model="ir.rule">
     <field name="name">Loyalty card multi company rule</field>
     <field name="model_id" ref="loyalty.model_loyalty_card"/>
@@ -360,36 +349,6 @@ They have to be removed after testing.   - Already removed.
     <field name="name">Loyalty rule multi company rule</field>
     <field name="model_id" ref="loyalty.model_loyalty_rule"/>
     <field name="domain_force">['|', ('company_id', 'in', company_ids + [False]), ('company_id', 'parent_of', company_ids)]</field>
-    <field name="perm_read" eval="True"/>
-    <field name="perm_write" eval="True"/>
-    <field name="perm_create" eval="True"/>
-    <field name="perm_unlink" eval="True"/>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_point_of_sale_config" model="ir.rule">
-    <field name="name">Point Of Sale Config</field>
-    <field name="model_id" ref="point_of_sale.model_pos_config"/>
-    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
-    <field name="perm_read" eval="True"/>
-    <field name="perm_write" eval="True"/>
-    <field name="perm_create" eval="True"/>
-    <field name="perm_unlink" eval="True"/>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_point_of_sale_order" model="ir.rule">
-    <field name="name">Point Of Sale Order</field>
-    <field name="model_id" ref="point_of_sale.model_pos_order"/>
-    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
-    <field name="perm_read" eval="True"/>
-    <field name="perm_write" eval="True"/>
-    <field name="perm_create" eval="True"/>
-    <field name="perm_unlink" eval="True"/>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_pos_payment" model="ir.rule">
-    <field name="name">PoS Payment</field>
-    <field name="model_id" ref="point_of_sale.model_pos_payment"/>
-    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
     <field name="perm_read" eval="True"/>
     <field name="perm_write" eval="True"/>
     <field name="perm_create" eval="True"/>

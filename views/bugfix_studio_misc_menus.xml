@@ -206,10 +206,6 @@
   <menuitem id="menu_f6r2_test_app_05_stock_landed_cost_line" name="stock.landed.cost.line" parent="menu_f6r2_test_app_05" action="BugFix-Stock.action_stock_landed_cost_line" sequence="101"/>
   <menuitem id="menu_f6r2_test_app_05_account_bank_statement" name="account.bank.statement" parent="menu_f6r2_test_app_05" action="BugFix-Accounting.action_account_bank_statement" sequence="102"/>
   <menuitem id="menu_f6r2_test_app_05_hr_expense" name="hr.expense" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_hr_expense_d7" sequence="103"/>
-  <menuitem id="menu_f6r2_test_app_05_pos_config" name="pos.config" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_pos_config" sequence="105"/>
-  <menuitem id="menu_f6r2_test_app_05_pos_order" name="pos.order" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_pos_order" sequence="106"/>
-  <menuitem id="menu_f6r2_test_app_05_pos_payment" name="pos.payment" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_pos_payment_d7" sequence="107"/>
-  <menuitem id="menu_f6r2_test_app_05_pos_session" name="pos.session" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_pos_session_d7" sequence="109"/>
   <menuitem id="menu_f6r2_test_app_05_calendar_attendee_information_calendar_attendee" name="Calendar Attendee Information - (calendar.attendee)" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_calendar_attendee_information_calendar_attendee" sequence="112"/>
   <menuitem id="menu_f6r2_test_app_05_calendar_filters" name="Calendar.filters" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_calendar_filters" sequence="113"/>
   <menuitem id="menu_f6r2_test_app_05_calendar_attendee" name="calendar.attendee" parent="menu_f6r2_test_app_05" action="BugFix-Studio-Misc.action_calendar_attendee_d7" sequence="115"/>

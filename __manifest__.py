@@ -40,14 +40,6 @@
         "sales_team",
         "calendar",
         "loyalty",
-        "point_of_sale",
-        "pos_sale",
-        "pos_loyalty",
-        # 'pos_mercury',  # upgrade-testing: unused; its install creates a Restaurant
-        # POS (data) 'pos_restaurant',  # upgrade-testing: unused; its install creates a
-        # Restaurant POS (data) 'pos_restaurant_appointment',  # upgrade-testing:
-        # unused; its install creates a Restaurant POS (data)
-        "pos_online_payment",
         "website",
         "website_sale",
         "website_sale_loyalty",
@@ -129,10 +121,6 @@
         "views/crm_team_views.xml",
         "views/loyalty_reward_views.xml",
         "views/loyalty_rule_views.xml",
-        "views/pos_config_views.xml",
-        "views/pos_order_views.xml",
-        "views/pos_payment_views.xml",
-        "views/pos_session_views.xml",
         "views/uom_category_views.xml",
         "views/misc_product_product_views.xml",
         "views/x_product_test_views.xml",
