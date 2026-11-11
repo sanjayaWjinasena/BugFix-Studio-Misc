@@ -43,9 +43,10 @@
         "point_of_sale",
         "pos_sale",
         "pos_loyalty",
-        # 'pos_mercury',  # upgrade-testing: unused; its install creates a Restaurant POS (data)
-        # 'pos_restaurant',  # upgrade-testing: unused; its install creates a Restaurant POS (data)
-        # 'pos_restaurant_appointment',  # upgrade-testing: unused; its install creates a Restaurant POS (data)
+        # 'pos_mercury',  # upgrade-testing: unused; its install creates a Restaurant
+        # POS (data) 'pos_restaurant',  # upgrade-testing: unused; its install creates a
+        # Restaurant POS (data) 'pos_restaurant_appointment',  # upgrade-testing:
+        # unused; its install creates a Restaurant POS (data)
         "pos_online_payment",
         "website",
         "website_sale",
@@ -152,7 +153,9 @@
         "views/x_bve_test1_views.xml",
         "views/custom_reports_tag_views.xml",
         "views/customer_groups_views.xml",
-        # "views/project_task_worksheet_template_1_views.xml",  # project_task_worksheet_template_1 is not shipped (Field Service "Repair Worksheet" model, industry_fsm_report); its action fails on a fresh database
+        # "views/project_task_worksheet_template_1_views.xml",  #
+        # project_task_worksheet_template_1 is not shipped (Field Service "Repair
+        # Worksheet" model, industry_fsm_report); its action fails on a fresh database
         "views/misc_res_config_settings_views.xml",
         "views/sales_model_debug_views.xml",
         "views/work_center_costing_views.xml",
@@ -199,7 +202,9 @@
         "views/bugfix_studio_misc_menus.xml",
         # Not loaded on this branch:
         "data/ir_sequence_data.xml",
-        # 'views/project_task_worksheet_template_1_extra_views.xml',  # upgrade-testing: project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
+        # 'views/project_task_worksheet_template_1_extra_views.xml',  # upgrade-testing:
+        # project_task_worksheet_template_1 already exists there as the Field Service
+        # "Repair Worksheet" model (industry_fsm_report); not shipped
     ],
     "post_init_hook": "post_init_hook",
 }

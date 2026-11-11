@@ -24,7 +24,9 @@ from . import customer_groups
 from . import material_request_mt_line_9a011
 from . import material_request_tes_line_3301b
 
-# from . import project_task_worksheet_template_1  # upgrade-testing: project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
+# from . import project_task_worksheet_template_1  # upgrade-testing:
+# project_task_worksheet_template_1 already exists there as the Field Service "Repair
+# Worksheet" model (industry_fsm_report); not shipped
 from . import misc_res_config_settings
 from . import sales_model_debug
 from . import work_center_costing
@@ -32,7 +34,9 @@ from . import work_center_costing
 from . import x_bve_test1_gap
 from . import x_product_test_gap
 
-# from . import x_project_task_worksheet_template_1_gap  # upgrade-testing: project_task_worksheet_template_1 already exists there as the Field Service "Repair Worksheet" model (industry_fsm_report); not shipped
+# from . import x_project_task_worksheet_template_1_gap  # upgrade-testing:
+# project_task_worksheet_template_1 already exists there as the Field Service "Repair
+# Worksheet" model (industry_fsm_report); not shipped
 from . import sales_model_debug_gap
 from . import x_test02_gap
 from . import x_test_1_gap

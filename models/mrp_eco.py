@@ -4,11 +4,12 @@ from odoo import fields, models
 class MrpEco(models.Model):
     _inherit = "mrp.eco"
 
-    # Clear-DB: related to the product's "Item Approved". The port (BugFix-MRP) made it a plain
-    # boolean, so an ECO never saw the approval: Bill of Materials stayed read-only, the ECO saved
-    # without one, and Start Revision failed with "Expected singleton: mrp.bom()" (bug sheet PLM,
-    # 22/Oct, Kapila). Declared here because the product field comes from BugFix-Sales, which
-    # BugFix-MRP does not depend on; this module depends on both.
+    # Clear-DB: related to the product's "Item Approved". The port (BugFix-MRP) made it
+    # a plain boolean, so an ECO never saw the approval: Bill of Materials stayed
+    # read-only, the ECO saved without one, and Start Revision failed with "Expected
+    # singleton: mrp.bom()" (bug sheet PLM, 22/Oct, Kapila). Declared here because the
+    # product field comes from BugFix-Sales, which BugFix-MRP does not depend on; this
+    # module depends on both.
     item_approved = fields.Boolean(
         string="Approved Item",
         related="product_tmpl_id.item_approved",
