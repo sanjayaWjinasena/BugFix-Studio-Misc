@@ -14,7 +14,8 @@
   <!-- 2026-10-13: moved to Website > Configuration (its "Website FAQ" tile is switched off) -->
   <menuitem id="menu_f6r3_website_faq_website_faqs" name="website FAQs" action="BugFix-Studio-Misc.act_window_3206_website_faqs" parent="website.menu_website_global_configuration"/>
   <menuitem id="menu_f6r3_jinasena_reports_configuration" name="Configuration" parent="menu_f6r3_jinasena_reports" sequence="100"/>
-  <menuitem id="menu_f6r3_employees_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" sequence="101"/>
+  <!-- HR!7: empty Clear-DB folder, its target model hr.payslip.bulk.input is not on target - switched off -->
+  <menuitem id="menu_f6r3_employees_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" sequence="101" active="False"/>
   <menuitem id="menu_f6r3_faqs_website_faq" name="website.faq" parent="menu_f6r3_faqs" action="BugFix-Studio-Misc.act_window_3205_website_faq"/>
   <menuitem id="menu_f6r3_posting_profiles_customer_posting_profile" name="Customer Posting Profile" parent="menu_f6r3_posting_profiles" action="BugFix-Accounting.action_779_customer_posting_profile"/>
   <menuitem id="menu_f6r3_purchase" name="" parent="purchase.menu_purchase_root" action="BugFix-Purchase.action_2493_purchase_request_cash" sequence="9"/>
