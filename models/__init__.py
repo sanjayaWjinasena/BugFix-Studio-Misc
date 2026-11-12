@@ -28,6 +28,7 @@ from . import material_request_tes_line_3301b
 # project_task_worksheet_template_1 already exists there as the Field Service "Repair
 # Worksheet" model (industry_fsm_report); not shipped
 from . import misc_res_config_settings
+from . import mrp_eco
 from . import sales_model_debug
 from . import work_center_costing
 
