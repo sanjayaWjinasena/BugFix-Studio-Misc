@@ -13,14 +13,14 @@ actions got re-created on the target env with `update_field_id` set but
 
 …when the action fires. This blocks any create/write path that triggers
 one of these actions via base.automation — e.g. creating an
-x_purchase_request record whose downstream automations touch
-x_purchase_request_lin.
+purchase_request record whose downstream automations touch
+purchase_request_lin.
 
 Fix: for every ir.actions.server with state='object_write',
 update_field_id set, and empty update_path, write update_path to the
 technical name of update_field_id. Matches CDB's values verbatim
 (verified via RPC — e.g. "PR Line Order Remainder Update" → path
-'x_studio_order_remainder' on CDB).
+'order_remainder' on CDB).
 
 ORM only, no cr.execute.
 """

@@ -6,7 +6,7 @@ Two failure modes, both on ir.actions.server with state='next_activity':
     Odoo 17 mail/ir_actions_server._run_action_next_activity does
         `self.activity_user_field_name in record`
     -> `False in record` -> TypeError: unsupported operand types in:
-       False in x_purchase_request(12,)
+       False in purchase_request(12,)
     Hit on the Purchase Request "Approve" button (action 3076).
     Target: 10 rows. CDB: 0 rows (every CDB generic action names a field).
 
@@ -19,10 +19,10 @@ Fix policy — CDB-faithful, keyed so it survives differing record ids:
   Generic -> field name, keyed by (model, action name). CDB value is
   'user_id' everywhere. For sale.order / account.move that field exists
   on target, so the exact CDB value is restored.
-  DEVIATION (deliberate, flagged): x_purchase_request and x_material_request
+  DEVIATION (deliberate, flagged): purchase_request and material_request
   have NO user_id field on EITHER env — CDB's 'user_id' there was already a
   dead config that Odoo 15 silently tolerated. The only res.users field on
-  both models on both envs is x_studio_requested_by ("Requested by"), which
+  both models on both envs is requested_by ("Requested by"), which
   also matches the actions' intent ("Approve ... Confirm" notifies the
   requester). We use that. A missing field is never written: every
   candidate is checked against env[model]._fields first.
@@ -52,19 +52,19 @@ GENERIC_FIELD = {
     ("sale.order", "SLS - Temporary Credit Approval - Confirm"): "user_id",
     ("account.move", "SLS - Credit Note Approval - Confirm"): "user_id",
     # DEVIATION from CDB literal 'user_id' (field absent on both envs):
-    ("x_purchase_request", "Approve PR - Confirm"): "x_studio_requested_by",
+    ("purchase_request", "Approve PR - Confirm"): "requested_by",
     (
-        "x_material_request",
+        "material_request",
         "MR Request Approve Confirm - Notify User",
-    ): "x_studio_requested_by",
+    ): "requested_by",
 }
 # Ordered fallback for generic rows not in the map above.
-GENERIC_FALLBACK = ("user_id", "x_studio_requested_by")
+GENERIC_FALLBACK = ("user_id", "requested_by")
 
 # (model, action name) -> res.users.login   [from CDB]
 SPECIFIC_LOGIN = {
     (
-        "x_material_request",
+        "material_request",
         "MR Request Approval - Notify User",
     ): "kapila.h@jinasena.com.lk",
     (
@@ -105,7 +105,7 @@ SPECIFIC_LOGIN = {
         "RR - Transfer Request Approval - Notify User",
     ): "kapila.h@jinasena.com.lk",
     (
-        "x_purchase_request",
+        "purchase_request",
         "Request Approval PR - Notify User",
     ): "tharaka.h@jinasena.com.lk",
     ("sale.order", "SLS - Bank Guarantee - Notify User"): "janitha.r@jinasena.com.lk",
@@ -139,7 +139,7 @@ SPECIFIC_LOGIN = {
         "SLS - Send Bank Guarantee Notification - Confirm",
     ): "tharaka.h@jinasena.com.lk",
     (
-        "x_sales_report_model",
+        "sales_report_model",
         "SRM - RPT - Project Gross Margin - Notify User",
     ): "rohana.b@jinasena.com.lk",
     ("account.account", "TEST - For Rohana"): "kapila.h@jinasena.com.lk",

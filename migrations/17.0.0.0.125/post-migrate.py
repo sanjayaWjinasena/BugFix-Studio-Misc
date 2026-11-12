@@ -20,7 +20,7 @@ from odoo import SUPERUSER_ID, api
 _logger = logging.getLogger(__name__)
 
 REPORT_NAME = "Divisional P&L"
-MENU_XMLID = "BugFix-Studio-Misc.menu_studio_divisional_pl"
+MENU_XMLID = "BugFix-Studio-Misc.menu_divisional_pl"
 
 
 def _report_id_of(action):
