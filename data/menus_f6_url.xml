@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- BugFix-Studio-Misc: F6 extra - 20 URL-action menus -->
 <odoo>
-  <menuitem id="menu_f6url_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" action="base.action_open_website" sequence="101"/>
+  <!-- HR!7: Clear-DB placeholder (hr.payslip.bulk.input not on target); it only opened the home menu - switched off -->
+  <menuitem id="menu_f6url_bulk_inputs" name="Bulk Inputs" parent="hr.menu_hr_root" action="base.action_open_website" sequence="101" active="False"/>
   <!-- upgrade-testing/VM02 2026-10-12: duplicate of the same Clear-DB menu ported twice; switched off, the other copy is kept -->
   <menuitem id="menu_f6url_repair_diagnosis" name="Repair Diagnosis" parent="helpdesk.menu_helpdesk_root" action="base.action_open_website" sequence="101" active="False"/>
   <menuitem id="menu_f6url_consignment" name="Consignment" action="base.action_open_website" sequence="4"/>
